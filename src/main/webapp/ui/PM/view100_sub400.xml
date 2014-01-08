@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="175" Id="view100_sub100" Left="8" OnLoadCompleted="view100_sub100_OnLoadCompleted" PidAttrib="7" Title="공정영역" Top="8" Ver="1.0" Width="472" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_tree">
+				<Contents>
+					<colinfo id="CODE_NAME" size="256" type="STRING"/>
+					<colinfo id="TLEVEL" size="256" type="STRING"/>
+					<colinfo id="COL1" size="256" type="STRING"/>
+					<colinfo id="COL2" size="256" type="STRING"/>
+					<colinfo id="COL3" size="256" type="STRING"/>
+					<record>
+						<CODE_NAME>Assets</CODE_NAME>
+						<COL1>40000000000</COL1>
+						<COL2>5000000000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>1</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Current&#32;Liability</CODE_NAME>
+						<COL1>6682376</COL1>
+						<COL2>6000000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>2</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Quick&#32;Assets</CODE_NAME>
+						<COL1>1234000</COL1>
+						<COL2>2500100</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>3</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>1.Cash&#32;&amp;&#32;Ready&#32;funds</CODE_NAME>
+						<COL1>520000</COL1>
+						<COL2>32000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>CASH</CODE_NAME>
+						<COL1>12000</COL1>
+						<COL2>32000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Deposit</CODE_NAME>
+						<COL1>1000000</COL1>
+						<COL2>35200</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Stocks&#32;&amp;&#32;Bonds</CODE_NAME>
+						<COL1>300000</COL1>
+						<COL2>65000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>2.Single&#32;Financial&#32;Derivatives</CODE_NAME>
+						<COL1>2000</COL1>
+						<COL2>120000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>3.Stocks&#32;&amp;&#32;Bonds</CODE_NAME>
+						<COL1>10000</COL1>
+						<COL2>120050</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Bond</CODE_NAME>
+						<COL1>400000</COL1>
+						<COL2>65000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>4.Selling&#32;Bond</CODE_NAME>
+						<COL1>200000</COL1>
+						<COL2>32000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Accounts&#32;Receivable</CODE_NAME>
+						<COL1>100000</COL1>
+						<COL2>65000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Major&#32;Business</CODE_NAME>
+						<COL1>400000</COL1>
+						<COL2>43000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>6</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Minor&#32;Business</CODE_NAME>
+						<COL1>400000</COL1>
+						<COL2>43000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>6</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>The&#32;allowance&#32;for&#32;bad&#32;debts</CODE_NAME>
+						<COL1>35500</COL1>
+						<COL2>43000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Major&#32;Business</CODE_NAME>
+						<COL1>2300</COL1>
+						<COL2>43000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>6</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>5.Single&#32;Loan</CODE_NAME>
+						<COL1>4500</COL1>
+						<COL2>65000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Fixed&#32;Assets</CODE_NAME>
+						<COL1>100500</COL1>
+						<COL2>120000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>2</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>1.Investment&#32;Assets</CODE_NAME>
+						<COL1>60000</COL1>
+						<COL2>43000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>3</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Investment&#32;Securities</CODE_NAME>
+						<COL1>70000</COL1>
+						<COL2>120000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Marketable&#32;Security&#32;(Available&#32;for&#32;sale)</CODE_NAME>
+						<COL1>100</COL1>
+						<COL2>43000</COL2>
+						<COL3>100</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Long-term&#32;loan</CODE_NAME>
+						<COL1>200</COL1>
+						<COL2>32000</COL2>
+						<COL3>100</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>1.Loans&#32;to&#32;Housing&#32;fund</CODE_NAME>
+						<COL1>100</COL1>
+						<COL2>32000</COL2>
+						<COL3>100</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>2.School&#32;expenses&#32;Loans</CODE_NAME>
+						<COL1>100</COL1>
+						<COL2>120000</COL2>
+						<COL3>100</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Liability</CODE_NAME>
+						<COL1>3500000</COL1>
+						<COL2>32000</COL2>
+						<COL3>100</COL3>
+						<TLEVEL>1</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Current&#32;Liability</CODE_NAME>
+						<COL1>1500000</COL1>
+						<COL2>120000</COL2>
+						<COL3>100</COL3>
+						<TLEVEL>2</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>1.Accounting&#32;Payable</CODE_NAME>
+						<COL1>350000</COL1>
+						<COL2>32000</COL2>
+						<COL3>100</COL3>
+						<TLEVEL>3</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Trade&#32;Payble</CODE_NAME>
+						<COL1>60000</COL1>
+						<COL2>120000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>2.Short-term&#32;Borrowings</CODE_NAME>
+						<COL1>540000</COL1>
+						<COL2>32000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>3</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>1.Bank&#32;Overdrafts</CODE_NAME>
+						<COL1>350000</COL1>
+						<COL2>120000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>2.Short-term&#32;Borrowings&#32;in&#32;Original&#32;Currency</CODE_NAME>
+						<COL1>20000</COL1>
+						<COL2>34500</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>3.Short-term&#32;Borrowings&#32;in&#32;Foreign&#32;Currency</CODE_NAME>
+						<COL1>100000</COL1>
+						<COL2>32000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>4</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>1)Short-term&#32;Borrowings&#32;in&#32;Foreign&#32;Currency</CODE_NAME>
+						<COL1>200000</COL1>
+						<COL2>120000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>2)Usance&#32;Borrowings</CODE_NAME>
+						<COL1>30000</COL1>
+						<COL2>43000</COL2>
+						<COL3>0</COL3>
+						<TLEVEL>5</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Equity</CODE_NAME>
+						<COL1>3100000</COL1>
+						<COL2>43000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>1</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Capital&#32;Stock</CODE_NAME>
+						<COL1>200000</COL1>
+						<COL2>120000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>2</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Other&#32;Interest</CODE_NAME>
+						<COL1>200000</COL1>
+						<COL2>65000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>3</TLEVEL>
+					</record>
+					<record>
+						<CODE_NAME>Capital&#32;Surplus</CODE_NAME>
+						<COL1>1000000</COL1>
+						<COL2>65000</COL2>
+						<COL3>-100</COL3>
+						<TLEVEL>2</TLEVEL>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_task">
+				<Contents>
+					<colinfo id="TASK_ID" size="255" summ="default" type="STRING"/>
+					<colinfo id="TASK_NM" size="100" summ="default" type="STRING"/>
+					<colinfo id="PARENT_ID" size="255" summ="default" type="STRING"/>
+					<colinfo id="TASK_PERIOD" size="255" summ="default" type="STRING"/>
+					<colinfo id="PLAN_SDATE" size="10" summ="default" type="STRING"/>
+					<colinfo id="PLAN_EDATE" size="10" summ="default" type="STRING"/>
+					<colinfo id="MILESTONE" size="1" summ="default" type="STRING"/>
+					<colinfo id="DDAY" size="1" summ="default" type="STRING"/>
+					<colinfo id="DEPENDENCY" size="5" summ="default" type="DECIMAL"/>
+					<colinfo id="ORDER" size="255" summ="default" type="INT"/>
+					<colinfo id="TLEVEL" size="256" summ="default" type="STRING"/>
+					<record>
+						<DDAY></DDAY>
+						<DEPENDENCY>0</DEPENDENCY>
+						<MILESTONE></MILESTONE>
+						<ORDER>0</ORDER>
+						<PARENT_ID></PARENT_ID>
+						<PLAN_EDATE>20091130</PLAN_EDATE>
+						<PLAN_SDATE>20090824</PLAN_SDATE>
+						<TASK_ID>1000</TASK_ID>
+						<TASK_NM>LDCC&#32;컨설팅&#32;포로젝트</TASK_NM>
+						<TASK_PERIOD>17</TASK_PERIOD>
+						<TLEVEL>1</TLEVEL>
+					</record>
+					<record>
+						<DDAY>N</DDAY>
+						<DEPENDENCY>0</DEPENDENCY>
+						<MILESTONE>N</MILESTONE>
+						<ORDER>1</ORDER>
+						<PARENT_ID>1000</PARENT_ID>
+						<PLAN_EDATE>20090909</PLAN_EDATE>
+						<PLAN_SDATE>20090824</PLAN_SDATE>
+						<TASK_ID>1010</TASK_ID>
+						<TASK_NM>C.&#32;As-is&#32;프로세스&#32;분석</TASK_NM>
+						<TASK_PERIOD>5</TASK_PERIOD>
+						<TLEVEL>2</TLEVEL>
+					</record>
+					<record>
+						<DDAY>N</DDAY>
+						<DEPENDENCY>0</DEPENDENCY>
+						<MILESTONE>N</MILESTONE>
+						<ORDER>2</ORDER>
+						<PARENT_ID>1000</PARENT_ID>
+						<PLAN_EDATE>20090931</PLAN_EDATE>
+						<PLAN_SDATE>20090910</PLAN_SDATE>
+						<TASK_ID>1020</TASK_ID>
+						<TASK_NM>H.&#32;이슈&#32;및&#32;개선기회&#32;도출</TASK_NM>
+						<TASK_PERIOD>26</TASK_PERIOD>
+						<TLEVEL>2</TLEVEL>
+					</record>
+					<record>
+						<DDAY>N</DDAY>
+						<DEPENDENCY>0</DEPENDENCY>
+						<MILESTONE>N</MILESTONE>
+						<ORDER>3</ORDER>
+						<PARENT_ID>1000</PARENT_ID>
+						<PLAN_EDATE>20091031</PLAN_EDATE>
+						<PLAN_SDATE>20091001</PLAN_SDATE>
+						<TASK_ID>1030</TASK_ID>
+						<TASK_NM>J.&#32;과제&#32;추진&#32;방안</TASK_NM>
+						<TASK_PERIOD>11</TASK_PERIOD>
+						<TLEVEL>2</TLEVEL>
+					</record>
+					<record>
+						<DDAY></DDAY>
+						<DEPENDENCY>0</DEPENDENCY>
+						<MILESTONE></MILESTONE>
+						<ORDER>4</ORDER>
+						<PARENT_ID></PARENT_ID>
+						<PLAN_EDATE>20091130</PLAN_EDATE>
+						<PLAN_SDATE>20090824</PLAN_SDATE>
+						<TASK_ID>2000</TASK_ID>
+						<TASK_NM>업무보고</TASK_NM>
+						<TASK_PERIOD>17</TASK_PERIOD>
+						<TLEVEL>1</TLEVEL>
+					</record>
+					<record>
+						<DDAY>N</DDAY>
+						<DEPENDENCY>0</DEPENDENCY>
+						<MILESTONE>N</MILESTONE>
+						<ORDER>5</ORDER>
+						<PARENT_ID>2000</PARENT_ID>
+						<PLAN_EDATE>20090909</PLAN_EDATE>
+						<PLAN_SDATE>20090824</PLAN_SDATE>
+						<TASK_ID>2010</TASK_ID>
+						<TASK_NM>중간보고</TASK_NM>
+						<TASK_PERIOD>5</TASK_PERIOD>
+						<TLEVEL>2</TLEVEL>
+					</record>
+					<record>
+						<DDAY>N</DDAY>
+						<DEPENDENCY>0</DEPENDENCY>
+						<MILESTONE>N</MILESTONE>
+						<ORDER>6</ORDER>
+						<PARENT_ID>2000</PARENT_ID>
+						<PLAN_EDATE>20090931</PLAN_EDATE>
+						<PLAN_SDATE>20090910</PLAN_SDATE>
+						<TASK_ID>2020</TASK_ID>
+						<TASK_NM>최종보고</TASK_NM>
+						<TASK_PERIOD>26</TASK_PERIOD>
+						<TLEVEL>2</TLEVEL>
+					</record>
+					<record>
+						<DDAY>N</DDAY>
+						<DEPENDENCY>0</DEPENDENCY>
+						<MILESTONE>N</MILESTONE>
+						<ORDER>7</ORDER>
+						<PARENT_ID>2000</PARENT_ID>
+						<PLAN_EDATE>20091031</PLAN_EDATE>
+						<PLAN_SDATE>20091001</PLAN_SDATE>
+						<TASK_ID>2030</TASK_ID>
+						<TASK_NM>벤치마킹</TASK_NM>
+						<TASK_PERIOD>11</TASK_PERIOD>
+						<TLEVEL>2</TLEVEL>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="175" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="151" Id="grd_list" InputPanel="FALSE" LineColor="default" MinWidth="100" MultiSelect="TRUE" OnCellClick="grd_list_OnCellClick" Right="472" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="24" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="472">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="129"/>
+						<col width="32"/>
+						<col width="66"/>
+						<col width="66"/>
+						<col width="53"/>
+						<col width="45"/>
+						<col width="35"/>
+						<col width="36"/>
+					</columns>
+					<head>
+						<cell bkcolor="user13" col="0" color="user14" display="text" rowspan="2" text="Task명"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" rowspan="2" text="기간"/>
+						<cell bkcolor="user13" col="2" color="user14" colspan="2" display="text" text="계획"/>
+						<cell align="center" bkcolor="user13" col="4" color="user14" display="text" rowspan="2" text="주요&#13;&#10;마일스톤" Valign="Center"/>
+						<cell align="center" bkcolor="user13" col="5" color="user14" display="text" rowspan="2" text="D-day&#13;&#10;관리" Valign="Center"/>
+						<cell bkcolor="user13" col="6" color="user14" display="text" rowspan="2" text="보할"/>
+						<cell bkcolor="user13" col="7" color="user14" display="text" rowspan="2" text="정렬&#13;&#10;순서"/>
+						<cell bkcolor="user13" col="2" color="user14" display="text" row="1" text="시작일"/>
+						<cell bkcolor="user13" col="3" color="user14" display="text" row="1" text="완료일"/>
+					</head>
+					<body>
+						<cell bkcolor="user11" bkcolor2="user12" bkimagealign="left" col="0" colid="TASK_NM" color="user16" display="text" expandsize="18"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" col="1" colid="TASK_PERIOD" color="user16" display="text" expandsize="18"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="2" colid="PLAN_SDATE" color="user16" display="date" expandsize="18"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="3" colid="PLAN_EDATE" color="user16" display="date" expandsize="18"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="4" colid="MILESTONE" color="user16" display="text"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="5" colid="DDAY" color="user16" display="text"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" col="6" colid="DEPENDENCY" color="user16" display="text"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" col="7" colid="ORDER" color="user16" display="text"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image Height="12" Id="Image14" ImageID="M_title_2depth_icon" TabOrder="2" Top="6" Transparent="TRUE" Width="13"></Image>
+		<Image Align="Left" Height="17" Id="img_subTitle" Left="17" OnClick="img_subTitle_OnClick" Static="FALSE" Style="M_title_2depth" TabOrder="3" Text="공정" Top="4" Transparent="TRUE" Width="69"></Image>
+	</Form>
+	<Script><![CDATA[
+function resetBottom(arg_value)
+{
+	grd_list.bottom += arg_value;
+	trace("view400::Bottom="+ grd_list.bottom);
+}
+
+function resetRight(arg_value)
+{
+	grd_list.right += arg_value;
+	trace("view400::right="+ grd_list.right);
+}
+
+
+function resizeAll(arg_type, arg_right, arg_bottom)
+{
+	switch(arg_type)
+	{
+		case 100:	// [x,y] [887,434]
+			grd_list.right 	= 72;
+			grd_list.bottom = 23;
+			break;
+		case 200:	// [x,y] [103,434]
+			grd_list.right 	= 856;
+			grd_list.bottom = 23;
+			break;
+		case 300:	// [x,y] [887,163]
+			grd_list.right 	= 72;
+			grd_list.bottom = 294;
+			break;
+		case 400:	// [x,y] [103,163]
+			grd_list.right 	= 856;
+			grd_list.bottom = 294;
+			break;
+		default:
+			break;
+	}
+}
+
+function view100_sub100_OnLoadCompleted(obj)
+{
+    SetWaitCursor(true);
+	lFcGridTreeInit("grd_list", "ds_task", "TLEVEL", "TASK_NM", 10);
+//	lFcGridTreeInit("grd_list", "ds_tree", "TLEVEL", "CODE_NAME", 10);
+    SetWaitCursor(false);
+    
+	transaction("view_sub400", 
+			"svcLotte::demo/selectProjectWBSList.mip", 
+			"", 
+			"ds_task=ProjectWBS", 
+			"", 
+			"fnCallbackLotte");
+}
+
+function grd_list_OnCellClick(obj,nRow,nCell,nX,nY)
+{
+    if (grd_list.GetCellProp("body", nCell, "ColId") <> "TASK_NM") return;
+
+	lFcGridTree("grd_list", nRow, "TLEVEL");
+}
+
+/*
+ * Grid-Tree 초기화
+ *
+ * param sGridID      Grid 컴퍼넌트 ID (String)
+ * param sDsObjID     DataSet 컴퍼넌트 ID (String)
+ * param sLvlColID    Level 컬럼 ID (String)
+ * param sCodeNmColID CodeName 컬럼 ID (String)
+ * param nLvlCnt      Level 갯수 (String) : Nullable(Default - Max Level)
+ *
+ * return void
+ */
+function lFcGridTreeInit(sGridID, sDsObjID, sLvlColID, sCodeNmColID, nLvlCnt)
+{
+	var GridObj = object(sGridID);
+	var DsObj = object(sDsObjID);
+//	var DsObj = object(GridObj.BindDataSet);
+	var nLevel;
+	var sExpr;
+	var nLvlMax;
+	var objArrLvlCnt;
+	var L_LVL_SPACE = Lpad(" ", " ", 30);
+	var L_CODE_LENGTH = 3;
+
+    // nLvlCnt 값이 null 일경우 Level 컬럼의 최대값을 nLvlMax에 Setting
+    // nLvlCnt 값이 null이 아닐경우 실제 DataSet에 Level 컬럼의 Max 값이 nLvlCnt 보다 크다 하더라도
+    // 그리드에 보여지는 최하위 Level은 nLvlCnt의 값으로 제한됨.
+    // 만약 nLvlCnt 값이 실제 DataSet의 Level 컬럼 Max값 보다 큰 경우 nLvlMax의 값은 실제 DataSet의 Level 컬럼 Max값으로 세팅됨.
+    if (nLvlCnt==null) {
+        nLvlMax = DsObj.Max(sLvlColID);
+    } else {
+        if (DsObj.Max(sLvlColID) < nLvlCnt) {
+            nLvlMax = DsObj.Max(sLvlColID);
+        } else {
+            nLvlMax = nLvlCnt;
+        }
+        
+    }
+
+    objArrLvlCnt = array(nLvlMax);
+
+    DsObj.AddColumn("EXPAND_YN","STRING","1");
+    DsObj.AddColumn("FILTER_YN","STRING","1");
+    DsObj.AddColumn("LEAF_YN","STRING","1");
+    DsObj.AddColumn("GDTREE_CODE","STRING","255");
+
+    for (var i=0;i<nLvlMax;i++) {
+        objArrLvlCnt[i] = rpad("0", "0", L_CODE_LENGTH);
+    }
+
+    for (var i=0;i<DsObj.RowCount();i++) {
+        nLevel = toNumber(DsObj.GetColumn(i, sLvlColID));
+        for (var j=nLevel;j<nLvlMax;j++) {
+            objArrLvlCnt[j] = rpad("0", "0", L_CODE_LENGTH);
+        }
+
+        objArrLvlCnt[nLevel-1] = right(rpad("0", "0", L_CODE_LENGTH) + toString(toNumber(objArrLvlCnt[nLevel-1]) + 1), 3);
+
+        DsObj.SetColumn(i, "GDTREE_CODE", replace(replace(replace(objArrLvlCnt, ",", ""), "[", ""), "]", ""));
+
+        DsObj.SetColumn(i, sCodeNmColID, left(L_LVL_SPACE, nLevel * L_CODE_LENGTH) + DsObj.GetColumn(i, sCodeNmColID));
+
+        if (DsObj.GetColumn(i - 1, sLvlColID) < DsObj.GetColumn(i, sLvlColID) && i > 0) {
+            DsObj.SetColumn(i - 1, "LEAF_YN", "N");
+        } else {
+            DsObj.SetColumn(i - 1, "LEAF_YN", "Y");
+        }
+
+        if (i == DsObj.RowCount() - 1) DsObj.SetColumn(i, "LEAF_YN", "Y");
+		DsObj.SetColumn(i, "EXPAND_YN", "N");
+
+        if (nLevel == 1) {
+            DsObj.SetColumn(i, "FILTER_YN", "Y");
+        } else {
+            DsObj.SetColumn(i, "FILTER_YN", "N");
+        }
+		
+    }
+
+	DsObj.Filter(sLvlColID + "=='1'");
+
+    GridObj.BindDataSet = DsObj.id;
+
+    // Grid-Tree의 모든 노드들에 대해 BackGround Image를 설정
+    for (var i=0;i<DsObj.RowCountNF();i++) {
+        nLevel = toNumber(DsObj.GetColumnNF(i, sLvlColID));
+
+        // 해당 노드의 상태가 Leaf 이면 gridtree_Leaf + 이미지번호(해당 노드의 Level).
+        // 해당 노드의 상태가 Expand 이면 gridtree_Expand + 이미지번호(해당 노드의 Level).
+        // 그외의 경우엔 gridtree_Collapse + 이미지번호(해당 노드의 Level).
+        sExpr = "expr:decode(LEAF_YN, 'Y', 'gridtree_Leaf' + toString(" + sLvlColID + "), decode(EXPAND_YN, 'Y', 'gridtree_Expand' + toString(" + sLvlColID + "), 'gridtree_Collapse' + toString(" + sLvlColID + ")))";
+        GridObj.SetCellProp("body", _getCellIdx(GridObj.ID , sCodeNmColID), "bkimageid", sExpr);
+    }
+}
+
+/*
+ * Grid-Tree Expand/Collapse 함수
+ *
+ * param sGridID   Grid 컴퍼넌트 ID (String)
+ * param nRow      현재 선택된 Row값 (Number)
+ * param sLvlColID Level 컬럼 ID (String)
+ *
+ * return void
+ */
+function lFcGridTree(sGridID, nRow, sLvlColID)
+{
+	var GridObj = object(sGridID);
+	var DsObj = object(GridObj.BindDataSet);
+	var nLevel;
+	var sExpr;
+	var L_CODE_LENGTH = 3;
+
+    // 선택된 노드에 자노드가 없는경우 Return
+    if (DsObj.GetColumn(nRow, "LEAF_YN") == "Y") return;
+
+    // 선택된 노드의 Level 값을 가져옴.
+    nLevel = toNumber(DsObj.GetColumn(nRow, sLvlColID));
+
+    // 선택된 노드가 이전에 펼쳐진적이 없으면 -> Expand
+    if (DsObj.GetColumn(nRow, "EXPAND_YN") == "N") {
+        // 선택된 노드를 Expand 상태로 Setting
+        DsObj.SetColumn(nRow, "EXPAND_YN", "Y");
+
+        // 선택된 노드의 바로 아래의 자노드와 이전에 Expand 되어있는 노드들만 보여줌(Filtering)
+        DsObj.FireEvent = false;
+        DsObj.Filter("(left(GDTREE_CODE, " + (nLevel * L_CODE_LENGTH) + ")=='" + left(DsObj.GetColumn(nRow, "GDTREE_CODE"), (nLevel * L_CODE_LENGTH)) + "' && " + sLvlColID + " == '" + (nLevel + 1) + "') || FILTER_YN == 'Y'");
+        DsObj.FireEvent = true;
+
+    // 선택된 노드가 이전에 펼쳐진적이 있으면 -> Collapse
+    } else {
+        DsObj.SetColumn(nRow, "EXPAND_YN", "N"); // 선택된 노드를 Collapse 상태로 Setting
+        DsObj.SetColumn(nRow, "FILTER_YN", "Y"); // 선택된 노드를 Expand 상태로 Setting
+
+        // 선택된 노드의 바로 아래의 자노드와 이전에 Expand 되어있는 노드들만 보여줌(Filtering)
+        for (var i = nRow + 1;i<DsObj.RowCount();i++) {
+            // 선택된 노드의 모든 자노드를 Collapse 상태로 설정.
+            if (left(DsObj.GetColumn(i, "GDTREE_CODE"), (nLevel * L_CODE_LENGTH)) == left(DsObj.GetColumn(nRow, "GDTREE_CODE"), (nLevel * L_CODE_LENGTH))) {
+                DsObj.SetColumn(i, "FILTER_YN", "N");
+                DsObj.SetColumn(i, "EXPAND_YN", "N");
+            }
+        }
+
+        DsObj.FireEvent = false;
+        DsObj.Filter("(left(GDTREE_CODE, " + (nLevel * L_CODE_LENGTH) + ")=='" + left(DsObj.GetColumn(nRow, "GDTREE_CODE"), (nLevel * L_CODE_LENGTH)) + "' && " + sLvlColID + " == '" + (nLevel - 1) + "') || FILTER_YN == 'Y'");
+        DsObj.FireEvent = true;
+    }
+
+    // 현재 Grid-Tree에 보여지고 있는(Expand된) 모든 노드들에 대해 FILTER_YN을 'Y'로 설정
+    // (이후 다른 노드 선택시 해당 노드와 그에따른 자식노드들만 대상으로 하기위함("|| FILTER_YN == 'Y' 조건을 주어 Filtering시 Colllapse 되는것을 막음.)
+    for (var i = 0;i<DsObj.RowCount();i++) {
+        DsObj.SetColumn(i, "FILTER_YN", "Y");
+    }
+
+    // Grid-Tree의 Row를 선택된 Row로 재설정
+    // (필터링시 DataSet의 OnloadCompleted 이벤트 발생과 동시에 Row 포커스가 최 상단으로 이동하므로 Row를 재설정)
+    DsObj.row = nRow;
+}
+
+/*
+ * 그리드 Sub Property ColId 값을 비교하여
+ * 일치하는 Cell의 index 값을 넘겨준다.
+ *
+ * param sGridId - 그리드 ID
+ * param sColId - 찾는 ColId
+ *
+ * return nRtn - Cell Index
+ */
+function _getCellIdx(sGridId, sColId) 
+{
+	 var objGrid = object(sGridId);
+	 var nRtn = -1;
+
+	if(!isValid(objGrid)) {
+		return nRtn;
+	}
+	
+	for(var i=0; i<objGrid.GetCellCount("body"); i++) 
+	{
+	
+		if(objGrid.GetCellProp("body", i, "ColId")==sColId) 
+		{	
+			nRtn = i;
+			break;
+		}
+	}
+	
+	return nRtn;
+}
+
+function img_subTitle_OnClick(obj,nX,nY)
+{
+	parent.setMaxView(400);
+}
+]]></Script>
+</Window>

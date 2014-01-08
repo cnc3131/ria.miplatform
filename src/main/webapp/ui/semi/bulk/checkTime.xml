@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="AP5" Left="8" OnLoadCompleted="AP5_OnLoadCompleted" PidAttrib="7" Style="se_input" Title="성능측정" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" FireFirstCount="100" FireNextCount="200" Id="Dataset0" OnLoadCompleted="Dataset0_OnLoadCompleted">
+				<Contents>
+					<colinfo id="CUSTOMER_ID" size="256" type="STRING"/>
+					<colinfo id="CUSTOMER_NAME" size="256" type="STRING"/>
+					<colinfo id="CUSTOMER_TYPE" size="256" type="STRING"/>
+					<colinfo id="CUSTOMER_SSN" size="256" type="STRING"/>
+					<colinfo id="HOME_TELNO" size="256" type="STRING"/>
+					<colinfo id="BIRTH_DATE" size="256" type="STRING"/>
+					<colinfo id="DEALER_CODE" size="256" type="STRING"/>
+					<colinfo id="MARKET_ID" size="256" type="STRING"/>
+					<colinfo id="OCCUPATION_CODE" size="256" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" FireFirstCount="100" FireNextCount="200" Id="dsSample" OnLoadCompleted="Dataset0_OnLoadCompleted">
+				<Contents>
+					<colinfo id="CUSTOMER_ID" size="256" type="STRING"/>
+					<colinfo id="CUSTOMER_NAME" size="256" type="STRING"/>
+					<colinfo id="CUSTOMER_TYPE" size="256" type="STRING"/>
+					<colinfo id="CUSTOMER_SSN" size="256" type="STRING"/>
+					<colinfo id="HOME_TELNO" size="256" type="STRING"/>
+					<colinfo id="BIRTH_DATE" size="256" type="STRING"/>
+					<colinfo id="DEALER_CODE" size="256" type="STRING"/>
+					<colinfo id="MARKET_ID" size="256" type="STRING"/>
+					<colinfo id="OCCUPATION_CODE" size="256" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" FireFirstCount="100" FireNextCount="200" Id="ds_post" OnLoadCompleted="Dataset0_OnLoadCompleted">
+				<Contents>
+					<colinfo id="BLDG" size="40" summ="default" type="STRING"/>
+					<colinfo id="BUNJI" size="17" summ="default" type="STRING"/>
+					<colinfo id="DONG" size="26" summ="default" type="STRING"/>
+					<colinfo id="GUGUN" size="15" summ="default" type="STRING"/>
+					<colinfo id="RI" size="18" summ="default" type="STRING"/>
+					<colinfo id="SEQ" size="5" summ="default" type="STRING"/>
+					<colinfo id="SIDO" size="4" summ="default" type="STRING"/>
+					<colinfo id="ZIPCODE" size="7" summ="default" type="STRING"/>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="601" Id="Image10" ImageID="M_bg3" TabOrder="1" Width="1000"></Image>
+		<Shape BKColor="#bbcfe3" Bottom="83" Height="28" Id="shp_chart" Left="25" LineColor="#bbcfe3" Right="973" RoundHeight="8" RoundUnit="Pixel" RoundWidth="8" TabOrder="34" Top="55" Type="RoundRect" Width="948"></Shape>
+		<Button ButtonStyle="TRUE" Cursor="HAND" Font="Arial,9" Height="21" Id="btn_reset" ImageID="m_bt_txt_04" Left="909" OnClick="btn_reset_OnClick" TabOrder="1" Text="Reset" Top="102" Width="63"></Button>
+		<Button ButtonStyle="TRUE" Cursor="HAND" Font="굴림,9" Height="20" Id="btn_search" ImageID="m_bt_txt_03" Left="917" OnClick="btn_search_OnClick" TabOrder="2" Text="조&#32;회" Top="60" Transparent="TRUE" Width="50"></Button>
+		<Static Align="Center" BKColor="#e2e2e2" Border="Flat" BorderColor="#7f9db9" Font="굴림,9" Height="25" Id="Static7" Left="476" TabOrder="3" Text="조회시작시각" Top="126" VAlign="Middle" Width="80"></Static>
+		<Edit Border="Flat" DisableColor="black" Enable="FALSE" Height="25" Id="ed_start_time" Left="555" Style="Edit_02" TabOrder="4" Top="126" Width="90"></Edit>
+		<Static Align="Center" BKColor="#e2e2e2" Border="Flat" BorderColor="#7f9db9" Font="굴림,9" Height="25" Id="Static3" Left="24" TabOrder="7" Text="QUERY_ID" Top="126" VAlign="Middle" Width="102"></Static>
+		<Edit Align="RIGHT" Border="Flat" DisableColor="black" Height="25" Id="ed_query_id" Left="125" Style="se_input" TabOrder="6" Top="126" Width="99"></Edit>
+		<Static Align="Center" BKColor="#e2e2e2" Border="Flat" BorderColor="#7f9db9" Font="굴림,9" Height="25" Id="Static1" Left="24" TabOrder="9" Text="START" Top="150" VAlign="Middle" Width="102"></Static>
+		<Edit Align="RIGHT" Border="Flat" DisableColor="black" Height="25" Id="ed_start" Left="125" Style="se_input" TabOrder="8" Top="150" Width="99"></Edit>
+		<Static Font="맑은&#32;고딕,10,Bold" Height="32" Id="Static2" Left="44" TabOrder="10" Text="검색결과" Top="186" VAlign="Middle" Width="88"></Static>
+		<Static Align="Center" BKColor="#e2e2e2" Border="Flat" BorderColor="#7f9db9" Font="굴림,9" Height="25" Id="Static4" Left="25" TabOrder="12" Text="QUERY_ID" Top="218" VAlign="Middle" Width="96"></Static>
+		<Edit Align="RIGHT" Border="Flat" DisableColor="black" Enable="FALSE" Height="25" Id="ed_return_id" Left="120" Style="Edit_02" TabOrder="11" Top="218" Width="98"></Edit>
+		<Static Align="Center" BKColor="#e2e2e2" Border="Flat" BorderColor="#7f9db9" Font="굴림,9" Height="25" Id="Static5" Left="217" TabOrder="14" Text="SVC_STATUS" Top="218" VAlign="Middle" Width="96"></Static>
+		<Edit Align="RIGHT" Border="Flat" DisableColor="black" Enable="FALSE" Height="25" Id="ed_svc_status" Left="312" Style="Edit_02" TabOrder="13" Top="218" Width="93"></Edit>
+		<Grid AutoFit="TRUE" BindDataset="ds_post" BkColor2="default" BoldHead="true" Border="Flat" Bottom="584" Enable="true" EndLineColor="default" HeadBorder="Flat" Height="336" Id="Grid0" InputPanel="FALSE" Left="24" LineColor="default" LineType="ExVERT" MinWidth="100" Right="973" Style="se_grid" TabOrder="15" TabStop="true" Top="248" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="949">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="43"/>
+						<col width="60"/>
+						<col width="73"/>
+						<col width="59"/>
+						<col width="77"/>
+						<col width="74"/>
+						<col width="122"/>
+						<col width="72"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" display="text" text="No."/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" display="text" text="우편번호"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" display="text" text="시.도"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" display="text" text="구.군"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" display="text" text="동"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="5" display="text" text="리"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="6" display="text" text="빌딩"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="7" display="text" text="번지"/>
+					</head>
+					<body>
+						<cell col="0" colid="SEQ" display="text"/>
+						<cell col="1" colid="ZIPCODE" display="text"/>
+						<cell col="2" colid="SIDO" display="text"/>
+						<cell col="3" colid="GUGUN" display="text"/>
+						<cell col="4" colid="DONG" display="text"/>
+						<cell col="5" colid="RI" display="text"/>
+						<cell col="6" colid="BLDG" display="text"/>
+						<cell col="7" colid="BUNJI" display="text"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Static Font="맑은&#32;고딕,10,Bold" Height="32" Id="Static6" Left="498" TabOrder="16" Text="작업시간" Top="96" VAlign="Middle" Width="88"></Static>
+		<Edit Align="RIGHT" Border="Flat" DisableColor="black" Enable="FALSE" Height="25" Id="ed_end_recv" Left="890" Style="Edit_02" TabOrder="17" Top="150" Width="82"></Edit>
+		<Static Align="Center" BKColor="#e2e2e2" Border="Flat" BorderColor="#7f9db9" Font="굴림,9" Height="25" Id="Static9" Left="644" TabOrder="18" Text="최종작업시각" Top="150" VAlign="Middle" Width="80"></Static>
+		<Edit Border="Flat" DisableColor="black" Enable="FALSE" Height="25" Id="ed_end_time" Left="723" Style="Edit_02" TabOrder="19" Top="150" Width="89"></Edit>
+		<Static Align="Center" BKColor="#e2e2e2" Border="Flat" BorderColor="#7f9db9" Font="굴림,9" Height="25" Id="Static10" Left="811" TabOrder="20" Text="최종작업시간" Top="150" VAlign="Middle" Width="80"></Static>
+		<Static Align="Center" BKColor="#e2e2e2" Border="Flat" BorderColor="#7f9db9" Font="굴림,9" Height="25" Id="Static11" Left="644" TabOrder="21" Text="최초도달시각" Top="126" VAlign="Middle" Width="80"></Static>
+		<Edit Border="Flat" DisableColor="black" Enable="FALSE" Height="25" Id="ed_first_time" Left="723" Style="Edit_02" TabOrder="22" Top="126" Width="89"></Edit>
+		<Edit Align="RIGHT" Border="Flat" DisableColor="black" Enable="FALSE" Height="25" Id="ed_first_recv" Left="890" Style="Edit_02" TabOrder="23" Top="126" Width="82"></Edit>
+		<Static Align="Center" BKColor="#e2e2e2" Border="Flat" BorderColor="#7f9db9" Font="굴림,9" Height="25" Id="Static12" Left="811" TabOrder="24" Text="최초도달시간" Top="126" VAlign="Middle" Width="80"></Static>
+		<Edit Align="RIGHT" Border="Flat" DisableColor="black" Enable="FALSE" Height="25" Id="ed_count" Left="555" Style="Edit_02" TabOrder="25" Top="150" Width="90"></Edit>
+		<Static Align="Center" BKColor="#e2e2e2" Border="Flat" BorderColor="#7f9db9" Font="굴림,9" Height="25" Id="Static13" Left="476" TabOrder="26" Text="전체건수" Top="150" VAlign="Middle" Width="80"></Static>
+		<Edit Border="Flat" DisableColor="black" Height="20" Id="ed_target" Left="115" OnChanged="ed_target_OnChanged" TabOrder="27" Text="http://localhost:8080/test/jsp/basic/getPost.jsp" Top="60" Width="800"></Edit>
+		<Static Align="Center" Font="맑은&#32;고딕,10,Bold" Height="32" Id="Static14" Left="601" TabOrder="28" Text="업체명&#32;:" Top="217" VAlign="Middle" Visible="FALSE" Width="80"></Static>
+		<Edit Border="Flat" DisableColor="black" Height="20" Id="ed_name" Left="672" Style="se_input" TabOrder="29" Text="업체명을&#32;입력하세요." Top="223" Visible="FALSE" Width="208"></Edit>
+		<Button ButtonStyle="TRUE" Cursor="HAND" Font="Arial,9" Height="20" Id="btn_logFile" ImageID="m_bt_txt_06" Left="886" OnClick="btn_logFile_OnClick" TabOrder="30" Text="Log파일&#32;저장" Top="223" Visible="FALSE" Width="90"></Button>
+		<FileDialog Bottom="120" Height="24" Id="FileDialog0" Left="721" Right="745" TabOrder="37" Top="96" Width="24"></FileDialog>
+		<File Bottom="120" Height="24" Id="File0" Left="759" Right="783" TabOrder="37" Top="96" Width="24"></File>
+		<Image Align="Left" Height="16" Id="Image8" ImageID="M_title_1depth_icon" Left="27" LeftMargin="18" Style="cm_title_sub" TabOrder="32" Text="&#32;대용량&#32;테스트" Top="27" Width="368"></Image>
+		<Static Align="Center" Font="맑은&#32;고딕,11,Bold" Height="32" Id="Static8" Left="21" TabOrder="33" Text="서버&#32;URL&#32;:&#32;" Top="53" VAlign="Middle" Width="112"></Static>
+		<Image Align="Left" Height="22" Id="Image4" ImageID="m_bl_subtitl" Left="28" LeftMargin="18" Style="cm_title_sub" TabOrder="35" Top="100" Width="16"></Image>
+		<Static Font="맑은&#32;고딕,10,Bold" Height="32" Id="Static0" Left="44" TabOrder="5" Text="검색조건" Top="95" VAlign="Middle" Width="64"></Static>
+		<Image Align="Left" Height="22" Id="Image0" ImageID="m_bl_subtitl" Left="478" LeftMargin="18" Style="cm_title_sub" TabOrder="36" Top="100" Width="16"></Image>
+		<Image Align="Left" Height="22" Id="Image1" ImageID="m_bl_subtitl" Left="28" LeftMargin="18" Style="cm_title_sub" TabOrder="37" Top="191" Width="16"></Image>
+	</Form>
+	<Script><![CDATA[
+// 조회시간을 체크하기 위한 변수ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+var sTime = "";
+var eTime = "";
+var isFirstLoading = true;
+//ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+function btn_search_OnClick(obj)
+{
+	if(isFirstLoading !=true )
+	{
+		btn_reset_OnClick(obj);
+	}
+	
+	sTime = Timem();
+	btn_search.Enable = false;
+
+	var tran_id		= "ap5";
+	var targetJsp 	= ed_target.Text;
+	var outDs		= "ds_post=ds_post";
+	var param		= "query_id=" 	+ quote(ed_query_id.Text)
+					+ " start=" 	+ quote(ed_start.Text);
+	
+	setStartTime();
+	
+	// 서버로 데이타 요청------------------------------------------
+	//	tran_id 	: 서비스 id 
+	//	targetJsp	: 호출할 서버측 jsp
+	//	outDs		: 서버로 부터 받을 Dataset 지정 (x=y형태)
+	//	param		: 검색조건 parameter (query_id=testId start=y) - 구분자는 공백(" ")
+	//	tr_callback	: 서버로 부터 데이타를 수신한 후 처리하는 후처리 함수 지정.
+	Transaction(tran_id, targetJsp, "", outDs, param, "tr_callback");
+}
+
+var query_id	= "";
+var svc_status	= "";
+
+// 후처리 함수...................................
+function tr_callback(svcId, ErrorCode, ErrorMsg)
+{
+	btn_search.Enable = true;
+	if ( ErrorCode <> 0 )
+	{
+		trace ("Error ["+ErrorCode+"]: " + strErrorMsg);
+		return;
+	}
+	
+	if( svcId == "ap5" )
+	{
+		ed_return_id.Text	= query_id;
+		ed_svc_status.Text 	= svc_status;
+		
+	}
+}
+
+// FirstRow방식으로 데이타 전송시 수신 시각 기록................
+function Dataset0_OnLoadCompleted(obj,nErrorCode,strErrorMsg,nReason)
+{
+	//trace("nReason="+nReason +"...................");
+	// 최초 도달시 최초 도달시간,도달시각 기록.
+	if(nReason == 1 ){
+		isFirstLoading = false;
+		setFirstTime();
+		setFirstRecv();
+
+	}
+	// FirstRow 도달시마다 기록....
+	if(nReason == 20 ){
+
+		setEndTime();
+		setEndRecv();
+		setCount();
+	}
+	// 최종 데이타 수신....
+	if(nReason == 0 ){
+		setEndTime();
+		setEndRecv();
+		setCount();
+		
+		setLog();
+	}
+}
+
+// 조회시작시각 기록.............................
+function setStartTime()
+{
+	ed_start_time.Text = getCurrTime();
+	sTime = Timem();
+}
+
+// 최초도달시각 기록.............................
+function setFirstTime()
+{
+	ed_first_time.Text = getCurrTime();
+}
+
+// 최종작업시각 기록.............................
+function setEndTime()
+{
+	ed_end_time.Text = getCurrTime();
+}
+
+// 최초도달시간 기록.............................
+function setFirstRecv()
+{
+	ed_first_recv.Text = getWorkTime();
+}
+
+// 최종도달시간 기록.............................
+function setEndRecv()
+{
+	ed_end_recv.Text = getWorkTime();
+}
+
+// 데이타 건수 표시.............................
+function setCount()
+{
+	ed_count.Text= ds_post.count + " 건";
+}
+
+
+
+
+//ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// GetDate()는 현재시각을 yyyyMMddhhmmss의 14자리 문자열로 값을 Return .
+//	var yyyy 	= substr(now,0,4);
+//	var Month	= substr(now,4,2);
+//	var dd 		= substr(now,6,2);
+//	var hh 		= substr(now,8,2);
+//	var mm 		= substr(now,10,2);
+//	var ss 		= substr(now,12,2);
+//	trace(yyyy + "." + Month + "." + dd + " " + hh + ":" + mm + ":" + ss);
+//ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+function getCurrTime()
+{
+	var now		= GetDate();
+	return substr(now,8,2) + ":" + substr(now,10,2) + ":" + substr(now,12,2) ;
+}
+
+
+// 작업 시간 (eTime-sTime)......................
+function getWorkTime()
+{
+	var workTime = 0;
+
+	eTime 	= Timem();
+	workTime = toNumber(eTime) - toNumber(sTime);
+	return setTime(workTime)+" 초";
+	
+}
+
+function setTime(workTime){
+	var second 	= toNumber(workTime) / 1000;
+	return second;
+}
+
+// 작업변수 초기화..............
+function btn_reset_OnClick(obj)
+{
+	sTime = "";
+	eTime = "";
+	isFirstLoading = true;
+
+	ed_start_time.Text	= "";
+	ed_first_time.Text	= "";
+	ed_first_recv.Text	= "";
+	ed_end_time.Text	= "";
+	ed_end_recv.Text	= "";
+	ed_count.Text		= "0";
+	
+	ed_return_id.Text	= "";
+	ed_svc_status.Text	= "";
+	ds_post.ClearData();
+
+	logStr = "";
+	ed_name.SetFocus();
+	ed_name.SetSel();
+}
+
+var logStr = "";
+// Log 기록...........................
+function setLog()
+{
+	trace("\n");
+	trace("\n");
+	trace("\n");
+	logStr = ed_name.Text + "의 대량조회가 완료 되었습니다.\n";
+	logStr +="===========================================================[결과]\n";
+	logStr +="업체명	:	" + ed_name.Text +"\n";
+	logStr +="서버URL	:	" + ed_target.Text +"\n";
+	logStr +="----------------------------------------------------------------\n";
+	logStr +="조회시작시각	:	" + ed_start_time.Text +"\n";
+	logStr +="최초도달시각	:	" + ed_first_time.Text + "	(  " + ed_first_recv.Text + " )\n" ;
+	logStr +="최종작업시각	:	" + ed_end_time.Text   + "	( " + ed_end_recv.Text + " )\n" ;
+	logStr +="전체 건수	:	" + ed_count.Text +"\n";
+	logStr +="================================================================\n";
+	trace("\n");
+	trace(logStr);
+	/*
+	trace( ed_name.Text + "의 대량조회가 완료 되었습니다.");
+	trace("===========================================================[결과]");
+	trace("업체명	:	" + ed_name.Text);
+	trace("서버URL	:	" + ed_target.Text);
+	trace("----------------------------------------------------------------");
+	trace("조회시작시각	:	" + ed_start_time.Text);
+	trace("최초도달시각	:	" + ed_first_time.Text + "	(  " + ed_first_recv.Text + " )" );
+	trace("최종작업시각	:	" + ed_end_time.Text   + "	( " + ed_end_recv.Text + " )" );
+	trace("전체 건수	:	" + ed_count.Text);
+	trace("================================================================");
+	*/
+}
+
+
+function AP5_OnLoadCompleted(obj)
+{
+	ed_name.SetFocus();
+	ed_name.SetSel();
+}
+
+// 로그파일 저장................
+function btn_logFile_OnClick(obj)
+{
+	if ( FileDialog0.open() )
+	{
+	
+		File0.FileName = FileDialog0.FilePath + "\\" + FileDialog0.FileName;
+			
+		File0.Open("wt");
+		
+		File0.Write ( logStr );
+		File0.Close();
+	}
+	else
+	{
+		trace("Log저장 실패!!");
+	}
+}
+]]></Script>
+</Window>

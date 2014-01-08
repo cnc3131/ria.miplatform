@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConnectGroup BkColor="white" Border="false" device="Win32&#32;(800x600)" Font="Default,0" height="600" HideFrame="true" ReSize="false" SessionURL="DefApp::Login.xml" Statusbar="true" Title="LottePilot" titlebar="true" version="1.0" width="800" work_height="543" work_width="800">
+	<container Version="1000">
+		<Component Height="21" Id="Spin" Image="10" Name="cySpin" Title="Spin" Version="1000" Width="121"/>
+		<Component Height="21" Id="MaskEdit" Image="19" Name="cyMaskedit" Title="MaskEdit" Version="1000" Width="121"/>
+		<Component Height="21" Id="Button" Image="2" Name="cyButton" Title="Button" Version="1000" Width="104"/>
+		<Component Height="13" Id="Static" Image="8" Name="cyStatic" Title="Static" Version="1000" Width="40"/>
+		<Component Height="21" Id="Edit" Image="3" Name="cyEdit" Title="Edit" Version="1000" Width="121"/>
+		<Component Height="65" Id="Shape" Image="28" Name="cyShape" Title="Shape" Version="1000" Width="65"/>
+		<Component Height="65" Id="Pie" Image="30" Name="cyPie" Title="Pie" Version="1000" Width="65"/>
+		<Component Height="21" Id="Checkbox" Image="4" Name="cyCheckBox" Title="Check&#32;Box" Version="1000" Width="97"/>
+		<Component Height="24" Id="FileDialog" Image="18" Name="cyFileDialog" Title="File&#32;Dialog" Version="1000" Width="24"/>
+		<Component Height="24" Id="File" Image="25" Name="cyFile" Title="File" Version="1000" Width="24"/>
+		<Component Height="97" Id="List" Image="6" Name="cyListBox" Title="List" Version="1000" Width="145"/>
+		<Component Height="21" Id="Combo" Image="5" Name="cyComboEx" Title="ComboBox" Version="1000" Width="145"/>
+		<Component Height="21" Id="Radio" Image="7" Name="cyRadio" Title="Radio" Version="1000" Width="113"/>
+		<Component Height="72" Id="TextArea" Image="16" Name="cyTextArea" Title="Text&#32;Area" Version="1000" Width="185"/>
+		<Component Height="17" Id="Progressbar" Image="31" Name="cyProgressbar" Title="Progressbar" Version="1000" Width="150"/>
+		<Component Height="97" Id="TreeView" Image="11" Module="CyTreeView" Name="cyTreeView" Title="Tree&#32;View" Version="1000" Width="121"/>
+		<Component Height="120" Id="Grid" Image="1" Module="CyGrid" Name="cyGrid" Title="Grid" Version="1000" Width="320"/>
+		<Component Height="105" Id="Image" Image="9" Name="cyImage" Title="Image" Version="1000" Width="105"/>
+		<Component Height="21" Id="Calendar" Image="13" Module="CyCalendarEx" Name="cyCalendarEx" Title="Calendar" Version="1000" Width="145"/>
+		<Component Height="193" Id="Div" Image="20" Name="cyDiv" Title="Division" Version="1000" Width="289"/>
+		<Component Id="PopupDiv" Image="54" Name="CyPopupDiv" Title="Popup&#32;Div" Version="1000"/>
+		<Component Height="193" Id="Tab" Image="12" Name="cyTab" Title="Tab" Version="1000" Width="289"/>
+		<Component Height="260" Id="WebBrowser" Image="24" Module="CyWebBrowser" Name="cyWebBrowser" Title="WebBrowser" Version="1000" Width="364"/>
+		<Component Height="168" Id="swFlash" Image="27" Module="CySWFlash" Name="cySWFlash" Title="Flash" Version="1000" Width="248"/>
+		<Component Height="24" Id="MenuBar" Image="32" Module="CyMenuBar" Name="cyMenuBar" Title="MenuBar" Version="1000" Width="192"/>
+		<Component Height="50" Id="Split" Image="55" Module="CySplit" Name="cySplit" Title="Split" Version="1000" Width="8"/>
+		<Component Height="8" Id="SplitJoint" Image="56" Module="CySplitU" Name="cySplitJoint" Title="SplitJoint" Version="1000" Width="8"/>
+		<Component Height="50" Id="Sign" Image="57" Module="CySign" Name="cySign" Title="Sign" Version="1000" Width="50"/>
+		<Component Height="100" Id="FusionChart3" Image="78" Module="CyFusionChart3" Name="CyFusionChart3" Title="FusionChart3" Version="1000" Width="100"/>
+		<Component Height="100" Id="TeeChart" Image="23" Module="CyTeeChart" Name="CyTeeChart" Title="TeeChart" Version="1000" Width="100"/>
+		<Component Height="100" Id="ExtExcelExport" Image="62" Module="CyExtExcelExport" Name="CyExtExcelExport" Title="ExtExcelExport" Version="1000" Width="100"/>
+		<Component Height="100" Id="CyXChart" Image="17" Module="CyXChart" Name="CyXChart" Title="XChart" Version="1000" Width="100"/>
+		<Component Height="50" Id="ChartFX" Image="57" Module="CyAxChartFx" Name="CyAxChartFx" Title="ChartFx" Version="1000" Width="50"/>
+		<Component Height="100" Id="multipart_http" Image="89" Module="CyHttpFile" Name="CyHttpFile" Title="multipart_http" Version="1000" Width="100"/>
+	</container>
+	<protocols version="1000">
+		<protocol id="file" name="cyHttpAdp" version="1000"/>
+		<protocol id="http" name="cyHttpAdp" version="1000"/>
+		<protocol id="https" name="cyHttpAdp" version="1000"/>
+	</protocols>
+	<AppGroups>
+		<AppGroup CodePage="utf-8" Language="0" Prefix="main" Type="Form" Version="1.0">
+			<script Baseurl="./main/" CacheLevel="none" Ext="xml" ScriptUrl="./main/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="0" Prefix="func" Type="Form" Version="1.0">
+			<script Baseurl="./func/" CacheLevel="none" Ext="xml" ScriptUrl="./func/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="0" Prefix="semi_bulk" Type="Form" Version="1.0">
+			<script Baseurl="./semi/bulk/" CacheLevel="none" Ext="xml" ScriptUrl="./semi/bulk/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="0" Prefix="semi_chart" Type="Form" Version="1.0">
+			<script Baseurl="./semi/chart/" CacheLevel="none" Ext="xml" ScriptUrl="./semi/chart/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="0" Prefix="semi_excel" Type="Form" Version="1.0">
+			<script Baseurl="./semi/excel/" CacheLevel="none" Ext="xml" ScriptUrl="./semi/excel/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="0" Prefix="semi_func" Type="Form" Version="1.0">
+			<script Baseurl="./semi/func/" CacheLevel="none" Ext="xml" ScriptUrl="./semi/func/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="0" Prefix="semi_grid" Type="Form" Version="1.0">
+			<script Baseurl="./semi/grid/" CacheLevel="none" Ext="xml" ScriptUrl="./semi/grid/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="0" Prefix="semi_main" Type="Form" Version="1.0">
+			<script Baseurl="./semi/main/" CacheLevel="none" Ext="xml" ScriptUrl="./semi/main/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="1042" Prefix="semi_flash" Type="form" Version="1000">
+			<Script Baseurl="./semi/flash/" ScriptUrl="./semi/flash/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="1042" Prefix="semi_etc" Type="form" Version="1000">
+			<Script Baseurl="./semi/etc/" ScriptUrl="./semi/etc/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="1042" Prefix="PM" Type="form" Version="1000">
+			<Script Baseurl="./PM/" ScriptUrl="./PM/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="1042" Prefix="DefApp" Type="form" Version="1000">
+			<Script Baseurl="./DefApp/Win32/" ScriptUrl="./DefApp/Win32/"/>
+		</AppGroup>
+		<AppGroup CodePage="utf-8" Language="1042" Prefix="lib" Type="form" Version="1000">
+			<Script Baseurl="./Script/" ScriptUrl="./Script/"/>
+		</AppGroup>
+		<DataGroup Baseurl="http://127.0.0.1:8080/egovframework-basicsample-web/miplatform" CacheLevel="none" CodePage="utf-8" Language="0" Prefix="svc" Streamver="4000" TrMethod="normal" Type="JSP" Version="1000"/>
+		<DataGroup Baseurl="http://127.0.0.1/web" CodePage="utf-8" Language="0" Prefix="svcLotte" Streamver="4000" TrMethod="normal" Type="JSP" Version="1000"/>
+		<DataGroup Baseurl="http://127.0.0.1:8080/test/servlet/default_service?service_id=dbm_svc_get_svclist" CodePage="utf-8" Language="0" Prefix="datagrp0" Streamver="4000" TrMethod="normal" Type="JSP" Version="1000"/>
+	</AppGroups>
+	<UserColor User0="#eff2f9" User1="#c0c7d6" User10="#e2e6f1" User11="white" User12="#f7f7f7" User13="#aec1d3" User14="#132c71" User15="#c5d4e2" User16="#132c71" User17="#dee0e6" User18="#2c0377" User19="#e1e4f0" User2="#334286" User20="#8302a0" User21="#bbcfe3" User22="#dcf0f8" User3="#f4f4f4" User31="#002043" User32="#747474" User33="#b7c2cc" User34="#cfcfcf" User4="#e5e5e5" User41="#249494" User42="white" User43="#3a8c75" User44="#2525a0" User45="#cc0000" User46="#acbea0" User47="#f1f1f1" User48="#249494" User5="#3f3f3f" User55="#12386a" User56="#12386a" User6="white" User60="#1d3354" User7="#d4d9de" User8="white" User9="#eff2f9"/>
+	<GlobalStyle>
+		<style Font="돋움체,9" ID="B_status" TextColor="black"/>
+		<style Font="돋움체,9" ID="B_tab" TextColor="black"/>
+		<style FixedFont="Tahoma,9" Font="돋움체,9" ID="Bar_______________________" TextColor="white"/>
+		<style DisableColor="#999999" FixedFont="돋움,9" Font="돋움,9" ID="cm_btn" TextColor="#333333"/>
+		<style FixedFont="돋움,9,Bold" Font="돋움,9" ID="cm_message" TextColor="#132c71"/>
+		<style FixedFont="돋움,9,Bold" Font="돋움,9,Bold" ID="cm_message_title" TextColor="#132c71"/>
+		<style FixedFont="돋움,9" Font="돋움,9" ID="cm_point" TextColor="#cc0000"/>
+		<style FixedFont="돋움,9" Font="돋움,9" ID="cm_text" TextColor="#333333"/>
+		<style FixedFont="돋움,9,Bold" Font="돋움,9,Bold" ID="cm_title_main" TextColor="#132c71"/>
+		<style FixedFont="돋움,9,Bold" Font="돋움,9,Bold" ID="cm_title_sub" TextColor="#003d3d"/>
+		<style FixedFont="돋움,9" Font="돋움,9" ID="cm_txt" TextColor="#333333"/>
+		<style BorderColor="#afbac5" DisablebkColor="#eeeeee" DisableColor="#747474" EditColor="white" FixedFont="돋움,9" Font="돋움,9" ID="if_cal" TextColor="#333333" WindowColor="#f9f9f0"/>
+		<style BorderColor="#f7f7f7" DisablebkColor="#f7f7f7" DisableColor="#747474" FixedFont="돋움,9" Font="돋움,9" Formcolor="#f7f7f7" ID="if_check" TextColor="#333333"/>
+		<style BorderColor="#afbac5" DisablebkColor="#eeeeee" DisableColor="#747474" EditColor="white" FixedFont="돋움,9" Font="돋움,9" ID="if_input" TextColor="#333333"/>
+		<style BorderColor="#afc1c5" FixedFont="돋움,9" Font="돋움,9" Formcolor="#c8dfe3" ID="if_lable" TextColor="black"/>
+		<style BorderColor="#afc1c5" FixedFont="돋움,9" Font="돋움,9" Formcolor="#9fe0be" ID="if_lable_s" TextColor="black"/>
+		<style BorderColor="#afbac5" DisablebkColor="#f7f7f7" DisableColor="#747474" FixedFont="돋움,9" Font="돋움,9" Formcolor="#f7f7f7" ID="if_radio" TextColor="#333333"/>
+		<style Font="돋움체,9,Bold" ID="L_btn" TextColor="#5e7296"/>
+		<style BorderColor="#6d7fa6" Font="돋움체,9" ID="L_combo" TextColor="black"/>
+		<style BorderColor="#6d7fa6" Font="돋움체,9" ID="L_edit" TextColor="black"/>
+		<style Font="Tahoma,8,Bold" ID="L_menu_title" TextColor="white"/>
+		<style BorderColor="#cacaca" ID="Login_edit" TextColor="black"/>
+		<style Font="돋움체,9,Bold" ID="M_btn_style1" TextColor="#4d4d4d"/>
+		<style Font="돋움체,9" ID="M_btn_style2" TextColor="white"/>
+		<style Font="돋움체,8" ID="M_btn_table" TextColor="white"/>
+		<style BorderColor="#c3c3c3" DisablebkColor="#eae7ea" DisableColor="#686868" Font="돋움체,9" ID="M_cal" TextColor="black"/>
+		<style DisablebkColor="white" DisableColor="#686868" Font="돋움체,9" ID="M_check" TextColor="black"/>
+		<style DisablebkColor="user3" DisableColor="#686868" Font="돋움체,9" Formcolor="user3" ID="M_check_panel" TextColor="black"/>
+		<style BorderColor="#c3c3c3" DisablebkColor="#eae7ea" DisableColor="#686868" Font="돋움체,9" ID="M_combo" TextColor="black"/>
+		<style BorderColor="#c3c3c3" DisablebkColor="#eae7ea" DisableColor="#686868" Font="돋움체,9" ID="M_edit" TextColor="black"/>
+		<style BorderColor="#dbdbdb" Face3dColor="#e2eaf4" Font="돋움체,9" HilightColor="white" HilightTextColor="#ec6941" ID="M_grid" Light3dColor="#dbdbdb" TextColor="black"/>
+		<style BorderColor="#dbdbdb" Font="돋움체,9" Formcolor="#e7e7e7" ID="M_list_text" TextColor="#616f74"/>
+		<style DisablebkColor="white" DisableColor="#686868" Font="돋움체,9" ID="M_radio" TextColor="black"/>
+		<style DisablebkColor="#f4f4f4" DisableColor="#686868" Font="돋움체,9" Formcolor="user3" ID="M_radio_panel" TextColor="black"/>
+		<style Font="돋움체,9,Bold" ID="M_search_btn" TextColor="white"/>
+		<style BorderColor="#bdc0c6" DisablebkColor="#eae7ea" DisableColor="#686868" Font="돋움체,9" ID="M_search_cal" TextColor="black"/>
+		<style DisablebkColor="user0" DisableColor="#686868" Font="돋움체,9" Formcolor="user0" ID="M_search_check" TextColor="black"/>
+		<style BorderColor="#bdc0c6" DisablebkColor="#eae7ea" DisableColor="#686868" Font="돋움체,9" ID="M_search_combo" TextColor="black"/>
+		<style BorderColor="#bdc0c6" DisablebkColor="#eae7ea" DisableColor="#686868" Font="돋움체,9" ID="M_search_edit" TextColor="black"/>
+		<style DisablebkColor="user0" DisableColor="#686868" Font="돋움체,9" Formcolor="user0" ID="M_search_radio" TextColor="black"/>
+		<style BorderColor="#bdc0c6" DisablebkColor="#eae7ea" DisableColor="#686868" Font="돋움체,9" ID="M_search_spin" TextColor="black"/>
+		<style Font="돋움체,9,Bold" ID="M_search_title" TextColor="#484e6a"/>
+		<style BorderColor="#c3c3c3" DisablebkColor="#eae7ea" DisableColor="#686868" Font="돋움체,9" ID="M_spin" TextColor="black"/>
+		<style Font="맑은&#32;고딕,9,Bold" ID="M_tab" TextColor="#969696"/>
+		<style BorderColor="#c3c3c3" Font="돋움체,9,Bold" ID="M_tab1" TextColor="#a5a5a5"/>
+		<style BorderColor="#c2c2c2" Font="돋움체,9,Bold" ID="M_tab2" TextColor="#b0afaf"/>
+		<style BorderColor="#dbdbdb" ID="M_table_listbg"/>
+		<style BorderColor="#dbdbdb" Formcolor="#e7e7e7" ID="M_table_title" TextColor="#616f74"/>
+		<style Font="돋움체,9" ID="M_text" TextColor="black"/>
+		<style Font="돋움체,9" ID="M_text_comment" TextColor="#aaaaaa"/>
+		<style Font="돋움체,9" ID="M_text_comment_red" TextColor="#eb6100"/>
+		<style EditColor="user0" Font="돋움체,11,Bold" Formcolor="user0" ID="M_title_1depth" TextColor="black"/>
+		<style Font="돋움체,9,Bold" ID="M_title_2depth" TextColor="#5968ab"/>
+		<style Font="돋움체,9" ID="M_title_3depth" TextColor="black"/>
+		<style FixedFont="돋움,10,Bold" Font="돋움,10,Bold" ID="po_title_main" TextColor="#fffed1"/>
+		<style BorderColor="#afbac5" DisablebkColor="#eeeeee" DisableColor="#747474" EditColor="white" FixedFont="돋움,9" Font="돋움,9" ID="se_cal" TextColor="#333333" WindowColor="#f9f9f0"/>
+		<style BorderColor="#3a8c75" FixedFont="돋움,9" Font="돋움,9" ID="se_cal_02" TextColor="#333333" WindowColor="#f9f9f0"/>
+		<style FixedFont="돋움,9" Font="돋움,9" ID="se_cal_day" TextColor="#543b34"/>
+		<style Face3dColor="#3a8c75" FixedFont="돋움,9,Bold" Font="돋움,9,Bold" ID="se_cal_head" TextColor="white"/>
+		<style DisableColor="#dbebd0" FixedFont="돋움,9" Font="돋움,9" ID="se_cal_week" WindowColor="#6f9c51"/>
+		<style BorderColor="#c5d4e2" DisablebkColor="#eeeeee" DisableColor="#999999" FixedFont="돋움,9" Font="돋움,9" Formcolor="white" ID="se_check" TextColor="#333333"/>
+		<style FixedFont="돋움,9" Font="돋움,9" ID="se_check_E" TextColor="#cc6600"/>
+		<style BorderColor="user21" DisablebkColor="#eeeeee" DisableColor="#999999" Face3dColor="black" FixedFont="돋움,9" Font="돋움,9" HilightColor="user22" HilightTextColor="black" ID="se_grid" Light3dColor="user21" TextColor="black" WindowColor="white"/>
+		<style BorderColor="#afbac5" DisablebkColor="#eeeeee" DisableColor="#999999" FixedFont="돋움,9" Font="돋움,9" Formcolor="white" ID="se_input" TextColor="#002043"/>
+		<style BorderColor="#afbac5" DisablebkColor="#eeeeee" EditColor="#e2eef1" FixedFont="돋움,9" Font="돋움,9" ID="se_input_E" TextColor="#333333"/>
+		<style BorderColor="#720003" DisablebkColor="#eeeeee" DisableColor="#999999" FixedFont="돋움,9" Font="돋움,9" Formcolor="#f5edea" ID="se_input_sum" TextColor="#720003"/>
+		<style BorderColor="#c5d4e2" FixedFont="돋움,9" Font="돋움,9" Formcolor="#aec1d3" ID="se_lable" TextColor="#002043"/>
+		<style BorderColor="#c5d4e2" FixedFont="돋움,9" Font="돋움,9" Formcolor="#c5d4e2" ID="se_lable_02" TextColor="#002043"/>
+		<style BorderColor="#c5d4e2" FixedFont="돋움,9" Font="돋움,9" Formcolor="#dfe6ee" ID="se_lable_03" TextColor="#002043"/>
+		<style BorderColor="#cc0000" FixedFont="돋움,9" Font="돋움,9" Formcolor="#daedf4" ID="se_lable_E" TextColor="#495d80"/>
+		<style FixedFont="돋움,11" Font="돋움,11" ID="se_lable_E_02" TextColor="#cc0000"/>
+		<style BorderColor="#c5d4e2" FixedFont="돋움,9" Font="돋움,9" Formcolor="#aec1d3" ID="se_lable_G" TextColor="#002043"/>
+		<style DkshadowColor="#adc5e4" Face3dColor="black" FixedFont="돋움,10,Bold" Font="돋움,10,Bold" Hilight3dColor="#a5b3c5" ID="se_lable_G_02" ShadowColor="#193050" TextColor="#fff899"/>
+		<style BorderColor="#aaaaaa" FixedFont="돋움,10,Bold" Font="돋움,10,Bold" ID="se_lable_G_03" TextColor="green"/>
+		<style FixedFont="돋움,9" Font="돋움,9" ID="se_lable_P" TextColor="#132c71"/>
+		<style BorderColor="#b7cbe3" FixedFont="돋움,9" Font="돋움,9" Formcolor="#eef4f6" ID="se_lable_S" TextColor="#495d80"/>
+		<style BorderColor="#f4edea" FixedFont="돋움,9" Font="돋움,9" Formcolor="#f4edea" ID="se_lable_sum" TextColor="#720003"/>
+		<style FixedFont="돋움,9" Font="돋움,9" ID="se_lable_text" TextColor="#720003"/>
+		<style BorderColor="#c5d4e2" DisablebkColor="white" DisableColor="#999999" FixedFont="돋움,9" Font="돋움,9" Formcolor="white" ID="se_radio" TextColor="#333333"/>
+		<style BorderColor="white" FixedFont="돋움,9" Font="돋움,9" ID="se_radio_E" TextColor="#cc6600"/>
+		<style BorderColor="#3cafda" FixedFont="돋움,9" Font="돋움,9" Formcolor="white" ID="se_read" TextColor="#333333"/>
+		<style BorderColor="#132c71" FixedFont="돋움,9" Font="돋움,9" Formcolor="white" ID="se_tab" TextColor="#002043"/>
+		<style BorderColor="white" FixedFont="돋움,9" Font="돋움,9" ID="se_text" TextColor="#002043"/>
+		<style Font="맑은&#32;고딕,10,Bold" ID="T_menu" TextColor="#4d4d4d"/>
+		<style FixedFont="Tahoma,9" Font="돋움체,9" ID="T_submenu" TextColor="white"/>
+		<style Font="맑은&#32;고딕,14,Bold" ID="T_sysinfo" TextColor="#acc3e8"/>
+		<style Font="맑은&#32;고딕,9" ID="T_userinfo" TextColor="#acc3e8"/>
+	</GlobalStyle>
+	<Resource Ext="res" Url="./img/img.res" Version="1000"/>
+	<Variables>
+		<Var Id="G_ADMIN" Type="Global" Value="L"/>
+		<Var Id="G_TYPE" Type="Global" Value="L"/>
+		<Var Id="gsDatagroup" Type="Global"/>
+		<Var Id="SESSIONID" Type="Share" Value="L"/>
+		<Var Id="gsUserId" Type="Global"/>
+		<Var Id="gsUserNm" Type="Global"/>
+		<Var Id="gsRole" Type="Global"/>
+	</Variables>
+	<DockBars>
+		<DockBar align="top" Border="false" bottom="105" Id="Frame_Top" InitURL="main::top.xml" top="0"/>
+		<DockBar align="left" Border="false" Id="Frame_Left" InitURL="main::left.xml" left="0" right="22" top="80"/>
+		<DockBar align="bottom" Border="false" bottom="753" Id="Frame_Bottom" InitURL="main::bottom.xml" top="711"/>
+	</DockBars>
+	<MDIInfo>
+		<Forms>
+			<Form ID="MDIForm0"/>
+		</Forms>
+		<Shortcuts></Shortcuts>
+	</MDIInfo>
+	<Script><![CDATA[
+
+function Global_Error(obj,nErrorCode,strErrorMsg)
+{
+	// ESC key Down시 수행중인 통신을 중단을 막는 기능입니다.
+	// Global의 EnforcedIgnorInput 속성을 True로 설정, OnError Event에 하기(red,Bold) 내용을 적용하면 됩니다.
+
+	trace("[f_GlobalOnError]");
+	trace("nErrorCode : " + nErrorCode);
+	trace("strErrorMsg : " + strErrorMsg);
+	
+	// ESC LOCK
+	if(toNumber(nErrorCode) == -2085612799) {
+		return true;
+	}
+}
+
+function fn_data(str_msg)
+{
+	Doc_bottom.fn_setMessage("aaa");
+}
+
+
+function Global_OnKeyDown(obj,objSenderObj,nChar,bShift,bControl,bAlt,nLLParam,nHLParam)
+{
+	trace("Global KeyDown : " + bControl + "/" + nChar);
+	
+	if( bControl == 1 )
+	{
+		if( nChar == "113" )
+		{
+			// F2
+			Doc_top.fn_menufixcontrol();
+		}
+	} 
+	else if( nChar == "113" )
+	{
+		// F2
+		Doc_left.img_hidden.Click();
+	} 
+	else if( nChar == "114" )
+	{
+		// F3
+		Doc_left.imgMymenu.Click();
+	}
+
+}
+
+
+/////////////////////////////////////////////////////
+// MDI 윈도우 실행 ..
+function gfn_OpenChildWindow(str_prefix, str_url, str_title, str_type, str_size, str_Auth, str_menuid)
+{	
+	var int_pos, str_formid = "";
+		
+	var ArgStr = "";
+		ArgStr  = "arg_Prefix=" + quote(str_prefix);
+		ArgStr += " arg_Url=" + quote(str_url);
+		ArgStr += " arg_Title=" + quote(str_title);
+		ArgStr += " arg_Size=" + quote(str_size);
+		ArgStr += " arg_Auth=" + quote(str_Auth);
+		ArgStr += " arg_menuid=" + quote(str_menuid);
+		ArgStr += " arg_formid=" + quote(str_url);
+		
+	if ((str_prefix != null) && (str_url != null)) 
+	{	
+		str_formid = g_ScreenNo + "_" + str_url;
+		
+		var obj_form;
+		
+		//var obj_form = global.windows[str_formid];
+		obj_form = AllWindows(str_formid);
+		
+		if( obj_form.count == 0 ) 
+		{
+			//alert("잘못된 선택...  체크");
+			//trace("New : " + str_formid);
+		} else
+		{
+			//alert("이미 열려있습니다.");
+			obj_form[0].SetFocus();
+			return;
+		}
+		
+		/*
+		if( Doc_top.chkNewWindow.Value == true )
+		{
+			Open("pub_main::work_form_w.xml", ArgStr, 995, 545, "OpenStyle=Normal,Resize=true,TaskBar=true", 0, 0);
+		} 
+		else
+		{
+			if( str_prefix == "IE" )
+				NewWindow(str_formid, "pub_main::work_form_ie.xml", ArgStr, 995, 545, "OpenStyle=Normal,Instance=Single", 0, 0);
+			else
+				NewWindow(str_formid, "pub_main::work_form_w.xml", ArgStr, 995, 545, "OpenStyle=Normal,Instance=Single", 0, 0);
+		}
+		//NewWindow(str_formid, "pub_main::work_form.xml", ArgStr, 775, 578, "OpenStyle=Normal,Instance=Single", 0, 0);
+		//NewWindow(str_formid, "pub_main::work_form_notitle.xml", ArgStr, 995, 545, "OpenStyle=Normal,Instance=Single,Title=false,OverLapped=false", 0, 0);
+		*/
+		
+		var strUrl = str_prefix + "::" + str_url;
+		
+		//NewWindow(str_formid, strUrl, "", 995, 545, "OpenStyle=Normal,Instance=Single,Title=false,OverLapped=false", 0, 0);
+		////NewWindow(str_url, strUrl, "", 995, 545, "OpenStyle=Normal,Instance=Single,Title=false,OverLapped=false", 0, 0);
+		NewWindow(str_url, strUrl, "", 995, 400, "OpenStyle=Max,Instance=Single", 0, 0);
+		
+		// 폼이 열릴떄 ... Open Menu 등록
+		gfn_OpenMenuAdd( str_prefix, str_url, str_title, str_formid );
+		
+	}
+}
+
+function gfn_menufind(arg_menuid)
+{
+	for ( wi = 0; wi < global.windows.count ; wi ++)
+	{
+		if (global.windows[wi].id == arg_menuid) 
+		{
+			global.windows[wi].SetFocus();
+			//global.windows[wi].fn_LoadMenu(arg_value1);
+			return false;
+		}
+	}
+	return true;
+}
+
+
+// Open 메뉴 추가...
+function gfn_OpenMenuAdd( str_prefix, str_url, str_title, str_formid )
+{
+	var result, MacCnt;
+	var nRow;
+	
+	nRow = gds_OpenMenu.FindRow("page_id", str_formid);
+	if( nRow >= 0 )
+	{
+		return;
+	} else
+	{
+		nRow = gds_OpenMenu.AddRow();
+		
+		gds_OpenMenu.SetColumn(nRow,"page_id", str_formid );
+		//gds_OpenMenu.SetColumn(nRow,"page_nm", str_title );
+		gds_OpenMenu.SetColumn(nRow,"page_prefix", str_prefix );
+		gds_OpenMenu.SetColumn(nRow,"page_url", str_url );
+		
+		if( str_url == str_formid )
+			gds_OpenMenu.SetColumn(nRow,"page_nm", str_title);
+		else
+			gds_OpenMenu.SetColumn(nRow,"page_nm", str_title + "(조회)" );
+		
+				
+		Global.Frame_Bottom.fn_tab_add(str_url, str_title);
+
+		
+		//Global.Doc_msg2.fn_tab_add(str_url,str_title);
+	}
+}
+
+// Open 메뉴 삭제...
+function gfn_OpenMenuDel( str_url )
+{
+	var nRow;
+	
+	//trace("g_OpenMenuDel str_url : " + str_url );
+	
+	nRow = gds_OpenMenu.FindRow("page_id", str_url);
+	if( nRow >= 0 )
+	{
+		gds_OpenMenu.DeleteRow(nRow);
+		//Global.Doc_msg.st_OpenForm.Text = gds_OpenMenu.rowcount + " 개의 폼이 실행되고 있습니다.";
+		Global.Doc_msg.fn_tab_del(str_url);
+	}
+}
+
+function gfn_ActiveMenu(arg_id)
+{
+	//Global.Doc_top.div_openform.fn_tab_focus(arg_id);
+}
+
+function gfn_setMessage(v_msg, msgcode, err_code)
+{
+	Global.Doc_msg.fn_setMessage(v_msg, msgcode, err_code);
+}
+]]></Script>
+	<Datasets>
+		<Dataset DataSetType="Dataset" Id="gds_OpenMenu">
+			<Contents>
+				<colinfo id="page_nm" size="256" type="STRING"/>
+				<colinfo id="page_url" size="256" type="STRING"/>
+				<colinfo id="page_prefix" size="256" type="STRING"/>
+				<colinfo id="page_msg" size="256" type="STRING"/>
+				<colinfo id="page_id" size="256" type="STRING"/>
+			</Contents>
+		</Dataset>
+		<Dataset DataSetType="Dataset" Id="gds_my_menu">
+			<Contents>
+				<colinfo id="MENUID" size="15" summ="default" type="STRING"/>
+				<colinfo id="MENUNAME" size="160" summ="default" type="STRING"/>
+				<colinfo id="MENUTYPE" size="10" summ="default" type="STRING"/>
+				<colinfo id="MENULEVEL" size="1" summ="default" type="STRING"/>
+				<colinfo id="MENUOPENTYPE" size="10" summ="default" type="STRING"/>
+				<colinfo id="PREFIX" size="15" summ="default" type="STRING"/>
+				<colinfo id="FORMID" size="20" summ="default" type="STRING"/>
+				<colinfo id="FORMUSE" size="1" summ="default" type="STRING"/>
+				<colinfo id="FORMSIZE" size="1" summ="default" type="STRING"/>
+				<colinfo id="BTNAUTH" size="15" summ="default" type="STRING"/>
+				<record>
+					<BTNAUTH>000000010000000</BTNAUTH>
+					<FORMID></FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>0</FORMUSE>
+					<MENUID>01000001</MENUID>
+					<MENULEVEL>0</MENULEVEL>
+					<MENUNAME>My&#32;Menu</MENUNAME>
+					<MENUOPENTYPE></MENUOPENTYPE>
+					<MENUTYPE></MENUTYPE>
+					<PREFIX></PREFIX>
+				</record>
+			</Contents>
+		</Dataset>
+		<Dataset DataSetType="Dataset" Id="gds_menu">
+			<Contents>
+				<colinfo id="MENUID" size="15" summ="default" type="STRING"/>
+				<colinfo id="MENUNAME" size="160" summ="default" type="STRING"/>
+				<colinfo id="MENUTYPE" size="10" summ="default" type="STRING"/>
+				<colinfo id="MENULEVEL" size="1" summ="default" type="STRING"/>
+				<colinfo id="MENUOPENTYPE" size="10" summ="default" type="STRING"/>
+				<colinfo id="PREFIX" size="15" summ="default" type="STRING"/>
+				<colinfo id="FORMID" size="20" summ="default" type="STRING"/>
+				<colinfo id="FORMUSE" size="1" summ="default" type="STRING"/>
+				<colinfo id="FORMSIZE" size="1" summ="default" type="STRING"/>
+				<colinfo id="BTNAUTH" size="15" summ="default" type="STRING"/>
+				<record>
+					<BTNAUTH>000000010000000</BTNAUTH>
+					<FORMID></FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>0</FORMUSE>
+					<MENUID>01000000</MENUID>
+					<MENULEVEL>0</MENULEVEL>
+					<MENUNAME>그리드</MENUNAME>
+					<MENUOPENTYPE></MENUOPENTYPE>
+					<MENUTYPE></MENUTYPE>
+					<PREFIX></PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>GridBasic.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000011</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>기본기능</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_grid</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>GridRuleApply.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000012</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>디자인그리드</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_grid</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>GridSum.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000013</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>합계</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_grid</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH></BTNAUTH>
+					<FORMID>MultiSorting.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000014</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>멀티Sort</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_grid</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH></BTNAUTH>
+					<FORMID>Pivoting.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000015</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Pivot그리드</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_grid</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>000000010000000</BTNAUTH>
+					<FORMID></FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>0</FORMUSE>
+					<MENUID>02000000</MENUID>
+					<MENULEVEL>0</MENULEVEL>
+					<MENUNAME>Pilot</MENUNAME>
+					<MENUOPENTYPE></MENUOPENTYPE>
+					<MENUTYPE></MENUTYPE>
+					<PREFIX></PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>view100.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>02000011</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>프로젝트&#32;상세</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>PM</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>view200.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>02000012</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>프로젝트&#32;종합현황</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>PM</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>view300.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>02000013</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>정보화&#32;통계관리</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>PM</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>000000010000000</BTNAUTH>
+					<FORMID></FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>0</FORMUSE>
+					<MENUID>03000000</MENUID>
+					<MENULEVEL>0</MENULEVEL>
+					<MENUNAME>기타</MENUNAME>
+					<MENUOPENTYPE></MENUOPENTYPE>
+					<MENUTYPE></MENUTYPE>
+					<PREFIX></PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>excelImportExport.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000011</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Excel</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_excel</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>bigData.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000012</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>대용량</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_bulk</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>flash_main.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000013</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Flash연동그래프</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_flash</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>flash_map.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000014</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>FlashMap</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_flash</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>silverlight_Form.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000015</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Silveright연동</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_etc</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>Split_Form.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000015</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>화면&#32;Split</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_etc</PREFIX>
+				</record>
+			</Contents>
+		</Dataset>
+		<Dataset DataSetType="Dataset" Id="gds_menu_old">
+			<Contents>
+				<colinfo id="MENUID" size="15" summ="default" type="STRING"/>
+				<colinfo id="MENUNAME" size="160" summ="default" type="STRING"/>
+				<colinfo id="MENUTYPE" size="10" summ="default" type="STRING"/>
+				<colinfo id="MENULEVEL" size="1" summ="default" type="STRING"/>
+				<colinfo id="MENUOPENTYPE" size="10" summ="default" type="STRING"/>
+				<colinfo id="PREFIX" size="15" summ="default" type="STRING"/>
+				<colinfo id="FORMID" size="20" summ="default" type="STRING"/>
+				<colinfo id="FORMUSE" size="1" summ="default" type="STRING"/>
+				<colinfo id="FORMSIZE" size="1" summ="default" type="STRING"/>
+				<colinfo id="BTNAUTH" size="15" summ="default" type="STRING"/>
+				<record>
+					<BTNAUTH>000000010000000</BTNAUTH>
+					<FORMID></FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>0</FORMUSE>
+					<MENUID>01000000</MENUID>
+					<MENULEVEL>0</MENULEVEL>
+					<MENUNAME>그리드</MENUNAME>
+					<MENUOPENTYPE></MENUOPENTYPE>
+					<MENUTYPE></MENUTYPE>
+					<PREFIX></PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>GridBasic.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000011</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>기본기능</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_grid</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>GridRuleApply.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000012</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>디자인그리드</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_grid</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>GridSum.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000013</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>합계</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_grid</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH></BTNAUTH>
+					<FORMID>MultiSorting.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000014</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>멀티Sort</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_grid</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH></BTNAUTH>
+					<FORMID>Pivoting.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000015</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Pivot그리드</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_grid</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>000000010000000</BTNAUTH>
+					<FORMID></FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>0</FORMUSE>
+					<MENUID>02000000</MENUID>
+					<MENULEVEL>0</MENULEVEL>
+					<MENUNAME>챠트</MENUNAME>
+					<MENUOPENTYPE></MENUOPENTYPE>
+					<MENUTYPE></MENUTYPE>
+					<PREFIX></PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>chart_10.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>02000011</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>XChart</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_chart</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>chart_20.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>02000012</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>FushinChart</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_chart</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>chart_30.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>02000013</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Pop_Chart</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_chart</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>000000010000000</BTNAUTH>
+					<FORMID></FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>0</FORMUSE>
+					<MENUID>03000000</MENUID>
+					<MENULEVEL>0</MENULEVEL>
+					<MENUNAME>기타</MENUNAME>
+					<MENUOPENTYPE></MENUOPENTYPE>
+					<MENUTYPE></MENUTYPE>
+					<PREFIX></PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>excelImportExport.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000011</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Excel</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_excel</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>bigData.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000012</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>대용량</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_bulk</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>flash_main.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000013</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Flash연동그래프</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_flash</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>flash_map.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000014</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>FlashMap</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_flash</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>silverlight_Form.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000015</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Silveright연동</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_etc</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>Split_Form.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>03000015</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>화면&#32;Split</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>semi_etc</PREFIX>
+				</record>
+			</Contents>
+		</Dataset>
+		<Dataset DataSetType="Dataset" Id="gds_menu_ui">
+			<Contents>
+				<colinfo id="MENUID" size="15" summ="default" type="STRING"/>
+				<colinfo id="MENUNAME" size="160" summ="default" type="STRING"/>
+				<colinfo id="MENUTYPE" size="10" summ="default" type="STRING"/>
+				<colinfo id="MENULEVEL" size="1" summ="default" type="STRING"/>
+				<colinfo id="MENUOPENTYPE" size="10" summ="default" type="STRING"/>
+				<colinfo id="PREFIX" size="15" summ="default" type="STRING"/>
+				<colinfo id="FORMID" size="20" summ="default" type="STRING"/>
+				<colinfo id="FORMUSE" size="1" summ="default" type="STRING"/>
+				<colinfo id="FORMSIZE" size="1" summ="default" type="STRING"/>
+				<colinfo id="BTNAUTH" size="15" summ="default" type="STRING"/>
+				<record>
+					<BTNAUTH>000000010000000</BTNAUTH>
+					<FORMID></FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>0</FORMUSE>
+					<MENUID>01000000</MENUID>
+					<MENULEVEL>0</MENULEVEL>
+					<MENUNAME>UI&#32;기본형</MENUNAME>
+					<MENUOPENTYPE></MENUOPENTYPE>
+					<MENUTYPE></MENUTYPE>
+					<PREFIX></PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>lotteSampleList.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000011</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Single&#32;Pattern</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>DefApp</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>lotteSampleAll.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000012</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>Multi&#32;Pattern</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>DefApp</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>HttpFile.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>01000013</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>파일업로드</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>DefApp</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>000000010000000</BTNAUTH>
+					<FORMID></FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>0</FORMUSE>
+					<MENUID>02000000</MENUID>
+					<MENULEVEL>0</MENULEVEL>
+					<MENUNAME>Pilot</MENUNAME>
+					<MENUOPENTYPE></MENUOPENTYPE>
+					<MENUTYPE></MENUTYPE>
+					<PREFIX></PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>view100.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>02000011</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>프로젝트&#32;상세</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>PM</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>view200.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>02000012</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>프로젝트&#32;종합현황</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>PM</PREFIX>
+				</record>
+				<record>
+					<BTNAUTH>110101000000000</BTNAUTH>
+					<FORMID>view300.xml</FORMID>
+					<FORMSIZE>1</FORMSIZE>
+					<FORMUSE>1</FORMUSE>
+					<MENUID>02000013</MENUID>
+					<MENULEVEL>1</MENULEVEL>
+					<MENUNAME>정보화&#32;통계관리</MENUNAME>
+					<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+					<MENUTYPE>조회</MENUTYPE>
+					<PREFIX>PM</PREFIX>
+				</record>
+			</Contents>
+		</Dataset>
+	</Datasets>
+	<Variables>
+		<Var Id="g_ScreenNo" Type="Global"/>
+		<Var Id="g_DragRow" Type="Global"/>
+	</Variables>
+	<EXTAPIS>
+		<EXTAPI Name="ExtCommonApi" Version="1000"/>
+	</EXTAPIS>
+	<DataObjects></DataObjects>
+	<ServiceObjects></ServiceObjects>
+	<ActiveX Version="1000">
+		<Component Id="Shockwave" Image="27" Progid="ShockwaveFlash.ShockwaveFlash.10" Title="Shockwave" Version="1000"/>
+		<Component Id="Microsoft" Image="24" Progid="Shell.Explorer" Title="Microsoft" Version="1000"/>
+	</ActiveX>
+</ConnectGroup>

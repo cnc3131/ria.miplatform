@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="view300" Left="8" OnLoadCompleted="view300_OnLoadCompleted" PidAttrib="7" Title="정보화통계관리" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_trend">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="INT"/>
+					<colinfo id="col2" size="256" type="INT"/>
+					<colinfo id="col3" size="256" type="INT"/>
+					<record>
+						<col0>KOR</col0>
+						<col1>8780000</col1>
+						<col2>7500000</col2>
+						<col3>6400000</col3>
+					</record>
+					<record>
+						<col0>DNK</col0>
+						<col1>9200000</col1>
+						<col2>6680000</col2>
+						<col3>5300000</col3>
+					</record>
+					<record>
+						<col0>HSD</col0>
+						<col1>7100000</col1>
+						<col2>6800000</col2>
+						<col3>4800000</col3>
+					</record>
+					<record>
+						<col0>JPN</col0>
+						<col1>6900000</col1>
+						<col2>4800000</col2>
+						<col3>3800000</col3>
+					</record>
+					<record>
+						<col0>IND</col0>
+						<col1>5000000</col1>
+						<col2>4500000</col2>
+						<col3>3300000</col3>
+					</record>
+					<record>
+						<col0>FIN</col0>
+						<col1>6500000</col1>
+						<col2>7880000</col2>
+						<col3>6000000</col3>
+					</record>
+					<record>
+						<col0>FRA</col0>
+						<col1>9000000</col1>
+						<col2>4900000</col2>
+						<col3>3900000</col3>
+					</record>
+					<record>
+						<col0>ESP</col0>
+						<col1>5800000</col1>
+						<col2>7000000</col2>
+						<col3>6000000</col3>
+					</record>
+					<record>
+						<col0>SWE</col0>
+						<col1>5900000</col1>
+						<col2>3400000</col2>
+						<col3>2400000</col3>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_color">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="data" size="256" type="STRING"/>
+					<record>
+						<code>1</code>
+						<data>#d62601</data>
+					</record>
+					<record>
+						<code>2</code>
+						<data>#f26c4f</data>
+					</record>
+					<record>
+						<code>3</code>
+						<data>#f69679</data>
+					</record>
+					<record>
+						<code>4</code>
+						<data>#fcb29b</data>
+					</record>
+					<record>
+						<code>5</code>
+						<data>#facecf</data>
+					</record>
+					<record>
+						<code>6</code>
+						<data>#fdc689</data>
+					</record>
+					<record>
+						<code>7</code>
+						<data>#fff799</data>
+					</record>
+					<record>
+						<code>8</code>
+						<data>#a3d39c</data>
+					</record>
+					<record>
+						<code>9</code>
+						<data>#82ca9c</data>
+					</record>
+					<record>
+						<code>10</code>
+						<data>#65c0bb</data>
+					</record>
+					<record>
+						<code>11</code>
+						<data>#abbbf8</data>
+					</record>
+					<record>
+						<code>12</code>
+						<data>#7da7d9</data>
+					</record>
+					<record>
+						<code>13</code>
+						<data>#8393ca</data>
+					</record>
+					<record>
+						<code>14</code>
+						<data>#8781bd</data>
+					</record>
+					<record>
+						<code>15</code>
+						<data>#bd8cbf</data>
+					</record>
+					<record>
+						<code>16</code>
+						<data>#f49ac1</data>
+					</record>
+					<record>
+						<code>17</code>
+						<data>#fb7bb3</data>
+					</record>
+					<record>
+						<code>18</code>
+						<data>#a67c52</data>
+					</record>
+					<record>
+						<code>19</code>
+						<data>#9a5815</data>
+					</record>
+					<record>
+						<code>1</code>
+						<data>#d62601</data>
+					</record>
+					<record>
+						<code>2</code>
+						<data>#f26c4f</data>
+					</record>
+					<record>
+						<code>3</code>
+						<data>#f69679</data>
+					</record>
+					<record>
+						<code>4</code>
+						<data>#fcb29b</data>
+					</record>
+					<record>
+						<code>5</code>
+						<data>#facecf</data>
+					</record>
+					<record>
+						<code>6</code>
+						<data>#fdc689</data>
+					</record>
+					<record>
+						<code>7</code>
+						<data>#fff799</data>
+					</record>
+					<record>
+						<code>8</code>
+						<data>#a3d39c</data>
+					</record>
+					<record>
+						<code>9</code>
+						<data>#82ca9c</data>
+					</record>
+					<record>
+						<code>10</code>
+						<data>#65c0bb</data>
+					</record>
+					<record>
+						<code>11</code>
+						<data>#abbbf8</data>
+					</record>
+					<record>
+						<code>12</code>
+						<data>#7da7d9</data>
+					</record>
+					<record>
+						<code>13</code>
+						<data>#8393ca</data>
+					</record>
+					<record>
+						<code>14</code>
+						<data>#8781bd</data>
+					</record>
+					<record>
+						<code>15</code>
+						<data>#bd8cbf</data>
+					</record>
+					<record>
+						<code>16</code>
+						<data>#f49ac1</data>
+					</record>
+					<record>
+						<code>17</code>
+						<data>#fb7bb3</data>
+					</record>
+					<record>
+						<code>18</code>
+						<data>#a67c52</data>
+					</record>
+					<record>
+						<code>19</code>
+						<data>#9a5815</data>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_right">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="INT"/>
+					<colinfo id="col2" size="256" type="INT"/>
+					<colinfo id="col3" size="256" type="INT"/>
+					<record>
+						<col0>DOM</col0>
+						<col1>17800</col1>
+						<col2>15000</col2>
+						<col3>74</col3>
+					</record>
+					<record>
+						<col0>DNK</col0>
+						<col1>9200</col1>
+						<col2>6680</col2>
+						<col3>63</col3>
+					</record>
+					<record>
+						<col0>HSD</col0>
+						<col1>3100</col1>
+						<col2>1800</col2>
+						<col3>38</col3>
+					</record>
+					<record>
+						<col0>JPN</col0>
+						<col1>6900</col1>
+						<col2>4800</col2>
+						<col3>48</col3>
+					</record>
+					<record>
+						<col0>IND</col0>
+						<col1>4000</col1>
+						<col2>3000</col2>
+						<col3>43</col3>
+					</record>
+					<record>
+						<col0>FIN</col0>
+						<col1>15000</col1>
+						<col2>9980</col2>
+						<col3>70</col3>
+					</record>
+					<record>
+						<col0>FRA</col0>
+						<col1>9000</col1>
+						<col2>4900</col2>
+						<col3>39</col3>
+					</record>
+					<record>
+						<col0>ESP</col0>
+						<col1>5800</col1>
+						<col2>2000</col2>
+						<col3>30</col3>
+					</record>
+					<record>
+						<col0>SWE</col0>
+						<col1>2000</col1>
+						<col2>1000</col2>
+						<col3>24</col3>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_score_level">
+				<Contents>
+					<colinfo id="CNOUNT_10" size="256" summ="default" type="INT"/>
+					<colinfo id="CNOUNT_20" size="256" summ="default" type="INT"/>
+					<colinfo id="CNOUNT_30" size="256" summ="default" type="INT"/>
+					<colinfo id="CNOUNT_40" size="256" summ="default" type="INT"/>
+					<colinfo id="CNOUNT_50" size="256" summ="default" type="INT"/>
+					<colinfo id="CNOUNT_60" size="256" summ="default" type="INT"/>
+					<colinfo id="CNOUNT_70" size="256" summ="default" type="INT"/>
+					<colinfo id="CNOUNT_80" size="256" summ="default" type="INT"/>
+					<colinfo id="CNOUNT_90" size="256" summ="default" type="INT"/>
+					<colinfo id="CNOUNT_100" size="256" summ="default" type="INT"/>
+					<record>
+						<CNOUNT_10>5</CNOUNT_10>
+						<CNOUNT_100>82</CNOUNT_100>
+						<CNOUNT_20>16</CNOUNT_20>
+						<CNOUNT_30>23</CNOUNT_30>
+						<CNOUNT_40>47</CNOUNT_40>
+						<CNOUNT_50>90</CNOUNT_50>
+						<CNOUNT_60>120</CNOUNT_60>
+						<CNOUNT_70>155</CNOUNT_70>
+						<CNOUNT_80>190</CNOUNT_80>
+						<CNOUNT_90>115</CNOUNT_90>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataObject="ds_score_level" DataSetType="Pivot" Id="ds_score_pivot" PivotKey="CNOUNT_10,CNOUNT_20,CNOUNT_30,CNOUNT_40,CNOUNT_50,CNOUNT_60,CNOUNT_70,CNOUNT_80,CNOUNT_90,CNOUNT_100"></Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="600" Id="Image10" ImageID="M_bg3" LeftMargin="0" TabOrder="1" Width="1000"></Image>
+		<Shape BKColor="user0" Bottom="118" Height="72" Id="Shape0" Left="18" LineColor="user1" Right="578" RoundHeight="5" RoundUnit="Pixel" RoundWidth="5" TabOrder="2" Top="46" Type="RoundRect" Width="560"></Shape>
+		<Static Font="돋움체,9" Height="13" Id="Static2" Left="38" Style="M_search_title" TabOrder="3" Text="회사선택" Top="56" Width="73"></Static>
+		<Combo Border="Flat" CodeColumn="code" Column="PRJ_TYPE" DataColumn="value" Height="18" Id="cb_prj_type" InnerDataset="ds_cb_prj_type" Left="109" Style="M_search_combo" TabOrder="4" Top="52" Width="156"></Combo>
+		<Combo Border="Flat" CodeColumn="code" Column="CUSTOMER_TYPE" DataColumn="value" Height="18" Id="cb_customer_type" InnerDataset="ds_cb_customer_type" Left="269" Style="M_search_combo" TabOrder="5" Top="52" Width="100"></Combo>
+		<Image Height="7" Id="Image0" ImageID="M_search_titleicon" Left="26" TabOrder="7" Top="78" Transparent="TRUE" Width="4"></Image>
+		<Static Font="돋움체,9" Height="13" Id="Static0" Left="38" Style="M_search_title" TabOrder="6" Text="과정명" Top="76" Width="73"></Static>
+		<Combo Border="Flat" CodeColumn="code" Column="PRJ_TYPE" DataColumn="value" Height="18" Id="Combo0" InnerDataset="ds_cb_prj_type" Left="109" Style="M_search_combo" TabOrder="8" Top="72" Width="60"></Combo>
+		<Combo Border="Flat" CodeColumn="code" Column="CUSTOMER_TYPE" DataColumn="value" Height="18" Id="Combo1" InnerDataset="ds_cb_customer_type" Left="173" Style="M_search_combo" TabOrder="9" Top="72" Width="92"></Combo>
+		<Image Height="7" Id="Image1" ImageID="M_search_titleicon" Left="26" TabOrder="11" Top="98" Transparent="TRUE" Width="4"></Image>
+		<Static Font="돋움체,9" Height="13" Id="Static1" Left="38" Style="M_search_title" TabOrder="10" Text="과정선택" Top="96" Width="73"></Static>
+		<Combo Border="Flat" CodeColumn="code" Column="PRJ_TYPE" DataColumn="value" Height="18" Id="Combo2" InnerDataset="ds_cb_prj_type" Left="109" Style="M_search_combo" TabOrder="12" Top="92" Width="156"></Combo>
+		<Combo Border="Flat" CodeColumn="code" Column="CUSTOMER_TYPE" DataColumn="value" Height="18" Id="Combo3" InnerDataset="ds_cb_customer_type" Left="269" Style="M_search_combo" TabOrder="13" Top="92" Width="100"></Combo>
+		<Edit Border="Flat" Column="PRJ_DEPT" Height="18" Id="ed_prj_dept" Left="270" Style="M_search_edit" TabOrder="15" Top="73" Width="84"></Edit>
+		<Image Height="17" Id="btn_find_dept" ImageID="M_search_icon" Left="356" OnClick="btn_find_dept_OnClick" Static="FALSE" TabOrder="14" Top="73" Transparent="TRUE" Width="19"></Image>
+		<Grid AutoFit="TRUE" AutoScrollBar="None" BindDataset="ds_score_level" BkColor2="default" BoldHead="true" Border="Flat" BorderColor="INACTIVECAPTION" Bottom="392" ColSelect="TRUE" Enable="true" EndLineColor="default" Face3dColor="#bec5e7" HeadBorder="Flat" HeadHeight="26" Height="267" Id="grd_score" InputPanel="FALSE" Left="18" LineColor="default" LineType="OnlyHORZ" MinWidth="100" Right="578" RowHeight="24" TabOrder="16" TabStop="true" Top="125" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="560">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="117"/>
+						<col width="43"/>
+						<col width="44"/>
+						<col width="24"/>
+						<col width="278"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" colspan="5" display="text" font="Tahoma,10,Bold" text="과정&#32;총괄평가&#32;통계"/>
+					</head>
+					<body>
+						<cell align="center" bkcolor="user7" celltype="head" col="0" color="#454545" display="text" font="Tahoma,8,Bold" text="0~10점&#32;미만"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="1" colid="CNOUNT_10" color="#454545" display="normal" expr='CNOUNT_10&#32;+&#32;&quot;&#32;명&quot;' font="Tahoma,9"/>
+						<cell align="right" col="2" color="#454545" display="number" expr="((CNOUNT_10/sum_score)*100)" font="Tahoma,9" Mask="0.#0"/>
+						<cell align="center" col="3" color="#454545" display="text" font="Tahoma,9" text="%"/>
+						<cell col="4" color="#454545" display="text"/>
+						<cell align="center" bkcolor="user7" celltype="head" col="0" color="#454545" display="text" font="Tahoma,8,Bold" row="1" text="10~20점&#32;미만"/>
+						<cell align="right" col="1" colid="CNOUNT_20" color="#454545" display="normal" expr='CNOUNT_20&#32;+&#32;&quot;&#32;명&quot;' font="Tahoma,9" row="1"/>
+						<cell align="right" col="2" color="#454545" display="number" expr="((CNOUNT_20/sum_score)*100)" font="Tahoma,9" Mask="0.#0" row="1"/>
+						<cell align="center" col="3" color="#454545" display="text" font="Tahoma,9" row="1" text="%"/>
+						<cell col="4" color="#454545" display="text" row="1"/>
+						<cell align="center" bkcolor="user7" celltype="head" col="0" color="#454545" display="text" font="Tahoma,8,Bold" row="2" text="20~30점&#32;미만"/>
+						<cell align="right" col="1" colid="CNOUNT_30" color="#454545" display="normal" expr='CNOUNT_30&#32;+&#32;&quot;&#32;명&quot;' font="Tahoma,9" row="2"/>
+						<cell align="right" col="2" color="#454545" display="number" expr="(CNOUNT_30/sum_score)*100" font="Tahoma,9" Mask="0.#0" row="2"/>
+						<cell align="center" col="3" color="#454545" display="text" font="Tahoma,9" row="2" text="%"/>
+						<cell col="4" color="#454545" display="text" row="2"/>
+						<cell align="center" bkcolor="user7" celltype="head" col="0" color="#454545" display="text" font="Tahoma,8,Bold" row="3" text="30~40점&#32;미만"/>
+						<cell align="right" col="1" colid="CNOUNT_40" color="#454545" display="normal" expr='CNOUNT_40&#32;+&#32;&quot;&#32;명&quot;' font="Tahoma,9" row="3"/>
+						<cell align="right" col="2" color="#454545" display="number" expr="(CNOUNT_40/sum_score)*100" font="Tahoma,9" Mask="0.#0" row="3"/>
+						<cell align="center" col="3" color="#454545" display="text" font="Tahoma,9" row="3" text="%"/>
+						<cell col="4" color="#454545" display="text" row="3"/>
+						<cell align="center" bkcolor="user7" celltype="head" col="0" color="#454545" display="text" font="Tahoma,8,Bold" row="4" text="40~50점&#32;미만"/>
+						<cell align="right" col="1" colid="CNOUNT_50" color="#454545" display="normal" expr='CNOUNT_50&#32;+&#32;&quot;&#32;명&quot;' font="Tahoma,9" row="4"/>
+						<cell align="right" col="2" color="#454545" display="number" expr="((CNOUNT_50/sum_score)*100)" font="Tahoma,9" Mask="0.#0" row="4"/>
+						<cell align="center" col="3" color="#454545" display="text" font="Tahoma,9" row="4" text="%"/>
+						<cell col="4" color="#454545" display="text" row="4"/>
+						<cell align="center" bkcolor="user7" celltype="head" col="0" color="#454545" display="text" font="Tahoma,8,Bold" row="5" text="50~60점&#32;미만"/>
+						<cell align="right" col="1" colid="CNOUNT_60" color="#454545" display="normal" expr='CNOUNT_60&#32;+&#32;&quot;&#32;명&quot;' font="Tahoma,9" row="5"/>
+						<cell align="right" col="2" color="#454545" display="number" expr="((CNOUNT_60/sum_score)*100)" font="Tahoma,9" Mask="0.#0" row="5"/>
+						<cell align="center" col="3" color="#454545" display="text" font="Tahoma,9" row="5" text="%"/>
+						<cell col="4" color="#454545" display="text" row="5"/>
+						<cell align="center" bkcolor="user7" celltype="head" col="0" color="#454545" display="text" font="Tahoma,8,Bold" row="6" text="60~70점&#32;미만"/>
+						<cell align="right" col="1" colid="CNOUNT_70" color="#454545" display="normal" expr='CNOUNT_70&#32;+&#32;&quot;&#32;명&quot;' font="Tahoma,9" row="6"/>
+						<cell align="right" col="2" color="#454545" display="number" expr="((CNOUNT_70/sum_score)*100)" font="Tahoma,9" Mask="0.#0" row="6"/>
+						<cell align="center" col="3" color="#454545" display="text" font="Tahoma,9" row="6" text="%"/>
+						<cell col="4" color="#454545" display="text" row="6"/>
+						<cell align="center" bkcolor="user7" celltype="head" col="0" color="#454545" display="text" font="Tahoma,8,Bold" row="7" text="70~80점&#32;미만"/>
+						<cell align="right" col="1" colid="CNOUNT_80" color="#454545" display="normal" expr='CNOUNT_80&#32;+&#32;&quot;&#32;명&quot;' font="Tahoma,9" row="7"/>
+						<cell align="right" col="2" color="#454545" display="number" expr="((CNOUNT_80/sum_score)*100)" font="Tahoma,9" Mask="0.#0" row="7"/>
+						<cell align="center" col="3" color="#454545" display="text" font="Tahoma,9" row="7" text="%"/>
+						<cell col="4" color="#454545" display="text" row="7"/>
+						<cell align="center" bkcolor="user7" celltype="head" col="0" color="#454545" display="text" font="Tahoma,8,Bold" row="8" text="80~90점&#32;미만"/>
+						<cell align="right" col="1" colid="CNOUNT_90" color="#454545" display="normal" expr='CNOUNT_90&#32;+&#32;&quot;&#32;명&quot;' font="Tahoma,9" row="8"/>
+						<cell align="right" col="2" color="#454545" display="number" expr="(CNOUNT_90/sum_score)*100" font="Tahoma,9" Mask="0.#0" row="8"/>
+						<cell align="center" col="3" color="#454545" display="text" font="Tahoma,9" row="8" text="%"/>
+						<cell col="4" color="#454545" display="text" row="8"/>
+						<cell align="center" bkcolor="user7" celltype="head" col="0" color="#454545" display="text" font="Tahoma,8,Bold" row="9" text="90~100점&#32;미만"/>
+						<cell align="right" col="1" colid="CNOUNT_100" color="#454545" display="normal" expr='CNOUNT_100&#32;+&#32;&quot;&#32;명&quot;' font="Tahoma,9" row="9"/>
+						<cell align="right" col="2" color="#454545" display="number" expr="(CNOUNT_100/sum_score)*100" font="Tahoma,9" Mask="0.#0" row="9"/>
+						<cell align="center" col="3" color="#454545" display="text" font="Tahoma,9" row="9" text="%"/>
+						<cell col="4" color="#454545" display="text" row="9"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image FillType="STRETCH" Height="23" Id="Image20" ImageID="barblue01" Left="584" TabOrder="18" Top="47" Width="388"></Image>
+		<Image FillType="STRETCH" Height="23" Id="Image24" ImageID="barblue01" Left="17" TabOrder="20" Top="403" Width="956"></Image>
+		<Static BKColor="white" Font="맑은&#32;고딕,10,Bold" Height="19" Id="Static11" Left="41" Style="M_title_1depth" TabOrder="20" Text="정보화&#32;통계관리" Top="23" Width="114"></Static>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="20" LeftMargin="18" Style="cm_title_sub" TabOrder="19" Text="프로젝트&#32;종합현황" Top="23" Width="16"></Image>
+		<Image Height="7" Id="Image2" ImageID="M_search_titleicon" Left="27" TabOrder="21" Top="58" Transparent="TRUE" Width="4"></Image>
+	</Form>
+	<Script><![CDATA[	var sum_score = 0;
+
+function view300_OnLoadCompleted(obj)
+{
+	CyXChart4_Load();
+	CyXChart4.Visible = true;
+
+	sum_score = ds_score_level.GetColumn(0, "CNOUNT_10")
+			+ ds_score_level.GetColumn(0, "CNOUNT_20")
+			+ ds_score_level.GetColumn(0, "CNOUNT_30")
+			+ ds_score_level.GetColumn(0, "CNOUNT_40")
+			+ ds_score_level.GetColumn(0, "CNOUNT_50")
+			+ ds_score_level.GetColumn(0, "CNOUNT_60")
+			+ ds_score_level.GetColumn(0, "CNOUNT_70")
+			+ ds_score_level.GetColumn(0, "CNOUNT_80")
+			+ ds_score_level.GetColumn(0, "CNOUNT_90")
+			+ ds_score_level.GetColumn(0, "CNOUNT_100");
+	
+}
+
+
+function CyXChart4_Load()
+{
+	var mon_cnt = ds_Trend.GetRowCount() -2;
+
+	CyXChart4.TopGap = "10";						//차트 안쪽 상단 여백
+	CyXChart4.LeftGap = "10";						//차트 안쪽 왼쪽 여백
+	CyXChart4.RightGap = "10";					//차트 안쪽 오른쪽 여백
+	CyXChart4.BottomGap = "10";					//차트 안쪽 하단 여백
+
+	CyXChart4.ClearData(1);						//Clear all numeric values set with the YValue or Value properties
+		
+	CyXChart4.Stacked = 0;
+
+	//Chart 외곽 영역 색상
+	CyXChart4.BackColor = "#f2f2fe";
+	
+	//Chart 내부 색상
+	CyXChart4.InsideColor ="#ffffff";					// 안쪽
+	
+	CyXChart4.AxisY.LabelsFormat.Decimals = 0;
+	CyXChart4.AxisY.LabelsFormat.Format = "AxisFormat_Number";
+	CyXChart4.AxisY.AutoScale = True;
+
+	//CyXChart4.PointLabels = True;
+
+	//X축의 갯수 설정
+	CyXChart4.OpenData("COD_Values", 1, mon_cnt);
+	CyXChart4.OpenData("COD_Colors", 1, mon_cnt);
+
+	CyXChart4.Gallery = "Gallery_Pie";
+
+	CyXChart4.Chart3D = true;
+
+	
+	CyXChart4.MultipleColors = true;		
+
+	var objchart  ;
+	
+	//X축 값 설정  Axis[2]는 X축을 나타냄(label)
+	for(var i=0 ; i < mon_cnt ; i++){
+		CyXChart4.Axis[2].Label(i) = ds_right.getcolumn(i,"col0");
+		CyXChart4.Legend(i) = ds_right.getcolumn(i,"col0");
+	}
+
+	//실제 데이타를 이용해 그래프를 그려주는 부분 (RowCount / ColCount 등을 이용)
+	var NULL_VAL = "1.0E+308";	// data=0 인경우 표시안함
+	for (var i=0 ; i < mon_cnt ; i++)
+	{
+		CyXChart4.Value(0,i) = ds_Trend.GetColumn(i, "col1");
+		CyXChart4.Point.Item(0,i).color = ds_color.GetColumn(i, "data"); //GetBarColor(i);	
+	}	  
+   
+	CyXChart4.LegendBoxObj.visible = true;
+
+
+	//Chart  Gradient 설정
+	var BK1Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK1Gradient.Type = "GradientType_BackwardDiagonal";
+	BK1Gradient.Colors.Item(0) = "#FFFFFF";
+	BK1Gradient.Colors.Item(1) = "#6969A0";
+	BK1Gradient.Position.Item(0) = 0;
+	BK1Gradient.Position.Item(1) = 0.5;
+	BK1Gradient.Position.Item(2) = 1;
+	BK1Gradient.Factor.Item(0) = 0;
+	BK1Gradient.Factor.Item(1) = 0.5;
+	BK1Gradient.Factor.Item(2) = 1;
+	
+	CyXChart4.BackObject = BK1Gradient;
+
+
+	CyXChart4.CloseData("COD_Values");
+	CyXChart4.CloseData("COD_Colors");
+}
+
+]]></Script>
+</Window>

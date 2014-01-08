@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form BKColor="#f0f0f0" Height="380" Id="CommExcelImportForm" Left="8" OnLoadCompleted="fn_OnLoadCompleted" OnTimer="CommExcelImportForm_OnTimer" PidAttrib="7" Title="엑셀컬럼맵핑팡" Top="8" Ver="1.0" Width="742" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_grdCol">
+				<Contents>
+					<colinfo id="TITLE" size="256" type="STRING"/>
+					<colinfo id="COLUMN" size="256" type="STRING"/>
+					<colinfo id="CELL_VALUE" size="256" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_excel"></Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_cell">
+				<Contents>
+					<colinfo id="COLUMN" size="256" type="STRING"/>
+					<colinfo id="CELL_TEXT" size="256" type="STRING"/>
+					<record>
+						<CELL_TEXT></CELL_TEXT>
+						<COLUMN></COLUMN>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Shape BKColor="white" Bottom="374" Height="368" Id="Shape2" Left="6" LineColor="#dadada" LineWidth="3" Right="736" RoundHeight="6" RoundUnit="Pixel" RoundWidth="6" TabOrder="7" Top="6" Type="RoundRect" Width="730"></Shape>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" AutoFitEndLine="Hide" BindDataset="ds_grdCol" BkColor2="default" BoldHead="true" Border="Flat" Bottom="343" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="308" Id="grd_col" InputPanel="FALSE" Left="13" LineColor="default" LineType="ExHORZ" MinWidth="100" OnDrop="grd_col_OnDrop" Right="285" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="35" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="272">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="170"/>
+						<col width="120"/>
+					</columns>
+					<head>
+						<cell align="center" bkcolor="user13" col="0" color="user14" display="text" font="굴림,9" text="항목"/>
+						<cell align="center" bkcolor="user13" col="1" color="user14" display="text" font="굴림,9" SuppressAlign="First" text="Excel&#32;항목"/>
+					</head>
+					<body>
+						<cell align="left" bkcolor="user11" bkcolor2="user12" col="0" colid="TITLE" color="user16" display="text"/>
+						<cell align="left" bkcolor="user11" bkcolor2="user12" col="1" colid="CELL_VALUE" color="user16" combocol="COLUMN" combodataset="ds_cell" combotext="CELL_TEXT" display="combo" edit="combo"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Grid AutoFitEndLine="Hide" BkColor2="default" BoldHead="true" Border="Flat" Bottom="343" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="308" Id="grd_excel" InputPanel="FALSE" Left="289" LineColor="default" LineType="ExHORZ" OnDrag="grd_excel_OnDrag" OnHeadClick="grd_excel_OnHeadClick" Right="729" RowHeight="20" Style="se_grid" TabOrder="2" TabStop="true" Top="35" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="440">
+			<contents>
+				<format id="Default"></format>
+			</contents>
+		</Grid>
+		<Button ButtonStyle="TRUE" Cursor="HAND" Height="20" Id="btn_load" ImageID="m_bt_txt_02" Left="332" OnClick="btn_load_OnClick" Style="cm_btn" TabOrder="3" Text="확인" Top="347" Transparent="TRUE" Width="38"></Button>
+		<Button ButtonStyle="TRUE" Cursor="HAND" Height="20" Id="btn_delete" ImageID="m_bt_txt_02" Left="372" OnClick="btn_delete_OnClick" Style="cm_btn" TabOrder="4" Text="삭제" Top="347" Transparent="TRUE" Width="38"></Button>
+		<Image Cursor="HAND" Font="돋움,9,Bold" Height="20" Id="img_close" Left="708" OnClick="img_close_OnClick" Static="FALSE" TabOrder="6" Text="X" Top="12" Transparent="TRUE" Width="20"></Image>
+		<Image Align="Left" Height="22" Id="Image3" ImageID="m_bl_subtitl" Left="17" LeftMargin="18" Style="cm_title_sub" TabOrder="5" Text="Import&#32;excel" Top="13" Transparent="TRUE" Width="252"></Image>
+	</Form>
+	<Script><![CDATA[﻿﻿﻿﻿﻿﻿﻿/*
+ ******************************************************************************************
+ * 기      능   : 
+ * 작  성  자   : 
+ * 작성  일자   : 
+ * ----------------------------------------------------------------------------------------
+ * HISTORY    :
+ ******************************************************************************************
+ */
+//#include "lib::common_01.js";	// 공통 스크립트 
+//=========================================================================================
+// [ PART 1 ]
+// Form에서 사용될 전역변수를 선언
+// FORM에서 사용되는 전역변수는 대문자로 작성하며, F_XXX 의 형태를 갖도록 한다. 
+//=========================================================================================
+var F_P_GRD_OBJ = null;	// 부모창의 Grid 객체 
+var F_EXCEL_FILE = null;	// 액셀 파일 명 
+var CONST_ASC_MARK="";
+var CONST_DESC_MARK="";
+//=========================================================================================
+// [ PART 2 ]
+// Form Loading / Unloading 시 작업 정의
+//=========================================================================================
+function fn_OnLoadCompleted(obj) {
+	// fa_grdName=그리드명 
+	F_P_GRD_OBJ = object("parent." + fa_grdName);
+	F_EXCEL_FILE = fa_excelFile;
+	// Excel Data로 변환할 Grid의 Header와 Column을 가져와서 DataSet을 구성. 
+	ds_grdCol.FireEvent = false;
+	
+	var cnt = 0;
+	var colCnt = 1;
+	for (var i=0; i < F_P_GRD_OBJ.GetColCount(); i++) {
+		if ( length( F_P_GRD_OBJ.getCellText("head", -1, i) ) == 0 ) {
+			cnt++;
+			continue;
+		}
+		var nRow = -1;
+		colCnt = toNumber(F_P_GRD_OBJ.getCellProp("head", i, "colspan"));
+		var str = replace(replace(F_P_GRD_OBJ.getCellText("head", -1, i), CONST_ASC_MARK, ""), CONST_DESC_MARK, "");
+		if ( length( str ) == 0 ) {
+			cnt++;
+			continue;
+		}
+		nRow = ds_grdCol.appendRow();
+		ds_grdCol.SetColumn(nRow, "TITLE", str);
+		ds_grdCol.SetColumn(nRow, "COLUMN", F_P_GRD_OBJ.GetCellProp("body", cnt, "colid"));
+			
+		if ( colCnt > 1 ) {
+			for ( var a = 1; a < colCnt; a++) {
+				nRow = ds_grdCol.appendRow();
+				ds_grdCol.SetColumn(nRow, "TITLE", str + "[" + (a) + "]");
+				ds_grdCol.SetColumn(nRow, "COLUMN", F_P_GRD_OBJ.GetCellProp("body", (cnt+a), "colid"));
+			}
+		}
+		cnt += colCnt;
+	}
+	
+	ds_grdCol.row = ds_grdCol.firstRow;	// 스크롤 제일위로 올림. 
+	ds_grdCol.FireEvent = true;	
+
+	SetTimer(1000,500);
+}
+/********************************************************************************
+* 기      능   : 공통코드가 조회된 후의 Callback 함수 
+********************************************************************************/
+function fn_completeInit(sCode, sDsObj, sCodeType) {
+
+}
+/********************************************************************************
+* 기      능   : form UnloadCompleted 
+********************************************************************************/
+function fn_OnUnloadCompleted(obj) {
+
+}
+//=========================================================================================
+// [ PART 3 ]
+// Main Process Event 정의(조회,입력,삭제,저장,인쇄,form닫기)
+//=========================================================================================
+
+//=========================================================================================
+// [ PART 4]
+// Callback 함수 정의 : callback 함수명은 메인 함수의 fn_xxxx() 에서 xxxx 부분은 fn_afterXXXX()
+// 형태가 되도록 작성 
+//=========================================================================================
+
+//=========================================================================================
+// [ PART 5 ]
+// Detail Process Event 정의 ( User Define function )
+// 사용자 정의 함수는 ufn_xxxx() 형태로 작성 
+//=========================================================================================
+/********************************************************************************
+* 기      능   : 액셀을 읽어서 그리드에 로드   
+********************************************************************************/
+function ufn_makeExcel2Ds(strExcelUrl)
+{
+	// excel 읽어 들이기 
+	ext_ExcelImportByIndex(strExcelUrl,null,"ds_excel",0,1);
+
+	grd_excel.BindDataset = "";
+	grd_excel.Contents = ufn_makeExcelGridContents();	// Grid Contents를 재구성...
+	ds_excel.AddColumn("CHK","STRING",1);
+	grd_excel.BindDataset = "ds_excel";
+}
+/********************************************************************************
+* 기      능   : 그리드 정보 생성   
+********************************************************************************/
+function ufn_makeExcelGridContents()
+{
+	var sContents = '';
+	var sColCont =  '		<col width="30"/>' + '\n';	
+	var sHeadCont = '		<cell col="0" display="checkbox" edit="checkbox"/>' + '\n';	
+	var sBodyCont = '		<cell col="0" colid="CHK" display="checkbox" edit="checkbox"/>' + '\n';
+	var nRow;
+
+	// Grid Combo Dataset
+	ds_cell.FireEvent = false;
+	ds_cell.ClearData();
+	ds_cell.AppendRow();
+
+	for (var i=0; i<ds_excel.GetColCount(); i++) {
+		var sExcelHead = ufn_getExcelHeader(i);
+		var sColID = 'COL' + lpad(i+1,'0',2);
+
+		sColCont += '		<col width="80"/>' + '\n';
+		sHeadCont += '		<cell col="'+(i+1)+'" cursor="hand" display="text" text="'+sExcelHead+'"/>' + '\n';
+		sBodyCont += '		<cell col="'+(i+1)+'" colid="'+sColID+'" display="text"/>' + '\n';
+
+		// Grid Combo Dataset
+		nRow = ds_cell.AppendRow();
+		ds_cell.SetColumn(nRow, "CELL_TEXT", sExcelHead);
+		ds_cell.SetColumn(nRow, "COLUMN", sColID);
+		
+		if (ds_grdCol.GetRowCount() >= (i+1)) {
+			ds_grdCol.SetColumn(i, "CELL_VALUE", sColID);
+		}
+	}
+	ds_cell.FireEvent = true;
+	
+	sContents +='<contents>' + '\n';
+	sContents +='	<columns>' + '\n';
+	sContents += sColCont;
+	sContents +='	</columns>' + '\n';
+	sContents +='	<head>' + '\n';
+	sContents += sHeadCont;
+	sContents +='	</head>' + '\n';
+	sContents +='	<body>' + '\n';
+	sContents += sBodyCont;
+	sContents +='	</body>' + '\n';
+	sContents +='</contents>' + '\n';
+	
+	return sContents;
+}
+/********************************************************************************
+* 기      능   : Index를 받아 A,B,C,...,AA,AB,...,YZ,ZA,ZB...로 만든다.
+********************************************************************************/
+function ufn_getExcelHeader(nIndex) {
+	var sRet = toNumber(nIndex);	// Number Type으로 변환
+	var sTemp = "";					// Z가 넘을때 앞에 붙일 Header
+
+	// Z가 넘으면...
+	if (sRet >= 26) {
+		// A의 Chr는 65이므로 65를 더한다.
+		sTemp = chr(toNumber(truncate(sRet / 26) - 1) + 65);
+		sRet = (sRet % 26);
+	}
+	// A의 Chr는 65이므로 65를 더한다
+	sRet = chr(sRet + 65);
+
+	return (sTemp + sRet);
+}
+//=========================================================================================
+// [ PART 6 ]
+// component Event 정의 : 각 Component 별 이벤트 
+//=========================================================================================
+function img_close_OnClick(obj,nX,nY)
+{
+	close();
+}
+/********************************************************************************
+* 기      능   : Excel 정보 읽어 들이기 
+********************************************************************************/
+function CommExcelImportForm_OnTimer(obj,nEventID)
+{
+	// timer 죽이기 
+	KillTimer(nEventID);
+	
+	ufn_makeExcel2Ds(F_EXCEL_FILE);
+}
+/********************************************************************************
+* 기      능   : Excel 적용하기 
+********************************************************************************/
+function btn_load_OnClick(obj)
+{
+	if (ds_excel.GetRowCount() <= 0) {
+		return;
+	}
+
+	var dsObj = object("parent." + F_P_GRD_OBJ.BindDataset);
+	dsObj.FireEvent = false;
+
+	dsObj.ClearData();
+	for (var i=0; i < ds_excel.GetRowCount(); i++)
+	{
+		var nRow = dsObj.AppendRow();
+		for (var j=0; j  < ds_grdCol.GetRowCount(); j++)
+		{
+			if (length(ds_grdCol.GetColumn(j, "CELL_VALUE")) > 0 ) {
+				dsObj.SetColumn(nRow, ds_grdCol.GetColumn(j, "COLUMN")
+					, ds_excel.GetColumn(i, ds_grdCol.GetColumn(j, "CELL_VALUE")));
+			}
+		}
+	}
+	dsObj.row = dsObj.firstrow;
+	dsObj.FireEvent = true;
+	close(true);
+}
+/********************************************************************************
+* 기      능   : 선택한 정보 삭제 
+********************************************************************************/
+function btn_delete_OnClick(obj)
+{
+	var arrRow = ext_FindRow("ds_excel", "CHK", "1");
+	if (bound(arrRow) <= 0) {
+		return;
+	}
+
+	ds_excel.FireEvent = false;
+
+	for (var i=bound(arrRow)-1; i>=0; i--) {
+		ds_excel.DeleteRow(arrRow[i]);
+	}
+	ds_excel.FireEvent = true;
+}
+/********************************************************************************
+* 기      능   : 헤더 선택시 전제 반전 
+********************************************************************************/
+function grd_excel_OnHeadClick(obj,nCell,nX,nY,nPivotIndex)
+{
+	if ( nCell == 0 ) {
+		gfn_selectAllGrid(obj,0,0,true);
+	}
+}
+/********************************************************************************
+* 기      능   : 헤더 선택하여 드래그 처리 
+********************************************************************************/
+function grd_excel_OnDrag(obj,nPosX,nPosY,varKeyState,nRow,nCell,nPivotIndex)
+{
+	// head를 drag 할 때만 처리 
+	if (nCell == 0 || nRow >= 0) {
+		return;
+	}
+	// DataObject 생성
+	var dataObj = CreateDataObject();
+	dataObj.SetData("CF_TEXT", obj.GetCellProp("body",nCell,"colid"));
+	return dataObj;	
+}
+/********************************************************************************
+* 기      능   : Excel 컬럼 Drop 처리 
+********************************************************************************/
+function grd_col_OnDrop(obj,objDragObj,objDataObj,nPosX,nPosY,varKeyState,nRow,nCell,nPivotIndex)
+{
+	if (nRow < 0 || nCell != 1) {
+		return;
+	}
+	
+	if (objDragObj.ID == "grd_excel") {
+		var strColID = objDataObj.GetData("CF_TEXT");	// Text로 담겨진 값을 꺼낸다.
+		object(obj.BindDataset).SetColumn(nRow, "CELL_VALUE", strColID);
+	}
+}
+
+
+function gfn_selectAllGrid(grdObj,nHeadCell,nBodyCell,bEvent)
+{
+	var strColID = grdObj.GetCellProp("body", nBodyCell, "Colid");
+
+	if ( length( strColID ) == 0 ) {
+		return;
+	}
+	var dsObj = object(grdObj.BindDataset);
+
+	// Check Box ü 
+	var nCount = dsObj.GetRowCount();
+
+	var strChk = decode(grdObj.getCellProp("head", nHeadCell, "Text"), "1", "0", "1");
+
+	grdObj.ReDraw = false;
+	if (bEvent == false) {
+		dsObj.FireEvent = false;
+	}
+
+	for (var i=0; i < dsObj.GetRowCount(); i++) {
+		dsObj.SetColumn(i, strColID, strChk);
+	}
+
+	if (bEvent == false) {
+		dsObj.FireEvent = true;
+	}
+	grdObj.SetCellProp("head", nHeadCell, "Text", strChk);
+	grdObj.ReDraw = true;
+}]]></Script>
+</Window>

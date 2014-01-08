@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="264" Id="login" Left="8" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="640" WorkArea="true">
+		<Image Height="264" Id="Image0" ImageID="Login_bg" TabOrder="1" Width="640"></Image>
+		<Image Height="46" Id="Image1" ImageID="Login_ok" Left="232" TabOrder="2" Top="150" Width="72"></Image>
+		<Image Height="46" Id="Image2" ImageID="Login_ok" Left="527" TabOrder="3" Top="150" Width="72"></Image>
+		<Edit Border="Flat" Height="20" Id="Edit0" Left="98" Style="Login_edit" TabOrder="4" Text="Edit0" Top="150" Width="126"></Edit>
+		<Edit Border="Flat" Height="20" Id="Edit1" Left="98" Style="Login_edit" TabOrder="5" Text="Edit0" Top="174" Width="126"></Edit>
+		<Edit Border="Flat" Height="20" Id="Edit2" Left="347" Style="Login_edit" TabOrder="6" Text="Edit0" Top="174" Width="75"></Edit>
+		<Edit Border="Flat" Height="20" Id="Edit3" Left="444" Style="Login_edit" TabOrder="7" Text="Edit0" Top="174" Width="75"></Edit>
+		<Image Height="17" Id="Image3" ImageID="Login_close" Left="609" TabOrder="8" Top="18" Width="17"></Image>
+	</Form>
+	<Script></Script>
+</Window>

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="view100" Left="8" OnActivate="view100_OnActivate" OnLoadCompleted="view100_OnLoadCompleted" PidAttrib="7" Title="프로젝트&#32;상세" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_master">
+				<Contents>
+					<colinfo id="PRJ_NM" size="200" summ="default" type="STRING"/>
+					<colinfo id="PRJ_TYPE" size="30" summ="default" type="STRING"/>
+					<colinfo id="CUSTOMER_TYPE" size="30" summ="default" type="STRING"/>
+					<colinfo id="PRJ_COUNTRY" size="50" summ="default" type="STRING"/>
+					<colinfo id="PM" size="30" summ="default" type="STRING"/>
+					<colinfo id="PM_POSITION" size="50" summ="default" type="STRING"/>
+					<colinfo id="PRJ_DEPT" size="50" summ="default" type="STRING"/>
+					<colinfo id="OPEN_DATE" size="10" summ="default" type="STRING"/>
+					<colinfo id="PLAN_SDATE" size="10" summ="default" type="DECIMAL"/>
+					<colinfo id="PLAN_EDATE" size="10" summ="default" type="DECIMAL"/>
+					<colinfo id="PLAN_RATE" size="4" summ="default" type="STRING"/>
+					<colinfo id="REAL_RATE" size="4" summ="default" type="STRING"/>
+					<colinfo id="STATE_SCHD" size="1" summ="default" type="STRING"/>
+					<colinfo id="STATE_MANP" size="1" summ="default" type="STRING"/>
+					<colinfo id="STATE_RISK" size="1" summ="default" type="STRING"/>
+					<colinfo id="PRJ_SALES" size="14" summ="default" type="DECIMAL"/>
+					<record>
+						<CUSTOMER_TYPE></CUSTOMER_TYPE>
+						<OPEN_DATE></OPEN_DATE>
+						<PLAN_EDATE/>
+						<PLAN_RATE></PLAN_RATE>
+						<PLAN_SDATE/>
+						<PM></PM>
+						<PM_POSITION></PM_POSITION>
+						<PRJ_COUNTRY></PRJ_COUNTRY>
+						<PRJ_DEPT></PRJ_DEPT>
+						<PRJ_NM></PRJ_NM>
+						<PRJ_SALES/>
+						<PRJ_TYPE></PRJ_TYPE>
+						<REAL_RATE></REAL_RATE>
+						<STATE_MANP></STATE_MANP>
+						<STATE_RISK></STATE_RISK>
+						<STATE_SCHD></STATE_SCHD>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_cb_prj_type">
+				<Contents>
+					<colinfo id="code" size="256" summ="default" type="STRING"/>
+					<colinfo id="value" size="256" summ="default" type="STRING"/>
+					<record>
+						<code>컨설팅</code>
+						<value>컨설팅</value>
+					</record>
+					<record>
+						<code>SI</code>
+						<value>SI</value>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_cb_customer_type">
+				<Contents>
+					<colinfo id="code" size="256" summ="default" type="STRING"/>
+					<colinfo id="value" size="256" summ="default" type="STRING"/>
+					<record>
+						<code>대내</code>
+						<value>대내</value>
+					</record>
+					<record>
+						<code>대외</code>
+						<value>대외</value>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_cb_prj_country">
+				<Contents>
+					<colinfo id="code" size="256" summ="default" type="STRING"/>
+					<colinfo id="value" size="256" summ="default" type="STRING"/>
+					<record>
+						<code>한국</code>
+						<value>한국</value>
+					</record>
+					<record>
+						<code>외국</code>
+						<value>외국</value>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_param">
+				<Contents>
+					<colinfo id="PRJ_NM" size="200" summ="default" type="STRING"/>
+					<colinfo id="PRJ_TYPE" size="30" summ="default" type="STRING"/>
+					<colinfo id="CUSTOMER_TYPE" size="30" summ="default" type="STRING"/>
+					<colinfo id="PRJ_COUNTRY" size="50" summ="default" type="STRING"/>
+					<colinfo id="PM" size="30" summ="default" type="STRING"/>
+					<colinfo id="PM_POSITION" size="50" summ="default" type="STRING"/>
+					<colinfo id="PRJ_DEPT" size="50" summ="default" type="STRING"/>
+					<colinfo id="OPEN_DATE" size="10" summ="default" type="STRING"/>
+					<colinfo id="PLAN_SDATE" size="10" summ="default" type="DECIMAL"/>
+					<colinfo id="PLAN_EDATE" size="10" summ="default" type="DECIMAL"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_master_0">
+				<Contents>
+					<colinfo id="PRJ_NM" size="200" summ="default" type="STRING"/>
+					<colinfo id="PRJ_TYPE" size="30" summ="default" type="STRING"/>
+					<colinfo id="CUSTOMER_TYPE" size="30" summ="default" type="STRING"/>
+					<colinfo id="PRJ_COUNTRY" size="50" summ="default" type="STRING"/>
+					<colinfo id="PM" size="30" summ="default" type="STRING"/>
+					<colinfo id="PM_POSITION" size="50" summ="default" type="STRING"/>
+					<colinfo id="PRJ_DEPT" size="50" summ="default" type="STRING"/>
+					<colinfo id="OPEN_DATE" size="10" summ="default" type="STRING"/>
+					<colinfo id="PLAN_SDATE" size="10" summ="default" type="DECIMAL"/>
+					<colinfo id="PLAN_EDATE" size="10" summ="default" type="DECIMAL"/>
+					<colinfo id="PLAN_RATE" size="4" summ="default" type="STRING"/>
+					<colinfo id="REAL_RATE" size="4" summ="default" type="STRING"/>
+					<colinfo id="STATE_SCHD" size="1" summ="default" type="STRING"/>
+					<colinfo id="STATE_MANP" size="1" summ="default" type="STRING"/>
+					<colinfo id="STATE_RISK" size="1" summ="default" type="STRING"/>
+					<colinfo id="PRJ_SALES" size="14" summ="default" type="DECIMAL"/>
+					<record>
+						<CUSTOMER_TYPE>대내</CUSTOMER_TYPE>
+						<OPEN_DATE>20091201</OPEN_DATE>
+						<PLAN_EDATE>20091130</PLAN_EDATE>
+						<PLAN_RATE>95.5</PLAN_RATE>
+						<PLAN_SDATE>20090901</PLAN_SDATE>
+						<PM>김현수</PM>
+						<PM_POSITION>경영혁신TF팀/차장</PM_POSITION>
+						<PRJ_COUNTRY>한국</PRJ_COUNTRY>
+						<PRJ_DEPT>경영혁신TF팀</PRJ_DEPT>
+						<PRJ_NM>LDCC&#32;컨설팅&#32;프로젝트</PRJ_NM>
+						<PRJ_SALES>25000000</PRJ_SALES>
+						<PRJ_TYPE>컨설팅</PRJ_TYPE>
+						<REAL_RATE>100</REAL_RATE>
+						<STATE_MANP>Y</STATE_MANP>
+						<STATE_RISK>G</STATE_RISK>
+						<STATE_SCHD>R</STATE_SCHD>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="600" Id="Image0" ImageID="M_bg3" LeftMargin="0" TabOrder="1" Width="1000"></Image>
+		<Div BKColor="white" Height="136" Id="div_schedule" Left="496" TabOrder="9" Text="Div0" Top="138" Url="PM::view100_sub200.xml" Width="472">
+			<Contents></Contents>
+		</Div>
+		<Div BKColor="white" Height="136" Id="div_report" Left="24" TabOrder="3" Text="Div0" Top="138" Url="PM::view100_sub100.xml" Width="454">
+			<Contents></Contents>
+		</Div>
+		<Div BKColor="white" Height="175" Id="div_result" Left="24" TabOrder="4" Text="Div1" Top="290" Url="PM::view100_sub300.xml" Width="454">
+			<Contents></Contents>
+		</Div>
+		<Div BKColor="white" Height="175" Id="div_process" Left="496" TabOrder="5" Text="Div1" Top="290" Url="PM::view100_sub400.xml" Width="475">
+			<Contents></Contents>
+		</Div>
+		<Div BKColor="white" Height="110" Id="div_dangerous" Left="24" TabOrder="14" Text="Div1" Top="482" Url="PM::view100_sub500.xml" Width="944">
+			<Contents></Contents>
+		</Div>
+		<Split BKColor="user9" Border="Flat" BorderColor="user10" Direct="VERT" Height="6" Id="sp_left" Left="24" MaxPos="438" MinPos="160" OnEndMove="sp_left_OnEndMove" Top="279" Width="460">
+			<Contents>
+				<LeftOrTop>
+					<Bind BindType="Resize" CompID="div_report"/>
+				</LeftOrTop>
+				<RightOrBottom>
+					<Bind BindType="Resize" CompID="div_result"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<Split BKColor="user9" Border="Flat" BorderColor="user10" Direct="VERT" Height="6" Id="sp_right" Left="488" MaxPos="438" MinPos="160" Top="279" Width="485">
+			<Contents>
+				<LeftOrTop>
+					<Bind BindType="Resize" CompID="div_schedule"/>
+				</LeftOrTop>
+				<RightOrBottom>
+					<Bind BindType="Resize" CompID="div_process"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<Split BKColor="user9" Border="Flat" BorderColor="user10" Height="185" Id="sp_middle" Left="484" MaxPos="890" MinPos="100" Top="285" Width="6">
+			<Contents>
+				<LeftOrTop>
+					<Bind BindType="Resize" CompID="div_result"/>
+				</LeftOrTop>
+				<RightOrBottom>
+					<Bind BindType="Resize" CompID="div_process"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<SplitJoint BKColor="user9" Border="Flat" BorderColor="user10" Height="7" Id="sp_jointTop" JointBottom="sp_middle" JointLeft="sp_left" JointRight="sp_right" JointTop="sp_top" Left="484" OnEndMove="sp_jointTop_OnEndMove" Top="279" Width="6"></SplitJoint>
+		<Split BKColor="user9" Border="Flat" BorderColor="user10" Height="140" Id="sp_top" Left="484" MaxPos="890" MinPos="100" OnEndMove="sp_top_OnEndMove" Top="138" Width="6">
+			<Contents>
+				<LeftOrTop>
+					<Bind BindType="Resize" CompID="div_report"/>
+				</LeftOrTop>
+				<RightOrBottom>
+					<Bind BindType="Resize" CompID="div_schedule"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<Split BKColor="user9" Border="Flat" BorderColor="user10" Direct="VERT" Height="6" Id="sp_left_low" Left="24" MaxPos="562" MinPos="308" OnEndMove="sp_left_low_OnEndMove" Top="471" Width="459">
+			<Contents>
+				<LeftOrTop>
+					<Bind BindType="Resize" CompID="div_result"/>
+				</LeftOrTop>
+				<RightOrBottom>
+					<Bind BindType="Resize" CompID="div_dangerous"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<Split BKColor="user9" Border="Flat" BorderColor="user10" Direct="VERT" Height="6" Id="sp_right_low" Left="490" MaxPos="562" MinPos="308" Top="471" Width="486">
+			<Contents>
+				<LeftOrTop>
+					<Bind BindType="Resize" CompID="div_process"/>
+				</LeftOrTop>
+				<RightOrBottom>
+					<Bind BindType="Resize" CompID="div_dangerous"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<SplitJoint BKColor="user9" Border="Flat" BorderColor="user10" Height="7" Id="sp_jointBottom" JointLeft="sp_left_low" JointRight="sp_right_row" JointTop="sp_middle" Left="483" Top="470" Width="7"></SplitJoint>
+		<Shape BKColor="user0" Bottom="132" Height="114" Id="Shape0" Left="15" LineColor="user1" Right="577" RoundHeight="5" RoundUnit="Pixel" RoundWidth="5" TabOrder="15" Top="18" Type="RoundRect" Width="562"></Shape>
+		<Image Align="Left" Height="16" Id="img_title" ImageID="M_title_1depth_icon2" Left="20" LeftMargin="18" Style="cm_title_sub" TabOrder="16" Top="23" Width="16"></Image>
+		<Image Height="7" Id="Image3" ImageID="M_search_titleicon" Left="25" TabOrder="18" Top="53" Transparent="TRUE" Width="4"></Image>
+		<Static Font="돋움체,9" Height="13" Id="Static0" Left="34" Style="M_search_title" TabOrder="17" Text="프로젝트명" Top="51" Width="73"></Static>
+		<Edit BindDataset="ds_master" Border="Flat" Column="PRJ_NM" Height="18" Id="ed_prj_nm" Left="110" Style="M_search_edit" TabOrder="19" Top="46" Width="275"></Edit>
+		<Static Font="돋움체,9" Height="13" Id="Static2" Left="34" Style="M_search_title" TabOrder="20" Text="프로젝트유형" Top="71" Width="73"></Static>
+		<Combo BindDataset="ds_master" Border="Flat" CodeColumn="code" Column="PRJ_TYPE" DataColumn="value" Height="18" Id="cb_prj_type" InnerDataset="ds_cb_prj_type" Left="109" Style="M_search_combo" TabOrder="21" Top="65" Width="100"></Combo>
+		<Static Font="돋움체,9" Height="13" Id="Static1" Left="34" Style="M_search_title" TabOrder="22" Text="PM" Top="91" Width="73"></Static>
+		<Image Height="17" Id="btn_find_pm" ImageID="M_search_icon" Left="196" OnClick="btn_find_pm_OnClick" Static="FALSE" TabOrder="23" Top="87" Transparent="TRUE" Width="19"></Image>
+		<Edit BindDataset="ds_master" Border="Flat" Column="PM" Height="18" Id="ed_pm" Left="110" Style="M_search_edit" TabOrder="24" Top="86" Width="84"></Edit>
+		<Static Font="돋움체,9" Height="13" Id="Static3" Left="34" Style="M_search_title" TabOrder="25" Text="오픈예정일자" Top="111" Width="73"></Static>
+		<Static Font="돋움체,9" Height="13" Id="Static4" Left="230" Style="M_search_title" TabOrder="26" Text="고객구분" Top="71" Width="53"></Static>
+		<Combo BindDataset="ds_master" Border="Flat" CodeColumn="code" Column="CUSTOMER_TYPE" DataColumn="value" Height="18" Id="cb_customer_type" InnerDataset="ds_cb_customer_type" Left="286" Style="M_search_combo" TabOrder="27" Top="67" Width="100"></Combo>
+		<Image Height="7" Id="Image9" ImageID="M_search_titleicon" Left="223" TabOrder="28" Top="73" Transparent="TRUE" Width="4"></Image>
+		<Image Height="7" Id="Image10" ImageID="M_search_titleicon" Left="399" TabOrder="31" Top="73" Transparent="TRUE" Width="4"></Image>
+		<Static Font="돋움체,9" Height="13" Id="Static5" Left="406" Style="M_search_title" TabOrder="29" Text="수행국가" Top="71" Width="53"></Static>
+		<Combo BindDataset="ds_master" Border="Flat" CodeColumn="code" Column="PRJ_COUNTRY" DataColumn="value" Height="18" Id="cb_prj_country" InnerDataset="ds_cb_prj_country" Left="462" Style="M_search_combo" TabOrder="30" Top="67" Width="106"></Combo>
+		<Edit BindDataset="ds_master" Border="Flat" Column="PM_POSITION" Height="18" Id="ed_pm_position" Left="222" Style="M_search_edit" TabOrder="32" Top="88" Width="163"></Edit>
+		<Image Height="17" Id="btn_find_dept" ImageID="M_search_icon" Left="547" OnClick="btn_find_dept_OnClick" Static="FALSE" TabOrder="35" Top="89" Transparent="TRUE" Width="19"></Image>
+		<Edit BindDataset="ds_master" Border="Flat" Column="PRJ_DEPT" Height="18" Id="ed_prj_dept" Left="462" Style="M_search_edit" TabOrder="36" Top="88" Width="84"></Edit>
+		<Static Font="돋움체,9" Height="13" Id="Static6" Left="406" Style="M_search_title" TabOrder="33" Text="주관부서" Top="91" Width="53"></Static>
+		<Image Height="7" Id="Image12" ImageID="M_search_titleicon" Left="399" TabOrder="34" Top="93" Transparent="TRUE" Width="4"></Image>
+		<Image Height="7" Id="Image13" ImageID="M_search_titleicon" Left="223" TabOrder="38" Top="113" Transparent="TRUE" Width="4"></Image>
+		<Static Font="돋움체,9" Height="13" Id="Static7" Left="230" Style="M_search_title" TabOrder="37" Text="계획기간" Top="111" Width="53"></Static>
+		<Static Align="Center" Height="13" Id="Static8" Left="390" Style="M_search_title" TabOrder="39" Text="~" Top="113" Width="11"></Static>
+		<Shape BKColor="user0" Bottom="132" Height="114" Id="Shape1" Left="582" LineColor="user1" Right="815" RoundHeight="5" RoundUnit="Pixel" RoundWidth="5" TabOrder="40" Top="18" Type="RoundRect" Width="233"></Shape>
+		<Shape BKColor="user0" Bottom="132" Height="114" Id="Shape2" Left="820" LineColor="user1" Right="982" RoundHeight="5" RoundUnit="Pixel" RoundWidth="5" TabOrder="41" Top="18" Type="RoundRect" Width="162"></Shape>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" AutoFitEndLine="Hide" AutoSelect="TRUE" BindDataset="ds_master" BkColor2="default" BkSelColor="white" BoldHead="FALSE" Border="Flat" Bottom="118" CellEditAutoSize="TRUE" CellMoving="TRUE" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="61" Id="grd_status" InputPanel="FALSE" Left="839" LineColor="default" LineType="ExHORZ" MinWidth="100" Right="967" RowHeight="40" Style="se_grid" TabOrder="42" TabStop="true" Top="57" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="128">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="50"/>
+						<col width="50"/>
+						<col width="50"/>
+					</columns>
+					<head>
+						<cell bkcolor="user13" col="0" color="user14" display="text" text="일정"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" text="공수"/>
+						<cell bkcolor="user13" col="2" color="user14" display="text" text="위험"/>
+					</head>
+					<body>
+						<cell bkcolor="user11" bkcolor2="user12" bkimageid="expr:decode(STATE_SCHD,&apos;G&apos;,&apos;s_big_blue&apos;,&apos;Y&apos;,&apos;s_big_yellow&apos;,&apos;s_big_red&apos;)" col="0" colid="STRING" color="user16" display="text" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;normal&apos;,&#32;&apos;none&apos;)"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" bkimageid="expr:decode(STATE_MANP,&apos;G&apos;0,&apos;s_big_blue&apos;,&apos;Y&apos;,&apos;s_big_yellow&apos;,&apos;s_big_red&apos;)" col="1" colid="NUMBER" color="user16" display="number" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;number&apos;,&#32;&apos;none&apos;)"/>
+						<cell bkcolor="user11" bkcolor2="user12" bkimageid="expr:decode(STATE_RISK,&apos;G&apos;,&apos;s_big_blue&apos;,&apos;Y&apos;,&apos;s_big_yellow&apos;,&apos;s_big_red&apos;)" col="2" colid="TEXT" color="user16" display="text" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;normal&apos;,&#32;&apos;none&apos;)"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image Height="7" Id="Image16" ImageID="M_search_titleicon" Left="593" TabOrder="44" Top="71" Transparent="TRUE" Width="4"></Image>
+		<Static Font="돋움체,9" Height="13" Id="Static9" Left="600" Style="M_search_title" TabOrder="43" Text="계획" Top="68" Width="25"></Static>
+		<Static Color="red" Font="돋움체,9" Height="13" Id="Static10" Left="600" Style="M_search_title" TabOrder="45" Text="실적" Top="89" Width="25"></Static>
+		<Image Height="7" Id="Image17" ImageID="M_search_titleicon" Left="593" TabOrder="46" Top="92" Transparent="TRUE" Width="4"></Image>
+		<Progressbar BkColor="MENUTEXT" Height="9" Id="pro_plan" Left="631" Max="100" Origin="Horizontal" Step="5" TabOrder="47" Top="69" Width="134"></Progressbar>
+		<Progressbar BarColor="red" BkColor="MENUTEXT" Height="9" Id="pro_result" Left="631" Max="100" Origin="Horizontal" Step="5" TabOrder="48" Top="91" Width="134"></Progressbar>
+		<Static Align="Right" Font="돋움체,9" Height="13" Id="st_plan" Left="770" Style="M_search_title" TabOrder="49" Text="96.5" Top="68" Width="25"></Static>
+		<Static Align="Right" Color="red" Font="돋움체,9" Height="13" Id="st_result" Left="770" Style="M_search_title" TabOrder="50" Text="100" Top="89" Width="25"></Static>
+		<Static Align="Right" Font="돋움체,9" Height="13" Id="Static13" Left="794" Style="M_search_title" TabOrder="51" Text="%" Top="68" Width="9"></Static>
+		<Static Align="Right" Color="red" Font="돋움체,9" Height="13" Id="Static14" Left="794" Style="M_search_title" TabOrder="52" Text="%" Top="89" Width="9"></Static>
+		<Calendar BindDataset="ds_master" Border="Flat" Color="black" Column="OPEN_DATE" DayFont="돋움,9" DisableBKColor="user12" DisableColor="#848585" Face3dColor="#249494" HeaderFont="돋움,9,Bold" Height="18" Id="ca_open_date" Left="110" SaturdayTextColor="mediumblue" Style="se_cal" SundayTextColor="user56" TabOrder="53" TitleTextColor="white" TodayColor="user58" Top="106" TrailingTextColor="#f1f1f1" WeekBKColor="#9cd5d6" WeekColor="#014746" Width="100"></Calendar>
+		<Calendar BindDataset="ds_master" Border="Flat" Color="black" Column="PLAN_SDATE" DayFont="돋움,9" DisableBKColor="user12" DisableColor="#848585" Face3dColor="#249494" HeaderFont="돋움,9,Bold" Height="18" Id="ca_plan_sdate" Left="292" OnChanged="changeDayColor" SaturdayTextColor="mediumblue" Style="se_cal" SundayTextColor="user56" TabOrder="54" TitleTextColor="white" TodayColor="user58" Top="108" TrailingTextColor="#f1f1f1" WeekBKColor="#9cd5d6" WeekColor="#014746" Width="93"></Calendar>
+		<Calendar BindDataset="ds_master" Border="Flat" Color="black" Column="PLAN_EDATE" DayFont="돋움,9" DisableBKColor="user12" DisableColor="#848585" Face3dColor="#249494" HeaderFont="돋움,9,Bold" Height="18" Id="ca_plan_edate" Left="406" OnChanged="changeDayColor" SaturdayTextColor="mediumblue" Style="se_cal" SundayTextColor="user56" TabOrder="55" TitleTextColor="white" TodayColor="user58" Top="108" TrailingTextColor="#f1f1f1" WeekBKColor="#9cd5d6" WeekColor="#014746" Width="92"></Calendar>
+		<Button Cursor="HAND" Height="16" Id="btn_open_date" ImageID="m_bt_cal" Left="191" OnClick="btn_open_date_OnClick" TabOrder="56" Text="Button2" Top="107" Width="18"></Button>
+		<Button Cursor="HAND" Height="16" Id="btn_plan_sdate" ImageID="m_bt_cal" Left="366" OnClick="btn_plan_sdate_OnClick" TabOrder="57" Text="Button2" Top="109" Width="18"></Button>
+		<Button Cursor="HAND" Height="16" Id="btn_plan_edate" ImageID="m_bt_cal" Left="480" OnClick="btn_plan_edate_OnClick" TabOrder="58" Text="Button2" Top="109" Width="17"></Button>
+		<Static Font="맑은&#32;고딕,10,Bold" Height="19" Id="Static11" Left="41" Style="M_title_1depth" TabOrder="59" Text="프로젝트개요" Top="23" Width="82"></Static>
+		<Image Height="7" Id="Image4" ImageID="M_search_titleicon" Left="25" TabOrder="60" Top="73" Transparent="TRUE" Width="4"></Image>
+		<Image Height="7" Id="Image5" ImageID="M_search_titleicon" Left="25" TabOrder="61" Top="93" Transparent="TRUE" Width="4"></Image>
+		<Image Height="7" Id="Image6" ImageID="M_search_titleicon" Left="25" TabOrder="62" Top="113" Transparent="TRUE" Width="4"></Image>
+		<Image Align="Left" Height="16" Id="Image7" ImageID="M_title_1depth_icon2" Left="588" LeftMargin="18" Style="cm_title_sub" TabOrder="63" Top="23" Width="16"></Image>
+		<Static Font="맑은&#32;고딕,10,Bold" Height="19" Id="Static12" Left="609" Style="M_title_1depth" TabOrder="64" Text="프로젝트현황" Top="23" Width="82"></Static>
+		<Image Align="Left" Height="16" Id="Image1" ImageID="M_title_1depth_icon2" Left="825" LeftMargin="18" Style="cm_title_sub" TabOrder="65" Top="23" Width="16"></Image>
+		<Static Font="맑은&#32;고딕,10,Bold" Height="19" Id="Static15" Left="846" Style="M_title_1depth" TabOrder="66" Text="상태정보" Top="23" Width="82"></Static>
+	</Form>
+	<Script><![CDATA[
+// 폼 초기화.
+function view100_OnLoadCompleted(obj)
+{
+	st_plan.Text 	= ds_master.GetColumn(0, "PLAN_RATE");
+	st_result.Text 	= ds_master.GetColumn(0, "REAL_RATE");
+	pro_plan.pos 	= st_plan.Text;
+	pro_result.pos 	= st_result.Text;
+	
+}
+
+
+// 변수를 VO형태로 전송 조회ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+function btn_searchByVO_OnClick(obj)
+{
+//	ds_param.ClearData();
+//	var row = ds_param.AddRow();
+//	ds_param.SetColumn(row, cb_searchCondition.Value	, ed_searchKeyword.Text);
+
+	transaction("view100", 
+				"svcLotte::demo/selectProjectSimpleList.mip", 
+				"", 
+				"ds_master=ProjectSimple", 
+				"", 
+				"fnCallbackLotte");
+	
+}
+
+// 이전 위치값.
+function GetSplitPos(obj)
+{
+	var pos = 0;
+	if( obj.Direct == "HORZ")
+		pos = ( obj.right + obj.left ) / 2;
+	else
+		pos = ( obj.bottom + obj.top ) / 2;
+	
+	//trace(obj.id+".direct = "+ obj.Direct + ":: pos="+pos + ", point(left="+obj.left+", right="+obj.right+", top="+obj.top+", bottom="+obj.bottom+")");
+	return pos;
+}
+
+// 상하이동 위치 조정
+function sp_left_OnEndMove(obj, nPos, nDelta)
+{
+	var endPos = 0;
+	if(nDelta==0)
+		endPos = GetSplitPos(obj);
+	
+	div_report.resetBottom(nPos - endPos);
+	div_schedule.resetBottom(nPos - endPos);
+	div_result.resetBottom(-(nPos-endPos));
+	div_process.resetBottom(-(nPos-endPos));
+	
+	adjustSplitMaxMinPos();
+	trace(obj.id + "_OnEndMove(이전 Y:"+nPos+") : {이동값:"+endPos+"}"  );
+}
+
+// 좌우이동 위치 조정
+function sp_top_OnEndMove(obj, nPos, nDelta)
+{
+	var endPos = 0;
+	if(nDelta==0)
+		endPos = GetSplitPos(obj);
+
+	div_report.resetRight(nPos - endPos);
+	div_result.resetRight(nPos - endPos);
+	div_schedule.resetRight(-(nPos-endPos));
+	div_process.resetRight(-(nPos-endPos));
+	
+	trace(obj.id + "_OnEndMove(이전 X:"+nPos+") : {이동값:"+endPos+"}"  );
+}
+
+// 하단 상하이동 위치 조정
+function sp_left_low_OnEndMove(obj, nPos, nDelta)
+{
+	var endPos = 0;
+	if(nDelta==0)
+		endPos = GetSplitPos(obj);
+
+	div_result.resetBottom(nPos - endPos);
+	div_process.resetBottom(nPos - endPos);
+	div_dangerous.resetBottom(-(nPos-endPos));
+
+	adjustSplitMaxMinPos();
+}
+
+// 오픈예정일자
+function btn_open_date_OnClick(obj)
+{
+	ca_open_date.DropDown();
+}
+// 계획기간 시작일
+function btn_plan_sdate_OnClick(obj)
+{
+	ca_plan_sdate.DropDown();
+}
+// 계획기간 종료일
+function btn_plan_edate_OnClick(obj)
+{
+	ca_plan_edate.DropDown();
+}
+// PM 찾기 버튼 클릭
+function btn_find_pm_OnClick(obj,nX,nY)
+{
+	
+}
+// 주관부서 찾기 버튼 클릭
+function btn_find_dept_OnClick(obj,nX,nY)
+{
+	
+}
+
+function sp_jointTop_OnEndMove(obj, nHPos, nVPos, nHDelta, nVDelta)
+{
+	trace("End Point[x,y] " + "["+nHPos+","+nVPos+"]" );
+}
+
+//	sp_jointTop		Left	Top
+// default 		: 	484		279
+//					Right	Bottom
+// type	100		:	887		434
+// type	200		:	70		288
+// type	300		:	854		17
+// type	400		:	70		17
+// type	500		:	854		17
+
+		// case 100:[x,y] [887,434]
+		// case 200:[x,y] [103,434]
+		// case 300:[x,y] [887,163]
+		// case 400:[x,y] [103,163]
+
+function setMaxView(arg_type)
+{
+	var jointLeft 	= 0;
+	var jointTop 	= 0;
+	
+	switch(arg_type)
+	{
+		case 100:
+			jointLeft	= 887;
+			jointTop	= 434;
+			sp_jointTop.left = jointLeft;
+			sp_jointTop.top = jointTop;
+			div_report.resizeAll(arg_type, 887, 434);
+			div_result.resizeAll(arg_type, 103, 434);
+			div_schedule.resizeAll(arg_type, 887, 163);
+			div_process.resizeAll(arg_type, 103, 163);
+			break;
+		case 200:
+			jointLeft	= 103;
+			jointTop	= 434;
+			sp_jointTop.left = jointLeft;
+			sp_jointTop.top = jointTop;
+			div_report.resizeAll(arg_type, 887, 434);
+			div_result.resizeAll(arg_type, 103, 434);
+			div_schedule.resizeAll(arg_type, 887, 163);
+			div_process.resizeAll(arg_type, 103, 163);
+			break;
+		case 300:
+			jointLeft	= 887;
+			jointTop	= 163;
+			sp_jointTop.left = jointLeft;
+			sp_jointTop.top = jointTop;
+			div_report.resizeAll(arg_type, 887, 434);
+			div_result.resizeAll(arg_type, 103, 434);
+			div_schedule.resizeAll(arg_type, 887, 163);
+			div_process.resizeAll(arg_type, 103, 163);
+			break;
+		case 400:
+			jointLeft	= 103;
+			jointTop	= 163;
+			sp_jointTop.left = jointLeft;
+			sp_jointTop.top = jointTop;
+			div_report.resizeAll(arg_type, 887, 434);
+			div_result.resizeAll(arg_type, 103, 434);
+			div_schedule.resizeAll(arg_type, 887, 163);
+			div_process.resizeAll(arg_type, 103, 163);
+			break;
+		case 500:
+			jointLeft	= 103;
+			jointTop	= 559;
+			sp_left_low_OnEndMove(sp_left_low, jointTop, 0);
+			sp_jointTop.left = jointLeft;
+			sp_jointTop.top = jointTop;
+			break;
+		default:	// 600
+			jointLeft	= 887;
+			jointTop	= 559;
+			sp_left_low_OnEndMove(sp_left_low, jointTop, 0);
+			sp_jointTop.left = jointLeft;
+			sp_jointTop.top = jointTop;
+			break;
+	}
+	adjustSplitMaxMinPos();
+
+}
+
+var title_height = 30;
+function adjustSplitMaxMinPos()
+{
+	sp_left.MaxPos 	= sp_left_low.Top - title_height;
+	sp_right.MaxPos = sp_left_low.Top - title_height;
+
+	sp_left_low.MinPos 	= sp_left.Bottom + title_height;
+	sp_right_low.MinPos = sp_left.Bottom + title_height;
+}
+
+// 프로젝트명 체크...............................
+function view100_OnActivate(obj)
+{
+	if(G_ProjectName !="" && G_ProjectName != ds_master.getColumn(ds_master.row, "PRJ_NM"))
+	{
+		// 새로운 Project명으로 재조회.
+		
+	}
+}
+]]></Script>
+</Window>

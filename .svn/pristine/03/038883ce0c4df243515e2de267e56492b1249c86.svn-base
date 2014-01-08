@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="form" Left="8" PidAttrib="7" Title="데이터Pivot" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_base">
+				<Contents>
+					<colinfo id="YM" size="256" summ="default" type="STRING"/>
+					<colinfo id="AREA" size="256" summ="default" type="STRING"/>
+					<colinfo id="CP" size="256" summ="default" type="STRING"/>
+					<colinfo id="MODEL" size="256" summ="default" type="STRING"/>
+					<colinfo id="TR" size="256" summ="default" type="STRING"/>
+					<colinfo id="CNT" size="256" summ="default" type="STRING"/>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>700</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>650</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>1000</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>1100</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>800</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>800</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>900</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>930</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>900</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>850</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>2000</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>1500</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>900</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>860</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>1000</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>1200</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>600</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>700</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1200</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1100</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>600</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>590</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1000</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>목표</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1200</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>실적</TR>
+						<YM>200801</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>700</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>650</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>1000</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>1100</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>800</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>760</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>900</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>930</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>900</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>850</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>2000</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>1500</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>900</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>860</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>1000</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>1200</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>600</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>700</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1200</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1100</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>600</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>590</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1000</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>목표</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1200</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>실적</TR>
+						<YM>200802</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>700</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>650</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>1000</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>1100</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>800</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>760</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>900</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>서울</AREA>
+						<CNT>930</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>900</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>850</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>2000</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>1500</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>900</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>860</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>1000</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>경기</AREA>
+						<CNT>1200</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>600</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>700</CNT>
+						<CP>승용</CP>
+						<MODEL>제네시스</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1200</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1100</CNT>
+						<CP>승용</CP>
+						<MODEL>그렌져TG</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>600</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>590</CNT>
+						<CP>RV</CP>
+						<MODEL>베라크루</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1000</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>목표</TR>
+						<YM>200803</YM>
+					</record>
+					<record>
+						<AREA>부산</AREA>
+						<CNT>1200</CNT>
+						<CP>RV</CP>
+						<MODEL>산타페</MODEL>
+						<TR>실적</TR>
+						<YM>200803</YM>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataObject="ds_base" DataSetType="Pivot" GroupKey="YM" Id="ds_basePivot" PivotKey="AREA,CP,MODEL,TR"></Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="4" Width="1000"></Image>
+		<Grid AutoFit="TRUE" BindDataset="ds_base" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="270" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="199" Id="Grid0" InputPanel="FALSE" Left="22" LineColor="default" LineType="ExVERT" MinWidth="100" Right="973" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="71" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="951">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="80"/>
+						<col width="150"/>
+						<col width="80"/>
+						<col width="80"/>
+						<col width="150"/>
+						<col width="80"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" text="년월"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user14" display="text" text="지역"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="user14" display="text" text="승/상구분"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user14" display="text" text="모델"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="user14" display="text" text="실적/목표"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="5" color="user14" display="text" text="대수"/>
+					</head>
+					<body>
+						<cell bkcolor="user11" bkcolor2="user12" col="0" colid="YM" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="1" colid="AREA" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="2" colid="CP" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="3" colid="MODEL" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="4" colid="TR" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="5" colid="CNT" color="user16" display="text"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Grid BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="572" Enable="true" EndLineColor="default" Format="default" HeadBorder="Flat" HeadHeight="20" Height="293" Id="Grid1" InputPanel="FALSE" Left="22" LineColor="default" LineType="ExVERT" Right="973" RowHeight="20" Style="se_grid" TabOrder="2" TabStop="true" Top="279" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="951">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col fix="left" width="74"/>
+						<col width="74"/>
+						<col fix="right" width="74"/>
+						<col fix="right" width="74"/>
+						<col fix="right" width="74"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" rowspan="4" text="Title"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" text="지역"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" row="1" text="승상"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" row="2" text="모델"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" row="3" text="목표/실적"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" row="4" text="년월"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="1" colid="AREA" color="user14" display="normal" suppress="-1"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="1" colid="CP" color="user14" display="normal" row="1" suppress="-2"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="1" colid="MODEL" color="user14" display="normal" row="2" suppress="-3"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="1" colid="TR" color="user14" display="normal" row="3"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user14" display="text" row="4" text="CNT"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="2" color="user14" colspan="3" display="text" rowspan="4" text="Total"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="user14" display="text" row="4" text="CNT-Tot"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user14" display="text" row="4" text="Count"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="user14" display="text" row="4" text="CNT-Avg"/>
+					</head>
+					<body>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" celltype="head" col="0" colid="YM" display="text" subsumtext="Subtotal"/>
+						<cell align="left" bkcolor="user11" bkcolor2="user12" col="1" colid="CNT" display="number"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" celltype="summary" col="2" display="number" expr="pivotSum(&apos;CNT&apos;,currow)" Mask="#,###.00"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" celltype="summary" col="3" display="number" expr="pivotCount(&apos;CNT&apos;,currow)"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" celltype="summary" col="4" display="number" expr="pivotAvg(&apos;CNT&apos;,currow)" Mask="#,###.00"/>
+					</body>
+					<summary>
+						<cell bkcolor="user19" col="0" color="user20" display="text" text="Sum,Count"/>
+						<cell bkcolor="user19" col="0" color="user20" display="text" row="1" text="Avg,Count"/>
+						<cell align="right" bkcolor="user19" col="1" color="user20" display="number" expr="Count(&apos;CNT&apos;,pivotindex)"/>
+						<cell align="right" bkcolor="user19" col="1" color="user20" display="number" expr="Count(&apos;CNT&apos;,pivotindex)" row="1"/>
+						<cell align="right" bkcolor="user19" celltype="summary" col="2" color="user20" display="number" expr="TotalSum(&apos;CNT&apos;)" Mask="#,###.00"/>
+						<cell align="right" bkcolor="user19" celltype="summary" col="3" color="user20" display="number" expr="TotalCount()"/>
+						<cell align="right" bkcolor="user19" celltype="summary" col="4" color="user20" display="number" expr="TotalAvg(&apos;CNT&apos;)" Mask="#,###.00"/>
+						<cell align="right" bkcolor="user19" celltype="summary" col="2" color="user20" display="number" expr="TotalSum(&apos;CNT&apos;)" Mask="#,###.00" row="1"/>
+						<cell align="right" bkcolor="user19" celltype="summary" col="3" color="user20" display="number" expr="TotalCount()" row="1"/>
+						<cell align="right" bkcolor="user19" celltype="summary" col="4" color="user20" display="number" expr="TotalAvg(&apos;CNT&apos;)" Mask="#,###.00" row="1"/>
+					</summary>
+				</format>
+				<format id="GroupKey0">
+					<columns>
+						<col fix="left" width="74"/>
+						<col fix="left" width="74"/>
+						<col width="74"/>
+						<col fix="right" width="74"/>
+						<col fix="right" width="74"/>
+						<col fix="right" width="74"/>
+					</columns>
+					<head>
+						<cell bkcolor="user13" col="0" color="user14" display="text" rowspan="3" text="Title"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" text="CP"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" row="1" text="MODEL"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" row="2" text="TR"/>
+						<cell bkcolor="user13" col="0" color="user14" display="text" row="3" text="YM"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" row="3" text="AREA"/>
+						<cell align="center" bkcolor="user13" col="2" colid="CP" color="user14" display="normal" suppress="-1"/>
+						<cell align="center" bkcolor="user13" col="2" colid="MODEL" color="user14" display="normal" row="1" suppress="-2"/>
+						<cell align="center" bkcolor="user13" col="2" colid="TR" color="user14" display="normal" row="2"/>
+						<cell bkcolor="user13" col="2" color="user14" display="text" row="3" text="CNT"/>
+						<cell bkcolor="user13" col="3" color="user14" colspan="3" display="text" rowspan="3" text="Total"/>
+						<cell bkcolor="user13" col="3" color="user14" display="text" row="3" text="CNT-Tot"/>
+						<cell bkcolor="user13" col="4" color="user14" display="text" row="3" text="Count"/>
+						<cell bkcolor="user13" col="5" color="user14" display="text" row="3" text="CNT-Avg"/>
+					</head>
+					<body>
+						<cell bkcolor="user11" bkcolor2="user12" celltype="head" col="0" colid="YM" color="user16" display="text" subsumexpr="iif(rowlevel&lt;2,YM,&apos;Subtotal&apos;)" suppress="1"/>
+						<cell bkcolor="user11" bkcolor2="user12" celltype="head" col="1" colid="AREA" color="user16" display="text" subsumtext="Subtotal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="2" colid="CNT" color="user16" display="normal" suppress="-1"/>
+						<cell bkcolor="user11" bkcolor2="user12" celltype="summary" col="3" color="user16" display="number" expr="pivotSum(&apos;CNT&apos;,currow)" Mask="#,###.00"/>
+						<cell bkcolor="user11" bkcolor2="user12" celltype="summary" col="4" color="user16" display="number" expr="pivotCount(&apos;CNT&apos;,currow)"/>
+						<cell bkcolor="user11" bkcolor2="user12" celltype="summary" col="5" color="user16" display="number" expr="pivotAvg(&apos;CNT&apos;,currow)" Mask="#,###.00"/>
+					</body>
+					<summary>
+						<cell bkcolor="user19" col="0" color="user20" display="text" rowspan="2" text="Total"/>
+						<cell bkcolor="user19" col="1" color="user20" display="text" text="Sum,Count"/>
+						<cell bkcolor="user19" col="1" color="user20" display="text" row="1" text="Avg,Count"/>
+						<cell bkcolor="user19" col="2" color="user20" display="number" expr="Count(&apos;CNT&apos;,pivotindex)"/>
+						<cell bkcolor="user19" col="2" color="user20" display="number" expr="Count(&apos;CNT&apos;,pivotindex)" row="1"/>
+						<cell bkcolor="user19" celltype="summary" col="3" color="user20" display="number" expr="TotalSum(&apos;CNT&apos;)" Mask="#,###.00"/>
+						<cell bkcolor="user19" celltype="summary" col="4" color="user20" display="number" expr="TotalCount()"/>
+						<cell bkcolor="user19" celltype="summary" col="5" color="user20" display="number" expr="TotalAvg(&apos;CNT&apos;)" Mask="#,###.00"/>
+						<cell bkcolor="user19" celltype="summary" col="3" color="user20" display="number" expr="TotalSum(&apos;CNT&apos;)" Mask="#,###.00" row="1"/>
+						<cell bkcolor="user19" celltype="summary" col="4" color="user20" display="number" expr="TotalCount()" row="1"/>
+						<cell bkcolor="user19" celltype="summary" col="5" color="user20" display="number" expr="TotalAvg(&apos;CNT&apos;)" Mask="#,###.00" row="1"/>
+					</summary>
+				</format>
+			</contents>
+		</Grid>
+		<Combo Border="Flat" Height="20" Id="Combo0" Left="21" OnChanged="Combo0_OnChanged" Style="se_input" TabOrder="3" Text="Pivot&#32;Key선택" Top="48" Width="126">
+			<Contents>
+				<Record Code="1" Data="날짜"/>
+				<Record Code="2" Data="날짜/지역"/>
+			</Contents>
+		</Combo>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="19" LeftMargin="18" Style="cm_title_sub" TabOrder="5" Text="그리드&#32;Pivoting" Top="27" Width="216"></Image>
+	</Form>
+	<Script><![CDATA[
+function Combo0_OnChanged(obj,strCode,strText,nOldIndex,nNewIndex)
+{
+	
+    Grid1.bindDataset = "ds_basePivot";
+    
+    ds_basePivot.GroupKey = '';
+    ds_basePivot.PivotKey = '';
+	ds_basePivot.FireEvent = false;
+	if(strCode == "1"){
+		ds_basePivot.PivotKey = 'AREA,CP,MODEL,TR';
+		ds_basePivot.GroupKey = 'YM';
+		Grid1.Format = "Default";
+	}else{
+		ds_basePivot.PivotKey = 'CP,MODEL,TR';
+		ds_basePivot.GroupKey = 'YM,AREA';
+		Grid1.Format = "GroupKey0";
+	}
+	ds_basePivot.FireEvent = true;
+}
+]]></Script>
+</Window>

@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="form" Left="8" OnLoadCompleted="form_OnLoadCompleted" PidAttrib="7" Title="종합분석" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="Dataset0">
+				<Contents>
+					<colinfo id="column0" size="256" type="STRING"/>
+					<colinfo id="column1" size="256" type="STRING"/>
+					<colinfo id="column2" size="256" type="STRING"/>
+					<colinfo id="column3" size="256" type="STRING"/>
+					<colinfo id="column4" size="256" type="STRING"/>
+					<colinfo id="column5" size="256" type="STRING"/>
+					<colinfo id="column6" size="256" type="STRING"/>
+					<colinfo id="column7" size="256" type="STRING"/>
+					<colinfo id="column8" size="256" type="STRING"/>
+					<colinfo id="column9" size="256" type="STRING"/>
+					<colinfo id="column10" size="256" type="STRING"/>
+					<colinfo id="column11" size="256" type="STRING"/>
+					<colinfo id="column12" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="STRING"/>
+					<colinfo id="col2" size="256" type="STRING"/>
+					<colinfo id="col3" size="256" type="STRING"/>
+					<colinfo id="col4" size="256" type="STRING"/>
+					<colinfo id="col5" size="256" type="STRING"/>
+					<colinfo id="col6" size="256" type="STRING"/>
+					<colinfo id="col7" size="256" type="STRING"/>
+					<colinfo id="col8" size="256" type="STRING"/>
+					<colinfo id="col9" size="256" type="STRING"/>
+					<colinfo id="col10" size="256" type="STRING"/>
+					<colinfo id="col11" size="256" type="STRING"/>
+					<colinfo id="col12" size="256" type="STRING"/>
+					<colinfo id="col13" size="256" type="STRING"/>
+					<colinfo id="col14" size="256" type="STRING"/>
+					<colinfo id="col15" size="256" type="STRING"/>
+					<colinfo id="col16" size="256" type="STRING"/>
+					<colinfo id="col17" size="256" type="STRING"/>
+					<colinfo id="col18" size="256" type="STRING"/>
+					<colinfo id="col19" size="256" type="STRING"/>
+					<colinfo id="col20" size="256" type="STRING"/>
+					<colinfo id="col21" size="256" type="STRING"/>
+					<colinfo id="col22" size="256" type="STRING"/>
+					<colinfo id="col23" size="256" type="STRING"/>
+					<colinfo id="col24" size="256" type="STRING"/>
+					<colinfo id="col25" size="256" type="STRING"/>
+					<colinfo id="col26" size="256" type="STRING"/>
+					<colinfo id="col27" size="256" type="STRING"/>
+					<colinfo id="col28" size="256" type="STRING"/>
+					<colinfo id="col29" size="256" type="STRING"/>
+					<colinfo id="col30" size="256" type="STRING"/>
+					<record>
+						<col1>red</col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2>blue</col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>Asia</column0>
+						<column1></column1>
+						<column10>8514</column10>
+						<column11>106.1%</column11>
+						<column12>forc_1</column12>
+						<column2>alertb</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>157</column5>
+						<column6>66</column6>
+						<column7>64</column7>
+						<column8>forc_1</column8>
+						<column9>8028</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>Europe</column0>
+						<column1></column1>
+						<column10>1847</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alertr</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>30</column5>
+						<column6>13</column6>
+						<column7>15</column7>
+						<column8>forc_2</column8>
+						<column9>1854</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>South&#32;America</column0>
+						<column1></column1>
+						<column10>1421</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alerty</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>48</column5>
+						<column6>16</column6>
+						<column7>23</column7>
+						<column8>forc_3</column8>
+						<column9>1857</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>North&#32;America</column0>
+						<column1></column1>
+						<column10>779</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alertr</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>31</column5>
+						<column6>0</column6>
+						<column7>16</column7>
+						<column8>forc_4</column8>
+						<column9>1091</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>Oceania</column0>
+						<column1></column1>
+						<column10>1012</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alertr</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>32</column5>
+						<column6>7</column6>
+						<column7>13</column7>
+						<column8>forc_3</column8>
+						<column9>456</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>Africa</column0>
+						<column1></column1>
+						<column10>779</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alerty</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>20</column5>
+						<column6>11</column6>
+						<column7>7</column7>
+						<column8>forc_2</column8>
+						<column9>789</column9>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="Dataset0_0">
+				<Contents>
+					<colinfo id="column0" size="256" type="STRING"/>
+					<colinfo id="column1" size="256" type="STRING"/>
+					<colinfo id="column2" size="256" type="STRING"/>
+					<colinfo id="column3" size="256" type="STRING"/>
+					<colinfo id="column4" size="256" type="STRING"/>
+					<colinfo id="column5" size="256" type="STRING"/>
+					<colinfo id="column6" size="256" type="STRING"/>
+					<colinfo id="column7" size="256" type="STRING"/>
+					<colinfo id="column8" size="256" type="STRING"/>
+					<colinfo id="column9" size="256" type="STRING"/>
+					<colinfo id="column10" size="256" type="STRING"/>
+					<colinfo id="column11" size="256" type="STRING"/>
+					<colinfo id="column12" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="STRING"/>
+					<colinfo id="col2" size="256" type="STRING"/>
+					<colinfo id="col3" size="256" type="STRING"/>
+					<colinfo id="col4" size="256" type="STRING"/>
+					<colinfo id="col5" size="256" type="STRING"/>
+					<colinfo id="col6" size="256" type="STRING"/>
+					<colinfo id="col7" size="256" type="STRING"/>
+					<colinfo id="col8" size="256" type="STRING"/>
+					<colinfo id="col9" size="256" type="STRING"/>
+					<colinfo id="col10" size="256" type="STRING"/>
+					<colinfo id="col11" size="256" type="STRING"/>
+					<colinfo id="col12" size="256" type="STRING"/>
+					<colinfo id="col13" size="256" type="STRING"/>
+					<colinfo id="col14" size="256" type="STRING"/>
+					<colinfo id="col15" size="256" type="STRING"/>
+					<colinfo id="col16" size="256" type="STRING"/>
+					<colinfo id="col17" size="256" type="STRING"/>
+					<colinfo id="col18" size="256" type="STRING"/>
+					<colinfo id="col19" size="256" type="STRING"/>
+					<colinfo id="col20" size="256" type="STRING"/>
+					<colinfo id="col21" size="256" type="STRING"/>
+					<colinfo id="col22" size="256" type="STRING"/>
+					<colinfo id="col23" size="256" type="STRING"/>
+					<colinfo id="col24" size="256" type="STRING"/>
+					<colinfo id="col25" size="256" type="STRING"/>
+					<colinfo id="col26" size="256" type="STRING"/>
+					<colinfo id="col27" size="256" type="STRING"/>
+					<colinfo id="col28" size="256" type="STRING"/>
+					<colinfo id="col29" size="256" type="STRING"/>
+					<colinfo id="col30" size="256" type="STRING"/>
+					<record>
+						<col1>red</col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2>blue</col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>Asia</column0>
+						<column1></column1>
+						<column10>8514</column10>
+						<column11>106.1%</column11>
+						<column12>forc_1</column12>
+						<column2>alertb</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>157</column5>
+						<column6>66</column6>
+						<column7>64</column7>
+						<column8>forc_1</column8>
+						<column9>8028</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>Europe</column0>
+						<column1></column1>
+						<column10>1847</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alertr</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>30</column5>
+						<column6>13</column6>
+						<column7>15</column7>
+						<column8>forc_2</column8>
+						<column9>1854</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>South&#32;America</column0>
+						<column1></column1>
+						<column10>1421</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alerty</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>48</column5>
+						<column6>16</column6>
+						<column7>23</column7>
+						<column8>forc_3</column8>
+						<column9>1857</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>North&#32;America</column0>
+						<column1></column1>
+						<column10>779</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alertr</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>31</column5>
+						<column6>0</column6>
+						<column7>16</column7>
+						<column8>forc_4</column8>
+						<column9>1091</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>Oceania</column0>
+						<column1></column1>
+						<column10>1012</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alertr</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>32</column5>
+						<column6>7</column6>
+						<column7>13</column7>
+						<column8>forc_3</column8>
+						<column9>456</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>Africa</column0>
+						<column1></column1>
+						<column10>779</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alerty</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>20</column5>
+						<column6>11</column6>
+						<column7>7</column7>
+						<column8>forc_2</column8>
+						<column9>789</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>울산</column0>
+						<column1></column1>
+						<column10>701</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alerty</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>134</column5>
+						<column6>42</column6>
+						<column7>7</column7>
+						<column8>forc_2</column8>
+						<column9>234</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>경기</column0>
+						<column1></column1>
+						<column10>586</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alerty</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>16</column5>
+						<column6>10</column6>
+						<column7>72</column7>
+						<column8>forc_2</column8>
+						<column9>1023</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>충남</column0>
+						<column1></column1>
+						<column10>516</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alerty</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>18</column5>
+						<column6>2</column6>
+						<column7>11</column7>
+						<column8>forc_2</column8>
+						<column9>1990</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>충북</column0>
+						<column1></column1>
+						<column10>586</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alerty</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>8</column5>
+						<column6>3</column6>
+						<column7>11</column7>
+						<column8>forc_2</column8>
+						<column9>234</column9>
+					</record>
+					<record>
+						<col1></col1>
+						<col10></col10>
+						<col11></col11>
+						<col12></col12>
+						<col13></col13>
+						<col14></col14>
+						<col15></col15>
+						<col16></col16>
+						<col17></col17>
+						<col18></col18>
+						<col19></col19>
+						<col2></col2>
+						<col20></col20>
+						<col21></col21>
+						<col22></col22>
+						<col23></col23>
+						<col24></col24>
+						<col25></col25>
+						<col26></col26>
+						<col27></col27>
+						<col28></col28>
+						<col29></col29>
+						<col3></col3>
+						<col30></col30>
+						<col4></col4>
+						<col5></col5>
+						<col6></col6>
+						<col7></col7>
+						<col8></col8>
+						<col9></col9>
+						<column0>전남</column0>
+						<column1></column1>
+						<column10>481</column10>
+						<column11>101.4%</column11>
+						<column12></column12>
+						<column2>alerty</column2>
+						<column3>81.7%</column3>
+						<column4>91.5%</column4>
+						<column5>12</column5>
+						<column6>5</column6>
+						<column7>15</column7>
+						<column8>forc_2</column8>
+						<column9>1700</column9>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="600" Id="Image10" ImageID="M_bg3" TabOrder="1" Width="1000"></Image>
+		<Image FillType="STRETCH" Height="23" Id="Image9" ImageID="barblue01" Left="24" TabOrder="4" Top="57" Width="948"></Image>
+		<Static Color="whitesmoke" Font="굴림,8,Bold" Height="22" Id="Static5" Left="34" Style="list_title" TabOrder="1" Text="Ratio&#32;throughout&#32;sales&#32;funnel" Top="61" VAlign="Middle" Width="208"></Static>
+		<Image FillType="STRETCH" Height="2" Id="Image17" ImageID="hblue01" Left="23" TabOrder="2" Top="80" Width="940"></Image>
+		<Grid AutoFit="TRUE" AutoScrollBar="None" BindDataset="Dataset0" BkColor2="default" BoldHead="true" Border="Flat" BorderColor="INACTIVECAPTION" Bottom="528" ColSelect="TRUE" Enable="true" EndLineColor="default" Face3dColor="#bec5e7" HeadBorder="Flat" HeadHeight="20" Height="448" Id="Grid0" InputPanel="FALSE" Left="24" LineColor="whitesmoke" MinWidth="100" OnCellDBLClick="Grid0_OnCellDblClick" Right="972" TabOrder="3" TabStop="true" Top="80" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="948">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="79"/>
+						<col width="19"/>
+						<col width="40"/>
+						<col width="46"/>
+						<col width="40"/>
+						<col width="40"/>
+						<col width="44"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="44"/>
+						<col width="60"/>
+						<col width="60"/>
+						<col width="50"/>
+						<col width="35"/>
+						<col width="38"/>
+						<col width="45"/>
+						<col width="49"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="0" display="text" font="Tahoma,8,Bold" rowspan="2" text="indicator"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="1" display="text" font="Tahoma,8,Bold" rowspan="2" text="-"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="2" colspan="3" display="text" font="Tahoma,8,Bold" text="Sales&#32;Staus"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="5" colspan="2" display="text" font="Tahoma,8,Bold" text="Sales&#32;Total"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="7" colspan="25" display="text" font="Tahoma,8,Bold" text="Alert"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="32" display="text" font="Tahoma,8,Bold" rowspan="2" text="traffic"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="33" display="text" font="Tahoma,8,Bold" rowspan="2" text="Plan"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="34" display="text" font="Tahoma,8,Bold" rowspan="2" text="Perf."/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="35" display="text" font="Tahoma,8,Bold" rowspan="2" text="Rate(%)" wordwrap="word"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="36" colspan="2" display="text" font="Tahoma,8,Bold" text="Sales&#32;offer"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="38" display="text" rowspan="2" text="Vision" wordwrap="exchar"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="39" display="text" rowspan="2" text="Sales&#32;Diary" wordwrap="exchar"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="27" colspan="5" display="text" row="1" text="100%"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="36" display="text" row="1" text="Mon"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="37" display="text" row="1" text="Year"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" display="text" row="1" text="traffic"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" display="text" row="1" text="Plan"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" display="text" row="1" text="Perf."/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="5" display="text" row="1" text="Mon"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="6" display="text" row="1" text="Year"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="7" colspan="5" display="text" row="1" text="20%"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="12" colspan="5" display="text" row="1" text="40%"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="17" colspan="5" display="text" row="1" text="60%"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="22" colspan="5" display="text" row="1" text="80%"/>
+					</head>
+					<body>
+						<cell align="left" bkcolor="#e3e5f1" col="0" colid="column0" color="#454545" display="text" font="Tahoma,8,Bold" rowspan="2"/>
+						<cell align="right" bkcolor="white" col="1" colid="column1" color="#454545" display="number" font="Tahoma,8" rowspan="2"/>
+						<cell align="right" bkcolor="white" col="2" colid="column2" color="#454545" display="image" font="Tahoma,8" rowspan="2"/>
+						<cell align="left" col="3" colid="column3" color="#454545" display="text" font="Tahoma,8,Bold" rowspan="2"/>
+						<cell align="left" bkcolor="white" col="4" colid="column4" color="#454545" display="text" font="Tahoma,8,Bold" rowspan="2"/>
+						<cell align="right" bkcolor="white" bkimageid="img1" col="5" color="#454545" display="text" font="Tahoma,8,Bold" rowspan="2"/>
+						<cell align="right" bkcolor="white" bkimageid="img2" col="6" color="#454545" display="text" font="Tahoma,8,Bold" rowspan="2"/>
+						<cell align="right" bkcolor="white" col="7" color="#454545" colspan="25" display="text" font="Tahoma,8">
+							<cell bkimageid="alertb" col="0" display="text"/>
+							<cell col="1" colid="column5" color="blue" colspan="4" display="text"/>
+							<cell bkimageid="alerty" col="5" display="text"/>
+							<cell col="6" colid="column6" color="moccasin" colspan="4" display="text"/>
+							<cell col="10" colid="column7" color="salmon" colspan="5" display="text"/>
+							<cell col="15" colspan="10" display="text"/>
+						</cell>
+						<cell align="right" bkcolor="white" col="32" colid="column8" color="#454545" display="image" font="Tahoma,8" rowspan="2"/>
+						<cell align="right" bkcolor="white" col="33" colid="column9" color="#454545" display="text" font="Tahoma,8" rowspan="2"/>
+						<cell align="right" bkcolor="white" col="34" colid="column10" color="#454545" display="text" font="Tahoma,8" rowspan="2"/>
+						<cell align="right" bkcolor="white" col="35" colid="column11" color="#454545" display="text" font="Tahoma,8" rowspan="2"/>
+						<cell align="right" bkcolor="white" bkimageid="img1" col="36" color="#454545" display="text" font="Tahoma,8" rowspan="2"/>
+						<cell align="right" bkcolor="white" bkimageid="img2" col="37" color="#454545" display="text" font="Tahoma,8" rowspan="2"/>
+						<cell bkimageid="img3" col="38" display="text" rowspan="2"/>
+						<cell bkimageid="img4" col="39" display="text" rowspan="2"/>
+						<cell bkcolor="expr:col1" col="7" display="text" row="1"/>
+						<cell bkcolor="expr:col2" col="8" display="text" row="1"/>
+						<cell bkcolor="expr:col3" col="9" display="text" row="1"/>
+						<cell bkcolor="expr:col4" col="10" display="text" row="1"/>
+						<cell bkcolor="expr:col5" col="11" display="text" row="1"/>
+						<cell bkcolor="expr:col6" col="12" display="text" row="1"/>
+						<cell bkcolor="expr:col7" col="13" display="text" row="1"/>
+						<cell bkcolor="expr:col8" col="14" display="text" row="1"/>
+						<cell bkcolor="expr:col9" col="15" display="text" row="1"/>
+						<cell bkcolor="expr:col10" col="16" display="text" row="1"/>
+						<cell bkcolor="expr:col11" col="17" display="text" row="1"/>
+						<cell bkcolor="expr:col12" col="18" display="text" row="1"/>
+						<cell bkcolor="expr:col13" col="19" display="text" row="1"/>
+						<cell bkcolor="expr:col14" col="20" display="text" row="1"/>
+						<cell bkcolor="expr:col15" col="21" display="text" row="1"/>
+						<cell bkcolor="expr:col16" col="22" display="text" row="1"/>
+						<cell bkcolor="expr:col17" col="23" display="text" row="1"/>
+						<cell bkcolor="expr:col18" col="24" display="text" row="1"/>
+						<cell bkcolor="expr:col19" col="25" display="text" row="1"/>
+						<cell bkcolor="expr:col20" col="26" display="text" row="1"/>
+						<cell bkcolor="expr:col21" col="27" display="text" row="1"/>
+						<cell bkcolor="expr:col22" col="28" display="text" row="1"/>
+						<cell bkcolor="expr:col23" col="29" display="text" row="1"/>
+						<cell bkcolor="expr:col24" col="30" display="text" row="1"/>
+						<cell bkcolor="expr:col25" col="31" display="text" row="1"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image Align="Left" Height="16" Id="Image8" ImageID="M_title_1depth_icon" Left="19" LeftMargin="18" Style="cm_title_sub" TabOrder="6" Text="Sales&#32;Key&#32;Performance&#32;Indicator&#32;Status&#32;Summary" Top="27" Width="368"></Image>
+	</Form>
+	<Script><![CDATA[
+function form_OnLoadCompleted(obj)
+{
+	fn_set_data();
+}
+
+
+function fn_set_data()
+{
+	var nMax, nVal1, nVal2, nVal3, nValTot;
+	var nPVal1, nPVal2, nPVal3, nValTot;
+	var nVal;
+	
+	
+	nMax = dataset0.RowCount();
+	Grid0.Redraw = false;
+	for( i=0;i<nMax; i++)
+	{
+		nVal1 = toNumber(dataset0.GetColumn(i,"column5"));
+		nVal2 = toNumber(dataset0.GetColumn(i,"column6"));
+		nVal3 = toNumber(dataset0.GetColumn(i,"column7"));
+		
+		nValTot = nVal1 + nVal2 + nVal3;
+		
+		nPVal1 = toInteger(nVal1 / nValTot * 25);
+		nPVal2 = nPVal1 + toInteger(nVal2 / nValTot * 25);
+		nPVal3 = 25 - nPVal2; //nVal3 / nValTot;
+		
+		//trace( i + " -> " +  nPVal1 + " / " +  nPVal2 + " / " +  nPVal3 );
+		
+		for( j=1; j<=25; j++)
+		{
+			if( j >= nPVal2 ) nVal = "salmon";
+			if( j < nPVal2 ) nVal = "moccasin";
+			if( j < nPVal1 ) nVal = "blue";
+			
+			dataset0.SetColumn(i,"col"+j,nVal);
+			//trace( j + " -> " + nVal );
+		}
+	}
+	Grid0.Redraw = true;
+}
+
+function Grid0_OnCellDblClick(obj,nRow,nCell,nX,nY,nPivotIndex)
+{
+	if( nCell == 6 )
+	 {
+		Dialog("semi_chart::form_pop.xml","", 845, 560);
+
+	 }
+}
+]]></Script>
+</Window>

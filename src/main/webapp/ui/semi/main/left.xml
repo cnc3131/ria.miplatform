@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="711" Id="left" Left="8" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="245" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="tree">
+				<Contents>
+					<colinfo id="lev" size="256" summ="default" type="STRING"/>
+					<colinfo id="data" size="256" summ="default" type="STRING"/>
+					<record>
+						<data>menu1</data>
+						<lev>0</lev>
+					</record>
+					<record>
+						<data>sub_menu1</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>sub_menu2</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>sub_menu3</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>menu2</data>
+						<lev>0</lev>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image Cursor="HAND" Height="81" Id="img_my_menu" ImageID="L_mymenu" OnClick="img_my_menu_OnClick" Static="FALSE" TabOrder="1" Top="71" Width="19"></Image>
+		<Image Cursor="HAND" Height="65" Id="img_left_menu" ImageID="L_menu" OnClick="img_left_menu_OnClick" Static="FALSE" TabOrder="2" Top="7" Width="19"></Image>
+		<PopupDiv BKColor="whitesmoke" Height="398" Id="pdiv_menu" Left="23" TabOrder="3" TabStop="FALSE" Top="8" Url="main::menu.xml" Width="237">
+			<Contents></Contents>
+		</PopupDiv>
+	</Form>
+	<Script><![CDATA[
+function Image13_OnClick(obj,nX,nY)
+{
+	Image13.ImageID="L_menuview_N";
+}
+
+
+function img_left_menu_OnClick(obj,nX,nY)
+{
+	var xPos, yPos;
+	
+	xPos = ClientToScreenX(obj, obj.Width);
+	yPos = ClientToScreenY(obj, 5);
+	
+	pdiv_menu.Url = "main::menu.xml";
+	
+	pdiv_menu.TrackPopup(xPos, yPos - obj.Top);		
+	
+}
+
+function img_my_menu_OnClick(obj,nX,nY)
+{
+	var xPos, yPos;
+	
+	xPos = ClientToScreenX(obj, obj.Width);
+	yPos = ClientToScreenY(obj, 5);
+	
+	pdiv_menu.Url = "main::my_menu.xml";
+	
+	pdiv_menu.TrackPopup(xPos, yPos - obj.Top);			
+}
+]]></Script>
+</Window>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="136" Id="view100_sub100" Left="8" OnLoadCompleted="view100_sub100_OnLoadCompleted" PidAttrib="7" Title="레포트영역" Top="8" Ver="1.0" Width="454" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_report">
+				<Contents>
+					<colinfo id="REPORT_NM" size="100" summ="default" type="STRING"/>
+					<colinfo id="PLAN_SDATE" size="10" summ="default" type="STRING"/>
+					<colinfo id="PLAN_EDATE" size="10" summ="default" type="STRING"/>
+					<record>
+						<PLAN_EDATE>20091108</PLAN_EDATE>
+						<PLAN_SDATE>20091102</PLAN_SDATE>
+						<REPORT_NM>10주차&#32;주간보고서(11월2주차)</REPORT_NM>
+					</record>
+					<record>
+						<PLAN_EDATE>20091101</PLAN_EDATE>
+						<PLAN_SDATE>20091026</PLAN_SDATE>
+						<REPORT_NM>9주차&#32;주간보고서(11월2주차)</REPORT_NM>
+					</record>
+					<record>
+						<PLAN_EDATE>20091025</PLAN_EDATE>
+						<PLAN_SDATE>20091019</PLAN_SDATE>
+						<REPORT_NM>8주차&#32;주간보고서(11월2주차)</REPORT_NM>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" AutoFitEndLine="Hide" AutoSelect="TRUE" BindDataset="ds_report" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="136" CellEditAutoSize="TRUE" CellMoving="TRUE" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="112" Id="grd_list" InputPanel="FALSE" LineColor="default" LineType="ExHORZ" MinWidth="100" Right="454" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="24" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="454">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="35"/>
+						<col width="167"/>
+						<col width="67"/>
+						<col width="18"/>
+						<col width="72"/>
+						<col width="78"/>
+					</columns>
+					<head>
+						<cell bkcolor="user13" col="0" color="user14" display="text" text="No"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" text="제목"/>
+						<cell bkcolor="user13" col="2" color="user14" colspan="3" display="text" text="기간"/>
+						<cell bkcolor="user13" col="5" color="user14" display="text" text="첨부파일"/>
+					</head>
+					<body>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="0" colid="STRING" color="user16" display="text" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;normal&apos;,&#32;&apos;none&apos;)" expr="row+1"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" col="1" colid="REPORT_NM" color="user16" display="normal" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;number&apos;,&#32;&apos;none&apos;)"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="2" colid="PLAN_SDATE" color="user16" display="date" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;date&apos;,&#32;&apos;none&apos;)" expandimage="btn_seCal" expandsize="18"/>
+						<cell align="center" col="3" display="text" text="~"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="4" colid="PLAN_EDATE" color="user16" display="date" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;date&apos;,&#32;&apos;none&apos;)" expandimage="btn_seCal" expandsize="18"/>
+						<cell bkcolor="user11" bkcolor2="user12" bkimageid="downLoadBtn" button3d="false" col="5" colid="TEXT" color="user16" cursor="hand" display="button"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image Height="12" Id="Image14" ImageID="M_title_2depth_icon" TabOrder="2" Top="6" Transparent="TRUE" Width="13"></Image>
+		<Image Align="Left" Height="17" Id="img_subTitle" Left="17" OnClick="img_subTitle_OnClick" Static="FALSE" Style="M_title_2depth" TabOrder="3" Text="보고서" Top="4" Transparent="TRUE" Width="69"></Image>
+	</Form>
+	<Script><![CDATA[
+function img_subTitle_OnClick(obj,nX,nY)
+{
+	parent.setMaxView(100);
+}
+
+function resetBottom(arg_value)
+{
+	grd_list.bottom += arg_value;
+	trace("view100::Bottom="+ grd_list.bottom);
+}
+
+
+function resetRight(arg_value)
+{
+	grd_list.right += arg_value;
+	trace("view100::right="+ grd_list.right);
+}
+
+//				Right	Bottom
+// default : 	454		136
+// type	100:	854		288
+// type	200:	70		288
+// type	300:	854		17
+// type	400:	70		17
+// type	500:	854		17
+
+function resizeAll(arg_type, arg_right, arg_bottom)
+{
+	switch(arg_type)
+	{
+		case 100:	// [x,y] [887,434]
+			grd_list.right 	= 854;
+			grd_list.bottom = 288;
+			break;
+		case 200:	// [x,y] [103,434]
+			grd_list.right 	= 70;
+			grd_list.bottom = 854;
+			break;
+		case 300:	// [x,y] [887,163]
+			grd_list.right 	= 854;
+			grd_list.bottom = 17;
+			break;
+		case 400:	// [x,y] [103,163]
+			grd_list.right 	= 70;
+			grd_list.bottom = 17;
+			break;
+		default:
+			break;
+	}
+}
+
+function view100_sub100_OnLoadCompleted(obj)
+{
+	transaction("view_sub100", 
+			"svcLotte::demo/selectProjectReportList.mip", 
+			"", 
+			"ds_report=ProjectReport", 
+			"", 
+			"fnCallbackLotte");
+}
+]]></Script>
+</Window>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="form" Left="8" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="4" Width="1000"></Image>
+		<Shape BKColor="white" Bottom="584" Height="304" Id="Shape1" Left="32" LineColor="#dadada" LineWidth="3" Right="408" RoundHeight="6" RoundUnit="Pixel" RoundWidth="6" TabOrder="7" Top="280" Type="RoundRect" Width="376"></Shape>
+		<Shape BKColor="white" Bottom="584" Height="520" Id="Shape2" Left="416" LineColor="#dadada" LineWidth="3" Right="968" RoundHeight="6" RoundUnit="Pixel" RoundWidth="6" TabOrder="7" Top="64" Type="RoundRect" Width="552"></Shape>
+		<Shockwave Bottom="420" FrameNum="0" Height="340" Id="Shockwave1" Left="472" Movie="D:\Demo\MiPlatform\SSS\semi\flash\image\etc2\game.swf" Playing="false" Right="917" Top="80" Width="445"></Shockwave>
+		<Button Height="40" Id="Button0" Left="112" OnClick="Button0_OnClick" TabOrder="2" Text="data1" Top="496" Width="72"></Button>
+		<Button Height="40" Id="Button1" Left="184" OnClick="Button1_OnClick" TabOrder="3" Text="data2" Top="496" Width="64"></Button>
+		<Button Height="40" Id="Button2" Left="248" OnClick="Button2_OnClick" TabOrder="4" Text="reload" Top="496" Width="88"></Button>
+		<Button Height="34" Id="Button3" Left="672" OnClick="Button3_OnClick" TabOrder="5" Text="up" Top="440" Width="48"></Button>
+		<Button Height="34" Id="Button4" Left="672" OnClick="Button4_OnClick" TabOrder="6" Text="down" Top="480" Width="48"></Button>
+		<Button Height="34" Id="Button5" Left="616" OnClick="Button5_OnClick" TabOrder="7" Text="left" Top="480" Width="48"></Button>
+		<Button Height="34" Id="Button6" Left="728" OnClick="Button6_OnClick" TabOrder="8" Text="right" Top="480" Width="48"></Button>
+		<Button Height="34" Id="Button7" Left="616" OnClick="Button7_OnClick" TabOrder="9" Text="space" Top="528" Width="160"></Button>
+		<Shockwave Bottom="459" FrameNum="0" Height="139" Id="Shockwave0" Left="112" Menu="false" Movie="D:\Demo\MiPlatform\SSS\semi\flash\image\etc1\Tweather.swf" Playing="false" Right="336" Top="320" Width="224"></Shockwave>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="19" LeftMargin="18" Style="cm_title_sub" TabOrder="14" Text="Flash&#32;Game" Top="27" Width="216"></Image>
+	</Form>
+	<Script><![CDATA[
+function Button0_OnClick(obj)
+{
+	Shockwave0.SetVariable("esc_Name","불량발생");
+	Shockwave0.SetVariable("num_Val","Result:82.3%,Achv.:88%");
+	Shockwave0.SetVariable("Weather","w");
+	Shockwave0.SetVariable("interval","5");
+}
+
+function Button1_OnClick(obj)
+{
+	Shockwave0.SetVariable("esc_Name","공정진행율");
+	Shockwave0.SetVariable("num_Val","Result:79.3%,Achv.:60%");
+	Shockwave0.SetVariable("Weather","Test");
+	Shockwave0.SetVariable("interval","8");
+
+}
+
+function Button2_OnClick(obj)
+{
+	this.Reload();
+}
+
+function Button3_OnClick(obj)
+{
+	Shockwave1.SetVariable("upxx","1");
+	Shockwave1.SetVariable("upxx","1");
+	Shockwave1.SetVariable("upxx","1");
+	Shockwave1.SetVariable("upxx","1");
+	Shockwave1.SetVariable("upxx","1");
+	Shockwave1.SetVariable("upxx","1");
+	Shockwave1.SetVariable("upxx","1");
+	Shockwave1.SetVariable("upxx","1");
+	Shockwave1.SetVariable("upxx","1");
+	Shockwave1.SetVariable("upxx","1");
+}
+
+function Button4_OnClick(obj)
+{
+	Shockwave1.SetVariable("downxx","1");
+	Shockwave1.SetVariable("downxx","1");
+	Shockwave1.SetVariable("downxx","1");
+	Shockwave1.SetVariable("downxx","1");
+	Shockwave1.SetVariable("downxx","1");
+	Shockwave1.SetVariable("downxx","1");
+	Shockwave1.SetVariable("downxx","1");
+	Shockwave1.SetVariable("downxx","1");
+	Shockwave1.SetVariable("downxx","1");
+	Shockwave1.SetVariable("downxx","1");
+}
+
+function Button5_OnClick(obj)
+{
+	Shockwave1.SetVariable("leftxx","1");
+	Shockwave1.SetVariable("leftxx","1");
+	Shockwave1.SetVariable("leftxx","1");
+	Shockwave1.SetVariable("leftxx","1");
+	Shockwave1.SetVariable("leftxx","1");
+	Shockwave1.SetVariable("leftxx","1");
+	Shockwave1.SetVariable("leftxx","1");
+	Shockwave1.SetVariable("leftxx","1");
+	Shockwave1.SetVariable("leftxx","1");
+	Shockwave1.SetVariable("leftxx","1");
+}
+
+function Button6_OnClick(obj)
+{
+	Shockwave1.SetVariable("rightxx","1");
+	Shockwave1.SetVariable("rightxx","1");
+	Shockwave1.SetVariable("rightxx","1");
+	Shockwave1.SetVariable("rightxx","1");
+	Shockwave1.SetVariable("rightxx","1");
+	Shockwave1.SetVariable("rightxx","1");
+	Shockwave1.SetVariable("rightxx","1");
+	Shockwave1.SetVariable("rightxx","1");
+	Shockwave1.SetVariable("rightxx","1");
+	Shockwave1.SetVariable("rightxx","1");
+}
+
+function Button7_OnClick(obj)
+{
+	Shockwave1.SetVariable("jumpxx","1");
+	Shockwave1.SetVariable("jumpxx","1");
+	Shockwave1.SetVariable("jumpxx","1");
+	Shockwave1.SetVariable("jumpxx","1");
+	Shockwave1.SetVariable("jumpxx","1");
+	Shockwave1.SetVariable("jumpxx","1");
+	Shockwave1.SetVariable("jumpxx","1");
+	Shockwave1.SetVariable("jumpxx","1");
+	Shockwave1.SetVariable("jumpxx","1");
+	Shockwave1.SetVariable("jumpxx","1");
+}
+]]></Script>
+</Window>

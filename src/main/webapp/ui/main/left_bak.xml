@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="711" Id="form" Left="8" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="245" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="tree">
+				<Contents>
+					<colinfo id="lev" size="256" summ="default" type="STRING"/>
+					<colinfo id="data" size="256" summ="default" type="STRING"/>
+					<record>
+						<data>menu1</data>
+						<lev>0</lev>
+					</record>
+					<record>
+						<data>sub_menu1</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>sub_menu2</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>sub_menu3</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>menu2</data>
+						<lev>0</lev>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Shape BKColor="white" Bottom="821" Height="391" Id="Shape4" Left="24" LineColor="#93a3c7" Right="258" RoundHeight="6" RoundUnit="Pixel" RoundWidth="6" TabOrder="29" Top="430" Type="RoundRect" Width="234"></Shape>
+		<Image Align="Left" Height="30" Id="Image7" ImageID="L_menubg2_S" Left="520" LeftMargin="30" Style="L_menu_title" TabOrder="21" Text="Mymenu" Top="376" Width="234"></Image>
+		<Image Align="Left" Height="30" Id="Image0" ImageID="L_menubg1_S" Left="24" LeftMargin="30" Style="L_menu_title" TabOrder="1" Text="Menu" Top="8" Width="234"></Image>
+		<Image Align="Left" Height="30" Id="Image1" ImageID="L_menubg2_N" Left="24" LeftMargin="30" Style="L_menu_title" TabOrder="2" Text="Mymenu" Top="376" Width="234"></Image>
+		<Shape BKColor="#93a3c7" Bottom="376" Height="338" Id="Shape0" Left="24" LineWidth="0" Right="258" TabOrder="3" Top="38" Type="Rectangle" Width="234"></Shape>
+		<TreeView BindDataset="tree" Border="None" CollapseImageColumn="lev" CollapseImageIndex="1" ExpandImageColumn="lev" Height="338" Id="TreeView0" ImageID="L_tree" ImageIndex="1" InnerImageCount="2" Left="25" LevelColumn="lev" TabOrder="4" TEXTColumn="data" Top="38" Width="232"></TreeView>
+		<Image Height="12" Id="Image4" ImageID="L_mymene_addbtn" Left="236" TabOrder="5" Top="384" Transparent="TRUE" Width="16"></Image>
+		<Image Align="Left" Height="30" Id="Image2" ImageID="L_menubg1_S" Left="272" LeftMargin="30" Style="L_menu_title" TabOrder="6" Text="Menu" Top="8" Width="234"></Image>
+		<Image Align="Left" Height="30" Id="Image3" ImageID="L_menubg2_N" Left="272" LeftMargin="30" Style="L_menu_title" TabOrder="7" Text="Mymenu" Top="376" Width="234"></Image>
+		<Shape BKColor="#93a3c7" Bottom="376" Height="338" Id="Shape1" Left="272" LineWidth="0" Right="506" TabOrder="8" Top="38" Type="Rectangle" Width="234"></Shape>
+		<TreeView Border="None" Height="307" Id="TreeView1" Left="273" TabOrder="9" Top="68" Width="232"></TreeView>
+		<Image Height="12" Id="Image5" ImageID="L_mymene_addbtn" Left="484" TabOrder="10" Top="384" Transparent="TRUE" Width="16"></Image>
+		<Combo Border="Flat" Height="20" Id="Combo0" Left="276" Style="L_combo" TabOrder="11" Text="Combo0" Top="42" Width="70"></Combo>
+		<Edit Border="Flat" Height="20" Id="Edit0" Left="347" Style="L_edit" TabOrder="12" Text="Edit0" Top="43" Width="103"></Edit>
+		<Button ButtonStyle="TRUE" DefaultButton="TRUE" Height="20" Id="Button0" ImageID="L_btn" Left="451" Style="L_btn" TabOrder="13" Text="조회" Top="43" Transparent="TRUE" Width="40"></Button>
+		<Image Align="Left" Height="30" Id="Image6" ImageID="L_menubg1_N" Left="520" LeftMargin="30" Style="L_menu_title" TabOrder="14" Text="Menu" Top="8" Width="234"></Image>
+		<Shape BKColor="#93a3c7" Bottom="376" Height="338" Id="Shape2" Left="520" LineWidth="0" Right="754" TabOrder="15" Top="38" Type="Rectangle" Width="234"></Shape>
+		<TreeView Border="None" Height="307" Id="TreeView2" Left="521" TabOrder="16" Top="68" Width="232"></TreeView>
+		<Combo Border="Flat" Height="20" Id="Combo1" Left="524" Style="L_combo" TabOrder="17" Text="Combo0" Top="42" Width="70"></Combo>
+		<Edit Border="Flat" Height="20" Id="Edit1" Left="595" Style="L_edit" TabOrder="18" Text="Edit0" Top="43" Width="103"></Edit>
+		<Button ButtonStyle="TRUE" DefaultButton="TRUE" Height="20" Id="Button1" ImageID="L_btn" Left="699" Style="L_btn" TabOrder="19" Text="조회" Top="43" Transparent="TRUE" Width="40"></Button>
+		<Image Height="12" Id="Image8" ImageID="L_mymene_addbtn" Left="732" TabOrder="20" Top="384" Transparent="TRUE" Width="16"></Image>
+		<Image Align="Left" Height="30" Id="Image9" ImageID="L_menubg2_S" Left="768" LeftMargin="30" Style="L_menu_title" TabOrder="26" Text="Mymenu" Top="376" Width="234"></Image>
+		<Image Align="Left" Height="30" Id="Image10" ImageID="L_menubg1_N" Left="768" LeftMargin="30" Style="L_menu_title" TabOrder="22" Text="Menu" Top="8" Width="234"></Image>
+		<Shape BKColor="#93a3c7" Bottom="376" Height="338" Id="Shape3" Left="768" LineWidth="0" Right="1002" TabOrder="23" Top="38" Type="Rectangle" Width="234"></Shape>
+		<TreeView Border="None" Height="338" Id="TreeView3" Left="769" TabOrder="24" Top="38" Width="232"></TreeView>
+		<Image Height="12" Id="Image11" ImageID="L_mymene_addbtn" Left="980" TabOrder="25" Top="384" Transparent="TRUE" Width="16"></Image>
+		<Image Align="Left" Height="30" Id="Image12" ImageID="L_menubg" Left="24" LeftMargin="15" Style="L_menu_title" TabOrder="27" Text="Menu" Top="408" Width="234"></Image>
+		<TreeView BindDataset="tree" Border="None" CollapseImageColumn="lev" CollapseImageIndex="1" ExpandImageColumn="lev" Height="338" Id="TreeView4" ImageID="L_tree" ImageIndex="1" InnerImageCount="2" Left="26" LevelColumn="lev" TabOrder="28" TEXTColumn="data" Top="442" Width="226"></TreeView>
+		<Image Height="20" Id="Image13" ImageID="L_menuview_N" Left="172" OnClick="Image13_OnClick" TabOrder="30" Top="412" Width="80"></Image>
+		<Image Height="81" Id="Image14" ImageID="L_mymenu" TabOrder="31" Top="71" Width="19"></Image>
+		<Image Height="65" Id="Image15" ImageID="L_menu" OnClick="Image15_OnClick" TabOrder="32" Top="7" Width="19"></Image>
+	</Form>
+	<Script><![CDATA[
+function Image13_OnClick(obj,nX,nY)
+{
+	Image13.ImageID="L_menuview_N";
+}
+
+function Image15_OnClick(obj,nX,nY)
+{
+	var xPos, yPos;
+	
+	xPos = ClientToScreenX(obj, obj.Width);
+	yPos = ClientToScreenY(obj, 5);
+	
+	pdiv_menu.TrackPopup(xPos, yPos - obj.Top);		
+}
+]]></Script>
+</Window>

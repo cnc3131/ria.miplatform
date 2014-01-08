@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="700" Id="left" Left="8" OnLoadCompleted="left_OnLoadCompleted" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="245" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="tree">
+				<Contents>
+					<colinfo id="lev" size="256" summ="default" type="STRING"/>
+					<colinfo id="data" size="256" summ="default" type="STRING"/>
+					<record>
+						<data>menu1</data>
+						<lev>0</lev>
+					</record>
+					<record>
+						<data>sub_menu1</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>sub_menu2</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>sub_menu3</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>menu2</data>
+						<lev>0</lev>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image Height="600" Id="Image0" ImageID="Lbg" Left="2" TabOrder="3" Top="1" Width="18"></Image>
+		<Image Cursor="HAND" Height="83" Id="img_left_menu" ImageID="L_menu" Left="1" OnClick="img_left_menu_OnClick" Static="FALSE" TabOrder="1" Top="13" Width="20"></Image>
+		<PopupDiv BKColor="whitesmoke" Height="398" Id="pdiv_menu" Left="23" TabStop="FALSE" Top="8" Url="main::menu.xml" Width="237">
+			<Contents></Contents>
+		</PopupDiv>
+	</Form>
+	<Script><![CDATA[
+function Image13_OnClick(obj,nX,nY)
+{
+	Image13.ImageID="L_menuview_N";
+}
+
+
+function img_left_menu_OnClick(obj,nX,nY)
+{
+	var xPos, yPos;
+	
+	xPos = ClientToScreenX(obj, obj.Width);
+	yPos = ClientToScreenY(obj, 5);
+	
+	pdiv_menu.Url = "main::menu.xml";
+	
+	pdiv_menu.TrackPopup(xPos, yPos - obj.Top);		
+	
+}
+
+function img_my_menu_OnClick(obj,nX,nY)
+{
+	var xPos, yPos;
+	
+	xPos = ClientToScreenX(obj, obj.Width);
+	yPos = ClientToScreenY(obj, 5);
+	
+	pdiv_menu.Url = "main::my_menu.xml";
+	
+	pdiv_menu.TrackPopup(xPos, yPos - obj.Top);			
+}
+
+function left_OnLoadCompleted(obj)
+{
+	gfn_OpenChildWindow("main", "intro_form.xml", "인트로", "1", "1", "000000010000000", "intro");
+}
+]]></Script>
+</Window>

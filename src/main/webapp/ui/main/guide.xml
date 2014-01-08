@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="1008" Id="form" Left="8" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="1024" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="Dataset0">
+				<Contents>
+					<colinfo id="data1" size="256" summ="default" type="STRING"/>
+					<colinfo id="data2" size="256" summ="default" type="STRING"/>
+					<colinfo id="data3" size="256" summ="default" type="STRING"/>
+					<colinfo id="data4" size="256" summ="default" type="STRING"/>
+					<record>
+						<data1>data1</data1>
+						<data2>data1</data2>
+						<data3>data1</data3>
+						<data4>data1</data4>
+					</record>
+					<record>
+						<data1>data2</data1>
+						<data2>data2</data2>
+						<data3>data2</data3>
+						<data4>data2</data4>
+					</record>
+					<record>
+						<data1>data3</data1>
+						<data2>data3</data2>
+						<data3>data3</data3>
+						<data4>data3</data4>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="radio">
+				<Contents>
+					<colinfo id="code" size="256" summ="default" type="STRING"/>
+					<colinfo id="text" size="256" summ="default" type="STRING"/>
+					<record>
+						<code>y</code>
+						<text>yes</text>
+					</record>
+					<record>
+						<code>n</code>
+						<text>no</text>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Shape BKColor="user3" Bottom="658" Height="119" Id="Shape1" Left="16" LineColor="user4" Right="1010" RoundHeight="3" RoundUnit="Pixel" RoundWidth="3" TabOrder="14" Top="539" Type="RoundRect" Width="994"></Shape>
+		<Shape BKColor="user0" Bottom="439" Height="52" Id="Shape0" Left="18" LineColor="user1" Right="1011" RoundHeight="5" RoundUnit="Pixel" RoundWidth="5" TabOrder="1" Top="387" Type="RoundRect" Width="993"></Shape>
+		<Static Height="13" Id="Static0" Left="39" Style="M_search_title" TabOrder="2" Text="검색항목" Top="397" Width="53"></Static>
+		<Image Height="15" Id="Image0" ImageID="M_title_1depth_icon" Left="19" TabOrder="3" Top="39" Width="16"></Image>
+		<Static Height="17" Id="Static1" Left="39" Style="M_title_1depth" TabOrder="4" Text="화면제목" Top="38" Width="69"></Static>
+		<Image Height="7" Id="Image1" ImageID="M_search_titleicon" Left="28" TabOrder="5" Top="399" Transparent="TRUE" Width="4"></Image>
+		<Edit Border="Flat" Height="20" Id="Edit0" Left="99" Style="M_search_edit" TabOrder="6" Text="Edit0" Top="392" Width="100"></Edit>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button0" ImageID="M_search_btn_40" Left="965" Style="M_search_btn" TabOrder="7" Text="닫기" Top="392" Width="40"></Button>
+		<Button Height="25" Id="Button1" ImageID="M_btn_style1_print" Left="203" TabOrder="8" Text="Button1" Top="131" Width="60"></Button>
+		<Button Height="25" Id="Button2" ImageID="M_btn_style1_save" Left="79" TabOrder="9" Text="Button1" Top="131" Width="60"></Button>
+		<Button Height="25" Id="Button3" ImageID="M_btn_style1_search" Left="17" TabOrder="10" Text="Button1" Top="131" Width="60"></Button>
+		<Button Height="25" Id="Button4" ImageID="M_btn_style1_excel" Left="141" TabOrder="11" Text="Button1" Top="131" Width="60"></Button>
+		<Edit Border="Flat" Height="20" Id="Edit1" Left="201" Style="M_search_edit" TabOrder="12" Text="Edit0" Top="392" Width="150"></Edit>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button5" ImageID="M_search_btn_40" Left="923" OnClick="Button0_OnClick" Style="M_search_btn" TabOrder="13" Text="조회" Top="392" Width="40"></Button>
+		<Static Border="Flat" Height="20" Id="Static2" Left="21" Style="M_list_text" TabOrder="15" Text="list1" Top="544" VAlign="Middle" Width="100"></Static>
+		<Edit Border="Flat" Height="20" Id="Edit2" Left="123" Style="M_edit" TabOrder="16" Text="Edit0" Top="544" Width="100"></Edit>
+		<Static Border="Flat" Height="20" Id="Static6" Left="21" Style="M_list_text" TabOrder="17" Text="list1" Top="566" VAlign="Middle" Width="100"></Static>
+		<Combo Border="Flat" Height="20" Id="Combo1" Left="122" Style="M_combo" TabOrder="18" Text="Combo0" Top="565" Width="100"></Combo>
+		<Edit Border="Flat" Enable="FALSE" Height="20" Id="Edit6" Left="223" Style="M_edit" TabOrder="19" Text="Edit0" Top="566" Width="128"></Edit>
+		<Static Border="Flat" Height="20" Id="Static10" Left="353" Style="M_list_text" TabOrder="20" Text="list1" Top="566" VAlign="Middle" Width="100"></Static>
+		<Static Border="Flat" Height="20" Id="Static11" Left="21" Style="M_list_text" TabOrder="21" Text="list1" Top="588" VAlign="Middle" Width="100"></Static>
+		<Calendar Border="Flat" HeaderBorder="NONE" Height="20" Id="Calendar1" Left="123" MonthPopupBorder="FLAT" SaturdayTextColor="blue" Style="M_search_cal" SundayTextColor="red" TabOrder="22" Top="588" Visible="FALSE" Width="84"></Calendar>
+		<Image Height="17" Id="Image5" ImageID="M_cal_icon" Left="209" OnClick="Tab0_tab1_Image5_OnClick" Static="FALSE" TabOrder="23" Top="589" Transparent="TRUE" Width="20"></Image>
+		<MaskEdit Border="Flat" Height="20" Id="MaskEdit1" Left="123" Mask="####-##-##" Style="M_cal" TabOrder="24" Top="588" Type="STRING" Width="84"></MaskEdit>
+		<Static Border="Flat" Height="20" Id="Static12" Left="353" Style="M_list_text" TabOrder="25" Text="list1" Top="588" VAlign="Middle" Width="100"></Static>
+		<Edit Border="Flat" Height="20" Id="Edit10" Left="455" Style="M_edit" TabOrder="26" Text="Edit0" Top="588" Width="219"></Edit>
+		<Checkbox Height="21" Id="Checkbox0" Left="228" Style="M_check_panel" TabOrder="27" Text="Checkbox0" Top="543" Width="97"></Checkbox>
+		<Static Border="Flat" Height="20" Id="Static26" Left="21" Style="M_list_text" TabOrder="28" Text="list1" Top="610" VAlign="Middle" Width="80"></Static>
+		<Edit Border="Flat" Height="20" Id="Edit23" Left="103" Style="M_edit" TabOrder="29" Text="Edit0" Top="610" Width="142"></Edit>
+		<Edit Border="Flat" Height="20" Id="Edit24" Left="329" Style="M_edit" TabOrder="31" Text="Edit0" Top="610" Width="142"></Edit>
+		<Static Border="Flat" Height="20" Id="Static27" Left="247" Style="M_list_text" TabOrder="30" Text="list1" Top="610" VAlign="Middle" Width="80"></Static>
+		<Edit Border="Flat" Height="20" Id="Edit25" Left="555" Style="M_edit" TabOrder="33" Text="Edit0" Top="610" Width="119"></Edit>
+		<Static Border="Flat" Height="20" Id="Static28" Left="473" Style="M_list_text" TabOrder="32" Text="list1" Top="610" VAlign="Middle" Width="80"></Static>
+		<Static Border="Flat" Height="20" Id="Static29" Left="21" Style="M_list_text" TabOrder="34" Text="list1" Top="632" VAlign="Middle" Width="80"></Static>
+		<Edit Border="Flat" Height="20" Id="Edit26" Left="103" Style="M_edit" TabOrder="35" Text="Edit0" Top="632" Width="142"></Edit>
+		<Edit Border="Flat" Height="20" Id="Edit27" Left="329" Style="M_edit" TabOrder="37" Text="Edit0" Top="632" Width="142"></Edit>
+		<Static Border="Flat" Height="20" Id="Static30" Left="247" Style="M_list_text" TabOrder="36" Text="list1" Top="632" VAlign="Middle" Width="80"></Static>
+		<Static Border="Flat" Height="20" Id="Static31" Left="473" Style="M_list_text" TabOrder="38" Text="list1" Top="632" VAlign="Middle" Width="80"></Static>
+		<Static Border="Flat" Column="text" Height="20" Id="Static14" Left="676" Style="M_list_text" TabOrder="39" Text="list1" Top="566" VAlign="Middle" Width="100"></Static>
+		<Edit Border="Flat" Column="text" Height="20" Id="Edit11" Left="778" Style="M_edit" TabOrder="40" Text="Edit0" Top="566" Width="226"></Edit>
+		<Static Border="Flat" Column="text" Height="20" Id="Static15" Left="676" Style="M_list_text" TabOrder="41" Text="list1" Top="588" VAlign="Middle" Width="100"></Static>
+		<Edit Border="Flat" Column="text" Height="20" Id="Edit12" Left="778" Style="M_edit" TabOrder="42" Text="Edit0" Top="588" Width="226"></Edit>
+		<Static Border="Flat" Column="text" Height="20" Id="Static16" Left="676" Style="M_list_text" TabOrder="43" Text="list1" Top="610" VAlign="Middle" Width="100"></Static>
+		<Edit Border="Flat" Column="text" Height="20" Id="Edit13" Left="778" Style="M_edit" TabOrder="44" Text="Edit0" Top="610" Width="226"></Edit>
+		<Static Border="Flat" Height="24" Id="Static17" Left="16" Style="M_table_title" TabOrder="45" Text="list1" Top="702" VAlign="Middle" Width="82"></Static>
+		<Image Height="7" Id="Image2" ImageID="M_search_titleicon" Left="28" TabOrder="48" Top="421" Transparent="TRUE" Width="4"></Image>
+		<Static Height="13" Id="Static18" Left="39" Style="M_search_title" TabOrder="47" Text="검색항목" Top="419" Width="53"></Static>
+		<Edit Border="Flat" Height="20" Id="Edit15" Left="99" Style="M_search_edit" TabOrder="49" Text="Edit0" Top="414" Width="100"></Edit>
+		<Edit Border="Flat" Height="20" Id="Edit16" Left="201" Style="M_search_edit" TabOrder="50" Text="Edit0" Top="414" Width="150"></Edit>
+		<Static Height="17" Id="Static19" Left="17" TabOrder="51" Text="title&#32;" Top="10" Width="272"></Static>
+		<Shape BKColor="user2" Bottom="28" Height="2" Id="Shape2" Left="15" LineWidth="2" Right="1010" TabOrder="52" Top="26" Width="995"></Shape>
+		<Static Height="17" Id="Static20" Left="137" TabOrder="53" Text="1depth&#32;:&#32;아이콘은&#32;top:10&#32;left:10의&#32;여백을&#32;둔다" Top="41" Width="272"></Static>
+		<Static Height="17" Id="Static21" Left="17" TabOrder="54" Text="button" Top="106" Width="272"></Static>
+		<Shape BKColor="user2" Bottom="124" Height="2" Id="Shape3" Left="15" LineWidth="2" Right="1010" TabOrder="55" Top="122" Width="995"></Shape>
+		<Static Height="17" Id="Static22" Left="288" TabOrder="56" Text="화면전체컨트롤버튼&#32;:&#32;이미지&#32;버튼" Top="139" Width="272"></Static>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button6" ImageID="M_btn_style1_40" Left="17" Style="M_btn_style1" TabOrder="57" Text="가나" Top="159" Width="40"></Button>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button7" ImageID="M_btn_style1_55" Left="60" Style="M_btn_style1" TabOrder="58" Text="가나다" Top="159" Width="55"></Button>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button8" ImageID="M_btn_style1_65" Left="119" Style="M_btn_style1" TabOrder="59" Text="가나다라" Top="159" Width="65"></Button>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button9" ImageID="M_btn_style1_80" Left="188" Style="M_btn_style1" TabOrder="60" Text="가나다라마" Top="159" Width="80"></Button>
+		<Static Height="17" Id="Static23" Left="288" TabOrder="61" Text="화면전체컨트롤버튼&#32;:&#32;글자수에&#32;맞춰서&#32;사용" Top="163" Width="272"></Static>
+		<Button ButtonStyle="TRUE" Height="18" Id="Button10" ImageID="M_btn_style2_40" Left="17" Style="M_btn_style2" TabOrder="62" Text="가나" Top="193" Width="40"></Button>
+		<Button ButtonStyle="TRUE" Height="18" Id="Button11" ImageID="M_btn_style2_55" Left="60" Style="M_btn_style2" TabOrder="63" Text="가나다" Top="193" Width="55"></Button>
+		<Button ButtonStyle="TRUE" Height="18" Id="Button12" ImageID="M_btn_style2_65" Left="119" Style="M_btn_style2" TabOrder="64" Text="가나다라" Top="193" Width="65"></Button>
+		<Button ButtonStyle="TRUE" Height="18" Id="Button13" ImageID="M_btn_style2_80" Left="188" Style="M_btn_style2" TabOrder="65" Text="가나다라마" Top="193" Width="80"></Button>
+		<Static Height="17" Id="Static24" Left="288" TabOrder="66" Text="부분컨트롤버튼&#32;:&#32;글자수에&#32;맞춰서&#32;사용" Top="197" Width="272"></Static>
+		<Static Height="19" Id="Static25" Left="288" TabOrder="67" Text="그리드및&#32;테이블안에서&#32;사용하는&#32;버튼&#32;:&#32;글자수에&#32;맞춰서&#32;사용" Top="226" Width="360"></Static>
+		<Static Height="17" Id="Static34" Left="17" TabOrder="68" Text="search" Top="298" Width="272"></Static>
+		<Shape BKColor="user2" Bottom="316" Height="2" Id="Shape4" Left="15" LineWidth="2" Right="1010" TabOrder="69" Top="314" Width="995"></Shape>
+		<Shape BKColor="user0" Bottom="361" Height="30" Id="Shape5" Left="18" LineColor="user1" Right="1011" RoundHeight="5" RoundUnit="Pixel" RoundWidth="5" TabOrder="70" Top="331" Type="RoundRect" Width="993"></Shape>
+		<Calendar Border="Flat" HeaderBorder="NONE" Height="20" Id="Calendar0" Left="466" MonthPopupBorder="FLAT" OnChanged="Calendar0_OnChanged" SaturdayTextColor="blue" Style="M_search_cal" SundayTextColor="red" TabOrder="78" Top="336" Visible="FALSE" Width="84"></Calendar>
+		<Static Height="13" Id="Static35" Left="39" Style="M_search_title" TabOrder="71" Text="검색항목" Top="341" Width="53"></Static>
+		<Image Height="7" Id="Image3" ImageID="M_search_titleicon" Left="28" TabOrder="72" Top="343" Transparent="TRUE" Width="4"></Image>
+		<Static Height="13" Id="Static36" Left="223" Style="M_search_title" TabOrder="73" Text="검색항목" Top="341" Width="53"></Static>
+		<Image Height="7" Id="Image4" ImageID="M_search_titleicon" Left="212" TabOrder="74" Top="343" Transparent="TRUE" Width="4"></Image>
+		<Edit Border="Flat" Height="20" Id="Edit17" Left="99" Style="M_search_edit" TabOrder="75" Text="Edit0" Top="336" Width="100"></Edit>
+		<Combo Border="Flat" Height="20" Id="Combo0" Left="282" Style="M_search_combo" TabOrder="76" Text="Combo0" Top="335" Width="100"></Combo>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button14" ImageID="M_search_btn_40" Left="966" OnClick="Button0_OnClick" Style="M_search_btn" TabOrder="77" Text="조회" Top="336" Width="40"></Button>
+		<Image Height="7" Id="Image6" ImageID="M_search_titleicon" Left="396" TabOrder="80" Top="343" Transparent="TRUE" Width="4"></Image>
+		<Static Height="13" Id="Static37" Left="407" Style="M_search_title" TabOrder="79" Text="검색항목" Top="341" Width="53"></Static>
+		<Image Height="17" Id="Image7" ImageID="M_cal_icon" Left="552" OnClick="Image4_OnClick" Static="FALSE" TabOrder="81" Top="337" Transparent="TRUE" Width="20"></Image>
+		<MaskEdit Border="Flat" Height="20" Id="MaskEdit0" Left="466" Mask="####-##-##" Style="M_search_cal" TabOrder="82" Top="336" Type="STRING" Width="84"></MaskEdit>
+		<Radio Border="None" ColumnCount="2" DataColumn="text" Height="17" Id="Radio1" INDEX="1" Left="762" Style="M_search_radio" TabOrder="83" Top="338" Width="108">
+			<Contents>
+				<Layout code="Y" height="20" left="0" text="예" top="0" width="40"/>
+				<Layout code="N" default="true" height="20" left="50" text="아니오" top="0" width="100"/>
+			</Contents>
+		</Radio>
+		<Checkbox Height="21" Id="Checkbox1" Left="877" Style="M_search_check" TabOrder="84" Text="Checkbox0" Top="337" Width="83"></Checkbox>
+		<Static Height="17" Id="Static38" Left="25" TabOrder="85" Text="검색항목이&#32;한줄일&#32;경우&#32;:&#32;높이&#32;30" Top="369" Width="272"></Static>
+		<Static Height="17" Id="Static39" Left="25" TabOrder="86" Text="검색항목이&#32;한줄씩&#32;늘어날때&#32;:&#32;높이&#32;+&#32;22씩&#32;추가" Top="449" Width="272"></Static>
+		<Image Height="7" Id="Image8" ImageID="M_search_titleicon" Left="588" TabOrder="88" Top="343" Transparent="TRUE" Width="4"></Image>
+		<Static Height="13" Id="Static40" Left="599" Style="M_search_title" TabOrder="87" Text="검색항목" Top="341" Width="53"></Static>
+		<Spin Border="Flat" Height="20" Id="Spin0" Left="655" Style="M_search_spin" TabOrder="89" Text="1" Top="337" Width="99"></Spin>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button15" ImageID="M_search_btn_40" Left="17" OnClick="Button0_OnClick" Style="M_search_btn" TabOrder="90" Text="가나" Top="256" Width="40"></Button>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button16" ImageID="M_search_btn_55" Left="60" OnClick="Button0_OnClick" Style="M_search_btn" TabOrder="91" Text="가나다" Top="256" Width="55"></Button>
+		<Static Height="19" Id="Static41" Left="288" TabOrder="92" Text="검색영역에서&#32;사용하는&#32;버튼&#32;:&#32;글자수에&#32;맞춰서&#32;사용" Top="261" Width="360"></Static>
+		<Static Height="17" Id="Static42" Left="17" TabOrder="93" Text="list" Top="490" Width="272"></Static>
+		<Shape BKColor="user2" Bottom="508" Height="2" Id="Shape6" Left="15" LineWidth="2" Right="1010" TabOrder="94" Top="506" Width="995"></Shape>
+		<Radio Border="None" ColumnCount="2" DataColumn="text" Height="17" Id="Radio0" INDEX="1" Left="456" Style="M_radio_panel" TabOrder="95" Top="567" Width="131">
+			<Contents>
+				<Layout code="Y" height="20" left="0" text="예" top="0" width="40"/>
+				<Layout code="N" default="true" height="20" left="50" text="아니오" top="0" width="100"/>
+			</Contents>
+		</Radio>
+		<Spin Border="Flat" Height="20" Id="Spin1" Left="555" Style="M_spin" TabOrder="96" Text="1" Top="632" Width="118"></Spin>
+		<Static Border="Flat" Height="24" Id="Static3" Left="97" Style="M_table_listbg" TabOrder="97" Top="702" VAlign="Middle" Width="148"></Static>
+		<Edit Border="Flat" Height="20" Id="Edit14" Left="100" Style="M_edit" TabOrder="46" Text="Edit0" Top="704" Width="142"></Edit>
+		<Static Height="17" Id="Static4" Left="17" TabOrder="98" Text="Panel로&#32;영역구분할때" Top="522" Width="272"></Static>
+		<Static Height="17" Id="Static5" Left="17" TabOrder="99" Text="Table형태&#32;(입력성)" Top="682" Width="272"></Static>
+		<Static Border="Flat" Height="24" Id="Static7" Left="245" Style="M_table_title" TabOrder="100" Text="list1" Top="702" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static8" Left="326" Style="M_table_listbg" TabOrder="101" Top="702" VAlign="Middle" Width="148"></Static>
+		<Combo Border="Flat" Height="20" Id="Combo2" Left="328" Style="M_combo" TabOrder="102" Text="Combo0" Top="703" Width="144"></Combo>
+		<Static Border="Flat" Height="24" Id="Static9" Left="554" Style="M_table_listbg" TabOrder="104" Top="702" VAlign="Middle" Width="148"></Static>
+		<Static Border="Flat" Height="24" Id="Static13" Left="473" Style="M_table_title" TabOrder="103" Text="list1" Top="702" VAlign="Middle" Width="82"></Static>
+		<Spin Border="Flat" Height="20" Id="Spin2" Left="557" Style="M_spin" TabOrder="105" Text="1" Top="704" Width="142"></Spin>
+		<Static Border="Flat" Height="24" Id="Static32" Left="783" Style="M_table_listbg" TabOrder="107" Top="702" VAlign="Middle" Width="226"></Static>
+		<Static Border="Flat" Height="24" Id="Static33" Left="702" Style="M_table_title" TabOrder="106" Text="list1" Top="702" VAlign="Middle" Width="82"></Static>
+		<Radio Border="None" ColumnCount="2" DataColumn="text" Height="17" Id="Radio2" INDEX="1" Left="788" Style="M_radio" TabOrder="108" Top="706" Width="131">
+			<Contents>
+				<Layout code="Y" height="20" left="0" text="예" top="0" width="40"/>
+				<Layout code="N" default="true" height="20" left="50" text="아니오" top="0" width="100"/>
+			</Contents>
+		</Radio>
+		<Static Border="Flat" Height="24" Id="Static43" Left="16" Style="M_table_title" TabOrder="109" Text="list1" Top="725" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static44" Left="97" Style="M_table_listbg" TabOrder="111" Top="725" VAlign="Middle" Width="148"></Static>
+		<Edit Border="Flat" Height="20" Id="Edit3" Left="100" Style="M_edit" TabOrder="110" Text="Edit0" Top="727" Width="142"></Edit>
+		<Static Border="Flat" Height="24" Id="Static45" Left="245" Style="M_table_title" TabOrder="112" Text="list1" Top="725" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static46" Left="326" Style="M_table_listbg" TabOrder="113" Top="725" VAlign="Middle" Width="148"></Static>
+		<Static Border="Flat" Height="24" Id="Static47" Left="554" Style="M_table_listbg" TabOrder="115" Top="725" VAlign="Middle" Width="148"></Static>
+		<Static Border="Flat" Height="24" Id="Static48" Left="473" Style="M_table_title" TabOrder="114" Text="list1" Top="725" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static49" Left="783" Style="M_table_listbg" TabOrder="117" Top="725" VAlign="Middle" Width="226"></Static>
+		<Static Border="Flat" Height="24" Id="Static50" Left="702" Style="M_table_title" TabOrder="116" Text="list1" Top="725" VAlign="Middle" Width="82"></Static>
+		<Checkbox Height="21" Id="Checkbox2" Left="792" Style="M_check" TabOrder="118" Text="Checkbox0" Top="727" Width="97"></Checkbox>
+		<MaskEdit Border="Flat" Height="20" Id="MaskEdit2" Left="329" Mask="####-##-##" Style="M_cal" TabOrder="120" Top="727" Type="STRING" Width="84"></MaskEdit>
+		<Image Height="17" Id="Image9" ImageID="M_cal_icon" Left="415" OnClick="Tab0_tab1_Image5_OnClick" Static="FALSE" TabOrder="119" Top="728" Transparent="TRUE" Width="20"></Image>
+		<Spin Border="Flat" Height="20" Id="Spin3" Left="557" Style="M_spin" TabOrder="121" Text="1" Top="727" Width="142"></Spin>
+		<Static Border="Flat" Height="24" Id="Static51" Left="16" Style="M_table_title" TabOrder="122" Text="list1" Top="790" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static52" Left="97" Style="M_table_listbg" TabOrder="124" Top="790" VAlign="Middle" Width="148"></Static>
+		<Edit Border="None" Height="20" Id="Edit4" Left="100" Style="M_edit" TabOrder="123" Text="Edit0" Top="792" Width="142"></Edit>
+		<Static Border="Flat" Height="24" Id="Static53" Left="245" Style="M_table_title" TabOrder="125" Text="list1" Top="790" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static54" Left="326" Style="M_table_listbg" TabOrder="126" Top="790" VAlign="Middle" Width="148"></Static>
+		<Static Border="Flat" Height="24" Id="Static55" Left="554" Style="M_table_listbg" TabOrder="128" Top="790" VAlign="Middle" Width="148"></Static>
+		<Static Border="Flat" Height="24" Id="Static56" Left="473" Style="M_table_title" TabOrder="127" Text="list1" Top="790" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static57" Left="783" Style="M_table_listbg" TabOrder="130" Top="790" VAlign="Middle" Width="226"></Static>
+		<Static Border="Flat" Height="24" Id="Static58" Left="702" Style="M_table_title" TabOrder="129" Text="list1" Top="790" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static59" Left="16" Style="M_table_title" TabOrder="131" Text="list1" Top="813" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static60" Left="97" Style="M_table_listbg" TabOrder="133" Top="813" VAlign="Middle" Width="148"></Static>
+		<Edit Border="None" Height="20" Id="Edit5" Left="100" Style="M_edit" TabOrder="132" Text="Edit0" Top="815" Width="142"></Edit>
+		<Static Border="Flat" Height="24" Id="Static61" Left="245" Style="M_table_title" TabOrder="134" Text="list1" Top="813" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static62" Left="326" Style="M_table_listbg" TabOrder="135" Top="813" VAlign="Middle" Width="148"></Static>
+		<Static Border="Flat" Height="24" Id="Static63" Left="554" Style="M_table_listbg" TabOrder="137" Top="813" VAlign="Middle" Width="148"></Static>
+		<Static Border="Flat" Height="24" Id="Static64" Left="473" Style="M_table_title" TabOrder="136" Text="list1" Top="813" VAlign="Middle" Width="82"></Static>
+		<Static Border="Flat" Height="24" Id="Static65" Left="783" Style="M_table_listbg" TabOrder="139" Top="813" VAlign="Middle" Width="226"></Static>
+		<Static Border="Flat" Height="24" Id="Static66" Left="702" Style="M_table_title" TabOrder="138" Text="list1" Top="813" VAlign="Middle" Width="82"></Static>
+		<Static Height="17" Id="Static67" Left="17" TabOrder="140" Text="Table형태&#32;(조회성)" Top="770" Width="272"></Static>
+		<Edit Border="None" Height="20" Id="Edit7" Left="330" Style="M_edit" TabOrder="141" Text="Edit0" Top="792" Width="130"></Edit>
+		<Edit Border="None" Height="20" Id="Edit8" Left="330" Style="M_edit" TabOrder="142" Text="Edit0" Top="815" Width="130"></Edit>
+		<Edit Border="None" Height="20" Id="Edit9" Left="557" Style="M_edit" TabOrder="143" Text="Edit0" Top="792" Width="137"></Edit>
+		<Edit Border="None" Height="20" Id="Edit18" Left="557" Style="M_edit" TabOrder="144" Text="Edit0" Top="815" Width="137"></Edit>
+		<Edit Border="None" Height="20" Id="Edit19" Left="786" Style="M_edit" TabOrder="145" Text="Edit0" Top="792" Width="137"></Edit>
+		<Edit Border="None" Height="20" Id="Edit20" Left="786" Style="M_edit" TabOrder="146" Text="Edit0" Top="815" Width="137"></Edit>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button17" ImageID="M_search_btn_65" Left="118" OnClick="Button0_OnClick" Style="M_search_btn" TabOrder="147" Text="가나다라" Top="256" Width="65"></Button>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button18" ImageID="M_search_btn_80" Left="186" OnClick="Button0_OnClick" Style="M_search_btn" TabOrder="148" Text="가나다라마" Top="256" Width="80"></Button>
+		<Static Height="17" Id="Static68" Left="17" TabOrder="149" Text="tab" Top="858" Width="272"></Static>
+		<Shape BKColor="user2" Bottom="876" Height="2" Id="Shape7" Left="15" LineWidth="2" Right="1010" TabOrder="150" Top="874" Width="995"></Shape>
+		<Tab Border="Flat" FixedImage="FALSE" Height="118" Id="Tab0" Left="14" MouseOverColor="white" SelColor="white" SelectFont="돋움체,9,Bold" Style="M_tab1" TabOrder="151" Top="881" Width="996">
+			<Contents>
+				<TabPage BorderColor="black" Height="89" Id="tab1" ImageEdgeWidth="10" ImageID="M_tab1" Left="2" TabOrder="10" Text="1depth_tab" Top="27" Width="992">
+					<Tab Border="Flat" FixedImage="FALSE" Height="78" Id="Tab0" Left="7" MouseOverColor="user5" SelColor="user5" Style="M_tab2" TabOrder="1" Top="5" Width="320">
+						<Contents>
+							<TabPage Height="52" Id="tab1" ImageID="M_tab_tab" Left="2" TabOrder="73" Text="2dapth_tab" Top="24" Width="316"></TabPage>
+							<TabPage Height="52" Id="tab2" ImageID="M_tab_tab" Left="2" TabOrder="73" Text="tab2" Top="24" Width="316"></TabPage>
+							<TabPage Height="52" Id="tab3" ImageEdgeWidth="10" ImageID="M_tab_tab" Left="2" TabOrder="73" Text="tab3" Top="24" Width="316"></TabPage>
+						</Contents>
+					</Tab>
+				</TabPage>
+				<TabPage Height="89" Id="tab2" ImageEdgeWidth="5" ImageID="M_tab1" Left="2" TabOrder="10" Text="tab2" Top="27" Width="992"></TabPage>
+			</Contents>
+		</Tab>
+		<Image Height="15" Id="Image10" ImageID="M_grid_btn_30" Left="22" Style="M_btn_table" TabOrder="152" Text="가나" Top="226" Width="30"></Image>
+		<Image Height="15" Id="Image11" ImageID="M_grid_btn_40" Left="54" Style="M_btn_table" TabOrder="153" Text="가나다" Top="226" Width="40"></Image>
+		<Image Height="15" Id="Image12" ImageID="M_grid_btn_50" Left="96" Style="M_btn_table" TabOrder="154" Text="가나다라" Top="226" Width="50"></Image>
+		<Image Height="15" Id="Image13" ImageID="M_grid_btn_60" Left="148" Style="M_btn_table" TabOrder="155" Text="가나다라마" Top="226" Width="60"></Image>
+		<Image Height="12" Id="Image14" ImageID="M_title_2depth_icon" Left="19" TabOrder="156" Top="65" Transparent="TRUE" Width="13"></Image>
+		<Static Height="17" Id="Static69" Left="39" Style="M_title_2depth" TabOrder="157" Text="화면제목" Top="66" Width="69"></Static>
+		<Image Height="4" Id="Image15" ImageID="M_title_3depth_icon" Left="23" TabOrder="158" Top="89" Transparent="TRUE" Width="4"></Image>
+		<Static Height="17" Id="Static70" Left="39" Style="M_title_3depth" TabOrder="159" Text="화면제목" Top="87" Width="69"></Static>
+		<Static Height="17" Id="Static71" Left="137" TabOrder="160" Text="2depth" Top="65" Width="272"></Static>
+		<Static Height="17" Id="Static72" Left="137" TabOrder="161" Text="3depth" Top="86" Width="272"></Static>
+	</Form>
+	<Script><![CDATA[
+function Image4_OnClick(obj,nX,nY)
+{
+	Calendar0.Visible = true;
+	Calendar0.DropDown();
+}
+
+function Calendar0_OnChanged(obj,strOldText,strNewText)
+{
+	Calendar0.Visible = false;
+	MaskEdit0.Value = strNewText;
+}
+
+
+function Tab0_tab1_Image5_OnClick(obj,nX,nY)
+{
+	tab0.tab1.Calendar1.Visible = true;
+	tab0.tab1.Calendar1.DropDown();
+}
+
+function Tab0_tab1_Calendar1_OnChanged(obj,strOldText,strNewText)
+{
+	tab0.tab1.Calendar0.Visible = false;
+	tab0.tab1.MaskEdit01.Value = strNewText;
+}
+
+]]></Script>
+</Window>

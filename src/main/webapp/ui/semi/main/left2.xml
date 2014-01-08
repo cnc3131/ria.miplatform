@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="711" Id="left2" Left="8" PidAttrib="7" Title="left2" Top="8" Ver="1.0" Width="1024" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="tree">
+				<Contents>
+					<colinfo id="lev" size="256" summ="default" type="STRING"/>
+					<colinfo id="data" size="256" summ="default" type="STRING"/>
+					<record>
+						<data>menu1</data>
+						<lev>0</lev>
+					</record>
+					<record>
+						<data>sub_menu1</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>sub_menu2</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>sub_menu3</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>menu2</data>
+						<lev>0</lev>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image Align="Left" Height="30" Id="Image0" ImageID="L_menubg1_S" LeftMargin="30" Style="L_menu_title" TabOrder="1" Text="Menu" Width="234"></Image>
+		<Image Align="Left" Height="30" Id="Image1" ImageID="L_menubg2_N" LeftMargin="30" Style="L_menu_title" TabOrder="2" Text="Mymenu" Top="368" Width="234"></Image>
+		<Shape BKColor="#93a3c7" Bottom="368" Height="338" Id="Shape0" Left="0" LineWidth="0" Right="234" TabOrder="3" Top="30" Type="Rectangle" Width="234"></Shape>
+		<TreeView BindDataset="tree" Border="None" CollapseImageColumn="lev" CollapseImageIndex="1" ExpandImageColumn="lev" Height="338" Id="TreeView0" ImageID="L_tree" ImageIndex="1" InnerImageCount="2" Left="1" LevelColumn="lev" TabOrder="4" TEXTColumn="data" Top="30" Width="232"></TreeView>
+		<Image Height="12" Id="Image4" ImageID="L_mymene_addbtn" Left="212" TabOrder="5" Top="376" Transparent="TRUE" Width="16"></Image>
+	</Form>
+	<Script></Script>
+</Window>

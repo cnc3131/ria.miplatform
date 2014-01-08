@@ -1,0 +1,2059 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="dboard00" Left="8" OnLoadCompleted="dboard00_OnLoadCompleted" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_grid">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="STRING"/>
+					<colinfo id="col2" size="256" type="STRING"/>
+					<colinfo id="col3" size="256" type="STRING"/>
+					<colinfo id="col4" size="256" type="STRING"/>
+					<colinfo id="col5" size="256" type="STRING"/>
+					<record>
+						<col0>KOR</col0>
+						<col1>80%</col1>
+						<col2>90%</col2>
+						<col3>70%</col3>
+						<col4>147439</col4>
+						<col5>chartSGB1</col5>
+					</record>
+					<record>
+						<col0>HNK</col0>
+						<col1>70%</col1>
+						<col2>30%</col2>
+						<col3>20%</col3>
+						<col4>11791</col4>
+						<col5>chartSGB2</col5>
+					</record>
+					<record>
+						<col0>HSD</col0>
+						<col1>50%</col1>
+						<col2>80%</col2>
+						<col3>40%</col3>
+						<col4>48574</col4>
+						<col5>chartSGB3</col5>
+					</record>
+					<record>
+						<col0>JPN</col0>
+						<col1>70%</col1>
+						<col2>45%</col2>
+						<col3>80%</col3>
+						<col4>3002</col4>
+						<col5>chartSGR3</col5>
+					</record>
+					<record>
+						<col0>IND</col0>
+						<col1>30%</col1>
+						<col2>70%</col2>
+						<col3>20%</col3>
+						<col4>190</col4>
+						<col5>chartSGR1</col5>
+					</record>
+					<record>
+						<col0>FIN</col0>
+						<col1>20%</col1>
+						<col2>40%</col2>
+						<col3>70%</col3>
+						<col4>974</col4>
+						<col5>chartSGR2</col5>
+					</record>
+					<record>
+						<col0>FRA</col0>
+						<col1>90%</col1>
+						<col2>70%</col2>
+						<col3>80%</col3>
+						<col4>820000</col4>
+						<col5>chartSGB3</col5>
+					</record>
+					<record>
+						<col0>ESP</col0>
+						<col1>50%</col1>
+						<col2>70%</col2>
+						<col3>20%</col3>
+						<col4></col4>
+						<col5>chartSGB1</col5>
+					</record>
+					<record>
+						<col0>SWE</col0>
+						<col1>40%</col1>
+						<col2>30%</col2>
+						<col3>60%</col3>
+						<col4></col4>
+						<col5>chartSGB2</col5>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_grid2">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="STRING"/>
+					<colinfo id="col2" size="256" type="STRING"/>
+					<colinfo id="col3" size="256" type="STRING"/>
+					<colinfo id="col4" size="256" type="STRING"/>
+					<colinfo id="col5" size="256" type="STRING"/>
+					<record>
+						<col0>Marketing&#32;an&#32;incredible&#32;web&#32;idea&#32;to&#32;ad&#32;agencies</col0>
+						<col1>80%</col1>
+						<col2>90%</col2>
+						<col3>70%</col3>
+						<col4>147439</col4>
+						<col5>chartSGB1</col5>
+					</record>
+					<record>
+						<col0>Ratio&#32;throughout&#32;sales&#32;funnel</col0>
+						<col1>70%</col1>
+						<col2>30%</col2>
+						<col3>20%</col3>
+						<col4>11791</col4>
+						<col5>chartSGB2</col5>
+					</record>
+					<record>
+						<col0>Significance&#32;of&#32;net&#32;income</col0>
+						<col1>50%</col1>
+						<col2>80%</col2>
+						<col3>40%</col3>
+						<col4>48574</col4>
+						<col5>chartSGB3</col5>
+					</record>
+					<record>
+						<col0>Customer&#32;purchase&#32;probability&#32;</col0>
+						<col1>70%</col1>
+						<col2>45%</col2>
+						<col3>80%</col3>
+						<col4>3002</col4>
+						<col5>chartSGR3</col5>
+					</record>
+					<record>
+						<col0>Responsibilities&#32;of&#32;and&#32;interface&#32;between&#32;M&#32;&amp;&#32;S</col0>
+						<col1>30%</col1>
+						<col2>70%</col2>
+						<col3>20%</col3>
+						<col4>190</col4>
+						<col5>chartSGR1</col5>
+					</record>
+					<record>
+						<col0>Evaluating&#32;average&#32;transaction&#32;value&#32;of&#32;each&#32;call</col0>
+						<col1>20%</col1>
+						<col2>40%</col2>
+						<col3>70%</col3>
+						<col4>974</col4>
+						<col5>chartSGR2</col5>
+					</record>
+					<record>
+						<col0>Customer&#32;loyalty&#32;business&#32;plans</col0>
+						<col1>90%</col1>
+						<col2>70%</col2>
+						<col3>80%</col3>
+						<col4>820000</col4>
+						<col5>chartSGB3</col5>
+					</record>
+					<record>
+						<col0>Customer&#32;profitability&#32;analysis&#32;-practisability</col0>
+						<col1>50%</col1>
+						<col2>70%</col2>
+						<col3>20%</col3>
+						<col4></col4>
+						<col5>chartSGB1</col5>
+					</record>
+					<record>
+						<col0>Developing&#32;an&#32;intergrated&#32;sales&#32;strategy</col0>
+						<col1>40%</col1>
+						<col2>30%</col2>
+						<col3>60%</col3>
+						<col4></col4>
+						<col5>chartSGB2</col5>
+					</record>
+					<record>
+						<col0>Looking&#32;for&#32;marketing&#32;dashboards&#32;in&#32;banking</col0>
+						<col1>20%</col1>
+						<col2>30%</col2>
+						<col3>60%</col3>
+						<col4></col4>
+						<col5>chartSGR2</col5>
+					</record>
+					<record>
+						<col0>Most&#32;Critical&#32;Phases&#32;in&#32;Business&#32;Life-Cycle</col0>
+						<col1>70%</col1>
+						<col2>45%</col2>
+						<col3>80%</col3>
+						<col4></col4>
+						<col5>chartSGR3</col5>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_line">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="INT"/>
+					<colinfo id="col2" size="256" type="INT"/>
+					<colinfo id="col3" size="256" type="INT"/>
+					<record>
+						<col0>Sep.07</col0>
+						<col1>1780</col1>
+						<col2>940</col2>
+						<col3>300</col3>
+					</record>
+					<record>
+						<col0>Oct.07</col0>
+						<col1>1560</col1>
+						<col2>1080</col2>
+						<col3>260</col3>
+					</record>
+					<record>
+						<col0>Nov.07</col0>
+						<col1>1470</col1>
+						<col2>980</col2>
+						<col3>430</col3>
+					</record>
+					<record>
+						<col0>Dec.07</col0>
+						<col1>1330</col1>
+						<col2>890</col2>
+						<col3>250</col3>
+					</record>
+					<record>
+						<col0>Jan.08</col0>
+						<col1>1470</col1>
+						<col2>1040</col2>
+						<col3>170</col3>
+					</record>
+					<record>
+						<col0>Fab.08</col0>
+						<col1>1500</col1>
+						<col2>740</col2>
+						<col3>270</col3>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_trend1">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="INT"/>
+					<colinfo id="col2" size="256" type="INT"/>
+					<colinfo id="col3" size="256" type="INT"/>
+					<record>
+						<col0>Database</col0>
+						<col1>58000</col1>
+						<col2>46300</col2>
+						<col3>51</col3>
+					</record>
+					<record>
+						<col0>UI&#32;Dev</col0>
+						<col1>49000</col1>
+						<col2>37000</col2>
+						<col3>44</col3>
+					</record>
+					<record>
+						<col0>B-Service</col0>
+						<col1>30000</col1>
+						<col2>16800</col2>
+						<col3>38</col3>
+					</record>
+					<record>
+						<col0>Others</col0>
+						<col1>20000</col1>
+						<col2>14600</col2>
+						<col3>24</col3>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_trend">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="INT"/>
+					<colinfo id="col2" size="256" type="INT"/>
+					<colinfo id="col3" size="256" type="INT"/>
+					<record>
+						<col0>KOR</col0>
+						<col1>8780000</col1>
+						<col2>7500000</col2>
+						<col3>6400000</col3>
+					</record>
+					<record>
+						<col0>DNK</col0>
+						<col1>9200000</col1>
+						<col2>6680000</col2>
+						<col3>5300000</col3>
+					</record>
+					<record>
+						<col0>HSD</col0>
+						<col1>7100000</col1>
+						<col2>6800000</col2>
+						<col3>4800000</col3>
+					</record>
+					<record>
+						<col0>JPN</col0>
+						<col1>6900000</col1>
+						<col2>4800000</col2>
+						<col3>3800000</col3>
+					</record>
+					<record>
+						<col0>IND</col0>
+						<col1>5000000</col1>
+						<col2>4500000</col2>
+						<col3>3300000</col3>
+					</record>
+					<record>
+						<col0>FIN</col0>
+						<col1>6500000</col1>
+						<col2>7880000</col2>
+						<col3>6000000</col3>
+					</record>
+					<record>
+						<col0>FRA</col0>
+						<col1>9000000</col1>
+						<col2>4900000</col2>
+						<col3>3900000</col3>
+					</record>
+					<record>
+						<col0>ESP</col0>
+						<col1>5800000</col1>
+						<col2>7000000</col2>
+						<col3>6000000</col3>
+					</record>
+					<record>
+						<col0>SWE</col0>
+						<col1>5900000</col1>
+						<col2>3400000</col2>
+						<col3>2400000</col3>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_right">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="INT"/>
+					<colinfo id="col2" size="256" type="INT"/>
+					<colinfo id="col3" size="256" type="INT"/>
+					<record>
+						<col0>DOM</col0>
+						<col1>17800</col1>
+						<col2>15000</col2>
+						<col3>74</col3>
+					</record>
+					<record>
+						<col0>DNK</col0>
+						<col1>9200</col1>
+						<col2>6680</col2>
+						<col3>63</col3>
+					</record>
+					<record>
+						<col0>HSD</col0>
+						<col1>3100</col1>
+						<col2>1800</col2>
+						<col3>38</col3>
+					</record>
+					<record>
+						<col0>JPN</col0>
+						<col1>6900</col1>
+						<col2>4800</col2>
+						<col3>48</col3>
+					</record>
+					<record>
+						<col0>IND</col0>
+						<col1>4000</col1>
+						<col2>3000</col2>
+						<col3>43</col3>
+					</record>
+					<record>
+						<col0>FIN</col0>
+						<col1>15000</col1>
+						<col2>9980</col2>
+						<col3>70</col3>
+					</record>
+					<record>
+						<col0>FRA</col0>
+						<col1>9000</col1>
+						<col2>4900</col2>
+						<col3>39</col3>
+					</record>
+					<record>
+						<col0>ESP</col0>
+						<col1>5800</col1>
+						<col2>2000</col2>
+						<col3>30</col3>
+					</record>
+					<record>
+						<col0>SWE</col0>
+						<col1>2000</col1>
+						<col2>1000</col2>
+						<col3>24</col3>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_sales_status">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="STRING"/>
+					<colinfo id="col2" size="256" type="STRING"/>
+					<colinfo id="col3" size="256" type="STRING"/>
+					<colinfo id="col4" size="256" type="STRING"/>
+					<colinfo id="col5" size="256" type="STRING"/>
+					<record>
+						<col0>&#32;&#32;Profit&#32;margin</col0>
+						<col1>80%</col1>
+						<col2>90%</col2>
+						<col3>70%</col3>
+						<col4>147439</col4>
+						<col5>arrow_up</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Avg.orders</col0>
+						<col1>70%</col1>
+						<col2>30%</col2>
+						<col3>20%</col3>
+						<col4>11791</col4>
+						<col5>arrow_up</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;EOH&#32;Inventory</col0>
+						<col1>50%</col1>
+						<col2>80%</col2>
+						<col3>40%</col3>
+						<col4>48574</col4>
+						<col5>arrow_dn</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Order&#32;fill&#32;rate</col0>
+						<col1>70%</col1>
+						<col2>45%</col2>
+						<col3>80%</col3>
+						<col4>3002</col4>
+						<col5>arrow_up</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;D.S.&#32;mismatch</col0>
+						<col1>30%</col1>
+						<col2>70%</col2>
+						<col3>20%</col3>
+						<col4>190</col4>
+						<col5>arrow_dn</col5>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_alert">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="STRING"/>
+					<colinfo id="col2" size="256" type="STRING"/>
+					<colinfo id="col3" size="256" type="STRING"/>
+					<colinfo id="col4" size="256" type="STRING"/>
+					<colinfo id="col5" size="256" type="STRING"/>
+					<record>
+						<col0>&#32;&#32;Average&#32;shipping&#32;time</col0>
+						<col1>80%</col1>
+						<col2>90%</col2>
+						<col3>70%</col3>
+						<col4>147439</col4>
+						<col5>alertb</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Decline&#32;profit&#32;margin</col0>
+						<col1>70%</col1>
+						<col2>30%</col2>
+						<col3>20%</col3>
+						<col4>11791</col4>
+						<col5>alertr</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Revenue&#32;by&#32;product</col0>
+						<col1>50%</col1>
+						<col2>80%</col2>
+						<col3>40%</col3>
+						<col4>48574</col4>
+						<col5>alertb</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Inventory&#32;onhand</col0>
+						<col1>70%</col1>
+						<col2>45%</col2>
+						<col3>80%</col3>
+						<col4>3002</col4>
+						<col5>alerty</col5>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_sales_prediction">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="STRING"/>
+					<colinfo id="col2" size="256" type="STRING"/>
+					<colinfo id="col3" size="256" type="INT"/>
+					<colinfo id="col4" size="256" type="STRING"/>
+					<colinfo id="col5" size="256" type="STRING"/>
+					<record>
+						<col0>&#32;&#32;Domestic</col0>
+						<col1>80%</col1>
+						<col2>90%</col2>
+						<col3>2340</col3>
+						<col4>147439</col4>
+						<col5>forc_1</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Exp.&#32;to&#32;Asia</col0>
+						<col1>70%</col1>
+						<col2>30%</col2>
+						<col3>43000</col3>
+						<col4>11791</col4>
+						<col5>forc_1</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Exp.&#32;to&#32;Europe</col0>
+						<col1>50%</col1>
+						<col2>80%</col2>
+						<col3>54000</col3>
+						<col4>48574</col4>
+						<col5>forc_3</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Exp.&#32;to&#32;South&#32;Am..</col0>
+						<col1>70%</col1>
+						<col2>45%</col2>
+						<col3>39000</col3>
+						<col4>3002</col4>
+						<col5>forc_1</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Exp.&#32;to&#32;North&#32;Am..</col0>
+						<col1>30%</col1>
+						<col2>70%</col2>
+						<col3>87000</col3>
+						<col4>190</col4>
+						<col5>forc_2</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Exp.&#32;to&#32;Oceania</col0>
+						<col1>20%</col1>
+						<col2>40%</col2>
+						<col3>23000</col3>
+						<col4>974</col4>
+						<col5>forc_4</col5>
+					</record>
+					<record>
+						<col0>&#32;&#32;Exp.&#32;to&#32;Africa</col0>
+						<col1>90%</col1>
+						<col2>70%</col2>
+						<col3>12000</col3>
+						<col4>820000</col4>
+						<col5>forc_1</col5>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_color1">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="data" size="256" type="STRING"/>
+					<record>
+						<code>1</code>
+						<data>#f49ac1</data>
+					</record>
+					<record>
+						<code>2</code>
+						<data>#7896d6</data>
+					</record>
+					<record>
+						<code>3</code>
+						<data>#f28498</data>
+					</record>
+					<record>
+						<code>4</code>
+						<data>#FCCAD6</data>
+					</record>
+					<record>
+						<code>8</code>
+						<data>#a3d39c</data>
+					</record>
+					<record>
+						<code>9</code>
+						<data>#82ca9c</data>
+					</record>
+					<record>
+						<code>10</code>
+						<data>#65c0bb</data>
+					</record>
+					<record>
+						<code>11</code>
+						<data>#abbbf8</data>
+					</record>
+					<record>
+						<code>12</code>
+						<data>#7da7d9</data>
+					</record>
+					<record>
+						<code>13</code>
+						<data>#8393ca</data>
+					</record>
+					<record>
+						<code>14</code>
+						<data>#8781bd</data>
+					</record>
+					<record>
+						<code>15</code>
+						<data>#bd8cbf</data>
+					</record>
+					<record>
+						<code>16</code>
+						<data>#f49ac1</data>
+					</record>
+					<record>
+						<code>17</code>
+						<data>#fb7bb3</data>
+					</record>
+					<record>
+						<code>18</code>
+						<data>#a67c52</data>
+					</record>
+					<record>
+						<code>19</code>
+						<data>#9a5815</data>
+					</record>
+					<record>
+						<code>1</code>
+						<data>#d62601</data>
+					</record>
+					<record>
+						<code>2</code>
+						<data>#f26c4f</data>
+					</record>
+					<record>
+						<code>3</code>
+						<data>#f69679</data>
+					</record>
+					<record>
+						<code>4</code>
+						<data>#fcb29b</data>
+					</record>
+					<record>
+						<code>5</code>
+						<data>#facecf</data>
+					</record>
+					<record>
+						<code>6</code>
+						<data>#fdc689</data>
+					</record>
+					<record>
+						<code>7</code>
+						<data>#fff799</data>
+					</record>
+					<record>
+						<code>8</code>
+						<data>#a3d39c</data>
+					</record>
+					<record>
+						<code>9</code>
+						<data>#82ca9c</data>
+					</record>
+					<record>
+						<code>10</code>
+						<data>#65c0bb</data>
+					</record>
+					<record>
+						<code>11</code>
+						<data>#abbbf8</data>
+					</record>
+					<record>
+						<code>12</code>
+						<data>#7da7d9</data>
+					</record>
+					<record>
+						<code>13</code>
+						<data>#8393ca</data>
+					</record>
+					<record>
+						<code>14</code>
+						<data>#8781bd</data>
+					</record>
+					<record>
+						<code>15</code>
+						<data>#bd8cbf</data>
+					</record>
+					<record>
+						<code>16</code>
+						<data>#f49ac1</data>
+					</record>
+					<record>
+						<code>17</code>
+						<data>#fb7bb3</data>
+					</record>
+					<record>
+						<code>18</code>
+						<data>#a67c52</data>
+					</record>
+					<record>
+						<code>19</code>
+						<data>#9a5815</data>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_color">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="data" size="256" type="STRING"/>
+					<record>
+						<code>1</code>
+						<data>#d62601</data>
+					</record>
+					<record>
+						<code>2</code>
+						<data>#f26c4f</data>
+					</record>
+					<record>
+						<code>3</code>
+						<data>#f69679</data>
+					</record>
+					<record>
+						<code>4</code>
+						<data>#fcb29b</data>
+					</record>
+					<record>
+						<code>5</code>
+						<data>#facecf</data>
+					</record>
+					<record>
+						<code>6</code>
+						<data>#fdc689</data>
+					</record>
+					<record>
+						<code>7</code>
+						<data>#fff799</data>
+					</record>
+					<record>
+						<code>8</code>
+						<data>#a3d39c</data>
+					</record>
+					<record>
+						<code>9</code>
+						<data>#82ca9c</data>
+					</record>
+					<record>
+						<code>10</code>
+						<data>#65c0bb</data>
+					</record>
+					<record>
+						<code>11</code>
+						<data>#abbbf8</data>
+					</record>
+					<record>
+						<code>12</code>
+						<data>#7da7d9</data>
+					</record>
+					<record>
+						<code>13</code>
+						<data>#8393ca</data>
+					</record>
+					<record>
+						<code>14</code>
+						<data>#8781bd</data>
+					</record>
+					<record>
+						<code>15</code>
+						<data>#bd8cbf</data>
+					</record>
+					<record>
+						<code>16</code>
+						<data>#f49ac1</data>
+					</record>
+					<record>
+						<code>17</code>
+						<data>#fb7bb3</data>
+					</record>
+					<record>
+						<code>18</code>
+						<data>#a67c52</data>
+					</record>
+					<record>
+						<code>19</code>
+						<data>#9a5815</data>
+					</record>
+					<record>
+						<code>1</code>
+						<data>#d62601</data>
+					</record>
+					<record>
+						<code>2</code>
+						<data>#f26c4f</data>
+					</record>
+					<record>
+						<code>3</code>
+						<data>#f69679</data>
+					</record>
+					<record>
+						<code>4</code>
+						<data>#fcb29b</data>
+					</record>
+					<record>
+						<code>5</code>
+						<data>#facecf</data>
+					</record>
+					<record>
+						<code>6</code>
+						<data>#fdc689</data>
+					</record>
+					<record>
+						<code>7</code>
+						<data>#fff799</data>
+					</record>
+					<record>
+						<code>8</code>
+						<data>#a3d39c</data>
+					</record>
+					<record>
+						<code>9</code>
+						<data>#82ca9c</data>
+					</record>
+					<record>
+						<code>10</code>
+						<data>#65c0bb</data>
+					</record>
+					<record>
+						<code>11</code>
+						<data>#abbbf8</data>
+					</record>
+					<record>
+						<code>12</code>
+						<data>#7da7d9</data>
+					</record>
+					<record>
+						<code>13</code>
+						<data>#8393ca</data>
+					</record>
+					<record>
+						<code>14</code>
+						<data>#8781bd</data>
+					</record>
+					<record>
+						<code>15</code>
+						<data>#bd8cbf</data>
+					</record>
+					<record>
+						<code>16</code>
+						<data>#f49ac1</data>
+					</record>
+					<record>
+						<code>17</code>
+						<data>#fb7bb3</data>
+					</record>
+					<record>
+						<code>18</code>
+						<data>#a67c52</data>
+					</record>
+					<record>
+						<code>19</code>
+						<data>#9a5815</data>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="601" Id="Image10" ImageID="M_bg3" TabOrder="4" Width="1000"></Image>
+		<Grid AutoFit="TRUE" AutoScrollBar="None" BindDataset="ds_sales_prediction" BkColor2="default" BoldHead="true" Border="Flat" BorderColor="INACTIVECAPTION" Bottom="588" ColSelect="TRUE" Enable="true" EndLineColor="default" Face3dColor="#bec5e7" HeadBorder="Flat" HeadHeight="26" Height="189" Id="Grid4" InputPanel="FALSE" Left="23" LineColor="whitesmoke" MinWidth="100" Right="240" RowHeight="23" TabOrder="33" TabStop="true" Top="399" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="217">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="117"/>
+						<col width="50"/>
+						<col width="40"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" display="text" font="Tahoma,8,Bold" text="Indicators"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="#454545" display="text" font="Tahoma,8,Bold" text="Plan"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="#454545" display="text" font="Tahoma,8,Bold" text="Sts."/>
+					</head>
+					<body>
+						<cell align="left" bkcolor="#e3e5f1" col="0" colid="col0" color="#454545" display="text" font="Tahoma,8,Bold"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="1" colid="col3" color="#454545" display="number" font="Tahoma,8"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="2" colid="col5" color="#454545" display="image" font="Tahoma,8"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image FillType="STRETCH" Height="23" Id="Image24" ImageID="barblue01" Left="257" TabOrder="20" Top="375" Width="421"></Image>
+		<Image FillType="STRETCH" Height="23" Id="Image5" ImageID="barblue01" Left="696" TabOrder="15" Top="50" Width="277"></Image>
+		<Image FillType="STRETCH" Height="23" Id="Image0" ImageID="barblue01" Left="23" TabOrder="7" Top="203" Width="217"></Image>
+		<Grid AutoFit="TRUE" AutoScrollBar="None" BindDataset="ds_sales_status" BkColor2="default" BoldHead="true" Border="Flat" BorderColor="INACTIVECAPTION" Bottom="364" ColSelect="TRUE" Enable="true" EndLineColor="default" Face3dColor="#bec5e7" HeadBorder="Flat" HeadHeight="26" Height="137" Id="Grid0" InputPanel="FALSE" Left="23" LineColor="whitesmoke" MinWidth="100" Right="240" RowHeight="22" TabOrder="1" TabStop="true" Top="227" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="217">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="117"/>
+						<col width="50"/>
+						<col width="40"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" display="text" font="Tahoma,8,Bold" text="Indicators"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="#454545" display="text" font="Tahoma,8,Bold" text="Perf."/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="#454545" display="text" font="Tahoma,8,Bold" text="Sts."/>
+					</head>
+					<body>
+						<cell align="left" bkcolor="#e3e5f1" col="0" colid="col0" color="#454545" display="text" font="Tahoma,8,Bold"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="1" colid="col3" color="#454545" display="text" font="Tahoma,8"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="2" colid="col5" color="#454545" display="image" font="Tahoma,8"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Grid AutoFit="TRUE" BindDataset="ds_grid2" BkColor2="default" BoldHead="true" Border="Flat" BorderColor="INACTIVECAPTION" Bottom="365" ColSelect="TRUE" Enable="true" EndLineColor="default" Face3dColor="#bec5e7" HeadBorder="Flat" HeadHeight="26" Height="291" Id="Grid3" InputPanel="FALSE" Left="257" LineColor="default" MinWidth="100" Right="678" RowHeight="24" TabOrder="2" TabStop="true" Top="74" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="421">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="14"/>
+						<col width="209"/>
+						<col width="47"/>
+						<col width="46"/>
+						<col width="64"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" colspan="2" display="text">
+							<cell col="0" display="text"/>
+							<cell col="1" display="text" font="Tahoma,8,Bold" text="Category"/>
+						</cell>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="#454545" display="text" font="Tahoma,8,Bold" text="Plan"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="#454545" display="text" font="Tahoma,8,Bold" text="Perf."/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="#454545" display="text" font="Tahoma,8,Bold" text="Status"/>
+					</head>
+					<body>
+						<cell bkcolor="white" bkcolor2="#edf3fe" col="0" display="image" expr='&quot;ball02&quot;'/>
+						<cell align="left" bkcolor="white" bkcolor2="#edf3fe" col="1" colid="col0" color="#454545" display="text" font="Tahoma,8,Bold"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="2" colid="col1" color="#454545" display="text" font="Tahoma,8"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="3" colid="col2" color="#454545" display="text" font="Tahoma,8"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="4" colid="col5" color="#454545" display="image" font="Tahoma,8"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Static Color="whitesmoke" Font="굴림,8,Bold" Height="22" Id="Static4" Left="37" Style="list_title" TabOrder="8" Text="Sales&#32;Staus" Top="205" VAlign="Middle" Width="87"></Static>
+		<Image FillType="STRETCH" Height="23" Id="Image1" ImageID="barblue01" Left="23" TabOrder="9" Top="50" Width="217"></Image>
+		<Static Color="whitesmoke" Font="굴림,8,Bold" Height="22" Id="Static0" Left="37" Style="list_title" TabOrder="10" Text="Alert" Top="52" VAlign="Middle" Width="94"></Static>
+		<Image FillType="STRETCH" Height="23" Id="Image9" ImageID="barblue01" Left="23" TabOrder="11" Top="375" Width="217"></Image>
+		<Static Color="whitesmoke" Font="굴림,8,Bold" Height="22" Id="Static5" Left="37" Style="list_title" TabOrder="12" Text="Sales&#32;Predic." Top="378" VAlign="Middle" Width="94"></Static>
+		<Image FillType="STRETCH" Height="23" Id="Image2" ImageID="barblue01" Left="257" TabOrder="13" Top="50" Width="421"></Image>
+		<Static Color="whitesmoke" Font="굴림,8,Bold" Height="22" Id="Static1" Left="277" Style="list_title" TabOrder="14" Text="Sales&#32;Total&#32;" Top="53" VAlign="Middle" Width="94"></Static>
+		<Static Color="whitesmoke" Font="굴림,8,Bold" Height="22" Id="Static2" Left="714" Style="list_title" TabOrder="16" Text="Plan&#32;vs&#32;Perf." Top="53" VAlign="Middle" Width="94"></Static>
+		<Image FillType="STRETCH" Height="294" Id="Image16" ImageID="vblue01" Left="971" TabOrder="17" Top="70" Width="2"></Image>
+		<Image FillType="STRETCH" Height="23" Id="Image20" ImageID="barblue01" Left="696" TabOrder="18" Top="375" Width="276"></Image>
+		<Static Color="whitesmoke" Font="굴림,8,Bold" Height="22" Id="Static3" Left="713" Style="list_title" TabOrder="19" Text="Sales&#32;Total&#32;" Top="378" VAlign="Middle" Width="94"></Static>
+		<Static Color="whitesmoke" Font="굴림,8,Bold" Height="22" Id="Static6" Left="277" Style="list_title" TabOrder="21" Text="Monthly&#32;Trend" Top="378" VAlign="Middle" Width="94"></Static>
+		<Grid AutoFit="TRUE" AutoScrollBar="None" BindDataset="ds_alert" BkColor2="default" BoldHead="true" Border="Flat" BorderColor="INACTIVECAPTION" Bottom="188" ColSelect="TRUE" Enable="true" EndLineColor="default" Face3dColor="#bec5e7" HeadBorder="Flat" HeadHeight="26" Height="114" Id="Grid1" InputPanel="FALSE" Left="23" LineColor="whitesmoke" MinWidth="100" Right="240" RowHeight="22" TabOrder="22" TabStop="true" Top="74" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="217">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="154"/>
+						<col width="38"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" display="text" font="Tahoma,8,Bold" text="Warning&#32;items"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="#454545" display="text" font="Tahoma,8,Bold" text="Sts."/>
+					</head>
+					<body>
+						<cell align="left" bkcolor="#e3e5f1" col="0" colid="col0" color="#454545" display="text" font="Tahoma,8,Bold"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="1" colid="col5" color="#454545" display="image" font="Tahoma,8"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image FillType="STRETCH" Height="2" Id="Image3" ImageID="hblue01" Left="696" TabOrder="23" Top="71" Width="275"></Image>
+		<Image FillType="STRETCH" Height="2" Id="Image4" ImageID="hblue01" Left="697" TabOrder="25" Top="397" Width="274"></Image>
+		<Image FillType="STRETCH" Height="192" Id="Image6" ImageID="vblue01" Left="971" TabOrder="24" Top="396" Width="2"></Image>
+		<Image FillType="STRETCH" Height="2" Id="Image11" ImageID="hblue01" Left="257" TabOrder="27" Top="397" Width="419"></Image>
+		<Image FillType="STRETCH" Height="192" Id="Image12" ImageID="vblue01" Left="676" TabOrder="26" Top="396" Width="2"></Image>
+		<Image FillType="STRETCH" Height="2" Id="Image14" ImageID="hblue01" Left="700" TabOrder="28" Top="214" Width="271"></Image>
+		<Image FillType="STRETCH" Height="2" Id="Image17" ImageID="hblue01" Left="23" TabOrder="29" Top="397" Width="217"></Image>
+		<Image FillType="STRETCH" Height="2" Id="Image18" ImageID="hblue01" Left="23" TabOrder="30" Top="73" Width="217"></Image>
+		<Image FillType="STRETCH" Height="2" Id="Image21" ImageID="hblue01" Left="23" TabOrder="31" Top="225" Width="217"></Image>
+		<Image FillType="STRETCH" Height="2" Id="Image22" ImageID="hblue01" Left="257" TabOrder="32" Top="72" Width="421"></Image>
+		<Image Align="Left" Height="16" Id="Image8" ImageID="M_title_1depth_icon" Left="19" LeftMargin="18" Style="cm_title_sub" TabOrder="38" Text="Sales&#32;Key&#32;Performance&#32;Indicator&#32;Status&#32;Summary" Top="27" Width="368"></Image>
+		<CyXChart Bottom="587" Height="189" Id="CyXChart0" Left="257" NSeries="2" NValues="5" Right="676" Top="398" Visible="FALSE" Width="419">
+			<_PersistData>&#13;&#10;/6zFPhOC30NGWDYA8vJNQ/9oYXJ0RlgsIP9WZXJzaW9uPf82LjIuMTM0Mv8uMCwgQ3VsdP91cmU9bmV1dP9yYWwsIFB1Yv9saWNL&#13;&#10;ZXlUb/9rZW49YTE4N/84ZTIwNTJjMP84ZGNlElNvZv90d2FyZUZYLlr59B7y8wAj8vAgXgR6aw0E8vABAf7/gQUqawUBawUCawYG&#13;&#10;pQSRBdUy8vAQ8vAD8vD7/4d/f4JlAXwCvwKRBQG/BUFyaWFs8vBBpG8P8vIFjgWsBQBGD1h/Ei5IaWdobCkQ/3RTZXR0aW5nZ3MQ&#13;&#10;CZMIRR8AB3YFzwEBAAgCHRMfWAWfLkF4aXOVAX0CAPECOhDy82UWKDjgAAUKRxULRxmeB88f3BmVAcCeA4UNbQ9/A40OjwUCDASb&#13;&#10;H60QDbEfYi90L+cf+R8oCy+dL8UlDloYD44FvAH68vFS+fQuQmFzZZAADxIPJA82DRd3H/wiDf8uSUdhbGxlcl95VHlwZZUBFDIl&#13;&#10;URH6DIk/lTgSlTUTjQdHCABLvwBxM/LwFeQt/Ec/+yMJLkxpbmUPSW5mb9sCvSzTAzohSUKVP5cIAbgagQEWI0V9F4UnD0RlZmEY&#13;&#10;MP8uV2luZG93cw==&#13;&#10;</_PersistData>
+		</CyXChart>
+		<CyXChart Bottom="587" Height="189" Id="CyXChart4" Left="697" NSeries="2" NValues="5" Right="971" Top="398" Visible="FALSE" Width="274">
+			<_PersistData>&#13;&#10;/6zFPhOC30NGWDYA8vJNQ/9oYXJ0RlgsIP9WZXJzaW9uPf82LjIuMTM0Mv8uMCwgQ3VsdP91cmU9bmV1dP9yYWwsIFB1Yv9saWNL&#13;&#10;ZXlUb/9rZW49YTE4N/84ZTIwNTJjMP84ZGNlElNvZv90d2FyZUZYLlr59B7y8wAj8vAgXgR6aw0E8vABAf7/gQUqawUBawUCawYG&#13;&#10;pQSRBdUy8vAQ8vAD8vD7/4d/f4JlAXwCvwKRBQG/BUFyaWFs8vBBpG8P8vIFjgWsBQBGD1h/Ei5IaWdobCkQ/3RTZXR0aW5nZ3MQ&#13;&#10;CZMIRR8AB3YFzwEBAAgCHRMfWAWfLkF4aXOVAX0CAPECOhDy82UWKDjgAAUKRxULRxmeB88f3BmVAcCeA4UNbQ9/A40OjwUCDASb&#13;&#10;H60QDbEfYi90L+cf+R8oCy+dL8UlDloYD44FvAH68vFS+fQuQmFzZZAADxIPJA82DRd3H/wiDf8uSUdhbGxlcl95VHlwZZUBFDIl&#13;&#10;URH6DIk/lTgSlTUTjQdHCABLvwBxM/LwFeQt/Ec/+yMJLkxpbmUPSW5mb9sCvSzTAzohSUKVP5cIAbgagQEWI0V9F4UnD0RlZmEY&#13;&#10;MP8uV2luZG93cw==&#13;&#10;</_PersistData>
+		</CyXChart>
+		<FusionChart3 Height="141" Id="FusionChart30" Left="696" Top="73" Width="275"></FusionChart3>
+		<FusionChart3 Height="146" Id="FusionChart31" Left="696" Top="216" Width="275"></FusionChart3>
+	</Form>
+	<Script><![CDATA[
+function dboard00_OnLoadCompleted(obj)
+{
+	fn_set_gauge_top();
+	fn_set_gauge_bttm();
+
+	CyXChart0_Load();
+	CyXChart0.Visible = true;
+
+//	CyXChart1_Load();
+//	CyXChart1.Visible = true;
+
+//	CyXChart2_Load();
+//	CyXChart2.Visible = true;
+
+//	CyXChart3_Load();
+//	CyXChart3.Visible = true;
+	
+	CyXChart4_Load();
+	CyXChart4.Visible = true;
+}
+
+function CyXChart0_Load()
+{
+	var mon_cnt = ds_trend1.GetRowCount();
+
+	CyXChart0.TopGap = "30";						//차트 안쪽 상단 여백
+	CyXChart0.LeftGap = "15";						//차트 안쪽 왼쪽 여백
+	//ChartFx0.RightGap = "30";					//차트 안쪽 오른쪽 여백
+	CyXChart0.BottomGap = "25";					//차트 안쪽 하단 여백
+
+	CyXChart0.ClearData(1);						//Clear all numeric values set with the YValue or Value properties
+	CyXChart0.ClearData(3);
+	CyXChart0.ClearData(7);						//Clear all numeric values set with the YValue or Value properties
+	
+	CyXChart0.Stacked = 0;
+
+	//6.2 추가 사항
+	CyXChart0.PointLabels = True;
+	CyXChart0.PointLabelColor = "black";
+
+
+	//Chart 외곽 영역 색상
+	CyXChart0.BackColor = "#f2f2fe";	
+	
+	//Chart 내부 색상
+	CyXChart0.InsideColor = "#ffffff";				
+	
+	
+	//Grid 가로선 색상
+	CyXChart0.AxisY.Grid.Color = "#C7C8D4";		
+	//Grid 가로선 종류
+	CyXChart0.AxisY.Grid.Style = "DashStyle_Dash";
+    
+    //6.2 추가
+    CyXChart0.AxisY.Gridlines = True;
+    CyXChart0.AxisX.Gridlines = True;
+
+	//Max Value Setting
+    CyXChart0.AxisY.Max = ds_trend1.Max("col1") * 1.25;
+    CyXChart0.AxisY.Min = 0;	//Min 값 을 반드시 지정해야 함
+
+	//소수점 자리수 - Primary
+	CyXChart0.AxisY.LabelsFormat.Decimals = 0;
+	CyXChart0.AxisY.LabelsFormat.Format = "AxisFormat_Number";
+	CyXChart0.AxisY.AutoScale = False;
+	//Max Value Setting
+    CyXChart0.AxisY2.Max = ds_trend1.Max("col3") * 1.1;
+    CyXChart0.AxisY2.Min = 0;	//Min 값 을 반드시 지정해야 함
+
+	//소수점 자리수 - Secondary
+	CyXChart0.AxisY2.LabelsFormat.Decimals = 0;
+	CyXChart0.AxisY2.LabelsFormat.Format = "AxisFormat_Number";
+	CyXChart0.AxisY2.AutoScale = False;
+
+	//X축 Fonbt
+	CyXChart0.AxisX.Font.Name = "Arial";
+	CyXChart0.AxisX.Font.Size = "7";
+
+
+	CyXChart0.MarkerShape = 2;
+	CyXChart0.Scrollable = 1;
+
+	CyXChart0.Axis[2].Scroll = 0;
+	CyXChart0.Axis[2].pixperunit = 30;
+
+
+	//X축의 갯수 설정
+	//가운데 숫자가 시리즈의 갯수를 나타냄, 마지막 값은 X축 갯수 의미
+	CyXChart0.OpenData("COD_Values", 3, mon_cnt);
+	CyXChart0.OpenData("COD_Colors", 3, mon_cnt);
+
+	CyXChart0.series[0].color = "#FBAFC2";
+	CyXChart0.Series[0].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart0.series[0].gallery = "Gallery_Bar";
+	CyXChart0.Series[0].CylSides = 24;
+	
+	CyXChart0.series[1].color = "#FBE194";
+	CyXChart0.Series[1].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart0.series[1].gallery = "Gallery_Bar";
+	CyXChart0.Series[1].CylSides = 24;
+	
+	CyXChart0.series[2].color = "#7896d6";
+	CyXChart0.Series[2].YAxis = 1; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart0.series[2].gallery = 1; 							//꺾은선 그래프
+	CyXChart0.series[2].gallery = "Gallery_Lines";
+
+	CyXChart0.series[2].LineWidth = 2;
+	
+	//X축 값 설정  Axis[2]는 X축을 나타냄(label)
+	for(var i=0 ; i < mon_cnt ; i++){
+		CyXChart0.Axis[2].Label(i) = ds_trend1.getcolumn(i,"col0");
+	}
+	
+	//실제 데이타를 이용해 그래프를 그려주는 부분 (RowCount / ColCount 등을 이용)
+	var NULL_VAL = "1.0E+308";	// data=0 인경우 표시안함
+	for (var i=0 ; i < mon_cnt ; i++)
+	{
+		CyXChart0.Value(0,i) = ds_trend1.GetColumn(i, "col1");
+		CyXChart0.Value(1,i) = ds_trend1.GetColumn(i, "col2");
+		CyXChart0.Value(2,i) = ds_trend1.GetColumn(i, "col3");
+	}	
+
+
+	CyXChart0.Series[0].PointLabels = false;	
+	CyXChart0.Series[1].PointLabels = false;	
+
+	//Legend 표시
+	CyXChart0.Series[0].Legend = "Plan       ,";
+	CyXChart0.Series[1].Legend = "Perf.      ,";
+	CyXChart0.Series[2].Legend = "%";
+
+	CyXChart0.SerLegBoxObj.visible = true;
+	CyXChart0.SerLegBoxObj.height = "10";
+//	CyXChart0.SerLegBoxObj.Docked = "Docked_Top";
+
+	CyXChart0.SerLegBoxObj.Docked = "1028"; 	//top:256, right:515"
+
+	CyXChart0.SerLegBoxObj.top = "15";
+	CyXChart0.SerLegBoxObj.left = "20";
+	CyXChart0.SerLegBoxObj.width  = "220";
+	CyXChart0.SerLegBoxObj.height = "22";
+
+
+	//Chart 외곽 Gradient 설정
+	var BK0Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK0Gradient.Type = "GradientType_BackwardDiagonal";
+	BK0Gradient.Colors.Item(0) = "#FFFFFF";
+	BK0Gradient.Colors.Item(1) = "#6B9CC9";
+	BK0Gradient.Position.Item(0) = 0;
+	BK0Gradient.Position.Item(1) = 0.5;
+	BK0Gradient.Position.Item(2) = 1;
+	BK0Gradient.Factor.Item(0) = 0;
+	BK0Gradient.Factor.Item(1) = 0.5;
+	BK0Gradient.Factor.Item(2) = 1;
+	
+	CyXChart0.BackObject = BK0Gradient;
+
+
+	//Chart 내부 Gradient 설정
+	var BK1Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK1Gradient.Type = "GradientType_BackwardDiagonal";
+	BK1Gradient.Colors.Item(0) = "#FFFFFF";
+	BK1Gradient.Colors.Item(1) = "#BDD8F2";
+	BK1Gradient.Position.Item(0) = 0;
+	BK1Gradient.Position.Item(1) = 0.5;
+	BK1Gradient.Position.Item(2) = 1;
+	BK1Gradient.Factor.Item(0) = 0;
+	BK1Gradient.Factor.Item(1) = 0.5;
+	BK1Gradient.Factor.Item(2) = 1;
+	
+	CyXChart0.InsideBackObject = BK1Gradient;
+
+	CyXChart0.CloseData("COD_Values");
+	CyXChart0.CloseData("COD_Colors");	
+}
+
+function CyXChart1_Load()
+{
+	var mon_cnt = ds_line.GetRowCount();
+
+	CyXChart1.TopGap = "20";						//차트 안쪽 상단 여백
+	CyXChart1.LeftGap = "10";						//차트 안쪽 왼쪽 여백
+	//CyXChart1.RightGap = "30";					//차트 안쪽 오른쪽 여백
+	CyXChart1.BottomGap = "25";					//차트 안쪽 하단 여백
+
+	CyXChart1.ClearData(1);						//Clear all numeric values set with the YValue or Value properties
+	CyXChart1.ClearData(3);
+	CyXChart1.ClearData(7);						//Clear all numeric values set with the YValue or Value properties
+	
+	/**********************************************
+	CyXChart1.ClearLegend(1);		//없어 졌음.				
+	***********************************************/
+	
+	//6.2 추가 사항
+	CyXChart1.PointLabels = false;
+//	CyXChart1.PointLabelColor = "black";
+
+	CyXChart1.Stacked = "Stacked_Normal";
+
+	//Chart 외곽 영역 색상
+	/************************************************
+	CyXChart1.RGBBK = "#f2f2fe";				
+	*************************************************/
+	CyXChart1.BackColor = "#f2f2fe";	
+	
+	//Chart 내부 색상
+	/*************************************************
+	CyXChart1.RGB2DBK ="#ffffff";				
+	*************************************************/
+	CyXChart1.InsideColor = "#ffffff";				
+	
+	
+	/*************************************************
+	CyXChart1.Axis[0].GridColor = "#C7C8D4";		// 가로선 색상
+	*************************************************/
+	CyXChart1.AxisY.Grid.Color = "#C7C8D4";		
+	
+	/*****************************************************
+	CyXChart1.Axis[0].GridStyle = 2;				// 가로선 종류
+	******************************************************/
+	CyXChart1.AxisY.Grid.Style = "DashStyle_Dash";
+    
+    //6.2 추가
+    CyXChart1.AxisY.Gridlines = True;
+    CyXChart1.AxisX.Gridlines = True;
+
+    
+	/**************************************************************
+    CyXChart1.Axis[0].MAX = round(ds_line.Max("col1") * 1.2);
+    *************************************************************/
+    CyXChart1.AxisY.Max = (ds_line.Max("col1") + ds_line.Max("col2") + ds_line.Max("col3")) * 1.1;
+    CyXChart1.AxisY.Min = 0;	//Min 값 을 반드시 지정해야 함
+
+
+	/**************************************************************
+	CyXChart1.Axis[0].step =  round(ds_line.Max("col1") * 1.2) * 0.2;
+    *************************************************************/
+	CyXChart1.AxisY.Step = CyXChart1.AxisY.Max * 0.2;
+
+	/********************************************
+	CyXChart1.Axis[0].AutoScale = 0;
+	*********************************************/
+	CyXChart1.AxisY.AutoScale = False;
+
+
+	/****************************************************************
+	CyXChart1.Axis[0].Decimals = 0;				//소수점 자리수
+	CyXChart1.Axis[0].Format = 1;
+	****************************************************************/
+	CyXChart1.AxisY.LabelsFormat.Decimals = 0;
+	CyXChart1.AxisY.LabelsFormat.Format = "AxisFormat_Number";
+
+
+
+	CyXChart1.MarkerShape = 2;
+	CyXChart1.Scrollable = 0;
+
+	CyXChart1.Axis[2].Scroll = 0;
+	CyXChart1.Axis[2].pixperunit = 30;
+
+	//X축의 갯수 설정
+	/***************************************************
+	CyXChart1.OpenDataEx(1, 2, mon_cnt);  //가운데 숫자가 시리즈의 갯수를 나타냄, 마지막 값은 X축 갯수 의미
+	****************************************************/
+	CyXChart1.OpenData("COD_Values", 3, mon_cnt);
+	CyXChart1.OpenData("COD_Colors", 3, mon_cnt);
+
+	
+	CyXChart1.gallery = "Gallery_Bar"; 
+
+	CyXChart1.series[0].color = "#F480B1";
+	CyXChart1.Series[0].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart1.Series[0].CylSides = 24;
+	
+	CyXChart1.series[1].color = "#8E80F2";
+	CyXChart1.Series[1].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart1.Series[1].CylSides = 24;
+	
+	CyXChart1.series[2].color = "#fcd03b";
+	CyXChart1.Series[2].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart1.Series[2].CylSides = 24;
+	
+
+	//X축 Fonbt
+	CyXChart1.AxisX.Font.Name = "Arial";
+	CyXChart1.AxisX.Font.Size = "7";
+
+	//Line Width
+	//CyXChart2.LineWidth = 2;
+	
+	//X축 값 설정  Axis[2]는 X축을 나타냄(label)
+	for(var i=0 ; i < mon_cnt ; i++){
+		CyXChart1.Axis[2].Label(i) = ds_line.getcolumn(i,"col0");
+	}
+	
+	//실제 데이타를 이용해 그래프를 그려주는 부분 (RowCount / ColCount 등을 이용)
+	var NULL_VAL = "1.0E+308";	// data=0 인경우 표시안함
+	for (var i=0 ; i < mon_cnt ; i++)
+	{
+		CyXChart1.Value(0,i) = ds_line.GetColumn(i, "col1");
+		CyXChart1.Value(1,i) = ds_line.GetColumn(i, "col2");
+		CyXChart1.Value(2,i) = ds_line.GetColumn(i, "col3");
+	}	
+
+	//Legend 표시
+	CyXChart1.Series[0].Legend = "Sche";
+	CyXChart1.Series[1].Legend = "UiDv";
+	CyXChart1.Series[2].Legend = "Proc";
+
+	CyXChart1.SerLegBoxObj.visible = true;
+	CyXChart1.SerLegBoxObj.Docked = "Docked_Right";
+	
+	CyXChart1.SerLegBoxObj.Moveable  = true;
+	CyXChart1.SerLegBoxObj.BkColor = "#ffffff";
+
+
+	//Chart 외곽 Gradient 설정
+	var BK0Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK0Gradient.Type = "GradientType_BackwardDiagonal";
+	BK0Gradient.Colors.Item(0) = "#FFFFFF";
+	BK0Gradient.Colors.Item(1) = "#6B9CC9";
+	BK0Gradient.Position.Item(0) = 0;
+	BK0Gradient.Position.Item(1) = 0.5;
+	BK0Gradient.Position.Item(2) = 1;
+	BK0Gradient.Factor.Item(0) = 0;
+	BK0Gradient.Factor.Item(1) = 0.5;
+	BK0Gradient.Factor.Item(2) = 1;
+	
+	CyXChart1.BackObject = BK0Gradient;
+
+
+	//Chart 내부 Gradient 설정
+	var BK1Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK1Gradient.Type = "GradientType_BackwardDiagonal";
+	BK1Gradient.Colors.Item(0) = "#FFFFFF";
+	BK1Gradient.Colors.Item(1) = "#BDD8F2";
+	BK1Gradient.Position.Item(0) = 0;
+	BK1Gradient.Position.Item(1) = 0.5;
+	BK1Gradient.Position.Item(2) = 1;
+	BK1Gradient.Factor.Item(0) = 0;
+	BK1Gradient.Factor.Item(1) = 0.5;
+	BK1Gradient.Factor.Item(2) = 1;
+	
+	CyXChart1.InsideBackObject = BK1Gradient;
+
+
+	CyXChart1.CloseData("COD_Values");
+	CyXChart1.CloseData("COD_Colors");	
+}
+
+function CyXChart2_Load()
+{
+	var mon_cnt = ds_line.GetRowCount();
+
+	CyXChart2.TopGap = "20";						//차트 안쪽 상단 여백
+	CyXChart2.LeftGap = "10";						//차트 안쪽 왼쪽 여백
+	//CyXChart0.RightGap = "30";					//차트 안쪽 오른쪽 여백
+	CyXChart2.BottomGap = "25";					//차트 안쪽 하단 여백
+
+	CyXChart2.ClearData(1);						//Clear all numeric values set with the YValue or Value properties
+	CyXChart2.ClearData(3);
+	CyXChart2.ClearData(7);						//Clear all numeric values set with the YValue or Value properties
+	
+	/**********************************************
+	CyXChart0.ClearLegend(1);		//없어 졌음.				
+	***********************************************/
+	
+	//6.2 추가 사항
+	CyXChart2.PointLabels = True;
+	CyXChart2.PointLabelColor = "black";
+
+	CyXChart2.Stacked = 0;
+
+	//Chart 외곽 영역 색상
+	/************************************************
+	CyXChart0.RGBBK = "#f2f2fe";				
+	*************************************************/
+	CyXChart2.BackColor = "#f2f2fe";	
+	
+	//Chart 내부 색상
+	/*************************************************
+	CyXChart0.RGB2DBK ="#ffffff";				
+	*************************************************/
+	CyXChart2.InsideColor = "#ffffff";				
+	
+	
+	/*************************************************
+	CyXChart0.Axis[0].GridColor = "#C7C8D4";		// 가로선 색상
+	*************************************************/
+	CyXChart2.AxisY.Grid.Color = "#C7C8D4";		
+	
+	/*****************************************************
+	CyXChart0.Axis[0].GridStyle = 2;				// 가로선 종류
+	******************************************************/
+	CyXChart2.AxisY.Grid.Style = "DashStyle_Dash";
+    
+    //6.2 추가
+    CyXChart2.AxisY.Gridlines = True;
+    CyXChart2.AxisX.Gridlines = True;
+
+    
+	/**************************************************************
+    CyXChart0.Axis[0].MAX = round(ds_line.Max("col1") * 1.2);
+    *************************************************************/
+    CyXChart2.AxisY.Max = ds_line.Max("col1") * 1.2;
+    CyXChart2.AxisY.Min = 0;	//Min 값 을 반드시 지정해야 함
+
+
+	/**************************************************************
+	CyXChart0.Axis[0].step =  round(ds_line.Max("col1") * 1.2) * 0.2;
+    *************************************************************/
+	CyXChart2.AxisY.Step = CyXChart2.AxisY.Max * 0.2;
+
+	/********************************************
+	CyXChart0.Axis[0].AutoScale = 0;
+	*********************************************/
+	CyXChart2.AxisY.AutoScale = False;
+
+
+	//X축 Fonbt
+	CyXChart2.AxisX.Font.Name = "Arial";
+	CyXChart2.AxisX.Font.Size = "7";
+
+
+	/****************************************************************
+	CyXChart0.Axis[0].Decimals = 0;				//소수점 자리수
+	CyXChart0.Axis[0].Format = 1;
+	****************************************************************/
+	CyXChart2.AxisY.LabelsFormat.Decimals = 0;
+	CyXChart2.AxisY.LabelsFormat.Format = "AxisFormat_Number";
+
+
+
+	CyXChart2.MarkerShape = 2;
+	CyXChart2.Scrollable = 1;
+
+	CyXChart2.Axis[2].Scroll = 0;
+	CyXChart2.Axis[2].pixperunit = 30;
+
+	//X축의 갯수 설정
+	/***************************************************
+	CyXChart0.OpenDataEx(1, 2, mon_cnt);  //가운데 숫자가 시리즈의 갯수를 나타냄, 마지막 값은 X축 갯수 의미
+	****************************************************/
+	CyXChart2.OpenData("COD_Values", 3, mon_cnt);
+	CyXChart2.OpenData("COD_Colors", 3, mon_cnt);
+
+
+
+	CyXChart2.series[0].color = "#F480B1";
+	CyXChart2.Series[0].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart2.series[0].gallery = "Gallery_Lines"; 				//Line그래프
+	
+	CyXChart2.series[1].color = "#8E80F2";
+	CyXChart2.Series[1].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart2.series[1].gallery = "Gallery_Lines"; 			//Line그래프
+	
+	CyXChart2.series[2].color = "#fcd03b";
+	CyXChart2.Series[2].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart2.series[2].gallery = "Gallery_Lines"; 			//Line그래프
+	
+	
+	//Line Width
+	CyXChart2.LineWidth = 2;
+	
+	//X축 값 설정  Axis[2]는 X축을 나타냄(label)
+	for(var i=0 ; i < mon_cnt ; i++){
+		CyXChart2.Axis[2].Label(i) = ds_line.getcolumn(i,"col0");
+	}
+	
+	//실제 데이타를 이용해 그래프를 그려주는 부분 (RowCount / ColCount 등을 이용)
+	var NULL_VAL = "1.0E+308";	// data=0 인경우 표시안함
+	for (var i=0 ; i < mon_cnt ; i++)
+	{
+		CyXChart2.Value(0,i) = ds_line.GetColumn(i, "col1");
+		CyXChart2.Value(1,i) = ds_line.GetColumn(i, "col2");
+		CyXChart2.Value(2,i) = ds_line.GetColumn(i, "col3");
+	}	
+
+	//Legend 표시
+	CyXChart2.Series[0].Legend = "Sche.";
+	CyXChart2.Series[1].Legend = "UiDv";
+	CyXChart2.Series[2].Legend = "Proc";
+
+	CyXChart2.SerLegBoxObj.visible = true;
+	CyXChart2.SerLegBoxObj.Docked = "Docked_Right";
+	
+	CyXChart2.SerLegBoxObj.Moveable  = true;
+	CyXChart2.SerLegBoxObj.BkColor = "#ffffff";
+
+
+	//Chart 외곽 Gradient 설정
+	var BK0Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK0Gradient.Type = "GradientType_BackwardDiagonal";
+	BK0Gradient.Colors.Item(0) = "#FFFFFF";
+	BK0Gradient.Colors.Item(1) = "#6B9CC9";
+	BK0Gradient.Position.Item(0) = 0;
+	BK0Gradient.Position.Item(1) = 0.5;
+	BK0Gradient.Position.Item(2) = 1;
+	BK0Gradient.Factor.Item(0) = 0;
+	BK0Gradient.Factor.Item(1) = 0.5;
+	BK0Gradient.Factor.Item(2) = 1;
+	
+	CyXChart2.BackObject = BK0Gradient;
+
+
+	//Chart 내부 Gradient 설정
+	var BK1Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK1Gradient.Type = "GradientType_BackwardDiagonal";
+	BK1Gradient.Colors.Item(0) = "#FFFFFF";
+	BK1Gradient.Colors.Item(1) = "#BDD8F2";
+	BK1Gradient.Position.Item(0) = 0;
+	BK1Gradient.Position.Item(1) = 0.5;
+	BK1Gradient.Position.Item(2) = 1;
+	BK1Gradient.Factor.Item(0) = 0;
+	BK1Gradient.Factor.Item(1) = 0.5;
+	BK1Gradient.Factor.Item(2) = 1;
+	
+	CyXChart2.InsideBackObject = BK1Gradient;
+
+
+	CyXChart2.CloseData("COD_Values");
+	CyXChart2.CloseData("COD_Colors");	
+}
+
+
+function CyXChart3_Load()
+{
+	var mon_cnt = ds_right.GetRowCount();
+
+	CyXChart3.TopGap = "28";						//차트 안쪽 상단 여백
+	CyXChart3.LeftGap = "10";						//차트 안쪽 왼쪽 여백
+	//CyXChart3.RightGap = "30";					//차트 안쪽 오른쪽 여백
+	CyXChart3.BottomGap = "25";					//차트 안쪽 하단 여백
+
+	CyXChart3.ClearData(1);						//Clear all numeric values set with the YValue or Value properties
+	CyXChart3.ClearData(3);
+	CyXChart3.ClearData(7);						//Clear all numeric values set with the YValue or Value properties
+	
+	CyXChart3.Stacked = 0;
+
+	//6.2 추가 사항
+	CyXChart3.PointLabels = True;
+	CyXChart3.PointLabelColor = "black";
+
+
+	//Chart 외곽 영역 색상
+	CyXChart3.BackColor = "#f2f2fe";	
+	
+	//Chart 내부 색상
+	CyXChart3.InsideColor = "#ffffff";				
+	
+
+	//Grid 가로선 색상
+	CyXChart3.AxisY.Grid.Color = "#C7C8D4";		
+	//선 종류
+	CyXChart3.AxisY.Grid.Style = "DashStyle_Dash";
+    
+	//X축 Fonbt
+	CyXChart3.AxisX.Font.Name = "Arial";
+	CyXChart3.AxisX.Font.Size = "7";
+
+    //6.2 추가
+    CyXChart3.AxisY.Gridlines = True;
+    CyXChart3.AxisX.Gridlines = True;
+
+	//Max Value 설정 - Primary
+    CyXChart3.AxisY.Max = ds_right.Max("col1") * 1.1;
+    CyXChart3.AxisY.Min = 0;	//Min 값 을 반드시 지정해야 함
+	CyXChart3.AxisY.LabelsFormat.Decimals = 0;
+	CyXChart3.AxisY.LabelsFormat.Format = "AxisFormat_Number";
+	CyXChart3.AxisY.AutoScale = False;
+
+
+	//Max Value 설정 - Secondary
+    CyXChart3.AxisY2.Max = ds_right.Max("col3") * 1.2;
+    CyXChart3.AxisY2.Min = 0;	//Min 값 을 반드시 지정해야 함
+	CyXChart3.AxisY2.LabelsFormat.Decimals = 0;
+	CyXChart3.AxisY2.LabelsFormat.Format = "AxisFormat_Number";
+	CyXChart3.AxisY2.AutoScale = False;
+
+
+	CyXChart3.MarkerShape = 2;
+//	CyXChart3.Scrollable = 1;
+
+	CyXChart3.Axis[2].Scroll = 0;
+	CyXChart3.Axis[2].pixperunit = 30;
+
+
+	//X축의 갯수 설정
+	//가운데 숫자가 시리즈의 갯수를 나타냄, 마지막 값은 X축 갯수 의미
+	CyXChart3.OpenData("COD_Values", 3, mon_cnt);
+	CyXChart3.OpenData("COD_Colors", 3, mon_cnt);
+
+	
+	CyXChart3.series[0].color = "#fcd03b";
+	CyXChart3.Series[0].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart3.series[0].gallery = "Gallery_Bar";
+	CyXChart3.Series[0].CylSides = 24;
+	
+	CyXChart3.series[1].color = "#7896d6";
+	CyXChart3.Series[1].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart3.series[1].gallery = "Gallery_Bar";
+	CyXChart3.Series[1].CylSides = 24;
+	
+	CyXChart3.series[2].color = "#f28498";
+	CyXChart3.Series[2].YAxis = 1; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart3.series[2].gallery = "Gallery_Lines";
+
+	CyXChart3.series[2].LineWidth = 2;
+	
+	//X축 값 설정  Axis[2]는 X축을 나타냄(label)
+	for(var i=0 ; i < mon_cnt ; i++){
+		CyXChart3.Axis[2].Label(i) = ds_right.getcolumn(i,"col0");
+	}
+	
+	//실제 데이타를 이용해 그래프를 그려주는 부분 (RowCount / ColCount 등을 이용)
+	var NULL_VAL = "1.0E+308";	// data=0 인경우 표시안함
+	
+	for (var i=0 ; i < mon_cnt ; i++)
+	{
+		CyXChart3.Value(0,i) = ds_right.GetColumn(i, "col1");
+		CyXChart3.Value(1,i) = ds_right.GetColumn(i, "col2");
+		CyXChart3.Value(2,i) = ds_right.GetColumn(i, "col3");
+	}	
+
+
+	CyXChart3.Series[0].PointLabels = false;	
+	CyXChart3.Series[1].PointLabels = false;	
+
+	//Legend 표시
+	CyXChart3.Series[0].Legend = "Plan  .";
+	CyXChart3.Series[1].Legend = "Perf.";
+	CyXChart3.Series[2].Legend = "%";
+
+	CyXChart3.SerLegBoxObj.visible = true;
+
+/////////////////////////////////////////////////////////////
+	CyXChart3.SerLegBoxObj.height = "10";
+//	CyXChart0.SerLegBoxObj.Docked = "Docked_Top";
+
+	CyXChart3.SerLegBoxObj.Docked = "1028"; 	//top:256, right:515"
+
+	CyXChart3.SerLegBoxObj.top = "15";
+	CyXChart3.SerLegBoxObj.left = "20";
+	CyXChart3.SerLegBoxObj.width  = "220";
+	CyXChart3.SerLegBoxObj.height = "22";
+//////////////////////////////////////////////////////////////////
+
+	//Chart 외곽 Gradient 설정
+	var BK0Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK0Gradient.Type = "GradientType_BackwardDiagonal";
+	BK0Gradient.Colors.Item(0) = "#FFFFFF";
+	BK0Gradient.Colors.Item(1) = "#98BDE0";
+	BK0Gradient.Position.Item(0) = 0;
+	BK0Gradient.Position.Item(1) = 0.5;
+	BK0Gradient.Position.Item(2) = 1;
+	BK0Gradient.Factor.Item(0) = 0;
+	BK0Gradient.Factor.Item(1) = 0.5;
+	BK0Gradient.Factor.Item(2) = 1;
+	
+	CyXChart3.BackObject = BK0Gradient;
+
+
+	//Chart 내부 Gradient 설정
+	var BK1Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK1Gradient.Type = "GradientType_BackwardDiagonal";
+	BK1Gradient.Colors.Item(0) = "#FFFFFF";
+	BK1Gradient.Colors.Item(1) = "#BDD8F2";
+	BK1Gradient.Position.Item(0) = 0;
+	BK1Gradient.Position.Item(1) = 0.5;
+	BK1Gradient.Position.Item(2) = 1;
+	BK1Gradient.Factor.Item(0) = 0;
+	BK1Gradient.Factor.Item(1) = 0.5;
+	BK1Gradient.Factor.Item(2) = 1;
+	
+	CyXChart3.InsideBackObject = BK1Gradient;
+
+	CyXChart3.CloseData("COD_Values");
+	CyXChart3.CloseData("COD_Colors");	
+}
+
+function CyXChart4_Load()
+{
+	var mon_cnt = ds_Trend.GetRowCount() -2;
+
+	CyXChart4.TopGap = "10";						//차트 안쪽 상단 여백
+	CyXChart4.LeftGap = "10";						//차트 안쪽 왼쪽 여백
+	CyXChart4.RightGap = "10";					//차트 안쪽 오른쪽 여백
+	CyXChart4.BottomGap = "10";					//차트 안쪽 하단 여백
+
+	CyXChart4.ClearData(1);						//Clear all numeric values set with the YValue or Value properties
+		
+	CyXChart4.Stacked = 0;
+
+	//Chart 외곽 영역 색상
+	CyXChart4.BackColor = "#f2f2fe";
+	
+	//Chart 내부 색상
+	CyXChart4.InsideColor ="#ffffff";					// 안쪽
+	
+	CyXChart4.AxisY.LabelsFormat.Decimals = 0;
+	CyXChart4.AxisY.LabelsFormat.Format = "AxisFormat_Number";
+	CyXChart4.AxisY.AutoScale = True;
+
+	//CyXChart4.PointLabels = True;
+
+	//X축의 갯수 설정
+	CyXChart4.OpenData("COD_Values", 1, mon_cnt);
+	CyXChart4.OpenData("COD_Colors", 1, mon_cnt);
+
+	CyXChart4.Gallery = "Gallery_Pie";
+
+	CyXChart4.Chart3D = true;
+
+	
+	CyXChart4.MultipleColors = true;		
+
+	var objchart  ;
+	
+	//X축 값 설정  Axis[2]는 X축을 나타냄(label)
+	for(var i=0 ; i < mon_cnt ; i++){
+		CyXChart4.Axis[2].Label(i) = ds_right.getcolumn(i,"col0");
+		CyXChart4.Legend(i) = ds_right.getcolumn(i,"col0");
+	}
+
+	//실제 데이타를 이용해 그래프를 그려주는 부분 (RowCount / ColCount 등을 이용)
+	var NULL_VAL = "1.0E+308";	// data=0 인경우 표시안함
+	for (var i=0 ; i < mon_cnt ; i++)
+	{
+		CyXChart4.Value(0,i) = ds_Trend.GetColumn(i, "col1");
+		CyXChart4.Point.Item(0,i).color = ds_color.GetColumn(i, "data"); //GetBarColor(i);	
+	}	  
+   
+	CyXChart4.LegendBoxObj.visible = true;
+
+
+	//Chart  Gradient 설정
+	var BK1Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK1Gradient.Type = "GradientType_BackwardDiagonal";
+	BK1Gradient.Colors.Item(0) = "#FFFFFF";
+	BK1Gradient.Colors.Item(1) = "#6969A0";
+	BK1Gradient.Position.Item(0) = 0;
+	BK1Gradient.Position.Item(1) = 0.5;
+	BK1Gradient.Position.Item(2) = 1;
+	BK1Gradient.Factor.Item(0) = 0;
+	BK1Gradient.Factor.Item(1) = 0.5;
+	BK1Gradient.Factor.Item(2) = 1;
+	
+	CyXChart4.BackObject = BK1Gradient;
+
+
+	CyXChart4.CloseData("COD_Values");
+	CyXChart4.CloseData("COD_Colors");
+}
+
+
+function fn_set_gauge_top()
+{
+	var objFusionchart = FusionChart30;
+		
+	var strDir = AliasToRealPath("%COMPONENT%");
+
+	objFusionchart.Movie = strDir + "\\chart_is\\AngularGauge.swf";
+	
+	var rd, iCRD, oCRD, oX, oY, ocY ;
+	var ablW, ablH;
+	var lMgn, rMgn, tMgn, bMgn;
+	var pvRd, pvB, pvT;
+	
+	//Left Margin
+	lMgn = 40;
+	
+	//Right Margin
+	rMgn = 40;
+	
+	//Top Margin
+	tMgn = 40;
+	
+	//Bottom Margin
+	bMgn = 30;
+	
+		
+	//사용가능 영역 정의
+	ablW = objFusionchart.Width - lMgn - rMgn;
+	ablH = objFusionchart.Height - tMgn - bMgn;
+	
+	if (ablW/2 > ablH)
+	{
+		rd = ablH;
+	}
+	else 
+	{
+		rd = ablW/2;
+	}
+	
+	//최 외곽
+	oCRD = rd + 10;
+	//차 외곽 
+	iCRD = rd + 5;
+	
+	//원점 정의
+	oX = objFusionchart.Width /2 ;
+	oY = objFusionchart.Height - bMgn;
+
+	//외곽 Circle 의 Y축
+	ocY  = oY + 2;	
+	
+	//바늘 굵기 정의
+	pvRd = 10;	//바늘 축 반지름
+	pvB  = 18;	//바늘 시작 굵기 
+	pvT  = 2;	//바늘 끝 굴기
+
+	var fX, fY, tX, tY;
+	//배경 정의
+	fX = 0;
+	fY = 0;
+	tX = objFusionchart.Width -fx;
+	tY = objFusionchart.Height - fy;
+	
+	var strXML;
+
+	strXML  = "";
+	strXML += "<Chart \n";
+	strXML += "	bgColor='AEC0CA,FFFFFF' \n";
+	strXML += "	fillAngle='45' \n";
+	strXML += "	upperLimit='2500000' \n";
+	strXML += "	lowerLimit='1600000' \n";
+	strXML += "	majorTMNumber='10' \n";
+	strXML += "	majorTMHeight='8' \n";
+	strXML += "	showGaugeBorder='0' \n";
+	
+	strXML += "	gaugeOuterRadius='" + rd + "' \n";	
+	strXML += "	gaugeOriginX='" + oX + "' \n";
+	strXML += "	gaugeOriginY='" + oY + "' \n";
+	strXML += "	gaugeInnerRadius='2' \n";
+	
+	strXML += "	formatNumberScale='1' \n";
+	strXML += "	numberPrefix='$' \n";
+	
+	strXML += "	displayValueDistance='25' \n";
+	
+	strXML += "	decimalPrecision='2' \n";
+	strXML += "	tickMarkDecimalPrecision='1' \n";
+	
+	strXML += "	pivotRadius='" + pvRD + "' \n";
+	
+	strXML += "	showPivotBorder='1' \n";
+	strXML += "	pivotBorderColor='000000' \n";
+	strXML += "	pivotBorderThickness='5' \n";
+	
+	strXML += "	gaugeInnerRadius='50%' \n"; 
+	
+	strXML += "	pivotFillMix='FFFFFF,000000'>\n";
+	
+	strXML += "<colorRange>\n";
+	strXML += "  <color minValue='1600000' maxValue='1930000' code='399E38' /> \n";
+	strXML += "  <color minValue='1930000' maxValue='2170000' code='E48739' /> \n";
+	strXML += "  <color minValue='2170000' maxValue='2500000' code='B41527' /> \n";
+	strXML += "</colorRange>\n";
+	
+	strXML += "<dials>\n";
+	strXML += "  <dial \n";
+	strXML += "  	value='2100000' \n";
+	strXML += "  	borderAlpha='1' \n";
+	strXML += "  	bgColor='000000' \n";
+	strXML += "  	baseWidth='" + pvB + "' \n";
+	strXML += "  	topWidth='" + pvT + "' \n";
+	strXML += "  	radius='" + rd + "' /> \n";
+	strXML += "</dials>\n";
+
+	strXML += "<annotations>\n";
+
+	strXML += "	<!--  Draw the background arcs   --> \n";
+
+	strXML += "		<annotationGroup id='Grp1' showBelow='1'>\n";
+	strXML += "			<annotation \n";
+	strXML += "				type='rectangle' \n";
+	strXML += "				x='" + fX + "' \n";
+	strXML += "				y='" + fY + "' \n";
+	strXML += "				toX='" + tX + "' \n";
+	strXML += "				toY='" + tY + "' \n";
+	strXML += "				radius='0' \n";
+	strXML += "				color='98BDE0,FFFFFF' \n";
+	strXML += "				showBorder='0' /> \n";
+	strXML += "		</annotationGroup>\n";
+
+	strXML += "	<annotationGroup xPos='" + oX + "' yPos='" + ocY + "'>\n";
+	
+	strXML += "  	<annotation \n";
+	strXML += "  		type='circle' \n";
+	strXML += "  		xPos='0' \n";
+	strXML += "  		yPos='2.5' \n";
+	strXML += "  		radius='" + oCRD + "' \n";
+	strXML += "  		startAngle='0' \n";
+	strXML += "  		endAngle='180' \n";
+	strXML += "  		fillPattern='linear' \n";
+	strXML += "  		fillAsGradient='1' \n";
+	strXML += "  		fillColor='dddddd,666666' \n";
+	strXML += "  		fillAlpha='100,100' \n";
+	strXML += "  		fillRatio='50,50' \n";
+	strXML += "  		fillDegree='0' \n";
+	strXML += "  		showBorder='1' \n";
+	strXML += "  		borderColor='444444' \n";
+	strXML += "  		borderThickness='2' /> \n";
+
+	strXML += "  	<annotation \n";
+	strXML += "  		type='circle' \n";
+	strXML += "  		xPos='0' \n";
+	strXML += "  		yPos='0' \n";
+	strXML += "  		radius='" + iCRD + "' \n";
+	strXML += "  		startAngle='0' \n";
+	strXML += "  		endAngle='180' \n";
+	strXML += "  		fillPattern='linear' \n";
+	strXML += "  		fillAsGradient='1' \n";
+	strXML += "  		fillColor='666666,ffffff' \n";
+	strXML += "  		fillAlpha='100,100' \n";
+	strXML += "  		fillRatio='50,50' \n";
+	strXML += "  		fillDegree='0' /> \n";
+
+	strXML += "  </annotationGroup>\n";
+	
+	strXML += "</annotations>\n";
+
+	strXML += "	<styles>\n";
+	strXML += "		<definition>\n";
+	strXML += "			<style name='RectShadow' type='shadow' strength='3' /> \n";
+	strXML += "			<style name='trendvaluefont' type='font' bold='1' borderColor='FFFFDD' /> \n";
+	strXML += "		</definition>\n";
+	
+	strXML += "		<application>\n";
+	strXML += "			<apply toObject='Grp1' styles='RectShadow' /> \n";
+	strXML += "			<apply toObject='Trendvalues' styles='trendvaluefont' /> \n";
+	strXML += "		</application>\n";
+	strXML += "	</styles>\n";
+	strXML += "</Chart>\n";
+	
+	objFusionchart.Clear();
+	objFusionchart.SetVariable('dataXML', strXML);
+
+	objFusionchart.SetVariable('chartWidth', objFusionchart.Width);	// chart size 지정
+	objFusionchart.SetVariable('chartHeight', objFusionchart.Height);	// chart size 지정
+
+	objFusionchart.Stop();
+	objFusionchart.Play();
+	
+//	alert(strXML);
+}
+
+function fn_set_gauge_bttm()
+{
+	var objFusionchart = FusionChart31;
+		
+	var strDir = AliasToRealPath("%COMPONENT%");
+
+	objFusionchart.Movie = strDir + "\\chart_is\\AngularGauge.swf";
+	
+	var lMgn, rMgn, tMgn, bMgn;
+	var pvRd, pvB, pvT;
+	var fX, fY, tX, tY;
+	
+	//Left Margin
+	lMgn = 25;
+	
+	//Right Margin
+	rMgn = 25;
+	
+	//Top Margin
+	tMgn = 25;
+	
+	//Bottom Margin
+	bMgn = 25;
+		
+
+	//바늘 굵기 정의
+	pvRd = 8;	//바늘 축 반지름
+	pvB  = 10;	//바늘 시작 굵기 
+	pvT  = 2;	//바늘 끝 굴기
+
+	//배경 정의
+	fX = 0;
+	fY = 0;
+	tX = objFusionchart.Width -fx;
+	tY = objFusionchart.Height - fy;
+	
+	var strXML;
+
+	strXML = "";
+	strXML += "<chart \n";
+	strXML += "	palette='2' \n";
+	strXML += "	bgAlpha='0' \n";
+	strXML += "	bgColor='FFFFFF' \n";
+	strXML += "	lowerLimit='0' \n";
+	strXML += "	upperLimit='140' \n";
+//	strXML += "	numberSuffix='%25' \n";
+	strXML += "	showBorder='0' \n";
+	strXML += "	basefontColor='111111' \n";
+	
+	strXML += "	chartTopMargin='" + tMgn + "' \n";
+	strXML += "	chartBottomMargin='" + bMgn + "' \n";
+	strXML += "	chartLeftMargin='" + lMgn + "' \n";
+	strXML += "	chartRightMargin='" + rMgn + "'\n"; 
+	
+	strXML += "	toolTipBgColor='009999' \n";
+	strXML += "	gaugeFillMix='{dark-10},{light-70},{dark-10}' \n";
+	strXML += "	gaugeFillRatio='3' \n";
+	
+	strXML += "	pivotRadius='" + pvRd + "' \n";
+	
+	strXML += "	gaugeInnerRadius='50%' \n";
+	strXML += "	tickValueDistance='20'>\n";
+	
+	strXML += "	<colorRange>\n";
+	strXML += "		<color minValue='0' maxValue='45' code='FF654F' /> \n";
+	strXML += "		<color minValue='45' maxValue='80' code='F6BD0F' />\n"; 
+	strXML += "		<color minValue='80' maxValue='100' code='8BBA00' /> \n";
+	strXML += "	</colorRange>\n";
+	
+	strXML += "	<dials>\n";
+	strXML += "		<dial\n"; 
+	strXML += "			value='72' \n";
+	strXML += "			rearExtension='10' \n";
+	strXML += "  	topWidth='" + pvT + "' \n";
+	strXML += "			baseWidth='" + pvB + "' /> \n";
+	strXML += "	</dials>\n";
+	
+	strXML += "	<trendpoints>\n";
+	strXML += "		<point \n";
+	strXML += "			value='55' \n";
+	strXML += "			displayValue='Average' \n";
+	strXML += "			useMarker='1' \n";
+	strXML += "			markerRadius='8' \n";
+	strXML += "			dashed='1' \n";
+	strXML += "			dashLen='2' \n";
+	strXML += "			dashGap='2' /> \n";
+	strXML += "	</trendpoints>\n";
+	
+	strXML += "	<!-- Rectangles behind the gauge  --> \n";
+	strXML += "	<annotations>\n";
+	strXML += "		<annotationGroup id='Grp1' showBelow='1'>\n";
+	strXML += "			<annotation \n";
+	strXML += "				type='rectangle' \n";
+	strXML += "				x='" + fX + "' \n";
+	strXML += "				y='" + fY + "' \n";
+	strXML += "				toX='" + tX + "' \n";
+	strXML += "				toY='" + tY + "' \n";
+	strXML += "				radius='0' \n";
+	strXML += "				color='3975AF,FFFFFF' \n";
+	strXML += "				showBorder='0' /> \n";
+	strXML += "		</annotationGroup>\n";
+	strXML += "	</annotations>\n";
+	
+	strXML += "	<styles>\n";
+	strXML += "		<definition>\n";
+	strXML += "			<style name='RectShadow' type='shadow' strength='3' /> \n";
+	strXML += "			<style name='trendvaluefont' type='font' bold='1' borderColor='FFFFDD' /> \n";
+	strXML += "		</definition>\n";
+	
+	strXML += "		<application>\n";
+	strXML += "			<apply toObject='Grp1' styles='RectShadow' /> \n";
+	strXML += "			<apply toObject='Trendvalues' styles='trendvaluefont' /> \n";
+	strXML += "		</application>\n";
+	strXML += "	</styles>\n";
+	strXML += "</chart>\n";
+	
+	objFusionchart.Clear();
+	objFusionchart.SetVariable('dataXML', strXML);
+
+	objFusionchart.SetVariable('chartWidth', objFusionchart.Width);	// chart size 지정
+	objFusionchart.SetVariable('chartHeight', objFusionchart.Height);	// chart size 지정
+
+	objFusionchart.Stop();
+	objFusionchart.Play();
+	
+//	alert(strXML);
+}
+]]></Script>
+</Window>

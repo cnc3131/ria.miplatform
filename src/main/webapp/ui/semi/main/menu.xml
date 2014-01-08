@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="711" Id="left2" Left="8" PidAttrib="7" Title="left2" Top="8" Ver="1.0" Width="1024" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="tree">
+				<Contents>
+					<colinfo id="lev" size="256" summ="default" type="STRING"/>
+					<colinfo id="data" size="256" summ="default" type="STRING"/>
+					<record>
+						<data>menu1</data>
+						<lev>0</lev>
+					</record>
+					<record>
+						<data>sub_menu1</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>sub_menu2</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>sub_menu3</data>
+						<lev>1</lev>
+					</record>
+					<record>
+						<data>menu2</data>
+						<lev>0</lev>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_menu">
+				<Contents>
+					<colinfo id="MENUID" size="15" summ="default" type="STRING"/>
+					<colinfo id="MENUNAME" size="160" summ="default" type="STRING"/>
+					<colinfo id="MENUTYPE" size="10" summ="default" type="STRING"/>
+					<colinfo id="MENULEVEL" size="1" summ="default" type="STRING"/>
+					<colinfo id="MENUOPENTYPE" size="10" summ="default" type="STRING"/>
+					<colinfo id="PREFIX" size="15" summ="default" type="STRING"/>
+					<colinfo id="FORMID" size="20" summ="default" type="STRING"/>
+					<colinfo id="FORMUSE" size="1" summ="default" type="STRING"/>
+					<colinfo id="FORMSIZE" size="1" summ="default" type="STRING"/>
+					<colinfo id="BTNAUTH" size="15" summ="default" type="STRING"/>
+					<record>
+						<BTNAUTH>000000010000000</BTNAUTH>
+						<FORMID></FORMID>
+						<FORMSIZE>1</FORMSIZE>
+						<FORMUSE>0</FORMUSE>
+						<MENUID>01000001</MENUID>
+						<MENULEVEL>0</MENULEVEL>
+						<MENUNAME>사용자&#32;메뉴</MENUNAME>
+						<MENUOPENTYPE></MENUOPENTYPE>
+						<MENUTYPE></MENUTYPE>
+						<PREFIX></PREFIX>
+					</record>
+					<record>
+						<BTNAUTH>110101000000000</BTNAUTH>
+						<FORMID>form_01.xml</FORMID>
+						<FORMSIZE>1</FORMSIZE>
+						<FORMUSE>1</FORMUSE>
+						<MENUID>01000012</MENUID>
+						<MENULEVEL>1</MENULEVEL>
+						<MENUNAME>시연&#32;화면&#32;1</MENUNAME>
+						<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+						<MENUTYPE>조회</MENUTYPE>
+						<PREFIX>DefApp</PREFIX>
+					</record>
+					<record>
+						<BTNAUTH>110101000000000</BTNAUTH>
+						<FORMID>form_02.xml</FORMID>
+						<FORMSIZE>1</FORMSIZE>
+						<FORMUSE>1</FORMUSE>
+						<MENUID>01000013</MENUID>
+						<MENULEVEL>1</MENULEVEL>
+						<MENUNAME>시연&#32;화면&#32;2</MENUNAME>
+						<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+						<MENUTYPE>조회</MENUTYPE>
+						<PREFIX>DefApp</PREFIX>
+					</record>
+					<record>
+						<BTNAUTH>110101000000000</BTNAUTH>
+						<FORMID>form_03.xml</FORMID>
+						<FORMSIZE>1</FORMSIZE>
+						<FORMUSE>1</FORMUSE>
+						<MENUID>01000014</MENUID>
+						<MENULEVEL>1</MENULEVEL>
+						<MENUNAME>시연&#32;화면&#32;3</MENUNAME>
+						<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+						<MENUTYPE>조회</MENUTYPE>
+						<PREFIX>DefApp</PREFIX>
+					</record>
+					<record>
+						<BTNAUTH></BTNAUTH>
+						<FORMID>form_04.xml</FORMID>
+						<FORMSIZE>1</FORMSIZE>
+						<FORMUSE>1</FORMUSE>
+						<MENUID>01000015</MENUID>
+						<MENULEVEL>1</MENULEVEL>
+						<MENUNAME>시연&#32;화면&#32;4</MENUNAME>
+						<MENUOPENTYPE>NORMAL</MENUOPENTYPE>
+						<MENUTYPE>조회</MENUTYPE>
+						<PREFIX>DefApp</PREFIX>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image Align="Left" Height="30" Id="Image0" ImageID="L_menubg1_S" LeftMargin="30" Style="L_menu_title" TabOrder="1" Text="Menu" Width="234"></Image>
+		<Image Align="Left" Cursor="HAND" Height="30" Id="img_my_menu" ImageID="L_menubg2_N" LeftMargin="30" OnClick="img_my_menu_OnClick" Static="FALSE" Style="L_menu_title" TabOrder="2" Text="Mymenu" Top="368" Width="234"></Image>
+		<Shape BKColor="#93a3c7" Bottom="368" Height="338" Id="Shape0" Left="0" LineWidth="0" Right="234" TabOrder="3" Top="30" Type="Rectangle" Width="234"></Shape>
+		<TreeView BindDataset="gds_menu" Border="None" CollapseImageColumn="MENULEVEL" CollapseImageIndex="1" ExpandImageColumn="MENULEVEL" Height="338" Id="tv_Menu_n" ImageID="L_tree" ImageIndex="1" InnerImageCount="2" Left="1" LevelColumn="MENULEVEL" OnClick="tv_Menu_n_OnClick" OnDblClick="tv_Menu_n_OnDblClick" TabOrder="4" TEXTColumn="MENUNAME" Top="30" Width="232"></TreeView>
+		<Image Height="12" Id="Image4" ImageID="L_mymene_addbtn" Left="212" TabOrder="5" Top="376" Transparent="TRUE" Width="16"></Image>
+	</Form>
+	<Script><![CDATA[
+// 실제 메뉴 Open 함수
+function Open_url( nRow )
+{
+	var str_otype, str_prefix, str_url, str_gb, str_title = "";
+	var str_Size, str_Auth, str_menuid;
+	var ds_obj;
+	
+	ds_obj = Object(tv_Menu_n.BindDataset);
+	
+	if( ds_obj.GetColumn(nRow,"MenuType") == "메뉴" ) return;
+	
+	str_menuid = ds_obj.getcolumn(nRow,"MenuID");
+	str_title  = ds_obj.getcolumn(nRow,"MenuName");
+	str_otype = trim(ds_obj.getcolumn(nRow,"MenuOpenType"));
+	str_prefix = ds_obj.getcolumn(nRow,"Prefix");
+	str_url    = ds_obj.getcolumn(nRow,"Formid");	
+	str_Size = ds_obj.getcolumn(nRow,"FormSize");
+	str_Auth = ds_obj.getcolumn(nRow,"BtnAuth");	
+	
+	//alert("str_search :: " str_search + " : " + str_prefix + " / " + str_url);
+	//var goGubun  = GDS_MENU.GetColumn(nNewRow,"gubun");
+	
+	if ((str_prefix != null) && (str_url != null) && length(str_url) !=0 ) 
+	{
+		// Golbal 함수 - Mdi Open
+		
+		if( Pos(str_url, ".xml") == -1 and str_prefix <> "IE" ) str_url = str_url + ".xml";
+		gfn_OpenChildWindow(str_prefix, str_url, str_title, str_otype, str_Size, str_Auth, str_menuid);
+	}
+}
+
+
+function tv_Menu_n_OnClick(obj,nOldRow,nNewRow)
+{
+	//Open_url( nNewRow );
+}
+
+function img_my_menu_OnClick(obj,nX,nY)
+{
+	ds_obj = Object(tv_Menu_n.BindDataset);
+	
+	var nRow = ds_obj.currow;
+	
+	str_menuid = ds_obj.getcolumn(nRow,"MenuID");
+	str_title  = ds_obj.getcolumn(nRow,"MenuName");
+	str_otype = trim(ds_obj.getcolumn(nRow,"MenuOpenType"));
+	str_prefix = ds_obj.getcolumn(nRow,"Prefix");
+	str_url    = ds_obj.getcolumn(nRow,"Formid");	
+	str_Size = ds_obj.getcolumn(nRow,"FormSize");
+	str_Auth = ds_obj.getcolumn(nRow,"BtnAuth");	
+	
+	var cRow = gds_my_menu.AddRow();
+/*	
+	gds_my_menu.SetColumn(cRow, "MenuID", str_menu_id);
+	gds_my_menu.SetColumn(cRow, "MenuName", str_title);
+	gds_my_menu.SetColumn(cRow, "MenuOpenType", str_otype);
+	gds_my_menu.SetColumn(cRow, "Prefix", str_prefix);
+	gds_my_menu.SetColumn(cRow, "Formid", str_url);
+	gds_my_menu.SetColumn(cRow, "FormSize", str_Size);
+	gds_my_menu.SetColumn(cRow, "BtnAuth", str_Auth);
+*/	
+	gds_my_menu.CopyRow(cRow, ds_obj, nRow);
+	
+	
+	
+}
+
+function tv_Menu_n_OnDblClick(obj,nRow)
+{
+	Open_url( nRow );
+}
+]]></Script>
+</Window>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="form" Left="8" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="850" WorkArea="true">
+		<Div Height="543" Id="div_pattern" Left="24" TabOrder="1" Text="Div0" Top="48" Url="DefApp::lotteSampleList.xml" Width="800">
+			<Contents></Contents>
+		</Div>
+		<Button Height="21" Id="btn_pattern1" Left="16" OnClick="btn_pattern1_OnClick" TabOrder="2" Text="단건&#32;처리" Top="8" Width="104"></Button>
+		<Button Height="21" Id="btn_pattern2" Left="160" OnClick="btn_pattern2_OnClick" TabOrder="3" Text="다중&#32;처리" Top="8" Width="104"></Button>
+		<Button Height="21" Id="btn_pattern3" Left="312" OnClick="btn_pattern3_OnClick" TabOrder="4" Text="파일&#32;업로드" Top="8" Width="104"></Button>
+	</Form>
+	<Script><![CDATA[
+function btn_pattern1_OnClick(obj)
+{
+	//div_pattern.Url = "./DefApp/Win32/lotteSampleList.xml";
+	div_pattern.Url = "DefApp::lotteSampleList.xml";
+}
+
+function btn_pattern2_OnClick(obj)
+{
+	div_pattern.Url = "DefApp::lotteSampleAll.xml";
+}
+
+function btn_pattern3_OnClick(obj)
+{
+	div_pattern.Url = "DefApp::HttpFile.xml";
+}
+]]></Script>
+</Window>

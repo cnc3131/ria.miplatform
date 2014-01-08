@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+
+	<aop:config>
+		<!-- modules -->
+		<aop:pointcut id="inPresentationLayer" expression="within(lcn.poc..controller..*)" />
+		<aop:pointcut id="inServiceLayer" expression="within(lcn.poc..service..*)" />
+		<aop:pointcut id="inDataAccessLayer" expression="within(lcn.poc..dao..*)" />
+
+		<!-- module operations -->
+		<aop:pointcut id="controllerOperation"
+			expression="execution(* lcn.poc..controller.*Controller.*(..)" />
+			
+		<aop:pointcut id="businessService"
+			expression="execution(* lcn.poc..service.impl.*Impl.*(..))" />
+			
+		<aop:pointcut id="dataAccessOperation" expression="execution(* lcn.poc..dao.*DAO.*(..))" />
+
+		<!-- advisor -->
+		<aop:aspect id="profilingAspect" ref="profiler">
+			<aop:around method="profile" pointcut-ref="businessService" />
+		</aop:aspect>
+		
+	</aop:config>
+
+
+	<!-- exception translation -->
+
+	<!-- design enforcement aspect -->
+
+	<!-- debugging and diagnosing  -->
+
+	<!--  profiling -->
+	<bean id="profiler" class="lcn.poc.common.aspect.SimpleProfiler">
+		<!-- execute before the transactional advice (hence the lower order	number)	-->
+		<property name="order" value="1" />
+	</bean>
+
+	<!--
+		Reference:
+		http://static.springsource.org/spring/docs/2.5.x/reference/transaction.html
+		http://www.infoq.com/articles/Simplifying-Enterprise-Apps
+	-->
+</beans>

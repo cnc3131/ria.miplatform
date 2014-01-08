@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="768" Id="form" Left="8" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="1024" WorkArea="true">
+		<Edit Height="37" Id="edt_curr" Left="112" TabOrder="1" Text="0" Top="96" Width="149"></Edit>
+		<Button Height="37" Id="Button0" Left="296" OnClick="Button0_OnClick" TabOrder="2" Text="현재시간" Top="96" Width="149"></Button>
+		<Button Height="37" Id="Button1" Left="488" OnClick="Button1_OnClick" TabOrder="3" Text="더하기(+)" Top="96" Width="72"></Button>
+		<Edit Height="37" Id="edt_plus" Left="584" TabOrder="4" Text="10" Top="96" Width="40"></Edit>
+		<Edit Height="37" Id="edt_sum" Left="720" TabOrder="5" Text="0" Top="96" Width="149"></Edit>
+		<Static Height="23" Id="Static0" Left="639" TabOrder="6" Text="초&#32;&#32;&#32;=" Top="107" Width="40"></Static>
+	</Form>
+	<Script><![CDATA[
+function Button0_OnClick(obj)
+{
+	edt_curr.Text = getCurrTime();
+}
+
+
+function Button1_OnClick(obj)
+{
+	Button0_OnClick();
+	edt_sum.Text = getPlusTime(edt_plus.Text);
+}
+
+function getCurrTime()
+{
+	var now		= GetDate();
+	return substr(now,0,4) + "." + substr(now,4,2) + "." + substr(now,6,2) + "." + substr(now,8,2) + ":" + substr(now,10,2) + ":" + substr(now,12,2) ;
+}
+
+function getPlusTime(plusSec)
+{
+	var now		= GetDate();
+	var yyyy 	= toInteger(substr(now,0,4));
+	var Month	= toInteger(substr(now,4,2));
+	var dd 		= toInteger(substr(now,6,2));
+	var hh 		= toInteger(substr(now,8,2));
+	var mm 		= toInteger(substr(now,10,2));
+	var ss 		= toInteger(substr(now,12,2)) + toInteger(plusSec);
+	
+	if(ss>59)
+	{
+		ss		= ss - 60;
+		mm 		= toInteger(mm) + 1;
+	}
+	if(hh>23)
+	{
+		hh		= hh - 24;
+		dd 		= toInteger(dd) + 1;
+	}
+	if(dd>30)
+	{
+		dd		= dd - 31;
+		Month 	= toInteger(Month) + 1;
+	}
+	if(Month>11)
+	{
+		Month	= Month - 12;
+		yyyy 	= toInteger(yyyy) + 1;
+	}
+	
+	if(hh<10)		hh ="0"+hh;
+	if(mm<10)		mm ="0"+mm;
+	if(ss<10)		ss ="0"+ss;
+
+	trace(yyyy + "." + Month + "." + dd + " " + hh + ":" + mm + ":" + ss);
+	return yyyy + "." + Month + "." + dd + " " + hh + ":" + mm + ":" + ss ;	
+
+}]]></Script>
+</Window>

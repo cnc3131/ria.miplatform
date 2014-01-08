@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="136" Id="view100_sub100" Left="8" OnLoadCompleted="view100_sub100_OnLoadCompleted" PidAttrib="7" Title="주요일정영역" Top="8" Ver="1.0" Width="472" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_schedule">
+				<Contents>
+					<colinfo id="SCHD_DATE" size="10" summ="default" type="STRING"/>
+					<colinfo id="TASK_NM" size="100" summ="default" type="STRING"/>
+					<record>
+						<SCHD_DATE>20091019</SCHD_DATE>
+						<TASK_NM>중간보고</TASK_NM>
+					</record>
+					<record>
+						<SCHD_DATE>20091130</SCHD_DATE>
+						<TASK_NM>최종보고</TASK_NM>
+					</record>
+					<record>
+						<SCHD_DATE>20091215</SCHD_DATE>
+						<TASK_NM>완료보고</TASK_NM>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" AutoFitEndLine="Hide" AutoSelect="TRUE" BindDataset="ds_schedule" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="136" CellEditAutoSize="TRUE" CellMoving="TRUE" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="112" Id="grd_list" InputPanel="FALSE" LineColor="default" LineType="ExHORZ" MinWidth="100" Right="472" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="24" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="472">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="35"/>
+						<col width="67"/>
+						<col width="167"/>
+					</columns>
+					<head>
+						<cell align="center" bkcolor="user13" col="0" color="user14" display="text" text="No"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" text="일자"/>
+						<cell bkcolor="user13" col="2" color="user14" display="text" text="테스크명"/>
+					</head>
+					<body>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="0" colid="STRING" color="user16" display="text" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;normal&apos;,&#32;&apos;none&apos;)" expr="row+1"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="1" colid="SCHD_DATE" color="user16" display="date" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;date&apos;,&#32;&apos;none&apos;)" expandimage="btn_seCal" expandsize="18"/>
+						<cell align="left" bkcolor="user11" bkcolor2="user12" col="2" colid="TASK_NM" color="user16" display="normal" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;number&apos;,&#32;&apos;none&apos;)"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image Height="12" Id="Image14" ImageID="M_title_2depth_icon" TabOrder="2" Top="6" Transparent="TRUE" Width="13"></Image>
+		<Image Align="Left" Height="17" Id="img_subTitle" Left="17" OnClick="img_subTitle_OnClick" Static="FALSE" Style="M_title_2depth" TabOrder="3" Text="주요일정" Top="4" Transparent="TRUE" Width="69"></Image>
+	</Form>
+	<Script><![CDATA[
+function resetBottom(arg_value)
+{
+	grd_list.bottom += arg_value;
+	trace("view200::Bottom="+ grd_list.bottom);
+}
+
+function resetRight(arg_value)
+{
+	grd_list.right += arg_value;
+	trace("view200::right="+ grd_list.right);
+}
+
+//				Right	Bottom
+// default : 	474		136
+// type	100:	854		288
+// type	200:	70		288
+// type	300:	854		17
+// type	400:	70		17
+// type	500:	854		17
+
+function resizeAll(arg_type, arg_right, arg_bottom)
+{
+	switch(arg_type)
+	{
+		case 100:	// [x,y] [887,434]
+			grd_list.right 	= 72;
+			grd_list.bottom = 288;
+			break;
+		case 200:	// [x,y] [103,434]
+			grd_list.right 	= 856;
+			grd_list.bottom = 288;
+			break;
+		case 300:	// [x,y] [887,163]
+			grd_list.right 	= 72;
+			grd_list.bottom = 17;
+			break;
+		case 400:	// [x,y] [103,163]
+			grd_list.right 	= 856;
+			grd_list.bottom = 17;
+			break;
+		default:
+			break;
+	}
+}
+
+function img_subTitle_OnClick(obj,nX,nY)
+{
+	parent.setMaxView(200);
+}
+
+function view100_sub100_OnLoadCompleted(obj)
+{
+	transaction("view_sub200", 
+			"svcLotte::demo/selectProjectScheduleList.mip", 
+			"", 
+			"ds_schedule=ProjectSchedule", 
+			"", 
+			"fnCallbackLotte");
+
+}
+]]></Script>
+</Window>

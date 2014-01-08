@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="form" OnLoadCompleted="form_OnLoadCompleted" PidAttrib="7" Title="Board&#32;List&#32;Basic" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_list">
+				<Contents>
+					<colinfo id="id" size="255" type="STRING"/>
+					<colinfo id="name" size="255" type="STRING"/>
+					<colinfo id="description" size="255" type="STRING"/>
+					<colinfo id="useYn" size="255" type="STRING"/>
+					<colinfo id="regUser" size="255" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_voInfo">
+				<Contents>
+					<colinfo id="voClass" size="256" summ="default" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_param">
+				<Contents>
+					<colinfo id="id" size="256" summ="default" type="STRING"/>
+					<colinfo id="name" size="256" summ="default" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_searchCondition">
+				<Contents>
+					<colinfo id="code" size="256" summ="default" type="STRING"/>
+					<colinfo id="value" size="256" summ="default" type="STRING"/>
+					<record>
+						<code>0</code>
+						<value>id</value>
+					</record>
+					<record>
+						<code>1</code>
+						<value>name</value>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_yn">
+				<Contents>
+					<colinfo id="code" size="256" summ="default" type="STRING"/>
+					<colinfo id="value" size="256" summ="default" type="STRING"/>
+					<record>
+						<code>Y</code>
+						<value>Y</value>
+					</record>
+					<record>
+						<code>N</code>
+						<value>N</value>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="600" Id="Image10" ImageID="M_bg3" LeftMargin="0" TabOrder="16" Width="1000"></Image>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" BindDataset="ds_list" BkColor2="default" BkSelColor="#f7f9e7" BoldHead="FALSE" Border="Flat" BorderColor="#d4d4d4" Bottom="373" ColSizing="TRUE" Enable="true" EndLineColor="default" Face3dColor="#f7f7f7" HeadBorder="Flat" HeadHeight="30" Height="261" Hilight3dColor="#f7f7f7" Id="Grid0" InputPanel="FALSE" Left="24" LineColor="#d4d4d4" MinWidth="100" OnCellDBLClick="grid_list_OnCellDblClick" Right="794" RowHeight="23" SelColor="#444444" Style="st_grid" TabOrder="5" TabStop="true" Top="112" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="770">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="44"/>
+						<col width="26"/>
+						<col width="126"/>
+						<col width="139"/>
+						<col width="66"/>
+						<col width="264"/>
+						<col width="94"/>
+					</columns>
+					<head>
+						<cell col="0" display="text" text="No."/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" celltype="head" col="1" display="text"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="2" display="text" text="카테고리&#32;ID"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="3" display="text" text="카테고리&#32;명"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="4" display="text" text="사용여부"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="5" display="text" text="Description"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="6" display="text" text="등록자"/>
+					</head>
+					<body>
+						<cell align="center" col="0" display="text" expr="currow&#32;+&#32;1"/>
+						<cell align="center" celltype="head" col="1" display="text" expr="decode(getrowtype(row),&#32;&apos;insert&apos;,&apos;＋&apos;,&#32;&apos;update&apos;&#32;,&#32;&apos;&#32;√&apos;&#32;,&#32;decode(DS_LIST.row,&#32;-1,&#32;&apos;&apos;,&#32;row,&#32;&apos;▶&apos;&#32;,&apos;&apos;))"/>
+						<cell align="center" col="2" colid="id" display="text" edit="normal"/>
+						<cell align="center" col="3" colid="name" display="text" edit="normal"/>
+						<cell align="center" col="4" colid="useYn" display="text" edit="normal"/>
+						<cell align="center" col="5" colid="description" display="text" edit="normal"/>
+						<cell align="center" col="6" colid="regUser" display="text"/>
+					</body>
+				</format>
+				<format id="Format0">
+					<columns>
+						<col width="44"/>
+						<col width="126"/>
+						<col width="139"/>
+						<col width="66"/>
+						<col width="264"/>
+						<col width="94"/>
+					</columns>
+					<head>
+						<cell col="0" display="text" text="No."/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="1" display="text" text="카테고리&#32;ID"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="2" display="text" text="카테고리&#32;명"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="3" display="text" text="사용여부"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="4" display="text" text="Description"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="5" display="text" text="등록자"/>
+					</head>
+					<body>
+						<cell align="center" col="0" display="text" expr="currow&#32;+&#32;1"/>
+						<cell align="center" col="1" colid="id" display="text" edit="normal"/>
+						<cell align="center" col="2" colid="name" display="text" edit="normal"/>
+						<cell align="center" col="3" colid="useYn" display="text" edit="normal"/>
+						<cell align="center" col="4" colid="description" display="text" edit="normal"/>
+						<cell align="center" col="5" colid="regUser" display="text"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Button Height="28" Id="Button0" Left="16" OnClick="Button0_OnClick" TabOrder="1" Text="조회" Top="520" Visible="FALSE" Width="69"></Button>
+		<Button Cursor="HAND" Height="20" Id="btn_save" ImageID="btn저장" Left="907" OnClick="btn_save_OnClick" TabOrder="2" Text="등록" Top="400" Width="56"></Button>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" BindDataset="ds_list" BkColor2="default" BkSelColor="#f7f9e7" BoldHead="FALSE" Border="Flat" BorderColor="#d4d4d4" Bottom="397" ColSelect="TRUE" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" Face3dColor="#f7f7f7" FillArea="TRUE" HeadBorder="Flat" HeadHeight="30" Height="285" Hilight3dColor="#f7f7f7" Id="grid_list" InputPanel="FALSE" Left="24" LineColor="#d4d4d4" MinWidth="100" Right="962" RowHeight="23" SelColor="#444444" Style="st_grid" TabOrder="3" TabStop="true" Top="112" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="938">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="44"/>
+						<col width="26"/>
+						<col width="126"/>
+						<col width="139"/>
+						<col width="66"/>
+						<col width="264"/>
+						<col width="94"/>
+					</columns>
+					<head>
+						<cell col="0" display="text" text="No."/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" celltype="head" col="1" display="text"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="2" display="text" text="카테고리&#32;ID"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="3" display="text" text="카테고리&#32;명"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="4" display="text" text="사용여부"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="5" display="text" text="Description"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="6" display="text" text="등록자"/>
+					</head>
+					<body>
+						<cell align="center" col="0" display="text" expr="currow&#32;+&#32;1"/>
+						<cell align="center" celltype="head" col="1" display="text" expr="decode(getrowtype(row),&#32;&apos;insert&apos;,&apos;＋&apos;,&#32;&apos;update&apos;&#32;,&#32;&apos;&#32;√&apos;&#32;,&#32;decode(DS_LIST.row,&#32;-1,&#32;&apos;&apos;,&#32;row,&#32;&apos;▶&apos;&#32;,&apos;&apos;))"/>
+						<cell align="center" col="2" colid="id" display="text" edit="normal"/>
+						<cell align="center" col="3" colid="name" display="text" edit="normal"/>
+						<cell align="center" col="4" colid="useYn" combocol="code" combodataset="ds_yn" combotext="value" display="combo" edit="combo"/>
+						<cell align="center" col="5" colid="description" display="text" edit="normal"/>
+						<cell align="center" col="6" colid="regUser" display="text" edit="normal"/>
+					</body>
+				</format>
+				<format id="Format0">
+					<columns>
+						<col width="44"/>
+						<col width="126"/>
+						<col width="139"/>
+						<col width="66"/>
+						<col width="264"/>
+						<col width="94"/>
+					</columns>
+					<head>
+						<cell col="0" display="text" text="No."/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="1" display="text" text="카테고리&#32;ID"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="2" display="text" text="카테고리&#32;명"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="3" display="text" text="사용여부"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="4" display="text" text="Description"/>
+						<cell bkimagealign="stretch" bkimageid="grid_line_1" col="5" display="text" text="등록자"/>
+					</head>
+					<body>
+						<cell align="center" col="0" display="text" expr="currow&#32;+&#32;1"/>
+						<cell align="center" col="1" colid="id" display="text" edit="normal"/>
+						<cell align="center" col="2" colid="name" display="text" edit="normal"/>
+						<cell align="center" col="3" colid="useYn" display="text" edit="normal"/>
+						<cell align="center" col="4" colid="description" display="text" edit="normal"/>
+						<cell align="center" col="5" colid="regUser" display="text"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image FillType="TILE" Height="2" Id="Image5" ImageID="dots" Left="24" TabOrder="4" TabStop="FALSE" Top="106" Width="938"></Image>
+		<Image FillType="STRETCH" Height="50" Id="Image0" ImageID="title_bg" Left="15" TabOrder="6" Top="16" Width="967"></Image>
+		<Static Color="whitesmoke" Font="굴림,12,Bold" Height="29" Id="Static0" Left="34" TabOrder="7" Text="리스트&#32;조회" Top="21" VAlign="Middle" Width="168"></Static>
+		<Combo Border="Flat" BorderColor="gainsboro" CodeColumn="code" DataColumn="value" Height="21" Id="cb_searchCondition" INDEX="0" InnerDataset="ds_searchCondition" Left="608" TabOrder="8" Top="79" Width="105"></Combo>
+		<Edit Border="Flat" BorderColor="gainsboro" Height="21" Id="ed_searchKeyword" Left="712" TabOrder="9" Top="80" Width="121"></Edit>
+		<Button Height="21" Id="btn_search" ImageID="btn_조회" Left="843" OnClick="btn_search_OnClick" TabOrder="10" Text="조&#32;회" Top="80" Width="56"></Button>
+		<Button ButtonStyle="TRUE" Cursor="HAND" Height="20" Id="btn_add" ImageID="btn_그리드추가" Left="779" OnClick="btn_add_OnClick" TabOrder="12" Top="400" Width="56"></Button>
+		<Button Cursor="HAND" Height="20" Id="btn_del" ImageID="btn_삭제" Left="835" OnClick="btn_del_OnClick" TabOrder="11" Text="등록" Top="400" Width="56"></Button>
+		<Button Height="21" Id="Button2" ImageID="btn_조회" Left="907" OnClick="btn_searchByVO_OnClick" TabOrder="13" Text="조&#32;회" Top="80" Width="56"></Button>
+		<Static Height="14" Id="Static1" Left="839" TabOrder="14" Text="↓Map조회" Top="63" Width="63"></Static>
+		<Static Height="14" Id="Static2" Left="907" TabOrder="15" Text="↓VO조회" Top="63" Width="63"></Static>
+	</Form>
+	<Script><![CDATA[//#include "lib::common.js";
+
+var beforeRow = 0;
+
+var tempCount = 0;
+
+
+function form_OnLoadCompleted(obj)
+{
+	btn_search_OnClick();
+}
+
+
+// 변수를 Map형태로 전송 조회ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+function btn_search_OnClick(obj)
+{
+	var args = cb_searchCondition.Value + "="+ed_searchKeyword.Text;
+
+	transaction("list", 
+				"svcLotte::sample/selectSampleList.mip", 	// 	http://127.0.0.1:8080/web/sample/lotteSampleList.mip
+				"", 
+				"ds_list=dsOutput", 
+				args, 
+				"fnCallbackLotte");
+}
+
+// 저장(insert,update,delete)를 한 번에 요청ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+function btn_save_OnClick(obj)
+{
+	transaction("save", 
+				"svcLotte::sample/saveSampleList.mip", 	// 	http://127.0.0.1:8080/web/sample/lotteSampleList.mip
+				"dsInput=ds_list:U", 
+				"", 
+				"", 
+				"fnCallbackLotte");
+}
+
+// 변수를 VO형태로 전송 조회ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+function btn_searchByVO_OnClick(obj)
+{
+	ds_param.ClearData();
+	var row = ds_param.AddRow();
+	ds_param.SetColumn(row, cb_searchCondition.Value	, ed_searchKeyword.Text);
+
+	var strSvcid 		= "listByVo";
+	var strController 	= "sample/selectSampleList.mip";
+	var strVoClass 		= "egovframework.rte.sample.service.SampleVO";
+	var strInputDs 		= "";
+	var strOutputDs 	= "ds_list=dsOutput";
+	var strParam 		= "";
+	var strFnCallback = "fnCallbackLotte";
+
+	fnCmTr(this, strSvcid, strController, strVoClass, strInputDs, strOutputDs, strParam, strFnCallback);
+	
+}
+function btn_saveByVo_OnClick(obj)
+{
+	var strSvcid 		= "listByVo";
+	var strController 	= "sample/saveSampleList.mip";
+	var strVoClass 		= "egovframework.rte.sample.service.SampleVO";
+	var strInputDs 		= "dsInput=ds_param:U";
+	var strOutputDs 	= "";
+	var strParam 		= "";
+	var strFnCallback = "fnCallbackLotte";
+	
+	fnCmTr(this, 
+			strSvcid, 
+			strController, 
+			strVoClass, 
+			strInputDs, 
+			strOutputDs, 
+			strParam, 
+			strFnCallback);
+}
+
+// 후처리함수ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+function fnCallbackLotte(svcid, errcd, errmsg)
+{
+	if ( svcid == "list" )
+	{
+		this.status = "  처리메세지 : " + errmsg;
+		trace(http.RecvHttpStr);
+	}
+	else if ( svcid == "save" )
+	{
+		// ToDo
+		this.status = "  처리메세지 : " + errmsg;
+		trace(http.RecvHttpStr);
+	}
+	
+}
+
+// Grid 행 추가ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+function btn_add_OnClick(obj)
+{
+	var rowNo = ds_list.AddRow();
+	ds_list.SetColumn(rowNo, "id", getDate()+rowNo);
+}
+// 선택행 삭제ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+function btn_del_OnClick(obj)
+{
+	ds_list.DeleteRow(ds_list.row);
+}
+
+
+// mapping할 VO Class를 지정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+function fnSetVoInfo(objFrm, strVoClass)
+{
+	objFrm.ds_voInfo.clearData();
+	var row = objFrm.ds_voInfo.addrow();
+	objFrm.ds_voInfo.setcolumn(row, "voClass", strVoClass);
+}
+
+// VO 를 사용하는 형태로 Transaction 전송ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// @voClass		ds_param과 mapping할 VO Class명
+function fnCmTr(objFrm, svcid, strController, strVoClass, inputDs, outputDs, params, callbackFnc)
+{
+
+	fnSetVoInfo(objFrm, strVoClass);
+
+	//strParam = "voClass='egovframework.rte.sample.service.SampleVO'";
+	
+	transaction(svcid, 
+				"svcLotte::" + strController, 
+				"ds_voInfo=ds_voInfo " + inputDs, 
+				outputDs,
+				params,
+				"fnCallback");
+}]]></Script>
+</Window>

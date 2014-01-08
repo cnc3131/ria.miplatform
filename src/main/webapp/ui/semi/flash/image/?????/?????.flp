@@ -1,0 +1,7 @@
+﻿<flash_project name="PIgraph" version="1">
+    <project_file path="./PIGraph.fla" filetype="fla" profile="" def_file="true" />
+    <project_file path="./PI_view.as" filetype="as" />
+    <project_file path="./PI_main.as" filetype="as" />
+    <project_file path="./PI_Reset.as" filetype="as" />
+    <project_file path="./PI_circle.as" filetype="as" />
+</flash_project>

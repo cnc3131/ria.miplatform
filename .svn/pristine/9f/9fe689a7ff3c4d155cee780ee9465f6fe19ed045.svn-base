@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="640" Id="func_01" PidAttrib="7" Title="func_01" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" GroupKey="column0,column1,column2" Id="ds_list1">
+				<Contents>
+					<colinfo Id="column1" Size="256" Summ="Text:ü" Type="STRING"/>
+					<colinfo Id="column2" Size="256" Summ="Text:μ" Type="STRING"/>
+					<colinfo Id="column3" Size="256" Summ="Text:&#32;" Type="STRING"/>
+					<colinfo Id="column4" Size="256" Summ="Text:" Type="STRING"/>
+					<colinfo Id="column5" Size="256" Summ="Avg" Type="DECIMAL"/>
+					<colinfo Id="column6" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column7" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column8" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column9" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column10" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column11" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column12" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column0" Size="256" Type="STRING"/>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>1</column3>
+						<column4>7</column4>
+						<column5>50.3</column5>
+						<column6>3</column6>
+						<column7>151</column7>
+						<column8>91</column8>
+						<column9>54</column9>
+						<column10>6</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>2</column3>
+						<column4>12</column4>
+						<column5>26.5</column5>
+						<column6>2</column6>
+						<column7>53</column7>
+						<column8>27</column8>
+						<column9>25</column9>
+						<column10>1</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>3</column3>
+						<column4>15</column4>
+						<column5>10</column5>
+						<column6>4</column6>
+						<column7>40</column7>
+						<column8>12</column8>
+						<column9>25</column9>
+						<column10>3</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>4</column3>
+						<column4>11</column4>
+						<column5>28.5</column5>
+						<column6>4</column6>
+						<column7>113.8</column7>
+						<column8>52</column8>
+						<column9>38</column9>
+						<column10>23.8</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>뱸</column3>
+						<column4>9</column4>
+						<column5>43.5</column5>
+						<column6>2</column6>
+						<column7>87</column7>
+						<column8>44</column8>
+						<column9>40</column9>
+						<column10>3</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>λ</column3>
+						<column4>8</column4>
+						<column5>47.5</column5>
+						<column6>4</column6>
+						<column7>190</column7>
+						<column8>155</column8>
+						<column9>25</column9>
+						<column10>10</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>Ư</column2>
+						<column3>Ư</column3>
+						<column4>17</column4>
+						<column5>4.6</column5>
+						<column6>5</column6>
+						<column7>23</column7>
+						<column8>20</column8>
+						<column9>2</column9>
+						<column10>1</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>2</column1>
+						<column2>1</column2>
+						<column3>1</column3>
+						<column4>2</column4>
+						<column5>108</column5>
+						<column6>3</column6>
+						<column7>324</column7>
+						<column8>225</column8>
+						<column9>79</column9>
+						<column10>20</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>2</column1>
+						<column2>1</column2>
+						<column3>2</column3>
+						<column4>5</column4>
+						<column5>80.3</column5>
+						<column6>4</column6>
+						<column7>321</column7>
+						<column8>214</column8>
+						<column9>92</column9>
+						<column10>15</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>2</column1>
+						<column2>1</column2>
+						<column3>3</column3>
+						<column4>1</column4>
+						<column5>163.8</column5>
+						<column6>4</column6>
+						<column7>655</column7>
+						<column8>465</column8>
+						<column9>178</column9>
+						<column10>12</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>2</column1>
+						<column2>1</column2>
+						<column3>4</column3>
+						<column4>3</column4>
+						<column5>102</column5>
+						<column6>3</column6>
+						<column7>306</column7>
+						<column8>183</column8>
+						<column9>118</column9>
+						<column10>5</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>2</column1>
+						<column2>1</column2>
+						<column3></column3>
+						<column4>16</column4>
+						<column5>5</column5>
+						<column6>1</column6>
+						<column7>5</column7>
+						<column8>2</column8>
+						<column9>2</column9>
+						<column10>1</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>3</column1>
+						<column2>1</column2>
+						<column3>1</column3>
+						<column4>4</column4>
+						<column5>65.3</column5>
+						<column6>3</column6>
+						<column7>256</column7>
+						<column8>131</column8>
+						<column9>52</column9>
+						<column10>34</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>3</column1>
+						<column2>1</column2>
+						<column3>2</column3>
+						<column4>6</column4>
+						<column5>66.5</column5>
+						<column6>2</column6>
+						<column7>133</column7>
+						<column8>89</column8>
+						<column9>43</column9>
+						<column10>1</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>3</column1>
+						<column2>1</column2>
+						<column3>3</column3>
+						<column4>10</column4>
+						<column5>29</column5>
+						<column6>4</column6>
+						<column7>116</column7>
+						<column8>66</column8>
+						<column9>50</column9>
+						<column10>0</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>3</column1>
+						<column2>1</column2>
+						<column3>4</column3>
+						<column4>13</column4>
+						<column5>13.7</column5>
+						<column6>3</column6>
+						<column7>41</column7>
+						<column8>10</column8>
+						<column9>31</column9>
+						<column10>0</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>3</column1>
+						<column2>1</column2>
+						<column3>ߺ</column3>
+						<column4>14</column4>
+						<column5>11</column5>
+						<column6>15</column6>
+						<column7>33</column7>
+						<column8>12</column8>
+						<column9>17</column9>
+						<column10>4</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" GroupKey="column0,column1,column2" Id="ds_list2">
+				<Contents>
+					<colinfo Id="column1" Size="256" Summ="Text:ü" Type="STRING"/>
+					<colinfo Id="column2" Size="256" Summ="Text:μ" Type="STRING"/>
+					<colinfo Id="column3" Size="256" Summ="Text:&#32;" Type="STRING"/>
+					<colinfo Id="column4" Size="256" Summ="Text:" Type="STRING"/>
+					<colinfo Id="column5" Size="256" Summ="Avg" Type="DECIMAL"/>
+					<colinfo Id="column6" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column7" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column8" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column9" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column10" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column11" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column12" Size="256" Summ="Sum" Type="STRING"/>
+					<colinfo Id="column0" Size="256" Type="STRING"/>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>1</column3>
+						<column4>7</column4>
+						<column5>50.3</column5>
+						<column6>3</column6>
+						<column7>151</column7>
+						<column8>91</column8>
+						<column9>54</column9>
+						<column10>6</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>2</column3>
+						<column4>12</column4>
+						<column5>26.5</column5>
+						<column6>2</column6>
+						<column7>53</column7>
+						<column8>27</column8>
+						<column9>25</column9>
+						<column10>1</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>3</column3>
+						<column4>15</column4>
+						<column5>10</column5>
+						<column6>4</column6>
+						<column7>40</column7>
+						<column8>12</column8>
+						<column9>25</column9>
+						<column10>3</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>4</column3>
+						<column4>11</column4>
+						<column5>28.5</column5>
+						<column6>4</column6>
+						<column7>113.8</column7>
+						<column8>52</column8>
+						<column9>38</column9>
+						<column10>23.8</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>뱸</column3>
+						<column4>9</column4>
+						<column5>43.5</column5>
+						<column6>2</column6>
+						<column7>87</column7>
+						<column8>44</column8>
+						<column9>40</column9>
+						<column10>3</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>1</column2>
+						<column3>λ</column3>
+						<column4>8</column4>
+						<column5>47.5</column5>
+						<column6>4</column6>
+						<column7>190</column7>
+						<column8>155</column8>
+						<column9>25</column9>
+						<column10>10</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>1</column1>
+						<column2>Ư</column2>
+						<column3>Ư</column3>
+						<column4>17</column4>
+						<column5>4.6</column5>
+						<column6>5</column6>
+						<column7>23</column7>
+						<column8>20</column8>
+						<column9>2</column9>
+						<column10>1</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>2</column1>
+						<column2>1</column2>
+						<column3>1</column3>
+						<column4>2</column4>
+						<column5>108</column5>
+						<column6>3</column6>
+						<column7>324</column7>
+						<column8>225</column8>
+						<column9>79</column9>
+						<column10>20</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>2</column1>
+						<column2>1</column2>
+						<column3>2</column3>
+						<column4>5</column4>
+						<column5>80.3</column5>
+						<column6>4</column6>
+						<column7>321</column7>
+						<column8>214</column8>
+						<column9>92</column9>
+						<column10>15</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>2</column1>
+						<column2>1</column2>
+						<column3>3</column3>
+						<column4>1</column4>
+						<column5>163.8</column5>
+						<column6>4</column6>
+						<column7>655</column7>
+						<column8>465</column8>
+						<column9>178</column9>
+						<column10>12</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>2</column1>
+						<column2>1</column2>
+						<column3>4</column3>
+						<column4>3</column4>
+						<column5>102</column5>
+						<column6>3</column6>
+						<column7>306</column7>
+						<column8>183</column8>
+						<column9>118</column9>
+						<column10>5</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>2</column1>
+						<column2>1</column2>
+						<column3></column3>
+						<column4>16</column4>
+						<column5>5</column5>
+						<column6>1</column6>
+						<column7>5</column7>
+						<column8>2</column8>
+						<column9>2</column9>
+						<column10>1</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>3</column1>
+						<column2>1</column2>
+						<column3>1</column3>
+						<column4>4</column4>
+						<column5>65.3</column5>
+						<column6>3</column6>
+						<column7>256</column7>
+						<column8>131</column8>
+						<column9>52</column9>
+						<column10>34</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>3</column1>
+						<column2>1</column2>
+						<column3>2</column3>
+						<column4>6</column4>
+						<column5>66.5</column5>
+						<column6>2</column6>
+						<column7>133</column7>
+						<column8>89</column8>
+						<column9>43</column9>
+						<column10>1</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>3</column1>
+						<column2>1</column2>
+						<column3>3</column3>
+						<column4>10</column4>
+						<column5>29</column5>
+						<column6>4</column6>
+						<column7>116</column7>
+						<column8>66</column8>
+						<column9>50</column9>
+						<column10>0</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>3</column1>
+						<column2>1</column2>
+						<column3>4</column3>
+						<column4>13</column4>
+						<column5>13.7</column5>
+						<column6>3</column6>
+						<column7>41</column7>
+						<column8>10</column8>
+						<column9>31</column9>
+						<column10>0</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+					<record>
+						<column1>3</column1>
+						<column2>1</column2>
+						<column3>ߺ</column3>
+						<column4>14</column4>
+						<column5>11</column5>
+						<column6>15</column6>
+						<column7>33</column7>
+						<column8>12</column8>
+						<column9>17</column9>
+						<column10>4</column10>
+						<column11>0</column11>
+						<column12>0</column12>
+						<column0></column0>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Shape BKColor="user0" Bottom="40" Height="30" Id="Shape0" Left="10" LineColor="user1" Right="984" RoundHeight="5" RoundUnit="Pixel" RoundWidth="5" TabOrder="6" Top="10" Type="RoundRect" Width="974"></Shape>
+		<Calendar Border="Flat" Dateformat="yyyy-MM-dd" Height="21" Id="clFromDT" Left="104" LeftMargin="4" SaturdayTextColor="blue" Style="M_cal" SundayTextColor="red" TabOrder="1" Top="15" Width="93"></Calendar>
+		<Calendar Border="Flat" Dateformat="yyyy-MM-dd" Height="21" Id="clToDT" Left="232" LeftMargin="4" SaturdayTextColor="blue" Style="M_cal" SundayTextColor="red" TabOrder="2" Top="15" Width="93"></Calendar>
+		<Checkbox BKColor="user0" Height="16" Id="Checkbox0" Left="349" OnClick="Checkbox0_OnClick" Style="M_check" TabOrder="3" Text="Group&#32;Key" Top="17" Width="87"></Checkbox>
+		<Checkbox BKColor="user0" Height="16" Id="Checkbox1" Left="453" OnClick="Checkbox1_OnClick" Style="M_check" TabOrder="4" Text="Reverse&#32;SubSum" Top="17" Value="FALSE" Width="119"></Checkbox>
+		<Grid AutoFitEndLine="Hide" BindDataset="ds_list1" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="623" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="25" Height="566" Id="Grid0" InputPanel="FALSE" Left="10" LineColor="default" LineType="ExVERT" Right="985" RowHeight="20" Style="M_grid" TabOrder="5" TabStop="true" Top="57" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="975">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="99"/>
+						<col width="89"/>
+						<col width="95"/>
+						<col width="76"/>
+						<col width="76"/>
+						<col width="76"/>
+						<col width="76"/>
+						<col width="76"/>
+						<col width="76"/>
+						<col width="76"/>
+						<col width="76"/>
+						<col width="76"/>
+					</columns>
+					<head>
+						<cell col="0" color="user2" display="text"/>
+						<cell col="1" color="user2" display="text" text="μ"/>
+						<cell col="2" color="user2" display="text"/>
+						<cell col="3" color="user2" display="text"/>
+						<cell col="4" color="user2" display="text" text="δ"/>
+						<cell col="5" color="user2" display="text" text="ο"/>
+						<cell col="6" color="user2" display="text" text="Total"/>
+						<cell col="7" color="user2" display="text" text="ü"/>
+						<cell col="8" color="user2" display="text" text="Ű"/>
+						<cell col="9" color="user2" display="text" text="ȸ"/>
+						<cell col="10" color="user2" display="text" text="Ȱ"/>
+						<cell col="11" color="user2" display="text"/>
+					</head>
+					<body>
+						<cell align="center" col="0" colid="column1" display="text" expr='iif(&#32;RowLevel&#32;==&#32;3&#32;,&#32;&quot;ü&quot;,&#32;column1&#32;)' suppress="1"/>
+						<cell align="center" col="1" colid="column2" display="text" expr='iif(&#32;RowLevel&#32;==&#32;2&#32;,&#32;&quot;μ&quot;,&#32;column2&#32;)' suppress="2"/>
+						<cell align="center" col="2" colid="column3" display="text"/>
+						<cell align="right" col="3" colid="column4" display="text"/>
+						<cell align="right" col="4" colid="column5" display="number" Mask="#,###.0"/>
+						<cell align="right" col="5" colid="column6" display="text"/>
+						<cell align="right" col="6" colid="column7" display="text"/>
+						<cell align="right" col="7" colid="column8" display="text"/>
+						<cell align="right" col="8" colid="column9" display="text"/>
+						<cell align="right" col="9" colid="column10" display="text"/>
+						<cell align="right" col="10" colid="column11" display="text"/>
+						<cell align="right" col="11" colid="column12" display="text"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Static Height="13" Id="Static0" Left="34" Style="M_search_title" TabOrder="7" Text="ȸⰣ" Top="19" Width="53"></Static>
+		<Image Height="7" Id="Image1" ImageID="M_search_titleicon" Left="23" TabOrder="8" Top="21" Transparent="TRUE" Width="4"></Image>
+		<Static Height="13" Id="Static1" Left="209" Style="M_search_title" TabOrder="9" Text="~" Top="20" Width="13"></Static>
+		<Button ButtonStyle="TRUE" Height="20" Id="btn_pop" ImageID="M_search_btn_40" Left="581" OnClick="btn_pop_OnClick" Style="M_search_btn" TabOrder="10" Text="Group" Top="16" Width="40"></Button>
+	</Form>
+</Window>

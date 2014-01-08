@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="711" Id="bottom" Left="8" OnLoadCompleted="bottom_OnLoadCompleted" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="1024" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="dsPopupMenu">
+				<Contents>
+					<colinfo id="LEVEL" size="2" type="INT"/>
+					<colinfo id="ID" size="3" type="INT"/>
+					<colinfo id="TEXT" size="256" type="STRING"/>
+					<colinfo id="Status" size="256" type="STRING"/>
+					<colinfo id="ImageID" size="256" type="STRING"/>
+					<record>
+						<ID>100</ID>
+						<ImageID></ImageID>
+						<LEVEL>1</LEVEL>
+						<Status></Status>
+						<TEXT>선택된&#32;화면&#32;닫기</TEXT>
+					</record>
+					<record>
+						<ID>200</ID>
+						<ImageID></ImageID>
+						<LEVEL>1</LEVEL>
+						<Status></Status>
+						<TEXT>선택된&#32;화면&#32;빼고&#32;닫기</TEXT>
+					</record>
+					<record>
+						<ID>300</ID>
+						<ImageID></ImageID>
+						<LEVEL>1</LEVEL>
+						<Status></Status>
+						<TEXT>전체&#32;닫기</TEXT>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="30" Id="Image0" ImageID="B_bg" TabOrder="1" Width="1024"></Image>
+		<Tab FixedImage="FALSE" Height="26" Id="tb_form" OnChanged="tb_form_OnChanged" OnRButtonDown="tb_form_OnRButtonDown" Style="B_tab" TabOrder="3" Top="4" Width="801">
+			<Contents>
+				<TabPage Height="-4" Id="tab1" ImageEdgeWidth="5" ImageID="B_tab" Left="2" Style="B_tab" TabOrder="9" Text="tab1" Top="28" Width="797"></TabPage>
+			</Contents>
+		</Tab>
+		<Static Height="13" Id="Static0" Left="856" Style="B_status" TabOrder="2" Text="조회가&#32;완료되었습니다." Top="10" Width="140"></Static>
+		<Image Height="21" Id="Image1" ImageID="B_statusicon" Left="832" TabOrder="4" Top="8" Width="20"></Image>
+		<Button Height="8" Id="Button2" ImageID="B_tab_close" Left="129" TabOrder="6" Text="Button2" Top="75" Transparent="TRUE" Width="9"></Button>
+		<Button Height="8" Id="Button4" ImageID="B_tab_close" Left="251" TabOrder="5" Text="Button2" Top="75" Transparent="TRUE" Width="9"></Button>
+	</Form>
+	<Script><![CDATA[
+function bottom_OnLoadCompleted(obj)
+{
+	if( tb_form.TabCount > 0 )
+		tb_form.DeleteTab(0);
+	
+	tb_form.Visible = true;		
+}
+
+function tb_form_OnChanged(obj,nOldIndex,nNewindex)
+{
+	var str_prefix, str_url, str_title = "";
+	
+	str_prefix = gds_OpenMenu.getcolumn(nNewIndex,"page_prefix");
+	str_url    = gds_OpenMenu.getcolumn(nNewIndex,"page_url");
+	str_title  = gds_OpenMenu.getcolumn(nNewIndex,"page_title");	
+	
+	// trace("str_prefix : " + str_prefix);
+	// trace("str_url : " + str_url);
+	// trace("str_title : " + str_title);
+
+	var objForms;
+	
+	objForms = AllWindows(str_url);
+	
+	if(objForms[0] == null) 
+	{
+			//alert("잘못된 선택...  체크");
+			//trace("MOpen Run 일지도 ...");
+			
+	} 
+	else 
+	{
+		if ( toUpper(objForms[0].MdiStatus) == "MIN" ) objForms[0].MdiStatus = "Normal";
+		objForms[0].SetFocus();
+	}		
+}
+
+function fn_tab_add(strID, strTitle)
+{
+	var idx = tb_form.InsertTab(strID,-1,"",strTitle,"M_tab_tab");
+	
+	var obj_tabpage = tb_form.GetItem(idx);
+	obj_tabpage.ImageEdgeWidth = 5; 
+	
+	tb_form.TabIndex = idx;
+	
+	if( tb_form.TabCount > 0 ) tb_form.Visible = true;
+}
+
+function fn_tab_del(strID)
+{
+	var i, Tabcnt, srId;
+	
+	Tabcnt = tb_form.TabCount;
+	for( i=0; i<Tabcnt; i++)
+	{
+		if( strID == tb_form.GetItem(i).id )
+		{
+			tb_form.DeleteTab(i);
+			if (tb_form.TabCount == 0)
+			{	
+				tb_form.Visible = false;
+				//gfn_OpenChildWindow("pub_main", "base_form.xml", "공지사항");
+			}
+			return;
+		}
+	}
+}
+
+function fn_setId(formId)
+{
+	st_formid.Text = formId;
+	
+	var nRow = gds_OpenMenu.FindRow("page_url", formId);
+
+}
+
+
+function fn_tab_focus()
+{
+	var i, Tabcnt, srId; 
+	var arg_topObj = GetTopWindow();
+	
+	strID = arg_topObj.id;
+	Tabcnt = tb_form.TabCount;
+	for( i=0; i<Tabcnt; i++)
+	{
+		if( strID == tb_form.GetItem(i).id )
+		{
+			tb_form.TabIndex = i;
+			return;
+		}
+	}
+}
+
+
+function tb_form_OnRButtonDown(obj,objSenderObj,nPosX,nPosY)
+{
+	var ds_obj;
+	
+	TrackPopupMenu("dsPopupMenu","LEVEL","ID","TEXT","Status","ImageID",nPosX,nPosY,"fn_popup",obj,333);
+	
+}
+
+function fn_popup(obj, nMenuID, nRow ,nCell)
+{
+	var nToRow, strValue;
+	
+	//alert("aa : " + nRow);
+	
+	switch(nMenuID)
+	{
+		case 100:
+			fn_form_close();			
+			break;
+		case 200:
+			//fn_tab_del(strID);
+			break;
+		case 300:
+			var str_url = "";
+			for ( wi = 0; wi < global.windows.count ; wi ++)
+			{
+				if (left(global.windows[wi].id,6) != "Frame_") 
+				{
+					str_url = global.windows[wi].id;
+					global.windows[wi].Close();
+					fn_tab_del(str_url);
+				}
+			}
+			
+			gds_OpenMenu.ClearData();
+			break;
+	}
+}
+
+
+function fn_form_close()
+{
+	if( tb_form.TabCount <= 0 ) return;
+	
+	var str_url = "";
+	var nNewIndex = tb_form.TabIndex;
+	
+	str_url    = gds_OpenMenu.getcolumn(nNewIndex,"page_url");
+	
+	for ( var i = 0; i < global.windows.count ; i++)
+	{	
+		if (global.windows[i].id == str_url) 
+		{
+			global.windows[i].Close();
+			fn_tab_del(str_url);
+			return;
+		}
+	}
+}
+
+]]></Script>
+</Window>

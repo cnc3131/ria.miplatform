@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="35" Id="searchDiv_form" Left="8" PidAttrib="7" Title="searchDiv_form" Top="8" Ver="1.0" Width="720" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_cnt">
+				<Contents>
+					<colinfo id="code" size="256" summ="default" type="STRING"/>
+					<colinfo id="name" size="256" summ="default" type="STRING"/>
+					<record>
+						<code>8</code>
+						<name>8</name>
+					</record>
+					<record>
+						<code>12</code>
+						<name>12</name>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image Height="35" Id="Image0" ImageID="search_bg" TabOrder="8" Width="720"></Image>
+		<Static Align="Center" Border="None" Font="맑은&#32;고딕,9,Bold" Height="20" Id="Static2" Left="9" TabOrder="3" Text="제조번호" Top="5" VAlign="Middle" Width="80"></Static>
+		<Edit AutoSelect="TRUE" Border="Flat" Height="20" Id="edt_prod" ImeMode="none" Left="90" LeftMargin="2" MaxLength="20" Style="if_input" TabOrder="1" Top="5" Width="118"></Edit>
+		<Button ButtonStyle="TRUE" Height="20" Id="btn_action" ImageID="m_bt_txt_03" Left="658" OnClick="Btn_cd_Filter_OnClick" Style="cm_btn" TabOrder="2" Text="검&#32;색" Top="5" Width="50"></Button>
+		<Edit AutoSelect="TRUE" Border="Flat" Height="20" Id="edt_serial" ImeMode="none" Left="296" LeftMargin="2" MaxLength="20" Style="if_input" TabOrder="4" Top="5" Width="118"></Edit>
+		<Static Align="Center" Border="None" Font="맑은&#32;고딕,9,Bold" Height="20" Id="Static0" Left="215" TabOrder="5" Text="Serial&#32;No." Top="5" VAlign="Middle" Width="80"></Static>
+		<Radio CodeColumn="code" ColumnCount="3" DataColumn="name" Height="20" Id="rd_size" INDEX="-1" InnerDataset="ds_cnt" Left="496" Style="text_black" TabOrder="6" Top="5" Value="2" Width="140"></Radio>
+		<Static Align="Center" Border="None" Font="맑은&#32;고딕,9,Bold" Height="20" Id="Static1" Left="415" TabOrder="7" Text="Size(inch)" Top="5" VAlign="Middle" Width="80"></Static>
+	</Form>
+	<Script><![CDATA[
+function Btn_cd_Filter_OnClick(obj)
+{
+	p_search(edt_prod.Text, edt_serial.Text, rd_size.Value);
+}
+]]></Script>
+</Window>

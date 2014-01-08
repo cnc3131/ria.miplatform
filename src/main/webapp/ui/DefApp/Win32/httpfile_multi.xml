@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="form" Left="8" OnLoadCompleted="form_OnLoadCompleted" PidAttrib="7" Title="HttpFile" Top="8" Ver="1.0" Width="800" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="dsFile">
+				<Contents>
+					<colinfo id="row_chk" size="256" summ="default" type="STRING"/>
+					<colinfo id="lfnm" size="256" summ="default" type="STRING"/>
+					<colinfo id="sfnm" size="256" summ="default" type="STRING"/>
+					<colinfo id="ud_rt" size="256" summ="default" type="STRING"/>
+					<colinfo id="begin_dttm" size="256" summ="default" type="STRING"/>
+					<colinfo id="end_dttm" size="256" summ="default" type="STRING"/>
+					<colinfo id="sfFullNm" size="256" summ="default" type="STRING"/>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" BindDataset="dsFile" BkColor2="default" BoldHead="true" Border="Flat" Bottom="456" Editable="TRUE" Enable="true" EndLineColor="default" Height="312" Id="grFile" InputPanel="FALSE" Left="16" LineColor="default" MinWidth="100" OnExpandEdit="grFile_OnExpandEdit" OnHeadClick="grFile_OnHeadClick" Right="744" Style="Grid" TabOrder="1" TabStop="true" Top="144" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="728">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="39"/>
+						<col width="163"/>
+						<col width="130"/>
+						<col width="130"/>
+						<col width="82"/>
+						<col width="80"/>
+						<col width="80"/>
+					</columns>
+					<head>
+						<cell col="0" display="checkbox" edit="checkbox"/>
+						<cell col="1" display="text" text="로컬파일명"/>
+						<cell col="2" display="text" text="서버파일명"/>
+						<cell col="3" display="text" text="서버풀파일명"/>
+						<cell col="4" display="text" text="진행율"/>
+						<cell col="5" display="text" text="시작"/>
+						<cell col="6" display="text" text="종료"/>
+					</head>
+					<body>
+						<cell col="0" colid="row_chk" display="checkbox" edit="checkbox"/>
+						<cell col="1" colid="lfnm" display="text" edit="normal" expandimage="grid_btn_search" expandshow="true"/>
+						<cell col="2" colid="sfnm" display="text"/>
+						<cell col="3" colid="sfFullNm" display="text"/>
+						<cell align="right" col="4" colid="ud_rt" display="normal"/>
+						<cell col="5" colid="begin_dttm" display="text"/>
+						<cell col="6" colid="end_dttm" display="text"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Button ButtonStyle="TRUE" Height="24" Id="btAdd" ImageID="btn_02" Left="16" OnClick="btAdd_OnClick" TabOrder="2" Text="+" Top="120" Width="40"></Button>
+		<FileDialog Bottom="112" Height="24" Id="fdLcl" Left="16" Right="40" TabOrder="3" Top="88" Width="24"></FileDialog>
+		<File Bottom="112" Height="24" Id="fiLcl" Left="40" Right="64" TabOrder="3" Top="88" Width="24"></File>
+		<Button ButtonStyle="TRUE" Height="24" Id="btUpload" ImageID="btn_05" Left="544" OnClick="btUpload_OnClick" TabOrder="3" Text="선택&#32;업로드" Top="120" Width="76"></Button>
+		<Button ButtonStyle="TRUE" Height="24" Id="btDel" ImageID="btn_02" Left="56" OnClick="btDel_OnClick" TabOrder="4" Text="-" Top="120" Width="40"></Button>
+		<Button ButtonStyle="TRUE" Height="24" Id="btDownload" ImageID="btn_06" Left="624" OnClick="btDownload_OnClick" TabOrder="5" Text="선택&#32;다운로드" Top="120" Width="90"></Button>
+		<Button ButtonStyle="TRUE" Height="22" Id="btCancel" ImageID="btn_04" Left="464" OnClick="btCancel_OnClick" TabOrder="6" Text="취소" Top="120" Width="65"></Button>
+		<Static Font="돋움,9,Bold" Height="48" Id="Static0" Left="8" TabOrder="7" Text="1.&#32;HttpFile&#32;업로드/다운로드&#13;&#10;&#32;&#32;-&#32;한번에&#32;여러개의&#32;파일을&#32;HttpFile을&#32;이용해서&#32;업로드/다운로드한다.&#13;&#10;&#32;&#32;-&#32;테스트를&#32;위해서는&#32;WAS에&#32;관련&#32;JSP파일이&#32;있어야한다.&#13;&#10;&#32;&#32;&#32;&#32;(jsp/ui_jsp/upload.jsp,&#32;jsp/ui_jsp/download.jsp)&#13;&#10;&#32;&#32;&#32;&#32;&#13;&#10;&#32;&#32;" Top="8" Width="471"></Static>
+		<multipart_http Height="24" Id="httpfile" Left="64" Top="88" Width="24"></multipart_http>
+	</Form>
+	<Script><![CDATA[#include "lib::common_A1.js";
+
+var mbContinue = true;
+
+function form_OnLoadCompleted(obj)
+{
+	cf_FormOnLoadCompleted(obj);
+	fInitForm(obj);
+}
+
+/**
+ * 그리드 HeadClick 이벤트
+ */
+function grFile_OnHeadClick(obj,nCell,nX,nY,nPivotIndex)
+{
+	if ( nCell == 0 ) {
+		var txtVal = obj.GetCellProp("head", nCell, "Text");
+		if( txtVal == "1") {
+			txtVal = "0";
+		} else {
+			txtVal = "1";
+		}
+		obj.SetCellProp("head", nCell, "Text", txtVal);
+		var objDs = object(obj.BindDataset);
+		for(var i = 0; i < objDs.RowCount; i++) {
+			objDs.SetColumn(i, "row_chk", txtVal);
+		}
+	}
+}
+
+/**
+ * 그리드 ExpandEdit 이벤트
+ */
+function grFile_OnExpandEdit(obj,nRow,nCell,strVal,nPivotIndex)
+{
+	if( nCell == 1 ) {
+		if(fdLcl.Open()) {
+			fiLcl.FileName = fdLcl.FileName;
+			dsFile.SetColumn(dsFile.row, "lfnm", fdLcl.FilePath + "\\" + fdLcl.FileName);
+			dsFile.SetColumn(dsFile.row, "fsz",  fiLcl.GetLength());
+		}	
+	}
+}
+
+function btDel_OnClick(obj)
+{
+	dsFile.DeleteRow(dsFile.row);
+}
+
+function btAdd_OnClick(obj)
+{
+	dsFile.AddRow();	
+}
+
+/**
+ * 선택된 파일 업로드
+ */
+function btUpload_OnClick(obj)
+{
+	mbContinue = true;
+	btCancel.Enable = true;
+	
+	var sUrl 		= gs_WebUrl + "file.defaultUpload.do";
+	var sLocalFileName = "";
+	var sServerFilePath 		= "gunTest/gunlee";
+	var sCallback = "fnUploadCallback";
+	var sKey  = "";
+	var sCharset  = "utf-8";
+	
+	for(var i = 0; i < dsFile.RowCount && mbContinue==true; i++) {
+		if( dsFile.GetColumn(i, "row_chk") == "1") {
+			dsFile.SetColumn(i, "ud_rt", 0);
+			
+			dsFile.SetColumn(i, "begin_dttm", cf_GetDateTime("hh:mm:ss"));
+			
+			sLocalFileName = dsFile.GetColumn(i, "lfnm");
+			
+			trace("sLocalFileName1=" + sLocalFileName);
+			trace("cf_LastIndexOf(sLocalFileName, '\\')" + cf_LastIndexOf(sLocalFileName, "\\"));
+			
+			sLocalFileName = SubStr(sLocalFileName, cf_LastIndexOf(sLocalFileName, "\\")+1);
+			trace("sLocalFileName=" + sLocalFileName);
+			
+			strKey = i;	 // RowNo를 키로 설정
+			var rtnVal = cf_HttpUpload(httpfile, sUrl, sLocalFileName, sServerFilePath, sCallback, i, sCharset);
+			if( rtnVal[0] ) {
+				dsFile.SetColumn(i, "sfnm", rtnVal[1]);
+				dsFile.SetColumn(i, "sfFullNm", sServerFilePath + "/" + rtnVal[1]);
+				alert("success" + " : group : " + rtnVal[2]);
+			} else {
+				alert(rtnVal[1]);
+			}
+			dsFile.SetColumn(i, "end_dttm", cf_GetDateTime("hh:mm:ss"));
+			trace(dsFile.savexml());
+		}
+	}
+}
+
+
+
+/**
+ *
+ * @param strKey 함수 호출시 넘겨준 Key 값
+ * @param nRecvSize  송신 바이트 수 (누적)
+ * @param nFileSize  파일크기
+ * @return true : 계속
+ *         false: 취소
+ */
+function fnUploadCallback(strKey, nSentSize, nFileSize)
+{
+	var rate = truncate( (nSentSize / nFileSize) * 100, 2);	
+	dsFile.SetColumn(toNumber(strKey), "ud_rt", rate);
+	return mbContinue;
+}
+
+/**
+ * 선택된 파일 다운로드
+ */
+function btDownload_OnClick(obj)
+{
+	mbContinue = true;
+	btCancel.Enable = true;
+
+	var sUrl 		= gs_WebUrl + "file.defaultDownload.do";
+	var svName 		= "";
+	var lfName 		= "";
+	var sCallback = "fnDownloadCallback";
+	var sKey  = "";
+	var sCharset  = "utf-8";
+	
+	for(var i = 0; i < dsFile.RowCount && mbContinue==true; i++) {
+		if( dsFile.GetColumn(i, "row_chk") == "1") {
+			dsFile.SetColumn(i, "ud_rt", 0);
+
+			sServerFileFullName = dsFile.GetColumn(i, "sfFullNm");
+			sLocalFileFullName = dsFile.GetColumn(i, "lfnm");
+			sKey = i;	// RowNo를 키로 설정
+			var rtnVal = cf_HttpDownload(httpfile, sUrl, sServerFileFullName, sLocalFileFullName, sCallback, sKey, sCharset);
+			if( !rtnVal[0] ) {
+				alert(rtnVal[1]);
+			}
+		}
+	}
+}
+
+/**
+ *
+ * @param strKey 함수 호출시 넘겨준 Key 값
+ * @param nRecvSize  수신 바이트 수 (누적)
+ * @param nFileSize  파일크기
+ * @return true : 계속
+ *         false: 취소
+ */
+function fnDownloadCallback(strKey, nRecvSize, nFileSize)
+{
+	var rate = truncate((nRecvSize / nFileSize) * 100, 2);
+	dsFile.SetColumn(toNumber(strKey), "ud_rt", rate);
+	return mbContinue;
+}
+
+
+/**
+ * 업로드 & 다운로드 중지.
+ */
+function btCancel_OnClick(obj)
+{
+	mbContinue = false;
+	btCancel.Enable = false;
+}
+
+]]></Script>
+</Window>

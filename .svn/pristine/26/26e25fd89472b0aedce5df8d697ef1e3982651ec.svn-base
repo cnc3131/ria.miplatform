@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+   	<!-- controller -->	
+	<bean id="validatorController" class="org.springframework.web.servlet.mvc.UrlFilenameViewController"/>	
+
+	<!-- handler mapping -->	
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+                <prop key="/cmmn/validator.do">validatorController</prop>
+			</props>
+		</property>
+	</bean>
+	<!-- handler adatper -->
+	<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>	
+
+
+    <!-- beans: Integrated Apache Commons Validator by Spring Modules -->              
+    <bean id="beanValidator" class="org.springmodules.validation.commons.DefaultBeanValidator">
+        <property name="validatorFactory" ref="validatorFactory"/>
+    </bean>
+
+   <bean id="validatorFactory" class="org.springmodules.validation.commons.DefaultValidatorFactory">
+		<property name="validationConfigLocations">
+			<list>
+                <value>classpath:/validator/validator-rules.xml</value>
+                <value>classpath:/validator/application/**/*.xml</value>        
+			</list>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="intro_form" Left="8" OnLoadCompleted="intro_form_OnLoadCompleted" PidAttrib="7" Title="한라산업개발" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_right">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="INT"/>
+					<colinfo id="col2" size="256" type="INT"/>
+					<colinfo id="col3" size="256" type="INT"/>
+					<record>
+						<col0>DOM</col0>
+						<col1>17800</col1>
+						<col2>15000</col2>
+						<col3>74</col3>
+					</record>
+					<record>
+						<col0>DNK</col0>
+						<col1>9200</col1>
+						<col2>6680</col2>
+						<col3>63</col3>
+					</record>
+					<record>
+						<col0>HSD</col0>
+						<col1>3100</col1>
+						<col2>1800</col2>
+						<col3>38</col3>
+					</record>
+					<record>
+						<col0>JPN</col0>
+						<col1>6900</col1>
+						<col2>4800</col2>
+						<col3>48</col3>
+					</record>
+					<record>
+						<col0>IND</col0>
+						<col1>4000</col1>
+						<col2>3000</col2>
+						<col3>43</col3>
+					</record>
+					<record>
+						<col0>FIN</col0>
+						<col1>15000</col1>
+						<col2>9980</col2>
+						<col3>70</col3>
+					</record>
+					<record>
+						<col0>FRA</col0>
+						<col1>9000</col1>
+						<col2>4900</col2>
+						<col3>39</col3>
+					</record>
+					<record>
+						<col0>ESP</col0>
+						<col1>5800</col1>
+						<col2>2000</col2>
+						<col3>30</col3>
+					</record>
+					<record>
+						<col0>SWE</col0>
+						<col1>2000</col1>
+						<col2>1000</col2>
+						<col3>24</col3>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_grid2">
+				<Contents>
+					<colinfo id="col0" size="256" type="STRING"/>
+					<colinfo id="col1" size="256" type="STRING"/>
+					<colinfo id="col2" size="256" type="STRING"/>
+					<colinfo id="col3" size="256" type="STRING"/>
+					<colinfo id="col4" size="256" type="STRING"/>
+					<colinfo id="col5" size="256" type="STRING"/>
+					<record>
+						<col0>Marketing&#32;an&#32;incredible&#32;web&#32;idea&#32;to&#32;ad&#32;agencies</col0>
+						<col1>80%</col1>
+						<col2>90%</col2>
+						<col3>70%</col3>
+						<col4>147439</col4>
+						<col5>chartSGB1</col5>
+					</record>
+					<record>
+						<col0>Ratio&#32;throughout&#32;sales&#32;funnel</col0>
+						<col1>70%</col1>
+						<col2>30%</col2>
+						<col3>20%</col3>
+						<col4>11791</col4>
+						<col5>chartSGB2</col5>
+					</record>
+					<record>
+						<col0>Significance&#32;of&#32;net&#32;income</col0>
+						<col1>50%</col1>
+						<col2>80%</col2>
+						<col3>40%</col3>
+						<col4>48574</col4>
+						<col5>chartSGB3</col5>
+					</record>
+					<record>
+						<col0>Customer&#32;purchase&#32;probability&#32;</col0>
+						<col1>70%</col1>
+						<col2>45%</col2>
+						<col3>80%</col3>
+						<col4>3002</col4>
+						<col5>chartSGR3</col5>
+					</record>
+					<record>
+						<col0>Responsibilities&#32;of&#32;and&#32;interface&#32;between&#32;M&#32;&amp;&#32;S</col0>
+						<col1>30%</col1>
+						<col2>70%</col2>
+						<col3>20%</col3>
+						<col4>190</col4>
+						<col5>chartSGR1</col5>
+					</record>
+					<record>
+						<col0>Evaluating&#32;average&#32;transaction&#32;value&#32;of&#32;each&#32;call</col0>
+						<col1>20%</col1>
+						<col2>40%</col2>
+						<col3>70%</col3>
+						<col4>974</col4>
+						<col5>chartSGR2</col5>
+					</record>
+					<record>
+						<col0>Customer&#32;loyalty&#32;business&#32;plans</col0>
+						<col1>90%</col1>
+						<col2>70%</col2>
+						<col3>80%</col3>
+						<col4>820000</col4>
+						<col5>chartSGB3</col5>
+					</record>
+					<record>
+						<col0>Customer&#32;profitability&#32;analysis&#32;-practisability</col0>
+						<col1>50%</col1>
+						<col2>70%</col2>
+						<col3>20%</col3>
+						<col4></col4>
+						<col5>chartSGB1</col5>
+					</record>
+					<record>
+						<col0>Developing&#32;an&#32;intergrated&#32;sales&#32;strategy</col0>
+						<col1>40%</col1>
+						<col2>30%</col2>
+						<col3>60%</col3>
+						<col4></col4>
+						<col5>chartSGB2</col5>
+					</record>
+					<record>
+						<col0>Looking&#32;for&#32;marketing&#32;dashboards&#32;in&#32;banking</col0>
+						<col1>20%</col1>
+						<col2>30%</col2>
+						<col3>60%</col3>
+						<col4></col4>
+						<col5>chartSGR2</col5>
+					</record>
+					<record>
+						<col0>Most&#32;Critical&#32;Phases&#32;in&#32;Business&#32;Life-Cycle</col0>
+						<col1>70%</col1>
+						<col2>45%</col2>
+						<col3>80%</col3>
+						<col4></col4>
+						<col5>chartSGR3</col5>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image Height="600" Id="Image0" ImageID="M_bg4" Static="FALSE" TabOrder="1" Width="998"></Image>
+		<Grid AutoFit="TRUE" BindDataset="ds_grid2" BkColor2="default" BoldHead="true" Border="Flat" BorderColor="INACTIVECAPTION" Bottom="576" ColSelect="TRUE" Enable="true" EndLineColor="default" Face3dColor="#bec5e7" HeadBorder="Flat" Height="88" Id="Grid3" InputPanel="FALSE" Left="606" LineColor="default" MinWidth="100" Right="959" TabOrder="3" TabStop="true" Top="488" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="353">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="14"/>
+						<col width="168"/>
+						<col width="41"/>
+						<col width="38"/>
+						<col width="59"/>
+					</columns>
+					<head>
+						<cell col="0" colspan="2" display="text">
+							<cell col="0" display="text"/>
+							<cell col="1" display="text" font="Tahoma,8,Bold" text="Category"/>
+						</cell>
+						<cell col="2" color="#454545" display="text" font="Tahoma,8,Bold" text="Plan"/>
+						<cell col="3" color="#454545" display="text" font="Tahoma,8,Bold" text="Perf."/>
+						<cell col="4" color="#454545" display="text" font="Tahoma,8,Bold" text="Status"/>
+					</head>
+					<body>
+						<cell bkcolor="white" bkcolor2="#edf3fe" col="0" display="image" expr='&quot;ball02&quot;'/>
+						<cell align="left" bkcolor="white" bkcolor2="#edf3fe" col="1" colid="col0" color="#454545" display="text" font="Tahoma,8,Bold"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="2" colid="col1" color="#454545" display="text" font="Tahoma,8"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="3" colid="col2" color="#454545" display="text" font="Tahoma,8"/>
+						<cell align="right" bkcolor="white" bkcolor2="#edf3fe" col="4" colid="col5" color="#454545" display="image" font="Tahoma,8"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<CyXChart Bottom="444" Height="88" Id="CyXChart3" Left="606" NSeries="2" NValues="5" Right="959" Top="356" Visible="FALSE" Width="353">
+			<_PersistData>&#13;&#10;/6zFPhOC30NGWDYA8vJNQ/9oYXJ0RlgsIP9WZXJzaW9uPf82LjIuMTM0Mv8uMCwgQ3VsdP91cmU9bmV1dP9yYWwsIFB1Yv9saWNL&#13;&#10;ZXlUb/9rZW49YTE4N/84ZTIwNTJjMP84ZGNlElNvZv90d2FyZUZYLlr59B7y8wAj8vAgXgR6aw0E8vABAf7/gQUqawUBawUCawYG&#13;&#10;pQSRBdUy8vAQ8vAD8vD7/4d/f4JlAXwCvwKRBQG/BUFyaWFs8vBBpG8P8vIFjgWsBQBGD1h/Ei5IaWdobCkQ/3RTZXR0aW5nZ3MQ&#13;&#10;CZMIRR8AB3YFzwEBAAgCHRMfWAWfLkF4aXOVAX0CAPECOhDy82UWKDjgAAUKRxULRxmeB88f3BmVAcCeA4UNbQ9/A40OjwUCDASb&#13;&#10;H60QDbEfYi90L+cf+R8oCy+dL8UlDloYD44FvAH68vFS+fQuQmFzZZAADxIPJA82DRd3H/wiDf8uSUdhbGxlcl95VHlwZZUBFDIl&#13;&#10;URH6DIk/lTgSlTUTjQdHCABLvwBxM/LwFeQt/Ec/+yMJLkxpbmUPSW5mb9sCvSzTAzohSUKVP5cIAbgagQEWI0V9F4UnD0RlZmEY&#13;&#10;MP8uV2luZG93cw==&#13;&#10;</_PersistData>
+		</CyXChart>
+	</Form>
+	<Script><![CDATA[
+function intro_form_OnLoadCompleted(obj)
+{
+	CyXChart3_Load();
+	CyXChart3.Visible = true;
+
+}
+
+function CyXChart3_Load()
+{
+	var mon_cnt = ds_right.GetRowCount();
+
+	CyXChart3.TopGap = "28";						//차트 안쪽 상단 여백
+	CyXChart3.LeftGap = "10";						//차트 안쪽 왼쪽 여백
+	//CyXChart3.RightGap = "30";					//차트 안쪽 오른쪽 여백
+	CyXChart3.BottomGap = "25";					//차트 안쪽 하단 여백
+
+	CyXChart3.ClearData(1);						//Clear all numeric values set with the YValue or Value properties
+	CyXChart3.ClearData(3);
+	CyXChart3.ClearData(7);						//Clear all numeric values set with the YValue or Value properties
+	
+	CyXChart3.Stacked = 0;
+
+	//6.2 추가 사항
+	CyXChart3.PointLabels = True;
+	CyXChart3.PointLabelColor = "black";
+
+
+	//Chart 외곽 영역 색상
+	CyXChart3.BackColor = "#f2f2fe";	
+	
+	//Chart 내부 색상
+	CyXChart3.InsideColor = "#ffffff";				
+	
+
+	//Grid 가로선 색상
+	CyXChart3.AxisY.Grid.Color = "#C7C8D4";		
+	//선 종류
+	CyXChart3.AxisY.Grid.Style = "DashStyle_Dash";
+    
+	//X축 Fonbt
+	CyXChart3.AxisX.Font.Name = "Arial";
+	CyXChart3.AxisX.Font.Size = "7";
+
+    //6.2 추가
+    CyXChart3.AxisY.Gridlines = True;
+    CyXChart3.AxisX.Gridlines = True;
+
+	//Max Value 설정 - Primary
+    CyXChart3.AxisY.Max = ds_right.Max("col1") * 1.1;
+    CyXChart3.AxisY.Min = 0;	//Min 값 을 반드시 지정해야 함
+	CyXChart3.AxisY.LabelsFormat.Decimals = 0;
+	CyXChart3.AxisY.LabelsFormat.Format = "AxisFormat_Number";
+	CyXChart3.AxisY.AutoScale = False;
+
+
+	//Max Value 설정 - Secondary
+    CyXChart3.AxisY2.Max = ds_right.Max("col3") * 1.2;
+    CyXChart3.AxisY2.Min = 0;	//Min 값 을 반드시 지정해야 함
+	CyXChart3.AxisY2.LabelsFormat.Decimals = 0;
+	CyXChart3.AxisY2.LabelsFormat.Format = "AxisFormat_Number";
+	CyXChart3.AxisY2.AutoScale = False;
+
+
+	CyXChart3.MarkerShape = 2;
+//	CyXChart3.Scrollable = 1;
+
+	CyXChart3.Axis[2].Scroll = 0;
+	CyXChart3.Axis[2].pixperunit = 30;
+
+
+	//X축의 갯수 설정
+	//가운데 숫자가 시리즈의 갯수를 나타냄, 마지막 값은 X축 갯수 의미
+	CyXChart3.OpenData("COD_Values", 3, mon_cnt);
+	CyXChart3.OpenData("COD_Colors", 3, mon_cnt);
+
+	
+	CyXChart3.series[0].color = "#fcd03b";
+	CyXChart3.Series[0].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart3.series[0].gallery = "Gallery_Bar";
+	CyXChart3.Series[0].CylSides = 24;
+	
+	CyXChart3.series[1].color = "#7896d6";
+	CyXChart3.Series[1].YAxis = 0; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart3.series[1].gallery = "Gallery_Bar";
+	CyXChart3.Series[1].CylSides = 24;
+	
+	CyXChart3.series[2].color = "#f28498";
+	CyXChart3.Series[2].YAxis = 1; 							//어떤 Y축을 사용할지를 나타탬
+	CyXChart3.series[2].gallery = "Gallery_Lines";
+
+	CyXChart3.series[2].LineWidth = 2;
+	
+	//X축 값 설정  Axis[2]는 X축을 나타냄(label)
+	for(var i=0 ; i < mon_cnt ; i++){
+		CyXChart3.Axis[2].Label(i) = ds_right.getcolumn(i,"col0");
+	}
+	
+	//실제 데이타를 이용해 그래프를 그려주는 부분 (RowCount / ColCount 등을 이용)
+	var NULL_VAL = "1.0E+308";	// data=0 인경우 표시안함
+	
+	for (var i=0 ; i < mon_cnt ; i++)
+	{
+		CyXChart3.Value(0,i) = ds_right.GetColumn(i, "col1");
+		CyXChart3.Value(1,i) = ds_right.GetColumn(i, "col2");
+		CyXChart3.Value(2,i) = ds_right.GetColumn(i, "col3");
+	}	
+
+
+	CyXChart3.Series[0].PointLabels = false;	
+	CyXChart3.Series[1].PointLabels = false;	
+
+	//Legend 표시
+	CyXChart3.Series[0].Legend = "Plan  .";
+	CyXChart3.Series[1].Legend = "Perf.";
+	CyXChart3.Series[2].Legend = "%";
+
+	CyXChart3.SerLegBoxObj.visible = true;
+
+/////////////////////////////////////////////////////////////
+	CyXChart3.SerLegBoxObj.height = "10";
+//	CyXChart0.SerLegBoxObj.Docked = "Docked_Top";
+
+	CyXChart3.SerLegBoxObj.Docked = "1028"; 	//top:256, right:515"
+
+	CyXChart3.SerLegBoxObj.top = "15";
+	CyXChart3.SerLegBoxObj.left = "20";
+	CyXChart3.SerLegBoxObj.width  = "220";
+	CyXChart3.SerLegBoxObj.height = "22";
+//////////////////////////////////////////////////////////////////
+
+	//Chart 외곽 Gradient 설정
+	var BK0Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK0Gradient.Type = "GradientType_BackwardDiagonal";
+	BK0Gradient.Colors.Item(0) = "#FFFFFF";
+	BK0Gradient.Colors.Item(1) = "#98BDE0";
+	BK0Gradient.Position.Item(0) = 0;
+	BK0Gradient.Position.Item(1) = 0.5;
+	BK0Gradient.Position.Item(2) = 1;
+	BK0Gradient.Factor.Item(0) = 0;
+	BK0Gradient.Factor.Item(1) = 0.5;
+	BK0Gradient.Factor.Item(2) = 1;
+	
+	CyXChart3.BackObject = BK0Gradient;
+
+
+	//Chart 내부 Gradient 설정
+	var BK1Gradient = CreateObject("ChartFX.ClientServer.GradientBack.62");
+		
+	BK1Gradient.Type = "GradientType_BackwardDiagonal";
+	BK1Gradient.Colors.Item(0) = "#FFFFFF";
+	BK1Gradient.Colors.Item(1) = "#BDD8F2";
+	BK1Gradient.Position.Item(0) = 0;
+	BK1Gradient.Position.Item(1) = 0.5;
+	BK1Gradient.Position.Item(2) = 1;
+	BK1Gradient.Factor.Item(0) = 0;
+	BK1Gradient.Factor.Item(1) = 0.5;
+	BK1Gradient.Factor.Item(2) = 1;
+	
+	CyXChart3.InsideBackObject = BK1Gradient;
+
+	CyXChart3.CloseData("COD_Values");
+	CyXChart3.CloseData("COD_Colors");	
+}
+]]></Script>
+</Window>

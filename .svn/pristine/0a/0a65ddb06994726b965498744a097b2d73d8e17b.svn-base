@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="175" Id="view100_sub100" Left="8" OnLoadCompleted="view100_sub100_OnLoadCompleted" PidAttrib="7" Title="공수실적영역" Top="8" Ver="1.0" Width="454" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" GroupKey="COMPANY_NM" Id="ds_manpower">
+				<Contents>
+					<colinfo id="COMPANY_NM" size="100" summ="default" type="STRING"/>
+					<colinfo id="EMP_NM" size="50" summ="default" type="STRING"/>
+					<colinfo id="TOT_PLAN" size="5" summ="default" type="DECIMAL"/>
+					<colinfo id="TOT_REAL" size="5" summ="default" type="DECIMAL"/>
+					<colinfo id="C_200909_PLAN" size="5" summ="default" type="DECIMAL"/>
+					<colinfo id="C_200909_REAL" size="5" summ="default" type="DECIMAL"/>
+					<colinfo id="C_200910_PLAN" size="5" summ="default" type="DECIMAL"/>
+					<colinfo id="C_200910_REAL" size="5" summ="default" type="DECIMAL"/>
+					<colinfo id="C_200911_PLAN" size="5" summ="default" type="DECIMAL"/>
+					<colinfo id="C_200911_REAL" size="5" summ="default" type="DECIMAL"/>
+					<record>
+						<C_200909_PLAN>1</C_200909_PLAN>
+						<C_200909_REAL>1</C_200909_REAL>
+						<C_200910_PLAN>1</C_200910_PLAN>
+						<C_200910_REAL>1</C_200910_REAL>
+						<C_200911_PLAN>1</C_200911_PLAN>
+						<C_200911_REAL>1</C_200911_REAL>
+						<COMPANY_NM>한국아이비엠(주)</COMPANY_NM>
+						<EMP_NM>이석영</EMP_NM>
+						<TOT_PLAN>3</TOT_PLAN>
+						<TOT_REAL>3</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>1</C_200909_PLAN>
+						<C_200909_REAL>1</C_200909_REAL>
+						<C_200910_PLAN>1</C_200910_PLAN>
+						<C_200910_REAL>1</C_200910_REAL>
+						<C_200911_PLAN>1</C_200911_PLAN>
+						<C_200911_REAL>1</C_200911_REAL>
+						<COMPANY_NM>한국아이비엠(주)</COMPANY_NM>
+						<EMP_NM>윤영민</EMP_NM>
+						<TOT_PLAN>3</TOT_PLAN>
+						<TOT_REAL>3</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>1</C_200909_PLAN>
+						<C_200909_REAL>1</C_200909_REAL>
+						<C_200910_PLAN>1</C_200910_PLAN>
+						<C_200910_REAL>1</C_200910_REAL>
+						<C_200911_PLAN>1</C_200911_PLAN>
+						<C_200911_REAL>1</C_200911_REAL>
+						<COMPANY_NM>한국아이비엠(주)</COMPANY_NM>
+						<EMP_NM>정수진</EMP_NM>
+						<TOT_PLAN>3</TOT_PLAN>
+						<TOT_REAL>3</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>0.3</C_200909_PLAN>
+						<C_200909_REAL>0.3</C_200909_REAL>
+						<C_200910_PLAN>0.5</C_200910_PLAN>
+						<C_200910_REAL>0.5</C_200910_REAL>
+						<C_200911_PLAN>0.2</C_200911_PLAN>
+						<C_200911_REAL>0.2</C_200911_REAL>
+						<COMPANY_NM>한국아이비엠(주)</COMPANY_NM>
+						<EMP_NM>이광림</EMP_NM>
+						<TOT_PLAN>1</TOT_PLAN>
+						<TOT_REAL>1</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>1</C_200909_PLAN>
+						<C_200909_REAL>1</C_200909_REAL>
+						<C_200910_PLAN>1</C_200910_PLAN>
+						<C_200910_REAL>1</C_200910_REAL>
+						<C_200911_PLAN>1</C_200911_PLAN>
+						<C_200911_REAL>1</C_200911_REAL>
+						<COMPANY_NM>한국아이비엠(주)</COMPANY_NM>
+						<EMP_NM>한규섭</EMP_NM>
+						<TOT_PLAN>3</TOT_PLAN>
+						<TOT_REAL>3</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>1</C_200909_PLAN>
+						<C_200909_REAL>1</C_200909_REAL>
+						<C_200910_PLAN>1</C_200910_PLAN>
+						<C_200910_REAL>1</C_200910_REAL>
+						<C_200911_PLAN>1</C_200911_PLAN>
+						<C_200911_REAL>1</C_200911_REAL>
+						<COMPANY_NM>롯데정보통신(주)</COMPANY_NM>
+						<EMP_NM>배형주</EMP_NM>
+						<TOT_PLAN>3</TOT_PLAN>
+						<TOT_REAL>3</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>1</C_200909_PLAN>
+						<C_200909_REAL>1</C_200909_REAL>
+						<C_200910_PLAN>1</C_200910_PLAN>
+						<C_200910_REAL>1</C_200910_REAL>
+						<C_200911_PLAN>1</C_200911_PLAN>
+						<C_200911_REAL>1</C_200911_REAL>
+						<COMPANY_NM>롯데정보통신(주)</COMPANY_NM>
+						<EMP_NM>전승우</EMP_NM>
+						<TOT_PLAN>3</TOT_PLAN>
+						<TOT_REAL>3</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>0.5</C_200909_PLAN>
+						<C_200909_REAL>0.25</C_200909_REAL>
+						<C_200910_PLAN>0.5</C_200910_PLAN>
+						<C_200910_REAL>0.5</C_200910_REAL>
+						<C_200911_PLAN>0.5</C_200911_PLAN>
+						<C_200911_REAL>0.5</C_200911_REAL>
+						<COMPANY_NM>롯데정보통신(주)</COMPANY_NM>
+						<EMP_NM>최동훈</EMP_NM>
+						<TOT_PLAN>1.5</TOT_PLAN>
+						<TOT_REAL>1.25</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>0.5</C_200909_PLAN>
+						<C_200909_REAL>0.25</C_200909_REAL>
+						<C_200910_PLAN>0.5</C_200910_PLAN>
+						<C_200910_REAL>0.5</C_200910_REAL>
+						<C_200911_PLAN>0.5</C_200911_PLAN>
+						<C_200911_REAL>0.5</C_200911_REAL>
+						<COMPANY_NM>롯데정보통신(주)</COMPANY_NM>
+						<EMP_NM>박정호</EMP_NM>
+						<TOT_PLAN>1.5</TOT_PLAN>
+						<TOT_REAL>1.25</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>1</C_200909_PLAN>
+						<C_200909_REAL>1</C_200909_REAL>
+						<C_200910_PLAN>1</C_200910_PLAN>
+						<C_200910_REAL>1</C_200910_REAL>
+						<C_200911_PLAN>1</C_200911_PLAN>
+						<C_200911_REAL>1</C_200911_REAL>
+						<COMPANY_NM>롯데정보통신(주)</COMPANY_NM>
+						<EMP_NM>조현주</EMP_NM>
+						<TOT_PLAN>3</TOT_PLAN>
+						<TOT_REAL>3</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>1</C_200909_PLAN>
+						<C_200909_REAL>1</C_200909_REAL>
+						<C_200910_PLAN>1</C_200910_PLAN>
+						<C_200910_REAL>1</C_200910_REAL>
+						<C_200911_PLAN>1</C_200911_PLAN>
+						<C_200911_REAL>1</C_200911_REAL>
+						<COMPANY_NM>롯데정보통신(주)</COMPANY_NM>
+						<EMP_NM>김현수</EMP_NM>
+						<TOT_PLAN>3</TOT_PLAN>
+						<TOT_REAL>3</TOT_REAL>
+					</record>
+					<record>
+						<C_200909_PLAN>1</C_200909_PLAN>
+						<C_200909_REAL>1</C_200909_REAL>
+						<C_200910_PLAN>1</C_200910_PLAN>
+						<C_200910_REAL>1</C_200910_REAL>
+						<C_200911_PLAN>1</C_200911_PLAN>
+						<C_200911_REAL>1</C_200911_REAL>
+						<COMPANY_NM>롯데정보통신(주)</COMPANY_NM>
+						<EMP_NM>김동현</EMP_NM>
+						<TOT_PLAN>3</TOT_PLAN>
+						<TOT_REAL>3</TOT_REAL>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" AutoFitEndLine="Hide" AutoSelect="TRUE" BindDataset="ds_manpower" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="175" CellEditAutoSize="TRUE" CellMoving="TRUE" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="151" Id="grd_list" InputPanel="FALSE" LineColor="default" LineType="ExHORZ" MinWidth="100" Right="454" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="24" TopSummary="TRUE" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="454">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="122"/>
+						<col width="55"/>
+						<col width="43"/>
+						<col width="44"/>
+						<col width="39"/>
+						<col width="36"/>
+						<col width="41"/>
+						<col width="36"/>
+						<col width="35"/>
+						<col width="35"/>
+					</columns>
+					<head>
+						<cell bkcolor="user13" col="0" color="user14" display="text" rowspan="2" text="소속사"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" rowspan="2" text="성명"/>
+						<cell bkcolor="user13" col="2" color="user14" colspan="2" display="text" text="합계"/>
+						<cell bkcolor="user13" col="4" color="user14" colspan="2" display="text" text="2009년9월"/>
+						<cell bkcolor="user13" col="6" color="user14" colspan="2" display="text" text="2009년10월"/>
+						<cell bkcolor="user13" col="8" color="user14" colspan="2" display="text" text="2009년11월"/>
+						<cell bkcolor="user13" col="2" color="user14" display="text" row="1" text="계획"/>
+						<cell bkcolor="user13" col="3" color="user14" display="text" row="1" text="실적"/>
+						<cell bkcolor="user13" col="4" color="user14" display="text" row="1" text="계획"/>
+						<cell bkcolor="user13" col="5" color="user14" display="text" row="1" text="실적"/>
+						<cell bkcolor="user13" col="6" color="user14" display="text" row="1" text="계획"/>
+						<cell bkcolor="user13" col="7" color="user14" display="text" row="1" text="실적"/>
+						<cell bkcolor="user13" col="8" color="user14" display="text" row="1" text="계획"/>
+						<cell bkcolor="user13" col="9" color="user14" display="text" row="1" text="실적"/>
+					</head>
+					<body>
+						<cell align="center" bkcolor='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;11&quot;&#32;)' bkcolor2='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;12&quot;&#32;)' col="0" colid="COMPANY_NM" color="user16" display="text" expr='iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&#32;&quot;&#32;소계&quot;,&#32;COMPANY_NM&#32;)'/>
+						<cell align="center" bkcolor='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;11&quot;&#32;)' bkcolor2='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;12&quot;&#32;)' col="1" colid="EMP_NM" color="user16" display="normal" expr="iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&apos;&apos;,&#32;EMP_NM&#32;)"/>
+						<cell align="right" bkcolor='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;11&quot;&#32;)' bkcolor2='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;12&quot;&#32;)' col="2" colid="TOT_PLAN" color="user16" display="number" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;date&apos;,&#32;&apos;none&apos;)" expandimage="btn_seCal" expandsize="18" Mask="0.#0" Valign="Center"/>
+						<cell align="right" bkcolor='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;11&quot;&#32;)' bkcolor2='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;12&quot;&#32;)' col="3" colid="TOT_REAL" color="user16" display="number" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;date&apos;,&#32;&apos;none&apos;)" expandimage="btn_seCal" expandsize="18" Mask="0.#0" Valign="Center"/>
+						<cell align="right" bkcolor='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;11&quot;&#32;)' bkcolor2='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;12&quot;&#32;)' col="4" colid="C_200909_PLAN" color="user16" display="number" Mask="0.#0" Valign="Center"/>
+						<cell align="right" bkcolor='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;11&quot;&#32;)' bkcolor2='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;12&quot;&#32;)' col="5" colid="C_200909_REAL" color="user16" display="number" expandsize="18" Mask="0.#0" Valign="Center"/>
+						<cell align="right" bkcolor='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;11&quot;&#32;)' bkcolor2='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;12&quot;&#32;)' col="6" colid="C_200910_PLAN" color="user16" display="number" Mask="0.#0" Valign="Center"/>
+						<cell align="right" bkcolor='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;11&quot;&#32;)' bkcolor2='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;12&quot;&#32;)' col="7" colid="C_200910_REAL" color="user16" display="number" Mask="0.#0" Valign="Center"/>
+						<cell align="right" bkcolor='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;11&quot;&#32;)' bkcolor2='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;12&quot;&#32;)' col="8" colid="C_200911_PLAN" color="user16" display="number" Mask="0.#0" Valign="Center"/>
+						<cell align="right" bkcolor='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;11&quot;&#32;)' bkcolor2='expr:iif(&#32;RowLevel&#32;==&#32;1&#32;,&#32;&quot;aliceblue&quot;,&#32;&quot;User&#32;Color&#32;12&quot;&#32;)' col="9" colid="C_200911_REAL" color="user16" display="number" Mask="0.#0" Valign="Center"/>
+					</body>
+					<summary>
+						<cell align="center" bkcolor="honeydew" col="0" color="user14" display="text" text="총계"/>
+						<cell align="center" bkcolor="honeydew" col="1" color="user14" display="text"/>
+						<cell align="right" bkcolor="honeydew" col="2" color="user14" display="number" expr="sum(&apos;TOT_PLAN&apos;)" Mask="0.#0"/>
+						<cell align="right" bkcolor="honeydew" col="3" color="user14" display="number" expr="sum(&apos;TOT_REAL&apos;)" Mask="0.#0"/>
+						<cell align="right" bkcolor="honeydew" col="4" color="user14" display="number" expr="sum(&apos;C_200909_PLAN&apos;)" Mask="0.#0"/>
+						<cell align="right" bkcolor="honeydew" col="5" color="user14" display="number" expr="sum(&apos;C_200909_REAL&apos;)" Mask="0.#0"/>
+						<cell align="right" bkcolor="honeydew" col="6" color="user14" display="number" expr="sum(&apos;C_200910_PLAN&apos;)" Mask="0.#0"/>
+						<cell align="right" bkcolor="honeydew" col="7" color="user14" display="number" expr="sum(&apos;C_200910_REAL&apos;)" Mask="0.#0"/>
+						<cell align="right" bkcolor="honeydew" col="8" color="user14" display="number" expr="sum(&apos;C_200911_PLAN&apos;)" Mask="0.#0"/>
+						<cell align="right" bkcolor="honeydew" col="9" color="user14" display="number" expr="sum(&apos;C_200911_REAL&apos;)" Mask="0.#0"/>
+					</summary>
+				</format>
+			</contents>
+		</Grid>
+		<Image Height="12" Id="Image14" ImageID="M_title_2depth_icon" TabOrder="2" Top="6" Transparent="TRUE" Width="13"></Image>
+		<Image Align="Left" Height="17" Id="img_subTitle" Left="17" OnClick="img_subTitle_OnClick" Static="FALSE" Style="M_title_2depth" TabOrder="3" Text="공수실적" Top="4" Transparent="TRUE" Width="69"></Image>
+	</Form>
+	<Script><![CDATA[
+function resetBottom(arg_value)
+{
+	grd_list.bottom += arg_value;
+	trace("view300::Bottom="+ grd_list.bottom);
+}
+
+
+function resetRight(arg_value)
+{
+	grd_list.right += arg_value;
+	trace("view300::right="+ grd_list.right);
+}
+
+
+function resizeAll(arg_type, arg_right, arg_bottom)
+{
+	switch(arg_type)
+	{
+		case 100:	// [x,y] [887,434]
+			grd_list.right 	= 854;
+			grd_list.bottom = 23;
+			break;
+		case 200:	// [x,y] [103,434]
+			grd_list.right 	= 70;
+			grd_list.bottom = 23;
+			break;
+		case 300:	// [x,y] [887,163]
+			grd_list.right 	= 854;
+			grd_list.bottom = 294;
+			break;
+		case 400:	// [x,y] [103,163]
+			grd_list.right 	= 70;
+			grd_list.bottom = 294;
+			break;
+		default:
+			break;
+	}
+}
+
+function img_subTitle_OnClick(obj,nX,nY)
+{
+	parent.setMaxView(300);
+}
+
+function view100_sub100_OnLoadCompleted(obj)
+{
+	transaction("view_sub300", 
+			"svcLotte::demo/selectProjectHRResultList.mip", 
+			"", 
+			"ds_manpower=ProjectHRResult", 
+			"", 
+			"fnCallbackLotte");
+	
+}
+]]></Script>
+</Window>

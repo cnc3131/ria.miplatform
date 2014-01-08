@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="form" Left="8" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="4" Width="1000"></Image>
+		<Shockwave Bottom="592" FrameNum="4" Height="560" Id="Shockwave0" Left="112" Menu="false" Movie="D:\Demo\MiPlatform\SSS\semi\flash\image\map\imon_main.swf" Playing="false" Right="896" Top="32" Width="784"></Shockwave>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="16" LeftMargin="18" Style="cm_title_sub" TabOrder="3" Text="&#32;Flash&#32;Map" Top="24" Width="112"></Image>
+	</Form>
+	<Script></Script>
+</Window>

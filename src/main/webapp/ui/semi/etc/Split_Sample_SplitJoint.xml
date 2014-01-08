@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="480" Id="form" Left="8" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="640" WorkArea="true">
+		<Div BKColor="skyblue" Height="200" Id="Div0" OnSize="Div0_OnSize" TabOrder="1" Text="Div0" Width="640">
+			<Contents></Contents>
+		</Div>
+		<Split Border="Flat" Direct="VERT" Height="8" Id="Split0" Top="212" Width="275">
+			<Contents>
+				<LeftOrTop>
+					<Bind CompID="Div0"/>
+				</LeftOrTop>
+				<RightOrBottom>
+					<Bind CompID="Div1"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<Split Border="Flat" Direct="VERT" Height="8" Id="Split1" Left="283" Top="212" Width="357">
+			<Contents>
+				<RightOrBottom>
+					<Bind CompID="Div2"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<Split Border="Flat" Height="264" Id="Split2" Left="275" Top="220" Width="8">
+			<Contents>
+				<LeftOrTop>
+					<Bind CompID="Div1"/>
+				</LeftOrTop>
+				<RightOrBottom>
+					<Bind CompID="Div2"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<SplitJoint Border="Flat" Height="8" Id="SplitJoint0" JointBottom="Split2" JointLeft="Split0" JointRight="Split1" Left="275" Top="212" Width="8"></SplitJoint>
+		<Div BKColor="green" Height="240" Id="Div1" TabOrder="6" Text="Div1" Top="240" Width="264">
+			<Contents></Contents>
+		</Div>
+		<Div BKColor="blue" Height="239" Id="Div2" Left="296" TabOrder="7" Text="Div1" Top="240" Width="343">
+			<Contents></Contents>
+		</Div>
+	</Form>
+	<Script><![CDATA[
+function Div0_OnSize(obj,nCx,nCy)
+{
+	trace("key::"+nCx);
+}
+]]></Script>
+</Window>

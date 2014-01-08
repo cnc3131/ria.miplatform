@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="CrossBrowserForm" Left="8" PidAttrib="7" Title="CrossBrowserForm" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="0" Width="1000"></Image>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="19" LeftMargin="18" Style="cm_title_sub" TabOrder="0" Text="Cross&#32;Browser" Top="27" Width="216"></Image>
+	</Form>
+	<Script></Script>
+</Window>

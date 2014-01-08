@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding="euc-kr" ?>
+<root>
+	<params>
+		<param id='DEVICE' type='string'>WIN32</param>
+		<param id='SOURCE' type='string'>etc_files</param>
+		<param id="TARGET" type="string">%component%</param>
+		<param id='FILENAME' type='string'></param>
+		<param id='VERSION' type='string'>2009,9,17,1</param>
+		<param id='ACTION' type='string'>DOWN</param>
+		<param id='STATUS' type='string'>0</param>
+	</params>
+	<dataset id='WIN32'>
+		<colinfo id='DEVICE' type='string' size='255'/>
+		<colinfo id='SOURCE' type='string' size='255'/>
+		<colinfo id='TARGET' type='string' size='255'/>
+		<colinfo id='FILENAME' type='string' size='255'/>
+		<colinfo id='VERSION' type='string' size='255'/>
+		<colinfo id='ACTION' type='string' size='255'/>
+		<colinfo id='STATUS' type='string' size='2'/>
+
+		<!-- 마이플랫폼 추가 컴포넌트 -->
+		<record><FILENAME>ExtCommonApiU.dll</FILENAME>	<VERSION>system::2009,9,28,1</VERSION></record>
+		<record><FILENAME>CyHttpFileU.dll</FILENAME>	<VERSION>system::2009,4,27,1</VERSION></record>
+	   
+        
+        <!-- 바코드 프린터 추가 컴포넌트 -->
+        <record><FILENAME>TBS_DLL.dll</FILENAME>  <VERSION>1,0,0,1</VERSION></record>
+        <record><FILENAME>zebraprint.dll</FILENAME>  <VERSION>1,0,0,1</VERSION></record>
+        <record><FILENAME>CyTBSPrnU.dll</FILENAME>  <VERSION>system::2009,11,23,1</VERSION></record>
+        <record><FILENAME>CyZEBRAPrnU.dll</FILENAME>  <VERSION>system::2009,11,23,1</VERSION></record>
+	
+		<!-- 마이플랫폼 리소스 -->
+		<record><FILENAME>resource.xml</FILENAME><VERSION>2009,9,9,1</VERSION></record>
+        
+        <record><FILENAME>mainicon.ico</FILENAME><VERSION>2009,9,9,1</VERSION></record>
+		<record><FILENAME>updater.gif</FILENAME><VERSION>2009,9,9,1</VERSION></record>
+		<record><FILENAME>starter.gif</FILENAME><VERSION>2009,9,9,1</VERSION></record>
+        
+        <!-- NetEditor 추가 컴포넌트 -->
+		<record>
+			<TARGET>{B375275F-4705-4D2C-88C1-A891105B9ABA}</TARGET>
+			<FILENAME>NetEditor.cab</FILENAME>
+			<VERSION>system::3,0,2,9</VERSION>
+			<ACTION>DOWN</ACTION>
+		</record>
+				
+		<!-- rdviewer -->
+		<!-- record>
+			<TARGET>{ADB6D20D-80A1-4aa4-88AE-B2DC820DA076}</TARGET>
+			<FILENAME>rdviewer50.cab</FILENAME>
+			<VERSION>system::5,0,0,177</VERSION>
+			<ACTION>DOWN</ACTION>
+		</record-->
+		
+		<!-- teechart -->
+		<!-- record>
+			<TARGET>{FAB9B41C-87D6-474D-AB7E-F07D78F2422E}</TARGET>
+			<FILENAME>teechart7.cab</FILENAME>
+			<VERSION>system::7,0,1,3</VERSION>
+			<ACTION>DOWN</ACTION>
+		</record-->
+		
+	</dataset>
+</root>

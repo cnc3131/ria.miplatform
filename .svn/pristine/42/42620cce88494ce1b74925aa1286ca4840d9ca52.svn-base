@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="105" Id="top" Left="8" OnLoadCompleted="top_OnLoadCompleted" PidAttrib="7" Top="8" Ver="1.0" Width="1024" WorkArea="true">
+		<Image FillType="STRETCH" Height="106" Id="Image0" ImageID="T_topbg" TabOrder="1" Top="-1" Width="1024"></Image>
+		<Image FillType="STRETCH" Height="20" Id="Image3" ImageID="T_combobg_M" Left="772" TabOrder="10" Top="40" Width="82"></Image>
+		<Combo Border="None" Height="14" Id="Combo0" Left="765" Search="FILTERED" TabOrder="23" Text="Combo0" Top="41" Width="89"></Combo>
+		<Image Height="70" Id="Image1" ImageID="T_logo2" TabOrder="2" Top="-1" Width="388"></Image>
+		<Image Cursor="HAND" Height="35" Id="img_menu_1" ImageID="T_menu_textbg1" OnClick="img_menu_OnClick" OnMouseOut="Image6_OnMouseOut" OnMouseOver="Image6_OnMouseOver" Static="FALSE" Style="T_menu" TabOrder="3" Text="프로젝트&#32;상세" Top="69" Width="130"></Image>
+		<Image Cursor="HAND" Height="35" Id="img_menu_2" ImageID="T_menu_textbg1" Left="130" OnClick="img_menu_OnClick" OnMouseOut="Image7_OnMouseOut" OnMouseOver="Image7_OnMouseOver" Static="FALSE" Style="T_menu" TabOrder="4" Text="프로젝트&#32;종합현황" Top="69" Width="130"></Image>
+		<Image Cursor="HAND" Height="22" Id="btn_vertical" ImageID="T_windowicon_01" Left="942" OnClick="btn_vertical_OnClick" Static="FALSE" TabOrder="6" Top="78" Width="23"></Image>
+		<Image Cursor="HAND" Height="22" Id="btn_horizontal" ImageID="T_windowicon_02" Left="965" OnClick="btn_horizontal_OnClick" Static="FALSE" TabOrder="7" Top="78" Width="23"></Image>
+		<Image Cursor="HAND" Height="22" Id="btn_cascade" ImageID="T_windowicon_03" Left="988" OnClick="btn_cascade_OnClick" Static="FALSE" TabOrder="8" Top="78" Width="23"></Image>
+		<Image Cursor="HAND" Height="35" Id="img_menu_3" ImageID="T_menu_textbg1" Left="260" OnClick="img_menu_OnClick" OnMouseOut="Image8_OnMouseOut" OnMouseOver="Image8_OnMouseOver" Static="FALSE" Style="T_menu" TabOrder="5" Text="정보화&#32;통계관리" Top="69" Width="130"></Image>
+		<Image Height="20" Id="Image2" ImageID="T_combobg_L" Left="757" TabOrder="9" Top="40" Width="15"></Image>
+		<Image Height="20" Id="Image4" ImageID="T_combobg_R" Left="845" TabOrder="11" Top="40" Width="15"></Image>
+		<Image Height="20" Id="Image5" ImageID="T_combobg_L" Left="864" TabOrder="12" Top="40" Width="15"></Image>
+		<Image FillType="STRETCH" Height="20" Id="Image10" ImageID="T_combobg_M" Left="879" TabOrder="13" Top="40" Width="121"></Image>
+		<Image Height="20" Id="Image11" ImageID="T_combobg_R" Left="1000" TabOrder="14" Top="40" Width="15"></Image>
+		<Image Height="15" Id="img_logout" ImageID="T_logout" Left="963" OnClick="img_logout_OnClick" TabOrder="15" Top="9" Width="51"></Image>
+		<Image Height="15" Id="Image13" ImageID="T_familysite" Left="889" TabOrder="16" Top="9" Width="63"></Image>
+		<Image Height="15" Id="Image14" ImageID="T_home" Left="838" TabOrder="17" Top="9" Width="40"></Image>
+		<Edit Border="None" Height="14" Id="Edit0" Left="877" TabOrder="18" Text="Edit0" Top="44" Width="113"></Edit>
+		<Image Height="14" Id="Image15" ImageID="T_comboicon_2" Left="993" TabOrder="19" Top="43" Width="14"></Image>
+		<Static Height="34" Id="Static0" Left="65" Style="T_sysinfo" TabOrder="20" Text="프로젝트&#32;관리&#32;시스템" Top="34" Width="219"></Static>
+		<Static Height="23" Id="Static1" Left="275" Style="T_userinfo" TabOrder="21" Text="접속자&#32;:&#32;홍길동&#32;/&#32;소속기관&#32;:&#32;해외사업팀" Top="40" Width="221"></Static>
+		<Image Height="14" Id="Image16" ImageID="T_userinfoicon" Left="259" TabOrder="22" Top="41" Width="8"></Image>
+		<Image Height="16" Id="Image17" ImageID="T_comboicon_1" Left="835" OnClick="Image17_OnClick" Static="FALSE" TabOrder="24" Top="42" Width="17"></Image>
+		<File Bottom="60" Height="24" Id="File0" Left="502" Right="526" TabOrder="24" Top="36" Width="24"></File>
+		<Image Height="35" Id="img_menu_4" ImageID="T_menu_textbg1" Left="396" OnMouseOut="Image8_OnMouseOut" OnMouseOver="Image8_OnMouseOver" Static="FALSE" Style="T_menu" TabOrder="25" Text="HomePage" Top="69" Width="130"></Image>
+	</Form>
+	<Script><![CDATA[
+function top_OnLoadCompleted(obj)
+{
+	img_menu_1.Text = gds_menu.GetColumn(1, "MENUNAME");
+	img_menu_2.Text = gds_menu.GetColumn(2, "MENUNAME");
+	img_menu_3.Text = gds_menu.GetColumn(3, "MENUNAME");
+}
+
+function Image6_OnMouseOver(obj,nX,nY)
+{
+	obj.Color="#ff7e00";
+}
+
+function Image6_OnMouseOut(obj)
+{
+	obj.Color="#4D4D4D";
+}
+
+function Image7_OnMouseOver(obj,nX,nY)
+{
+	obj.Color="#ff7e00";
+}
+
+function Image7_OnMouseOut(obj)
+{
+	obj.Color="#4D4D4D";
+}
+
+function Image8_OnMouseOver(obj,nX,nY)
+{
+	obj.Color="#ff7e00";
+}
+
+function Image8_OnMouseOut(obj)
+{
+	obj.Color="#4D4D4D";
+}
+
+function btn_vertical_OnClick(obj,nX,nY)
+{
+	ArrangeWindow("VTile");
+}
+
+function btn_horizontal_OnClick(obj)
+{
+	ArrangeWindow("HTile");
+}
+
+function btn_cascade_OnClick(obj)
+{
+	ArrangeWindow("Cascade");
+}
+
+function img_popup_OnClick(obj,nX,nY)
+{
+	var objForm = GetTopWindow();
+	var objFormId = objForm.id;
+	var objVal = objFormId;
+	
+	if ( length(objVal) == 0 ) return;
+	
+	//trace("objVal : " + objVal);
+	
+	var fRow = gds_menu.FindRow("FORMID", objVal);
+	var str_prefix = gds_menu.GetColumn(fRow, "PREFIX");
+	var str_formid = gds_menu.GetColumn(fRow, "FORMID");
+	
+		
+	Dialog(str_prefix+"::"+str_formid, "", -1, -1, true, -1, -1);
+	
+}
+
+function Image17_OnClick(obj,nX,nY)
+{
+	combo0.ActionDownList();
+}
+
+function Image7_OnClick(obj,nX,nY)
+{
+	var strDir = replace(File0.AliasToRealPath("%TOBE%") + "Miplatform320U\\MiPlatform320U.exe","\\","\\\\");
+	alert(strDir);
+	execProc(strDir, "TOBE_DEMO");
+}
+
+function img_logout_OnClick(obj,nX,nY)
+{
+	gsUserId = "";
+	gsUserNm = "";   
+	gds_menu.Reset();
+	CloseSession();  
+	LoginSession();
+}
+
+function img_menu_OnClick(obj,nX,nY)
+{
+	var menuRow = gds_menu.FindRow("MENUNAME", obj.text );
+	
+	if(menuRow <0) return;
+	gds_menu.row  = menuRow;
+	
+	global.Frame_Left.pdiv_menu.Open_url( menuRow );
+}
+]]></Script>
+</Window>

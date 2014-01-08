@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="view200" Left="8" OnLoadCompleted="view200_OnLoadCompleted" PidAttrib="7" Title="프로젝트&#32;종합현황" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="dsCalendar">
+				<Contents>
+					<colinfo id="day1" size="256" type="INT"/>
+					<colinfo id="day2" size="256" type="INT"/>
+					<colinfo id="day3" size="256" type="INT"/>
+					<colinfo id="day4" size="256" type="INT"/>
+					<colinfo id="day5" size="256" type="INT"/>
+					<colinfo id="day6" size="256" type="INT"/>
+					<colinfo id="day7" size="256" type="INT"/>
+					<colinfo id="day8" size="256" type="INT"/>
+					<colinfo id="day9" size="256" type="INT"/>
+					<colinfo id="day10" size="256" type="INT"/>
+					<colinfo id="day11" size="256" type="INT"/>
+					<colinfo id="day12" size="256" type="INT"/>
+					<colinfo id="day13" size="256" type="INT"/>
+					<colinfo id="day14" size="256" type="INT"/>
+					<colinfo id="day15" size="256" type="INT"/>
+					<colinfo id="day16" size="256" type="INT"/>
+					<colinfo id="day17" size="256" type="INT"/>
+					<colinfo id="day18" size="256" type="INT"/>
+					<colinfo id="day19" size="256" type="INT"/>
+					<colinfo id="day20" size="256" type="INT"/>
+					<colinfo id="day21" size="256" type="INT"/>
+					<colinfo id="day22" size="256" type="INT"/>
+					<colinfo id="day23" size="256" type="INT"/>
+					<colinfo id="day24" size="256" type="INT"/>
+					<colinfo id="day25" size="256" type="INT"/>
+					<colinfo id="day26" size="256" type="INT"/>
+					<colinfo id="day27" size="256" type="INT"/>
+					<colinfo id="day28" size="256" type="INT"/>
+					<colinfo id="day29" size="256" type="INT"/>
+					<colinfo id="day30" size="256" type="INT"/>
+					<colinfo id="day31" size="256" type="INT"/>
+					<record>
+						<day1>100</day1>
+						<day10>10</day10>
+						<day11>10</day11>
+						<day12>10</day12>
+						<day13>90</day13>
+						<day14>86</day14>
+						<day15>85</day15>
+						<day16/>
+						<day17/>
+						<day18/>
+						<day19/>
+						<day2>90</day2>
+						<day20/>
+						<day21/>
+						<day22/>
+						<day23/>
+						<day24/>
+						<day25/>
+						<day26/>
+						<day27/>
+						<day28/>
+						<day29/>
+						<day3>90</day3>
+						<day30/>
+						<day31/>
+						<day4>85</day4>
+						<day5>90</day5>
+						<day6>99</day6>
+						<day7>10</day7>
+						<day8>10</day8>
+						<day9>10</day9>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="dsTest">
+				<Contents>
+					<colinfo id="DEPT_C" size="2" type="STRING"/>
+					<colinfo id="DEPT_NM" size="20" type="STRING"/>
+					<colinfo id="CNT_SUM" size="22" type="STRING"/>
+					<colinfo id="NORM" size="22" type="STRING"/>
+					<colinfo id="YELLOW" size="22" type="STRING"/>
+					<colinfo id="RED_SUM" size="22" type="STRING"/>
+					<colinfo id="RED_BEF" size="22" type="STRING"/>
+					<colinfo id="RED_AFT" size="22" type="STRING"/>
+					<colinfo id="STATUS_G" size="1" type="STRING"/>
+					<colinfo id="TGET_SELL_AMT" size="12" type="STRING"/>
+					<colinfo id="SELL_AMT" size="12" type="STRING"/>
+					<colinfo id="ACHIV_RATE" size="12" type="STRING"/>
+					<colinfo id="CCOMP_TGET_RATE" size="12" type="STRING"/>
+					<colinfo id="CCOMP_SELL_RATE" size="12" type="STRING"/>
+					<colinfo id="CCOMP_NM" size="61" type="STRING"/>
+					<colinfo id="SELL_AMT_SORT" size="22" type="STRING"/>
+					<colinfo id="CCOMP_TGET_AMT" size="22" type="STRING"/>
+					<colinfo id="CCOMP_COMP_AMT" size="22" type="STRING"/>
+					<colinfo id="CCOMP_CCOMP_AMT" size="22" type="STRING"/>
+					<colinfo id="st1" size="1" type="STRING"/>
+					<colinfo id="st2" size="1" type="STRING"/>
+					<colinfo id="st3" size="1" type="STRING"/>
+					<colinfo id="st4" size="1" type="STRING"/>
+					<colinfo id="st5" size="1" type="STRING"/>
+					<colinfo id="st6" size="1" type="STRING"/>
+					<colinfo id="st7" size="1" type="STRING"/>
+					<colinfo id="st8" size="1" type="STRING"/>
+					<colinfo id="st9" size="1" type="STRING"/>
+					<colinfo id="st10" size="1" type="STRING"/>
+					<colinfo id="st11" size="1" type="STRING"/>
+					<colinfo id="st12" size="1" type="STRING"/>
+					<colinfo id="st13" size="1" type="STRING"/>
+					<colinfo id="st14" size="1" type="STRING"/>
+					<colinfo id="st15" size="1" type="STRING"/>
+					<colinfo id="st16" size="1" type="STRING"/>
+					<colinfo id="st17" size="1" type="STRING"/>
+					<colinfo id="st18" size="1" type="STRING"/>
+					<colinfo id="st19" size="1" type="STRING"/>
+					<colinfo id="st20" size="1" type="STRING"/>
+					<colinfo id="st21" size="1" type="STRING"/>
+					<colinfo id="st22" size="1" type="STRING"/>
+					<colinfo id="st23" size="1" type="STRING"/>
+					<colinfo id="st24" size="1" type="STRING"/>
+					<colinfo id="st25" size="1" type="STRING"/>
+					<colinfo id="st26" size="1" type="STRING"/>
+					<colinfo id="st27" size="1" type="STRING"/>
+					<colinfo id="st28" size="1" type="STRING"/>
+					<colinfo id="st29" size="1" type="STRING"/>
+					<colinfo id="st30" size="1" type="STRING"/>
+					<colinfo id="st31" size="1" type="STRING"/>
+					<record>
+						<ACHIV_RATE>119</ACHIV_RATE>
+						<CCOMP_CCOMP_AMT>0</CCOMP_CCOMP_AMT>
+						<CCOMP_COMP_AMT>0</CCOMP_COMP_AMT>
+						<CCOMP_NM></CCOMP_NM>
+						<CCOMP_SELL_RATE></CCOMP_SELL_RATE>
+						<CCOMP_TGET_AMT>0</CCOMP_TGET_AMT>
+						<CCOMP_TGET_RATE>100.5</CCOMP_TGET_RATE>
+						<CNT_SUM>105</CNT_SUM>
+						<DEPT_C>00</DEPT_C>
+						<DEPT_NM>전체&#32;&#32;</DEPT_NM>
+						<NORM>66</NORM>
+						<RED_AFT>8</RED_AFT>
+						<RED_BEF>14</RED_BEF>
+						<RED_SUM>22</RED_SUM>
+						<SELL_AMT>696</SELL_AMT>
+						<SELL_AMT_SORT></SELL_AMT_SORT>
+						<st1>1</st1>
+						<st10>1</st10>
+						<st11>1</st11>
+						<st12>1</st12>
+						<st13>1</st13>
+						<st14>1</st14>
+						<st15>1</st15>
+						<st16>1</st16>
+						<st17>1</st17>
+						<st18>1</st18>
+						<st19>2</st19>
+						<st2>1</st2>
+						<st20>2</st20>
+						<st21>2</st21>
+						<st22>2</st22>
+						<st23>3</st23>
+						<st24>3</st24>
+						<st25>3</st25>
+						<st26>3</st26>
+						<st27>3</st27>
+						<st28>3</st28>
+						<st29>3</st29>
+						<st3>1</st3>
+						<st30>3</st30>
+						<st31>3</st31>
+						<st4>1</st4>
+						<st5>1</st5>
+						<st6>1</st6>
+						<st7>1</st7>
+						<st8>1</st8>
+						<st9>1</st9>
+						<STATUS_G>0</STATUS_G>
+						<TGET_SELL_AMT>587</TGET_SELL_AMT>
+						<YELLOW>17</YELLOW>
+					</record>
+					<record>
+						<ACHIV_RATE>117</ACHIV_RATE>
+						<CCOMP_CCOMP_AMT></CCOMP_CCOMP_AMT>
+						<CCOMP_COMP_AMT>0</CCOMP_COMP_AMT>
+						<CCOMP_NM>닥스&#32;(정상+행사)</CCOMP_NM>
+						<CCOMP_SELL_RATE></CCOMP_SELL_RATE>
+						<CCOMP_TGET_AMT>1164</CCOMP_TGET_AMT>
+						<CCOMP_TGET_RATE>94</CCOMP_TGET_RATE>
+						<CNT_SUM>94</CNT_SUM>
+						<DEPT_C>7L</DEPT_C>
+						<DEPT_NM>J/N</DEPT_NM>
+						<NORM>59</NORM>
+						<RED_AFT>8</RED_AFT>
+						<RED_BEF>11</RED_BEF>
+						<RED_SUM>19</RED_SUM>
+						<SELL_AMT>655</SELL_AMT>
+						<SELL_AMT_SORT>655</SELL_AMT_SORT>
+						<st1>1</st1>
+						<st10>1</st10>
+						<st11>1</st11>
+						<st12>1</st12>
+						<st13>1</st13>
+						<st14>1</st14>
+						<st15>1</st15>
+						<st16>1</st16>
+						<st17>1</st17>
+						<st18>1</st18>
+						<st19>2</st19>
+						<st2>1</st2>
+						<st20>2</st20>
+						<st21>2</st21>
+						<st22>2</st22>
+						<st23>2</st23>
+						<st24>3</st24>
+						<st25>3</st25>
+						<st26>3</st26>
+						<st27>3</st27>
+						<st28>3</st28>
+						<st29>3</st29>
+						<st3>1</st3>
+						<st30>3</st30>
+						<st31>3</st31>
+						<st4>1</st4>
+						<st5>1</st5>
+						<st6>1</st6>
+						<st7>1</st7>
+						<st8>1</st8>
+						<st9>1</st9>
+						<STATUS_G>1</STATUS_G>
+						<TGET_SELL_AMT>558</TGET_SELL_AMT>
+						<YELLOW>16</YELLOW>
+					</record>
+					<record>
+						<ACHIV_RATE>96</ACHIV_RATE>
+						<CCOMP_CCOMP_AMT></CCOMP_CCOMP_AMT>
+						<CCOMP_COMP_AMT></CCOMP_COMP_AMT>
+						<CCOMP_NM>먼싱웨어&#32;(정상+행사)</CCOMP_NM>
+						<CCOMP_SELL_RATE></CCOMP_SELL_RATE>
+						<CCOMP_TGET_AMT></CCOMP_TGET_AMT>
+						<CCOMP_TGET_RATE>70</CCOMP_TGET_RATE>
+						<CNT_SUM>2</CNT_SUM>
+						<DEPT_C>7N</DEPT_C>
+						<DEPT_NM>E/D</DEPT_NM>
+						<NORM>2</NORM>
+						<RED_AFT>0</RED_AFT>
+						<RED_BEF>0</RED_BEF>
+						<RED_SUM>0</RED_SUM>
+						<SELL_AMT>480</SELL_AMT>
+						<SELL_AMT_SORT>16</SELL_AMT_SORT>
+						<st1>1</st1>
+						<st10>1</st10>
+						<st11>1</st11>
+						<st12>1</st12>
+						<st13>1</st13>
+						<st14>1</st14>
+						<st15>1</st15>
+						<st16>1</st16>
+						<st17>1</st17>
+						<st18>1</st18>
+						<st19>1</st19>
+						<st2>1</st2>
+						<st20>1</st20>
+						<st21>1</st21>
+						<st22>1</st22>
+						<st23>1</st23>
+						<st24>1</st24>
+						<st25>1</st25>
+						<st26>1</st26>
+						<st27>1</st27>
+						<st28>1</st28>
+						<st29>1</st29>
+						<st3>1</st3>
+						<st30>1</st30>
+						<st31>3</st31>
+						<st4>1</st4>
+						<st5>1</st5>
+						<st6>1</st6>
+						<st7>1</st7>
+						<st8>1</st8>
+						<st9>1</st9>
+						<STATUS_G>2</STATUS_G>
+						<TGET_SELL_AMT>500</TGET_SELL_AMT>
+						<YELLOW>0</YELLOW>
+					</record>
+					<record>
+						<ACHIV_RATE>72</ACHIV_RATE>
+						<CCOMP_CCOMP_AMT></CCOMP_CCOMP_AMT>
+						<CCOMP_COMP_AMT></CCOMP_COMP_AMT>
+						<CCOMP_NM></CCOMP_NM>
+						<CCOMP_SELL_RATE></CCOMP_SELL_RATE>
+						<CCOMP_TGET_AMT></CCOMP_TGET_AMT>
+						<CCOMP_TGET_RATE>110</CCOMP_TGET_RATE>
+						<CNT_SUM>9</CNT_SUM>
+						<DEPT_C>7S</DEPT_C>
+						<DEPT_NM>S/E</DEPT_NM>
+						<NORM>5</NORM>
+						<RED_AFT>0</RED_AFT>
+						<RED_BEF>3</RED_BEF>
+						<RED_SUM>3</RED_SUM>
+						<SELL_AMT>400</SELL_AMT>
+						<SELL_AMT_SORT>25</SELL_AMT_SORT>
+						<st1>1</st1>
+						<st10>1</st10>
+						<st11>1</st11>
+						<st12>1</st12>
+						<st13>1</st13>
+						<st14>1</st14>
+						<st15>1</st15>
+						<st16>1</st16>
+						<st17>2</st17>
+						<st18>2</st18>
+						<st19>2</st19>
+						<st2>1</st2>
+						<st20>3</st20>
+						<st21>3</st21>
+						<st22>3</st22>
+						<st23>3</st23>
+						<st24>3</st24>
+						<st25>3</st25>
+						<st26>3</st26>
+						<st27>3</st27>
+						<st28>3</st28>
+						<st29>3</st29>
+						<st3>1</st3>
+						<st30>3</st30>
+						<st31>3</st31>
+						<st4>1</st4>
+						<st5>1</st5>
+						<st6>1</st6>
+						<st7>1</st7>
+						<st8>1</st8>
+						<st9>1</st9>
+						<STATUS_G>0</STATUS_G>
+						<TGET_SELL_AMT>550</TGET_SELL_AMT>
+						<YELLOW>1</YELLOW>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_condition">
+				<Contents>
+					<colinfo id="PRJ_NM" size="200" summ="default" type="STRING"/>
+					<colinfo id="PRJ_TYPE" size="30" summ="default" type="STRING"/>
+					<colinfo id="CUSTOMER_TYPE" size="30" summ="default" type="STRING"/>
+					<colinfo id="PRJ_COUNTRY" size="50" summ="default" type="STRING"/>
+					<colinfo id="PM" size="30" summ="default" type="STRING"/>
+					<colinfo id="PM_POSITION" size="50" summ="default" type="STRING"/>
+					<colinfo id="PRJ_DEPT" size="50" summ="default" type="STRING"/>
+					<colinfo id="OPEN_DATE" size="10" summ="default" type="STRING"/>
+					<colinfo id="PLAN_SDATE" size="10" summ="default" type="DECIMAL"/>
+					<colinfo id="PLAN_EDATE" size="10" summ="default" type="DECIMAL"/>
+					<colinfo id="PLAN_RATE" size="4" summ="default" type="STRING"/>
+					<colinfo id="REAL_RATE" size="4" summ="default" type="STRING"/>
+					<colinfo id="STATE_SCHD" size="1" summ="default" type="STRING"/>
+					<colinfo id="STATE_MANP" size="1" summ="default" type="STRING"/>
+					<colinfo id="STATE_RISK" size="1" summ="default" type="STRING"/>
+					<colinfo id="PRJ_SALES" size="14" summ="default" type="DECIMAL"/>
+					<record>
+						<CUSTOMER_TYPE>대내</CUSTOMER_TYPE>
+						<OPEN_DATE>20091201</OPEN_DATE>
+						<PLAN_EDATE>20091130</PLAN_EDATE>
+						<PLAN_RATE>95.5</PLAN_RATE>
+						<PLAN_SDATE>20090901</PLAN_SDATE>
+						<PM>김현수</PM>
+						<PM_POSITION>경영혁신TF팀/차장</PM_POSITION>
+						<PRJ_COUNTRY>한국</PRJ_COUNTRY>
+						<PRJ_DEPT>경영혁신TF팀</PRJ_DEPT>
+						<PRJ_NM>LDCC&#32;컨설팅&#32;프로젝트</PRJ_NM>
+						<PRJ_SALES>25000000</PRJ_SALES>
+						<PRJ_TYPE>컨설팅</PRJ_TYPE>
+						<REAL_RATE>90</REAL_RATE>
+						<STATE_MANP>Y</STATE_MANP>
+						<STATE_RISK>G</STATE_RISK>
+						<STATE_SCHD>R</STATE_SCHD>
+					</record>
+					<record>
+						<CUSTOMER_TYPE>대내</CUSTOMER_TYPE>
+						<OPEN_DATE>20100201</OPEN_DATE>
+						<PLAN_EDATE>20100130</PLAN_EDATE>
+						<PLAN_RATE>90</PLAN_RATE>
+						<PLAN_SDATE>20090201</PLAN_SDATE>
+						<PM>강감찬</PM>
+						<PM_POSITION>경영혁신TF팀/차장</PM_POSITION>
+						<PRJ_COUNTRY>한국</PRJ_COUNTRY>
+						<PRJ_DEPT>경영혁신TF팀</PRJ_DEPT>
+						<PRJ_NM>건강보혐관리&#32;프로젝트</PRJ_NM>
+						<PRJ_SALES>75500000</PRJ_SALES>
+						<PRJ_TYPE>SI</PRJ_TYPE>
+						<REAL_RATE>100</REAL_RATE>
+						<STATE_MANP>Y</STATE_MANP>
+						<STATE_RISK>G</STATE_RISK>
+						<STATE_SCHD>R</STATE_SCHD>
+					</record>
+					<record>
+						<CUSTOMER_TYPE>대내</CUSTOMER_TYPE>
+						<OPEN_DATE>20091231</OPEN_DATE>
+						<PLAN_EDATE>20091215</PLAN_EDATE>
+						<PLAN_RATE>85</PLAN_RATE>
+						<PLAN_SDATE>20090501</PLAN_SDATE>
+						<PM>박찬호</PM>
+						<PM_POSITION>경영혁신TF팀/차장</PM_POSITION>
+						<PRJ_COUNTRY>한국</PRJ_COUNTRY>
+						<PRJ_DEPT>경영혁신TF팀</PRJ_DEPT>
+						<PRJ_NM>반도체생산관리&#32;프로젝트</PRJ_NM>
+						<PRJ_SALES>355000000</PRJ_SALES>
+						<PRJ_TYPE>컨설팅</PRJ_TYPE>
+						<REAL_RATE>100</REAL_RATE>
+						<STATE_MANP>Y</STATE_MANP>
+						<STATE_RISK>G</STATE_RISK>
+						<STATE_SCHD>R</STATE_SCHD>
+					</record>
+					<record>
+						<CUSTOMER_TYPE>대내</CUSTOMER_TYPE>
+						<OPEN_DATE>20090801</OPEN_DATE>
+						<PLAN_EDATE>20090801</PLAN_EDATE>
+						<PLAN_RATE>100</PLAN_RATE>
+						<PLAN_SDATE>20090101</PLAN_SDATE>
+						<PM>허참</PM>
+						<PM_POSITION>경영혁신TF팀/차장</PM_POSITION>
+						<PRJ_COUNTRY>한국</PRJ_COUNTRY>
+						<PRJ_DEPT>경영혁신TF팀</PRJ_DEPT>
+						<PRJ_NM>서울우유&#32;CRM&#32;프로젝트</PRJ_NM>
+						<PRJ_SALES>1025000000</PRJ_SALES>
+						<PRJ_TYPE>컨설팅</PRJ_TYPE>
+						<REAL_RATE>100</REAL_RATE>
+						<STATE_MANP>Y</STATE_MANP>
+						<STATE_RISK>G</STATE_RISK>
+						<STATE_SCHD>R</STATE_SCHD>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="3" Width="1000"></Image>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="20" LeftMargin="18" Style="cm_title_sub" TabOrder="5" Text="프로젝트&#32;종합현황" Top="23" Width="16"></Image>
+		<Shape BKColor="user0" Bottom="98" Height="52" Id="Shape0" Left="18" LineColor="user1" Right="979" RoundHeight="5" RoundUnit="Pixel" RoundWidth="5" TabOrder="1" Top="46" Type="RoundRect" Width="961"></Shape>
+		<Static Align="Right" Border="None" Color="user2" Font="돋움,9" Height="20" Id="Static1" Left="35" TabOrder="2" Text="상태" Top="52" VAlign="Middle" Width="64"></Static>
+		<Combo Border="Flat" Height="18" Id="cb_status" Left="102" Style="if_input" TabOrder="3" Top="52" Width="85"></Combo>
+		<Calendar Border="Flat" Color="black" DayFont="돋움,9" DisableBKColor="user12" DisableColor="#848585" Face3dColor="#249494" HeaderFont="돋움,9,Bold" Height="18" Id="ca_plan_sdate" Left="103" SaturdayTextColor="mediumblue" Style="se_cal" SundayTextColor="user56" TabOrder="3" TitleTextColor="white" TodayColor="user58" Top="73" TrailingTextColor="#f1f1f1" WeekBKColor="#9cd5d6" WeekColor="#014746" Width="83"></Calendar>
+		<Button Cursor="HAND" Height="16" Id="btn_plan_sdate" ImageID="m_bt_cal" Left="167" OnClick="btn_plan_sdate_OnClick" TabOrder="6" Top="74" Width="18"></Button>
+		<Static Align="Right" Border="None" Color="user2" Font="돋움,9" Height="20" Id="Static0" Left="35" TabOrder="8" Text="계획시작일" Top="73" VAlign="Middle" Width="64"></Static>
+		<Static Align="Right" Border="None" Color="user2" Font="돋움,9" Height="20" Id="Static2" Left="203" TabOrder="9" Text="고객사구분" Top="52" VAlign="Middle" Width="64"></Static>
+		<Combo Border="Flat" Height="18" Id="cb_customer_type" Left="270" Style="if_input" TabOrder="10" Top="52" Width="85"></Combo>
+		<Calendar Border="Flat" Color="black" DayFont="돋움,9" DisableBKColor="user12" DisableColor="#848585" Face3dColor="#249494" HeaderFont="돋움,9,Bold" Height="18" Id="ca_plan_edate" Left="271" SaturdayTextColor="mediumblue" Style="se_cal" SundayTextColor="user56" TabOrder="11" TitleTextColor="white" TodayColor="user58" Top="73" TrailingTextColor="#f1f1f1" WeekBKColor="#9cd5d6" WeekColor="#014746" Width="82"></Calendar>
+		<Button Cursor="HAND" Height="16" Id="btn_plan_edate" ImageID="m_bt_cal" Left="334" OnClick="btn_plan_edate_OnClick" TabOrder="12" Text="Button2" Top="74" Width="18"></Button>
+		<Static Align="Right" Border="None" Color="user2" Font="돋움,9" Height="20" Id="Static4" Left="203" TabOrder="13" Text="계획종료일" Top="73" VAlign="Middle" Width="64"></Static>
+		<Static Align="Right" Border="None" Color="user2" Font="돋움,9" Height="20" Id="Static5" Left="371" TabOrder="14" Text="주관부서" Top="52" VAlign="Middle" Width="64"></Static>
+		<Calendar Border="Flat" Color="black" DayFont="돋움,9" DisableBKColor="user12" DisableColor="#848585" Face3dColor="#249494" HeaderFont="돋움,9,Bold" Height="18" Id="ca_real_sdate" Left="438" SaturdayTextColor="mediumblue" Style="se_cal" SundayTextColor="user56" TabOrder="15" TitleTextColor="white" TodayColor="user58" Top="73" TrailingTextColor="#f1f1f1" WeekBKColor="#9cd5d6" WeekColor="#014746" Width="85"></Calendar>
+		<Button Cursor="HAND" Height="16" Id="btn_real_sdate" ImageID="m_bt_cal" Left="504" OnClick="btn_real_sdate_OnClick" TabOrder="16" Text="Button2" Top="74" Width="18"></Button>
+		<Static Align="Right" Border="None" Color="user2" Font="돋움,9" Height="20" Id="Static6" Left="371" TabOrder="17" Text="실제시작일" Top="73" VAlign="Middle" Width="64"></Static>
+		<Static Align="Right" Border="None" Color="user2" Font="돋움,9" Height="20" Id="Static7" Left="542" TabOrder="20" Text="실제종료일" Top="73" VAlign="Middle" Width="64"></Static>
+		<Calendar Border="Flat" Color="black" DayFont="돋움,9" DisableBKColor="user12" DisableColor="#848585" Face3dColor="#249494" HeaderFont="돋움,9,Bold" Height="18" Id="ca_real_edate" Left="609" SaturdayTextColor="mediumblue" Style="se_cal" SundayTextColor="user56" TabOrder="18" TitleTextColor="white" TodayColor="user58" Top="73" TrailingTextColor="#f1f1f1" WeekBKColor="#9cd5d6" WeekColor="#014746" Width="85"></Calendar>
+		<Button Cursor="HAND" Height="16" Id="btn_real_edate" ImageID="m_bt_cal" Left="675" OnClick="btn_real_edate_OnClick" TabOrder="19" Text="Button2" Top="74" Width="18"></Button>
+		<Image Height="17" Id="btn_find_pm" ImageID="M_search_icon" Left="573" OnClick="btn_find_pm_OnClick" Static="FALSE" TabOrder="21" Top="52" Transparent="TRUE" Width="19"></Image>
+		<Edit BindDataset="ds_condition" Border="Flat" Column="PM" Height="18" Id="ed_dept" ImeMode="none" Left="438" Style="M_search_edit" TabOrder="22" Top="52" Width="132"></Edit>
+		<Button ButtonStyle="TRUE" Height="25" Id="btn_excel" ImageID="M_btn_style1_excel" Left="856" OnClick="Button1_OnClick" Style="cm_btn" TabOrder="23" Top="16" Width="60"></Button>
+		<Button ButtonStyle="TRUE" Height="25" Id="btn_search" ImageID="M_btn_style1_search" Left="919" OnClick="btn_search_OnClick" Style="cm_btn" TabOrder="24" Top="16" Width="61"></Button>
+		<Grid AutoFit="TRUE" AutoFitEndLine="Hide" BindDataset="ds_condition" BkColor2="default" BoldHead="true" Border="Flat" Bottom="576" ColSelect="TRUE" ColSizing="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="472" Id="grd_type1" InputPanel="FALSE" Left="16" LineColor="default" LineType="ExVERT" MinWidth="100" OnCellDBLClick="grd_type1_OnCellDblClick" OnDragEnter="grd_type1_OnDragEnter" Right="978" RowHeight="20" Style="se_grid" TabOrder="25" TabStop="true" Top="104" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="962">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="38"/>
+						<col width="53"/>
+						<col width="148"/>
+						<col width="80"/>
+						<col width="89"/>
+						<col width="59"/>
+						<col width="29"/>
+						<col width="215"/>
+						<col width="70"/>
+						<col width="44"/>
+						<col width="47"/>
+						<col width="39"/>
+						<col width="39"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="No"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="고객사&#13;&#10;구&#32;&#32;&#32;분" Valign="Center"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="프로젝트명"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="매출액"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="주관부서"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="5" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="PM"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="6" color="user14" display="text" font="맑은&#32;고딕,9,Bold" text="계획"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="7" color="user14" display="text" font="맑은&#32;고딕,9,Bold"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="8" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="오&#32;&#32;&#32;&#32;&#32;픈&#13;&#10;예정일자" Valign="Center"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="9" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="일정"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="10" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="공수"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="11" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="위험"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="12" color="user14" display="text" font="맑은&#32;고딕,9,Bold" rowspan="2" text="상세&#13;&#10;보기" Valign="Center"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="6" color="user14" display="text" font="맑은&#32;고딕,9,Bold" row="1" text="실제"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="7" color="user14" display="text" font="맑은&#32;고딕,9,Bold" row="1"/>
+					</head>
+					<body>
+						<cell col="0" display="text" expr="row+1" rowspan="2"/>
+						<cell col="1" colid="CUSTOMER_TYPE" display="text" rowspan="2"/>
+						<cell col="2" colid="PRJ_NM" display="text" rowspan="2"/>
+						<cell col="3" colid="PRJ_SALES" display="text" rowspan="2"/>
+						<cell col="4" colid="PRJ_DEPT" display="text" rowspan="2"/>
+						<cell col="5" colid="PM" display="text" rowspan="2"/>
+						<cell col="6" display="text" text="계획"/>
+						<cell align="right" bkimagealign="stretch" bkimageid="chartBlue_50" col="7" colid="PLAN_RATE" display="text" expr='PLAN_RATE&#32;+&#32;&quot;&#32;%&quot;'/>
+						<cell col="8" colid="OPEN_DATE" display="text" rowspan="2"/>
+						<cell bkimageid="expr:decode(STATE_SCHD,&apos;G&apos;,&apos;s_big_blue&apos;,&apos;Y&apos;,&apos;s_big_yellow&apos;,&apos;s_big_red&apos;)" col="9" display="text" rowspan="2"/>
+						<cell bkimageid="expr:decode(STATE_MANP,&apos;G&apos;,&apos;s_big_blue&apos;,&apos;Y&apos;,&apos;s_big_yellow&apos;,&apos;s_big_red&apos;)" col="10" display="text" rowspan="2"/>
+						<cell bkimageid="expr:decode(STATE_RISK,&apos;G&apos;,&apos;s_big_blue&apos;,&apos;Y&apos;,&apos;s_big_yellow&apos;,&apos;s_big_red&apos;)" col="11" display="text" rowspan="2"/>
+						<cell bkimageid="img4" col="12" display="text" rowspan="2"/>
+						<cell col="6" display="text" row="1" text="실제"/>
+						<cell align="right" bkimagealign="stretch" bkimageid="chartred_95" col="7" display="text" expr='REAL_RATE&#32;+&#32;&quot;&#32;%&quot;' row="1"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Static BKColor="white" Font="맑은&#32;고딕,10,Bold" Height="19" Id="Static11" Left="41" Style="M_title_1depth" TabOrder="26" Text="프로젝트&#32;종합현황" Top="23" Width="114"></Static>
+		<Image Height="7" Id="Image1" ImageID="M_search_titleicon" Left="27" TabOrder="27" Top="58" Transparent="TRUE" Width="4"></Image>
+		<Image Height="7" Id="Image2" ImageID="M_search_titleicon" Left="27" TabOrder="28" Top="78" Transparent="TRUE" Width="4"></Image>
+		<Image Height="7" Id="Image4" ImageID="M_search_titleicon" Left="199" TabOrder="30" Top="78" Transparent="TRUE" Width="4"></Image>
+		<Image Height="7" Id="Image5" ImageID="M_search_titleicon" Left="199" TabOrder="29" Top="58" Transparent="TRUE" Width="4"></Image>
+		<Image Height="7" Id="Image6" ImageID="M_search_titleicon" Left="367" TabOrder="32" Top="78" Transparent="TRUE" Width="4"></Image>
+		<Image Height="7" Id="Image7" ImageID="M_search_titleicon" Left="367" TabOrder="31" Top="58" Transparent="TRUE" Width="4"></Image>
+		<Image Height="7" Id="Image8" ImageID="M_search_titleicon" Left="536" TabOrder="33" Top="81" Transparent="TRUE" Width="4"></Image>
+	</Form>
+	<Script><![CDATA[
+// 폼 초기화.............................................
+function view200_OnLoadCompleted(obj)
+{
+	transaction("view200", 
+			"demo/selectProjectConditionList.mip", 
+			"", 
+			"ds_condition=ProjectCondition", 
+			"", 
+			"fnCallbackLotte");
+}
+
+// 엑셀 출력.............................................
+function Button1_OnClick(obj)
+{
+	grd_type1.exportExcelEx("종합 화면");
+}
+// 조회 선택............................................
+function btn_search_OnClick(obj)
+{
+return;
+	transaction("view200", 
+			"svcLotte::demo/selectProjectConditionList.mip", 
+			"", 
+			"ds_condition=ProjectCondition", 
+			"", 
+			"fnCallbackLotte");
+}
+
+
+function changeDayColor(obj) {
+
+	for(day=1;day<32;day++){
+		//요일 =체크를 의해 날짜 생성
+		var date="01";
+		if(day<10){
+			date = "0" + day;
+		}else{
+			date = day;
+		}
+		date = SubStr(obj.Value,0,6) + date;
+		
+		if(GetDay(DateTime(date)) == 0 ) {
+			gdDailyRate.SetCellProp("body",(day + 1),"Color","Red"); 
+		} else if(GetDay(DateTime(date)) == 6 ) {
+			gdDailyRate.SetCellProp("body",(day + 1),"Color","Blue"); 
+		}else{
+			gdDailyRate.SetCellProp("body",(day + 1),"Color","Black"); 
+		}
+	}
+}
+
+
+function setProgress()
+{
+	var plan_rate = ds_condition.GetColumn(ds_condition.row, "PLAN_RATE");
+	var plan_rate_idx = 6 + parseInt(parseInt(plan_rate)/2);
+	var real_rate = ds_condition.GetColumn(ds_condition.row, "REAL_RATE");
+	var real_rate_idx = 62 + parseInt(parseInt(real_rate)/2);
+	
+	var cellCnt = grd_type2.GetCellCount("body");
+	for(var idx=0; idx<cellCnt; idx++)
+	{
+		// 윗줄 [7-56]
+		if(idx>6 && idx<57)
+		{
+			if( plan_rate_idx>idx){
+				grd_type2.SetCellProp("body", idx, "bkColor", "green");
+				grd_type2.SetCellProp("body", idx, "bkColor2", "green");
+			}
+		}
+		// 아랫줄 [63-112]
+		else if(idx>62 && idx<113)
+		{
+			if( real_rate_idx>idx){
+				grd_type2.SetCellProp("body", idx, "bkColor", "orange");
+				grd_type2.SetCellProp("body", idx, "bkColor2", "orange");
+			}
+		}
+		else
+		{
+			continue;
+		}
+		
+		//trace("Cell["+idx+"] :: ["+grd_type2.GetCellProp("body", idx, "text")+"]");
+	}
+}
+
+function getCellBkColor(cellPos)
+{
+	trace("["+cellPos+"]");
+}
+function btn_plan_sdate_OnClick(obj)
+{
+	ca_plan_sdate.DropDown();
+}
+
+function btn_plan_edate_OnClick(obj)
+{
+	ca_plan_edate.DropDown();
+}
+
+function btn_real_sdate_OnClick(obj)
+{
+	ca_real_sdate.DropDown();
+}
+
+function btn_real_edate_OnClick(obj)
+{
+	ca_real_edate.DropDown();
+}
+
+
+// 사용하지 않음.............................................
+function changeMonth(obj){
+		if(obj.Id == "btnNextMonth"){
+			var nMonth = fnc_LastDay(AddMonth(calBasicDt.Value,1));
+			if(SubStr(today(),0,6) < subStr(nMonth,0,6) )
+				return;
+			else if (SubStr(today(),0,6) == subStr(nMonth,0,6))
+				calBasicDt.Value = AddDate(today(), -1);
+			else
+				calBasicDt.Value = nMonth;
+				
+		}else{
+			calBasicDt.Value=fnc_LastDay(AddMonth(calBasicDt.Value,-1));
+		}
+}
+
+// 프로젝트 상세보기..........................................
+function grd_type1_OnCellDblClick(obj,nRow,nCell,nX,nY,nPivotIndex)
+{
+	if(nCell==12)
+	{
+		G_ProjectName = ds_condition.GetColumn(ds_condition.row, "PRJ_NM");
+		var menuRow = gds_menu.FindRow("MENUNAME", obj.text );
+		
+		if(menuRow <0) return;
+		gds_menu.row  = menuRow;
+		
+		global.Frame_Left.pdiv_menu.Open_url( menuRow );
+	}
+}
+]]></Script>
+</Window>

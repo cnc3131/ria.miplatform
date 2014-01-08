@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="Main_Form" Left="8" OnLoadCompleted="Main_Form_OnLoadCompleted" OnTimer="Main_Form_OnTimer" PidAttrib="7" Title="Main_Form" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="Dataset0" OnRowPosChanged="Dataset0_OnRowPosChanged">
+				<Contents>
+					<colinfo id="index_Name" size="256" summ="default" type="STRING"/>
+					<colinfo id="value_Index" size="256" summ="default" type="STRING"/>
+					<colinfo id="L_m" size="256" summ="default" type="STRING"/>
+					<colinfo id="R_m" size="256" summ="default" type="STRING"/>
+					<colinfo id="bar_val" size="256" summ="default" type="STRING"/>
+					<colinfo id="line_val" size="256" summ="default" type="STRING"/>
+					<record>
+						<bar_val>9234-5231,300-4123,606-2212,7900-9231</bar_val>
+						<index_Name>arget,Result,Achievement</index_Name>
+						<L_m>count</L_m>
+						<line_val>105,110,20,80</line_val>
+						<R_m>Achv.(%)</R_m>
+						<value_Index>SEA,CCC,DDD,RRRR</value_Index>
+					</record>
+					<record>
+						<bar_val>5757-6234,700-3673,806-3312,6700-8931</bar_val>
+						<index_Name>arget,Result,Achievement</index_Name>
+						<L_m>count</L_m>
+						<line_val>20,80,50,40</line_val>
+						<R_m>Achv.(%)</R_m>
+						<value_Index>서울,경기,부산,제주</value_Index>
+					</record>
+					<record>
+						<bar_val>1757-2234,2400-3673,4806-5312,7700-8931</bar_val>
+						<index_Name>arget,Result,Achievement</index_Name>
+						<L_m>count</L_m>
+						<line_val>20,55,90,30</line_val>
+						<R_m>Achv.(%)</R_m>
+						<value_Index>1/4,2/4,3/4,4/4</value_Index>
+					</record>
+					<record>
+						<bar_val>3757-1234,7200-5673,1806-7312,3900-2931</bar_val>
+						<index_Name>arget,Result,Achievement</index_Name>
+						<L_m>count</L_m>
+						<line_val>10,100,80,50</line_val>
+						<R_m>Achv.(%)</R_m>
+						<value_Index>Kor,U.S,Jap,Chi</value_Index>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="4" Width="1000"></Image>
+		<Div Height="376" Id="Div0" Left="104" TabOrder="1" Text="Div0" Top="56" Url="semi_flash::graph1.xml" Width="736">
+			<Contents></Contents>
+		</Div>
+		<Grid BindDataset="Dataset0" BkColor2="default" BoldHead="true" Border="Flat" Bottom="595" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" Height="155" Id="Grid0" InputPanel="FALSE" Left="136" LineColor="default" LineType="ExVERT" Right="840" Style="se_grid" TabOrder="2" TabStop="true" Top="440" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="704">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="156"/>
+						<col width="127"/>
+						<col width="43"/>
+						<col width="54"/>
+						<col width="244"/>
+						<col width="80"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" display="text" text="index_Name"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" display="text" text="value_Index"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" display="text" text="L_m"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" display="text" text="R_m"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" display="text" text="bar_val"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="5" display="text" text="line_val"/>
+					</head>
+					<body>
+						<cell col="0" colid="index_Name" display="text"/>
+						<cell col="1" colid="value_Index" display="text"/>
+						<cell col="2" colid="L_m" display="text"/>
+						<cell col="3" colid="R_m" display="text"/>
+						<cell col="4" colid="bar_val" display="text" edit="normal"/>
+						<cell col="5" colid="line_val" display="text" edit="normal"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="19" LeftMargin="18" Style="cm_title_sub" TabOrder="4" Text="&#32;&#32;Flash연동" Top="27" Width="104"></Image>
+	</Form>
+	<Script><![CDATA[
+
+function Main_Form_OnTimer(obj,nEventID)
+{
+	killTimer(nEventID);  
+	Div0.Shockwave0.SetVariable("index_Name",DataSet0.getColumn(DataSet0.row,"index_Name"));
+	Div0.Shockwave0.SetVariable("value_Index",DataSet0.getColumn(DataSet0.row,"value_Index"));
+	Div0.Shockwave0.SetVariable("L_m",DataSet0.getColumn(DataSet0.row,"L_m"));
+	Div0.Shockwave0.SetVariable("R_m",DataSet0.getColumn(DataSet0.row,"R_m"));
+	Div0.Shockwave0.SetVariable("bar_val",DataSet0.getColumn(DataSet0.row,"bar_val"));
+	Div0.Shockwave0.SetVariable("line_val",DataSet0.getColumn(DataSet0.row,"line_val"));
+
+}
+
+function Dataset0_OnRowPosChanged(obj,nOldRow,nRow)
+{
+	Div0.Reload();
+	SetTimer(1,500);
+}
+
+function Main_Form_OnLoadCompleted(obj)
+{
+	DataSet0.row = -1;
+}
+]]></Script>
+</Window>

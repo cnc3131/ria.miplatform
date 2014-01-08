@@ -1,0 +1,14 @@
+﻿<flash_project name="numdegraph" version="1">
+    <project_file path="./BarMove.as" filetype="as" />
+    <project_file path="./DepthChange.as" filetype="as" />
+    <project_file path="./GcMove.as" filetype="as" />
+    <project_file path="./lineGraphMove.as" filetype="as" />
+    <project_file path="./ND_Depth.as" filetype="as" />
+    <project_file path="./ND_linebar.as" filetype="as" />
+    <project_file path="./ND_main.as" filetype="as" />
+    <project_file path="./ND_Reset.as" filetype="as" />
+    <project_file path="./ND_setbar.as" filetype="as" />
+    <project_file path="./ND_view.as" filetype="as" />
+    <project_file path="./NumdeGraph.fla" filetype="fla" profile="" def_file="true" />
+    <project_file path="./Ver_chk.as" filetype="as" />
+</flash_project>

@@ -1,0 +1,12 @@
+﻿<flash_project name="linegraph" version="1">
+    <project_file path="./DepthChange.as" filetype="as" />
+    <project_file path="./GcMove.as" filetype="as" />
+    <project_file path="./LG_Depth.as" filetype="as" />
+    <project_file path="./LG_linebar.as" filetype="as" />
+    <project_file path="./LG_main.as" filetype="as" />
+    <project_file path="./LG_Reset.as" filetype="as" />
+    <project_file path="./LG_view.as" filetype="as" />
+    <project_file path="./LineGraph.fla" filetype="fla" profile="" def_file="true" />
+    <project_file path="./lineGraphMove.as" filetype="as" />
+    <project_file path="./Ver_chk.as" filetype="as" />
+</flash_project>

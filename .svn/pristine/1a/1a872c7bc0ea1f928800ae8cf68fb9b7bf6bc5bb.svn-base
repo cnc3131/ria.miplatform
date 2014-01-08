@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="543" Id="form" Left="8" OnLoadCompleted="form_OnLoadCompleted" PidAttrib="7" Title="Board&#32;Update" Top="8" Ver="1.0" Width="800" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_board">
+				<Contents>
+					<colinfo id="id" size="255" type="STRING"/>
+					<colinfo id="name" size="255" type="STRING"/>
+					<colinfo id="description" size="255" type="STRING"/>
+					<colinfo id="useYn" size="255" type="STRING"/>
+					<colinfo id="regUser" size="255" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_voInfo">
+				<Contents>
+					<colinfo id="voClass" size="256" summ="default" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_combo">
+				<Contents>
+					<colinfo id="code" size="256" summ="default" type="STRING"/>
+					<colinfo id="data" size="256" summ="default" type="STRING"/>
+					<record>
+						<code>Y</code>
+						<data>Y</data>
+					</record>
+					<record>
+						<code>N</code>
+						<data>N</data>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Static BKColor="#f7f7f7" Border="Flat" BorderColor="#d4d4d4" Height="30" Id="Static0" Left="200" Style="st_static" TabOrder="17" Top="260" VAlign="Middle" Width="576"></Static>
+		<Static BKColor="#f7f7f7" Border="Flat" BorderColor="#d4d4d4" Height="94" Id="Static11" Left="200" Style="st_static" TabOrder="16" Top="167" VAlign="Middle" Width="576"></Static>
+		<Static BKColor="#f7f7f7" Border="Flat" BorderColor="#d4d4d4" Height="30" Id="Static9" Left="200" Style="st_static" TabOrder="15" Top="138" VAlign="Middle" Width="576"></Static>
+		<Static BKColor="#f7f7f7" Border="Flat" BorderColor="#d4d4d4" Height="30" Id="Static7" Left="200" Style="st_static" TabOrder="14" Top="109" VAlign="Middle" Width="576"></Static>
+		<Static BKColor="#f7f7f7" Border="Flat" BorderColor="#d4d4d4" Height="30" Id="Static5" Left="200" Style="st_static" TabOrder="13" Top="80" VAlign="Middle" Width="576"></Static>
+		<Edit BindDataset="ds_board" Border="Flat" BorderColor="#cececc" Column="id" Font="돋움,9" Height="21" Id="Edit0" Left="208" Readonly="TRUE" Style="st_edit" TabOrder="1" Top="85" Width="121"></Edit>
+		<Edit BindDataset="ds_board" Border="Flat" BorderColor="#cececc" Column="name" Font="돋움,9" Height="21" Id="Edit1" Left="208" Style="st_edit" TabOrder="2" Top="114" Width="121"></Edit>
+		<TextArea BindDataset="ds_board" Column="description" Font="돋움,9" Height="88" Id="TextArea0" Left="208" TabOrder="3" Top="170" VScroll="TRUE" Width="449"></TextArea>
+		<Edit BindDataset="ds_board" Border="Flat" BorderColor="#cececc" Column="regUser" Font="돋움,9" Height="21" Id="Edit3" Left="208" Readonly="TRUE" Style="st_edit" TabOrder="4" Top="265" Width="121"></Edit>
+		<Button Cursor="HAND" Height="20" Id="Button0" ImageID="btn_수정" Left="664" OnClick="Button0_OnClick" TabOrder="5" Text="저장" Top="296" Width="56"></Button>
+		<Button Cursor="HAND" Height="20" Id="Button1" ImageID="btn_삭제" Left="720" OnClick="Button1_OnClick" TabOrder="6" Text="삭제" Top="296" Width="56"></Button>
+		<Static Align="Right" Border="Flat" BorderColor="#6d789a" Height="30" Id="Static6" Left="16" Style="nhn_Static_blue02" TabOrder="8" Text="ID&#32;&#32;" Top="80" VAlign="Middle" Width="184"></Static>
+		<Static Align="Right" Border="Flat" BorderColor="#6d789a" Height="30" Id="Static8" Left="16" Style="nhn_Static_blue02" TabOrder="9" Text="Name&#32;&#32;" Top="109" VAlign="Middle" Width="184"></Static>
+		<Static Align="Right" Border="Flat" BorderColor="#6d789a" Height="30" Id="Static10" Left="16" Style="nhn_Static_blue02" TabOrder="10" Text="UseYN&#32;&#32;" Top="138" VAlign="Middle" Width="184"></Static>
+		<Static Align="Right" Border="Flat" BorderColor="#6d789a" Height="94" Id="Static12" Left="16" Style="nhn_Static_blue02" TabOrder="11" Text="Description&#32;&#32;" Top="167" VAlign="Middle" Width="184"></Static>
+		<Static Align="Right" Border="Flat" BorderColor="#6d789a" Height="30" Id="Static14" Left="16" Style="nhn_Static_blue02" TabOrder="12" Text="RegUser&#32;&#32;" Top="260" VAlign="Middle" Width="184"></Static>
+		<Button ButtonStyle="TRUE" Cursor="HAND" Height="20" Id="btnExcel" ImageID="btn목록" Left="608" OnClick="btnExcel_OnClick" TabOrder="7" Top="296" Width="56"></Button>
+		<Combo BindDataset="ds_board" Border="Flat" BorderColor="#cececc" CodeColumn="code" Column="useYn" DataColumn="data" Height="21" Id="Combo0" InnerDataset="ds_combo" Left="208" Style="st_combo" TabOrder="18" Top="143" Width="121"></Combo>
+		<Image FillType="STRETCH" Height="50" Id="Image0" ImageID="title_bg" Left="-1" TabOrder="19" Width="799"></Image>
+		<Static Color="whitesmoke" Font="굴림,12,Bold" Height="29" Id="Static1" Left="18" TabOrder="20" Text="내용&#32;수정" Top="5" VAlign="Middle" Width="168"></Static>
+	</Form>
+	<Script><![CDATA[#include "lib::common.js";
+
+var strParam;
+function form_OnLoadCompleted(obj)
+{
+	var strParam = "id=" + param;
+	transaction("list", "svcLotte::sample/selectSampleList.mip", "", "ds_board=dsOutput", strParam, "fnCallback");
+}
+
+function fnCallback(svcid, errcd, errmsg)
+{
+	if ( svcid == "detail" )
+	{
+	} 
+	else if ( svcid == "save" )
+	{
+		alert(http.RecvHttpStr);
+		Close(0);
+	} 
+}
+
+/**
+ * 입력, 수정의 경우 아래의 조건을 만족하시오
+ * @ strSvcid : 서비스 아이디
+ * @ strVoClass : 입력 데이타 셋이 맵핑될 VOClass
+ * @ strInputDs : 입력 데이타 셋 정보
+ * @ strOutputDs : 출력 데이타 셋 정보
+ * @ strParam : 파라메터 정보
+ * @ strFnCallback : 콜백 함수 정보 -> 폼에 있어야 함
+ */
+function Button0_OnClick(obj)
+{
+	transaction("save", 
+				"svcLotte::sample/saveSampleList.mip", 	// 	http://127.0.0.1:8080/web/sample/lotteSampleList.mip
+				"dsInput=ds_board:U", 
+				"", 
+				"", 
+				"fnCallback");
+}
+
+function Button1_OnClick(obj)
+{
+	strParam = "selectedId=" + Quote(Edit0.Text);
+	transaction("delete", "http://127.0.0.1:8080/egovframework-basicsample-web/miplatform/egovSampleDelete.do", "", "", strParam, "fnCallback");
+}
+
+function btnExcel_OnClick(obj)
+{
+	Close(1);
+}
+]]></Script>
+</Window>

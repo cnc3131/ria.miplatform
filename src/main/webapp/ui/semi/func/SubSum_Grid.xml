@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<Window>
+	<Form BKColor="white" Font="Arial,9" Height="410" Id="SubSum_Grid" Left="7" PidAttrib="7" Title="SubSum&#32;Grid" Top="7" Ver="1.1" Width="764" WorkArea="FALSE">
+		<Datasets>
+			<Dataset GroupKey="regDate,Catalog" Id="ds_grid">
+				<Contents>
+					<colinfo Id="regDate" Size="255" Type="STRING"/>
+					<colinfo Id="Catalog" Size="255" Type="STRING"/>
+					<colinfo Id="org_amt" Size="16" Type="DECIMAL"/>
+					<colinfo Id="book_amt" Size="16" Type="DECIMAL"/>
+					<record>
+						<regDate>20040901</regDate>
+						<Catalog>Action</Catalog>
+						<org_amt>10000</org_amt>
+						<book_amt>258000</book_amt>
+					</record>
+					<record>
+						<regDate>20040901</regDate>
+						<Catalog>Thriller</Catalog>
+						<org_amt>20000</org_amt>
+						<book_amt>300000</book_amt>
+					</record>
+					<record>
+						<regDate>20040901</regDate>
+						<Catalog>Erotic</Catalog>
+						<org_amt>150000</org_amt>
+						<book_amt>10286000</book_amt>
+					</record>
+					<record>
+						<regDate>20040902</regDate>
+						<Catalog>Action</Catalog>
+						<org_amt>87000</org_amt>
+						<book_amt>50000</book_amt>
+					</record>
+					<record>
+						<regDate>20040902</regDate>
+						<Catalog>Thriller</Catalog>
+						<org_amt>90000</org_amt>
+						<book_amt>40000</book_amt>
+					</record>
+					<record>
+						<regDate>20040902</regDate>
+						<Catalog>Erotic</Catalog>
+						<org_amt>228000</org_amt>
+						<book_amt>21000</book_amt>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset Id="ds_combo">
+				<Contents>
+					<colinfo Id="cd" Size="255" Type="STRING"/>
+					<colinfo Id="nm" Size="255" Type="STRING"/>
+					<record>
+						<cd>000</cd>
+						<nm>item1</nm>
+					</record>
+					<record>
+						<cd>001</cd>
+						<nm>item2</nm>
+					</record>
+					<record>
+						<cd>002</cd>
+						<nm>item3</nm>
+					</record>
+					<record>
+						<cd>003</cd>
+						<nm>item4</nm>
+					</record>
+					<record>
+						<cd>004</cd>
+						<nm>item5</nm>
+					</record>
+					<record>
+						<cd>005</cd>
+						<nm>item6</nm>
+					</record>
+					<record>
+						<cd>006</cd>
+						<nm>item7</nm>
+					</record>
+					<record>
+						<cd>007</cd>
+						<nm>item8</nm>
+					</record>
+					<record>
+						<cd>008</cd>
+						<nm>item9</nm>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Grid BindDataset="ds_grid" BKColor="white" BkSelColor="-1" BoldHead="true" Border="Flat" Bottom="392" Color="-1" Enable="true" FillArea="TRUE" HeadBorder="Flat" Height="344" Id="Grid2" InputPanel="FALSE" Left="16" LineColor="-1" Right="744" SelColor="-1" TabOrder="1" TabStop="true" Top="48" UseSelColor="FALSE" Visible="true" Width="728">
+			<contents>
+				<columns>
+					<col width="131"/>
+					<col width="112"/>
+					<col width="127"/>
+					<col width="177"/>
+					<col width="80"/>
+					<col width="80"/>
+				</columns>
+				<head>
+					<cell bkcolor="#dde8f2" col="0" display="text" text="regDate"/>
+					<cell bkcolor="#dde8f2" col="1" display="text" text="Catalog"/>
+					<cell bkcolor="#dde8f2" col="2" display="text" text="org_amt"/>
+					<cell bkcolor="#dde8f2" col="3" display="text" text="book_amt"/>
+					<cell bkcolor="#dde8f2" col="4" display="text"/>
+					<cell bkcolor="#dde8f2" col="5" display="text"/>
+				</head>
+				<body>
+					<cell col="0" colid="REGDATE" display="text" suppress="1"/>
+					<cell col="1" colid="CATALOG" display="text" expr="decode(rowlevel,2,REGDATE&#32;+&#32;&apos;for&#32;SUM&apos;,CATALOG)" suppress="2"/>
+					<cell bkcolor="expr:decode(GetRowLevel(row),1,&apos;#00c49d&apos;,2,&apos;#92ff0e&apos;,&apos;#FFFFFF&apos;)" col="2" colid="ORG_AMT" display="number" expr="decode(rowlevel,0,org_amt,ORG_AMT.min)"/>
+					<cell bkcolor="expr:decode(GetRowLevel(row),1,&apos;#00c49d&apos;,2,&apos;#92ff0e&apos;,&apos;#FFFFFF&apos;)" col="3" colid="BOOK_AMT" display="number"/>
+					<cell col="4" display="text"/>
+					<cell col="5" display="text"/>
+				</body>
+			</contents>
+		</Grid>
+		<radio Border="None" Height="26" Id="rdo_para_main" INDEX="0" Left="152" TabOrder="2" Top="16" Value="P" Width="232">
+			<Contents>
+				<Layout Code="P" Default="True" Height="17" Left="2" Text="Measurment" Top="5" Width="100"/>
+				<Layout Code="M" Height="17" Left="100" Text="Machine&#32;Parameter" Top="5" Width="130"/>
+			</Contents>
+		</radio>
+		<button BKColor="#ffe9e9" ButtonStyle="TRUE" Cursor="HAND" Height="22" Id="btn_search" Left="392" TabOrder="3" Text="Search" Top="16" Width="70"></button>
+		<button BKColor="#ffe9e9" ButtonStyle="TRUE" Cursor="HAND" Height="22" Id="btn_input" Left="462" TabOrder="4" Text="Insert" Top="16" Width="70"></button>
+		<button BKColor="#ffe9e9" ButtonStyle="TRUE" Cursor="HAND" Height="22" Id="btn_delete" Left="532" TabOrder="5" Text="Delete" Top="16" Width="70"></button>
+		<button BKColor="#ffe9e9" ButtonStyle="TRUE" Cursor="HAND" Height="22" Id="btn_save" Left="602" TabOrder="6" Text="Save" Top="16" Width="70"></button>
+		<button BKColor="#ffe9e9" ButtonStyle="TRUE" Cursor="HAND" Height="22" Id="btn_cancel" Left="672" TabOrder="7" Text="Cancel" Top="16" Width="70"></button>
+		<Static Height="13" Id="Static0" Left="16" TabOrder="8" Text="Search" Top="14" Width="43"></Static>
+		<combo CodeColumn="cd" DataColumn="nm" Editable="TRUE" Height="16" Id="combo0" INDEX="0" InnerDataset="ds_combo" Left="63" Search="FILTERED" TabOrder="9" Top="18" Value="000" Width="80"></combo>
+		<Static Align="Center" Height="13" Id="Static1" Left="16" TabOrder="10" Text="Item" Top="29" Width="43"></Static>
+	</Form>
+	<Script></Script>
+</Window>

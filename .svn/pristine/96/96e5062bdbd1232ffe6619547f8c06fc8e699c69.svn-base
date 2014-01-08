@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form BKColor="ACTIVECAPTION" Height="768" Id="Split_test" Left="8" PidAttrib="7" Title="Split_test" Top="8" Ver="1.0" Width="1024" WorkArea="true">
+		<Split Border="SunkenEdge" CanMove="common_CanMove" Height="184" Id="Split0" Left="200" MaxPos="392" MinPos="200" MoveOnDrag="TRUE" OnBeginMove="common_OnBeginMove" OnEndMove="common_OnEndMove" OnMove="common_OnMove" OnMoving="common_OnMoving" Top="208" Width="8">
+			<Contents>
+				<LeftOrTop></LeftOrTop>
+				<RightOrBottom>
+					<Bind CompID="Edit0"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<Split Border="SunkenEdge" CanMove="common_CanMove" Height="184" Id="Split3" Left="392" MaxPos="400" MinPos="208" MoveOnDrag="TRUE" OnBeginMove="common_OnBeginMove" OnEndMove="common_OnEndMove" OnMove="common_OnMove" OnMoving="common_OnMoving" Top="208" Width="8">
+			<Contents>
+				<LeftOrTop>
+					<Bind CompID="Edit0"/>
+				</LeftOrTop>
+				<RightOrBottom></RightOrBottom>
+			</Contents>
+		</Split>
+		<Split Border="SunkenEdge" CanMove="common_CanMove" Direct="VERT" Height="8" Id="Split2" Left="208" MaxPos="392" MinPos="200" MoveOnDrag="TRUE" OnBeginMove="common_OnBeginMove" OnEndMove="common_OnEndMove" OnMove="common_OnMove" OnMoving="common_OnMoving" Top="200" Width="184">
+			<Contents>
+				<LeftOrTop></LeftOrTop>
+				<RightOrBottom>
+					<Bind CompID="Edit0"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<Edit Height="104" Id="Edit0" Left="248" TabOrder="5" Text="Edit0" Top="248" Width="104"></Edit>
+		<Split Border="SunkenEdge" CanMove="common_CanMove" Direct="VERT" Height="8" Id="Split1" Left="208" MaxPos="400" MinPos="208" MoveOnDrag="TRUE" OnBeginMove="common_OnBeginMove" OnEndMove="common_OnEndMove" OnMove="common_OnMove" OnMoving="common_OnMoving" Top="392" Width="184">
+			<Contents>
+				<LeftOrTop>
+					<Bind CompID="Edit0"/>
+				</LeftOrTop>
+				<RightOrBottom></RightOrBottom>
+			</Contents>
+		</Split>
+		<SplitJoint Border="SunkenEdge" Height="8" Id="SplitJoint0" JointBottom="Split3" JointLeft="Split2" Left="392" MoveOnDrag="TRUE" Top="200" Width="8"></SplitJoint>
+		<SplitJoint Border="SunkenEdge" Height="8" Id="SplitJoint1" JointBottom="Split0" JointRight="Split2" Left="200" MoveOnDrag="TRUE" Top="200" Width="8"></SplitJoint>
+		<SplitJoint Border="SunkenEdge" Height="8" Id="SplitJoint2" JointRight="Split1" JointTop="Split0" Left="200" MoveOnDrag="TRUE" Top="392" Width="8"></SplitJoint>
+		<SplitJoint Border="SunkenEdge" Height="8" Id="SplitJoint3" JointLeft="Split1" JointTop="Split3" Left="392" MoveOnDrag="TRUE" Top="392" Width="8"></SplitJoint>
+	</Form>
+	<Script><![CDATA[function GetSplitPos(obj)
+{
+	var pos = 0;
+	if( obj.Direct == "HORZ")
+		pos = ( obj.right + obj.left ) / 2;
+	else
+		pos = ( obj.bottom + obj.top ) / 2;
+	return pos;
+}
+
+function common_CanMove(obj,nPos,nAfterPos)
+{
+	// TRACE(obj.id + "_CanMove("+nPos+","+nAfterPos+") : {"+GetSplitPos(obj)+"}" );
+	// return false;
+}
+
+function common_OnMove(obj,nBeforePos,nPos)
+{
+	// TRACE(obj.id + "_OnMove("+nBeforePos+","+nPos+") : {"+GetSplitPos(obj)+"}"  );
+	/*
+	if( nPos % 10 < 5)
+		nPos = nPos - ( nPos % 10 );
+	else
+		nPos = nPos + ( 10 - nPos % 10 );
+	obj.left = nPos;
+	*/
+}
+
+function common_OnBeginMove(obj, nPos, nSpotX, nSpotY)
+{
+	// TRACE(obj.id + "_OnBeginMove("+nPos+","+nSpotX+","+nSpotY+") : {"+GetSplitPos(obj)+"}"  );
+	// return false;
+}
+
+function common_OnMoving(obj, nPos, nDelta)
+{
+	// TRACE(obj.id + "_OnMoving("+nPos+","+nDelta+") : {"+GetSplitPos(obj)+"}"  );
+}
+
+function common_OnEndMove(obj, nPos, nDelta)
+{
+	// TRACE(obj.id + "_OnEndMove("+nPos+","+nDelta+") : {"+GetSplitPos(obj)+"}"  );
+}
+]]></Script>
+</Window>

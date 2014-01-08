@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="543" Id="form" Left="8" OnLoadCompleted="form_OnLoadCompleted" PidAttrib="7" Title="Insert&#32;Sample" Top="8" Ver="1.0" Width="800" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_board">
+				<Contents>
+					<colinfo id="id" size="255" summ="default" type="STRING"/>
+					<colinfo id="name" size="255" summ="default" type="STRING"/>
+					<colinfo id="description" size="255" summ="default" type="STRING"/>
+					<colinfo id="useYn" size="255" summ="default" type="STRING"/>
+					<colinfo id="regUser" size="255" summ="default" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_combo">
+				<Contents>
+					<colinfo id="code" size="256" summ="default" type="STRING"/>
+					<colinfo id="data" size="256" summ="default" type="STRING"/>
+					<record>
+						<code>Y</code>
+						<data>Y</data>
+					</record>
+					<record>
+						<code>N</code>
+						<data>N</data>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_voInfo">
+				<Contents>
+					<colinfo id="voClass" size="256" summ="default" type="STRING"/>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Button ButtonStyle="TRUE" Cursor="HAND" Height="22" Id="Button0" ImageID="15N_btn01_120" Left="16" OnClick="Button0_OnClick" TabOrder="4" Text="등록(Server)" Top="264" Width="120"></Button>
+		<Static BKColor="#f7f7f7" Border="Flat" BorderColor="#d4d4d4" Height="30" Id="Static0" Left="200" Style="st_static" TabOrder="12" Top="231" VAlign="Middle" Width="576"></Static>
+		<Static BKColor="#f7f7f7" Border="Flat" BorderColor="#d4d4d4" Height="94" Id="Static11" Left="200" Style="st_static" TabOrder="11" Top="138" VAlign="Middle" Width="576"></Static>
+		<Static BKColor="#f7f7f7" Border="Flat" BorderColor="#d4d4d4" Height="30" Id="Static9" Left="200" Style="st_static" TabOrder="10" Top="109" VAlign="Middle" Width="576"></Static>
+		<Static BKColor="#f7f7f7" Border="Flat" BorderColor="#d4d4d4" Height="30" Id="Static7" Left="200" Style="st_static" TabOrder="9" Top="80" VAlign="Middle" Width="576"></Static>
+		<Edit BindDataset="ds_board" Border="Flat" BorderColor="#cececc" Column="name" Font="돋움,9" Height="21" Id="Edit5" Left="208" Style="st_edit" TabOrder="1" Top="85" Width="121"></Edit>
+		<TextArea BindDataset="ds_board" Column="description" Font="돋움,9" Height="88" Id="TextArea1" Left="208" TabOrder="2" Top="141" VScroll="TRUE" Width="449"></TextArea>
+		<Edit BindDataset="ds_board" Border="Flat" BorderColor="#cececc" Column="regUser" Font="돋움,9" Height="21" Id="Edit7" Left="208" Style="st_edit" TabOrder="3" Top="236" Width="121"></Edit>
+		<Static Align="Right" Border="Flat" BorderColor="#6d789a" Height="30" Id="Static8" Left="16" Style="nhn_Static_blue02" TabOrder="5" Text="Name&#32;&#32;" Top="80" VAlign="Middle" Width="184"></Static>
+		<Static Align="Right" Border="Flat" BorderColor="#6d789a" Height="30" Id="Static10" Left="16" Style="nhn_Static_blue02" TabOrder="6" Text="UseYN&#32;&#32;" Top="109" VAlign="Middle" Width="184"></Static>
+		<Static Align="Right" Border="Flat" BorderColor="#6d789a" Height="94" Id="Static12" Left="16" Style="nhn_Static_blue02" TabOrder="7" Text="Description&#32;&#32;" Top="138" VAlign="Middle" Width="184"></Static>
+		<Static Align="Right" Border="Flat" BorderColor="#6d789a" Height="30" Id="Static14" Left="16" Style="nhn_Static_blue02" TabOrder="8" Text="RegUser&#32;&#32;" Top="231" VAlign="Middle" Width="184"></Static>
+		<Combo BindDataset="ds_board" Border="Flat" BorderColor="#cececc" CodeColumn="code" Column="useYn" DataColumn="data" Height="21" Id="Combo0" InnerDataset="ds_combo" Left="208" Style="st_combo" TabOrder="13" Top="114" Width="121"></Combo>
+		<Image FillType="STRETCH" Height="50" Id="Image0" ImageID="title_bg" Left="-1" TabOrder="14" Width="799"></Image>
+		<Static Color="whitesmoke" Font="굴림,12,Bold" Height="29" Id="Static1" Left="18" TabOrder="15" Text="새&#32;항목&#32;입력" Top="5" VAlign="Middle" Width="168"></Static>
+	</Form>
+	<Script><![CDATA[#include "lib::common.js";
+
+var strParam;
+function form_OnLoadCompleted(obj)
+{
+	ds_board.AddRow();
+}
+
+function fnCallback(svcid, errcd, errmsg)
+{
+	if ( svcid == "save" )
+	{
+		alert(http.SendHttpStr);
+		alert(http.RecvHttpStr);
+		Close(0);
+	}
+}
+
+function Button0_OnClick(obj)
+{
+	ds_board.SetColumn(0, "id", getDate());
+	transaction("save", 
+				"svcLotte::sample/saveSampleList.mip", 	// 	http://127.0.0.1:8080/web/sample/lotteSampleList.mip
+				"dsInput=ds_board:U", 
+				"", 
+				"", 
+				"fnCallback");
+				
+
+	// var strSvcid = "insert";
+	// var strController = "egovSampleInsert.do";
+	// var strVoClass = "egovframework.rte.sample.service.SampleVO";
+	// var strInputDs = "ds_input=ds_board:U";
+	// var strOutputDs = "";
+	// var strParam = "";
+	// var strFnCallback = "fnCallback";
+	
+	// fnCmTr(this, 
+			// strSvcid, 
+			// strController, 
+			// strVoClass, 
+			// strInputDs, 
+			// strOutputDs, 
+			// strParam, 
+			// strFnCallback);
+			
+	//strParam = "voClass='egovframework.rte.sample.service.SampleVO'";
+	//transaction("insert", "http://127.0.0.1:8080/egovframework-basicsample-web/miplatform/egovSampleInsert.do", "ds_input=ds_board:U", "", strParam, "fnCallback");
+}
+]]></Script>
+</Window>

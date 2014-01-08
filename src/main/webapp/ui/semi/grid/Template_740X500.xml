@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="504" Id="Template_740X500" Left="8" PidAttrib="7" Title="Template_740X500" Top="8" Ver="1.0" Width="744" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_list" OnColumnChanged="ds_list_OnColumnChanged">
+				<Contents>
+					<colinfo id="column1" size="256" type="STRING"/>
+					<colinfo id="column2" size="256" type="STRING"/>
+					<colinfo id="column3" size="256" type="STRING"/>
+					<colinfo id="column4" size="256" type="STRING"/>
+					<record>
+						<column1>Corporation1</column1>
+						<column2>Department1</column2>
+						<column3>Sales/Team1</column3>
+						<column4>7</column4>
+					</record>
+					<record>
+						<column1>Corporation1</column1>
+						<column2>Department1</column2>
+						<column3>Sales/Team2</column3>
+						<column4>12</column4>
+					</record>
+					<record>
+						<column1>Corporation1</column1>
+						<column2>Department1</column2>
+						<column3>Sales/Team3</column3>
+						<column4>15</column4>
+					</record>
+					<record>
+						<column1>Corporation1</column1>
+						<column2>Department1</column2>
+						<column3>Sales/Team4</column3>
+						<column4>11</column4>
+					</record>
+					<record>
+						<column1>Corporation1</column1>
+						<column2>Department1</column2>
+						<column3>Sales/Part1</column3>
+						<column4>9</column4>
+					</record>
+					<record>
+						<column1>Corporation1</column1>
+						<column2>Department1</column2>
+						<column3>Sales/Part2</column3>
+						<column4>8</column4>
+					</record>
+					<record>
+						<column1>Corporation1</column1>
+						<column2>Sales/SpecialTeam</column2>
+						<column3>Sales/SpecialTeam</column3>
+						<column4>17</column4>
+					</record>
+					<record>
+						<column1>Department2</column1>
+						<column2>Department1</column2>
+						<column3>Sales/Team1</column3>
+						<column4>2</column4>
+					</record>
+					<record>
+						<column1>Department2</column1>
+						<column2>Department1</column2>
+						<column3>Sales/Team2</column3>
+						<column4>5</column4>
+					</record>
+					<record>
+						<column1>Department2</column1>
+						<column2>Department1</column2>
+						<column3>Sales/Team3</column3>
+						<column4>1</column4>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="post_office">
+				<Contents>
+					<colinfo id="BLDG" size="40" summ="default" type="STRING"/>
+					<colinfo id="BUNJI" size="17" summ="default" type="STRING"/>
+					<colinfo id="DONG" size="26" summ="default" type="STRING"/>
+					<colinfo id="GUGUN" size="15" summ="default" type="STRING"/>
+					<colinfo id="RI" size="18" summ="default" type="STRING"/>
+					<colinfo id="SEQ" size="5" summ="default" type="STRING"/>
+					<colinfo id="SIDO" size="4" summ="default" type="STRING"/>
+					<colinfo id="ZIPCODE" size="7" summ="default" type="STRING"/>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Shape BKColor="#d6ecf0" Bottom="503" Height="503" Id="Shape0" Left="1" LineColor="#3d93b0" Right="739" RoundHeight="1" RoundWidth="1" TabOrder="8" Top="0" Type="RoundRect" Width="738"></Shape>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" BindDataset="ds_list" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="290" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="22" Height="284" Id="Grd_pp1_0010m_sl1" InputPanel="FALSE" Left="9" LineColor="default" MinWidth="100" Right="662" RowHeight="20" SelColor="white" Style="C_Gride_default" TabOrder="1" TabStop="true" Top="6" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="653">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="14"/>
+						<col width="100"/>
+						<col width="194"/>
+						<col width="165"/>
+						<col width="170"/>
+					</columns>
+					<head>
+						<cell bkcolor="#006666" bkimageid="head" col="0" display="text"/>
+						<cell col="1" color="white" display="text" font="Arial,9,Bold" text="Division"/>
+						<cell col="2" color="white" display="text" font="Arial,9,Bold" text="Department"/>
+						<cell col="3" color="white" display="text" font="Arial,9,Bold" text="Team"/>
+						<cell col="4" color="white" display="text" font="Arial,9,Bold" text="RowType"/>
+					</head>
+					<body>
+						<cell bkcolor="#f3f5ff" bkimageid="expr:getRowType(currow)" col="0" display="text"/>
+						<cell align="left" bkcolor="white" bkcolor2="#e7f8fa" col="1" colid="column1" display="text" edit="normal"/>
+						<cell align="left" bkcolor="white" bkcolor2="#e7f8fa" col="2" colid="column2" display="text" edit="normal"/>
+						<cell align="left" bkcolor="white" bkcolor2="#e7f8fa" col="3" colid="column3" display="text" edit="normal"/>
+						<cell align="left" bkcolor="white" bkcolor2="#e7f8fa" col="4" colid="CUST_NM" display="text" expr="getRowType(row)"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Button ButtonStyle="TRUE" Height="21" Id="btn_query" ImageID="N_button_4" Left="665" OnClick="btn_query_OnClick" Style="text_black" TabOrder="2" Text="Query" Top="37" Width="68"></Button>
+		<Button ButtonStyle="TRUE" Height="21" Id="btn_Append" ImageID="N_button_4" Left="665" OnClick="btn_Append_OnClick" Style="text_black" TabOrder="3" Text="Add" Top="72" Width="68"></Button>
+		<TextArea Border="Flat" Height="169" HScroll="TRUE" Id="ta_ds" Left="9" Style="box01" TabOrder="4" Top="324" VScroll="TRUE" Width="725"></TextArea>
+		<Button ButtonStyle="TRUE" Height="21" Id="btn_delete" ImageID="N_button_4" Left="665" OnClick="btn_delete_OnClick" Style="text_black" TabOrder="5" Text="Delete" Top="101" Width="68"></Button>
+		<Static Border="None" Color="#444444" Font="Arial,10,Bold" Height="19" Id="Static0" Left="10" TabOrder="6" Text="[&#32;DataSet&#32;RowStatus&#32;View]" Top="305" VAlign="Middle" Width="193"></Static>
+		<Button ButtonStyle="TRUE" Height="21" Id="Button0" ImageID="N_button_4" Left="665" OnClick="btn_delete_OnClick" Style="text_black" TabOrder="7" Text="View" Top="300" Width="68"></Button>
+		<Button Height="29" Id="Button1" Left="678" OnClick="Button1_OnClick" TabOrder="9" Text="Button1" Top="149" Width="40"></Button>
+		<File Bottom="112" Height="24" Id="File0" Left="744" Right="768" TabOrder="9" Top="88" Width="24"></File>
+	</Form>
+	<Script><![CDATA[
+var FLAG_DEL=false;
+
+function fn_set_RowStatus(cRow, status)
+{
+	trace("status : " + status);
+
+	var img_status;
+	
+	if ( status == "insert" )
+	{
+		img_status = "insert";
+	}
+	else if ( status == "update" )
+	{
+		img_status = "update";
+	}
+	else if ( status == "delete" )
+	{
+		img_status = "delete";
+	}
+	
+	return img_status;
+	
+	
+
+	// var img_status;
+
+	// if ( FLAG_DEL == true )
+	// {
+		// img_status = "delete";
+	// }
+	// else
+	// {
+		// if ( ds_list.GetRowType(cRow) == "insert" )
+			// img_status = "insert";
+		// else if ( ds_list.GetRowType(cRow) == "update" )
+			// img_status = "update";
+	// }
+	
+	// FLAG_DEL = false;
+	
+	// return img_status;
+}
+
+
+function btn_Append_OnClick(obj)
+{
+	var cRow = ds_list.AddRow();
+	
+	ds_list.SetColumn(cRow, "status", "insert");
+}
+
+function btn_view_OnClick(obj)
+{
+	ta_ds.text = ShowDataset(ds_list);
+}
+
+function btn_query_OnClick(obj)
+{
+	ds_list.Reset();
+}
+
+
+function ShowDataset(Dataset)
+{
+	//alert("ShowDataset()");
+	var i,j;
+	var tempStr = "";
+	var RowCount = Dataset.RowCount();
+	var ColCount = Dataset.ColCount();
+	
+	//Dataset ID 
+	tempStr = "[" + Dataset.id + "]\n\n"; 
+	
+	//Column ID 
+	tempStr = tempStr + "|";
+	for (j=0; j < ColCount; j++)
+		tempStr = tempStr + Dataset.GetColID(j) + "\t|";
+	tempStr = tempStr + "\n\n";
+	
+	//Column Data  
+	for (i=0; i < RowCount; i++) 
+	{
+		tempStr = tempStr + "==" + Dataset.GetRowType(i) + "==Row "+ i + " :\n";
+		tempStr = tempStr + "Row "+ i + " :\n";
+
+
+		for (j=0; j < ColCount; j++) 
+		{
+			tempGetColumn = Dataset.GetColumn(i, j);
+	
+			tempStr = tempStr + tempGetColumn;
+//			if (tempGetColumn.Length < 10)
+			if ((j == 10)||(j == 20)||(j == 30)||(j == 40)||(j == 50))
+				tempStr = tempStr + "\n|";
+			else
+				tempStr = tempStr + "\t|";
+		}
+		tempStr = tempStr + "\n\n";
+	}
+	return tempStr;
+}
+function btn_delete_OnClick(obj)
+{
+	//ds_list.DeleteRow(ds_list.row);
+	
+	//var delType = ds_list.GetRowType(ds_list.row);
+	
+	//alert("delType : " + delType);
+	
+	// var FLAG_DEL=true;
+	
+	// fn_set_RowStatus(ds_list.row);
+	
+	ds_list.SetColumn(ds_list.row, "status", "delete");
+	
+}
+
+function Button1_OnClick(obj)
+{
+	
+
+	ds_list.updatecontrol = false;
+	ds_list.Setrowtype(10, 'update'); 
+	ds_list.updatecontrol = true;	
+	alert(ds_list.GetRowType(10));
+}
+
+
+
+function ds_list_OnColumnChanged(obj,nRow,strColumnID,varOldValue,varNewValue,nPivotIndex)
+{
+	ds_list.SetColumn(nRow, "status", "update");
+}
+
+function getPost()
+{
+	Grid0.Redraw = false;
+	var str_filename =  + "D:\\Demo\\MiPlatform\\S_2\\xls\\zipcode.xlsx";
+	ext_ExcelImportByIndex(str_filename, 0, "post_office");
+	fn_grid_show();
+	// Grid_main.Redraw = true;
+	
+	
+	var ds = Object(Grid0.BindDataset);
+	
+	for ( var i = 0; i < ds.getColCount(); i ++ )
+	{
+		Grid0.SetCellProp("body", i, "wordwrap", "exchar");
+	}
+	Grid0.Redraw = true;	
+}
+
+function fn_grid_show()
+{
+	var str_contents = "";
+	var colcnt = 0;
+	var colnm = "";
+	
+	colcnt = post_office.colcount;
+	
+	str_contents = "<Contents>";
+	str_contents += "	<columns>";
+	
+	for ( i=0; i < colcnt; i++ )
+	{
+		str_contents += "		<col Width='80'/>";
+	}
+	str_contents += "	</columns>";
+	str_contents += "	<head>";
+	for ( i=0; i < colcnt; i++ )
+	{
+		colnm = post_office.GetColID(i);
+		str_contents += "		<cell col='" + i + "' Text='" + colnm + "'/>";
+	}
+	str_contents += "	</head>";
+	str_contents += "	<body>";
+	for ( i=0; i < colcnt; i++ )
+	{
+		colnm = post_office.GetColID(i);
+		str_contents += "		<cell col='" + i + "' colid='" + colnm + "'/>";
+	}
+	str_contents += "	</body>";
+	str_contents += "</Contents>";
+		
+	Grid0.Contents = str_contents;
+	
+	//trace( str_contents );
+}
+]]></Script>
+</Window>

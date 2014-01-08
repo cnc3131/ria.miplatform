@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="526" Id="GridFilterSample" Left="8" OnLoadCompleted="GridFilterSample_OnLoadCompleted" PidAttrib="7" Title="그리드의&#32;자동&#32;필터링&#32;기능" Top="8" Ver="1.0" Width="968" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_Left">
+				<Contents>
+					<colinfo id="CHK" size="1" type="STRING"/>
+					<colinfo id="NUMBER" size="256" type="STRING"/>
+					<colinfo id="STRING" size="256" type="STRING"/>
+					<colinfo id="FROM_DATE" size="8" type="DATE"/>
+					<colinfo id="TO_DATE" size="8" type="DATE"/>
+					<colinfo id="COMBO" size="256" type="STRING"/>
+					<colinfo id="TEXT" size="256" type="STRING"/>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.89123</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO02</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.1234</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.56</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK></CHK>
+						<COMBO></COMBO>
+						<FROM_DATE/>
+						<NUMBER></NUMBER>
+						<STRING></STRING>
+						<TEXT></TEXT>
+						<TO_DATE/>
+					</record>
+					<record>
+						<CHK></CHK>
+						<COMBO></COMBO>
+						<FROM_DATE/>
+						<NUMBER></NUMBER>
+						<STRING></STRING>
+						<TEXT></TEXT>
+						<TO_DATE/>
+					</record>
+					<record>
+						<CHK></CHK>
+						<COMBO></COMBO>
+						<FROM_DATE/>
+						<NUMBER></NUMBER>
+						<STRING></STRING>
+						<TEXT></TEXT>
+						<TO_DATE/>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO04</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.789</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO05</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.112</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.332</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.5632</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.89123</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK></CHK>
+						<COMBO></COMBO>
+						<FROM_DATE/>
+						<NUMBER></NUMBER>
+						<STRING></STRING>
+						<TEXT></TEXT>
+						<TO_DATE/>
+					</record>
+					<record>
+						<CHK></CHK>
+						<COMBO></COMBO>
+						<FROM_DATE/>
+						<NUMBER></NUMBER>
+						<STRING></STRING>
+						<TEXT></TEXT>
+						<TO_DATE/>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO02</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.1234</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.56</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO04</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.789</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO05</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.112</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.332</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.5632</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.89123</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO02</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.1234</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.56</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO04</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.789</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO05</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.112</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.332</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.5632</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_Right">
+				<Contents>
+					<colinfo id="CHK" size="1" type="STRING"/>
+					<colinfo id="NUMBER" size="256" type="STRING"/>
+					<colinfo id="STRING" size="256" type="STRING"/>
+					<colinfo id="FROM_DATE" size="8" type="DATE"/>
+					<colinfo id="TO_DATE" size="8" type="DATE"/>
+					<colinfo id="COMBO" size="256" type="STRING"/>
+					<colinfo id="TEXT" size="256" type="STRING"/>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.89123</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO02</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.1234</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.56</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO04</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.789</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO05</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.112</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.332</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.5632</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.89123</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO02</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.1234</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.56</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO04</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.789</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO05</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.112</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.332</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.5632</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.89123</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO02</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.1234</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.56</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO04</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.789</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO05</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.112</NUMBER>
+						<STRING>bbb</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO03</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.332</NUMBER>
+						<STRING>aaa</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+					<record>
+						<CHK>0</CHK>
+						<COMBO>CO01</COMBO>
+						<FROM_DATE>20080101</FROM_DATE>
+						<NUMBER>10000.5632</NUMBER>
+						<STRING>ccc</STRING>
+						<TEXT>테스트&#32;데이타</TEXT>
+						<TO_DATE>20080619</TO_DATE>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_PopupMenu_GridHead">
+				<Contents>
+					<colinfo id="caption" size="255" type="STRING"/>
+					<colinfo id="level" size="255" type="STRING"/>
+					<colinfo id="enable" size="256" type="STRING"/>
+					<colinfo id="icon" size="256" type="STRING"/>
+					<colinfo id="id" size="256" type="STRING"/>
+					<colinfo id="url" size="256" type="STRING"/>
+					<colinfo id="formatid" size="256" type="STRING"/>
+					<record>
+						<caption>Grid&#32;Head&#32;팝업메뉴</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>0</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Fix&#32;Cell</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>fix</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Release&#32;Cell</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>release</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Multi&#32;Row</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>multirow</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Multi&#32;Sort</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>multisort</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Auto&#32;Filter</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>autofilter</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Show</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>show</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Hide</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>hide</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Reset&#32;Grid</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>reset</id>
+						<level>1</level>
+						<url></url>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_PopupMenu_GridBody">
+				<Contents>
+					<colinfo id="caption" size="255" type="STRING"/>
+					<colinfo id="level" size="255" type="STRING"/>
+					<colinfo id="enable" size="256" type="STRING"/>
+					<colinfo id="icon" size="256" type="STRING"/>
+					<colinfo id="id" size="256" type="STRING"/>
+					<colinfo id="url" size="256" type="STRING"/>
+					<record>
+						<caption>Grid&#32;팝업메뉴</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>0</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Vertical&#32;Ditto</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>vditto</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Horizon&#32;Ditto</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>hditto</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Find&#32;&#32;&#32;&#32;(Ctrl+F,&#32;F3)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>find</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Reset&#32;&#32;&#32;(Ctrl+Z)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>reset</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Cut&#32;&#32;&#32;&#32;&#32;(Ctrl+X)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>cut</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Copy&#32;&#32;&#32;&#32;(Ctrl+C)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>copy</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Paste&#32;&#32;&#32;(Ctrl+V)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>paste</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Delete&#32;&#32;(del)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>delete</id>
+						<level>1</level>
+						<url></url>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_PopupMenu_LeftGridHead">
+				<Contents>
+					<colinfo id="caption" size="255" type="STRING"/>
+					<colinfo id="level" size="255" type="STRING"/>
+					<colinfo id="enable" size="256" type="STRING"/>
+					<colinfo id="icon" size="256" type="STRING"/>
+					<colinfo id="id" size="256" type="STRING"/>
+					<colinfo id="url" size="256" type="STRING"/>
+					<colinfo id="formatid" size="256" type="STRING"/>
+					<record>
+						<caption>Grid&#32;Head&#32;팝업메뉴</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>0</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Fix&#32;Cell</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>fix</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Release&#32;Cell</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>release</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Multi&#32;Row</caption>
+						<enable></enable>
+						<formatid>format1</formatid>
+						<icon></icon>
+						<id>multirow</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Multi&#32;Sort</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>multisort</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Auto&#32;Filter</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>autofilter</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Show</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>show</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Hide</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>hide</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Reset&#32;Grid</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>reset</id>
+						<level>1</level>
+						<url></url>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_PopupMenu_Body">
+				<Contents>
+					<colinfo id="caption" size="255" type="STRING"/>
+					<colinfo id="level" size="255" type="STRING"/>
+					<colinfo id="enable" size="256" type="STRING"/>
+					<colinfo id="icon" size="256" type="STRING"/>
+					<colinfo id="id" size="256" type="STRING"/>
+					<colinfo id="url" size="256" type="STRING"/>
+					<record>
+						<caption>Grid&#32;팝업메뉴</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>0</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Vertical&#32;Ditto</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>vditto</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Horizon&#32;Ditto</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>hditto</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Multi&#32;Ditto</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>mditto</id>
+						<level>1</level>
+						<url>template::MultiDittoSample.xml</url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Find&#32;&#32;&#32;&#32;(Ctrl+F,&#32;F3)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>find</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Reset&#32;&#32;&#32;(Ctrl+Z)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>reset</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Cut&#32;&#32;&#32;&#32;&#32;(Ctrl+X)</caption>
+						<enable>false</enable>
+						<icon></icon>
+						<id>cut</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Copy&#32;&#32;&#32;&#32;(Ctrl+C)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>copy</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Paste&#32;&#32;&#32;(Ctrl+V)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>paste</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Delete&#32;&#32;(del)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>delete</id>
+						<level>1</level>
+						<url></url>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Grid AutoEnter="TRUE" AutoFitEndLine="Hide" BindDataset="ds_Right" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="526" CellMoving="TRUE" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="504" Id="grd_Right" InputPanel="FALSE" Left="488" LineColor="default" LineType="ExHORZ" OnHeadClick="grd_OnHeadClick" Right="968" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="22" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="480">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col fix="left" width="20"/>
+						<col width="100"/>
+						<col width="100"/>
+						<col width="90"/>
+						<col width="90"/>
+						<col width="70"/>
+						<col width="100"/>
+					</columns>
+					<head>
+						<cell bkcolor="user13" col="0" color="user14" display="checkbox" edit="checkbox" text="0"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" text="STRING"/>
+						<cell bkcolor="user13" bkimageid="m_grid_E" col="2" color="user14" display="text" text="NUMBER"/>
+						<cell bkcolor="user13" col="3" color="user14" display="text" text="FROM_DATE"/>
+						<cell bkcolor="user13" col="4" color="user14" display="text" text="TO_DATE"/>
+						<cell bkcolor="user13" bkimageid="m_grid_E" col="5" color="user14" display="text" text="COMBO"/>
+						<cell bkcolor="user13" bkimageid="m_grid_E" col="6" color="user14" display="text" text="TEXT"/>
+					</head>
+					<body>
+						<cell bkcolor="user11" bkcolor2="user12" col="0" colid="CHK" color="user16" display="checkbox" edit="checkbox"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="1" colid="STRING" color="user16" display="text" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;normal&apos;,&#32;&apos;none&apos;)"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" col="2" colid="NUMBER" color="user16" display="number" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;number&apos;,&#32;&apos;none&apos;)"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="3" colid="FROM_DATE" color="user16" display="date" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;date&apos;,&#32;&apos;none&apos;)" expandimage="btn_seCal" expandsize="18"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="4" colid="TO_DATE" color="user16" display="date" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;date&apos;,&#32;&apos;none&apos;)" expandimage="btn_seCal" expandsize="18"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="5" colid="COMBO" color="user16" combocol="CODE" combodataset="ds_Code" combotext="TEXT" display="combo" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;combo&apos;,&#32;&apos;none&apos;)"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="6" colid="TEXT" color="user16" display="text" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;normal&apos;,&#32;&apos;none&apos;)"/>
+					</body>
+					<summary>
+						<cell align="center" bkcolor="user19" col="0" color="user20" display="text"/>
+						<cell align="center" bkcolor="user19" col="1" color="user20" display="text" text="총계"/>
+						<cell align="right" bkcolor="user19" col="2" color="user20" display="number" expr="sum(&apos;NUMBER&apos;)" Mask="###,###,###,###.000" text="0"/>
+						<cell align="right" bkcolor="user19" col="3" color="user20" display="text"/>
+						<cell align="right" bkcolor="user19" col="4" color="user20" display="text"/>
+						<cell align="right" bkcolor="user19" col="5" color="user20" display="text"/>
+						<cell align="right" bkcolor="user19" col="6" color="user20" display="text"/>
+					</summary>
+				</format>
+			</contents>
+		</Grid>
+		<Button Cursor="HAND" Height="20" Id="btn_gridAdd" ImageID="m_bt_grid_02" Left="460" OnClick="btn_gridAdd_OnClick" TabOrder="2" Text="Button0" ToolTipText="Add&#32;Row" Width="20"></Button>
+		<Grid AutoEnter="TRUE" AutoFitEndLine="Hide" BindDataset="ds_Left" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="526" CellMoving="TRUE" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="504" Id="grd_Left" InputPanel="FALSE" LineColor="default" LineType="ExHORZ" OnHeadClick="grd_OnHeadClick" Right="480" RowHeight="20" Style="se_grid" TabOrder="3" TabStop="true" Top="22" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="480">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col fix="left" width="20"/>
+						<col width="100"/>
+						<col width="100"/>
+						<col width="90"/>
+						<col width="90"/>
+						<col width="70"/>
+						<col width="100"/>
+					</columns>
+					<head>
+						<cell bkcolor="user13" col="0" color="user14" display="checkbox" edit="checkbox" text="0"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" text="STRING"/>
+						<cell bkcolor="user13" bkimageid="m_grid_E" col="2" color="user14" display="text" text="NUMBER"/>
+						<cell bkcolor="user13" col="3" color="user14" display="text" text="FROM_DATE"/>
+						<cell bkcolor="user13" col="4" color="user14" display="text" text="TO_DATE"/>
+						<cell bkcolor="user13" bkimageid="m_grid_E" col="5" color="user14" display="text" text="COMBO"/>
+						<cell bkcolor="user13" bkimageid="m_grid_E" col="6" color="user14" display="text" text="TEXT"/>
+					</head>
+					<body>
+						<cell bkcolor="user11" bkcolor2="user12" col="0" colid="CHK" color="user16" display="checkbox" edit="checkbox"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="1" colid="STRING" color="user16" display="text" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;normal&apos;,&#32;&apos;none&apos;)"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" col="2" colid="NUMBER" color="user16" display="number" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;number&apos;,&#32;&apos;none&apos;)"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="3" colid="FROM_DATE" color="user16" display="date" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;date&apos;,&#32;&apos;none&apos;)" expandimage="btn_seCal" expandsize="18"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="4" colid="TO_DATE" color="user16" display="date" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;date&apos;,&#32;&apos;none&apos;)" expandimage="btn_seCal" expandsize="18"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="5" colid="COMBO" color="user16" combocol="CODE" combodataset="ds_Code" combotext="TEXT" display="combo" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;combo&apos;,&#32;&apos;none&apos;)"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="6" colid="TEXT" color="user16" display="text" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;normal&apos;,&#32;&apos;none&apos;)"/>
+					</body>
+					<summary>
+						<cell align="center" bkcolor="user19" col="0" color="user20" display="text"/>
+						<cell align="center" bkcolor="user19" col="1" color="user20" display="text" text="총계"/>
+						<cell align="right" bkcolor="user19" col="2" color="user20" display="number" expr="sum(&apos;NUMBER&apos;)" Mask="###,###,###,###.000" text="0"/>
+						<cell align="right" bkcolor="user19" col="3" color="user20" display="text"/>
+						<cell align="right" bkcolor="user19" col="4" color="user20" display="text"/>
+						<cell align="right" bkcolor="user19" col="5" color="user20" display="text"/>
+						<cell align="right" bkcolor="user19" col="6" color="user20" display="text"/>
+					</summary>
+				</format>
+			</contents>
+		</Grid>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button0" ImageID="m_bt_txt_04" Left="384" OnClick="Button0_OnClick" Style="cm_btn" TabOrder="4" Text="자동&#32;필터" Width="62"></Button>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button1" ImageID="m_bt_txt_04" Left="906" OnClick="Button1_OnClick" Style="cm_btn" TabOrder="5" Text="자동&#32;필터" Width="62"></Button>
+		<Image Height="9" Id="Image0" ImageID="m_bl_part" Left="453" TabOrder="6" Top="5" Width="1"></Image>
+	</Form>
+	<Script><![CDATA[#include "lib::commons.js";		// Form 공통 Script
+
+function GridFilterSample_OnLoadCompleted(obj)
+{
+	grd_fn_PopupDivFilterInit(grd_Left.id);
+	grd_fn_PopupDivFilterInit(grd_Right.id);
+}
+
+function btn_gridAdd_OnClick(obj)
+{
+	var nRow = ds_Left.AddRow();
+}
+
+function grd_OnHeadClick(obj,nCell,nX,nY,nPivotIndex)
+{
+	// Head가 Filter 상태 일때 처리
+	if(	obj.GetCellProp("head",nCell,"expandimage") == GRD_STR_UNFILTER_IMAGE ||
+				obj.GetCellProp("head",nCell,"expandimage") == GRD_STR_FILTER_IMAGE ) {
+
+		grd_fn_PopupDivFilter(obj,nCell);
+	}
+}
+
+function Button0_OnClick(obj)
+{
+	grd_fn_PopupDivFilterSet(grd_Left);
+}
+
+function Button1_OnClick(obj)
+{
+	grd_fn_PopupDivFilterSet(grd_Right);
+}
+]]></Script>
+</Window>

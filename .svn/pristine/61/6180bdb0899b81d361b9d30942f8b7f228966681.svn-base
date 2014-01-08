@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="form" Left="8" OnLoadCompleted="form_OnLoadCompleted" PidAttrib="7" Title="Multi&#32;Sorting&#32;기능" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_list1">
+				<Contents>
+					<colinfo id="column0" size="256" type="STRING"/>
+					<colinfo id="column1" size="256" type="INT"/>
+					<colinfo id="column2" size="256" type="STRING"/>
+					<colinfo id="column3" size="256" type="STRING"/>
+					<colinfo id="column4" size="256" type="STRING"/>
+					<colinfo id="column5" size="256" type="STRING"/>
+					<colinfo id="column6" size="256" type="STRING"/>
+					<colinfo id="column7" size="256" type="STRING"/>
+					<colinfo id="column8" size="256" type="STRING"/>
+					<colinfo id="column9" size="256" type="STRING"/>
+					<colinfo id="column10" size="256" type="STRING"/>
+					<colinfo id="column11" size="256" type="STRING"/>
+					<colinfo id="column12" size="256" type="STRING"/>
+					<colinfo id="column13" size="256" type="STRING"/>
+					<colinfo id="column14" size="256" type="DECIMAL"/>
+					<colinfo id="column15" size="256" type="DECIMAL"/>
+					<record>
+						<column0>1</column0>
+						<column1>1</column1>
+						<column10>0001</column10>
+						<column11>Trousers</column11>
+						<column12>Zion</column12>
+						<column13>Julia</column13>
+						<column14>10000</column14>
+						<column15>90</column15>
+						<column2>Sales&#32;Amount</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0001</column4>
+						<column5>JaeHee&#32;Kim</column5>
+						<column6>Bank&#32;of&#32;KookMin</column6>
+						<column7>235685-97-215489</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+					<record>
+						<column0>1</column0>
+						<column1>2</column1>
+						<column10>0001</column10>
+						<column11>Trousers</column11>
+						<column12>Zion</column12>
+						<column13>Julia</column13>
+						<column14>3000</column14>
+						<column15>2000</column15>
+						<column2>Delivery&#32;Charge</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0001</column4>
+						<column5>JaeHee&#32;Kim</column5>
+						<column6>Bank&#32;of&#32;KookMin</column6>
+						<column7>685923-99-256984</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+					<record>
+						<column0>1</column0>
+						<column1>3</column1>
+						<column10>0015</column10>
+						<column11>Skirt</column11>
+						<column12>seon</column12>
+						<column13>Sunny</column13>
+						<column14>10000</column14>
+						<column15>8000</column15>
+						<column2>eMoney</column2>
+						<column3>Company</column3>
+						<column4>TOBE_0002</column4>
+						<column5>Samsung</column5>
+						<column6>Bank&#32;of&#32;ShinHan</column6>
+						<column7>230-02-458968</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+					<record>
+						<column0>1</column0>
+						<column1>4</column1>
+						<column10>0020</column10>
+						<column11>Apple</column11>
+						<column12>dream</column12>
+						<column13>Hans&#32;Morgan</column13>
+						<column14>16000</column14>
+						<column15>13000</column15>
+						<column2>Refund</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0003</column4>
+						<column5>EunGi&#32;Park</column5>
+						<column6>Bank&#32;of&#32;ShinHan</column6>
+						<column7>320-02-526457</column7>
+						<column8></column8>
+						<column9>Unverified▼</column9>
+					</record>
+					<record>
+						<column0>0</column0>
+						<column1>5</column1>
+						<column10>0020</column10>
+						<column11>Apple</column11>
+						<column12>dream</column12>
+						<column13>Hans&#32;Morgan</column13>
+						<column14>4000</column14>
+						<column15>100</column15>
+						<column2>Delivery&#32;Charge</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0003</column4>
+						<column5>EunGi&#32;Park</column5>
+						<column6>Bank&#32;of&#32;ShinHan</column6>
+						<column7>320-02-526457</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+					<record>
+						<column0>0</column0>
+						<column1>6</column1>
+						<column10>0020</column10>
+						<column11>Apple</column11>
+						<column12>dream</column12>
+						<column13>Hans&#32;Morgan</column13>
+						<column14>1200</column14>
+						<column15>1200</column15>
+						<column2>Mismatch</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0003</column4>
+						<column5>EunGi&#32;Park</column5>
+						<column6>Bank&#32;of&#32;ShinHan</column6>
+						<column7>320-02-526457</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+					<record>
+						<column0>0</column0>
+						<column1>7</column1>
+						<column10>0001</column10>
+						<column11>Trousers</column11>
+						<column12>Zion</column12>
+						<column13>Julia</column13>
+						<column14>10000</column14>
+						<column15>90</column15>
+						<column2>Sales&#32;Amount</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0004</column4>
+						<column5>JungHyun&#32;Jo</column5>
+						<column6>Bank&#32;of&#32;KookMin</column6>
+						<column7>385923-98-256584</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+					<record>
+						<column0>0</column0>
+						<column1>8</column1>
+						<column10>0001</column10>
+						<column11>Trousers</column11>
+						<column12>Zion</column12>
+						<column13>Julia</column13>
+						<column14>3000</column14>
+						<column15>2000</column15>
+						<column2>Delivery&#32;Charge</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0004</column4>
+						<column5>JungHyun&#32;Jo</column5>
+						<column6>Bank&#32;of&#32;KookMin</column6>
+						<column7>385923-98-256584</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+					<record>
+						<column0>0</column0>
+						<column1>9</column1>
+						<column10>0015</column10>
+						<column11>Skirt</column11>
+						<column12>seon</column12>
+						<column13>Sunny</column13>
+						<column14>10000</column14>
+						<column15>8000</column15>
+						<column2>Delivery&#32;Charge</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0004</column4>
+						<column5>JungHyun&#32;Jo</column5>
+						<column6>Bank&#32;of&#32;KookMin</column6>
+						<column7>385923-98-256584</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+					<record>
+						<column0>0</column0>
+						<column1>10</column1>
+						<column10>0020</column10>
+						<column11>Apple</column11>
+						<column12>aaa</column12>
+						<column13>Karl&#32;Peterson</column13>
+						<column14>16000</column14>
+						<column15>13000</column15>
+						<column2>Refund</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0010</column4>
+						<column5>GangHo&#32;Lee</column5>
+						<column6>Bank&#32;of&#32;ShinHan</column6>
+						<column7>210-05-616487</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+					<record>
+						<column0>0</column0>
+						<column1>11</column1>
+						<column10>0020</column10>
+						<column11>Apple</column11>
+						<column12>aaa</column12>
+						<column13>Karl&#32;Peterson</column13>
+						<column14>4000</column14>
+						<column15>100</column15>
+						<column2>Delivery&#32;Charge</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0010</column4>
+						<column5>GangHo&#32;Lee</column5>
+						<column6>Bank&#32;of&#32;ShinHan</column6>
+						<column7>210-05-616487</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+					<record>
+						<column0>0</column0>
+						<column1>12</column1>
+						<column10>0020</column10>
+						<column11>Apple</column11>
+						<column12>aaa</column12>
+						<column13>Karl&#32;Peterson</column13>
+						<column14>1200</column14>
+						<column15>1200</column15>
+						<column2>Mismatch</column2>
+						<column3>Individual</column3>
+						<column4>TOBE_0010</column4>
+						<column5>GangHo&#32;Lee</column5>
+						<column6>Bank&#32;of&#32;ShinHan</column6>
+						<column7>210-05-616487</column7>
+						<column8></column8>
+						<column9>Normality▼</column9>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="dsPopupMenu">
+				<Contents>
+					<colinfo Id="LEVEL" Size="2" Type="INT"/>
+					<colinfo Id="ID" Size="3" Type="INT"/>
+					<colinfo Id="TEXT" Size="256" Type="STRING"/>
+					<colinfo Id="Status" Size="256" Type="STRING"/>
+					<colinfo Id="ImageID" Size="256" Type="STRING"/>
+					<record>
+						<LEVEL>1</LEVEL>
+						<ID>100</ID>
+						<TEXT>Muilt&#32;Sort</TEXT>
+						<Status></Status>
+						<ImageID></ImageID>
+					</record>
+					<record>
+						<LEVEL>1</LEVEL>
+						<ID>200</ID>
+						<TEXT>Export&#32;to&#32;Excel</TEXT>
+						<Status></Status>
+						<ImageID></ImageID>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="dsPopupMenu">
+				<Contents>
+					<colinfo Id="LEVEL" Size="2" Type="INT"/>
+					<colinfo Id="ID" Size="3" Type="INT"/>
+					<colinfo Id="TEXT" Size="256" Type="STRING"/>
+					<colinfo Id="Status" Size="256" Type="STRING"/>
+					<colinfo Id="ImageID" Size="256" Type="STRING"/>
+					<record>
+						<LEVEL>1</LEVEL>
+						<ID>100</ID>
+						<TEXT>Muilt&#32;Sort</TEXT>
+						<Status></Status>
+						<ImageID></ImageID>
+					</record>
+					<record>
+						<LEVEL>1</LEVEL>
+						<ID>200</ID>
+						<TEXT>Grid&#32;Excel로&#32;내보내기</TEXT>
+						<Status></Status>
+						<ImageID></ImageID>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="4" Width="1000"></Image>
+		<Button ButtonStyle="TRUE" Cursor="HAND" Height="20" Id="btnMSort" ImageID="m_bt_txt_05" Left="900" OnClick="fn_MSort" Style="cm_btn" TabOrder="2" Text="Mult&#32;Sort" Top="27" Width="74"></Button>
+		<Grid AreaSelect="TRUE" BindDataset="ds_list1" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="557" CellMoving="TRUE" ColSelect="TRUE" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" FixedColSizing="TRUE" Font="Arial,9" HeadBorder="Flat" HeadHeight="20" Height="504" Id="Grid_main" InputPanel="FALSE" Left="22" LineColor="default" LineType="ExVERT" OnHeadDBLClick="Grid_main_OnHeadDblClick" OnRButtonDown="Grid_main_OnRButtonDown" Right="974" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="53" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="952">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="58"/>
+						<col width="55"/>
+						<col width="113"/>
+						<col width="99"/>
+						<col width="105"/>
+						<col width="102"/>
+						<col width="119"/>
+						<col width="128"/>
+						<col width="116"/>
+						<col width="90"/>
+						<col width="93"/>
+						<col width="73"/>
+						<col width="80"/>
+						<col width="88"/>
+						<col width="85"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="Arial,9,Bold" text="Option"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user14" display="text" font="Arial,9,Bold" text="No."/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="user14" display="text" font="Arial,9,Bold" text="Adjustment&#32;Type"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user14" display="text" font="Arial,9,Bold" text="Member&#32;Type"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="user14" display="text" font="Defa,9,Bold" text="Member&#32;ID"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="5" color="user14" display="text" font="Arial,9,Bold" text="Member&#32;Name"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="6" color="user14" display="text" font="Arial,9,Bold" text="Bank"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="7" color="user14" display="text" font="Arial,9,Bold" text="Acc.&#32;No."/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="8" color="user14" display="text" font="Arial,9,Bold" text="Verification"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="9" color="user14" display="text" font="Arial,9,Bold" text="Register&#32;No."/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="10" color="user14" display="text" font="Arial,9,Bold" text="Product&#32;Name"/>
+						<cell bkcolor="user13" col="11" color="user14" display="text" font="Arial,9,Bold" text="Buyer&#32;ID"/>
+						<cell bkcolor="user13" col="12" color="user14" display="text" font="Arial,9,Bold" text="Buyer&#32;Name"/>
+						<cell bkcolor="user13" col="13" color="user14" display="text" font="Arial,9,Bold" text="Settlement&#32;Amount"/>
+						<cell bkcolor="user13" col="14" color="user14" display="text" font="Arial,9,Bold" text="Actual&#32;amount&#32;of&#32;remittance"/>
+					</head>
+					<body>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="0" colid="column0" color="user16" display="checkbox" edit="checkbox"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="1" colid="column1" color="user16" display="text"/>
+						<cell align="left" bkcolor="user11" bkcolor2="user12" col="2" colid="column2" color="user16" display="text"/>
+						<cell align="left" bkcolor="user11" bkcolor2="user12" col="3" colid="column3" color="user16" display="text"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="4" colid="column4" color="user16" display="text"/>
+						<cell align="left" bkcolor="user11" bkcolor2="user12" col="5" colid="column5" color="user16" display="text"/>
+						<cell align="left" bkcolor="user11" bkcolor2="user12" col="6" colid="column6" color="user16" display="text"/>
+						<cell align="left" bkcolor="user11" bkcolor2="user12" col="7" colid="column7" color="user16" display="text"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="8" colid="column9" color="user16" display="text"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="9" colid="column10" color="user16" display="text"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="10" colid="column11" color="user16" display="text"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="11" colid="column12" color="user16" display="text"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="12" colid="column13" color="user16" display="text"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" col="13" colid="column14" color="user16" display="number"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" col="14" colid="column15" color="user16" cursor="hand" display="number"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="19" LeftMargin="18" Style="cm_title_sub" TabOrder="4" Text="그리드&#32;Group" Top="27" Width="216"></Image>
+	</Form>
+	<Script><![CDATA[
+function form_OnLoadCompleted(obj)
+{
+
+}
+
+
+function btnMSort_OnClick(obj)
+{
+	fn_MSort();
+}
+
+
+function fn_MSort()
+{
+	var str_arg, str_result;
+	   
+	/*
+	for (var i=0;i<Grid_main.GetCellCount("head");i++)
+	{
+		// Head Sort 표시 제거..
+		Grid_main.SetCellProp("head",i,"text",replace(replace(Grid_main.GetCellProp("head",i,"text"),"▲"),"▼"));
+	}
+	*/  
+	  
+	str_arg = "arg_grid=" + quote("Grid_main");
+	str_result = Dialog("semi_grid::SortColumnSelectPopup.xml", str_arg, 350, 225, true, -1, -1);
+	
+	if ( (str_result <> null)  && (str_result <> "") )
+	{
+		ds_list1.Sort(str_result);
+	}
+	
+}
+
+
+function Grid_main_OnHeadDblClick(obj,nCell,nX,nY)
+{
+	fn_sort(obj, nCell);
+}
+
+
+// Soft 기능 수행..
+function fn_sort(obj, nCell)
+{
+	var strSortType = obj.GetCellProp("head",nCell,"text");
+	var ds_obj = object(obj.BindDataset);
+	
+	// Soft 구분자 분리 ..
+	strSortType = right(strSortType,1);
+		
+	for (var i=0;i<obj.GetCellCount("head");i++)
+	{
+		// Head Sort 
+		obj.SetCellProp("head",i,"text",replace(replace(obj.GetCellProp("head",i,"text"),"▲"),"▼"));
+	}
+	
+	if (strSortType == "▲")
+	{
+		obj.SetCellProp("head",nCell,"text",obj.GetCellProp("head",nCell,"text")+"▼");
+		ds_obj.Sort(obj.GetCellProp("body",nCell,"colid")+":D");
+	} else {
+		obj.SetCellProp("head",nCell,"text",obj.GetCellProp("head",nCell,"text")+"▲");
+		ds_obj.Sort(obj.GetCellProp("body",nCell,"colid")+":A");
+	}
+}
+
+
+function Grid_main_OnRButtonDown(obj,nPosX,nPosY,nRow,nCell)
+{
+	if( nRow == -1 )
+	{
+		TrackPopupMenu("dsPopupMenu","LEVEL","ID","TEXT","Status","ImageID",nPosX,nPosY,"fn_popup",obj,nRow,nCell);
+	
+	}
+}
+
+
+function fn_popup(obj, nMenuID, nRow ,nCell)
+{
+	switch(nMenuID)
+	{
+		case 100:
+			fn_MSort();
+			break;
+		case 200:
+			Grid_main.ExportExcelEx("Title");
+			break;
+	}
+}]]></Script>
+</Window>

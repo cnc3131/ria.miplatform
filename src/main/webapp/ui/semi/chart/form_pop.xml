@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form BKColor="#f0f0f0" Height="560" Id="form" Left="8" OnLoadCompleted="form_OnLoadCompleted" PidAttrib="7" Title="Ratio&#32;throughout&#32;sales&#32;funnel" Top="8" Ver="1.0" Width="845" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_color">
+				<Contents>
+					<colinfo Id="code" Size="256" Type="STRING"/>
+					<colinfo Id="data" Size="256" Type="STRING"/>
+					<record>
+						<code>1</code>
+						<data>#d62601</data>
+					</record>
+					<record>
+						<code>2</code>
+						<data>#f26c4f</data>
+					</record>
+					<record>
+						<code>3</code>
+						<data>#f69679</data>
+					</record>
+					<record>
+						<code>4</code>
+						<data>#fcb29b</data>
+					</record>
+					<record>
+						<code>5</code>
+						<data>#facecf</data>
+					</record>
+					<record>
+						<code>6</code>
+						<data>#fdc689</data>
+					</record>
+					<record>
+						<code>7</code>
+						<data>#fff799</data>
+					</record>
+					<record>
+						<code>8</code>
+						<data>#a3d39c</data>
+					</record>
+					<record>
+						<code>9</code>
+						<data>#82ca9c</data>
+					</record>
+					<record>
+						<code>10</code>
+						<data>#65c0bb</data>
+					</record>
+					<record>
+						<code>11</code>
+						<data>#abbbf8</data>
+					</record>
+					<record>
+						<code>12</code>
+						<data>#7da7d9</data>
+					</record>
+					<record>
+						<code>13</code>
+						<data>#8393ca</data>
+					</record>
+					<record>
+						<code>14</code>
+						<data>#8781bd</data>
+					</record>
+					<record>
+						<code>15</code>
+						<data>#bd8cbf</data>
+					</record>
+					<record>
+						<code>16</code>
+						<data>#f49ac1</data>
+					</record>
+					<record>
+						<code>17</code>
+						<data>#fb7bb3</data>
+					</record>
+					<record>
+						<code>18</code>
+						<data>#a67c52</data>
+					</record>
+					<record>
+						<code>19</code>
+						<data>#9a5815</data>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_chart1">
+				<Contents>
+					<colinfo id="SALE_AREA_DESC1" size="50" type="STRING"/>
+					<colinfo id="QTY1" size="256" type="STRING"/>
+					<colinfo id="QTY2" size="256" type="STRING"/>
+					<colinfo id="QTY3" size="256" type="STRING"/>
+					<colinfo id="QTY4" size="256" type="STRING"/>
+					<record>
+						<QTY1>20</QTY1>
+						<QTY2>100</QTY2>
+						<QTY3>55</QTY3>
+						<QTY4>10</QTY4>
+						<SALE_AREA_DESC1>January</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>50</QTY1>
+						<QTY2>80</QTY2>
+						<QTY3>90</QTY3>
+						<QTY4>20</QTY4>
+						<SALE_AREA_DESC1>February</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>80</QTY1>
+						<QTY2>40</QTY2>
+						<QTY3>20</QTY3>
+						<QTY4></QTY4>
+						<SALE_AREA_DESC1>March</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>40</QTY1>
+						<QTY2>30</QTY2>
+						<QTY3>10</QTY3>
+						<QTY4></QTY4>
+						<SALE_AREA_DESC1>April</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>30</QTY1>
+						<QTY2>20</QTY2>
+						<QTY3>30</QTY3>
+						<QTY4>30</QTY4>
+						<SALE_AREA_DESC1>May</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>50</QTY1>
+						<QTY2>10</QTY2>
+						<QTY3>20</QTY3>
+						<QTY4></QTY4>
+						<SALE_AREA_DESC1>June</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>20</QTY1>
+						<QTY2>5</QTY2>
+						<QTY3>95</QTY3>
+						<QTY4></QTY4>
+						<SALE_AREA_DESC1>July</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>10</QTY1>
+						<QTY2>80</QTY2>
+						<QTY3>85</QTY3>
+						<QTY4>5</QTY4>
+						<SALE_AREA_DESC1>August</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>44</QTY1>
+						<QTY2>75</QTY2>
+						<QTY3>75</QTY3>
+						<QTY4></QTY4>
+						<SALE_AREA_DESC1>September</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>90</QTY1>
+						<QTY2>60</QTY2>
+						<QTY3>55</QTY3>
+						<QTY4></QTY4>
+						<SALE_AREA_DESC1>October</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>100</QTY1>
+						<QTY2>90</QTY2>
+						<QTY3>100</QTY3>
+						<QTY4>40</QTY4>
+						<SALE_AREA_DESC1>November</SALE_AREA_DESC1>
+					</record>
+					<record>
+						<QTY1>95</QTY1>
+						<QTY2>30</QTY2>
+						<QTY3>90</QTY3>
+						<QTY4>20</QTY4>
+						<SALE_AREA_DESC1>December</SALE_AREA_DESC1>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_style">
+				<Contents>
+					<colinfo Id="code" Size="256" Type="STRING"/>
+					<colinfo Id="name" Size="256" Type="STRING"/>
+					<record>
+						<code>1</code>
+						<name>bar</name>
+					</record>
+					<record>
+						<code>2</code>
+						<name>HorizBar</name>
+					</record>
+					<record>
+						<code>3</code>
+						<name>Area</name>
+					</record>
+					<record>
+						<code>4</code>
+						<name>Point</name>
+					</record>
+					<record>
+						<code>5</code>
+						<name>Pie</name>
+					</record>
+					<record>
+						<code>6</code>
+						<name>FastLine</name>
+					</record>
+					<record>
+						<code>7</code>
+						<name>Shape</name>
+					</record>
+					<record>
+						<code>8</code>
+						<name>Gantt</name>
+					</record>
+					<record>
+						<code>9</code>
+						<name>Bubble</name>
+					</record>
+					<record>
+						<code>10</code>
+						<name>Arrow</name>
+					</record>
+					<record>
+						<code>11</code>
+						<name>Candle</name>
+					</record>
+					<record>
+						<code>12</code>
+						<name>Polar</name>
+					</record>
+					<record>
+						<code>13</code>
+						<name>Surface</name>
+					</record>
+					<record>
+						<code>14</code>
+						<name>Volume</name>
+					</record>
+					<record>
+						<code>15</code>
+						<name>ErrorBar</name>
+					</record>
+					<record>
+						<code>16</code>
+						<name>Bezier</name>
+					</record>
+					<record>
+						<code>17</code>
+						<name>Centour</name>
+					</record>
+					<record>
+						<code>18</code>
+						<name>Error</name>
+					</record>
+					<record>
+						<code>19</code>
+						<name>Point3D</name>
+					</record>
+					<record>
+						<code>20</code>
+						<name>radar</name>
+					</record>
+					<record>
+						<code>21</code>
+						<name>Click</name>
+					</record>
+					<record>
+						<code>22</code>
+						<name>WindRose</name>
+					</record>
+					<record>
+						<code>23</code>
+						<name>Bar3D</name>
+					</record>
+					<record>
+						<code>24</code>
+						<name>ImageBar</name>
+					</record>
+					<record>
+						<code>25</code>
+						<name>25</name>
+					</record>
+					<record>
+						<code>26</code>
+						<name>26</name>
+					</record>
+					<record>
+						<code>27</code>
+						<name>27</name>
+					</record>
+					<record>
+						<code>28</code>
+						<name>28</name>
+					</record>
+					<record>
+						<code>29</code>
+						<name>29</name>
+					</record>
+					<record>
+						<code>30</code>
+						<name>30</name>
+					</record>
+					<record>
+						<code>31</code>
+						<name>31</name>
+					</record>
+					<record>
+						<code>32</code>
+						<name>32</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_color_0">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="data" size="256" type="STRING"/>
+					<record>
+						<code>1</code>
+						<data>red</data>
+					</record>
+					<record>
+						<code>2</code>
+						<data>green</data>
+					</record>
+					<record>
+						<code>3</code>
+						<data>yellow</data>
+					</record>
+					<record>
+						<code>4</code>
+						<data>blue</data>
+					</record>
+					<record>
+						<code>5</code>
+						<data>brown</data>
+					</record>
+					<record>
+						<code>6</code>
+						<data>gray</data>
+					</record>
+					<record>
+						<code>7</code>
+						<data>gold</data>
+					</record>
+					<record>
+						<code>8</code>
+						<data>pink</data>
+					</record>
+					<record>
+						<code>9</code>
+						<data>beige</data>
+					</record>
+					<record>
+						<code>10</code>
+						<data>khaki</data>
+					</record>
+					<record>
+						<code>11</code>
+						<data>lame</data>
+					</record>
+					<record>
+						<code>12</code>
+						<data>navy</data>
+					</record>
+					<record>
+						<code>13</code>
+						<data>#eede9a</data>
+					</record>
+					<record>
+						<code>14</code>
+						<data>#a0ccff</data>
+					</record>
+					<record>
+						<code>15</code>
+						<data>#eede9a</data>
+					</record>
+					<record>
+						<code>16</code>
+						<data>#a0ccff</data>
+					</record>
+					<record>
+						<code>17</code>
+						<data>red</data>
+					</record>
+					<record>
+						<code>18</code>
+						<data>red</data>
+					</record>
+					<record>
+						<code>19</code>
+						<data>red</data>
+					</record>
+					<record>
+						<code>20</code>
+						<data>red</data>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="DS_GRID">
+				<Contents>
+					<colinfo Id="column0" Size="256" Type="STRING"/>
+					<colinfo Id="column1" Size="256" Type="STRING"/>
+					<record>
+						<column0></column0>
+						<column1></column1>
+					</record>
+					<record>
+						<column0></column0>
+						<column1></column1>
+					</record>
+					<record>
+						<column0></column0>
+						<column1></column1>
+					</record>
+					<record>
+						<column0></column0>
+						<column1></column1>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_chart2">
+				<Contents>
+					<colinfo id="DESC" size="256" type="STRING"/>
+					<colinfo id="QTY1" size="256" type="INT"/>
+					<colinfo id="QTY2" size="256" type="INT"/>
+					<record>
+						<DESC>January</DESC>
+						<QTY1>80</QTY1>
+						<QTY2>70</QTY2>
+					</record>
+					<record>
+						<DESC>February</DESC>
+						<QTY1>90</QTY1>
+						<QTY2>60</QTY2>
+					</record>
+					<record>
+						<DESC>March</DESC>
+						<QTY1>50</QTY1>
+						<QTY2>70</QTY2>
+					</record>
+					<record>
+						<DESC>April</DESC>
+						<QTY1/>
+						<QTY2/>
+					</record>
+					<record>
+						<DESC>May</DESC>
+						<QTY1/>
+						<QTY2/>
+					</record>
+					<record>
+						<DESC>June</DESC>
+						<QTY1/>
+						<QTY2/>
+					</record>
+					<record>
+						<DESC>July</DESC>
+						<QTY1/>
+						<QTY2/>
+					</record>
+					<record>
+						<DESC>August</DESC>
+						<QTY1/>
+						<QTY2/>
+					</record>
+					<record>
+						<DESC>September</DESC>
+						<QTY1/>
+						<QTY2/>
+					</record>
+					<record>
+						<DESC>October</DESC>
+						<QTY1/>
+						<QTY2/>
+					</record>
+					<record>
+						<DESC>November</DESC>
+						<QTY1/>
+						<QTY2/>
+					</record>
+					<record>
+						<DESC>December</DESC>
+						<QTY1/>
+						<QTY2/>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_chart_type">
+				<Contents>
+					<colinfo id="Single" size="256" type="STRING"/>
+					<colinfo id="ChartType" size="256" type="STRING"/>
+					<colinfo id="SWF_Name" size="256" type="STRING"/>
+					<colinfo id="Corresponding_SWF_Name" size="256" type="STRING"/>
+					<record>
+						<ChartType>2</ChartType>
+						<Corresponding_SWF_Name/>
+						<Single>1</Single>
+						<SWF_Name/>
+					</record>
+					<record>
+						<Single>Single&#32;Series&#32;Charts</Single>
+						<ChartType>Column&#32;3D</ChartType>
+						<SWF_Name>Column3D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_Column3D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Single&#32;Series&#32;Charts</Single>
+						<ChartType>Column&#32;2D</ChartType>
+						<SWF_Name>Column2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_Column2D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Single&#32;Series&#32;Charts</Single>
+						<ChartType>Line&#32;2D</ChartType>
+						<SWF_Name>Line.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_Line.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Single&#32;Series&#32;Charts</Single>
+						<ChartType>Area&#32;2D</ChartType>
+						<SWF_Name>Area2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_Area2D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Single&#32;Series&#32;Charts</Single>
+						<ChartType>Bar&#32;2D</ChartType>
+						<SWF_Name>Bar2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_Bar2D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Single&#32;Series&#32;Charts</Single>
+						<ChartType>Pie&#32;2D</ChartType>
+						<SWF_Name>Pie2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_Pie2D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Single&#32;Series&#32;Charts</Single>
+						<ChartType>Pie&#32;3D</ChartType>
+						<SWF_Name>Pie3D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_Pie3D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Single&#32;Series&#32;Charts</Single>
+						<ChartType>Doughnut&#32;2D</ChartType>
+						<SWF_Name>Doughnut2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_Doughnut2D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Single&#32;Series&#32;Charts</Single>
+						<ChartType>Doughnut&#32;3D</ChartType>
+						<SWF_Name>Doughnut3D.swf</SWF_Name>
+						<Corresponding_SWF_Name></Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Multi-series&#32;Charts</Single>
+						<ChartType>Multi-series&#32;Column&#32;2D</ChartType>
+						<SWF_Name>MSColumn2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_MSColumn2D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Multi-series&#32;Charts</Single>
+						<ChartType>Multi-series&#32;Column&#32;3D</ChartType>
+						<SWF_Name>MSColumn3D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_MSColumn3D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Multi-series&#32;Charts</Single>
+						<ChartType>Multi-series&#32;Line&#32;2D</ChartType>
+						<SWF_Name>MSLine.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_MSLine.swf&#32;/&#32;FC_2_3_MSLine_2.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Multi-series&#32;Charts</Single>
+						<ChartType>Multi-series&#32;Bar&#32;2D</ChartType>
+						<SWF_Name>MSBar2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_MSBar2D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Multi-series&#32;Charts</Single>
+						<ChartType>Multi-series&#32;Bar&#32;3D</ChartType>
+						<SWF_Name>MSBar3D.swf</SWF_Name>
+						<Corresponding_SWF_Name>N/A</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Multi-series&#32;Charts</Single>
+						<ChartType>Multi-series&#32;Area&#32;2D</ChartType>
+						<SWF_Name>MSArea.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_MSArea2D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Stacked&#32;Charts</Single>
+						<ChartType>Stacked&#32;Column&#32;3D</ChartType>
+						<SWF_Name>StackedColumn3D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_StckdColumn3D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Stacked&#32;Charts</Single>
+						<ChartType>Stacked&#32;Column&#32;2D</ChartType>
+						<SWF_Name>StackedColumn2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_StckdColumn2D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Stacked&#32;Charts</Single>
+						<ChartType>Stacked&#32;Bar&#32;2D</ChartType>
+						<SWF_Name>StackedBar2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_StckdBar2D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Stacked&#32;Charts</Single>
+						<ChartType>Stacked&#32;Bar&#32;3D</ChartType>
+						<SWF_Name>StackedBar3D.swf</SWF_Name>
+						<Corresponding_SWF_Name>N/A</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Stacked&#32;Charts</Single>
+						<ChartType>Stacked&#32;Area&#32;2D</ChartType>
+						<SWF_Name>StackedArea2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_StckdArea.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Combination&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Multi-series&#32;2D&#32;Single&#32;Y&#32;Combination&#32;Chart&#32;(Column&#32;+&#32;Line&#32;+&#32;Area)</ChartType>
+						<SWF_Name>MSCombi2D.swf</SWF_Name>
+						<Corresponding_SWF_Name></Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Combination&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Multi-series&#32;2D&#32;Dual&#32;Y&#32;Combination&#32;Chart&#32;(Column&#32;+&#32;Line&#32;+&#32;Area)</ChartType>
+						<SWF_Name>MSCombiDY2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_MSColumnLine_DY_2D.swf&#32;/&#32;FC_2_3_DualYLine.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Combination&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Multi-series&#32;Column&#32;3D&#32;+&#32;Multi-series&#32;Line&#32;-&#32;Single&#32;Y&#32;Axis</ChartType>
+						<SWF_Name>MSColumnLine3D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_MSColumnLine_3D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Combination&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Multi-series&#32;Column&#32;3D&#32;+&#32;Multi-series&#32;Line&#32;-&#32;Dual&#32;Y&#32;Axis</ChartType>
+						<SWF_Name>MSColumn3DLineDY.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_MSColumnLine_DY_3D.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Combination&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Multi-series&#32;Stacked&#32;Column&#32;2D&#32;Chart</ChartType>
+						<SWF_Name>MSStackedColumn2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_MS_StckCol.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Combination&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Multi-series&#32;Stacked&#32;Column&#32;2D&#32;+&#32;Line&#32;Dual&#32;Y&#32;Axis&#32;Chart</ChartType>
+						<SWF_Name>MSStackedColumn2DLineDY.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_StckdColumn_MSLine_DY_2D.swf&#32;/&#32;FC_2_3_MS_StckCol_Line_DY.swf</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Combination&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Stacked&#32;Column&#32;3D&#32;+&#32;Line&#32;Dual&#32;Y&#32;Axis</ChartType>
+						<SWF_Name>StackedColumn3DLineDY.swf</SWF_Name>
+						<Corresponding_SWF_Name></Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Scroll&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Scroll&#32;Column&#32;2D</ChartType>
+						<SWF_Name>ScrollColumn2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>N/A</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Scroll&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Scroll&#32;Line&#32;2D</ChartType>
+						<SWF_Name>ScrollLine2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>N/A</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Scroll&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Scroll&#32;Area&#32;2D</ChartType>
+						<SWF_Name>ScrollArea2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>N/A</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Scroll&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Scroll&#32;Stacked&#32;Column&#32;2D</ChartType>
+						<SWF_Name>ScrollStackedColumn2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>N/A</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Scroll&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Scroll&#32;Combination&#32;2D&#32;(Single&#32;Y)</ChartType>
+						<SWF_Name>ScrollCombi2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>N/A</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Scroll&#32;Charts&#32;(not&#32;present&#32;in&#32;User&#32;License)</Single>
+						<ChartType>Scroll&#32;Combination&#32;2D&#32;(Dual&#32;Y)</ChartType>
+						<SWF_Name>ScrollCombiDY2D.swf</SWF_Name>
+						<Corresponding_SWF_Name>N/A</Corresponding_SWF_Name>
+					</record>
+					<record>
+						<Single>Single&#32;Series&#32;Grid&#32;Component</Single>
+						<ChartType>Single&#32;Series&#32;Grid&#32;Component</ChartType>
+						<SWF_Name>SSGrid.swf</SWF_Name>
+						<Corresponding_SWF_Name>FC_2_3_SSGrid.swf</Corresponding_SWF_Name>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Shape BKColor="white" Bottom="552" Height="546" Id="Shape2" Left="6" LineColor="#dadada" LineWidth="3" Right="838" RoundHeight="6" RoundUnit="Pixel" RoundWidth="6" TabOrder="7" Top="6" Type="RoundRect" Width="832"></Shape>
+		<Image FillType="STRETCH" Height="23" Id="Image9" ImageID="barblue01" Left="10" TabOrder="6" Top="14" Width="222"></Image>
+		<FusionChart3 Height="140" Id="FusionChart31" Left="10" Top="407" Width="817"></FusionChart3>
+		<Grid AutoFit="TRUE" BindDataset="DS_GRID" BkColor2="default" BkSelColor="#5fa5d8" BoldHead="true" Border="Flat" BorderColor="#87b0d1" Bottom="400" ColSelect="TRUE" ColSizing="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="24" Height="125" Id="GRD_GRAPH" InputPanel="FALSE" Left="10" LineColor="#87b0d1" MinWidth="100" OnCellDBLClick="GRD_GRAPH_OnCellDblClick" Right="827" RowHeight="20" SelColor="white" TabOrder="1" TabStop="true" Top="275" TopSummary="TRUE" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="817">
+			<contents>
+				<columns>
+					<col width="46"/>
+					<col width="43"/>
+					<col width="43"/>
+					<col width="43"/>
+					<col width="43"/>
+					<col width="43"/>
+					<col width="43"/>
+					<col width="43"/>
+					<col width="43"/>
+					<col width="43"/>
+					<col width="43"/>
+					<col width="43"/>
+					<col width="43"/>
+				</columns>
+				<head>
+					<cell bkcolor="#b5cbde" col="0" display="text"/>
+					<cell bkcolor="#b5cbde" col="1" display="text"/>
+					<cell bkcolor="#b5cbde" col="2" display="text"/>
+					<cell bkcolor="#b5cbde" col="3" display="text"/>
+					<cell bkcolor="#b5cbde" col="4" display="text"/>
+					<cell bkcolor="#b5cbde" col="5" display="text"/>
+					<cell bkcolor="#b5cbde" col="6" display="text"/>
+					<cell bkcolor="#b5cbde" col="7" display="text"/>
+					<cell bkcolor="#b5cbde" col="8" display="text"/>
+					<cell bkcolor="#b5cbde" col="9" display="text"/>
+					<cell bkcolor="#b5cbde" col="10" display="text"/>
+					<cell bkcolor="#b5cbde" col="11" display="text"/>
+					<cell bkcolor="#b5cbde" col="12" display="text"/>
+				</head>
+				<body>
+					<cell align="right" bkcolor="#e4e9f1" bkcolor2="#dde2ea" col="0" display="text"/>
+					<cell bkcolor="#f4f7f5" bkcolor2="#edf1ee" col="1" display="text"/>
+					<cell col="2" display="text"/>
+					<cell align="right" col="3" display="text">
+						<cell align="right" col="0" display="text"/>
+					</cell>
+					<cell col="4" display="text"/>
+					<cell col="5" display="text"/>
+					<cell col="6" display="text"/>
+					<cell col="7" display="text"/>
+					<cell col="8" display="text"/>
+					<cell col="9" display="text"/>
+					<cell col="10" display="text"/>
+					<cell col="11" display="text"/>
+					<cell col="12" display="text"/>
+				</body>
+			</contents>
+		</Grid>
+		<FusionChart3 Height="223" Id="FusionChart30" Left="10" Top="40" Width="817"></FusionChart3>
+		<Static Color="whitesmoke" Font="굴림,8,Bold" Height="22" Id="Static5" Left="21" Style="list_title" TabOrder="4" Text="Ratio&#32;throughout&#32;sales&#32;funnel" Top="17" VAlign="Middle" Width="208"></Static>
+		<Image FillType="STRETCH" Height="2" Id="Image17" ImageID="hblue01" Left="10" TabOrder="5" Top="36" Width="817"></Image>
+		<Split BKColor="user0" Border="Flat" Direct="VERT" Height="5" Id="Split0" Left="10" OnEndMove="Split0_OnEndMove" Top="269" Width="817">
+			<Contents>
+				<LeftOrTop>
+					<Bind BindType="Resize" CompID="FusionChart30"/>
+				</LeftOrTop>
+				<RightOrBottom>
+					<Bind BindType="Resize" CompID="FusionChart31"/>
+					<Bind BindType="Move" CompID="GRD_GRAPH"/>
+				</RightOrBottom>
+			</Contents>
+		</Split>
+		<Image Cursor="HAND" Font="돋움,9,Bold" Height="20" Id="img_close" Left="813" OnClick="img_close_OnClick" Static="FALSE" TabOrder="9" Text="X" Top="10" Transparent="TRUE" Width="20"></Image>
+	</Form>
+	<Script><![CDATA[
+
+function form_OnLoadCompleted(obj)
+{
+	//Combo0.Value = "25";
+	
+	func_ChartInit0();
+	func_ChartInit1();
+	
+	Chart0_Display();
+	Chart1_Display();
+	
+	DataGrid();
+	
+	// 타이틀 표현....
+	//parent.fn_set_title(obj.title);
+}
+
+function func_ChartInit0()
+{
+	var objFusionchart = FusionChart30;
+	
+	objFusionchart.Clear();
+	
+	//objFusionchart.AddPropValue("caption", 'Monthly Sales Summary Comparison');
+	//objFusionchart.AddPropValue("xAxisName", 'Month');
+	//objFusionchart.AddPropValue("yAxisName", 'Sales');
+	objFusionchart.AddPropValue("bgColor", 'ffffff');
+	objFusionchart.AddPropValue("showborder", '0');		// 보더 조정 ..
+	objFusionchart.AddPropValue("showNames", '1');
+	//objFusionchart.AddPropValue("bgSWF", 'http://miplatform.co.kr/img/main/img.jpg');
+	objFusionchart.AddPropValue("canvasBgAlpha", '30');
+	objFusionchart.AddPropValue("animation", '1');
+	objFusionchart.AddPropValue("formatNumberScale", '0');   //0 ,1, 
+	objFusionchart.AddPropValue("numDivLines", "5");
+	//objFusionchart.AddPropValue("numberSuffix", 'days');   //0 ,1, 
+	
+		
+	str_color1 = replace(ds_color.GetColumn(0, "data"),"#","");
+	str_color2 = replace(ds_color.GetColumn(5, "data"),"#","");
+	str_color3 = replace(ds_color.GetColumn(10, "data"),"#","");
+	str_color4 = replace(ds_color.GetColumn(15, "data"),"#","");
+	
+	objFusionchart.AddDataset("ds_chart1", "QTY1", "seriesName", 'Profit margin', "color", str_color1, 'showValues', '1'); //'dashed', '1');//, 'alpha', '50');
+	objFusionchart.AddDataset("ds_chart1", "QTY2", "seriesName", 'Avg.orders', "color", str_color2, 'showValues', '1');
+	objFusionchart.AddDataset("ds_chart1", "QTY3", "seriesName", 'EOH Inventory', "color", str_color3, 'showValues', '1');
+	objFusionchart.AddDataset("ds_chart1", "QTY4", "seriesName", 'Order fill rate', "color", str_color4, 'showValues', '1');
+	
+	FusionChart30.defineStyle("animation", "myanistyle", "param", "_xScale", "start", "0", "duration", "2", "alpha", "50");
+	FusionChart30.defineStyle("Shadow", "myshadowstyle", "color", "CCCCCC");
+	FusionChart30.defineStyle("Bevel", "mybevelstyle", "shadowColor", "000000", "shadowAlpha", "80", "distance", "5", "angle", "45");
+	FusionChart30.defineStyle("font", "myfontstyle", "face", "Verdana", "size", "14", "color", "FAA540", "bgcolor", "AFD8F8");
+	
+	FusionChart30.ApplyStyle("DataPlot", "mybevelstyle,myshadowstyle");
+	FusionChart30.ApplyStyle("Canvas", "myanistyle");
+	FusionChart30.ApplyStyle("caption", "myfontstyle,mybevelstyle");
+    
+    // 라벨...
+	for(var i=0; i<ds_chart1.RowCount(); i++){
+		str_val = ds_chart1.GetColumn(i, "SALE_AREA_DESC1");
+		FusionChart30.Addcategory(str_val, "hoverText", str_val);
+	}
+}
+
+function func_ChartInit1()
+{
+	/*-------------------
+	FusionChart31
+	http://www.fusioncharts.com/Docs/Index.html
+	-------------------*/
+	var objFusionchart = FusionChart31;
+	
+	objFusionchart.Clear();
+	
+	//objFusionchart.AddPropValue("caption", 'Monthly Sales Summary Comparison');
+	//objFusionchart.AddPropValue("xAxisName", 'Month');
+	//objFusionchart.AddPropValue("yAxisName", '매출이익');
+	objFusionchart.AddPropValue("bgColor", 'ffffff');
+	objFusionchart.AddPropValue("showNames", '1');
+	//objFusionchart.AddPropValue("bgSWF", 'http://miplatform.co.kr/img/main/img.jpg');
+	objFusionchart.AddPropValue("canvasBgAlpha", '30');
+	objFusionchart.AddPropValue("formatNumberScale", '0');
+	objFusionchart.AddPropValue("numDivLines", "1");
+	
+	objFusionchart.AddPropValue("palette", "2");
+	//objFusionchart.AddPropValue("", "");
+	//objFusionchart.AddPropValue("", "");
+		
+	str_color1 = replace(ds_color.GetColumn(0, "data"),"#","");
+	str_color2 = replace(ds_color.GetColumn(5, "data"),"#","");
+	str_color3 = replace(ds_color.GetColumn(10, "data"),"#","");
+	str_color4 = replace(ds_color.GetColumn(15, "data"),"#","");
+	
+	objFusionchart.AddDataset("ds_chart2", "QTY1", "seriesName", 'H/W', "color", str_color1, 'dashed', '1'); //'dashed', '1');//, 'alpha', '50');
+	objFusionchart.AddDataset("ds_chart2", "QTY2", "seriesName", 'S/W', "color", str_color2, 'showValues', '1');
+	
+	//objFusionchart.defineStyle("animation", "myanistyle", "param", "_xScale", "start", "0", "duration", "2", "alpha", "50");
+	objFusionchart.defineStyle("Shadow", "myshadowstyle", "color", "CCCCCC");
+	objFusionchart.defineStyle("Bevel", "mybevelstyle", "shadowColor", "000000", "shadowAlpha", "80", "distance", "5", "angle", "45");
+	objFusionchart.defineStyle("font", "myfontstyle", "face", "Verdana", "size", "14", "color", "FAA540", "bgcolor", "AFD8F8");
+	
+	objFusionchart.ApplyStyle("DataPlot", "mybevelstyle,myshadowstyle");
+	objFusionchart.ApplyStyle("Canvas", "myanistyle");
+	objFusionchart.ApplyStyle("caption", "myfontstyle,mybevelstyle");
+	
+	// 라벨...
+	for(var i=0; i<ds_chart2.RowCount(); i++){
+		str_val = ds_chart2.GetColumn(i, "DESC");
+		objFusionchart.Addcategory(str_val, "hoverText", str_val);
+	}
+    
+}
+
+
+
+function Chart0_Display()
+{
+	objFusionchart = FusionChart30;
+	
+	
+	
+	// xml data 생성
+	var f_xmldata = objFusionchart.MakeChartData();
+
+	//alert(f_xmldata);
+	var strDir = AliasToRealPath("%COMPONENT%");
+	
+	//objFusionchart.Movie = strDir + "\\chart_v3\\MSLine.swf";
+	objFusionchart.Movie = strDir + "\\chart_v3\\MSBar3D.swf";
+	//objFusionchart.Movie = strDir + "\\charts\\MSColumn2D.swf";
+	//objFusionchart.Movie = strDir + "\\charts\\MSColumn3D.swf";
+	
+	//objFusionchart.Movie = strDir + "\\charts\\MSColumn3DLineDY.swf";
+	
+	
+	objFusionchart.SetVariable('dataXML', f_xmldata);
+	objFusionchart.SetVariable('chartWidth', objFusionchart.Width);	// chart size 지정
+	objFusionchart.SetVariable('chartHeight', objFusionchart.Height);	// chart size 지정
+	
+	objFusionchart.SetVariable('debugMode', 0 );	// 0, 1  지정
+	//objFusionchart.SetVariable('scaleMode', "0");	// chart size 지정
+	
+	objFusionchart.Stop();
+//	objFusionchart.Forward();
+	objFusionchart.Rewind();
+	objFusionchart.Play();
+}
+
+
+function Chart1_Display()
+{
+	//값중 max값을 구해서 챠트의 오른쪽 값을 셋팅한다.
+	
+	objFusionchart = FusionChart31;
+	
+	
+	
+	// xml data 생성
+	var f_xmldata = objFusionchart.MakeChartData();
+
+	//alert(f_xmldata);
+	var strDir = AliasToRealPath("%COMPONENT%");
+	
+	//objFusionchart.Movie = strDir + "\\charts\\MSLine.swf";
+	//objFusionchart.Movie = strDir + "\\chart_v3\\MSBar3D.swf";
+	objFusionchart.Movie = strDir + "\\chart_v3\\MSColumn2D.swf";
+	objFusionchart.SetVariable('dataXML', f_xmldata);
+	objFusionchart.SetVariable('chartWidth', objFusionchart.Width);	// chart size 지정
+	objFusionchart.SetVariable('chartHeight', objFusionchart.Height);	// chart size 지정
+	
+	objFusionchart.SetVariable('debugMode', 0 );	// 0, 1  지정
+	//objFusionchart.SetVariable('scaleMode', "0");	// chart size 지정
+	
+	objFusionchart.Stop();
+//	objFusionchart.Forward();
+	objFusionchart.Rewind();
+	objFusionchart.Play();
+}
+
+//max값 구하서 leftValue Setting 하기
+function funcMaxValue(dsObj, chtObj, Azis)
+{
+	var lsOriginValue = 0;
+	var lsRowCount = dsObj.RowCount();
+	var lsColCount = dsObj.GetColCount();
+	
+	for(var j=0; j<lsRowCount; j++){
+		var lsValue = dsObj.GetColumn(j, "QTY3");
+		if(lsValue >= lsOriginValue){
+				lsOriginValue = lsValue;
+		}
+	}
+
+	var lsMaxValue = ceil((lsOriginValue+10)/10)*11;
+	
+	if ( Azis == "bottom" )
+		chtObj.Axis.Bottom.SetMinMax(0,lsMaxValue);		//left Axis 값범위 Setting
+	else
+		chtObj.Axis.left.SetMinMax(0,lsMaxValue);		//left Axis 값범위 Setting
+}
+
+//max값 구하서 leftValue Setting 하기
+function funcMaxValues(dsObj, chtObj, Azis)
+{
+	var lsOriginValue = 0;
+	var lsRowCount = dsObj.RowCount();
+	var lsColCount = dsObj.GetColCount();
+	
+	for(var j=0; j<lsRowCount; j++){
+		for(var i=0; i<lsColCount; i++){
+			var lsID = dsObj.GetColID(i);
+			var lsValue = dsObj.GetColumn(j, lsID);
+			if(lsValue >= lsOriginValue){
+					lsOriginValue = lsValue;
+			}
+		}
+	}
+
+	var lsMaxValue = ceil((lsOriginValue+10)/10)*11;
+	
+	if ( Azis == "bottom" )
+		chtObj.Axis.Bottom.SetMinMax(0,lsMaxValue);		//left Axis 값범위 Setting
+	else
+		chtObj.Axis.left.SetMinMax(0,lsMaxValue);		//left Axis 값범위 Setting
+}
+
+
+
+function TeeChart0_OnClickSeries(obj,SeriesIndex,ValueIndex,Button,Shift,X,Y)
+{
+	alert("SeriesIndex" + SeriesIndex + " : " + ValueIndex);
+}
+
+
+
+function Button0_OnClick(obj)
+{
+	//TeeChart0.ShowEditor(0);
+}
+
+function Button1_OnClick(obj)
+{
+	TeeChart1.Series(0).Marks.ShowEditorMarks();
+}
+
+function TeeChart0_OnDblClick(obj)
+{
+	
+}
+
+//////////////////////////////
+
+function DataGrid()
+{
+//-------------------------------------------- 
+	var i, j, nRow0, nRow1, nRow2, nRow3;
+	//------------------------------------------------
+	//    데이터셋의 데이터를 세트한다.
+	//------------------------------------------------
+	DS_GRID.FireEvent = false;
+	var nGridColCnt = ds_chart1.RowCount();
+	var nRowCnt = 2;
+	// 데이터셋의 내용을 지운다.
+	DS_GRID.Clear();
+	DS_GRID.DeleteAll();
+	
+	//trace(">>>> SetChartGrid : 데이터셋의 컬럼정보를 만든다.------------");
+	// 데이터셋의 컬럼정보를 만든다.
+	DS_GRID.AddColumn("G_TITLE","String",255);
+	for (i=0; i<nGridColCnt;i++)
+	{							
+		DS_GRID.AddColumn("COL"+i,"String",255);
+	}			
+	//dsprn(DS_GRID);
+	
+	//trace(">>>> SetChartGrid : 데이터셋에 데이터를 세트한다.-------------");
+	// 데이터셋에 데이터를 세트한다.		
+	// Row를 추가한다.
+	nRow0 = DS_GRID.AddRow();			
+	nRow1 = DS_GRID.AddRow();			
+	nRow2 = DS_GRID.AddRow();
+	nRow3 = DS_GRID.AddRow();
+
+	//------------------------------------------------
+	//타이틀을 세트한다.
+	//------------------------------------------------
+	DS_GRID.SetColumn(nRow0,"G_TITLE","Profit margin"); 
+	DS_GRID.SetColumn(nRow1,"G_TITLE","Avg.orders"); 
+	DS_GRID.SetColumn(nRow2,"G_TITLE","EOH Inventory"); 
+	DS_GRID.SetColumn(nRow3,"G_TITLE","Order fill rate"); 
+
+	//------------------------------------------------
+	// 데이터부분을 세트한다.
+	//------------------------------------------------
+	var sVal1;
+	var nTotal1=0,nTotal2=0,nTotal3=0;
+	for (j=0; j<nGridColCnt;j++)
+	{							
+		// 계획량을 넣는다.	
+		sVal1 = toNumber(ds_chart1.GetColumn(j, 'QTY1'));
+		DS_GRID.SetColumn(nRow0,"COL"+j, sVal1 );
+					
+		sVal1 = toNumber(ds_chart1.GetColumn(j, 'QTY2'));
+		DS_GRID.SetColumn(nRow1,"COL"+j, sVal1 );
+					
+		sVal1 = toNumber(ds_chart1.GetColumn(j, 'QTY3'));
+		DS_GRID.SetColumn(nRow2,"COL"+j, sVal1 );
+					
+		sVal1 = toNumber(ds_chart1.GetColumn(j, 'QTY4'));
+		DS_GRID.SetColumn(nRow3,"COL"+j, sVal1 );
+
+	}
+
+	//dsprn(DS_GRID);
+ 	//------------------------------------------------
+	// 그리드의 내용을 세트한다.
+	//------------------------------------------------
+	
+	SetGridContents(nGridColCnt);
+	//GRD_GRAPH.SetCellPos(nGridColCnt+1);
+
+}
+
+function SetGridContents(nCount)
+{
+//---------------------------------------------
+	var strGridContents;
+	var nGbColSize = 45;
+	var nTotalColSize = 58;
+
+	strGridContents = "";
+	strGridContents += "<contents>\n";
+	
+	//----------------------------------------------
+	// 각 Column의 사이즈를 계산한다.
+	//----------------------------------------------
+	var nColSize=0,nLastColSize=0;
+	
+	//var nMaxSize = GRD_GRAPH.width - nGbColSize - 2;  // 2는 테두리선두께
+	var nMaxSize = GRD_GRAPH.width - nTotalColSize - nGbColSize - 2;  // 2는 테두리선두께
+	
+	// 컬럼이 9개 이상인 경우 사이즈를 더 이상 줄이지 않고, 스크롤이 생기도록 처리
+	nSize = nCount;
+	/*
+	if (nSize > 9) 
+	{
+		nSize = 9;
+		GRD_GRAPH.height = 74 + 17;
+	}
+	else
+		GRD_GRAPH.height = 74;
+	*/
+
+	nColSize = toInteger(nMaxSize / nSize);
+	var nComputeColSize = nColSize * nSize;
+	if (nComputeColSize > nMaxSize) nColSize--;
+	
+	nLastColSize = nMaxSize - (nColSize * (nSize-1));
+	
+	strGridContents += "  <columns> \n" ;
+	strGridContents += "    <col fix='true' width='120'/>\n";
+	for( index=0 ; index < nCount ; index++ )
+	{	
+		if (index == nCount-1) 
+			strGridContents += "    <col width='" + nLastColSize + "'/>\n";
+		else
+			strGridContents += "    <col width='" + nColSize + "'/>\n";
+	}
+
+	strGridContents += "  </columns>\n";
+	
+	//----------------------------------------------
+	//  Head 정보를 생성한다.
+	//----------------------------------------------
+	var sVal;
+	strGridContents += "  <head>\n";
+	// 구분
+	strGridContents += "    <cell align='center' bkcolor='#b5cbde' col='0' display='text' text='Status'/>\n";
+
+	for( index=0 ; index < nCount ; index++ )
+	{	
+		sVal = ds_chart1.GetColumn(index,"SALE_AREA_DESC1");
+    //okalert("sval => " +  sVal);
+		strGridContents += "    <cell align='center' bkcolor='#b5cbde' col='"+(index+1)+"' display='text' text='"+sVal+"'/>\n";
+	}
+	strGridContents += "  </head>\n";
+
+	//----------------------------------------------
+	//  Body 정보를 생성한다.
+	//----------------------------------------------
+	strGridContents += "  <body>\n";
+	strGridContents += "<cell col='0' colid='G_TITLE' bkcolor='#e4e9f1' bkcolor2='#dde2ea' align='center'/>\n";
+	for( index=0 ; index < nCount ; index++ )
+	{
+		//alert(currow);
+		//strGridContents += "<cell col='" + (index+1) + "'  color='expr:iif(&#32;currow&#32;==&#32;2,&#32;iif(&#32;toNumber(Col" + (index) + ")&#32;&lt;&#32;100,&#32;&apos;red&apos;,&#32;&apos;blue&apos;&#32;)&#32;,&#32;&apos;black&apos;&#32;)' expr='iif(&#32;currow&#32;=&#32;2,&#32;numformat(round(Col" + (index) + ",1),1)&#32;+&#32;&apos;%&apos;,&#32;numformat(Col" + (index) + ")&#32;&#32;)'  align='right' display='text' />";
+		strGridContents += "<cell col='" + (index+1) + "' bkcolor='#f4f7f5' bkcolor2='#edf1ee' color='expr:iif(&#32;currow&#32;==&#32;2,&#32;iif(&#32;toNumber(Col" + (index) + ")&#32;&lt;&#32;100,&#32;&apos;red&apos;,&#32;&apos;blue&apos;&#32;)&#32;,&#32;&apos;black&apos;&#32;)' expr='numformat(Col" + (index) + ")'  align='right' display='text' />";
+		strGridContents += "\n";
+	}		
+	strGridContents += "</body>
+		</contents>
+	";
+		
+	GRD_GRAPH.Redraw = false;
+	GRD_GRAPH.Contents = strGridContents;
+	GRD_GRAPH.Redraw = true;
+	//trace("strGridContents =[\n" + strGridContents + "\n]");
+}
+function Split0_OnEndMove(obj, nPos, nDelta)
+{
+	FusionChart30.AddPropValue("animation", '0');
+	//FusionChart30.Stop();
+	//FusionChart30.Rewind();
+	//FusionChart30.Play();
+	
+	FusionChart31.AddPropValue("animation", '0');
+	//FusionChart31.Stop();
+	//FusionChart31.Rewind();
+	//FusionChart31.Play();
+	
+	Chart0_Display();
+	Chart1_Display();
+}
+
+function img_close_OnClick(obj,nX,nY)
+{
+	close("");
+}
+]]></Script>
+</Window>

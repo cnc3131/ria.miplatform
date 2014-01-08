@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding="utf-8" ?>
+<root>
+	<params>
+	<param id='DEVICE' type='string'>WIN32</param>
+		<param id='VERSION' type='string'>2009,9,17,1</param>
+		<param id='CONFIG' type='string'>true</param>
+	</params>
+	
+	<dataset id='win32'>
+		<colinfo id='SOURCE' type='string' size='256'/>
+		<colinfo id='DEVICE' type='string' size='256'/>
+		<colinfo id='VERSION' type='string' size='256'/>
+		<colinfo id='STATUS' type='string' size='2'/>
+		<!-- MSI방식으로 엔진 설치 -->
+		<record><DEVICE>WIN32</DEVICE><SOURCE>engine_msi.xml</SOURCE></record>
+		<!-- UAC 옵션 FIX -->
+		<record><DEVICE>WIN32</DEVICE><SOURCE>engine_fixuac.xml</SOURCE></record>
+		<!-- 마이플랫폼 기본 컴포넌트 -->
+		<record><DEVICE>WIN32</DEVICE><SOURCE>component.xml</SOURCE></record>
+		<!-- 사이트별 추가 배포 -->
+		<record><DEVICE>WIN32</DEVICE><SOURCE>etc.xml</SOURCE></record>
+	</dataset>
+</root>

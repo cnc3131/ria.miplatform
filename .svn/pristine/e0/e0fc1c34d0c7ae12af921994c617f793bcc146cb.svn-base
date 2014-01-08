@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="CrossBrowserForm" Left="8" PidAttrib="7" Title="CrossBrowserForm" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_addr">
+				<Contents>
+					<colinfo id="id" size="256" summ="default" type="STRING"/>
+					<colinfo id="name" size="256" summ="default" type="STRING"/>
+					<colinfo id="tel" size="256" summ="default" type="STRING"/>
+					<colinfo id="handphone" size="256" summ="default" type="STRING"/>
+					<colinfo id="post" size="256" summ="default" type="STRING"/>
+					<colinfo id="addr1" size="256" summ="default" type="STRING"/>
+					<colinfo id="addr2" size="256" summ="default" type="STRING"/>
+					<record>
+						<addr1>서울&#32;송파구&#32;잠실동</addr1>
+						<addr2>222번지&#32;서일빌딩</addr2>
+						<handphone>010-1234-9999</handphone>
+						<id>guest</id>
+						<name>홍길동</name>
+						<post>150-070</post>
+						<tel>070-1234-5678</tel>
+					</record>
+					<record>
+						<addr1>서울&#32;영등포구&#32;여의도동</addr1>
+						<addr2>100번지&#32;mbc방송국</addr2>
+						<handphone>010-9090-1221</handphone>
+						<id>admin</id>
+						<name>관리실</name>
+						<post>150-150</post>
+						<tel>010-0100-0200</tel>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="0" Width="1000"></Image>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="19" LeftMargin="18" Style="cm_title_sub" TabOrder="0" Text="&#32;Silverlight&#32;연동" Top="27" Width="216"></Image>
+		<Shape BKColor="user0" Bottom="600" Height="538" Id="Shape2" Left="32" LineColor="user1" Right="968" RoundHeight="8" RoundUnit="Pixel" RoundWidth="8" TabOrder="7" Top="62" Type="RoundRect" Width="936"></Shape>
+		<Static Align="Center" Border="Flat" Height="20" Id="Static2" Left="41" Style="if_lable" TabOrder="6" Text="주&#32;소" Top="69" VAlign="Middle" Width="80"></Static>
+		<Edit AutoSelect="TRUE" Border="Flat" Height="20" Id="edt_addr" ImeMode="none" Left="122" LeftMargin="2" MaxLength="20" OnKeyDown="edt_addr_OnKeyDown" Style="if_input" TabOrder="4" Text="http://localhost:8080/test/Silverlight/sample.html" Top="69" Width="774"></Edit>
+		<Button ButtonStyle="TRUE" Height="20" Id="btn_action" ImageID="m_bt_txt_03" Left="905" OnClick="Btn_cd_Filter_OnClick" Style="cm_btn" TabOrder="5" Text="이&#32;동" Top="69" Width="50"></Button>
+		<Microsoft Bottom="480" Height="384" Id="MSIE0" Left="40" Right="960" Top="96" Width="920"></Microsoft>
+		<Grid AutoFit="TRUE" BindDataset="ds_addr" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="592" ColSizing="TRUE" DragMode="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" Font="굴림,9" HeadBorder="Flat" HeadHeight="24" Height="96" Id="Grid_main" InputPanel="FALSE" Left="40" LineColor="default" MinWidth="100" OnCellDBLClick="Grid_main_OnCellDblClick" Right="960" RowHeight="20" Style="se_grid" TabOrder="8" TabStop="true" Top="496" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="920">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="59"/>
+						<col width="61"/>
+						<col width="97"/>
+						<col width="89"/>
+						<col width="53"/>
+						<col width="143"/>
+						<col width="185"/>
+					</columns>
+					<head>
+						<cell bkcolor="user13" col="0" color="user14" display="text" text="ID"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" text="이름"/>
+						<cell bkcolor="user13" col="2" color="user14" display="text" text="Tel"/>
+						<cell bkcolor="user13" col="3" color="user14" display="text" text="Handphone"/>
+						<cell bkcolor="user13" col="4" color="user14" display="text" text="우편번호"/>
+						<cell bkcolor="user13" col="5" color="user14" display="text" text="주소&#32;1"/>
+						<cell bkcolor="user13" col="6" color="user14" display="text" text="주소&#32;2"/>
+					</head>
+					<body>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="0" colid="id" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="1" colid="name" color="user16" display="text"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="2" colid="tel" color="user16"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="3" colid="handphone" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="4" colid="post" color="user16"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="5" colid="addr1" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="6" colid="addr2" color="user16"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button0" ImageID="m_bt_txt_03" Left="906" OnClick="Button0_OnClick" Style="cm_btn" TabOrder="9" Text="값&#32;읽기" Top="499" Width="50"></Button>
+	</Form>
+	<Script><![CDATA[
+function edt_addr_OnKeyDown(obj,nChar,bShift,bCtrl, bAlt,LLParam,HLParam)
+{
+	if(nChar==13)
+		Btn_cd_Filter_OnClick(obj);
+}
+
+function Btn_cd_Filter_OnClick(obj)
+{
+	var strAddress = edt_addr.text ;
+	//strAddress = "http://localhost:8080/test/damdang.htm";
+	//	object.Navigate URL [Flags,] [TargetFrameName,] [PostData,] [Headers]
+	
+	MSIE0.Navigate2(strAddress, "", "", "test=안녕", "");
+}
+
+
+// IE 값 가져오기ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+function Button0_OnClick()
+{
+	getContents("btn_getAll").click();
+	
+	ds_addr.AddRow();
+	ds_addr.setColumn(ds_addr.row, "id"		, getContents("txt_id").value);
+	ds_addr.setColumn(ds_addr.row, "name"	, getContents("txt_name").value);
+	ds_addr.setColumn(ds_addr.row, "tel"	, getContents("txt_tel").value);
+	ds_addr.setColumn(ds_addr.row, "handphone", getContents("txt_handphone").value);
+	ds_addr.setColumn(ds_addr.row, "post"	, getContents("txt_post").value);
+	ds_addr.setColumn(ds_addr.row, "addr1"	, getContents("txt_addr1").value);
+	ds_addr.setColumn(ds_addr.row, "addr2"	, getContents("txt_addr2").value);
+}
+
+
+
+
+
+// Html Content 에서 읽어오기  -----------------------------------------
+function getContents(objId)
+{
+	var objDocument = MSIE0.Document;
+	var objHtmlElementCollection = objDocument.All();
+	var Item0;
+	
+	//MSIE0.Document.all.item(objId).click();
+	Item0 = objHtmlElementCollection.item(objId);
+	Item0.click();
+	return Item0;
+}
+
+// Html Content 에서 읽어오기  -----------------------------------------
+function getContentsByName(objId)
+{
+	var objDocument = MSIE0.Document;
+	var Item0 = objDocument.getElementsByName(objId);
+	Item0.click();
+	return Item0.value;
+}
+
+// Html Content항목 Test  -----------------------------------------
+function traceCompList(){
+	var objDocument = MSIE0.Document;
+	
+	var objHtmlElementCollection = objDocument.All();
+	var item_length	=objHtmlElementCollection.length;
+
+	for(var idx=0; idx<item_length; idx++){
+		var vID = objHtmlElementCollection[idx].id;
+		var vName = objHtmlElementCollection[idx].name;
+		var vValue= objHtmlElementCollection[idx].value;
+		trace(vID + "(" +vName + ")->" + vValue);
+	}
+}
+
+
+// Html Editer Content 에 입력하기  -------------------------------------------
+function Grid_main_OnCellDblClick(obj,nRow,nCell,nX,nY,nPivotIndex)
+{
+	setContents("txt_id"		, ds_addr.GetColumn(nRow, "id"));
+	setContents("txt_name"		, ds_addr.GetColumn(nRow, "name"));
+	setContents("txt_tel"		, ds_addr.GetColumn(nRow, "tel"));
+	setContents("txt_handphone"	, ds_addr.GetColumn(nRow, "handphone"));
+	setContents("txt_post"		, ds_addr.GetColumn(nRow, "post"));
+	setContents("txt_addr1"		, ds_addr.GetColumn(nRow, "addr1"));
+	setContents("txt_addr2"		, ds_addr.GetColumn(nRow, "addr2"));
+	
+	MSIE0.Document.all.item("btn_putAll").click();
+}
+
+// Html Editer Content 에 값 넣기.-----------------------------------------
+function setContents(objId, value)
+{
+	var objDocument = MSIE0.Document;
+	var objHtmlElementCollection = objDocument.All();
+	var Item0;
+	
+	MSIE0.Document.all.item(objId).value = value;
+	
+}
+
+
+]]></Script>
+</Window>

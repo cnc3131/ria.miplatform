@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="Test_Kolon01" Left="8" OnLoadCompleted="Test_Kolon01_OnLoadCompleted" PidAttrib="7" Title="그리드&#32;RULE&#32;적용" Top="8" Ver="1.0" Width="998" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="dsCalendar">
+				<Contents>
+					<colinfo id="day1" size="256" type="INT"/>
+					<colinfo id="day2" size="256" type="INT"/>
+					<colinfo id="day3" size="256" type="INT"/>
+					<colinfo id="day4" size="256" type="INT"/>
+					<colinfo id="day5" size="256" type="INT"/>
+					<colinfo id="day6" size="256" type="INT"/>
+					<colinfo id="day7" size="256" type="INT"/>
+					<colinfo id="day8" size="256" type="INT"/>
+					<colinfo id="day9" size="256" type="INT"/>
+					<colinfo id="day10" size="256" type="INT"/>
+					<colinfo id="day11" size="256" type="INT"/>
+					<colinfo id="day12" size="256" type="INT"/>
+					<colinfo id="day13" size="256" type="INT"/>
+					<colinfo id="day14" size="256" type="INT"/>
+					<colinfo id="day15" size="256" type="INT"/>
+					<colinfo id="day16" size="256" type="INT"/>
+					<colinfo id="day17" size="256" type="INT"/>
+					<colinfo id="day18" size="256" type="INT"/>
+					<colinfo id="day19" size="256" type="INT"/>
+					<colinfo id="day20" size="256" type="INT"/>
+					<colinfo id="day21" size="256" type="INT"/>
+					<colinfo id="day22" size="256" type="INT"/>
+					<colinfo id="day23" size="256" type="INT"/>
+					<colinfo id="day24" size="256" type="INT"/>
+					<colinfo id="day25" size="256" type="INT"/>
+					<colinfo id="day26" size="256" type="INT"/>
+					<colinfo id="day27" size="256" type="INT"/>
+					<colinfo id="day28" size="256" type="INT"/>
+					<colinfo id="day29" size="256" type="INT"/>
+					<colinfo id="day30" size="256" type="INT"/>
+					<colinfo id="day31" size="256" type="INT"/>
+					<record>
+						<day1>100</day1>
+						<day10>10</day10>
+						<day11>10</day11>
+						<day12>10</day12>
+						<day13>90</day13>
+						<day14>86</day14>
+						<day15>85</day15>
+						<day16/>
+						<day17/>
+						<day18/>
+						<day19/>
+						<day2>90</day2>
+						<day20/>
+						<day21/>
+						<day22/>
+						<day23/>
+						<day24/>
+						<day25/>
+						<day26/>
+						<day27/>
+						<day28/>
+						<day29/>
+						<day3>90</day3>
+						<day30/>
+						<day31/>
+						<day4>85</day4>
+						<day5>90</day5>
+						<day6>99</day6>
+						<day7>10</day7>
+						<day8>10</day8>
+						<day9>10</day9>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="dsTest">
+				<Contents>
+					<colinfo id="DEPT_C" size="2" type="STRING"/>
+					<colinfo id="DEPT_NM" size="20" type="STRING"/>
+					<colinfo id="CNT_SUM" size="22" type="STRING"/>
+					<colinfo id="NORM" size="22" type="STRING"/>
+					<colinfo id="YELLOW" size="22" type="STRING"/>
+					<colinfo id="RED_SUM" size="22" type="STRING"/>
+					<colinfo id="RED_BEF" size="22" type="STRING"/>
+					<colinfo id="RED_AFT" size="22" type="STRING"/>
+					<colinfo id="STATUS_G" size="1" type="STRING"/>
+					<colinfo id="TGET_SELL_AMT" size="12" type="STRING"/>
+					<colinfo id="SELL_AMT" size="12" type="STRING"/>
+					<colinfo id="ACHIV_RATE" size="12" type="STRING"/>
+					<colinfo id="CCOMP_TGET_RATE" size="12" type="STRING"/>
+					<colinfo id="CCOMP_SELL_RATE" size="12" type="STRING"/>
+					<colinfo id="CCOMP_NM" size="61" type="STRING"/>
+					<colinfo id="SELL_AMT_SORT" size="22" type="STRING"/>
+					<colinfo id="CCOMP_TGET_AMT" size="22" type="STRING"/>
+					<colinfo id="CCOMP_COMP_AMT" size="22" type="STRING"/>
+					<colinfo id="CCOMP_CCOMP_AMT" size="22" type="STRING"/>
+					<colinfo id="st1" size="1" type="STRING"/>
+					<colinfo id="st2" size="1" type="STRING"/>
+					<colinfo id="st3" size="1" type="STRING"/>
+					<colinfo id="st4" size="1" type="STRING"/>
+					<colinfo id="st5" size="1" type="STRING"/>
+					<colinfo id="st6" size="1" type="STRING"/>
+					<colinfo id="st7" size="1" type="STRING"/>
+					<colinfo id="st8" size="1" type="STRING"/>
+					<colinfo id="st9" size="1" type="STRING"/>
+					<colinfo id="st10" size="1" type="STRING"/>
+					<colinfo id="st11" size="1" type="STRING"/>
+					<colinfo id="st12" size="1" type="STRING"/>
+					<colinfo id="st13" size="1" type="STRING"/>
+					<colinfo id="st14" size="1" type="STRING"/>
+					<colinfo id="st15" size="1" type="STRING"/>
+					<colinfo id="st16" size="1" type="STRING"/>
+					<colinfo id="st17" size="1" type="STRING"/>
+					<colinfo id="st18" size="1" type="STRING"/>
+					<colinfo id="st19" size="1" type="STRING"/>
+					<colinfo id="st20" size="1" type="STRING"/>
+					<colinfo id="st21" size="1" type="STRING"/>
+					<colinfo id="st22" size="1" type="STRING"/>
+					<colinfo id="st23" size="1" type="STRING"/>
+					<colinfo id="st24" size="1" type="STRING"/>
+					<colinfo id="st25" size="1" type="STRING"/>
+					<colinfo id="st26" size="1" type="STRING"/>
+					<colinfo id="st27" size="1" type="STRING"/>
+					<colinfo id="st28" size="1" type="STRING"/>
+					<colinfo id="st29" size="1" type="STRING"/>
+					<colinfo id="st30" size="1" type="STRING"/>
+					<colinfo id="st31" size="1" type="STRING"/>
+					<record>
+						<ACHIV_RATE>119</ACHIV_RATE>
+						<CCOMP_CCOMP_AMT>0</CCOMP_CCOMP_AMT>
+						<CCOMP_COMP_AMT>0</CCOMP_COMP_AMT>
+						<CCOMP_NM></CCOMP_NM>
+						<CCOMP_SELL_RATE></CCOMP_SELL_RATE>
+						<CCOMP_TGET_AMT>0</CCOMP_TGET_AMT>
+						<CCOMP_TGET_RATE>100.5</CCOMP_TGET_RATE>
+						<CNT_SUM>105</CNT_SUM>
+						<DEPT_C>00</DEPT_C>
+						<DEPT_NM>전체&#32;&#32;</DEPT_NM>
+						<NORM>66</NORM>
+						<RED_AFT>8</RED_AFT>
+						<RED_BEF>14</RED_BEF>
+						<RED_SUM>22</RED_SUM>
+						<SELL_AMT>696</SELL_AMT>
+						<SELL_AMT_SORT></SELL_AMT_SORT>
+						<st1>1</st1>
+						<st10>1</st10>
+						<st11>1</st11>
+						<st12>1</st12>
+						<st13>1</st13>
+						<st14>1</st14>
+						<st15>1</st15>
+						<st16>1</st16>
+						<st17>1</st17>
+						<st18>1</st18>
+						<st19>2</st19>
+						<st2>1</st2>
+						<st20>2</st20>
+						<st21>2</st21>
+						<st22>2</st22>
+						<st23>3</st23>
+						<st24>3</st24>
+						<st25>3</st25>
+						<st26>3</st26>
+						<st27>3</st27>
+						<st28>3</st28>
+						<st29>3</st29>
+						<st3>1</st3>
+						<st30>3</st30>
+						<st31>3</st31>
+						<st4>1</st4>
+						<st5>1</st5>
+						<st6>1</st6>
+						<st7>1</st7>
+						<st8>1</st8>
+						<st9>1</st9>
+						<STATUS_G>0</STATUS_G>
+						<TGET_SELL_AMT>587</TGET_SELL_AMT>
+						<YELLOW>17</YELLOW>
+					</record>
+					<record>
+						<ACHIV_RATE>117</ACHIV_RATE>
+						<CCOMP_CCOMP_AMT></CCOMP_CCOMP_AMT>
+						<CCOMP_COMP_AMT>0</CCOMP_COMP_AMT>
+						<CCOMP_NM>닥스&#32;(정상+행사)</CCOMP_NM>
+						<CCOMP_SELL_RATE></CCOMP_SELL_RATE>
+						<CCOMP_TGET_AMT>1164</CCOMP_TGET_AMT>
+						<CCOMP_TGET_RATE>94</CCOMP_TGET_RATE>
+						<CNT_SUM>94</CNT_SUM>
+						<DEPT_C>7L</DEPT_C>
+						<DEPT_NM>J/N</DEPT_NM>
+						<NORM>59</NORM>
+						<RED_AFT>8</RED_AFT>
+						<RED_BEF>11</RED_BEF>
+						<RED_SUM>19</RED_SUM>
+						<SELL_AMT>655</SELL_AMT>
+						<SELL_AMT_SORT>655</SELL_AMT_SORT>
+						<st1>1</st1>
+						<st10>1</st10>
+						<st11>1</st11>
+						<st12>1</st12>
+						<st13>1</st13>
+						<st14>1</st14>
+						<st15>1</st15>
+						<st16>1</st16>
+						<st17>1</st17>
+						<st18>1</st18>
+						<st19>2</st19>
+						<st2>1</st2>
+						<st20>2</st20>
+						<st21>2</st21>
+						<st22>2</st22>
+						<st23>2</st23>
+						<st24>3</st24>
+						<st25>3</st25>
+						<st26>3</st26>
+						<st27>3</st27>
+						<st28>3</st28>
+						<st29>3</st29>
+						<st3>1</st3>
+						<st30>3</st30>
+						<st31>3</st31>
+						<st4>1</st4>
+						<st5>1</st5>
+						<st6>1</st6>
+						<st7>1</st7>
+						<st8>1</st8>
+						<st9>1</st9>
+						<STATUS_G>1</STATUS_G>
+						<TGET_SELL_AMT>558</TGET_SELL_AMT>
+						<YELLOW>16</YELLOW>
+					</record>
+					<record>
+						<ACHIV_RATE>96</ACHIV_RATE>
+						<CCOMP_CCOMP_AMT></CCOMP_CCOMP_AMT>
+						<CCOMP_COMP_AMT></CCOMP_COMP_AMT>
+						<CCOMP_NM>먼싱웨어&#32;(정상+행사)</CCOMP_NM>
+						<CCOMP_SELL_RATE></CCOMP_SELL_RATE>
+						<CCOMP_TGET_AMT></CCOMP_TGET_AMT>
+						<CCOMP_TGET_RATE>70</CCOMP_TGET_RATE>
+						<CNT_SUM>2</CNT_SUM>
+						<DEPT_C>7N</DEPT_C>
+						<DEPT_NM>E/D</DEPT_NM>
+						<NORM>2</NORM>
+						<RED_AFT>0</RED_AFT>
+						<RED_BEF>0</RED_BEF>
+						<RED_SUM>0</RED_SUM>
+						<SELL_AMT>480</SELL_AMT>
+						<SELL_AMT_SORT>16</SELL_AMT_SORT>
+						<st1>1</st1>
+						<st10>1</st10>
+						<st11>1</st11>
+						<st12>1</st12>
+						<st13>1</st13>
+						<st14>1</st14>
+						<st15>1</st15>
+						<st16>1</st16>
+						<st17>1</st17>
+						<st18>1</st18>
+						<st19>1</st19>
+						<st2>1</st2>
+						<st20>1</st20>
+						<st21>1</st21>
+						<st22>1</st22>
+						<st23>1</st23>
+						<st24>1</st24>
+						<st25>1</st25>
+						<st26>1</st26>
+						<st27>1</st27>
+						<st28>1</st28>
+						<st29>1</st29>
+						<st3>1</st3>
+						<st30>1</st30>
+						<st31>3</st31>
+						<st4>1</st4>
+						<st5>1</st5>
+						<st6>1</st6>
+						<st7>1</st7>
+						<st8>1</st8>
+						<st9>1</st9>
+						<STATUS_G>2</STATUS_G>
+						<TGET_SELL_AMT>500</TGET_SELL_AMT>
+						<YELLOW>0</YELLOW>
+					</record>
+					<record>
+						<ACHIV_RATE>72</ACHIV_RATE>
+						<CCOMP_CCOMP_AMT></CCOMP_CCOMP_AMT>
+						<CCOMP_COMP_AMT></CCOMP_COMP_AMT>
+						<CCOMP_NM></CCOMP_NM>
+						<CCOMP_SELL_RATE></CCOMP_SELL_RATE>
+						<CCOMP_TGET_AMT></CCOMP_TGET_AMT>
+						<CCOMP_TGET_RATE>110</CCOMP_TGET_RATE>
+						<CNT_SUM>9</CNT_SUM>
+						<DEPT_C>7S</DEPT_C>
+						<DEPT_NM>S/E</DEPT_NM>
+						<NORM>5</NORM>
+						<RED_AFT>0</RED_AFT>
+						<RED_BEF>3</RED_BEF>
+						<RED_SUM>3</RED_SUM>
+						<SELL_AMT>400</SELL_AMT>
+						<SELL_AMT_SORT>25</SELL_AMT_SORT>
+						<st1>1</st1>
+						<st10>1</st10>
+						<st11>1</st11>
+						<st12>1</st12>
+						<st13>1</st13>
+						<st14>1</st14>
+						<st15>1</st15>
+						<st16>1</st16>
+						<st17>2</st17>
+						<st18>2</st18>
+						<st19>2</st19>
+						<st2>1</st2>
+						<st20>3</st20>
+						<st21>3</st21>
+						<st22>3</st22>
+						<st23>3</st23>
+						<st24>3</st24>
+						<st25>3</st25>
+						<st26>3</st26>
+						<st27>3</st27>
+						<st28>3</st28>
+						<st29>3</st29>
+						<st3>1</st3>
+						<st30>3</st30>
+						<st31>3</st31>
+						<st4>1</st4>
+						<st5>1</st5>
+						<st6>1</st6>
+						<st7>1</st7>
+						<st8>1</st8>
+						<st9>1</st9>
+						<STATUS_G>0</STATUS_G>
+						<TGET_SELL_AMT>550</TGET_SELL_AMT>
+						<YELLOW>1</YELLOW>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="4" Width="1000"></Image>
+		<Image Align="Left" Height="22" Id="Image3" ImageID="M_title_1depth_icon" Left="24" LeftMargin="18" Style="cm_title_sub" TabOrder="14" Text="월간&#32;생산&#32;현황" Top="24" Width="144"></Image>
+		<Grid AutoFit="TRUE" AutoFitEndLine="Hide" BindDataset="dsCalendar" BkColor2="default" BoldHead="true" Border="Flat" Bottom="167" ColSelect="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="61" Id="gdDailyRate" InputPanel="FALSE" Left="20" LineColor="default" LineType="ExVERT" MinWidth="100" Right="974" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="106" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="954">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="50"/>
+						<col width="70"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+						<col width="26"/>
+					</columns>
+					<body>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" rowspan="3" text="일목표">
+							<cell align="center" col="0" color="user14" display="text" rowspan="3" text="일목표"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user16" display="text" font="돋움,9" text="일자"/>
+						<cell align="center" bkcolor="white" col="2" color="blue" display="text" font="굴림,9" text="1"/>
+						<cell align="center" bkcolor="white" col="3" display="text" font="굴림,9" text="2"/>
+						<cell align="center" bkcolor="white" col="4" display="text" font="굴림,9" text="3"/>
+						<cell align="center" bkcolor="white" col="5" display="text" font="굴림,9" text="4"/>
+						<cell align="center" bkcolor="white" col="6" display="text" font="굴림,9" text="5"/>
+						<cell align="center" bkcolor="white" col="7" display="text" font="굴림,9" text="6"/>
+						<cell align="center" bkcolor="white" col="8" display="text" font="굴림,9" text="7"/>
+						<cell align="center" bkcolor="white" col="9" display="text" font="굴림,9" text="8"/>
+						<cell align="center" bkcolor="white" col="10" display="text" font="굴림,9" text="9"/>
+						<cell align="center" bkcolor="white" col="11" display="text" font="굴림,9" text="10"/>
+						<cell align="center" bkcolor="white" col="12" display="text" font="굴림,9" text="11"/>
+						<cell align="center" bkcolor="white" col="13" display="text" font="굴림,9" text="12"/>
+						<cell align="center" bkcolor="white" col="14" display="text" font="굴림,9" text="13"/>
+						<cell align="center" bkcolor="white" col="15" display="text" font="굴림,9" text="14"/>
+						<cell align="center" bkcolor="white" col="16" display="text" font="굴림,9" text="15"/>
+						<cell align="center" bkcolor="white" col="17" display="text" font="굴림,9" text="16"/>
+						<cell align="center" bkcolor="white" col="18" display="text" font="굴림,9" text="17"/>
+						<cell align="center" bkcolor="white" col="19" display="text" font="굴림,9" text="18"/>
+						<cell align="center" bkcolor="white" col="20" display="text" font="굴림,9" text="19"/>
+						<cell align="center" bkcolor="white" col="21" display="text" font="굴림,9" text="20"/>
+						<cell align="center" bkcolor="white" col="22" display="text" font="굴림,9" text="21"/>
+						<cell align="center" bkcolor="white" col="23" display="text" font="굴림,9" text="22"/>
+						<cell align="center" bkcolor="white" col="24" display="text" font="굴림,9" text="23"/>
+						<cell align="center" bkcolor="white" col="25" display="text" font="굴림,9" text="24"/>
+						<cell align="center" bkcolor="white" col="26" display="text" font="굴림,9" text="25"/>
+						<cell align="center" bkcolor="white" col="27" display="text" font="굴림,9" text="26"/>
+						<cell align="center" bkcolor="white" col="28" display="text" font="굴림,9" text="27"/>
+						<cell align="center" bkcolor="white" col="29" display="text" font="굴림,9" text="28"/>
+						<cell align="center" bkcolor="white" col="30" display="text" font="굴림,9" text="29"/>
+						<cell align="center" bkcolor="white" col="31" display="text" font="굴림,9" text="30"/>
+						<cell align="center" bkcolor="white" col="32" display="text" font="굴림,9" text="31"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user16" display="text" font="돋움,9" row="1" text="신호등"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day1&gt;=100,&apos;s_sm_blue&apos;,iif(day1&gt;=85&#32;&amp;&amp;&#32;day1&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day1,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="2" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day2&gt;=100,&apos;s_sm_blue&apos;,iif(day2&gt;=85&#32;&amp;&amp;&#32;day2&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day2,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="3" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day3&gt;=100,&apos;s_sm_blue&apos;,iif(day3&gt;=85&#32;&amp;&amp;&#32;day3&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day3,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="4" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day4&gt;=100,&apos;s_sm_blue&apos;,iif(day4&gt;=85&#32;&amp;&amp;&#32;day4&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day4,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="5" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day5&gt;=100,&apos;s_sm_blue&apos;,iif(day5&gt;=85&#32;&amp;&amp;&#32;day5&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day5,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="6" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day6&gt;=100,&apos;s_sm_blue&apos;,iif(day6&gt;=85&#32;&amp;&amp;&#32;day6&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day6,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="7" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day7&gt;=100,&apos;s_sm_blue&apos;,iif(day7&gt;=85&#32;&amp;&amp;&#32;day7&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day7,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="8" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day8&gt;=100,&apos;s_sm_blue&apos;,iif(day8&gt;=85&#32;&amp;&amp;&#32;day8&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day8,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="9" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day9&gt;=100,&apos;s_sm_blue&apos;,iif(day9&gt;=85&#32;&amp;&amp;&#32;day9&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day9,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="10" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day10&gt;=100,&apos;s_sm_blue&apos;,iif(day10&gt;=85&#32;&amp;&amp;&#32;day10&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day10,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="11" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day11&gt;=100,&apos;s_sm_blue&apos;,iif(day11&gt;=85&#32;&amp;&amp;&#32;day11&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day11,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="12" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day12&gt;=100,&apos;s_sm_blue&apos;,iif(day12&gt;=85&#32;&amp;&amp;&#32;day12&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day12,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="13" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day13&gt;=100,&apos;s_sm_blue&apos;,iif(day13&gt;=85&#32;&amp;&amp;&#32;day13&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day13,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="14" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day14&gt;=100,&apos;s_sm_blue&apos;,iif(day14&gt;=85&#32;&amp;&amp;&#32;day14&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day14,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="15" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day15&gt;=100,&apos;s_sm_blue&apos;,iif(day15&gt;=85&#32;&amp;&amp;&#32;day15&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day15,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="16" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day16&gt;=100,&apos;s_sm_blue&apos;,iif(day16&gt;=85&#32;&amp;&amp;&#32;day16&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day16,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="17" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day17&gt;=100,&apos;s_sm_blue&apos;,iif(day17&gt;=85&#32;&amp;&amp;&#32;day17&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day17,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="18" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day18&gt;=100,&apos;s_sm_blue&apos;,iif(day18&gt;=85&#32;&amp;&amp;&#32;day18&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day18,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="19" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day19&gt;=100,&apos;s_sm_blue&apos;,iif(day19&gt;=85&#32;&amp;&amp;&#32;day19&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day19,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="20" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day20&gt;=100,&apos;s_sm_blue&apos;,iif(day20&gt;=85&#32;&amp;&amp;&#32;day20&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day20,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="21" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day21&gt;=100,&apos;s_sm_blue&apos;,iif(day21&gt;=85&#32;&amp;&amp;&#32;day21&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day21,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="22" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day22&gt;=100,&apos;s_sm_blue&apos;,iif(day22&gt;=85&#32;&amp;&amp;&#32;day22&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day22,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="23" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day23&gt;=100,&apos;s_sm_blue&apos;,iif(day23&gt;=85&#32;&amp;&amp;&#32;day23&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day23,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="24" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day24&gt;=100,&apos;s_sm_blue&apos;,iif(day24&gt;=85&#32;&amp;&amp;&#32;day24&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day24,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="25" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day25&gt;=100,&apos;s_sm_blue&apos;,iif(day25&gt;=85&#32;&amp;&amp;&#32;day25&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day25,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="26" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day26&gt;=100,&apos;s_sm_blue&apos;,iif(day26&gt;=85&#32;&amp;&amp;&#32;day26&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day26,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="27" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day27&gt;=100,&apos;s_sm_blue&apos;,iif(day27&gt;=85&#32;&amp;&amp;&#32;day27&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day27,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="28" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day28&gt;=100,&apos;s_sm_blue&apos;,iif(day28&gt;=85&#32;&amp;&amp;&#32;day28&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day28,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="29" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day29&gt;=100,&apos;s_sm_blue&apos;,iif(day29&gt;=85&#32;&amp;&amp;&#32;day29&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day29,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="30" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day30&gt;=100,&apos;s_sm_blue&apos;,iif(day30&gt;=85&#32;&amp;&amp;&#32;day30&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day30,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="31" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkcolor="white" bkimageid="expr:iif(day31&gt;=100,&apos;s_sm_blue&apos;,iif(day31&gt;=85&#32;&amp;&amp;&#32;day31&#32;&lt;&#32;100,&#32;&apos;s_sm_yellow&apos;,decode(day31,null,&apos;&apos;,&apos;s_sm_red&apos;))" col="32" display="text" font="굴림,9" row="1"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user16" display="text" font="돋움,9" row="2" text="달성율"/>
+						<cell align="center" bkcolor="white" col="2" colid="day1" display="text" font="굴림,9" row="2" text="99"/>
+						<cell align="center" bkcolor="white" col="3" colid="day2" display="text" font="굴림,9" row="2" text="94"/>
+						<cell align="center" bkcolor="white" col="4" colid="day3" display="text" font="굴림,9" row="2" text="87"/>
+						<cell align="center" bkcolor="white" col="5" colid="day4" display="text" font="굴림,9" row="2" text="87"/>
+						<cell align="center" bkcolor="white" col="6" colid="day5" display="text" font="굴림,9" row="2" text="101"/>
+						<cell align="center" bkcolor="white" col="7" colid="day6" display="text" font="굴림,9" row="2" text="91"/>
+						<cell align="center" bkcolor="white" col="8" colid="day7" display="text" font="굴림,9" row="2" text="94"/>
+						<cell align="center" bkcolor="white" col="9" colid="day8" display="text" font="굴림,9" row="2" text="94"/>
+						<cell align="center" bkcolor="white" col="10" colid="day9" display="text" font="굴림,9" row="2" text="104"/>
+						<cell align="center" bkcolor="white" col="11" colid="day10" display="text" font="굴림,9" row="2" text="92"/>
+						<cell align="center" bkcolor="white" col="12" colid="day11" display="text" font="굴림,9" row="2" text="96"/>
+						<cell align="center" bkcolor="white" col="13" colid="day12" display="text" font="굴림,9" row="2" text="97"/>
+						<cell align="center" bkcolor="white" col="14" colid="day13" display="text" font="굴림,9" row="2" text="102"/>
+						<cell align="center" bkcolor="white" col="15" colid="day14" display="text" font="굴림,9" row="2" text="95"/>
+						<cell align="center" bkcolor="white" col="16" colid="day15" display="text" font="굴림,9" row="2" text="95"/>
+						<cell align="center" bkcolor="white" col="17" colid="day16" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="18" colid="day17" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="19" colid="day18" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="20" colid="day19" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="21" colid="day20" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="22" colid="day21" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="23" colid="day22" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="24" colid="day23" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="25" colid="day24" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="26" colid="day25" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="27" colid="day26" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="28" colid="day27" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="29" colid="day28" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="30" colid="day29" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="31" colid="day30" display="text" font="굴림,9" row="2"/>
+						<cell align="center" bkcolor="white" col="32" colid="day31" display="text" font="굴림,9" row="2"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Shape BKColor="#bbcfe3" Bottom="82" Height="28" Id="Shape0" Left="21" LineColor="#bbcfe3" Right="976" RoundHeight="7" RoundUnit="Pixel" RoundWidth="7" TabOrder="2" Top="54" Type="RoundRect" Width="955"></Shape>
+		<Static Border="None" Font="돋움,9" Height="20" Id="Static1" Left="35" TabOrder="3" Text="유통구분&#32;" Top="59" VAlign="Middle" Width="72"></Static>
+		<Combo Border="Flat" Height="20" Id="Combo0" Left="86" Style="if_input" TabOrder="4" Top="57" Width="109"></Combo>
+		<Combo Border="Flat" Height="20" Id="Combo1" Left="265" Style="if_input" TabOrder="6" Top="57" Width="109"></Combo>
+		<Static Border="None" Font="돋움,9" Height="20" Id="Static2" Left="211" TabOrder="5" Text="관리구분&#32;" Top="59" VAlign="Middle" Width="80"></Static>
+		<Grid AutoFit="TRUE" AutoFitEndLine="Hide" BindDataset="dsTest" BkColor2="default" BoldHead="true" Border="Flat" Bottom="409" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="238" Id="Grid1" InputPanel="FALSE" Left="20" LineColor="default" LineType="ExVERT" MinWidth="100" OnCellClick="Grid1_OnCellClick" Right="974" RowHeight="20" Style="se_grid" TabOrder="7" TabStop="true" Top="171" UseDBuff="true" UsePopupMenu="true" UseSelColor="FALSE" Visible="true" VLineColor="default" WheelScrollRow="1" Width="954">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="15"/>
+						<col width="50"/>
+						<col width="30"/>
+						<col width="40"/>
+						<col width="40"/>
+						<col width="40"/>
+						<col width="35"/>
+						<col width="35"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="10"/>
+						<col width="45"/>
+						<col width="45"/>
+						<col width="40"/>
+						<col width="45"/>
+						<col width="35"/>
+						<col width="35"/>
+						<col width="45"/>
+						<col width="54"/>
+					</columns>
+					<head>
+						<cell bkimageid="M_grid_head2" col="0" color="user14" display="text" rowspan="2">
+							<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user42" display="text" rowspan="2"/>
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user42" colspan="2" display="text" font="돋움,9,Bold" rowspan="2"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user14" colspan="2" display="text" font="돋움,9,Bold" rowspan="2" text="조직">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" colspan="2" display="text" font="돋움,9,Bold" rowspan="2" text="조직"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user14" colspan="3" display="text" font="돋움,9,Bold" text="경쟁대비율">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" colspan="3" display="text" font="돋움,9,Bold" text="경쟁대비율"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="6" color="user14" colspan="2" display="text" font="돋움,9,Bold" text="경쟁분석">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" colspan="2" display="text" font="돋움,9,Bold" text="경쟁분석"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="8" color="user14" colspan="30" display="text" font="돋움,9,Bold" text="매장현장상황">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" colspan="30" display="text" font="돋움,9,Bold" text="매장현장상황"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="38" color="user14" display="text" font="돋움,9,Bold" rowspan="2" text="신호등">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9,Bold" rowspan="2" text="신호등"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="39" color="user14" display="text" font="돋움,9,Bold" rowspan="2" text="매출목표">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9,Bold" text="매출"/>
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9,Bold" row="1" text="목표"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="40" color="user14" display="text" font="돋움,9,Bold" rowspan="2" text="매출실적">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9,Bold" text="매출"/>
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9,Bold" row="1" text="실적"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="41" color="user14" display="text" font="돋움,9,Bold" rowspan="2" text="달성율(%)">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9,Bold" rowspan="2" text="달성율"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="42" color="user14" colspan="2" display="text" font="돋움,9,Bold" text="매출분석">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" colspan="2" display="text" font="돋움,9,Bold" text="매출분석"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="44" color="user14" display="text" font="돋움,9,Bold" rowspan="2" text="담당별매장">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9,Bold" rowspan="2" text="담당별"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="45" color="user14" display="text" font="돋움,9,Bold" rowspan="2" text="영업일지조회">
+							<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9,Bold" rowspan="2" text="영업일지"/>
+						</cell>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user16" display="text" font="돋움,9" row="1" text="신호등"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="user16" display="text" font="돋움,9" row="1" text="목표"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="5" color="user16" display="text" font="돋움,9" row="1" text="실적"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="6" color="user16" display="text" font="돋움,9,Bold" row="1" text="월간"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="7" color="user16" display="text" font="돋움,9,Bold" row="1" text="연간"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="8" color="user16" colspan="6" display="text" font="돋움,9" row="1" text="20%"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="14" color="user16" colspan="6" display="text" font="돋움,9" row="1" text="40%"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="20" color="user16" colspan="6" display="text" font="돋움,9" row="1" text="60%"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="26" color="user16" colspan="6" display="text" font="돋움,9" row="1" text="80%"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="32" color="user16" colspan="6" display="text" font="돋움,9" row="1" text="100%"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="42" color="user16" display="text" font="돋움,9,Bold" row="1" text="월간"/>
+						<cell align="center" bkimagealign="stretch" bkimageid="M_grid_head2" col="43" color="user16" display="text" font="돋움,9,Bold" row="1" text="연간"/>
+					</head>
+					<body>
+						<cell bkcolor="user11" col="0" display="text" rowspan="2">
+							<cell col="0" display="text" expr="decode(grid1.CurrentRow,&#32;row&#32;,&apos;▶&apos;)" rowspan="2">
+								<cell col="0" display="text" expr="decode(row&#32;,1,&apos;y&apos;)"/>
+								<cell align="center" col="0" display="text" rowspan="2"/>
+								<cell col="0" display="text" row="1"/>
+							</cell>
+						</cell>
+						<cell align="center" bkcolor="user11" col="1" colid="DEPT_NM" display="text" rowspan="2"/>
+						<cell bkcolor="user11" col="2" colid="CNT_SUM" display="number" rowspan="2">
+							<cell align="center" col="0" colid="CNT_SUM" display="number" rowspan="2"/>
+						</cell>
+						<cell bkcolor="user11" bkimageid="expr:decode(STATUS_G,0,&apos;s_big_blue&apos;,1,&apos;s_big_yellow&apos;,&apos;s_big_red&apos;)" col="3" display="text" rowspan="2"/>
+						<cell bkcolor="user11" col="4" display="text" rowspan="2">
+							<cell align="right" col="0" display="text" expr="decode(CCOMP_TGET_RATE,&apos;&apos;,0,CCOMP_TGET_RATE)&#32;+&#32;&apos;%&apos;" rowspan="2" text="84%"/>
+						</cell>
+						<cell bkcolor="user11" col="5" colid="CCOMP_SELL_RATE" display="text" rowspan="2">
+							<cell align="center" col="0" display="text" expr="decode(CCOMP_SELL_RATE,null,0,&#32;CCOMP_SELL_RATE)+&#32;&apos;%&apos;" rowspan="2" text="83%"/>
+						</cell>
+						<cell bkcolor="user11" col="6" display="text" rowspan="2">
+							<cell bkimageid="grid_Icon_graph" col="0" display="text" rowspan="2"/>
+						</cell>
+						<cell bkcolor="user11" col="7" display="text" rowspan="2">
+							<cell bkimageid="grid_Icon_Sgraph" col="0" display="text" rowspan="2"/>
+						</cell>
+						<cell bkcolor="expr:decode(st1,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="8" display="text"/>
+						<cell bkcolor="expr:decode(st2,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="9" display="text"/>
+						<cell bkcolor="expr:decode(st3,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="10" display="text"/>
+						<cell bkcolor="expr:decode(st4,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="11" display="text"/>
+						<cell bkcolor="expr:decode(st5,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="12" display="text"/>
+						<cell bkcolor="expr:decode(st6,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="13" display="text"/>
+						<cell bkcolor="expr:decode(st7,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="14" display="text"/>
+						<cell bkcolor="expr:decode(st8,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="15" display="text"/>
+						<cell bkcolor="expr:decode(st9,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="16" display="text"/>
+						<cell bkcolor="expr:decode(st10,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="17" display="text"/>
+						<cell bkcolor="expr:decode(st11,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="18" display="text"/>
+						<cell bkcolor="expr:decode(st12,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="19" display="text"/>
+						<cell bkcolor="expr:decode(st13,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="20" display="text"/>
+						<cell bkcolor="expr:decode(st14,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="21" display="text"/>
+						<cell bkcolor="expr:decode(st15,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="22" display="text"/>
+						<cell bkcolor="expr:decode(st16,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="23" display="text"/>
+						<cell bkcolor="expr:decode(st17,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="24" display="text"/>
+						<cell bkcolor="expr:decode(st18,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="25" display="text"/>
+						<cell bkcolor="expr:decode(st19,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="26" display="text"/>
+						<cell bkcolor="expr:decode(st20,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="27" display="text"/>
+						<cell bkcolor="expr:decode(st21,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="28" display="text"/>
+						<cell bkcolor="expr:decode(st22,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="29" display="text"/>
+						<cell bkcolor="expr:decode(st23,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="30" display="text"/>
+						<cell bkcolor="expr:decode(st24,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="31" display="text"/>
+						<cell bkcolor="expr:decode(st25,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="32" display="text"/>
+						<cell bkcolor="expr:decode(st26,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="33" display="text"/>
+						<cell bkcolor="expr:decode(st27,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="34" display="text"/>
+						<cell bkcolor="expr:decode(st28,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="35" display="text"/>
+						<cell bkcolor="expr:decode(st29,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="36" display="text"/>
+						<cell bkcolor="expr:decode(st30,1,&apos;#0a3dbe&apos;,2,&apos;#f3e336&apos;,&apos;#e31b1b&apos;)" col="37" display="text"/>
+						<cell bkcolor="user11" bkimageid="expr:iif(&#32;parseInt(ACHIV_RATE)&#32;&gt;=100&#32;,&apos;s_big_blue&apos;,iif(parseInt(ACHIV_RATE)&#32;&lt;100&#32;&amp;&amp;parseInt(&#32;ACHIV_RATE)&#32;&gt;=85&#32;,&apos;s_big_yellow&apos;,&apos;s_big_red&apos;))" col="38" display="text" rowspan="2"/>
+						<cell align="center" bkcolor="user11" col="39" display="text" rowspan="2">
+							<cell align="center" col="0" colid="TGET_SELL_AMT" display="text" rowspan="2" text="9,999"/>
+						</cell>
+						<cell align="center" bkcolor="user11" col="40" display="text" rowspan="2">
+							<cell align="right" col="0" colid="SELL_AMT" display="text" rowspan="2" text="9,999"/>
+						</cell>
+						<cell align="center" bkcolor="user11" col="41" display="text" rowspan="2">
+							<cell align="center" col="0" display="text" expr="ACHIV_RATE&#32;+&#32;&apos;%&apos;" rowspan="2" text="96%"/>
+						</cell>
+						<cell bkcolor="user11" col="42" display="text" rowspan="2">
+							<cell bkimageid="grid_Icon_graph" col="0" display="text" rowspan="2"/>
+						</cell>
+						<cell bkcolor="user11" col="43" display="text" rowspan="2">
+							<cell bkimageid="grid_Icon_Sgraph" col="0" display="text" rowspan="2"/>
+						</cell>
+						<cell bkcolor="user11" col="44" display="text" rowspan="2">
+							<cell bkimageid="grid_l_Icon_man" col="0" display="text" rowspan="2"/>
+						</cell>
+						<cell bkcolor="user11" col="45" display="text" rowspan="2">
+							<cell bkimageid="Icon_paper" col="0" display="button" rowspan="2"/>
+						</cell>
+						<cell align="center" bkcolor="user11" bkimagealign="left" col="8" colspan="30" display="text" row="1">
+							<cell align="center" bkimagealign="left" bkimageid="s_sm_blue" col="0" colid="NORM" colspan="6" display="number" text="473"/>
+							<cell align="center" bkimagealign="left" bkimageid="s_sm_yellow" col="6" colid="YELLOW" colspan="6" display="number" text="266"/>
+							<cell align="center" bkimagealign="left" bkimageid="s_sm_red" col="12" colid="RED_SUM" colspan="6" display="number" text="429"/>
+							<cell align="center" col="18" colspan="12" display="text" expr="&apos;(조치전&#32;&apos;&#32;+&#32;RED_BEF&#32;+&apos;)&apos;">
+								<cell align="center" col="0" colspan="12" display="text">
+									<cell align="center" col="0" colid="tg04" display="text" text="(조치전:140)"/>
+									<cell align="center" col="1" colid="tg04" display="text" text="(조치전:140)"/>
+									<cell align="center" col="2" colid="tg04" display="text" text="(조치전:140)"/>
+									<cell align="center" col="3" colid="tg04" display="text" text="(조치전:140)"/>
+									<cell align="center" col="4" colid="tg04" display="text" expr="&apos;(&#32;조치전&apos;&#32;&#32;+&#32;RED_BEF&#32;+&#32;&apos;)&apos;" text="(조치전:140)"/>
+									<cell align="center" col="5" colid="tg04" display="text" text="(조치전:140)"/>
+									<cell align="center" col="6" colid="tg04" display="text" text="(조치전:140)"/>
+									<cell align="center" col="7" colid="tg04" display="text" text="(조치전:140)"/>
+									<cell align="center" col="8" colid="tg04" display="text" text="(조치전:140)"/>
+									<cell align="center" col="9" colid="tg04" display="text" text="(조치전:140)"/>
+									<cell align="center" col="10" colid="tg04" display="text" text="(조치전:140)"/>
+									<cell align="center" col="11" colid="tg04" display="text" text="(조치전:140)"/>
+								</cell>
+							</cell>
+						</cell>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button0" ImageID="m_bt_txt_02" Left="376" OnClick="Button0_OnClick" Style="sty_btn" TabOrder="8" Text="조회" Top="58" TopMargin="1" Transparent="TRUE" Width="38"></Button>
+		<Static Align="Right" Border="None" Height="11" Id="Static3" Left="880" Style="cm_text" TabOrder="9" Text="[단위:백만원]" Top="91" VAlign="Middle" Width="96"></Static>
+		<Calendar Border="Flat" Color="black" DayFont="돋움,9" DisableBKColor="user12" DisableColor="#848585" Face3dColor="#249494" HeaderFont="돋움,9,Bold" Height="20" Id="calBasicDt" Left="858" OnChanged="changeDayColor" SaturdayTextColor="mediumblue" Style="se_cal" SundayTextColor="user56" TabOrder="9" TitleTextColor="white" TodayColor="user58" Top="27" TrailingTextColor="#f1f1f1" WeekBKColor="#9cd5d6" WeekColor="#014746" Width="96"></Calendar>
+		<Button ButtonStyle="TRUE" Height="20" Id="btnPreMonth" ImageID="m_bt_grid_08" Left="837" OnClick="changeMonth" Style="cm_btn" TabOrder="10" Top="27" Width="20"></Button>
+		<Button ButtonStyle="TRUE" Height="20" Id="btnNextMonth" ImageID="m_bt_grid_09" Left="955" OnClick="changeMonth" Style="cm_btn" TabOrder="11" Top="27" Width="20"></Button>
+		<Grid AutoFitEndLine="Hide" BindDataset="dsTest" BkColor2="default" BoldHead="true" Border="Flat" Bottom="558" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="145" Id="Grid0" InputPanel="FALSE" Left="20" LineColor="default" LineType="ExVERT" OnCellClick="Grid1_OnCellClick" Right="974" RowHeight="20" Style="se_grid" TabOrder="13" TabStop="true" Top="413" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="954">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="76"/>
+						<col width="70"/>
+						<col width="78"/>
+						<col width="60"/>
+						<col width="74"/>
+						<col width="85"/>
+						<col width="72"/>
+						<col width="86"/>
+						<col width="88"/>
+						<col width="100"/>
+						<col width="83"/>
+						<col width="102"/>
+						<col width="100"/>
+						<col width="100"/>
+						<col width="100"/>
+						<col width="100"/>
+						<col width="100"/>
+						<col width="60"/>
+						<col width="60"/>
+					</columns>
+					<head>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" text="DEPT_C"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user14" display="text" text="DEPT_NM"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="user14" display="text" text="CNT_SUM"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user14" display="text" text="NORM"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="user14" display="text" text="YELLOW"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="5" color="user14" display="text" text="RED_SUM"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="6" color="user14" display="text" text="RED_BEF"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="7" color="user14" display="text" text="RED_AFT"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="8" color="user14" display="text" text="STATUS_G"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="9" color="user14" display="text" text="TGET_SELL_AMT"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="10" color="user14" display="text" text="SELL_AMT"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="11" color="user14" display="text" text="ACHIV_RATE"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="12" color="user14" display="text" text="CCOMP_TGET_RATE"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="13" color="user14" display="text" text="CCOMP_SELL_RATE"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="14" color="user14" display="text" text="CCOMP_NM"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="15" color="user14" display="text" text="SELL_AMT_SORT"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="16" color="user14" display="text" text="CCOMP_TGET_AMT"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="17" color="user14" display="text" text="CCOMP_COMP_AMT"/>
+						<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="18" color="user14" display="text" text="CCOMP_CCOMP_AMT"/>
+					</head>
+					<body>
+						<cell bkcolor="user11" bkcolor2="user12" col="0" colid="DEPT_C" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="1" colid="DEPT_NM" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="2" colid="CNT_SUM" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="3" colid="NORM" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="4" colid="YELLOW" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="5" colid="RED_SUM" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="6" colid="RED_BEF" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="7" colid="RED_AFT" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="8" colid="STATUS_G" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="9" colid="TGET_SELL_AMT" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="10" colid="SELL_AMT" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="11" colid="ACHIV_RATE" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="12" colid="CCOMP_TGET_RATE" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="13" colid="CCOMP_SELL_RATE" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="14" colid="CCOMP_NM" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="15" colid="SELL_AMT_SORT" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="16" colid="CCOMP_TGET_AMT" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="17" colid="CCOMP_COMP_AMT" color="user16" display="text" edit="normal"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="18" colid="CCOMP_CCOMP_AMT" color="user16" display="text" edit="normal"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Button Cursor="HAND" Height="18" Id="btnCal02" ImageID="m_bt_cal" Left="934" OnClick="btnCal02_OnClick" TabOrder="15" Text="Button2" Top="28" Width="18"></Button>
+	</Form>
+	<Script><![CDATA[
+function Button0_OnClick(obj)
+{
+	var args = " pgm=sample.action.TestAction";
+	args += " action=List";
+	args += " dt=" + quote(calBasicDt.Value);
+	
+	callService(this,"SearchData",null,"dsTest=dsTest dsCalendar=dsCalendar",args);
+}
+
+function callback()
+{
+	trace(dsTest.SaveXML());
+}
+
+function Button1_OnClick(obj)
+{
+}
+
+function Button2_OnClick(obj)
+{
+	//this.PrintScreen(false);
+	Dialog("Screen::Test_KOLON01_Popup.xml","");
+}
+
+function Button2_OnClick01(obj)
+{
+	//this.PrintScreen(false);
+	Dialog("Screen::Fusionchart.xml","");
+}
+
+
+function Grid1_OnCellClick(obj,nRow,nCell,nX,nY,nPivotIndex)
+{
+	//alert(nCell);
+}
+
+
+function changeDayColor() {
+
+	for(day=1;day<32;day++){
+		//요일 =체크를 의해 날짜 생성
+		var date="01";
+		if(day<10){
+			date = "0" + day;
+		}else{
+			date = day;
+		}
+		date = SubStr(calBasicDt.Value,0,6) + date;
+		
+		if(GetDay(DateTime(date)) == 0 ) {
+			gdDailyRate.SetCellProp("body",(day + 1),"Color","Red"); 
+		} else if(GetDay(DateTime(date)) == 6 ) {
+			gdDailyRate.SetCellProp("body",(day + 1),"Color","Blue"); 
+		}else{
+			gdDailyRate.SetCellProp("body",(day + 1),"Color","Black"); 
+		}
+	}
+}
+
+function Test_Kolon01_OnLoadCompleted(obj){
+		calBasicDt.Value = AddDate(today(), -1);
+}
+
+function Button5_OnClick(obj)
+{
+
+}
+
+function changeMonth(obj){
+		if(obj.Id == "btnNextMonth"){
+			var nMonth = fnc_LastDay(AddMonth(calBasicDt.Value,1));
+			if(SubStr(today(),0,6) < subStr(nMonth,0,6) )
+				return;
+			else if (SubStr(today(),0,6) == subStr(nMonth,0,6))
+				calBasicDt.Value = AddDate(today(), -1);
+			else
+				calBasicDt.Value = nMonth;
+				
+		}else{
+			calBasicDt.Value=fnc_LastDay(AddMonth(calBasicDt.Value,-1));
+		}
+}
+
+function btnCal02_OnClick(obj)
+{
+	calBasicDt.DropDown();
+}
+]]></Script>
+</Window>

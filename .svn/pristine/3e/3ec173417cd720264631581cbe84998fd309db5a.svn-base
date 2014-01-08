@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<Window>
+	<Form BKColor="white" Font="Arial,9" Height="461" Id="Report_Input" Left="7" PidAttrib="7" Title="Report+Input" Top="7" Ver="1.1" Width="765" WorkArea="TRUE">
+		<Datasets>
+			<Dataset Auto="false" Id="dsMain"></Dataset>
+		</Datasets>
+		<Static Align="Center" Border="Flat" height="461" Id="Static28" TabOrder="1" VAlign="Middle" Width="765"></Static>
+		<edit BKColor="#eaeaea" Border="None" height="18" Id="edtBoeIDate" Left="539" MaxLength="10" OnKeyDown="aEdit_OnKeyDown" TabOrder="2" Top="58" Width="111"></edit>
+		<edit BKColor="#eaeaea" Border="None" height="19" Id="edtBoeAmt" Left="118" MaxLength="20" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="3" Top="91" Width="128"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="18" Id="edtBoeTenor" Left="59" MaxLength="25" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="4" Top="124" Width="190"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="18" Id="edtBoePayee" Left="190" MaxLength="43" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="5" Top="188" Width="302"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="20" Id="edtBoeLAmt1" Left="64" MaxLength="92" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="6" Top="217" Width="651"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="19" Id="edtBoeLAmt2" Left="64" MaxLength="92" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="7" Top="236" Width="651"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="18" Id="edtBoeAccountee" Left="416" MaxLength="43" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="8" Top="276" Width="301"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="18" Id="edtLcIBank" Left="146" MaxLength="72" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="9" Top="307" Width="571"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="18" Id="edtLcNo" Left="90" MaxLength="30" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="10" Top="343" Width="251"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="18" Id="edtLcIDate" Left="491" MaxLength="10" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="11" Top="341" Width="226"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="18" Id="edtBoeDrawee1" Left="68" MaxLength="30" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="12" Top="374" Width="272"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="18" Id="edtBoeDrawee2" Left="68" MaxLength="30" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="13" Top="399" Width="272"></edit>
+		<edit BKColor="#eaeaea" Border="None" Height="18" Id="edtBoeDrawee3" Left="68" MaxLength="30" OnFocus="aEditFcous" OnKeyDown="aEdit_OnKeyDown" OnKillFocus="aEditKillFcous" TabOrder="14" Top="424" Width="272"></edit>
+		<edit BKColor="#fcfbcc" Border="None" DisableBKColor="white" Enable="FALSE" height="20" Id="edtBoeNo" Left="60" OnKeyDown="aEdit_OnKeyDown" TabOrder="15" Top="54" Width="190"></edit>
+		<Static Align="Center" Font="Arial,14,Bold" Height="25" Id="Static3" Left="291" TabOrder="16" Text="Title&#32;" Top="17" VAlign="Middle" Width="177"></Static>
+		<Static Font="Arial,11" Height="25" Id="Static0" Left="34" TabOrder="17" Text="No" Top="58" Width="22"></Static>
+		<Static Font="Arial,11" Height="25" Id="Static1" Left="499" TabOrder="18" Text="Date&#32;:&#32;" Top="59" Width="40"></Static>
+		<Static Font="Arial,11" Height="25" Id="Static2" Left="655" TabOrder="19" Text="Korea" Top="58" Width="40"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static4" Left="34" TabOrder="20" Text="FOR" Top="91" Width="31"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static6" Left="33" TabOrder="21" Text="AT" Top="126" Width="19"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static7" Left="33" TabOrder="22" Text="PAY&#32;TO&#32;KOOKMIN&#32;BANK" Top="189" Width="150"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static8" Left="505" TabOrder="23" Text="OR&#32;ORDER&#32;THE&#32;SUM&#32;OF" Top="189" Width="150"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static10" Left="33" TabOrder="24" Text="VALUE&#32;RECEIVED&#32;AND&#32;CHARGE&#32;THE&#32;SAME&#32;TO&#32;ACCOUNT&#32;OF" Top="277" Width="380"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static11" Left="33" TabOrder="25" Text="DRAWN&#32;UNDER" Top="308" Width="110"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static12" Left="33" TabOrder="26" Text="L/C&#32;NO" Top="343" Width="55"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static13" Left="33" TabOrder="27" Text="TO" Top="374" Width="26"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static14" Left="428" TabOrder="28" Text="DATE" Top="341" Width="55"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static15" Left="256" TabOrder="29" Text="SIGHT&#32;OF&#32;THIS&#32;FIRST&#32;BILL&#32;OF&#32;EXCHANGE&#32;(SECOND&#32;OF&#32;THE&#32;SAME&#32;TENOR" Top="126" Width="462"></Static>
+		<Static Font="Arial,11" Height="17" Id="Static16" Left="34" TabOrder="30" Text="AND&#32;DATE&#32;BEING&#32;UNPAID)" Top="152" Width="360"></Static>
+		<Static Border="Flat" Height="1" Id="Static58" Left="60" TabOrder="31" Top="74" VAlign="Middle" Width="190"></Static>
+		<Static Border="Flat" Height="1" Id="Static5" Left="500" TabOrder="32" Top="76" VAlign="Middle" Width="190"></Static>
+		<Static Border="Flat" Height="1" Id="Static9" Left="66" TabOrder="33" Top="112" VAlign="Middle" Width="185"></Static>
+		<Static Border="Flat" Height="1" Id="Static17" Left="59" TabOrder="34" Top="142" VAlign="Middle" Width="191"></Static>
+		<Static Border="Flat" Height="1" Id="Static18" Left="190" TabOrder="35" Top="206" VAlign="Middle" Width="303"></Static>
+		<Static Border="Flat" Height="1" Id="Static19" Left="65" TabOrder="36" Top="86" VAlign="Middle" Width="185"></Static>
+		<Static Border="Flat" Height="1" Id="Static20" Left="63" TabOrder="37" Top="215" VAlign="Middle" Width="652"></Static>
+		<Static Border="Flat" Height="1" Id="Static21" Left="64" TabOrder="38" Top="255" VAlign="Middle" Width="652"></Static>
+		<Static Border="Flat" Height="1" Id="Static22" Left="416" TabOrder="39" Top="294" VAlign="Middle" Width="301"></Static>
+		<Static Border="Flat" Height="1" Id="Static23" Left="145" TabOrder="40" Top="325" VAlign="Middle" Width="572"></Static>
+		<Static Border="Flat" Height="1" Id="Static24" Left="90" TabOrder="41" Top="361" VAlign="Middle" Width="251"></Static>
+		<Static Border="Flat" Height="1" Id="Static25" Left="491" TabOrder="42" Top="359" VAlign="Middle" Width="227"></Static>
+		<Static Border="Flat" Height="1" Id="Static26" Left="68" TabOrder="43" Top="392" VAlign="Middle" Width="272"></Static>
+		<Static Border="Flat" Height="1" Id="Static27" Left="68" TabOrder="44" Top="417" VAlign="Middle" Width="272"></Static>
+		<Static Border="Flat" Height="1" Id="Static29" Left="68" TabOrder="45" Top="442" VAlign="Middle" Width="272"></Static>
+		<Static BKColor="#ffbe0e" Font="Arial,11" Height="17" Id="Static30" Left="1" TabOrder="46" Top="1" Width="763"></Static>
+	</Form>
+	<Script><![CDATA[
+function aEditFcous(obj) 
+{
+   obj.BKcolor = 13237245;
+}
+
+function aEditKillFcous(obj) 
+{
+   obj.BKColor = 15395562;
+}
+
+function aEdit_OnKeyDown(obj,nChar,bShift,bCtrl,bAlt,LLParam,HLParam)
+{
+	if(nChar == 13) {
+		
+		var NextFocusObj = GetNextComponent();
+		NextFocusObj.SetFocus();
+	}
+	else if (nChar == 38)
+  {
+		var PrevFocusObj = GetPrevComponent();
+		PrevFocusObj.SetFocus();
+	}
+}
+]]></Script>
+</Window>

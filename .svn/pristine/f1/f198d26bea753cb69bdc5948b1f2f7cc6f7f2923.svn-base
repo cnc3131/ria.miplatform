@@ -1,0 +1,6 @@
+﻿<flash_project name="Tweather" version="1">
+    <project_file path="./Tmain.as" filetype="as" />
+    <project_file path="./Treset.as" filetype="as" />
+    <project_file path="./Tview.as" filetype="as" />
+    <project_file path="./Tweather.fla" filetype="fla" profile="" def_file="true" />
+</flash_project>

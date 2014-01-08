@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="49" Id="top" Left="8" PidAttrib="7" Top="8" Ver="1.0" Width="1024" WorkArea="true">
+		<Image FillType="STRETCH" Height="30" Id="Image9" ImageID="T_submenu_bg" TabOrder="10" Top="48" Width="1024"></Image>
+		<Image FillType="STRETCH" Height="49" Id="Image0" ImageID="T_topbg" TabOrder="1" Width="1024"></Image>
+		<Image Height="49" Id="Image1" ImageID="T_logo&#32;copy" TabOrder="2" Width="135"></Image>
+		<Image Height="49" Id="Image2" ImageID="T_menubg_L" Left="133" TabOrder="3" Width="5"></Image>
+		<Image FillType="STRETCH" Height="49" Id="Image3" ImageID="T_menubg_M" Left="138" TabOrder="4" Width="871"></Image>
+		<Image Height="49" Id="Image4" ImageID="T_menubg_R" Left="1009" TabOrder="5" Width="5"></Image>
+		<Image Height="49" Id="Image5" ImageID="T_menuicon" Left="144" TabOrder="6" Width="31"></Image>
+		<Image Height="49" Id="Image6" ImageID="T_menu_textbg1" Left="192" OnMouseOut="Image6_OnMouseOut" OnMouseOver="Image6_OnMouseOver" Static="FALSE" Style="T_menu" TabOrder="7" Text="menu1" Width="72"></Image>
+		<Image Height="49" Id="Image7" ImageID="T_menu_textbg2" Left="274" OnMouseOut="Image7_OnMouseOut" OnMouseOver="Image7_OnMouseOver" Static="FALSE" Style="T_menu" TabOrder="8" Text="menu2" Width="82"></Image>
+		<Image Height="49" Id="Image8" ImageID="T_menu_textbg2" Left="358" OnMouseOut="Image8_OnMouseOut" OnMouseOver="Image8_OnMouseOver" Static="FALSE" Style="T_menu" TabOrder="9" Text="menu3" Width="72"></Image>
+		<Image Height="20" Id="Image10" ImageID="T_menu" Left="5" TabOrder="11" Top="55" Width="57"></Image>
+		<Image Height="20" Id="Image11" ImageID="T_mymenu" Left="62" TabOrder="12" Top="55" Width="71"></Image>
+		<Image Cursor="HAND" Height="18" Id="img_popup" ImageID="T_newwin_icon" Left="933" OnClick="img_popup_OnClick" Static="FALSE" TabOrder="13" Top="55" Width="81"></Image>
+		<Image Cursor="HAND" Height="16" Id="btn_vertical" ImageID="T_windowicon_01" Left="869" OnClick="btn_vertical_OnClick" Static="FALSE" TabOrder="14" Top="56" Width="18"></Image>
+		<Image Cursor="HAND" Height="16" Id="btn_horizontal" ImageID="T_windowicon_02" Left="890" OnClick="btn_horizontal_OnClick" Static="FALSE" TabOrder="15" Top="56" Width="18"></Image>
+		<Image Cursor="HAND" Height="16" Id="btn_cascade" ImageID="T_windowicon_03" Left="911" OnClick="btn_cascade_OnClick" Static="FALSE" TabOrder="16" Top="56" Width="18"></Image>
+	</Form>
+	<Script><![CDATA[
+function Image6_OnMouseOver(obj,nX,nY)
+{
+	Image6.Color="#fff45c";
+}
+
+function Image6_OnMouseOut(obj)
+{
+	Image6.Color="#ffffff";
+}
+
+function Image7_OnMouseOver(obj,nX,nY)
+{
+	Image7.Color="#fff45c";
+}
+
+function Image7_OnMouseOut(obj)
+{
+	Image7.Color="#ffffff";
+}
+
+function Image8_OnMouseOver(obj,nX,nY)
+{
+	Image8.Color="#fff45c";
+}
+
+function Image8_OnMouseOut(obj)
+{
+	Image8.Color="#ffffff";
+}
+
+function btn_vertical_OnClick(obj,nX,nY)
+{
+	ArrangeWindow("VTile");
+}
+
+function btn_horizontal_OnClick(obj)
+{
+	ArrangeWindow("HTile");
+}
+
+function btn_cascade_OnClick(obj)
+{
+	ArrangeWindow("Cascade");
+}
+
+function img_popup_OnClick(obj,nX,nY)
+{
+	var objForm = GetTopWindow();
+	var objFormId = objForm.id;
+	var objVal = objFormId;
+	
+	if ( length(objVal) == 0 ) return;
+	
+	//trace("objVal : " + objVal);
+	
+	var fRow = gds_menu.FindRow("FORMID", objVal);
+	var str_prefix = gds_menu.GetColumn(fRow, "PREFIX");
+	var str_formid = gds_menu.GetColumn(fRow, "FORMID");
+	
+		
+	Dialog(str_prefix+"::"+str_formid, "", -1, -1, true, -1, -1);
+	
+}
+]]></Script>
+</Window>

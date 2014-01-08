@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="526" Id="Grid_Filter" Left="8" OnLoadCompleted="GridFilterSample_OnLoadCompleted" PidAttrib="7" Title="그리드데이터&#32;필터링" Top="8" Ver="1.0" Width="968" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="Ds_List">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>1</code>
+						<name>Justin</name>
+					</record>
+					<record>
+						<code>11</code>
+						<name>Sally</name>
+					</record>
+					<record>
+						<code>111</code>
+						<name>Kitty</name>
+					</record>
+					<record>
+						<code>1111</code>
+						<name>Marina</name>
+					</record>
+					<record>
+						<code>2</code>
+						<name>Selcuk</name>
+					</record>
+					<record>
+						<code>22</code>
+						<name>Vicky</name>
+					</record>
+					<record>
+						<code>222</code>
+						<name>Timmy</name>
+					</record>
+					<record>
+						<code>2222</code>
+						<name>Tammy</name>
+					</record>
+					<record>
+						<code>2222</code>
+						<name>Jimmy</name>
+					</record>
+					<record>
+						<code>3</code>
+						<name>Jimmy</name>
+					</record>
+					<record>
+						<code>33</code>
+						<name>Prince</name>
+					</record>
+					<record>
+						<code>333</code>
+						<name>Laura</name>
+					</record>
+					<record>
+						<code>3333</code>
+						<name>Marry</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="Ds_List2_bak">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>Insert&#32;Code</code>
+						<name>Insert&#32;Code</name>
+					</record>
+					<record>
+						<code>1</code>
+						<name>Justin</name>
+					</record>
+					<record>
+						<code>11</code>
+						<name>Goerge</name>
+					</record>
+					<record>
+						<code>111</code>
+						<name>Sally</name>
+					</record>
+					<record>
+						<code>1111</code>
+						<name>Vicky</name>
+					</record>
+					<record>
+						<code>2</code>
+						<name>Mickey</name>
+					</record>
+					<record>
+						<code>22</code>
+						<name>Avi</name>
+					</record>
+					<record>
+						<code>222</code>
+						<name>Kobi</name>
+					</record>
+					<record>
+						<code>2222</code>
+						<name>Hemze</name>
+					</record>
+					<record>
+						<code>2222</code>
+						<name>Laura</name>
+					</record>
+					<record>
+						<code>3</code>
+						<name>Lilly</name>
+					</record>
+					<record>
+						<code>33</code>
+						<name>Suzan</name>
+					</record>
+					<record>
+						<code>333</code>
+						<name>Pavel</name>
+					</record>
+					<record>
+						<code>3333</code>
+						<name>Jackie</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="Ds_List3_bak">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>Insert&#32;Name</code>
+						<name>Insert&#32;Name</name>
+					</record>
+					<record>
+						<code>1</code>
+						<name>Justin</name>
+					</record>
+					<record>
+						<code>11</code>
+						<name>Goerge</name>
+					</record>
+					<record>
+						<code>111</code>
+						<name>Sally</name>
+					</record>
+					<record>
+						<code>1111</code>
+						<name>Vicky</name>
+					</record>
+					<record>
+						<code>2</code>
+						<name>Mickey</name>
+					</record>
+					<record>
+						<code>22</code>
+						<name>Avi</name>
+					</record>
+					<record>
+						<code>222</code>
+						<name>Kobi</name>
+					</record>
+					<record>
+						<code>2222</code>
+						<name>Hemze</name>
+					</record>
+					<record>
+						<code>2222</code>
+						<name>Laura</name>
+					</record>
+					<record>
+						<code>3</code>
+						<name>Lilly</name>
+					</record>
+					<record>
+						<code>33</code>
+						<name>Suzan</name>
+					</record>
+					<record>
+						<code>333</code>
+						<name>Pavel</name>
+					</record>
+					<record>
+						<code>3333</code>
+						<name>Jackie</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="Ds_Sort" ServiceDSetID="output">
+				<Contents>
+					<colinfo id="bl" size="50" type="STRING"/>
+					<colinfo id="cham" size="50" type="STRING"/>
+					<colinfo id="chang" size="50" type="STRING"/>
+					<colinfo id="chdanga" size="11" type="INT"/>
+					<colinfo id="chdate" size="19" type="DATE"/>
+					<colinfo id="chno" size="11" type="INT"/>
+					<colinfo id="cnt" size="11" type="INT"/>
+					<colinfo id="cstname" size="50" type="STRING"/>
+					<colinfo id="dan" size="50" type="STRING"/>
+					<colinfo id="hangnum" size="11" type="INT"/>
+					<colinfo id="ptcode" size="50" type="STRING"/>
+					<colinfo id="ptname" size="50" type="STRING"/>
+					<colinfo id="smallsum" size="11" type="INT"/>
+					<colinfo id="so" size="50" type="STRING"/>
+					<colinfo id="temp1" size="50" type="STRING"/>
+					<colinfo id="temp2" size="50" type="STRING"/>
+					<colinfo id="totalsum" size="11" type="INT"/>
+					<record>
+						<bl></bl>
+						<cham></cham>
+						<chang>B100-200</chang>
+						<chdanga>25000</chdanga>
+						<chdate>20050608</chdate>
+						<chno>6</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>M1</ptcode>
+						<ptname>PC&#32;Mouse(Red)</ptname>
+						<smallsum>250000</smallsum>
+						<so></so>
+						<temp1></temp1>
+						<temp2></temp2>
+						<totalsum>250000</totalsum>
+					</record>
+					<record>
+						<bl></bl>
+						<cham></cham>
+						<chang>B100-200</chang>
+						<chdanga>25000</chdanga>
+						<chdate>20050606</chdate>
+						<chno>7</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>M2</ptcode>
+						<ptname>PC</ptname>
+						<smallsum>250000</smallsum>
+						<so></so>
+						<temp1></temp1>
+						<temp2></temp2>
+						<totalsum>290464</totalsum>
+					</record>
+					<record>
+						<bl>909</bl>
+						<cham></cham>
+						<chang>A-10</chang>
+						<chdanga>20232</chdanga>
+						<chdate>20050606</chdate>
+						<chno>7</chno>
+						<cnt>2</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>12</hangnum>
+						<ptcode>P1</ptcode>
+						<ptname>Power350</ptname>
+						<smallsum>40464</smallsum>
+						<so></so>
+						<temp1></temp1>
+						<temp2></temp2>
+						<totalsum>290464</totalsum>
+					</record>
+					<record>
+						<bl></bl>
+						<cham></cham>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050503</chdate>
+						<chno>5</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>C2</ptcode>
+						<ptname>PC&#32;Case(White)</ptname>
+						<smallsum>200000</smallsum>
+						<so></so>
+						<temp1></temp1>
+						<temp2></temp2>
+						<totalsum>5955572</totalsum>
+					</record>
+					<record>
+						<bl>123-123</bl>
+						<cham></cham>
+						<chang>B100-200</chang>
+						<chdanga>555555</chdanga>
+						<chdate>20050503</chdate>
+						<chno>5</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>9</hangnum>
+						<ptcode>M1</ptcode>
+						<ptname>PC&#32;Mouse(Red)</ptname>
+						<smallsum>5555550</smallsum>
+						<so></so>
+						<temp1></temp1>
+						<temp2></temp2>
+						<totalsum>5955572</totalsum>
+					</record>
+					<record>
+						<bl>909</bl>
+						<cham></cham>
+						<chang>A-10</chang>
+						<chdanga>11</chdanga>
+						<chdate>20050503</chdate>
+						<chno>5</chno>
+						<cnt>2</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>10</hangnum>
+						<ptcode>P1</ptcode>
+						<ptname>Power350</ptname>
+						<smallsum>22</smallsum>
+						<so></so>
+						<temp1></temp1>
+						<temp2></temp2>
+						<totalsum>5955572</totalsum>
+					</record>
+					<record>
+						<bl></bl>
+						<cham></cham>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050503</chdate>
+						<chno>5</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>15</hangnum>
+						<ptcode>C1</ptcode>
+						<ptname>PC&#32;Case(White)</ptname>
+						<smallsum>200000</smallsum>
+						<so></so>
+						<temp1></temp1>
+						<temp2></temp2>
+						<totalsum>5955572</totalsum>
+					</record>
+					<record>
+						<bl></bl>
+						<cham></cham>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050418</chdate>
+						<chno>3</chno>
+						<cnt>1</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>C2</ptcode>
+						<ptname>PC&#32;Case(White)</ptname>
+						<smallsum>20000</smallsum>
+						<so></so>
+						<temp1>3</temp1>
+						<temp2></temp2>
+						<totalsum>40000</totalsum>
+					</record>
+					<record>
+						<bl>100-100-100</bl>
+						<cham></cham>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050418</chdate>
+						<chno>3</chno>
+						<cnt>1</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>2</hangnum>
+						<ptcode>C1</ptcode>
+						<ptname>PC&#32;Case(Black)</ptname>
+						<smallsum>20000</smallsum>
+						<so></so>
+						<temp1>1</temp1>
+						<temp2></temp2>
+						<totalsum>40000</totalsum>
+					</record>
+					<record>
+						<bl></bl>
+						<cham></cham>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050414</chdate>
+						<chno>4</chno>
+						<cnt>10</cnt>
+						<cstname>Hongik&#32;product</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>C2</ptcode>
+						<ptname>PC&#32;Case(White)</ptname>
+						<smallsum>200000</smallsum>
+						<so></so>
+						<temp1></temp1>
+						<temp2></temp2>
+						<totalsum>200000</totalsum>
+					</record>
+					<record>
+						<bl>100-100-100</bl>
+						<cham></cham>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050408</chdate>
+						<chno>2</chno>
+						<cnt>2</cnt>
+						<cstname>Samsung&#32;Distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>C1</ptcode>
+						<ptname>PC&#32;Case(Black)</ptname>
+						<smallsum>40000</smallsum>
+						<so></so>
+						<temp1>1</temp1>
+						<temp2></temp2>
+						<totalsum>115000</totalsum>
+					</record>
+					<record>
+						<bl>123-123</bl>
+						<cham></cham>
+						<chang>B100-200</chang>
+						<chdanga>25000</chdanga>
+						<chdate>20050408</chdate>
+						<chno>2</chno>
+						<cnt>2</cnt>
+						<cstname>Samsung&#32;Distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>2</hangnum>
+						<ptcode>M1</ptcode>
+						<ptname>PC&#32;Mouse(Red)</ptname>
+						<smallsum>50000</smallsum>
+						<so></so>
+						<temp1>2</temp1>
+						<temp2></temp2>
+						<totalsum>115000</totalsum>
+					</record>
+					<record>
+						<bl></bl>
+						<cham></cham>
+						<chang>B100-100</chang>
+						<chdanga>25000</chdanga>
+						<chdate>20050408</chdate>
+						<chno>2</chno>
+						<cnt>1</cnt>
+						<cstname>Samsung&#32;Distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>4</hangnum>
+						<ptcode>M2</ptcode>
+						<ptname>PC&#32;Mouse(Blue)</ptname>
+						<smallsum>25000</smallsum>
+						<so></so>
+						<temp1></temp1>
+						<temp2></temp2>
+						<totalsum>115000</totalsum>
+					</record>
+					<record>
+						<bl>123-123</bl>
+						<cham></cham>
+						<chang>B100-200</chang>
+						<chdanga>25000</chdanga>
+						<chdate>20050408</chdate>
+						<chno>1</chno>
+						<cnt>5</cnt>
+						<cstname>Samsung&#32;Distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>M1</ptcode>
+						<ptname>PC</ptname>
+						<smallsum>125000</smallsum>
+						<so>S/O&#32;00001111</so>
+						<temp1>2</temp1>
+						<temp2></temp2>
+						<totalsum>325000</totalsum>
+					</record>
+					<record>
+						<bl></bl>
+						<cham></cham>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050408</chdate>
+						<chno>1</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;Distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>2</hangnum>
+						<ptcode>C2</ptcode>
+						<ptname>PC&#32;Case(White)</ptname>
+						<smallsum>200000</smallsum>
+						<so></so>
+						<temp1></temp1>
+						<temp2></temp2>
+						<totalsum>325000</totalsum>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="Ds_List2">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>Input&#32;Code</code>
+						<name>Input&#32;Code</name>
+					</record>
+					<record>
+						<code>MOUSE-01</code>
+						<name>PC&#32;Mouse(Red)</name>
+					</record>
+					<record>
+						<code>POWER01</code>
+						<name>Power350</name>
+					</record>
+					<record>
+						<code>CASE-02</code>
+						<name>PC&#32;Case(White)</name>
+					</record>
+					<record>
+						<code>MOUSE-02</code>
+						<name>PC&#32;Mouse(Blue)</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="Ds_List3">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>Input&#32;Code</code>
+						<name>Input&#32;Code</name>
+					</record>
+					<record>
+						<code>MOUSE-01</code>
+						<name>PC&#32;Mouse(Red)</name>
+					</record>
+					<record>
+						<code>POWER01</code>
+						<name>Power350</name>
+					</record>
+					<record>
+						<code>CASE-02</code>
+						<name>PC&#32;Case(White)</name>
+					</record>
+					<record>
+						<code>MOUSE-02</code>
+						<name>PC&#32;Mouse(Blue)</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="Ds_List2_0">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>Input&#32;Code</code>
+						<name>Input&#32;Code</name>
+					</record>
+					<record>
+						<code>P1</code>
+						<name>Power350</name>
+					</record>
+					<record>
+						<code>M2</code>
+						<name>PC</name>
+					</record>
+					<record>
+						<code>C2</code>
+						<name>PC&#32;Case(White)</name>
+					</record>
+					<record>
+						<code>C1</code>
+						<name>PC&#32;Case(Black)</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="Ds_List3_0">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>Input&#32;Code</code>
+						<name>Input&#32;Code</name>
+					</record>
+					<record>
+						<code>P1</code>
+						<name>Power350</name>
+					</record>
+					<record>
+						<code>M2</code>
+						<name>PC</name>
+					</record>
+					<record>
+						<code>C2</code>
+						<name>PC&#32;Case(White)</name>
+					</record>
+					<record>
+						<code>C1</code>
+						<name>PC&#32;Case(Black)</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_PopupMenu_GridBody">
+				<Contents>
+					<colinfo id="caption" size="255" type="STRING"/>
+					<colinfo id="level" size="255" type="STRING"/>
+					<colinfo id="enable" size="256" type="STRING"/>
+					<colinfo id="icon" size="256" type="STRING"/>
+					<colinfo id="id" size="256" type="STRING"/>
+					<colinfo id="url" size="256" type="STRING"/>
+					<record>
+						<caption>Grid&#32;팝업메뉴</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>0</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Vertical&#32;Ditto</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>vditto</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Horizon&#32;Ditto</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>hditto</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Find&#32;&#32;&#32;&#32;(Ctrl+F,&#32;F3)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>find</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Reset&#32;&#32;&#32;(Ctrl+Z)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>reset</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Cut&#32;&#32;&#32;&#32;&#32;(Ctrl+X)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>cut</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Copy&#32;&#32;&#32;&#32;(Ctrl+C)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>copy</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Paste&#32;&#32;&#32;(Ctrl+V)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>paste</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Delete&#32;&#32;(del)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>delete</id>
+						<level>1</level>
+						<url></url>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_PopupMenu_LeftGridHead">
+				<Contents>
+					<colinfo id="caption" size="255" type="STRING"/>
+					<colinfo id="level" size="255" type="STRING"/>
+					<colinfo id="enable" size="256" type="STRING"/>
+					<colinfo id="icon" size="256" type="STRING"/>
+					<colinfo id="id" size="256" type="STRING"/>
+					<colinfo id="url" size="256" type="STRING"/>
+					<colinfo id="formatid" size="256" type="STRING"/>
+					<record>
+						<caption>Grid&#32;Head&#32;팝업메뉴</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>0</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Fix&#32;Cell</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>fix</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Release&#32;Cell</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>release</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Multi&#32;Row</caption>
+						<enable></enable>
+						<formatid>format1</formatid>
+						<icon></icon>
+						<id>multirow</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Multi&#32;Sort</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>multisort</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Auto&#32;Filter</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>autofilter</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Show</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>show</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Hide</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>hide</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Reset&#32;Grid</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>reset</id>
+						<level>1</level>
+						<url></url>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Shape BKColor="user0" Bottom="50" Height="28" Id="Shape2" Left="0" LineColor="user1" Right="968" RoundHeight="8" RoundUnit="Pixel" RoundWidth="8" TabOrder="17" Top="22" Type="RoundRect" Width="968"></Shape>
+		<Edit AutoSelect="TRUE" Border="Flat" Height="20" Id="ed_code" ImeMode="none" Left="85" LeftMargin="2" MaxLength="20" Style="if_input" TabOrder="1" Top="26" Width="150"></Edit>
+		<Button ButtonStyle="TRUE" Height="20" Id="Btn_cd_Filter" ImageID="m_bt_txt_03" Left="236" OnClick="Btn_cd_Filter_OnClick" Style="cm_btn" TabOrder="2" Text="Filter" Top="26" Width="50"></Button>
+		<Button ButtonStyle="TRUE" Height="20" Id="Btn_cdLike_Filter" ImageID="m_bt_txt_05" Left="288" OnClick="Btn_cdLike_Filter_OnClick" Style="cm_btn" TabOrder="3" Text="Like&#32;Filter" Top="26" Transparent="TRUE" Width="74"></Button>
+		<Edit AutoSelect="TRUE" Border="Flat" Height="20" Id="ed_name" ImeMode="native" Left="450" LeftMargin="2" MaxLength="20" Style="if_input" TabOrder="4" Top="26" Width="150"></Edit>
+		<Button ButtonStyle="TRUE" Height="20" Id="Btn_nm_Filter" ImageID="m_bt_txt_03" Left="602" OnClick="Btn_nm_Filter_OnClick" Style="cm_btn" TabOrder="5" Text="Filter" Top="26" Width="50"></Button>
+		<Button ButtonStyle="TRUE" Height="20" Id="Btn_nmLike_Filter" ImageID="m_bt_txt_05" Left="655" OnClick="Btn_nmLike_Filter_OnClick" Style="cm_btn" TabOrder="6" Text="Like&#32;Filter" Top="26" Width="74"></Button>
+		<Combo Border="Flat" CodeColumn="code" DataColumn="code" Editable="TRUE" Height="20" Id="Combo0" InnerDataset="Ds_List2_0" Left="502" OnChanged="Combo0_OnChanged" ResetIndex="FIRST" Search="FILTERED" Style="se_input" TabOrder="7" Top="57" Width="177"></Combo>
+		<Combo Border="Flat" CodeColumn="code" DataColumn="name" Editable="TRUE" Height="20" Id="Combo1" InnerDataset="Ds_List3_0" Left="717" OnChanged="Combo1_OnChanged" ResetIndex="FIRST" Search="FILTERED" Style="se_input" TabOrder="8" Top="57" Width="177"></Combo>
+		<Static Align="Right" Height="20" Id="Static0" Left="467" Style="cm_text" TabOrder="9" Text="code" Top="58" VAlign="Middle" Width="32"></Static>
+		<Static Align="Right" Height="20" Id="Static1" Left="682" Style="cm_text" TabOrder="10" Text="name" Top="58" VAlign="Middle" Width="32"></Static>
+		<Button ButtonStyle="TRUE" Height="21" Id="Btn_Move" ImageID="m_bt_txt_05" Left="894" OnClick="Btn_Move_OnClick" Style="cm_btn" TabOrder="11" Text="Select&#32;Row" Top="58" Width="74"></Button>
+		<Button ButtonStyle="TRUE" Height="20" Id="Button0" ImageID="m_bt_work_04" Left="894" LeftMargin="15" OnClick="Button0_OnClick" Style="cm_btn" TabOrder="12" Text="UnFilter" Width="74"></Button>
+		<Static Border="Flat" Height="20" Id="Static2" Left="4" Style="if_lable" TabOrder="13" Text="code" Top="26" VAlign="Middle" Width="80"></Static>
+		<Static Border="Flat" Height="20" Id="Static3" Left="364" Style="if_lable" TabOrder="14" Text="name" Top="26" VAlign="Middle" Width="84"></Static>
+		<Grid AutoFit="TRUE" BindDataset="DS_Sort" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="526" ColSizing="TRUE" DragMode="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" Font="굴림,9" HeadBorder="Flat" HeadHeight="34" Height="446" Id="Grid_main" InputPanel="FALSE" LineColor="default" MinWidth="100" Right="968" RowHeight="20" Style="se_grid" TabOrder="15" TabStop="true" Top="80" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="968">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="95"/>
+						<col width="105"/>
+						<col width="96"/>
+						<col width="142"/>
+						<col width="80"/>
+						<col width="85"/>
+						<col width="80"/>
+					</columns>
+					<head>
+						<cell bkcolor="user13" col="0" color="user14" display="text" text="Product&#32;Code"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" text="Product&#32;Name"/>
+						<cell bkcolor="user13" col="2" color="user14" display="text" text="Shipping&#10;Date"/>
+						<cell bkcolor="user13" col="3" color="user14" display="text" text="Customer&#32;Name"/>
+						<cell bkcolor="user13" col="4" color="user14" display="text" text="Total&#32;Amount"/>
+						<cell bkcolor="user13" col="5" color="user14" display="text" text="Storage&#13;Location"/>
+						<cell bkcolor="user13" col="6" color="user14" display="text" text="Shipping&#32;Price"/>
+					</head>
+					<body>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="0" colid="ptcode" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="1" colid="ptname" color="user16" display="text"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="2" colid="chdate" color="user16" display="date"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="3" colid="cstname" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="4" colid="totalsum" color="user16" display="currency"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="5" colid="chang" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="6" colid="chdanga" color="user16" display="currency"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image Align="Left" Height="22" Id="Image3" ImageID="m_bl_subtitl" Left="4" LeftMargin="18" Style="cm_title_sub" TabOrder="16" Text="Data&#32;Filtering&#32;(Searching)" Width="193"></Image>
+	</Form>
+	<Script><![CDATA[#include "lib::commons.js";		// Form 공통 Script
+var F_PGM_ID ="TextFind";
+function GridFilterSample_OnLoadCompleted(obj)
+{
+	cs_fn_InitCommonScript(Grid_main,"ds_PopupMenu_LeftGridHead","ds_PopupMenu_GridBody","",true,"CHK");
+
+}
+
+function Btn_cd_Filter_OnClick(obj)
+{
+	//Ds_List.Filter("code="+quote(ed_code.Text));
+	Ds_Sort.Filter("ptcode="+quote(ed_code.Text));
+}
+
+
+function Btn_cdLike_Filter_OnClick(obj)
+{
+	Ds_Sort.Filter("pos(ptcode," + "'" + ed_code.Text + "') >= 0");
+}
+
+
+function Btn_nm_Filter_OnClick(obj)
+{
+	Ds_Sort.Filter("ptname="+quote(ed_name.Text));
+}
+
+function Btn_nmLike_Filter_OnClick(obj)
+{
+	Ds_Sort.Filter("pos(ptname," + "'" + ed_name.Text + "') >= 0");
+}
+
+function Combo0_OnChanged(obj,strCode,strText,nOldIndex,nNewIndex)
+{
+	Combo1.Value = strText;
+}
+
+function Combo1_OnChanged(obj,strCode,strText,nOldIndex,nNewIndex)
+{
+	Combo0.Value = strCode;
+}
+
+function Btn_Move_OnClick(obj)
+{
+	//var cRow = Ds_List.FindRow("code", combo0.Value);
+	//Ds_List.row = cRow;
+	var cRow = Ds_Sort.FindRow("ptcode", combo0.Value);
+	Ds_Sort.row = cRow;
+}
+
+function Button0_OnClick(obj)
+{
+	//Ds_List.UnFilter();
+	Ds_Sort.UnFilter();
+}
+
+
+]]></Script>
+</Window>

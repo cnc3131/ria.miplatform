@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    - DispatcherServlet application context for Application's web tier.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <!-- controller -->
+    <context:component-scan base-package="lcn.poc">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+    </context:component-scan>   
+
+
+   	<!-- handler mapping -->
+   	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+   	
+   	
+   	<!-- MiPlatform handler adapter -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="customArgumentResolvers">
+            <list>
+                <bean class="lotte.fw.web.ria.RiaArgumentResolver">
+                    <property name="uiAdaptors" ref="miplatformObjectUiAdaptor" />
+                </bean>
+				<bean class="lotte.fw.web.ria.RiaArgumentResolver">
+                    <property name="uiAdaptors" ref="miplatformModelUiAdaptor" />
+                </bean>
+            </list>
+        </property>
+    </bean>
+    
+ 	<bean id="miplatformObjectUiAdaptor" class="lotte.fw.miplatform.MiPlatformObjectUiAdaptor" />
+	<bean id="miplatformModelUiAdaptor" class="lotte.fw.miplatform.MiPlatformModelUiAdaptor" />
+	   
+    
+
+ 	<!-- view resolver -->
+    <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" p:order="0" />
+    <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver" p:order="1" 
+        p:viewClass="org.springframework.web.servlet.view.JstlView" 
+        p:prefix="/WEB-INF/jsp/lotte/fw/" 
+        p:suffix=".jsp"/>
+    
+    <bean id="miPlatformView" class="lotte.fw.miplatform.MiPlatformView">
+        <property name="propertyMain" ref="propertiesService"/>
+    </bean>
+    	   
+	   
+    <!-- exception resolver -->
+	<bean class="lotte.fw.miplatform.MiPlatformExceptionResolver">
+        <property name="miPlatformUrlExtentions">
+            <list>
+                <value>mip</value>
+            </list>
+        </property>
+        <property name="defaultErrorView" value="cmmn/bizError"/>
+        <property name="exceptionMappings">
+            <props>
+                <prop key="org.springframework.dao.DataAccessException">cmmn/dataAccessFailure</prop>
+                <prop key="org.springframework.transaction.TransactionException">cmmn/transactionFailure</prop>
+                <prop key="egovframework.rte.fdl.cmmn.exception.EgovBizException">cmmn/bizError</prop>
+                <prop key="org.springframework.security.AccessDeniedException">cmmn/accessDenied</prop>
+            </props>
+        </property>
+    </bean>
+	
+	
+    <!--
+        - for file upload
+
+    <bean id="multipartResolver"
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="1000000000" />
+        <property name="maxInMemorySize" value="1000000" />
+        <property name="uploadTempDir" value="uploadTemp" />
+    </bean>
+    -->
+    
+    
+    <!--
+        - Message source for this context, loaded from localized "messages_xx" files.
+        - Could also reside in the root application context, as it is generic,
+        - but is currently just used within Application's web tier.  
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"
+            p:basename="messages"/>
+    -->
+
+
+	<!-- ////////////////// --> 
+    <!-- interceptor  
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+        <property name="interceptors">
+            <list>
+                <ref local="sessionCheckInterceptor" />
+                <ref local="urlAuthrityCheckInterceptor" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="sessionCheckInterceptor" class="lotte.a1.fw.front.interceptor.SessionCheckInterceptor" />
+    <bean id="urlAuthrityCheckInterceptor" class="lotte.a1.fw.front.interceptor.UrlAuthrityCheckInterceptor" />
+    --> 
+
+</beans>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="350" Id="form" Left="8" OnLoadCompleted="form_OnLoadCompleted" PidAttrib="7" Title="Muti-Sort&#32;Option" Top="8" Ver="1.0" Width="304" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_sortlist" OnColumnChanged="ds_sortlist_OnColumnChanged">
+				<Contents>
+					<colinfo Id="col_id" Size="20" Type="STRING"/>
+					<colinfo Id="col_sort" Size="1" Type="STRING"/>
+					<colinfo Id="col_seq" Size="2" Type="INT"/>
+					<colinfo Id="col_nm" Size="256" Type="STRING"/>
+					<colinfo Id="col_index" Size="2" Type="INT"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_sort">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>N</code>
+						<name></name>
+					</record>
+					<record>
+						<code>A</code>
+						<name>ascending</name>
+					</record>
+					<record>
+						<code>D</code>
+						<name>descending</name>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" BindDataset="ds_sortlist" BkColor2="default" BoldHead="true" Border="Flat" Bottom="310" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" Height="300" Id="Grid_sort" InputPanel="FALSE" Left="5" LineColor="default" MinWidth="100" Right="296" Style="M_grid" TabOrder="1" TabStop="true" Top="10" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="291">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="136"/>
+						<col width="77"/>
+						<col width="52"/>
+					</columns>
+					<head>
+						<cell col="0" color="user2" display="text" text="Column"/>
+						<cell col="1" color="user2" display="text" text="Sort"/>
+						<cell col="2" color="user2" display="text" text="Priorty"/>
+					</head>
+					<body>
+						<cell col="0" colid="col_id" display="text"/>
+						<cell align="center" col="1" colid="col_sort" combocol="code" combodataset="ds_sort" combotext="name" display="combo" edit="combo"/>
+						<cell align="center" col="2" colid="col_seq" display="number" edit="integer"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Button ButtonStyle="TRUE" Color="white" Cursor="HAND" Height="20" Id="btn_ok" ImageID="M_search_btn_40" Left="106" OnClick="btn_ok_OnClick" TabOrder="2" Text="Sort" Top="320" Width="40"></Button>
+		<Button ButtonStyle="TRUE" Color="white" Cursor="HAND" Height="20" Id="btn_cancel" ImageID="M_search_btn_40" Left="149" OnClick="btn_cancel_OnClick" TabOrder="3" Text="취소" Top="320" Width="40"></Button>
+	</Form>
+	<Script><![CDATA[var ds_grid;
+
+function form_OnLoadCompleted(obj)
+{
+
+	var nRow;
+	ds_grid = object(arg_grid);
+	
+	var nColnm, nCol;	
+	nCol = ds_grid.GetColCount();
+	
+	Grid_sort.Redraw = false;
+	
+	for ( i=0; i<nCol; i++ )
+	{
+		nRow = ds_sortlist.AddRow();
+		nColnm = replace(replace(ds_grid.GetCellProp("head",i,"text"),"▲"),"▼");
+		
+		//ds_grid.GetCellProp("head",i,"text");
+		
+		ds_sortlist.SetColumn(nRow, "col_id", nColnm);
+		ds_sortlist.SetColumn(nRow, "col_nm", ds_grid.GetCellProp("body",i,"colid"));
+		ds_sortlist.SetColumn(nRow, "col_sort", "N");
+		ds_sortlist.SetColumn(nRow, "col_index", i);
+	}
+	
+	ds_sortlist.row = 0;
+	Grid_sort.Redraw = true;
+}
+
+var fb_work = false;
+
+function ds_sortlist_OnColumnChanged(obj,nRow,strColumnID,varOldValue,varNewValue)
+{
+	var ll_maxseq;
+	
+	if ( fb_work ) return;
+	
+	fb_work = true;
+	
+	if ( strColumnID == "col_sort" )
+	{
+		if ( varNewValue == "N" )
+		{
+			ds_sortlist.SetColumn(nRow, "col_seq", null);
+		}
+		else
+		{
+			//trace("col_seq : " + ds_sortlist.Max("col_seq") );
+			if ( varOldValue == "N" )
+			{
+				ll_maxseq = (ds_sortlist.Max("tonumber(col_seq)")) + 1;
+				ds_sortlist.SetColumn(nRow, "col_seq", ll_maxseq);
+			}
+		}
+	} else if ( strColumnID == "col_seq" )
+	{
+		//ds_sortlist.SetColumn(nRow, "col_seq", "");
+	}
+	
+	fb_work = false;
+}
+
+function btn_ok_OnClick(obj)
+{
+	var strTitle, arg_str = "";
+	var int_cell, nCnt, strSort;
+	
+	nCnt = ds_sortlist.rowcount;
+	
+	ds_sortlist.Sort("col_seq",true);	
+	for ( i=0; i<nCnt; i++ )
+	{
+		strSort = ds_sortlist.GetColumn(i, "col_sort");
+		int_cell = ds_sortlist.GetColumn(i, "col_index");
+		strTitle = ds_sortlist.GetColumn(i, "col_id");
+		
+		if ( strSort <> "N" )
+		{
+			if ( arg_str <> "" ) arg_str += ",";
+			arg_str += ds_sortlist.GetColumn(i, "col_nm") + ":" + strSort;
+			
+			// Head Sort 표시 추가..
+			if ( strSort == "A" )
+				ds_grid.SetCellProp("head",int_cell,"text",strTitle+"▲");
+			else
+				ds_grid.SetCellProp("head",int_cell,"text",strTitle+"▼");
+		} else
+			ds_grid.SetCellProp("head",int_cell,"text",strTitle);
+	}
+	close(arg_str);
+}  
+
+function btn_cancel_OnClick(obj)
+{
+	close("");
+}
+
+]]></Script>
+</Window>

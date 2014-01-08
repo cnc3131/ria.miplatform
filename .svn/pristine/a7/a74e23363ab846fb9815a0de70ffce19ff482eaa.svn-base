@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>설치화면 이동하기</title>
+<script language="javascript">
+function fnUpdater()
+{
+    document.forms[0].submit();
+}
+</script>
+</head>
+
+<body>
+
+<B>마이플랫폼 설치화면 바로가기</B>
+<br/>
+<form id="form01" action="miplatform/install.jsp" method="GET">
+<table>
+    <tr>
+        <td> 시스템</td>
+        <td>
+            <select id="key" name="key">
+            <option value="Sample">롯데프레임워크 데모 시스템</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td> 실행모드</td>
+        <td>
+            <select id="runMode" name="runMode">
+            <option value="Dev">개발</option>
+            <option value="Test">테스트</option>
+            <option value="Prod">운영</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="button" value="설치화면이동" onClick="fnUpdater();"/>
+        </td>
+    </tr>
+</table>
+
+</form>
+</body>
+</html>

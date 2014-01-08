@@ -1,0 +1,11 @@
+﻿<flash_project name="imon_main" version="1">
+    <project_file path="./action.as" filetype="as" />
+    <project_file path="./imon_main.fla" filetype="fla" profile="" def_file="true" />
+    <project_file path="./Map_main.as" filetype="as" />
+    <project_file path="./MapMove.as" filetype="as" />
+    <project_file path="./miniMap.as" filetype="as" />
+    <project_file path="./myMap.as" filetype="as" />
+    <project_file path="./Watch.as" filetype="as" />
+    <project_file path="./Map_main2.as" filetype="as" />
+    <project_file path="./_loadvars.as" filetype="as" />
+</flash_project>

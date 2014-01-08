@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="600" Id="Split_Sample_Create" Left="8" OnLoadCompleted="Split_Sample_Create_OnLoadCompleted" OnTimer="Split_Sample_Create_OnTimer" PidAttrib="7" Title="Split_Sample_Create" Top="8" Ver="1.0" Width="1000" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_cnt">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>2</code>
+						<name>2</name>
+					</record>
+					<record>
+						<code>3</code>
+						<name>3</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_comp">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_Program">
+				<Contents>
+					<colinfo Id="pgm_id" Size="256" Type="STRING"/>
+					<colinfo Id="pgm_nm" Size="256" Type="STRING"/>
+					<colinfo Id="pgm_desc" Size="256" Type="STRING"/>
+					<colinfo Id="pgm_source" Size="256" Type="STRING"/>
+					<colinfo Id="app_group" Size="256" Type="STRING"/>
+					<colinfo Id="subject" Size="256" Type="STRING"/>
+					<colinfo Id="file_size" Size="256" Type="STRING"/>
+					<colinfo Id="file_name" Size="256" Type="STRING"/>
+					<colinfo Id="new_flag" Size="256" Type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_programsub">
+				<Contents>
+					<colinfo id="pgm_id" size="256" type="STRING"/>
+					<colinfo id="sub_pgm_id" size="256" type="STRING"/>
+					<colinfo id="sub_pgm_nm" size="256" type="STRING"/>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="3" Width="1000"></Image>
+		<Shape BKColor="#e7e7e7" Bottom="96" Height="40" Id="Shape1" Left="19" LineColor="#c7c7c7" LineWidth="3" Right="979" TabOrder="4" Top="56" Type="Rectangle" Width="960"></Shape>
+		<Radio CodeColumn="code" ColumnCount="3" DataColumn="name" Height="19" Id="rd_cnt" INDEX="-1" InnerDataset="ds_cnt" Left="128" OnChanged="btn_Create_OnClick" Style="text_black" TabOrder="1" Top="67" Value="2" Width="148"></Radio>
+		<Static Height="18" Id="Static0" Left="56" Style="text_black" TabOrder="2" Text="Split&#32;Count" Top="71" Width="70"></Static>
+		<Shape BKColor="#e7e7e7" Bottom="596" Height="500" Id="Shape0" Left="19" LineColor="#c7c7c7" Right="979" RoundHeight="1" RoundWidth="1" TabOrder="5" Top="96" Type="RoundRect" Width="960"></Shape>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="19" LeftMargin="18" Style="cm_title_sub" TabOrder="6" Text="화면&#32;Split&#32;" Top="27" Width="216"></Image>
+	</Form>
+	<Script><![CDATA[var strDivPos = "";
+var div_top_indent	= 100;
+var div_left_indent	= 20;
+
+var div_height		= 240;
+var div_width_wide	= 958;
+var div_width_half	= 479;
+
+
+function btn_Create_OnClick(obj)
+{  	
+  for(var j=ds_comp.rowcount();j>-1;j--)
+  {
+	Destroy(ds_comp.getColumn(j,"code"));
+	ds_comp.DeleteRow(j);
+  }  
+  
+  if(rd_cnt.value == 2)
+  {   
+	  for(var i=1;i<=rd_cnt.Value;i++)    
+	  {
+		Create("Div","Div_" + i,' Border="Flat"  DropMode="TRUE"  OnDrop="Div_' + i + '_OnDrop" Height="' + div_height + '" Left="' + div_left_indent + '" TabOrder="3" Text="" Top="' + div_top_indent + '"  Width="' + div_width_wide + '"');
+		if(i == 2) 
+		{
+			Div_2.top = (div_top_indent + div_height);
+		}
+		ds_comp.AddRow();  
+		ds_comp.setColumn(ds_comp.row,"code","Div_" + i);	
+	  }	  
+
+		 Create("Split","Split_left",'BKColor="BACKGROUND" Border="Flat" Direct="VERT" Height="1" Left="' + div_left_indent + '" Top="' + (div_top_indent + div_height) + '" Width="' + div_width_wide + '"');	  
+         var strContents =    '	<Contents> \n' ;
+		     strContents +=   '		<LeftOrTop>\n' ;
+			 strContents +=   '			<Bind BindType="Resize" CompID="Div_1"/>\n' ;
+			 strContents +=   '		</LeftOrTop>\n' ;
+			 strContents +=   '		<RightOrBottom>\n' ;
+			 strContents +=   '			<Bind BindType="Resize" CompID="Div_2"/>\n' ;
+			 strContents +=   '		</RightOrBottom>\n' ;
+			 strContents +=   ' </Contents>' ;
+
+		Split_left.Contents = strContents;
+		ds_comp.AddRow();
+		ds_comp.setColumn(ds_comp.row,"code","Split_left");	
+
+	  
+  } else if(rd_cnt.value == 3) 
+  {
+	  for(var i=1;i<=rd_cnt.Value;i++)
+	  {
+		Create("Div","Div_" + i,' Border="Flat"  DropMode="TRUE"  OnDrop="Div_' + i + '_OnDrop" Height="' + div_height + '" Left="' + div_left_indent + '" TabOrder="3" Text="" Top="' + (i * div_top_indent) + '"  Width="' + div_width_half + '"');
+		if(i == 3)
+		{
+			Div_3.top = (div_top_indent + div_height);
+			Div_3.width = div_width_wide;
+		} else if(i == 2)
+		{
+			Div_2.top = div_top_indent;		
+			Div_2.left = (div_left_indent + div_width_half);
+		}
+		ds_comp.AddRow();
+		ds_comp.setColumn(ds_comp.row,"code","Div_" + i);	
+        }	  
+	  
+	    Create("Split","Split_left",'BKColor="gray" Border="Flat" Direct="VERT" Height="1"  Left="' + div_left_indent + '" Top="' + (div_top_indent + div_height) + '" Width="' + div_width_half + '"');	  
+		var strContents =    '	<Contents>  \n' ;
+			strContents +=   '		<LeftOrTop> \n' ;
+			strContents +=   '			<Bind BindType="Resize" CompID="Div_1"/> \n' ;
+			strContents +=   '		</LeftOrTop> \n' ;
+			strContents +=   '		<RightOrBottom> \n' ;
+			strContents +=   '			<Bind BindType="Resize" CompID="Div_3"/> \n' ;
+			strContents +=   '		</RightOrBottom> \n' ;
+			strContents +=   '	</Contents> \n' ;
+		Split_left.Contents = strContents;
+		ds_comp.AddRow();
+		ds_comp.setColumn(ds_comp.row,"code","Split_left");	
+
+	    Create("Split","Split_top",'BKColor="gray" Border="Flat" Height="' + div_height + '" Left="' + (div_left_indent + div_width_half +1) + '" Top="' + div_top_indent + '" Width="1"');	  
+		var strContents =    '	<Contents>	 \n' ;
+			strContents +=   '		<LeftOrTop> \n' ;
+			strContents +=   '			<Bind BindType="Resize" CompID="Div_1"/> \n' ;
+			strContents +=   '		</LeftOrTop> \n' ;
+			strContents +=   '		<RightOrBottom> \n' ;
+			strContents +=   '			<Bind BindType="Resize" CompID="Div_2"/> \n' ;
+			strContents +=   '		</RightOrBottom> \n' ;
+			strContents +=   '	</Contents> \n' ;
+			
+		Split_top.Contents = strContents;
+		ds_comp.AddRow();
+		ds_comp.setColumn(ds_comp.row,"code","Split_top");	
+		
+		Create("Split","Split_right",'BKColor="gray" Border="Flat" Direct="VERT" Height="1" Left="' + (div_left_indent + div_width_half) + '" Top="' + (div_top_indent + div_height) + '" Width="' + div_width_half + '"');	  
+		var strContents =    '	<Contents>	';
+			strContents +=   '		<LeftOrTop>	';
+			strContents +=   '			<Bind BindType="Resize" CompID="Div_2"/>	';
+			strContents +=   '		</LeftOrTop>	';
+			strContents +=   '		<RightOrBottom></RightOrBottom>	';
+			strContents +=   '	</Contents>			';
+
+		Split_right.Contents = strContents;
+		ds_comp.AddRow();
+		ds_comp.setColumn(ds_comp.row,"code","Split_right");	
+		
+		Create("SplitJoint","SplitJoint0",'BKColor="blue" Border="Flat" Height="4" Id="SplitJoint0" JointLeft="Split_left" JointRight="Split_right" JointTop="Split_top" Left="' + (div_left_indent + div_width_half -1) + '" Top="' + (div_top_indent + div_height -2) + '" Width="4"');	  		
+		ds_comp.AddRow();  
+		ds_comp.setColumn(ds_comp.row,"code","SplitJoint0");	
+  }
+}
+
+
+function Div_1_OnDrop(obj,objDragObj,objDataObj,nX,nY,varKeyState)
+{  
+// 실제 메뉴 Open 함수
+	var str_otype, str_prefix, str_url, str_gb, str_title = "";
+	var str_Size, str_Auth, str_menuid;
+	var nRow = g_DragRow;
+	var ds_obj = gds_menu;
+	
+	if( ds_obj.GetColumn(nRow,"MenuType") == "메뉴" ) return;
+	
+	str_menuid = ds_obj.getcolumn(nRow,"MenuID");
+	str_title  = ds_obj.getcolumn(nRow,"MenuName");
+	str_otype = trim(ds_obj.getcolumn(nRow,"MenuOpenType"));
+	str_prefix = ds_obj.getcolumn(nRow,"Prefix");
+	str_url    = ds_obj.getcolumn(nRow,"Formid");	
+	str_Size = ds_obj.getcolumn(nRow,"FormSize");
+	str_Auth = ds_obj.getcolumn(nRow,"BtnAuth");	
+	
+	//alert("str_search :: " str_search + " : " + str_prefix + " / " + str_url);
+	//var goGubun  = GDS_MENU.GetColumn(nNewRow,"gubun");
+	
+	if ((str_prefix != null) && (str_url != null) && length(str_url) !=0 ) 
+	{		
+		Div_1.url = str_prefix + "::" + str_url;
+	}
+
+}
+
+function Div_2_OnDrop(obj,objDragObj,objDataObj,nX,nY,varKeyState)
+{  
+// 실제 메뉴 Open 함수
+	var str_otype, str_prefix, str_url, str_gb, str_title = "";
+	var str_Size, str_Auth, str_menuid;
+	var nRow = g_DragRow;
+	var ds_obj = gds_menu;
+	
+	if( ds_obj.GetColumn(nRow,"MenuType") == "메뉴" ) return;
+	
+	str_menuid = ds_obj.getcolumn(nRow,"MenuID");
+	str_title  = ds_obj.getcolumn(nRow,"MenuName");
+	str_otype = trim(ds_obj.getcolumn(nRow,"MenuOpenType"));
+	str_prefix = ds_obj.getcolumn(nRow,"Prefix");
+	str_url    = ds_obj.getcolumn(nRow,"Formid");	
+	str_Size = ds_obj.getcolumn(nRow,"FormSize");
+	str_Auth = ds_obj.getcolumn(nRow,"BtnAuth");	
+	
+	//alert("str_search :: " str_search + " : " + str_prefix + " / " + str_url);
+	//var goGubun  = GDS_MENU.GetColumn(nNewRow,"gubun");
+	
+	if ((str_prefix != null) && (str_url != null) && length(str_url) !=0 ) 
+	{		
+		Div_2.url = str_prefix + "::" + str_url;
+	}
+}
+
+function Div_3_OnDrop(obj,objDragObj,objDataObj,nX,nY,varKeyState)
+{  
+// 실제 메뉴 Open 함수
+	var str_otype, str_prefix, str_url, str_gb, str_title = "";
+	var str_Size, str_Auth, str_menuid;
+	var nRow = g_DragRow;
+	var ds_obj = gds_menu;
+	
+	if( ds_obj.GetColumn(nRow,"MenuType") == "메뉴" ) return;
+	
+	str_menuid = ds_obj.getcolumn(nRow,"MenuID");
+	str_title  = ds_obj.getcolumn(nRow,"MenuName");
+	str_otype = trim(ds_obj.getcolumn(nRow,"MenuOpenType"));
+	str_prefix = ds_obj.getcolumn(nRow,"Prefix");
+	str_url    = ds_obj.getcolumn(nRow,"Formid");	
+	str_Size = ds_obj.getcolumn(nRow,"FormSize");
+	str_Auth = ds_obj.getcolumn(nRow,"BtnAuth");	
+	
+	//alert("str_search :: " str_search + " : " + str_prefix + " / " + str_url);
+	//var goGubun  = GDS_MENU.GetColumn(nNewRow,"gubun");
+	
+	if ((str_prefix != null) && (str_url != null) && length(str_url) !=0 ) 
+	{		
+		Div_3.url = str_prefix + "::" + str_url;
+	}
+}
+
+function Div_4_OnDrop(obj,objDragObj,objDataObj,nX,nY,varKeyState)
+{  
+// 실제 메뉴 Open 함수
+	var str_otype, str_prefix, str_url, str_gb, str_title = "";
+	var str_Size, str_Auth, str_menuid;
+	var nRow = g_DragRow;
+	var ds_obj = gds_menu;
+	
+	if( ds_obj.GetColumn(nRow,"MenuType") == "메뉴" ) return;
+	
+	str_menuid = ds_obj.getcolumn(nRow,"MenuID");
+	str_title  = ds_obj.getcolumn(nRow,"MenuName");
+	str_otype = trim(ds_obj.getcolumn(nRow,"MenuOpenType"));
+	str_prefix = ds_obj.getcolumn(nRow,"Prefix");
+	str_url    = ds_obj.getcolumn(nRow,"Formid");	
+	str_Size = ds_obj.getcolumn(nRow,"FormSize");
+	str_Auth = ds_obj.getcolumn(nRow,"BtnAuth");	
+	
+	//alert("str_search :: " str_search + " : " + str_prefix + " / " + str_url);
+	//var goGubun  = GDS_MENU.GetColumn(nNewRow,"gubun");
+	
+	if ((str_prefix != null) && (str_url != null) && length(str_url) !=0 ) 
+	{		
+		Div_4.url = str_prefix + "::" + str_url;
+	}
+}
+
+
+function fnCallback(svcid,errCode,errMsg)
+{
+	if ( errCode < 0 ) {
+		alert("svcid:" + svcid + ", errCode: " + errCode + ", errMsg: " + errMsg);
+		return;
+	}
+	
+	switch (svcid) 
+	{
+		case "SubCallAllMenu":
+			//trace(ds_Program.savexml());
+			//trace(ds_Programsub.SaveXML());
+		break;
+	}
+}
+
+
+    
+function Split_Sample_Create_OnTimer(obj,nEventID)
+{
+	killTimer(1);  
+	for(var i=0;i<ds_Programsub.rowcount();i++)
+	{
+		var buffer = ds_Programsub.getColumn(i,"pgm_source");
+
+		MTabMain.F_File.filename =  G_DIR + ds_Programsub.getColumn(i,"pgm_id") + ".xml";
+
+		if( MTabMain.F_File.open("rw") ) 
+		{			   
+			//WRITE(buf, bufsize)
+			//buf : 내용
+			//bufsize : write할 길이.. NULL이면 buf 전체 길이
+			var len = MTabMain.F_File.write(buffer);
+			MTabMain.F_File.close();
+		}		  
+	}     
+
+	for(var i=0;i<ds_Program.RowCount();i++)
+	{
+		var buffer = ds_Program.getColumn(ds_Program.row,"pgm_source");
+
+		MTabMain.F_File.filename =  G_DIR + ds_Category.getColumn(ds_Category.row,"pgm_id") + ".xml";
+
+		if( MTabMain.F_File.open("rw") )    
+		{			   
+			var len = MTabMain.F_File.write(buffer);
+			MTabMain.F_File.close();
+		}	    	    
+
+		object("Div_" + strDivPos).url = "Template::" + ds_Category.getColumn(ds_Category.row,"file_name");		
+	}    
+}
+  
+
+function Split_Sample_Create_OnLoadCompleted(obj)
+{
+	btn_Create_OnClick(obj);
+}
+]]></Script>
+</Window>

@@ -1,0 +1,2058 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="530" Id="form" Left="8" OnLoadCompleted="form_OnLoadCompleted" PidAttrib="7" Title="Grid내&#32;특정Cell&#32;속성&#32;&amp;&#32;데이터&#32;이동&#32;기능&#32;구현" Top="8" Ver="1.0" Width="775" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="DS_DCODE">
+				<Contents>
+					<colinfo id="com_code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_temp">
+				<Contents>
+					<colinfo id="u_id" size="10" type="STRING"/>
+					<colinfo id="u_nm" size="50" type="STRING"/>
+					<colinfo id="u_pass" size="50" type="STRING"/>
+					<colinfo id="u_dept" size="50" type="STRING"/>
+					<colinfo id="u_dept_gb" size="50" type="STRING"/>
+					<colinfo id="u_role" size="50" type="STRING"/>
+					<colinfo id="u_date" size="50" type="STRING"/>
+					<colinfo id="u_birth" size="50" type="STRING"/>
+					<colinfo id="u_in_date" size="50" type="STRING"/>
+					<colinfo id="u_out_date" size="50" type="STRING"/>
+					<colinfo id="u_juminno" size="13" type="STRING"/>
+					<colinfo id="u_sex" size="4" type="STRING"/>
+					<colinfo id="u_age" size="1" type="STRING"/>
+					<colinfo id="u_postno" size="6" type="STRING"/>
+					<colinfo id="u_address" size="100" type="STRING"/>
+					<colinfo id="u_hp_no" size="50" type="STRING"/>
+					<colinfo id="u_tel_no" size="50" type="STRING"/>
+					<colinfo id="u_marry_yn" size="4" type="STRING"/>
+					<colinfo id="u_marry_dt" size="8" type="STRING"/>
+					<colinfo id="u_last_school" size="50" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_sex">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>남</code>
+						<name>남자</name>
+					</record>
+					<record>
+						<code>여</code>
+						<name>여자</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_list1">
+				<Contents>
+					<colinfo id="u_id" size="10" type="STRING"/>
+					<colinfo id="u_nm" size="50" type="STRING"/>
+					<colinfo id="u_pass" size="50" type="STRING"/>
+					<colinfo id="u_dept" size="50" type="STRING"/>
+					<colinfo id="u_dept_gb" size="50" type="STRING"/>
+					<colinfo id="u_role" size="50" type="STRING"/>
+					<colinfo id="u_date" size="50" type="STRING"/>
+					<colinfo id="u_birth" size="50" type="STRING"/>
+					<colinfo id="u_in_date" size="50" type="STRING"/>
+					<colinfo id="u_out_date" size="50" type="STRING"/>
+					<colinfo id="u_juminno" size="13" type="STRING"/>
+					<colinfo id="u_sex" size="4" type="STRING"/>
+					<colinfo id="u_age" size="1" type="STRING"/>
+					<colinfo id="u_postno" size="6" type="STRING"/>
+					<colinfo id="u_address" size="100" type="STRING"/>
+					<colinfo id="u_hp_no" size="50" type="STRING"/>
+					<colinfo id="u_tel_no" size="50" type="STRING"/>
+					<colinfo id="u_marry_yn" size="4" type="STRING"/>
+					<colinfo id="u_marry_dt" size="8" type="STRING"/>
+					<colinfo id="u_last_school" size="50" type="STRING"/>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>제품컨설팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100000</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이문주</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>차장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>제품컨설팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100001</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤희세</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>제품컨설팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100002</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>김상준</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>제품컨설팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100003</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이허우</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>제품컨설팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100004</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤경하</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>제품컨설팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100005</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>지해식</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>제품컨설팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100006</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>김희연</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>CS센터</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100007</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이재범</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>차장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>CS센터</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100008</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>백승헌</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>CS센터</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100009</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이제혁</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>CS센터</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100010</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤영민</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>CS센터</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100011</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>박홍현</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>Presales팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100012</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이석률</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>Presales팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100013</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이차영</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>Presales팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100014</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>모인환</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>고객지원부</u_dept>
+						<u_dept_gb>Presales팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100015</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이광호</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>교육지원사업부</u_dept>
+						<u_dept_gb>교육지원팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100016</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>남궁선</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>교육지원사업부</u_dept>
+						<u_dept_gb>교육지원팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100017</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>허재식</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내사업본부</u_dept>
+						<u_dept_gb>고객지원부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100018</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>박창훈</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>수석팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내사업본부</u_dept>
+						<u_dept_gb>국내영업부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100019</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>조수안</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내사업본부</u_dept>
+						<u_dept_gb>국내영업부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100020</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>최영선</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>부장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내서비스사업본부</u_dept>
+						<u_dept_gb>신사업부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100021</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤재남</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내서비스사업본부</u_dept>
+						<u_dept_gb>SI사업부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100022</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이동균</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>수석팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내영업부</u_dept>
+						<u_dept_gb>영업1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100023</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이영균</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내영업부</u_dept>
+						<u_dept_gb>영업1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100024</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤철훈</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내영업부</u_dept>
+						<u_dept_gb>영업1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100025</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>김영식</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내영업부</u_dept>
+						<u_dept_gb>영업2팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100026</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이영오</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내영업부</u_dept>
+						<u_dept_gb>영업2팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100027</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>엄준건</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내영업부</u_dept>
+						<u_dept_gb>영업3팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100028</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>남용문</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>국내영업부</u_dept>
+						<u_dept_gb>영업3팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100029</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>허석</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>차장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>대표이사</u_dept>
+						<u_dept_gb>경영관리팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100030</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이옥선</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>대표이사</u_dept>
+						<u_dept_gb>경영관리팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100031</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>오현민</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>대표이사</u_dept>
+						<u_dept_gb>경영관리팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100032</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>박수민</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>대표이사</u_dept>
+						<u_dept_gb>교육지원사업부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100033</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>남안욱</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>부장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>대표이사</u_dept>
+						<u_dept_gb>국내사업본부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100034</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>김용호</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>상무</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>대표이사</u_dept>
+						<u_dept_gb>국내서비스사업본부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100035</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>곽허기</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>이사</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>대표이사</u_dept>
+						<u_dept_gb>국내서비스사업본부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100036</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이성숙</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>대표이사</u_dept>
+						<u_dept_gb>부설연구소</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100037</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>송화준</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>상무</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>대표이사</u_dept>
+						<u_dept_gb>전략기획실</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100038</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이영현</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>상무</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>부설연구소</u_dept>
+						<u_dept_gb>제품개발부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100039</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이우철</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>수석팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>신사업부</u_dept>
+						<u_dept_gb>서버팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100040</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이대현</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>신사업부</u_dept>
+						<u_dept_gb>서버팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100041</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>백재형</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>신사업부</u_dept>
+						<u_dept_gb>서버팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100042</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>송승민</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>신사업부</u_dept>
+						<u_dept_gb>서버팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100043</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>송영부</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>신사업부</u_dept>
+						<u_dept_gb>클라이언트팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100044</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>문덕준</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>신사업부</u_dept>
+						<u_dept_gb>클라이언트팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100045</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤주희</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>신사업부</u_dept>
+						<u_dept_gb>클라이언트팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100046</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>송영준</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>신사업부</u_dept>
+						<u_dept_gb>클라이언트팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100047</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>허혜안</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>신사업부</u_dept>
+						<u_dept_gb>클라이언트팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100048</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이근태</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>전략기획실</u_dept>
+						<u_dept_gb>기획팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100049</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤재현</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>전략기획실</u_dept>
+						<u_dept_gb>마케팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100050</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이은지</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>전략기획실</u_dept>
+						<u_dept_gb>마케팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100051</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>송진영</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>전략기획실</u_dept>
+						<u_dept_gb>품질관리부</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100052</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>홍성호</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>수석팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>매쉬업팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100053</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이시만</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>부장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>매쉬업팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100054</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>전우승</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>웹2.0팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100055</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>김상근</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>웹2.0팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100056</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>김종관</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>플랫폼팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100057</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>강소영</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>플랫폼팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100058</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이경래</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>플랫폼팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100059</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이재일</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>플랫폼팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100060</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이한샘</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>플랫폼팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100061</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>남상진</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>플랫폼팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100062</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>손영기</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>플랫폼팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100063</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>김봉환</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>IDE팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100064</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>강명희</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>IDE팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100065</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>허상허</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>IDE팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100066</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이안훈</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>제품개발부</u_dept>
+						<u_dept_gb>IDE팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100067</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>한병기</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>품질관리부</u_dept>
+						<u_dept_gb>품질관리팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100068</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이상범</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>품질관리부</u_dept>
+						<u_dept_gb>품질관리팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100069</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤소현</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>품질관리부</u_dept>
+						<u_dept_gb>품질관리팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100070</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤재우</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>품질관리부</u_dept>
+						<u_dept_gb>품질관리팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100071</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>안진희</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>해외사업부</u_dept>
+						<u_dept_gb>해외컨설팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100072</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이규호</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>해외사업부</u_dept>
+						<u_dept_gb>해외컨설팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100073</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>안인혁</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>해외사업부</u_dept>
+						<u_dept_gb>해외컨설팅팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100074</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>김창환</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>IAM사업부</u_dept>
+						<u_dept_gb>IAM&#32;Consulting</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100075</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤수원</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>디자인팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100076</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이지연</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>디자인팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100077</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이현주</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>디자인팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100078</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>배영하</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100079</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이도형</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100080</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이환철</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100081</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤안배</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100082</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이원우</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100083</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>임영훈</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100084</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>전형두</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100085</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>박승래</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;1팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100086</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>김한주</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>대리</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;2팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100087</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>이명성</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;2팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100088</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>문인철</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>팀장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;2팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100089</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤종웅</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;2팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100090</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>손민석</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;2팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100091</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>안상일</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;2팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100092</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>윤영수</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>사원</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+					<record>
+						<u_address>서울&#32;특별시&#32;송파구&#32;잠실동&#32;</u_address>
+						<u_age>*</u_age>
+						<u_birth>20071225</u_birth>
+						<u_date>20071225</u_date>
+						<u_dept>SI사업부</u_dept>
+						<u_dept_gb>SI&#32;2팀</u_dept_gb>
+						<u_hp_no>010-0000-0000</u_hp_no>
+						<u_id>100093</u_id>
+						<u_in_date>19931010</u_in_date>
+						<u_juminno>1234561234567</u_juminno>
+						<u_last_school>투비&#32;대학교</u_last_school>
+						<u_marry_yn>0</u_marry_yn>
+						<u_nm>안준호</u_nm>
+						<u_postno>123123</u_postno>
+						<u_role>과장</u_role>
+						<u_tel_no>02-0000-0000</u_tel_no>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="103" Id="Image2" ImageID="search_BG" Left="9" TabOrder="36" Width="755"></Image>
+		<Grid BindDataset="ds_list1" BkColor2="user29" BkSelColor="ACTIVEBORDER" BoldHead="true" Border="Flat" Bottom="520" CellMoving="TRUE" ColSizing="TRUE" DragMode="TRUE" DropMode="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="390" Id="Grid00" InputPanel="FALSE" LineColor="default" LineType="ExVERT" MultiSelect="TRUE" OnDrag="Grid00_OnDrag" OnDrop="Grid00_OnDrop" OnHeadClick="Grid00_OnHeadClick" Right="775" RowHeight="20" SelColor="black" Style="Gridbox" TabOrder="1" TabStop="true" Top="130" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="775">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="75"/>
+						<col width="79"/>
+						<col width="120"/>
+						<col width="145"/>
+						<col width="60"/>
+						<col width="74"/>
+						<col width="137"/>
+						<col width="60"/>
+						<col width="113"/>
+						<col width="104"/>
+						<col width="68"/>
+						<col width="60"/>
+						<col width="70"/>
+						<col width="101"/>
+						<col width="60"/>
+						<col width="77"/>
+						<col width="77"/>
+						<col width="80"/>
+						<col width="60"/>
+					</columns>
+					<head>
+						<cell align="center" col="1" display="text" text="이름"/>
+						<cell align="center" col="9" display="text" text="생일"/>
+						<cell align="center" col="2" display="text" text="부서"/>
+						<cell align="center" col="15" display="text" text="핸드폰"/>
+						<cell align="center" col="0" display="text" text="아이디"/>
+						<cell align="center" col="3" display="text" text="팀"/>
+						<cell align="center" col="10" display="text" text="입사일"/>
+						<cell align="center" col="6" display="text" text="주민번호"/>
+						<cell align="center" col="8" display="text" text="최종학교"/>
+						<cell align="center" col="13" display="text" text="결혼기념일"/>
+						<cell align="center" col="12" display="text" text="결혼유무"/>
+						<cell align="center" col="11" display="text" text="퇴사일"/>
+						<cell align="center" col="5" display="text" text="비밀번호"/>
+						<cell align="center" col="17" display="text" text="주소"/>
+						<cell align="center" col="16" display="text" text="우편번호"/>
+						<cell align="center" col="4" display="text" text="사용권한"/>
+						<cell align="center" col="7" display="text" text="성별"/>
+						<cell align="center" col="14" display="text" text="전화번호"/>
+						<cell align="center" col="18" display="text" text="등록일"/>
+					</head>
+					<body>
+						<cell col="1" colid="u_nm" display="text"/>
+						<cell col="9" colid="u_birth" display="text"/>
+						<cell col="2" colid="u_dept" display="text"/>
+						<cell col="15" colid="u_hp_no" display="text"/>
+						<cell col="0" colid="u_id" display="text"/>
+						<cell col="3" colid="u_dept_gb" display="text"/>
+						<cell col="10" colid="u_in_date" display="text"/>
+						<cell col="6" colid="u_juminno" display="text"/>
+						<cell col="8" colid="u_last_school" display="text"/>
+						<cell col="13" colid="u_marry_dt" display="text"/>
+						<cell col="12" colid="u_marry_yn" display="text"/>
+						<cell col="11" colid="u_out_date" display="text"/>
+						<cell col="5" colid="u_pass" display="text"/>
+						<cell col="17" colid="u_address" display="text"/>
+						<cell col="16" colid="u_postno" display="text"/>
+						<cell col="4" colid="u_role" display="text"/>
+						<cell col="7" colid="u_sex" display="text"/>
+						<cell col="14" colid="u_tel_no" display="text"/>
+						<cell col="18" colid="u_date" display="text"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Static Height="20" Id="Static6" Left="20" Style="form_title_text" TabOrder="2" Text="사용자&#32;리스트" Top="105" VAlign="Middle" Width="105"></Static>
+		<Shape BKColor="user18" Bottom="130" Height="3" Id="Shape0" Left="0" LineColor="user18" Right="775" TabOrder="3" Top="127" Type="Rectangle" Width="775"></Shape>
+		<Static Height="20" Id="Static15" Left="15" Style="form_search_text" TabOrder="4" Text="ID" Top="5" VAlign="Middle" Width="56"></Static>
+		<Static Height="20" Id="Static16" Left="576" Style="form_search_text" TabOrder="5" Text="부서" Top="5" VAlign="Middle" Width="31"></Static>
+		<Static Height="20" Id="Static17" Left="400" Style="form_search_text" TabOrder="6" Text="등록일" Top="52" VAlign="Middle" Width="56"></Static>
+		<Edit BindDataset="ds_list1" Border="Flat" Column="u_id" Height="20" Id="ed_u_id" Left="75" OnKeyDown="ed_OnKeyDown" Style="Edit_BL" TabOrder="7" Top="5" Width="95"></Edit>
+		<Edit BindDataset="ds_list1" Border="Flat" Column="u_dept" Height="20" Id="Edit0" Left="615" OnKeyDown="ed_OnKeyDown" Style="Edit_BL" TabOrder="8" Top="5" Width="95"></Edit>
+		<Static Height="20" Id="Static18" Left="15" Style="form_search_text" TabOrder="9" Text="생일" Top="52" VAlign="Middle" Width="56"></Static>
+		<Static Height="20" Id="Static19" Left="15" Style="form_search_text" TabOrder="10" Text="비밀번호" Top="29" VAlign="Middle" Width="56"></Static>
+		<Edit BindDataset="ds_list1" Border="Flat" Column="u_pass" Height="20" Id="Edit2" Left="75" OnKeyDown="ed_OnKeyDown" Password="TRUE" Style="Edit_BL" TabOrder="11" Top="29" Width="95"></Edit>
+		<Edit BindDataset="ds_list1" Border="Flat" Column="u_juminno" Height="20" Id="Edit7" Left="465" OnKeyDown="ed_OnKeyDown" Style="Edit_BL" TabOrder="12" Top="29" Width="95"></Edit>
+		<Edit BindDataset="ds_list1" Border="Flat" Column="u_nm" Height="20" Id="ed_u_nm" ImeMode="native" Left="255" OnKeyDown="ed_OnKeyDown" Style="Edit_BL" TabOrder="13" Top="5" Width="95"></Edit>
+		<Static Height="20" Id="Static3" Left="400" Style="form_search_text" TabOrder="14" Text="주민번호" Top="29" VAlign="Middle" Width="56"></Static>
+		<Static Height="20" Id="Static4" Left="191" Style="form_search_text" TabOrder="15" Text="권한" Top="29" VAlign="Middle" Width="56"></Static>
+		<Static Height="20" Id="Static5" Left="191" Style="form_search_text" TabOrder="16" Text="이름" Top="5" VAlign="Middle" Width="56"></Static>
+		<Combo BindDataset="ds_list1" Border="Flat" BorderColor="#c3c3c3" CodeColumn="com_code" Column="u_role" DataColumn="com_name" Height="19" Id="Combo_role" INDEX="0" Left="255" OnKeyDown="ed_OnKeyDown" Style="Edit_BL" TabOrder="17" Top="30" Width="95"></Combo>
+		<Static Height="20" Id="Static1" Left="400" Style="form_search_text" TabOrder="18" Text="부서구분" Top="5" VAlign="Middle" Width="56"></Static>
+		<Edit BindDataset="ds_list1" Border="Flat" Column="u_dept_gb" Height="20" Id="Edit5" Left="465" OnKeyDown="ed_OnKeyDown" Style="Edit_BL" TabOrder="19" Top="5" Width="95"></Edit>
+		<Edit BindDataset="ds_list1" Border="Flat" Column="u_last_school" Height="20" Id="Edit9" Left="465" OnKeyDown="ed_OnKeyDown" Style="Edit_BL" TabOrder="20" Top="75" Width="95"></Edit>
+		<Static Height="20" Id="Static8" Left="400" Style="form_search_text" TabOrder="21" Text="최종학력" Top="75" VAlign="Middle" Width="56"></Static>
+		<Static Height="20" Id="Static9" Left="15" Style="form_search_text" TabOrder="22" Text="입사일" Top="75" VAlign="Middle" Width="44"></Static>
+		<Static Height="20" Id="Static11" Left="191" Style="form_search_text" TabOrder="23" Text="퇴사일" Top="75" VAlign="Middle" Width="56"></Static>
+		<Static Height="20" Id="Static12" Left="191" Style="form_search_text" TabOrder="24" Text="결혼유무" Top="52" VAlign="Middle" Width="56"></Static>
+		<Checkbox BindDataset="ds_list1" BKColor="#e4e9f8" Column="u_marry_yn" Height="22" Id="Checkbox0" Left="255" Style="nhn_Checkbox" TabOrder="25" Top="51" Width="15"></Checkbox>
+		<Calendar BindDataset="ds_list1" Border="Flat" Column="u_marry_dt" Height="19" Id="Calendar0" Left="270" OnKeyDown="ed_OnKeyDown" SaturdayTextColor="blue" Style="Edit_BL" SundayTextColor="red" TabOrder="26" Top="53" Width="95"></Calendar>
+		<Calendar BindDataset="ds_list1" Border="Flat" Column="u_out_date" Height="19" Id="Calendar1" Left="255" OnKeyDown="ed_OnKeyDown" SaturdayTextColor="blue" Style="Edit_BL" SundayTextColor="red" TabOrder="27" Top="76" Width="100"></Calendar>
+		<Calendar BindDataset="ds_list1" Border="Flat" Column="u_in_date" Height="19" Id="Calendar2" Left="75" OnKeyDown="ed_OnKeyDown" SaturdayTextColor="blue" Style="Edit_BL" SundayTextColor="red" TabOrder="28" Top="76" Width="95"></Calendar>
+		<Calendar BindDataset="ds_list1" Border="Flat" Column="u_date" Height="19" Id="Calendar3" Left="465" OnKeyDown="ed_OnKeyDown" SaturdayTextColor="blue" Style="Edit_BL" SundayTextColor="red" TabOrder="29" Top="53" Width="95"></Calendar>
+		<Calendar BindDataset="ds_list1" Border="Flat" Column="u_birth" Height="19" Id="Calendar4" Left="75" OnKeyDown="ed_OnKeyDown" SaturdayTextColor="blue" Style="Edit_BL" SundayTextColor="red" TabOrder="30" Top="53" Width="95"></Calendar>
+		<Static Height="20" Id="Static21" Left="576" Style="form_search_text" TabOrder="31" Text="상태" Top="52" VAlign="Middle" Width="31"></Static>
+		<Edit BindDataset="ds_list1" Border="Flat" Height="20" Id="Edit3" Left="615" OnKeyDown="ed_OnKeyDown" Style="Edit_BL" TabOrder="32" Top="52" Width="95"></Edit>
+		<Image Height="12" Id="Image5" ImageID="SC_C_subtitle" TabOrder="33" Top="109" Width="11"></Image>
+		<Image FillType="STRETCH" Height="103" Id="Image0" ImageID="search_L" Left="1" TabOrder="34" Width="8"></Image>
+		<Image FillType="STRETCH" Height="103" Id="Image1" ImageID="search_R" Left="763" TabOrder="35" Width="8"></Image>
+		<Combo Border="Flat" Height="22" Id="Combo0" Left="600" OnChanged="Combo0_OnChanged" Style="Gridbox" TabOrder="37" Top="103" Width="170">
+			<Contents>
+				<Record Code="Active&#32;Window&#32;Border" Data="Active&#32;Window&#32;Border" Default="true"/>
+				<Record Code="blueviolet" Data="blueviolet"/>
+				<Record Code="red" Data="red"/>
+			</Contents>
+		</Combo>
+	</Form>
+	<Script><![CDATA[
+#include "pub_js::pub_dataset.js"
+
+function form_OnLoadCompleted(obj)
+{
+
+	//Button0.Click();
+}
+
+
+function btn_find_OnClick(obj)
+{
+	fn_list();
+}
+
+function fn_list()
+{
+	var str_arg;
+	
+	str_arg  = "workgu=" + quote("USER_LIST");
+	str_arg += " dept=" + quote(ed_dept.Text);
+	str_arg += " team=" + quote(ed_team.Text);
+	
+	Transaction("list", "server::getUser.jsp", "", "ds_list1=dataset", str_arg,"fn_callback");
+
+}
+
+function fn_callback(strSvcID, nErrorCode, strErrorMsg)
+{
+	if( nErrorCode < 0 )
+	{
+		alert("ErrorMsg : " + strErrorMsg);
+		return;
+	}
+	
+	//alert(ds_list1.SaveXML() );
+}
+
+
+function Grid00_OnDrag(obj,nPosX,nPosY,varKeyState,nRow,nCell,nPivotIndex)
+{
+	var dataObj = CreateDataObject();
+	
+	dataObj.SetData("CF_TEXT",nRow);
+	
+	if(obj.IsAboveSel())
+		return dataObj;
+}
+
+function Grid00_OnDrop(obj,objDragObj,objDataObj,nPosX,nPosY,varKeyState,nRow,nCell,nPivotIndex)
+{
+	var nOldRow, i, MaxRow, ntRow, nORow;
+	var strValue;
+	//nOldRow = objDataObj.GetData("CF_TEXT");
+	//nORow = nRow;
+	
+	strValue = ds_list1.GetColumn(nRow,"u_id");
+	
+	Grid00.Redraw = false;
+	ds_temp.ClearData();
+	MaxRow = ds_list1.RowCount() -1;
+	for( i=MaxRow; i>=0 ;i--)
+	{
+		if( ds_list1.GetSelect(i) )
+		{
+			nOldRow = i;
+			ntRow = ds_temp.AddRow();
+			ds_temp.CopyRow(ntRow, ds_list1, i);
+			ds_list1.DeleteRow(i);
+		}
+	}
+	
+	//ds_list1.ClearSelect();
+	nORow = ds_list1.FindRow("u_id",strValue);// + 1;
+	
+	if( nOldRow < nORow ) nORow = nORow + 1;
+	
+	//trace("nORow : " + nORow + " / "  + strValue);
+	
+	
+	MaxRow = ds_temp.RowCount();
+	for( i=0; i<MaxRow ;i++)
+	{
+		ntRow = ds_list1.InsertRow(nORow);
+		ds_list1.CopyRow(ntRow, ds_temp, i);
+		//ds_list1.SelectRow(ntRow);
+	}
+	
+	//dataObj.SetData("CF_CSV",obj.GetCSVData(true));  // 외부 엑셀에 드래그드랍하기위한 샘플
+	//ds_list1.MoveRow(nOldRow,nRow);
+	
+	Grid00.Redraw = true;
+	MaxRow = nORow + MaxRow;
+	for( i=nORow; i<MaxRow; i++ )
+	{
+		ds_list1.SelectRow(i);
+	}
+	
+	//ds_list1.ClearSelect();
+	//ds_list1.row = nRow;
+	//ds_list1.ClearSelect();
+}
+
+function form_OnSize(obj,nCx,nCy,nState)
+{
+	Image0.Width = nCx;
+	Image0.Height = nCy;
+	
+	ResizeScroll();
+}
+
+function Button0_OnClick(obj)
+{
+	var strContents;
+	
+	strContents = fn_file_open(parent.id);
+	
+	//alert( strContents );
+	
+	if ( Length(strContents) > 0 )
+		Grid00.Contents = strContents;
+}
+
+
+function Button1_OnClick(obj)
+{
+	var strContents;
+	
+	strContents = Grid00.GetCurContents();
+	
+	//alert(strContents);
+	
+	fn_file_save(parent.id,strContents);
+}
+
+
+function fn_file_open(strFilenm)
+{
+	var strValue, strFileName;
+	
+	strFileName = Doc_top.File0.AliasToRealPath("%MIPLATFORM%");
+	
+	Doc_top.File0.FileName = strFileName + "\\" + strFilenm;	
+	Doc_top.File0.Open("rb"); // Option ( r:read, t:text, b:binary, w:write, a:append +:read/write )
+	
+	//strValue = File0.Read();
+	//strValue = Doc_top.File0.ReadBinary();
+	strValue = Doc_top.File0.Read();
+	
+	//File Size를 가져옵니다.
+	//alert(  File0.getLength() + " byte" );
+	
+	Doc_top.File0.Close();
+	
+	return strValue;
+}
+
+function fn_file_save(strFilenm, strValue)
+{
+	var strFileName;
+	
+	strFileName = Doc_top.File0.AliasToRealPath("%MIPLATFORM%");
+	
+	Doc_top.File0.FileName = strFileName + "\\" + strFilenm;
+	Doc_top.File0.Open("w");
+	//strValue = Doc_top.File0.WriteBinary(strValue);
+	strValue = Doc_top.File0.Write(strValue);
+	Doc_top.File0.Close();
+}
+
+function Grid00_OnHeadClick(obj,nCell,nX,nY,nPivotIndex)
+{
+	ifn_Sort(obj, nCell);
+}
+
+function Combo0_OnChanged(obj,strCode,strText,nOldIndex,nNewIndex)
+{
+	Grid00.BkSelColor = strText;
+}
+]]></Script>
+</Window>

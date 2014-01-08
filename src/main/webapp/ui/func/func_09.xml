@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="530" Id="form" Left="8" OnClick="btn1_OnClick" OnLoadCompleted="form_OnLoadCompleted" OnTimer="form_OnTimer" PidAttrib="7" Title="Excel&#32;Import&#32;예제" Top="8" Ver="1.0" Width="775" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_excel" OnLoadCompleted="ds_excel_OnLoadCompleted">
+				<Contents></Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="38" Id="Image2" ImageID="search_BG" Left="9" Style="Gridbox" TabOrder="9" Width="755"></Image>
+		<Grid AreaSelect="TRUE" AutoEnter="TRUE" BindDataset="ds_excel" BkColor2="user29" BkSelColor="user18" BoldHead="true" Border="Flat" Bottom="515" CellMoving="TRUE" ColSelect="TRUE" ColSizing="TRUE" DragMode="TRUE" DropMode="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" FixedColSizing="TRUE" HeadBorder="Flat" Height="470" Id="Grid_main" InputPanel="FALSE" LineColor="default" OnCellDBLClick="Grid_main_OnCellDblClick" OnDrag="Grid_main_OnDrag" OnDrop="Grid_main_OnDrop" OnFormatChanged="Grid_main_OnFormatChanged" OnKeyDown="Grid_main_OnKeyDown" Right="775" SelColor="black" Style="Gridbox" TabOrder="3" TabStop="true" Top="45" UseAutoSizing="Row" UseDBuff="true" UseExSizing="Row" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="775"></Grid>
+		<FileDialog Bottom="94" Filter="Excel&#32;File(*.xls)|*.xls|All(*.*)|*.*|" Height="24" Id="FileDialog0" Left="665" Right="689" TabOrder="0" Top="70" Width="24"></FileDialog>
+		<Static Height="14" Id="st0" Left="19" Style="form_search_text" TabOrder="0" Text="Excel파일경로" Top="10" VAlign="Middle" Width="89"></Static>
+		<Edit Border="Flat" Height="20" Id="ed0" Left="116" Style="Edit_BL" TabOrder="1" Top="7" Width="344"></Edit>
+		<Button ButtonStyle="TRUE" Color="white" Height="22" Id="btn_file" ImageID="sreach_btn72" Left="510" OnClick="btn_file_OnClick" TabOrder="4" Text="파일선택" Top="6" Width="80"></Button>
+		<Button ButtonStyle="TRUE" Color="white" Height="22" Id="btn_excel_load" ImageID="sreach_btn72" Left="591" OnClick="btn_excel_load_OnClick" TabOrder="5" Text="가져오기" Top="6" Width="80"></Button>
+		<Button ButtonStyle="TRUE" Color="white" Height="22" Id="btn_excel" ImageID="sreach_btn72" Left="673" OnClick="btn_excel_OnClick" TabOrder="6" Text="내보내기" Top="6" Width="80"></Button>
+		<Image FillType="STRETCH" Height="38" Id="Image0" ImageID="search_L" Left="1" TabOrder="7" Width="8"></Image>
+		<Image FillType="STRETCH" Height="38" Id="Image1" ImageID="search_R" Left="764" TabOrder="8" Width="8"></Image>
+	</Form>
+	<Script><![CDATA[/*
+* FormID(명) : Temp07 ( Temp07 )
+* 작성자     : 이광호
+* 작성일     : 2006/02/16
+* 변경로그   : Excel 파일을 불러들여서 저장 또는 데이터를 Excel파일로 내보내기
+*
+* 
+* - 
+* - 
+* - 
+*/
+
+// 01. 전처리 공통 함수 선언  --------------------------------------------------
+//#include "Pub_js::debug.js";    // DSPrn(obj) - DataSet 내용 표시
+
+// 02. 폼 변수 정의 ------------------------------------------------------------
+
+
+// 03. 폼 로드 -----------------------------------------------------------------
+function form_OnLoadCompleted(obj)
+{
+	//parent.SetBtn("S","H","H","H","H","S");
+	//parent.SetBtn_n("help","close","print","excel","search");
+	// parent.SetBtn_n("excel");
+	// if ( gRunType == "SDI" )
+		// parent.SetTitle(obj.title);
+	//Div2.fn_setMessage("폼 Load 완료..", "", 0);
+}
+
+
+// 04. 조회 함수 선언  ---------------------------------------------------------
+
+function img_file_OnClick(obj,nX,nY)
+{
+
+}
+
+function fn_excel()
+{
+	Grid_main.ExportExcelEx("sheet1");
+}
+
+
+// Excel파일 내보내기
+
+
+function ds_excel_OnLoadCompleted(obj,nErrorCode,strErrorMsg,nReason)
+{
+	if ( nErrorCode <> "0" )
+	{
+		alert("에러발생",strErrorMsg);
+		return;
+	}
+	
+	if ( nReason == 0 )
+	{
+		//global.excel.ConnectionString = "";
+		//global.excel.DisconnectDB();
+		//fn_grid_show();
+		alert("End...");
+		
+		//trace( DS_Excel.SaveXML() );
+	}
+}
+
+function fn_grid_show()
+{
+	var str_contents = "";
+	var colcnt = 0;
+	var colnm = "";
+	
+	colcnt = ds_excel.colcount;
+	
+	str_contents = "<Contents>";
+	str_contents += "	<columns>";
+	
+	for ( i=0; i < colcnt; i++ )
+	{
+		str_contents += "		<col Width='80'/>";
+	}
+	str_contents += "	</columns>";
+	str_contents += "	<head>";
+	for ( i=0; i < colcnt; i++ )
+	{
+		colnm = ds_excel.GetColID(i);
+		str_contents += "		<cell col='" + i + "' Text='" + colnm + "'/>";
+	}
+	str_contents += "	</head>";
+	str_contents += "	<body>";
+	for ( i=0; i < colcnt; i++ )
+	{
+		colnm = ds_excel.GetColID(i);
+		str_contents += "		<cell col='" + i + "' colid='" + colnm + "'/>";
+	}
+	str_contents += "	</body>";
+	str_contents += "</Contents>";
+		
+	Grid_main.Contents = str_contents;
+	
+	//trace( str_contents );
+}
+
+function Grid_main_OnDrag(obj,nPosX,nPosY,varKeyState,nRow,nCell)
+{
+	var dataObj = CreateDataObject();	
+
+	dataObj.SetData("CF_CSV",obj.GetCSVData(true));  // 외부 엑셀에 드래그드랍하기위한 샘플
+	
+	if(obj.IsAboveSel()) return dataObj;
+}
+
+function Grid_main_OnDrop(obj,objDragObj,objDataObj,nPosX,nPosY,varKeyState,nRow,nCell)
+{
+	var strCSV = objDataObj.GetData("CF_CSV");
+	var varRecordArr = Split2(strCSV,"\n",",");
+	var objDs = object(obj.BindDataSet);
+	var iCurRow = nRow;
+	
+	objDs.row = nRow;
+	obj.SetCellPos(nCell);
+	
+	//trace( objDataObj.GetData("CF_TEXT") );
+	//trace( " Row : " + nRow + " / " + nCell );
+	
+	for (var iRow=0; iRow<varRecordArr.length; iRow++)
+	{
+		var varRecord = varRecordArr[iRow];
+		if (objDs.RowCount <= (iCurRow+iRow))
+		{
+			objDs.AddRow();
+		}
+		
+		for (var iCol=0;iCol<varRecord.length;iCol++)
+		{
+			var varValue = varRecord[iCol];
+			var strDisplayType = obj.GetCellProp("body",(obj.GetCellPos()+iCol),"display");
+			
+			if (strDisplayType == "combo") continue;
+			if (strDisplayType == "number")
+			{
+				varValue = replace(varValue,",");
+			}
+			
+			var strColID = obj.GetCellProp("body",(obj.GetCellPos()+iCol),"colid");
+			objDs.SetColumn((iCurRow+iRow),strColID,varValue);
+		}
+	}
+}
+
+function Grid_main_OnKeyDown(obj,nChar,bShift,bCtrl,bAlt,nLLParam,nHLParam)
+{
+	if (bCtrl) 
+	{
+		switch (nChar)
+		{
+			case 67:
+				ClearClipboard(); // 클립보드를 Clear합니다.
+				SetClipBoard("CF_CSV",obj.GetCSVData(true));  // 외부 Excel에 Ctrl+c로 보낼수 있는 예제
+				break;
+			case 86:
+				var strCSV = GetClipBoard("CF_CSV");
+				var varRecordArr = Split2(strCSV,"\n",",");
+				var objDs = object(obj.BindDataSet);
+				var iCurRow = objDs.Row;
+				
+				for (var iRow=0; iRow<varRecordArr.length; iRow++)
+				{
+					var varRecord = varRecordArr[iRow];
+					if (objDs.RowCount <= (iCurRow+iRow))
+					{
+						objDs.AddRow();
+					}
+					for (var iCol=0;iCol<varRecord.length;iCol++)
+					{
+						var varValue = varRecord[iCol];
+						var strDisplayType = obj.GetCellProp("body",(obj.GetCellPos()+iCol),"display");
+						
+						if (strDisplayType == "combo") continue;
+						if (strDisplayType == "number")
+						{
+							varValue = replace(varValue,",");
+						}
+						
+						var strColID = obj.GetCellProp("body",(obj.GetCellPos()+iCol),"colid");
+						objDs.SetColumn((iCurRow+iRow),strColID,varValue);
+					}
+				}
+				break;
+		}
+	}
+}
+
+function Grid_main_OnCellDblClick(obj,nRow,nCell,nX,nY)
+{
+	
+}
+
+
+function btn_file_OnClick(obj)
+{
+	var result = FileDialog0.Open();
+	
+	//trace( "ConnectionString .................. " );
+	//trace( "ConnectionString : " + ConnectionString );
+	if ( result )
+	{
+		ed0.Text= FileDialog0.FilePath + '\\' + FileDialog0.FileName;
+	}
+}
+
+function btn_excel_OnClick(obj)
+{
+	Grid_main.ExportExcelEx("sheet1");
+}
+
+function btn_excel_load_OnClick(obj)
+{
+	/*
+	global.excel.DisconnectDB();
+		
+	var ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Extended Properties=\"Excel 8.0;Imex=2\";Persist Security Info=False;Data Source=";
+	
+	ConnectionString += FileDialog0.FilePath + "\\" + FileDialog0.FileName;
+	global.excel.ConnectionString = ConnectionString;
+
+	var str_sheetnm = trim(ed_sheet.Text);
+	
+	DS_Excel.Argument = "arg_sheet=" + quote(str_sheetnm);
+	DS_Excel.ServiceID = "EXCEL_LOAD::Select_Excel_n.xml";
+	DS_Excel.Load();
+	*/
+	Grid_main.Redraw = false;
+	var str_filename = FileDialog0.FilePath + "\\" + FileDialog0.FileName;
+	ext_ExcelImportByIndex(str_filename, 0, "ds_excel");
+	fn_grid_show();
+	// Grid_main.Redraw = true;
+	
+	
+	var ds = Object(Grid_main.BindDataset);
+	
+	for ( var i = 0; i < ds.getColCount(); i ++ )
+	{
+		Grid_main.SetCellProp("body", i, "wordwrap", "exchar");
+	}
+	Grid_main.Redraw = true;	
+}
+
+function Grid_main_OnFormatChanged(obj,nReason,val1,val2)
+{
+	if ( nReason == "22" )
+	{
+		SetTimer(1, 5);
+	}
+}
+
+function form_OnTimer(obj,nEventID)
+{
+	if ( nEventID == "1" )
+	{
+		KillTimer(1);
+		Grid_main.Redraw = false;
+		var ds = Object(Grid_main.binddataset);
+		for ( var i = 0; i < ds.rowcount; i ++ )
+		{
+			Grid_main.AutoSizeRow("Row", i, 4);
+		}
+		Grid_main.Redraw = true;
+		
+	}	
+}
+]]></Script>
+</Window>

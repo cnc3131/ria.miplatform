@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="464" Id="form" Left="8" PidAttrib="7" Title="New&#32;Form" Top="8" Ver="1.0" Width="800" WorkArea="true">
+		<Shape BKColor="white" Bottom="426" Height="420" Id="Shape2" Left="6" LineColor="#dadada" LineWidth="3" Right="792" RoundHeight="6" RoundUnit="Pixel" RoundWidth="6" TabOrder="7" Top="6" Type="RoundRect" Width="786"></Shape>
+		<Shockwave Bottom="392" FrameNum="0" Height="368" Id="Shockwave0" Left="32" Movie="D:\Demo\MiPlatform\SSS\semi\flash\image\graph1\NumdeGraph.swf" Playing="false" Right="764" Top="24" Width="732"></Shockwave>
+		<Button Height="23" Id="Button0" Left="223" OnClick="Button0_OnClick" TabOrder="2" Text="data1" Top="434" Width="88"></Button>
+		<Button Height="23" Id="Button1" Left="318" OnClick="Button1_OnClick" TabOrder="3" Text="data2" Top="434" Width="88"></Button>
+		<Button Height="23" Id="Button2" Left="416" OnClick="Button2_OnClick" TabOrder="4" Text="reload" Top="434" Width="88"></Button>
+		<Image Cursor="HAND" Font="돋움,9,Bold" Height="20" Id="img_close" Left="768" OnClick="img_close_OnClick" Static="FALSE" TabOrder="6" Text="X" Top="8" Transparent="TRUE" Width="20"></Image>
+	</Form>
+	<Script><![CDATA[function changeValue(ds_obj)
+{
+	this.Reload();
+	
+	Shockwave0.SetVariable("index_Name"	,ds_obj.getColumn(ds_obj.row, "index_Name")	);
+	Shockwave0.SetVariable("value_Index",ds_obj.getColumn(ds_obj.row, "value_Index"));
+	Shockwave0.SetVariable("L_m"		,ds_obj.getColumn(ds_obj.row, "L_m")		);
+	Shockwave0.SetVariable("R_m"		,ds_obj.getColumn(ds_obj.row, "R_m")		);
+	Shockwave0.SetVariable("bar_val"	,ds_obj.getColumn(ds_obj.row, "bar_val")	);
+	Shockwave0.SetVariable("line_val"	,ds_obj.getColumn(ds_obj.row, "line_val")	);
+}
+
+
+function Button0_OnClick(obj)
+{
+	Shockwave0.SetVariable("index_Name","arget,Result,Achievement");
+	Shockwave0.SetVariable("value_Index","SEA,CCC,DDD,RRRR");
+	Shockwave0.SetVariable("L_m","count");
+	Shockwave0.SetVariable("R_m","Achv.(%)");
+	Shockwave0.SetVariable("bar_val","9234-5231,300-4123,606-2212,7900-9231");
+	Shockwave0.SetVariable("line_val","105,110,20,80");
+}
+
+
+
+function Button1_OnClick(obj)
+{
+	Shockwave0.SetVariable("index_Name","arget,Result,Achievement");
+	Shockwave0.SetVariable("value_Index","SEA,CCC,DDD,RRRR");
+	Shockwave0.SetVariable("L_m","count");
+	Shockwave0.SetVariable("R_m","Achv.(%)");
+	Shockwave0.SetVariable("bar_val","5757-6234,700-3673,806-3312,6700-8931");
+	Shockwave0.SetVariable("line_val","20,210,120,30");
+}
+
+function Button2_OnClick(obj)
+{
+	this.Reload();
+}]]></Script>
+</Window>

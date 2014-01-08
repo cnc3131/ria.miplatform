@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="200" Id="Login" Left="8" OnLoadCompleted="Login_OnLoadCompleted" PidAttrib="7" Title="Authentication" Top="8" Ver="1.0" Width="400" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_server" OnColumnChanged="ds_server_OnColumnChanged">
+				<Contents>
+					<colinfo id="code" size="256" summ="default" type="STRING"/>
+					<colinfo id="name" size="256" summ="default" type="STRING"/>
+					<record>
+						<code>S</code>
+						<name>DevServer</name>
+					</record>
+					<record>
+						<code>L</code>
+						<name>Pilot</name>
+					</record>
+					<record>
+						<code>UI</code>
+						<name>UI&#32;Examples</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_user">
+				<Contents>
+					<colinfo id="u_birth" size="50" summ="default" type="STRING"/>
+					<colinfo id="u_date" size="50" summ="default" type="STRING"/>
+					<colinfo id="u_dept" size="4" summ="default" type="STRING"/>
+					<colinfo id="u_id" size="10" summ="default" type="STRING"/>
+					<colinfo id="u_in_date" size="50" summ="default" type="STRING"/>
+					<colinfo id="u_juminno" size="10" summ="default" type="STRING"/>
+					<colinfo id="u_nm" size="50" summ="default" type="STRING"/>
+					<colinfo id="u_out_date" size="50" summ="default" type="STRING"/>
+					<colinfo id="u_role" size="4" summ="default" type="STRING"/>
+					<colinfo id="u_pass" size="50" summ="default" type="STRING"/>
+					<record>
+						<u_birth></u_birth>
+						<u_date></u_date>
+						<u_dept>dev</u_dept>
+						<u_id>tester</u_id>
+						<u_in_date></u_in_date>
+						<u_juminno></u_juminno>
+						<u_nm>테스터</u_nm>
+						<u_out_date></u_out_date>
+						<u_pass>guest</u_pass>
+						<u_role>manager</u_role>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image Height="200" Id="Image0" ImageID="login_box" Left="-1" TabOrder="6" Top="-2" Width="400"></Image>
+		<Edit AutoSelect="TRUE" Border="Flat" BorderColor="#c3c3c3" Height="20" Id="ed_id" Left="192" OnKeyDown="ed_id_OnKeyDown" TabOrder="1" Text="guest" Top="56" Width="117"></Edit>
+		<Edit AutoSelect="TRUE" Border="Flat" BorderColor="#c3c3c3" Height="20" Id="ed_pass" ImeMode="none" Left="192" OnKeyDown="ed_pass_OnKeyDown" Password="TRUE" TabOrder="2" Text="guest" Top="79" Width="117"></Edit>
+		<Image Cursor="HAND" Height="43" Id="img_login" ImageID="LOGIN_BTN" Left="312" OnClick="img_login_OnClick" Static="FALSE" TabOrder="4" Top="56" Width="57"></Image>
+		<Combo Border="Flat" BorderColor="#c3c3c3" CodeColumn="code" DataColumn="name" Enable="FALSE" Font="굴림,8" Height="18" Id="Combo_point" INDEX="0" InnerDataset="ds_server" Left="191" OnChanged="Combo_point_OnChanged" TabOrder="3" Top="101" Value="L" Width="119"></Combo>
+		<Image Cursor="HAND" Font="굴림,8" Height="20" Id="img_cancel" ImageID="BTN_3" Left="312" OnClick="img_cancel_OnClick" Static="FALSE" TabOrder="5" Top="101" Width="57"></Image>
+		<Image Height="37" Id="Image1" ImageID="LOGO" Left="233" TabOrder="7" Top="156" Width="161"></Image>
+	</Form>
+	<Script><![CDATA[
+function Login_OnLoadCompleted(obj)
+{
+	G_ADMIN = "L";
+	G_TYPE = "L"; 
+	Combo_point.Index = 0;
+	//gsDatagroup = Combo_point.Value;	
+	gsDatagroup = ds_server.GetColumn(0,"code");
+	//Combo_point.Value = gsDatagroup;
+	//trace("gsDatagroup : " + Combo_point.Value);
+}
+
+function ed_id_OnKeyDown(obj,nChar,bShift,bCtrl, bAlt,LLParam,HLParam)
+{
+	if(nChar == 13){ //엔터키가 눌려졌으면
+		ed_pass.SetFocus();
+	}
+}
+
+function ed_pass_OnKeyDown(obj,nChar,bShift,bCtrl, bAlt,LLParam,HLParam)
+{
+	if(nChar == 13){ //엔터키가 눌려졌으면
+		UserChk();
+		InitSession(true);
+		close();
+	}
+}
+  
+
+
+function UserChk()
+{
+	var UserID = ed_id.Value;
+	var Password = ed_pass.Value;
+	G_TYPE = Combo_point.Value;
+	
+	if ( UserID.Length() <= 0 ) //User ID에 입력된 내용이 없으면
+	{
+		alert("Enter your ID.");
+		ed_id.SetFocus();
+		return;
+	}
+	
+	if ( Password.Length() <= 0 ) //PASSWD에 입력된 내용이 없으면
+	{
+		alert("Enter Password.");		
+		ed_pass.SetFocus();
+		return;
+	} 
+	
+	global.Frame_Bottom.fn_form_close_all();
+	
+	if(G_TYPE == "S")
+	{
+		gds_menu.Copy(gds_menu_ui);
+	}  
+	else if(G_TYPE == "L")
+	{
+		gds_menu.Copy(gds_menu_pilot);
+	}
+	else
+	{
+		gds_menu.Copy(gds_menu_old);
+	}
+	global.Frame_Top.top_OnLoadCompleted();
+}
+
+function fn_user_info(arg_userid)
+{
+	//조회버튼 클릭시 실행되는 스크립트
+	
+	var str_arg = "";
+	str_arg  = "workgu=" + quote("USER_INFO");
+	str_arg += " user_id=" + quote(arg_userid);
+	
+	SetWaitCursor(true);
+	
+	var str_url, str_inds, str_outds;
+	
+	str_url   = gsDatagroup + "m_userlist_s01.jsp";
+	str_inds  = "";
+	str_outds = "ds_user=ds_user";
+	
+	//Transaction("user", str_url, "", str_outds, str_arg, "Tr_Callback");
+	
+	
+	Tr_Callback("user", 0, "SUCCESS");
+	//trace( "str_url : " + str_url );
+	//trace( http.SendHttpStr );
+}
+
+
+function Tr_Callback(strSvcID, nErrorCode, strErrorMsg)
+{
+	SetWaitCursor(false);
+	
+	// 서비스 에러 메세지 처리 
+	if ( nErrorCode <> 0 )
+	{
+		gfn_MsgBox(nErrorCode,strErrorMsg);
+		return;
+	}
+	
+	// 서비스 정상 처리
+	if ( strSvcID == "Init" )
+	{		
+		// 화면 로드시 자동 조회 처리
+		//fn_find();
+	} else if ( strSvcID == "user" )
+	{
+	
+		if ( ds_user.rowcount == 1 )
+		{
+			if ( ds_user.GetColumn(0,"u_pass") == ed_pass.Text )
+			{
+				///////////////////////공통변수로 관리///////////////////////////////
+				//사용자ID(gsUserId)
+				//사용자명(gsUserNm)
+				gsUserId  = ds_user.GetColumn(0,"u_id");
+				gsUserNm  = ds_user.GetColumn(0,"u_nm");
+				gRole     = ds_user.getColumn(0,"u_role");
+				//gsUserGb  = ds_user.getColumn(0,"USERGB");
+				/////////////////////////////////////////////////////////////////////
+						
+				// 로그인 정보로 타이틀 설정
+				global.window.title = global.window.title + " [" + gsUserNm + "] ";
+				InitSession(true);
+				
+				Close();
+			} else
+			{
+				alert("사용자 암호가 틀렸습니다.");
+				ed_pass.SetFocus();
+				return;
+			}
+		} else
+		{
+			alert("사용자 ID 가 없습니다.");
+			ed_id.SetFocus();
+		}
+	}	
+}
+
+
+function img_login_OnClick(obj,nX,nY)
+{
+
+	UserChk();
+	InitSession(true);
+	close();
+
+}
+
+function img_cancel_OnClick(obj,nX,nY)
+{
+	gsUserId = "";
+	gsUserNm = "";   
+	CloseSession();  
+
+
+	Exit();
+} 
+  
+
+function Combo_point_OnChanged(obj,strCode,strText,nOldIndex,nNewIndex)
+{
+	G_TYPE = strCode;
+	gsDatagroup = strCode;
+}
+
+
+function ds_server_OnColumnChanged(obj,nRow,strColumnID,varOldValue,varNewValue,nPivotIndex)
+{
+	G_TYPE = varNewValue;	
+}
+]]></Script>
+</Window>

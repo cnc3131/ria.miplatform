@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="504" Id="func_14" PidAttrib="7" Title="func_14" Ver="1.0" Width="744" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" GroupKey="Year" Id="ds_gd1">
+				<Contents>
+					<colinfo id="Year" size="256" type="STRING"/>
+					<colinfo id="cd1" size="256" type="INT"/>
+					<colinfo id="cd2" size="256" type="INT"/>
+					<colinfo id="cd3" size="256" type="INT"/>
+					<colinfo id="cd4" size="256" type="INT"/>
+					<colinfo id="cd5" size="256" type="INT"/>
+					<colinfo id="cd6" size="256" type="INT"/>
+					<record>
+						<cd1>1</cd1>
+						<cd2>11</cd2>
+						<cd3>111</cd3>
+						<cd4>1111</cd4>
+						<cd5>1000</cd5>
+						<cd6/>
+						<Year>2006</Year>
+					</record>
+					<record>
+						<cd1>2</cd1>
+						<cd2>22</cd2>
+						<cd3>222</cd3>
+						<cd4>2222</cd4>
+						<cd5>2000</cd5>
+						<cd6/>
+						<Year>2006</Year>
+					</record>
+					<record>
+						<cd1>3</cd1>
+						<cd2>33</cd2>
+						<cd3>333</cd3>
+						<cd4>3333</cd4>
+						<cd5>3000</cd5>
+						<cd6/>
+						<Year>2006</Year>
+					</record>
+					<record>
+						<cd1>4</cd1>
+						<cd2>44</cd2>
+						<cd3>444</cd3>
+						<cd4>4444</cd4>
+						<cd5>4000</cd5>
+						<cd6/>
+						<Year>2006</Year>
+					</record>
+					<record>
+						<cd1>5</cd1>
+						<cd2>55</cd2>
+						<cd3>555</cd3>
+						<cd4>5555</cd4>
+						<cd5>5000</cd5>
+						<cd6/>
+						<Year>2006</Year>
+					</record>
+					<record>
+						<cd1>6</cd1>
+						<cd2>66</cd2>
+						<cd3>666</cd3>
+						<cd4>6666</cd4>
+						<cd5>6000</cd5>
+						<cd6/>
+						<Year>2007</Year>
+					</record>
+					<record>
+						<cd1>7</cd1>
+						<cd2>77</cd2>
+						<cd3>777</cd3>
+						<cd4>7777</cd4>
+						<cd5>7000</cd5>
+						<cd6/>
+						<Year>2007</Year>
+					</record>
+					<record>
+						<cd1>8</cd1>
+						<cd2>88</cd2>
+						<cd3>888</cd3>
+						<cd4>8888</cd4>
+						<cd5>8000</cd5>
+						<cd6/>
+						<Year>2007</Year>
+					</record>
+					<record>
+						<cd1>9</cd1>
+						<cd2>99</cd2>
+						<cd3>999</cd3>
+						<cd4>9999</cd4>
+						<cd5>9000</cd5>
+						<cd6/>
+						<Year>2007</Year>
+					</record>
+					<record>
+						<cd1>10</cd1>
+						<cd2>100</cd2>
+						<cd3>1000</cd3>
+						<cd4>10000</cd4>
+						<cd5>10000</cd5>
+						<cd6/>
+						<Year>2007</Year>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_gd2">
+				<Contents>
+					<colinfo id="cd1" size="256" type="INT"/>
+					<colinfo id="cd2" size="256" type="INT"/>
+					<colinfo id="cd3" size="256" type="INT"/>
+					<colinfo id="cd4" size="256" type="INT"/>
+					<colinfo id="cd5" size="256" type="INT"/>
+					<record>
+						<cd1>1</cd1>
+						<cd2>11</cd2>
+						<cd3>111</cd3>
+						<cd4>1111</cd4>
+						<cd5>1000</cd5>
+					</record>
+					<record>
+						<cd1>2</cd1>
+						<cd2>22</cd2>
+						<cd3>222</cd3>
+						<cd4>2222</cd4>
+						<cd5>2000</cd5>
+					</record>
+					<record>
+						<cd1>3</cd1>
+						<cd2>33</cd2>
+						<cd3>333</cd3>
+						<cd4>3333</cd4>
+						<cd5>3000</cd5>
+					</record>
+					<record>
+						<cd1>4</cd1>
+						<cd2>44</cd2>
+						<cd3>444</cd3>
+						<cd4>4444</cd4>
+						<cd5>4000</cd5>
+					</record>
+					<record>
+						<cd1>5</cd1>
+						<cd2>55</cd2>
+						<cd3>555</cd3>
+						<cd4>5555</cd4>
+						<cd5>5000</cd5>
+					</record>
+					<record>
+						<cd1>6</cd1>
+						<cd2>66</cd2>
+						<cd3>666</cd3>
+						<cd4>6666</cd4>
+						<cd5>6000</cd5>
+					</record>
+					<record>
+						<cd1>7</cd1>
+						<cd2>77</cd2>
+						<cd3>777</cd3>
+						<cd4>7777</cd4>
+						<cd5>7000</cd5>
+					</record>
+					<record>
+						<cd1>8</cd1>
+						<cd2>88</cd2>
+						<cd3>888</cd3>
+						<cd4>8888</cd4>
+						<cd5>8000</cd5>
+					</record>
+					<record>
+						<cd1>9</cd1>
+						<cd2>99</cd2>
+						<cd3>999</cd3>
+						<cd4>9999</cd4>
+						<cd5>9000</cd5>
+					</record>
+					<record>
+						<cd1>10</cd1>
+						<cd2>100</cd2>
+						<cd3>1000</cd3>
+						<cd4>10000</cd4>
+						<cd5>10000</cd5>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image Height="35" Id="Image0" ImageID="search_bg" Left="8" TabOrder="13" Top="8" Width="720"></Image>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" BindDataset="ds_gd1" BkColor2="default" BoldHead="true" Border="Flat" Bottom="313" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" FillArea="TRUE" HeadBorder="Flat" HeadHeight="21" Height="233" Id="GRD_Normal0" InputPanel="FALSE" Left="9" LineColor="default" LineType="ExVERT" MinWidth="100" OnHScroll="GRD_Normal0_OnHScroll" Right="731" RowHeight="21" Style="Grid_01" TabOrder="1" TabStop="true" Top="80" TopSummary="TRUE" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="722">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="17"/>
+						<col width="120"/>
+						<col width="120"/>
+						<col width="120"/>
+						<col width="120"/>
+						<col width="120"/>
+						<col width="120"/>
+						<col width="120"/>
+					</columns>
+					<head>
+						<cell col="0" color="white" colspan="2" display="text" text="Year"/>
+						<cell col="2" color="white" display="text" text="Item&#32;1"/>
+						<cell align="center" col="3" color="white" display="text" text="Item&#32;2"/>
+						<cell align="center" col="4" color="white" display="text" text="Item&#32;3"/>
+						<cell align="center" col="5" color="white" display="text" text="Item&#32;4"/>
+						<cell align="center" col="6" color="white" display="text" text="Item5"/>
+						<cell align="center" col="7" color="white" display="text" text="Total&#32;Sum"/>
+					</head>
+					<body>
+						<cell align="center" celltype="head" col="0" color="white" display="text" expr='decode(ds_gd1.row,&#32;-1,&#32;&quot;&quot;,&#32;row,&#32;&quot;&#32;&quot;,&quot;&quot;)' font="expr:iif(rowlevel&gt;0,&apos;Tahoma,9,Bold&apos;,&apos;Tahoma,9&apos;)" text="&#32;"/>
+						<cell align="center" bkcolor="white" bkcolor2="#eceef1" col="1" colid="Year" display="text" font="expr:iif(rowlevel&gt;0,&apos;Tahoma,9,Bold&apos;,&apos;Tahoma,9&apos;)" subsumtext="Total&#32;by&#32;year" suppress="1"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="2" colid="cd1" display="number" edit="normal" font="expr:iif(rowlevel&gt;0,&apos;Tahoma,9,Bold&apos;,&apos;Tahoma,9&apos;)"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="3" colid="cd2" display="number" edit="normal" font="expr:iif(rowlevel&gt;0,&apos;Tahoma,9,Bold&apos;,&apos;Tahoma,9&apos;)"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="4" colid="cd3" display="number" edit="normal" font="expr:iif(rowlevel&gt;0,&apos;Tahoma,9,Bold&apos;,&apos;Tahoma,9&apos;)"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="5" colid="cd4" display="number" edit="normal" font="expr:iif(rowlevel&gt;0,&apos;Tahoma,9,Bold&apos;,&apos;Tahoma,9&apos;)"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="6" colid="cd5" display="number" edit="normal" font="expr:iif(rowlevel&gt;0,&apos;Tahoma,9,Bold&apos;,&apos;Tahoma,9&apos;)"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="7" colid="cd6" color="blue" display="number" edit="normal" expr="toNumber(cd1)&#32;+&#32;toNumber(cd2)&#32;+&#32;toNumber(cd3)&#32;+&#32;toNumber(cd4)&#32;+&#32;toNumber(cd&#32;5)" font="expr:iif(rowlevel&gt;0,&apos;Tahoma,9,Bold&apos;,&apos;Tahoma,9&apos;)"/>
+					</body>
+					<summary>
+						<cell align="right" bkcolor="#eeeeee" col="0" display="text" font=",9,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="1" color="red" display="text" font="Tahoma,10,Bold" text="Total"/>
+						<cell align="right" bkcolor="#eeeeee" col="2" color="red" display="number" expr='sum(&quot;cd1&quot;)' font="Tahoma,10,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="3" color="red" display="number" expr='sum(&quot;cd2&quot;)' font="Tahoma,10,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="4" color="red" display="number" expr='sum(&quot;cd3&quot;)' font="Tahoma,10,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="5" color="red" display="number" expr='sum(&quot;cd4&quot;)' font="Tahoma,10,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="6" color="red" display="number" expr='sum(&quot;cd5&quot;)' font="Tahoma,10,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="7" color="green" display="text" expr='NumFormat(ToNumber(Sum(&quot;cd1&quot;))&#32;+&#32;ToNumber(Sum(&quot;cd2&quot;))&#32;+&#32;ToNumber(Sum(&quot;cd3&quot;))&#32;+&#32;ToNumber(Sum(&quot;cd4&quot;))&#32;+&#32;ToNumber(Sum(&quot;cd5&quot;)))' font=",10,Bold"/>
+					</summary>
+				</format>
+			</contents>
+		</Grid>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" BindDataset="ds_gd2" BkColor2="default" BoldHead="true" Border="Flat" Bottom="531" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" FillArea="TRUE" HeadBorder="Flat" HeadHeight="21" Height="211" Id="GRD_Normal1" InputPanel="FALSE" Left="8" LineColor="default" LineType="ExVERT" MinWidth="100" Right="730" RowHeight="21" Style="Grid_02" TabOrder="2" TabStop="true" Top="320" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="722">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="17"/>
+						<col width="164"/>
+						<col width="162"/>
+						<col width="152"/>
+						<col width="152"/>
+						<col width="159"/>
+					</columns>
+					<head>
+						<cell col="0" color="white" colspan="2" display="text" text="Title"/>
+						<cell align="center" col="2" color="white" display="text" text="Title"/>
+						<cell align="center" col="3" color="white" display="text" text="Title"/>
+						<cell align="center" col="4" color="white" display="text" text="Title"/>
+						<cell align="center" col="5" color="white" display="text" text="Title"/>
+					</head>
+					<body>
+						<cell align="center" celltype="head" col="0" color="white" display="text" expr='decode(ds_gd2.row,&#32;-1,&#32;&quot;&quot;,&#32;row,&#32;&quot;&#32;&quot;,&quot;&quot;)' font="ü,7" text="&#32;"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="1" colid="cd1" display="number" edit="normal"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="2" colid="cd2" display="number" edit="normal"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="3" colid="cd3" display="number" edit="normal"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="4" colid="cd4" display="number" edit="normal"/>
+						<cell align="right" bkcolor="white" bkcolor2="#eceef1" col="5" colid="cd5" display="number" edit="normal"/>
+					</body>
+					<summary>
+						<cell align="right" bkcolor="#eeeeee" col="0" display="text" font=",9,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="1" display="text" expr='&quot;AVG&quot;&#32;+&#32;&quot;&#32;:&#32;&quot;&#32;+&#32;NumFormat(Avg(&quot;cd1&quot;),&#32;2)' font=",9,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="2" display="text" expr='&quot;RowCount&quot;&#32;+&#32;&quot;&#32;:&#32;&quot;&#32;+&#32;Numformat(count(&quot;cd2&quot;))' font=",9,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="3" display="text" expr='&quot;Min&quot;&#32;+&#32;&quot;&#32;:&#32;&quot;&#32;+&#32;NumFormat(Min(&quot;cd3&quot;))' font=",9,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="4" display="text" expr='&quot;MAX&quot;&#32;+&#32;&quot;&#32;:&#32;&quot;&#32;+&#32;NumFormat(Max(&quot;cd4&quot;))' font=",9,Bold"/>
+						<cell align="right" bkcolor="#eeeeee" col="5" display="text" expr='&quot;SUM&quot;&#32;+&#32;&quot;&#32;:&#32;&quot;&#32;+&#32;NumFormat(sum(&quot;cd5&quot;))' font=",9,Bold"/>
+					</summary>
+				</format>
+			</contents>
+		</Grid>
+		<Image Height="18" Id="Image5" Left="635" TabOrder="3" Text="(unit&#32;:&#32;1000&#32;Won)" Top="47" Width="103"></Image>
+		<Image Height="14" Id="Image4" ImageID="title_icon01" Left="5" TabOrder="5" Top="87" Width="14"></Image>
+		<Static Border="None" Color="#444444" Font="Arial,10,Bold" Height="19" Id="Static1" Left="23" TabOrder="4" Text="Sum&#32;of&#32;Rows&#32;or&#32;Columns" Top="45" VAlign="Middle" Width="225"></Static>
+		<Static Border="None" Font="&#32;,9,Bold" Height="20" Id="Static2" Left="20" TabOrder="8" Text="ȣ" Top="13" VAlign="Middle" Width="80"></Static>
+		<Edit AutoSelect="TRUE" Border="Flat" Height="20" Id="edt_prod" ImeMode="none" Left="76" LeftMargin="2" MaxLength="20" Style="if_input" TabOrder="6" Top="13" Width="118"></Edit>
+		<Button ButtonStyle="TRUE" Height="20" Id="btn_action" ImageID="m_bt_txt_03" Left="667" OnClick="Btn_cd_Filter_OnClick" Style="cm_btn" TabOrder="7" Text="&#32;" Top="14" Width="50"></Button>
+		<Edit AutoSelect="TRUE" Border="Flat" Height="20" Id="edt_serial" ImeMode="none" Left="267" LeftMargin="2" MaxLength="20" Style="if_input" TabOrder="9" Top="13" Width="118"></Edit>
+		<Static Border="None" Font="&#32;,9,Bold" Height="20" Id="Static0" Left="207" TabOrder="10" Text="Serial&#32;No." Top="13" VAlign="Middle" Width="80"></Static>
+		<Radio CodeColumn="code" ColumnCount="3" DataColumn="name" Height="20" Id="rd_size" INDEX="-1" InnerDataset="ds_cnt" Left="478" Style="text_black" TabOrder="11" Top="13" Value="2" Width="140"></Radio>
+		<Static Border="None" Font="&#32;,9,Bold" Height="20" Id="Static3" Left="397" TabOrder="12" Text="Size(inch)" Top="13" VAlign="Middle" Width="80"></Static>
+		<Static Height="13" Id="Static4" Left="744" TabOrder="14" Text="Grid_01" Top="120" Width="51"></Static>
+		<Static Height="13" Id="Static5" Left="744" TabOrder="15" Text="Grid_02" Top="352" Width="51"></Static>
+	</Form>
+</Window>

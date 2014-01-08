@@ -1,0 +1,4885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="608" Id="perform_grid" Left="8" OnKillFocus="perform_grid_OnKillFocus" OnLoadCompleted="perform_grid_OnLoadCompleted" OnUnloadCompleted="perform_grid_OnUnloadCompleted" PidAttrib="7" Style="GreenStyle" Title="그리드기본기능" Top="8" Ver="1.0" Width="998" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="Dataset0" OnLoadCompleted="Dataset0_OnLoadCompleted" ServiceDSetID="output">
+				<Contents>
+					<colinfo id="bl" size="50" type="STRING"/>
+					<colinfo id="cham" size="50" type="STRING"/>
+					<colinfo id="chang" size="50" type="STRING"/>
+					<colinfo id="chdanga" size="11" type="INT"/>
+					<colinfo id="chdate" size="19" type="DATE"/>
+					<colinfo id="chno" size="11" type="INT"/>
+					<colinfo id="cnt" size="11" type="INT"/>
+					<colinfo id="cstname" size="50" type="STRING"/>
+					<colinfo id="dan" size="50" type="STRING"/>
+					<colinfo id="hangnum" size="11" type="INT"/>
+					<colinfo id="ptcode" size="50" type="STRING"/>
+					<colinfo id="ptname" size="50" type="STRING"/>
+					<colinfo id="smallsum" size="11" type="INT"/>
+					<colinfo id="so" size="50" type="STRING"/>
+					<colinfo id="temp1" size="50" type="STRING"/>
+					<colinfo id="temp2" size="50" type="STRING"/>
+					<colinfo id="totalsum" size="11" type="INT"/>
+					<record>
+						<bl/>
+						<cham/>
+						<chang>B100-200</chang>
+						<chdanga>25000</chdanga>
+						<chdate>20050608</chdate>
+						<chno>6</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>MOUSE-01</ptcode>
+						<ptname>PC&#32;Mouse(Red)</ptname>
+						<smallsum>250000</smallsum>
+						<so/>
+						<temp1/>
+						<temp2/>
+						<totalsum>250000</totalsum>
+					</record>
+					<record>
+						<bl/>
+						<cham/>
+						<chang>B100-200</chang>
+						<chdanga>25000</chdanga>
+						<chdate>20050606</chdate>
+						<chno>7</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>MOUSE-01</ptcode>
+						<ptname>PC&#32;Mouse(Red)</ptname>
+						<smallsum>250000</smallsum>
+						<so/>
+						<temp1/>
+						<temp2/>
+						<totalsum>290464</totalsum>
+					</record>
+					<record>
+						<bl>909</bl>
+						<cham/>
+						<chang>A-10</chang>
+						<chdanga>20232</chdanga>
+						<chdate>20050606</chdate>
+						<chno>7</chno>
+						<cnt>2</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>12</hangnum>
+						<ptcode>POWER01</ptcode>
+						<ptname>Power350</ptname>
+						<smallsum>40464</smallsum>
+						<so/>
+						<temp1/>
+						<temp2/>
+						<totalsum>290464</totalsum>
+					</record>
+					<record>
+						<bl/>
+						<cham/>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050503</chdate>
+						<chno>5</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>CASE-02</ptcode>
+						<ptname>PC&#32;Case(White)</ptname>
+						<smallsum>200000</smallsum>
+						<so/>
+						<temp1/>
+						<temp2/>
+						<totalsum>5955572</totalsum>
+					</record>
+					<record>
+						<bl>123-123</bl>
+						<cham/>
+						<chang>B100-200</chang>
+						<chdanga>555555</chdanga>
+						<chdate>20050503</chdate>
+						<chno>5</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>9</hangnum>
+						<ptcode>MOUSE-01</ptcode>
+						<ptname>PC&#32;Mouse(Red)</ptname>
+						<smallsum>5555550</smallsum>
+						<so/>
+						<temp1/>
+						<temp2/>
+						<totalsum>5955572</totalsum>
+					</record>
+					<record>
+						<bl>909</bl>
+						<cham/>
+						<chang>A-10</chang>
+						<chdanga>11</chdanga>
+						<chdate>20050503</chdate>
+						<chno>5</chno>
+						<cnt>2</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>10</hangnum>
+						<ptcode>POWER01</ptcode>
+						<ptname>Power350</ptname>
+						<smallsum>22</smallsum>
+						<so/>
+						<temp1/>
+						<temp2/>
+						<totalsum>5955572</totalsum>
+					</record>
+					<record>
+						<bl/>
+						<cham/>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050503</chdate>
+						<chno>5</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>15</hangnum>
+						<ptcode>CASE-02</ptcode>
+						<ptname>PC&#32;Case(White)</ptname>
+						<smallsum>200000</smallsum>
+						<so/>
+						<temp1/>
+						<temp2/>
+						<totalsum>5955572</totalsum>
+					</record>
+					<record>
+						<bl/>
+						<cham/>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050418</chdate>
+						<chno>3</chno>
+						<cnt>1</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>CASE-02</ptcode>
+						<ptname>PC&#32;Case(White)</ptname>
+						<smallsum>20000</smallsum>
+						<so/>
+						<temp1>3</temp1>
+						<temp2/>
+						<totalsum>40000</totalsum>
+					</record>
+					<record>
+						<bl>100-100-100</bl>
+						<cham/>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050418</chdate>
+						<chno>3</chno>
+						<cnt>1</cnt>
+						<cstname>Samsung&#32;distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>2</hangnum>
+						<ptcode>CASE-01</ptcode>
+						<ptname>PC&#32;Case(Black)</ptname>
+						<smallsum>20000</smallsum>
+						<so/>
+						<temp1>1</temp1>
+						<temp2/>
+						<totalsum>40000</totalsum>
+					</record>
+					<record>
+						<bl/>
+						<cham/>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050414</chdate>
+						<chno>4</chno>
+						<cnt>10</cnt>
+						<cstname>Hongik&#32;product</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>CASE-02</ptcode>
+						<ptname>PC&#32;Case(White)</ptname>
+						<smallsum>200000</smallsum>
+						<so/>
+						<temp1/>
+						<temp2/>
+						<totalsum>200000</totalsum>
+					</record>
+					<record>
+						<bl>100-100-100</bl>
+						<cham/>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050408</chdate>
+						<chno>2</chno>
+						<cnt>2</cnt>
+						<cstname>Samsung&#32;Distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>CASE-01</ptcode>
+						<ptname>PC&#32;Case(Black)</ptname>
+						<smallsum>40000</smallsum>
+						<so/>
+						<temp1>1</temp1>
+						<temp2/>
+						<totalsum>115000</totalsum>
+					</record>
+					<record>
+						<bl>123-123</bl>
+						<cham/>
+						<chang>B100-200</chang>
+						<chdanga>25000</chdanga>
+						<chdate>20050408</chdate>
+						<chno>2</chno>
+						<cnt>2</cnt>
+						<cstname>Samsung&#32;Distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>2</hangnum>
+						<ptcode>MOUSE-01</ptcode>
+						<ptname>PC&#32;Mouse(Red)</ptname>
+						<smallsum>50000</smallsum>
+						<so/>
+						<temp1>2</temp1>
+						<temp2/>
+						<totalsum>115000</totalsum>
+					</record>
+					<record>
+						<bl/>
+						<cham/>
+						<chang>B100-100</chang>
+						<chdanga>25000</chdanga>
+						<chdate>20050408</chdate>
+						<chno>2</chno>
+						<cnt>1</cnt>
+						<cstname>Samsung&#32;Distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>4</hangnum>
+						<ptcode>MOUSE-02</ptcode>
+						<ptname>PC&#32;Mouse(Blue)</ptname>
+						<smallsum>25000</smallsum>
+						<so/>
+						<temp1/>
+						<temp2/>
+						<totalsum>115000</totalsum>
+					</record>
+					<record>
+						<bl>123-123</bl>
+						<cham/>
+						<chang>B100-200</chang>
+						<chdanga>25000</chdanga>
+						<chdate>20050408</chdate>
+						<chno>1</chno>
+						<cnt>5</cnt>
+						<cstname>Samsung&#32;Distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>1</hangnum>
+						<ptcode>MOUSE-01</ptcode>
+						<ptname>PC&#32;Mouse(Red)</ptname>
+						<smallsum>125000</smallsum>
+						<so>S/O&#32;00001111</so>
+						<temp1>2</temp1>
+						<temp2/>
+						<totalsum>325000</totalsum>
+					</record>
+					<record>
+						<bl/>
+						<cham/>
+						<chang>A100-100</chang>
+						<chdanga>20000</chdanga>
+						<chdate>20050408</chdate>
+						<chno>1</chno>
+						<cnt>10</cnt>
+						<cstname>Samsung&#32;Distribution</cstname>
+						<dan>EA</dan>
+						<hangnum>2</hangnum>
+						<ptcode>CASE-02</ptcode>
+						<ptname>PC&#32;Case(White)</ptname>
+						<smallsum>200000</smallsum>
+						<so/>
+						<temp1/>
+						<temp2/>
+						<totalsum>325000</totalsum>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="DS_Sort">
+				<Contents>
+					<colinfo id="chno" size="10" type="INT"/>
+					<colinfo id="chdate" size="14" type="DATE"/>
+					<colinfo id="cstname" size="255" type="STRING"/>
+					<colinfo id="totalsum" size="10" type="INT"/>
+					<colinfo id="hangnum" size="10" type="INT"/>
+					<colinfo id="ptcode" size="255" type="STRING"/>
+					<colinfo id="ptname" size="255" type="STRING"/>
+					<colinfo id="chang" size="255" type="STRING"/>
+					<colinfo id="bl" size="255" type="STRING"/>
+					<colinfo id="so" size="255" type="STRING"/>
+					<colinfo id="chdanga" size="10" type="INT"/>
+					<colinfo id="cnt" size="10" type="INT"/>
+					<colinfo id="dan" size="255" type="STRING"/>
+					<colinfo id="smallsum" size="10" type="INT"/>
+					<colinfo id="cham" size="255" type="STRING"/>
+					<colinfo id="temp1" size="255" type="STRING"/>
+					<colinfo id="temp2" size="255" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="DS_Drag">
+				<Contents>
+					<colinfo id="chno" size="10" type="INT"/>
+					<colinfo id="chdate" size="14" type="DATE"/>
+					<colinfo id="cstname" size="255" type="STRING"/>
+					<colinfo id="totalsum" size="10" type="INT"/>
+					<colinfo id="hangnum" size="10" type="INT"/>
+					<colinfo id="ptcode" size="255" type="STRING"/>
+					<colinfo id="ptname" size="255" type="STRING"/>
+					<colinfo id="chang" size="255" type="STRING"/>
+					<colinfo id="bl" size="255" type="STRING"/>
+					<colinfo id="so" size="255" type="STRING"/>
+					<colinfo id="chdanga" size="10" type="INT"/>
+					<colinfo id="cnt" size="10" type="INT"/>
+					<colinfo id="dan" size="255" type="STRING"/>
+					<colinfo id="smallsum" size="10" type="INT"/>
+					<colinfo id="cham" size="255" type="STRING"/>
+					<colinfo id="temp1" size="255" type="STRING"/>
+					<colinfo id="temp2" size="255" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="DS_Drag_tmp">
+				<Contents>
+					<colinfo Id="chno" Size="10" Type="INT"/>
+					<colinfo Id="chdate" Size="14" Type="DATE"/>
+					<colinfo Id="cstname" Size="255" Type="STRING"/>
+					<colinfo Id="totalsum" Size="10" Type="INT"/>
+					<colinfo Id="hangnum" Size="10" Type="INT"/>
+					<colinfo Id="ptcode" Size="255" Type="STRING"/>
+					<colinfo Id="ptname" Size="255" Type="STRING"/>
+					<colinfo Id="chang" Size="255" Type="STRING"/>
+					<colinfo Id="bl" Size="255" Type="STRING"/>
+					<colinfo Id="so" Size="255" Type="STRING"/>
+					<colinfo Id="chdanga" Size="10" Type="INT"/>
+					<colinfo Id="cnt" Size="10" Type="INT"/>
+					<colinfo Id="dan" Size="255" Type="STRING"/>
+					<colinfo Id="smallsum" Size="10" Type="INT"/>
+					<colinfo Id="cham" Size="255" Type="STRING"/>
+					<colinfo Id="temp1" Size="255" Type="STRING"/>
+					<colinfo Id="temp2" Size="255" Type="STRING"/>
+					<record>
+						<chno></chno>
+						<chdate></chdate>
+						<cstname></cstname>
+						<totalsum></totalsum>
+						<hangnum></hangnum>
+						<ptcode></ptcode>
+						<ptname></ptname>
+						<chang></chang>
+						<bl></bl>
+						<so></so>
+						<chdanga></chdanga>
+						<cnt></cnt>
+						<dan></dan>
+						<smallsum></smallsum>
+						<cham></cham>
+						<temp1></temp1>
+						<temp2></temp2>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" GroupKey="Fab,Sect,Tech" Id="DS_group">
+				<Contents>
+					<colinfo id="code" size="255" type="STRING"/>
+					<colinfo id="Cum0" size="15" type="DECIMAL"/>
+					<colinfo id="Cum1" size="15" type="DECIMAL"/>
+					<colinfo id="Cum2" size="15" type="DECIMAL"/>
+					<colinfo id="Cum3" size="15" type="DECIMAL"/>
+					<colinfo id="Cum4" size="15" type="DECIMAL"/>
+					<colinfo id="Day0" size="15" type="DECIMAL"/>
+					<colinfo id="Day1" size="15" type="DECIMAL"/>
+					<colinfo id="Day2" size="15" type="DECIMAL"/>
+					<colinfo id="Day3" size="15" type="DECIMAL"/>
+					<colinfo id="Day4" size="15" type="DECIMAL"/>
+					<colinfo id="FAB" size="255" type="STRING"/>
+					<colinfo id="plan0" size="15" type="DECIMAL"/>
+					<colinfo id="plan1" size="15" type="DECIMAL"/>
+					<colinfo id="plan2" size="15" type="DECIMAL"/>
+					<colinfo id="plan3" size="15" type="DECIMAL"/>
+					<colinfo id="plan4" size="15" type="DECIMAL"/>
+					<colinfo id="prod" size="255" type="STRING"/>
+					<colinfo id="product" size="255" type="STRING"/>
+					<colinfo id="Sect" size="255" type="STRING"/>
+					<colinfo id="Tech" size="255" type="STRING"/>
+					<record>
+						<code>7CL</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>272</Cum3>
+						<Cum4>234</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>123</Day3>
+						<Day4>106</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU323222Q-RT</prod>
+						<product>PC&#32;32M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>7CK</code>
+						<Cum0/>
+						<Cum1>4579</Cum1>
+						<Cum2>4621</Cum2>
+						<Cum3>4085</Cum3>
+						<Cum4>808</Cum4>
+						<Day0/>
+						<Day1>723</Day1>
+						<Day2>0</Day2>
+						<Day3>300</Day3>
+						<Day4>63</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0/>
+						<plan1>7700</plan1>
+						<plan2>7700</plan2>
+						<plan3>7700</plan3>
+						<plan4>1672</plan4>
+						<prod>HY5PS56821F</prod>
+						<product>PC&#32;256M&#32;DDR2</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>7CD</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2>3644</Cum2>
+						<Cum3>3411</Cum3>
+						<Cum4>1209</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2>196</Day2>
+						<Day3>80</Day3>
+						<Day4>25</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU283222AF</prod>
+						<product>PC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>7CD</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>165</Cum3>
+						<Cum4>58</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>23</Day3>
+						<Day4>8</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU283222AFA</prod>
+						<product>PC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>7CD</code>
+						<Cum0>0</Cum0>
+						<Cum1>2681</Cum1>
+						<Cum2>0</Cum2>
+						<Cum3>0</Cum3>
+						<Cum4>0</Cum4>
+						<Day0>0</Day0>
+						<Day1>73</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0>4000</plan0>
+						<plan1>8400</plan1>
+						<plan2>8400</plan2>
+						<plan3>8400</plan3>
+						<plan4>3180</plan4>
+						<prod>HY5DU283222AQ</prod>
+						<product>PC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>7CD</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>1637</Cum3>
+						<Cum4>582</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>341</Day3>
+						<Day4>117</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU573222AFM</prod>
+						<product>PC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>7DC</code>
+						<Cum0>11250</Cum0>
+						<Cum1>3189</Cum1>
+						<Cum2>2824</Cum2>
+						<Cum3>3107</Cum3>
+						<Cum4>530</Cum4>
+						<Day0>0</Day0>
+						<Day1>38</Day1>
+						<Day2>324</Day2>
+						<Day3>362</Day3>
+						<Day4>63</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0>27000</plan0>
+						<plan1>7500</plan1>
+						<plan2>7500</plan2>
+						<plan3>7500</plan3>
+						<plan4>1247</plan4>
+						<prod>HY5PS12421F</prod>
+						<product>GC&#32;512M&#32;DDR2</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7DH</code>
+						<Cum0/>
+						<Cum1>24</Cum1>
+						<Cum2>86</Cum2>
+						<Cum3>24</Cum3>
+						<Cum4>3</Cum4>
+						<Day0/>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0/>
+						<plan1>0</plan1>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5PS12821AF</prod>
+						<product>GC&#32;512M&#32;DDR2</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7DC</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>25</Cum3>
+						<Cum4>4</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>25</Day3>
+						<Day4>4</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5PS1G421MP</prod>
+						<product>GC&#32;512M&#32;DDR2</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7DF</code>
+						<Cum0>1050</Cum0>
+						<Cum1>71</Cum1>
+						<Cum2>7</Cum2>
+						<Cum3>0</Cum3>
+						<Cum4>0</Cum4>
+						<Day0>0</Day0>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0>1000</plan0>
+						<plan1>100</plan1>
+						<plan2>100</plan2>
+						<plan3>100</plan3>
+						<plan4>17</plan4>
+						<prod>HY5RS573225F</prod>
+						<product>GC&#32;256M&#32;DDR3</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7DA</code>
+						<Cum0>30200</Cum0>
+						<Cum1>31342</Cum1>
+						<Cum2>28839</Cum2>
+						<Cum3>30097</Cum3>
+						<Cum4>13066</Cum4>
+						<Day0>2250</Day0>
+						<Day1>2585</Day1>
+						<Day2>1752</Day2>
+						<Day3>2178</Day3>
+						<Day4>942</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0>47000</plan0>
+						<plan1>59200</plan1>
+						<plan2>59200</plan2>
+						<plan3>59200</plan3>
+						<plan4>24787</plan4>
+						<prod>HY5DU561622DT</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7DA</code>
+						<Cum0/>
+						<Cum1>2716</Cum1>
+						<Cum2>3113</Cum2>
+						<Cum3>2480</Cum3>
+						<Cum4>1031</Cum4>
+						<Day0/>
+						<Day1>0</Day1>
+						<Day2>416</Day2>
+						<Day3>315</Day3>
+						<Day4>137</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0/>
+						<plan1>0</plan1>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU561622DTHS</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7DA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2>31</Cum2>
+						<Cum3/>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2>24</Day2>
+						<Day3/>
+						<Day4/>
+						<FAB>IFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3/>
+						<plan4/>
+						<prod>HY5DU561622DTO</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7DG</code>
+						<Cum0>6450</Cum0>
+						<Cum1>3732</Cum1>
+						<Cum2>3601</Cum2>
+						<Cum3>3537</Cum3>
+						<Cum4>903</Cum4>
+						<Day0>0</Day0>
+						<Day1>100</Day1>
+						<Day2>176</Day2>
+						<Day3>50</Day3>
+						<Day4>14</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0>7000</plan0>
+						<plan1>5800</plan1>
+						<plan2>5800</plan2>
+						<plan3>5800</plan3>
+						<plan4>1604</plan4>
+						<prod>HY5DU573222F</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7DM</code>
+						<Cum0>1050</Cum0>
+						<Cum1/>
+						<Cum2>14</Cum2>
+						<Cum3/>
+						<Cum4/>
+						<Day0>0</Day0>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3/>
+						<Day4/>
+						<FAB>IFAB7</FAB>
+						<plan0>0</plan0>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3/>
+						<plan4/>
+						<prod>HY5MS5B6LF</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7DE</code>
+						<Cum0/>
+						<Cum1>25</Cum1>
+						<Cum2>61</Cum2>
+						<Cum3>225</Cum3>
+						<Cum4>10</Cum4>
+						<Day0/>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0/>
+						<plan1>0</plan1>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5PS1G831F</prod>
+						<product>GC&#32;1G&#32;DDR2</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7DL</code>
+						<Cum0>1200</Cum0>
+						<Cum1>396</Cum1>
+						<Cum2>123</Cum2>
+						<Cum3>92</Cum3>
+						<Cum4>38</Cum4>
+						<Day0>900</Day0>
+						<Day1>24</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0>4000</plan0>
+						<plan1>0</plan1>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU263222BF</prod>
+						<product>GC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>7EA</code>
+						<Cum0>0</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>52</Cum2>
+						<Cum3>0</Cum3>
+						<Cum4>0</Cum4>
+						<Day0>0</Day0>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB7</FAB>
+						<plan0>3000</plan0>
+						<plan1>300</plan1>
+						<plan2>300</plan2>
+						<plan3>300</plan3>
+						<plan4>50</plan4>
+						<prod>HY5DU121622CT</prod>
+						<product>DC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.09</Tech>
+					</record>
+					<record>
+						<code>7EA</code>
+						<Cum0>150</Cum0>
+						<Cum1>8</Cum1>
+						<Cum2/>
+						<Cum3/>
+						<Cum4/>
+						<Day0>0</Day0>
+						<Day1>0</Day1>
+						<Day2/>
+						<Day3/>
+						<Day4/>
+						<FAB>IFAB7</FAB>
+						<plan0>0</plan0>
+						<plan1>0</plan1>
+						<plan2/>
+						<plan3/>
+						<plan4/>
+						<prod>HY5DU121622CT-SG</prod>
+						<product>DC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.09</Tech>
+					</record>
+					<record>
+						<code>6BG</code>
+						<Cum0>3000</Cum0>
+						<Cum1>2653</Cum1>
+						<Cum2>3411</Cum2>
+						<Cum3>3515</Cum3>
+						<Cum4>7187</Cum4>
+						<Day0>0</Day0>
+						<Day1>250</Day1>
+						<Day2>0</Day2>
+						<Day3>116</Day3>
+						<Day4>243</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0>5700</plan0>
+						<plan1>6100</plan1>
+						<plan2>6100</plan2>
+						<plan3>6100</plan3>
+						<plan4>12615</plan4>
+						<prod>HY57V161610ET</prod>
+						<product>6TH&#32;16M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.15</Tech>
+					</record>
+					<record>
+						<code>6CP</code>
+						<Cum0>2400</Cum0>
+						<Cum1>2763</Cum1>
+						<Cum2>2167</Cum2>
+						<Cum3>2110</Cum3>
+						<Cum4>1396</Cum4>
+						<Day0>0</Day0>
+						<Day1>423</Day1>
+						<Day2>98</Day2>
+						<Day3>186</Day3>
+						<Day4>122</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0>5000</plan0>
+						<plan1>4200</plan1>
+						<plan2>4200</plan2>
+						<plan3>4200</plan3>
+						<plan4>2741</plan4>
+						<prod>HY57V643220DT</prod>
+						<product>PC&#32;64M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CA</code>
+						<Cum0/>
+						<Cum1>0</Cum1>
+						<Cum2>8376</Cum2>
+						<Cum3>8252</Cum3>
+						<Cum4>2657</Cum4>
+						<Day0/>
+						<Day1>0</Day1>
+						<Day2>496</Day2>
+						<Day3>1002</Day3>
+						<Day4>325</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1>15100</plan1>
+						<plan2>15100</plan2>
+						<plan3>15100</plan3>
+						<plan4>4554</plan4>
+						<prod>HY57V56820CT</prod>
+						<product>PC&#32;256M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CF</code>
+						<Cum0/>
+						<Cum1>1088</Cum1>
+						<Cum2>490</Cum2>
+						<Cum3>271</Cum3>
+						<Cum4>56</Cum4>
+						<Day0/>
+						<Day1>0</Day1>
+						<Day2>82</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1>2400</plan1>
+						<plan2>2400</plan2>
+						<plan3>2400</plan3>
+						<plan4>501</plan4>
+						<prod>HY5W5A6DF</prod>
+						<product>PC&#32;256M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CF</code>
+						<Cum0/>
+						<Cum1>75</Cum1>
+						<Cum2>200</Cum2>
+						<Cum3/>
+						<Cum4/>
+						<Day0/>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3/>
+						<Day4/>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1>0</plan1>
+						<plan2>0</plan2>
+						<plan3/>
+						<plan4/>
+						<prod>HY5W5A6DF-ALD</prod>
+						<product>PC&#32;256M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>72</Cum3>
+						<Cum4>11</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5S5B6DFM</prod>
+						<product>PC&#32;256M&#32;SDLP</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CB</code>
+						<Cum0>6900</Cum0>
+						<Cum1>6710</Cum1>
+						<Cum2>7015</Cum2>
+						<Cum3>7011</Cum3>
+						<Cum4>2088</Cum4>
+						<Day0>600</Day0>
+						<Day1>633</Day1>
+						<Day2>192</Day2>
+						<Day3>271</Day3>
+						<Day4>82</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0>12000</plan0>
+						<plan1>11300</plan1>
+						<plan2>11300</plan2>
+						<plan3>11300</plan3>
+						<plan4>3403</plan4>
+						<prod>HY5DU561622CT</prod>
+						<product>PC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CA</code>
+						<Cum0>25500</Cum0>
+						<Cum1>27191</Cum1>
+						<Cum2>19239</Cum2>
+						<Cum3>18980</Cum3>
+						<Cum4>6118</Cum4>
+						<Day0>1800</Day0>
+						<Day1>1705</Day1>
+						<Day2>931</Day2>
+						<Day3>970</Day3>
+						<Day4>314</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0>48300</plan0>
+						<plan1>32600</plan1>
+						<plan2>32600</plan2>
+						<plan3>32600</plan3>
+						<plan4>10197</plan4>
+						<prod>HY5DU56822BT</prod>
+						<product>PC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2>14</Cum2>
+						<Cum3/>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3/>
+						<Day4/>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3/>
+						<plan4/>
+						<prod>HY5DU56822BTO</prod>
+						<product>PC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CC</code>
+						<Cum0>4800</Cum0>
+						<Cum1>2167</Cum1>
+						<Cum2>1258</Cum2>
+						<Cum3>1099</Cum3>
+						<Cum4>551</Cum4>
+						<Day0>600</Day0>
+						<Day1>0</Day1>
+						<Day2>174</Day2>
+						<Day3>77</Day3>
+						<Day4>38</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0>8000</plan0>
+						<plan1>4500</plan1>
+						<plan2>4500</plan2>
+						<plan3>4500</plan3>
+						<plan4>2243</plan4>
+						<prod>HY5DU281622ET</prod>
+						<product>PC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CC</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2>1279</Cum2>
+						<Cum3>833</Cum3>
+						<Cum4>417</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2>419</Day2>
+						<Day3>27</Day3>
+						<Day4>13</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU281622ETM</prod>
+						<product>PC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CD</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2>3015</Cum2>
+						<Cum3>1322</Cum3>
+						<Cum4>484</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2>75</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU283222AF</prod>
+						<product>PC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CD</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>1225</Cum3>
+						<Cum4>457</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>25</Day3>
+						<Day4>9</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU283222AFA</prod>
+						<product>PC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CD</code>
+						<Cum0>4200</Cum0>
+						<Cum1>2590</Cum1>
+						<Cum2>398</Cum2>
+						<Cum3>714</Cum3>
+						<Cum4>267</Cum4>
+						<Day0>0</Day0>
+						<Day1>150</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0>6000</plan0>
+						<plan1>6900</plan1>
+						<plan2>6900</plan2>
+						<plan3>6900</plan3>
+						<plan4>2575</plan4>
+						<prod>HY5DU283222AQ</prod>
+						<product>PC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6CD</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>871</Cum3>
+						<Cum4>325</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU573222AFM</prod>
+						<product>PC&#32;128M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6L4</code>
+						<Cum0/>
+						<Cum1>0</Cum1>
+						<Cum2>0</Cum2>
+						<Cum3>0</Cum3>
+						<Cum4>0</Cum4>
+						<Day0/>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1>1500</plan1>
+						<plan2>1500</plan2>
+						<plan3>1500</plan3>
+						<plan4>2092</plan4>
+						<prod>HY64SD16161B</prod>
+						<product>3RD&#32;16M&#32;CSRAM</product>
+						<Sect>SM</Sect>
+						<Tech>0.15</Tech>
+					</record>
+					<record>
+						<code>6L4</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>136</Cum3>
+						<Cum4>119</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>21</Day3>
+						<Day4>14</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY64UD16161BA</prod>
+						<product>3RD&#32;16M&#32;CSRAM</product>
+						<Sect>SM</Sect>
+						<Tech>0.15</Tech>
+					</record>
+					<record>
+						<code>6L4</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>158</Cum3>
+						<Cum4>200</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY64UD16161BB</prod>
+						<product>3RD&#32;16M&#32;CSRAM</product>
+						<Sect>SM</Sect>
+						<Tech>0.15</Tech>
+					</record>
+					<record>
+						<code>6L4</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2>50</Cum2>
+						<Cum3>766</Cum3>
+						<Cum4>1100</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY64UD16162B</prod>
+						<product>3RD&#32;16M&#32;CSRAM</product>
+						<Sect>SM</Sect>
+						<Tech>0.15</Tech>
+					</record>
+					<record>
+						<code>6ND</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>614</Cum3>
+						<Cum4>676</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>25</Day3>
+						<Day4>29</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY64SD16322B</prod>
+						<product>PC&#32;32M&#32;CSRAM</product>
+						<Sect>SM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>6ND</code>
+						<Cum0>600</Cum0>
+						<Cum1>175</Cum1>
+						<Cum2>175</Cum2>
+						<Cum3>0</Cum3>
+						<Cum4>0</Cum4>
+						<Day0>0</Day0>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB6</FAB>
+						<plan0>500</plan0>
+						<plan1>800</plan1>
+						<plan2>800</plan2>
+						<plan3>800</plan3>
+						<plan4>875</plan4>
+						<prod>HY64SD16327B</prod>
+						<product>PC&#32;32M&#32;CSRAM</product>
+						<Sect>SM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>5P0</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>472</Cum3>
+						<Cum4>425</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>IFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY62TF16408E</prod>
+						<product>5TH&#32;4M&#32;FCMOS</product>
+						<Sect>SM</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>AT2</code>
+						<Cum0>5700</Cum0>
+						<Cum1/>
+						<Cum2>0</Cum2>
+						<Cum3>4606</Cum3>
+						<Cum4>635</Cum4>
+						<Day0>600</Day0>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>EFAB</FAB>
+						<plan0>9000</plan0>
+						<plan1/>
+						<plan2>7200</plan2>
+						<plan3>7200</plan3>
+						<plan4>1009</plan4>
+						<prod>HY5DU12822AT</prod>
+						<product>PC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>ACK</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>24</Cum3>
+						<Cum4>6</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>EFAB</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5PS56821F</prod>
+						<product>PC&#32;256M&#32;DDR2</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>AP2</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2>0</Cum2>
+						<Cum3>1426</Cum3>
+						<Cum4>451</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>415</Day3>
+						<Day4>131</Day4>
+						<FAB>EFAB</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2>6300</plan2>
+						<plan3>6300</plan3>
+						<plan4>2013</plan4>
+						<prod>HY5DU56822BT</prod>
+						<product>PC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>ADC</code>
+						<Cum0>9375</Cum0>
+						<Cum1/>
+						<Cum2>0</Cum2>
+						<Cum3>4846</Cum3>
+						<Cum4>823</Cum4>
+						<Day0>1050</Day0>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>621</Day3>
+						<Day4>107</Day4>
+						<FAB>EFAB</FAB>
+						<plan0>22000</plan0>
+						<plan1/>
+						<plan2>12800</plan2>
+						<plan3>12800</plan3>
+						<plan4>2054</plan4>
+						<prod>HY5PS12421F</prod>
+						<product>GC&#32;512M&#32;DDR2</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>ADC</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>649</Cum3>
+						<Cum4>1</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>EFAB</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5PS12421FU</prod>
+						<product>GC&#32;512M&#32;DDR2</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>ADB</code>
+						<Cum0>2550</Cum0>
+						<Cum1/>
+						<Cum2>0</Cum2>
+						<Cum3>0</Cum3>
+						<Cum4>0</Cum4>
+						<Day0>0</Day0>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>EFAB</FAB>
+						<plan0>3000</plan0>
+						<plan1/>
+						<plan2>2100</plan2>
+						<plan3>2100</plan3>
+						<plan4>342</plan4>
+						<prod>HY5DU12822BT</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>ADB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>353</Cum3>
+						<Cum4>0</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>314</Day3>
+						<Day4>0</Day4>
+						<FAB>EFAB</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU12822BTU</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>ADA</code>
+						<Cum0>5700</Cum0>
+						<Cum1/>
+						<Cum2>0</Cum2>
+						<Cum3>4596</Cum3>
+						<Cum4>2003</Cum4>
+						<Day0>0</Day0>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>246</Day3>
+						<Day4>108</Day4>
+						<FAB>EFAB</FAB>
+						<plan0>9000</plan0>
+						<plan1/>
+						<plan2>12500</plan2>
+						<plan3>12500</plan3>
+						<plan4>5382</plan4>
+						<prod>HY5DU561622DT</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>ADA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>2297</Cum3>
+						<Cum4>2</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>200</Day3>
+						<Day4>0</Day4>
+						<FAB>EFAB</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU561622DTU</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>ADE</code>
+						<Cum0>0</Cum0>
+						<Cum1/>
+						<Cum2>0</Cum2>
+						<Cum3>0</Cum3>
+						<Cum4>0</Cum4>
+						<Day0>0</Day0>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>EFAB</FAB>
+						<plan0>2000</plan0>
+						<plan1/>
+						<plan2>100</plan2>
+						<plan3>100</plan3>
+						<plan4>7</plan4>
+						<prod>HY5PS1G831F</prod>
+						<product>GC&#32;1G&#32;DDR2</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>9CE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>1800</Cum3>
+						<Cum4>142</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU12422ATX1</prod>
+						<product>PC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>9CE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>70</Cum3>
+						<Cum4>11</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU12422BTX1</prod>
+						<product>PC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>9CE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>47</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12822ATX2</prod>
+						<product>PC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>9CE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>28</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12822ATX3</prod>
+						<product>PC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>25</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>25</Day3>
+						<Day4/>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HY27UA081G1M</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>423</Cum3>
+						<Cum4>91</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>75</Day3>
+						<Day4>19</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27UA081G1M-RM</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>14779</Cum3>
+						<Cum4>4055</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>1033</Day3>
+						<Day4>224</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27UA081G1MF</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>327</Cum3>
+						<Cum4>84</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27UA081G1MF-RM</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>722</Cum3>
+						<Cum4>208</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27UA081G1MFV</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>36</Cum3>
+						<Cum4>8</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27UA081G2MF</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>1996</Cum3>
+						<Cum4>559</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27UB082G4MF</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0>1700</Cum0>
+						<Cum1/>
+						<Cum2>14</Cum2>
+						<Cum3>12</Cum3>
+						<Cum4>0</Cum4>
+						<Day0>150</Day0>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0>0</plan0>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27UF081G2MWS</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0>0</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>0</Cum2>
+						<Cum3>0</Cum3>
+						<Cum4>0</Cum4>
+						<Day0>0</Day0>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0>23500</plan0>
+						<plan1>32000</plan1>
+						<plan2>32000</plan2>
+						<plan3>32000</plan3>
+						<plan4>8685</plan4>
+						<prod>HY27US08121M</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0>17250</Cum0>
+						<Cum1/>
+						<Cum2>18971</Cum2>
+						<Cum3>422</Cum3>
+						<Cum4>114</Cum4>
+						<Day0>1100</Day0>
+						<Day1/>
+						<Day2>1439</Day2>
+						<Day3>397</Day3>
+						<Day4>107</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0>0</plan0>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27US08121MF</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>2</Cum3>
+						<Cum4>1</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27US08121MFCB</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>36</Cum3>
+						<Cum4>9</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27US08122MF</prod>
+						<product>512M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>192</Cum3>
+						<Cum4>87</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27US08281M</prod>
+						<product>256M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RB</code>
+						<Cum0>1650</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>586</Cum2>
+						<Cum3>581</Cum3>
+						<Cum4>305</Cum4>
+						<Day0>0</Day0>
+						<Day1>0</Day1>
+						<Day2>50</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0>3000</plan0>
+						<plan1>3500</plan1>
+						<plan2>3500</plan2>
+						<plan3>3500</plan3>
+						<plan4>1573</plan4>
+						<prod>HY27US08561M</prod>
+						<product>256M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>375</Cum3>
+						<Cum4>157</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>48</Day3>
+						<Day4>18</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27US08561M-RM</prod>
+						<product>256M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2>70</Cum2>
+						<Cum3/>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3/>
+						<Day4/>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3/>
+						<plan4/>
+						<prod>HY27US08561MF</prod>
+						<product>256M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2>97</Cum2>
+						<Cum3>70</Cum3>
+						<Cum4>0</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27US08561MWS</prod>
+						<product>256M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9RB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>25</Cum3>
+						<Cum4>0</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27US08561MWSF</prod>
+						<product>256M&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.12</Tech>
+					</record>
+					<record>
+						<code>9SA</code>
+						<Cum0>1500</Cum0>
+						<Cum1/>
+						<Cum2>394</Cum2>
+						<Cum3>3</Cum3>
+						<Cum4>1</Cum4>
+						<Day0>150</Day0>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0>0</plan0>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY27UF081G2M</prod>
+						<product>1G&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.09</Tech>
+					</record>
+					<record>
+						<code>9SA</code>
+						<Cum0>0</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>0</Cum2>
+						<Cum3>0</Cum3>
+						<Cum4>0</Cum4>
+						<Day0>0</Day0>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFABB1</FAB>
+						<plan0>8000</plan0>
+						<plan1>500</plan1>
+						<plan2>500</plan2>
+						<plan3>500</plan3>
+						<plan4>81</plan4>
+						<prod>HY27US081G2M</prod>
+						<product>1G&#32;NAND&#32;FLASH</product>
+						<Sect>FM</Sect>
+						<Tech>0.09</Tech>
+					</record>
+					<record>
+						<code>9SB</code>
+						<Cum0>0</Cum0>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4/>
+						<Day0>0</Day0>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4/>
+						<FAB>CFABB1</FAB>
+						<plan0>500</plan0>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4/>
+						<prod>HY27US08282A</prod>
+						<product/>
+						<Sect>FM</Sect>
+						<Tech>0.09</Tech>
+					</record>
+					<record>
+						<code>8CH</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>546</Cum3>
+						<Cum4>257</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5S6B6DLW</prod>
+						<product>PC&#32;64M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CH</code>
+						<Cum0>2000</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>870</Cum2>
+						<Cum3>33</Cum3>
+						<Cum4>19</Cum4>
+						<Day0>500</Day0>
+						<Day1>0</Day1>
+						<Day2>75</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0>1500</plan0>
+						<plan1>1000</plan1>
+						<plan2>1000</plan2>
+						<plan3>1000</plan3>
+						<plan4>631</plan4>
+						<prod>HY5W6B6DF</prod>
+						<product>PC&#32;64M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CH</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>808</Cum3>
+						<Cum4>433</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5W6B6DF-RM</prod>
+						<product>PC&#32;64M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CH</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>28</Cum3>
+						<Cum4>14</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>28</Day3>
+						<Day4>14</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5W6B6DLW</prod>
+						<product>PC&#32;64M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>4057</Cum3>
+						<Cum4>413</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>886</Day3>
+						<Day4>112</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU12422AT</prod>
+						<product>PC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CE</code>
+						<Cum0>6900</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>9020</Cum2>
+						<Cum3>4869</Cum3>
+						<Cum4>118</Cum4>
+						<Day0>325</Day0>
+						<Day1>0</Day1>
+						<Day2>406</Day2>
+						<Day3>0</Day3>
+						<Day4>4</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0>0</plan0>
+						<plan1>15200</plan1>
+						<plan2>15200</plan2>
+						<plan3>15200</plan3>
+						<plan4>2013</plan4>
+						<prod>HY5DU12822AT</prod>
+						<product>PC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>542</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12822ATB</prod>
+						<product>PC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>43</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>3</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12822ATL</prod>
+						<product>PC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>52</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12822ATU2</prod>
+						<product>PC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>7134</Cum3>
+						<Cum4>1924</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>396</Day3>
+						<Day4>87</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU56422BT</prod>
+						<product>PC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CA</code>
+						<Cum0>10800</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>7252</Cum2>
+						<Cum3>0</Cum3>
+						<Cum4>234</Cum4>
+						<Day0>500</Day0>
+						<Day1>0</Day1>
+						<Day2>418</Day2>
+						<Day3>0</Day3>
+						<Day4>32</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0>16000</plan0>
+						<plan1>19000</plan1>
+						<plan2>19000</plan2>
+						<plan3>19000</plan3>
+						<plan4>5859</plan4>
+						<prod>HY5DU56822BT</prod>
+						<product>PC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>8</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU56822BTB</prod>
+						<product>PC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>68</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>5</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU56822BTL</prod>
+						<product>PC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CG</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>402</Cum3>
+						<Cum4>113</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5S2B6DLW</prod>
+						<product>PC&#32;128M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CG</code>
+						<Cum0>1000</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>0</Cum2>
+						<Cum3>3</Cum3>
+						<Cum4>0</Cum4>
+						<Day0>0</Day0>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0>1500</plan0>
+						<plan1>900</plan1>
+						<plan2>900</plan2>
+						<plan3>900</plan3>
+						<plan4>369</plan4>
+						<prod>HY5W2B6DF</prod>
+						<product>PC&#32;128M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8CG</code>
+						<Cum0>500</Cum0>
+						<Cum1/>
+						<Cum2>393</Cum2>
+						<Cum3>400</Cum3>
+						<Cum4>147</Cum4>
+						<Day0>0</Day0>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0>0</plan0>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5W2B6DFU</prod>
+						<product>PC&#32;128M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.13</Tech>
+					</record>
+					<record>
+						<code>8DK</code>
+						<Cum0>0</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>2252</Cum2>
+						<Cum3>729</Cum3>
+						<Cum4>413</Cum4>
+						<Day0>0</Day0>
+						<Day1>0</Day1>
+						<Day2>46</Day2>
+						<Day3>66</Day3>
+						<Day4>23</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0>3000</plan0>
+						<plan1>3000</plan1>
+						<plan2>3000</plan2>
+						<plan3>3000</plan3>
+						<plan4>1973</plan4>
+						<prod>HY57V641620ET</prod>
+						<product>GC&#32;64M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0>18200</Cum0>
+						<Cum1/>
+						<Cum2>730</Cum2>
+						<Cum3>1364</Cum3>
+						<Cum4>37</Cum4>
+						<Day0>1200</Day0>
+						<Day1/>
+						<Day2>9</Day2>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0>0</plan0>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU121622BT</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>176</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU121622BTB</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>9</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU121622BTL</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>194</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>4</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12422BT</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0>0</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>2324</Cum2>
+						<Cum3>2223</Cum3>
+						<Cum4>76</Cum4>
+						<Day0>0</Day0>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>24</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0>44500</plan0>
+						<plan1>13000</plan1>
+						<plan2>13000</plan2>
+						<plan3>13000</plan3>
+						<plan4>2212</plan4>
+						<prod>HY5DU12822BT</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>67</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12822BTB</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2>3631</Cum2>
+						<Cum3>2180</Cum3>
+						<Cum4>32</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2>708</Day2>
+						<Day3>493</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5DU12822BTJ2</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>222</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>43</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12822BTJ2B</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>32</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>8</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12822BTJ2L</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>9</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12822BTL</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DB</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>35</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>16</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU12822BTZ</prod>
+						<product>GC&#32;512M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DN</code>
+						<Cum0>150</Cum0>
+						<Cum1/>
+						<Cum2>11</Cum2>
+						<Cum3/>
+						<Cum4/>
+						<Day0>0</Day0>
+						<Day1/>
+						<Day2>0</Day2>
+						<Day3/>
+						<Day4/>
+						<FAB>CFAB7</FAB>
+						<plan0>0</plan0>
+						<plan1/>
+						<plan2>0</plan2>
+						<plan3/>
+						<plan4/>
+						<prod>HY57V281620ET</prod>
+						<product>GC&#32;256M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DJ</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>150</Cum3>
+						<Cum4>32</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4>0</plan4>
+						<prod>HY5V52F</prod>
+						<product>GC&#32;256M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DA</code>
+						<Cum0/>
+						<Cum1>0</Cum1>
+						<Cum2>7068</Cum2>
+						<Cum3>6489</Cum3>
+						<Cum4>1005</Cum4>
+						<Day0/>
+						<Day1>0</Day1>
+						<Day2>291</Day2>
+						<Day3>363</Day3>
+						<Day4>75</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1>6700</plan1>
+						<plan2>6700</plan2>
+						<plan3>6700</plan3>
+						<plan4>2762</plan4>
+						<prod>HY5DU56822DT</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>1292</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>60</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU56822DTB</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>239</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>9</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU56822DTL</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>8DA</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>23</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB7</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY5DU56822DTU1</prod>
+						<product>GC&#32;256M&#32;DDR</product>
+						<Sect>DM</Sect>
+						<Tech>0.10</Tech>
+					</record>
+					<record>
+						<code>PV</code>
+						<Cum0>3200</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>0</Cum2>
+						<Cum3>3518</Cum3>
+						<Cum4>492</Cum4>
+						<Day0>200</Day0>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>198</Day3>
+						<Day4>22</Day4>
+						<FAB>CFAB5</FAB>
+						<plan0>6000</plan0>
+						<plan1>5500</plan1>
+						<plan2>5500</plan2>
+						<plan3>5500</plan3>
+						<plan4>3436</plan4>
+						<prod>HY57V641620HG</prod>
+						<product>6TH&#32;64M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>PV</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>27</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY57V641620HGL</prod>
+						<product>6TH&#32;64M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>PV</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>224</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY57V641620HGLT</prod>
+						<product>6TH&#32;64M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>PL</code>
+						<Cum0>4800</Cum0>
+						<Cum1>0</Cum1>
+						<Cum2>0</Cum2>
+						<Cum3>5351</Cum3>
+						<Cum4>112</Cum4>
+						<Day0>300</Day0>
+						<Day1>0</Day1>
+						<Day2>0</Day2>
+						<Day3>271</Day3>
+						<Day4>0</Day4>
+						<FAB>CFAB5</FAB>
+						<plan0>7300</plan0>
+						<plan1>8500</plan1>
+						<plan2>8500</plan2>
+						<plan3>8500</plan3>
+						<plan4>2727</plan4>
+						<prod>HY57V28820HC</prod>
+						<product>3RD&#32;128M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>PL</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3/>
+						<Cum4>9</Cum4>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3/>
+						<Day4>0</Day4>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3/>
+						<plan4>0</plan4>
+						<prod>HY57V28820HCL</prod>
+						<product>3RD&#32;128M&#32;SYNC</product>
+						<Sect>DM</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>NE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>5</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>SF30L15-WMRD</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.25</Tech>
+					</record>
+					<record>
+						<code>NF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>20</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HC186007</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>NF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>1183</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>50</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HCH183005</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>NF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>5</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HCH183006</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>NF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>37</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>MCS12G37</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>NF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>14</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>7</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>SBH1MXD201</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>LF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>6</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>SLF0MEEL18IP</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>JF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>6</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HMS30C7080</prod>
+						<product>MCU</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>JF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>26</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HMS74230HN</prod>
+						<product>MCU</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>JF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>25</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HM18AS528</prod>
+						<product>LDI</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>JF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>25</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HM18AT572B</prod>
+						<product>LDI</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>JF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>16</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HM18AT572S</prod>
+						<product>LDI</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>JF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>123</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>24</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HYCA6</prod>
+						<product>HYCA</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>JF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>20</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>18CISH7V0</prod>
+						<product>CIS</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>JF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>25</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>25</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>30CISHR1V0</prod>
+						<product>CIS</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>JF</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>85</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>CIS18005D</prod>
+						<product>CIS</product>
+						<Sect>SI</Sect>
+						<Tech>0.18</Tech>
+					</record>
+					<record>
+						<code>NE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>23</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HL1501U06-M2</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.15</Tech>
+					</record>
+					<record>
+						<code>NE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>21</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HL1502U02-M3</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.15</Tech>
+					</record>
+					<record>
+						<code>NE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>10</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HL18H1625</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.15</Tech>
+					</record>
+					<record>
+						<code>NE</code>
+						<Cum0/>
+						<Cum1/>
+						<Cum2/>
+						<Cum3>8</Cum3>
+						<Cum4/>
+						<Day0/>
+						<Day1/>
+						<Day2/>
+						<Day3>0</Day3>
+						<Day4/>
+						<FAB>CFAB5</FAB>
+						<plan0/>
+						<plan1/>
+						<plan2/>
+						<plan3>0</plan3>
+						<plan4/>
+						<prod>HL18H1625A</prod>
+						<product>SMS(BFM)</product>
+						<Sect>SI</Sect>
+						<Tech>0.15</Tech>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="DS_size">
+				<Contents>
+					<colinfo id="chno" size="10" type="INT"/>
+					<colinfo id="chdate" size="14" type="DATE"/>
+					<colinfo id="cstname" size="255" type="STRING"/>
+					<colinfo id="totalsum" size="10" type="INT"/>
+					<colinfo id="hangnum" size="10" type="INT"/>
+					<colinfo id="ptcode" size="255" type="STRING"/>
+					<colinfo id="ptname" size="255" type="STRING"/>
+					<colinfo id="chang" size="255" type="STRING"/>
+					<colinfo id="bl" size="255" type="STRING"/>
+					<colinfo id="so" size="255" type="STRING"/>
+					<colinfo id="chdanga" size="10" type="INT"/>
+					<colinfo id="cnt" size="10" type="INT"/>
+					<colinfo id="dan" size="255" type="STRING"/>
+					<colinfo id="smallsum" size="10" type="INT"/>
+					<colinfo id="cham" size="255" type="STRING"/>
+					<colinfo id="temp1" size="255" type="STRING"/>
+					<colinfo id="temp2" size="255" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="DS_fix">
+				<Contents>
+					<colinfo id="chno" size="10" type="INT"/>
+					<colinfo id="chdate" size="14" type="DATE"/>
+					<colinfo id="cstname" size="255" type="STRING"/>
+					<colinfo id="totalsum" size="10" type="INT"/>
+					<colinfo id="hangnum" size="10" type="INT"/>
+					<colinfo id="ptcode" size="255" type="STRING"/>
+					<colinfo id="ptname" size="255" type="STRING"/>
+					<colinfo id="chang" size="255" type="STRING"/>
+					<colinfo id="bl" size="255" type="STRING"/>
+					<colinfo id="so" size="255" type="STRING"/>
+					<colinfo id="chdanga" size="10" type="INT"/>
+					<colinfo id="cnt" size="10" type="INT"/>
+					<colinfo id="dan" size="255" type="STRING"/>
+					<colinfo id="smallsum" size="10" type="INT"/>
+					<colinfo id="cham" size="255" type="STRING"/>
+					<colinfo id="temp1" size="255" type="STRING"/>
+					<colinfo id="temp2" size="255" type="STRING"/>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="dsPerson">
+				<Contents>
+					<colinfo id="column0" size="256" type="STRING"/>
+					<colinfo id="column1" size="256" type="STRING"/>
+					<colinfo id="column2" size="256" type="STRING"/>
+					<colinfo id="column3" size="256" type="STRING"/>
+					<colinfo id="column4" size="256" type="STRING"/>
+					<colinfo id="column5" size="256" type="STRING"/>
+					<colinfo id="column6" size="256" type="STRING"/>
+					<colinfo id="column7" size="256" type="STRING"/>
+					<colinfo id="column8" size="256" type="STRING"/>
+					<colinfo id="column9" size="256" type="STRING"/>
+					<colinfo id="column10" size="256" type="STRING"/>
+					<record>
+						<column0>20070115</column0>
+						<column1>01</column1>
+						<column10></column10>
+						<column2>1</column2>
+						<column3>1</column3>
+						<column4>Account&#32;Transfer</column4>
+						<column5>Input&#32;Text</column5>
+						<column6>www.paran.com</column6>
+						<column7></column7>
+						<column8></column8>
+						<column9></column9>
+					</record>
+					<record>
+						<column0>20070513</column0>
+						<column1>02</column1>
+						<column10></column10>
+						<column2></column2>
+						<column3>0</column3>
+						<column4>Point</column4>
+						<column5></column5>
+						<column6>www.ktf.com</column6>
+						<column7></column7>
+						<column8></column8>
+						<column9></column9>
+					</record>
+					<record>
+						<column0></column0>
+						<column1></column1>
+						<column10></column10>
+						<column2></column2>
+						<column3>0</column3>
+						<column4>CreditCard</column4>
+						<column5></column5>
+						<column6></column6>
+						<column7></column7>
+						<column8></column8>
+						<column9></column9>
+					</record>
+					<record>
+						<column0></column0>
+						<column1></column1>
+						<column10></column10>
+						<column2></column2>
+						<column3></column3>
+						<column4></column4>
+						<column5></column5>
+						<column6></column6>
+						<column7></column7>
+						<column8></column8>
+						<column9></column9>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_codelist4">
+				<Contents>
+					<colinfo id="code" size="256" type="STRING"/>
+					<colinfo id="name" size="256" type="STRING"/>
+					<record>
+						<code>0</code>
+						<name>Credit&#32;Card</name>
+					</record>
+					<record>
+						<code>1</code>
+						<name>Bank&#32;Transfer</name>
+					</record>
+					<record>
+						<code>2</code>
+						<name>Point</name>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="dsDept">
+				<Contents>
+					<colinfo id="dept_cd" size="256" type="STRING"/>
+					<colinfo id="dept_nm" size="256" type="STRING"/>
+					<record>
+						<dept_cd>05</dept_cd>
+						<dept_nm>Technical&#32;Support&#32;Team</dept_nm>
+					</record>
+					<record>
+						<dept_cd>01</dept_cd>
+						<dept_nm>Customer&#32;Management&#32;Team</dept_nm>
+					</record>
+					<record>
+						<dept_cd>02</dept_cd>
+						<dept_nm>Management&#32;Team</dept_nm>
+					</record>
+					<record>
+						<dept_cd>04</dept_cd>
+						<dept_nm>R&#32;&amp;&#32;D&#32;Team</dept_nm>
+					</record>
+					<record>
+						<dept_cd>03</dept_cd>
+						<dept_nm>Marketing&#32;Team</dept_nm>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_list3">
+				<Contents>
+					<colinfo id="column0" size="256" type="STRING"/>
+					<colinfo id="column1" size="256" type="STRING"/>
+					<colinfo id="column2" size="256" type="STRING"/>
+					<colinfo id="column3" size="256" type="STRING"/>
+					<colinfo id="column4" size="256" type="STRING"/>
+					<record>
+						<column0>ABC</column0>
+						<column1>20070101</column1>
+						<column2>Title-----1</column2>
+						<column3></column3>
+						<column4></column4>
+					</record>
+					<record>
+						<column0>ABC</column0>
+						<column1>20070401</column1>
+						<column2>Tiltel-----2</column2>
+						<column3></column3>
+						<column4></column4>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_PopupMenu_GridBody">
+				<Contents>
+					<colinfo id="caption" size="255" type="STRING"/>
+					<colinfo id="level" size="255" type="STRING"/>
+					<colinfo id="enable" size="256" type="STRING"/>
+					<colinfo id="icon" size="256" type="STRING"/>
+					<colinfo id="id" size="256" type="STRING"/>
+					<colinfo id="url" size="256" type="STRING"/>
+					<record>
+						<caption>Grid&#32;팝업메뉴</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>0</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Vertical&#32;Ditto</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>vditto</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Horizon&#32;Ditto</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>hditto</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Find&#32;&#32;&#32;&#32;(Ctrl+F,&#32;F3)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>find</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Reset&#32;&#32;&#32;(Ctrl+Z)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>reset</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Cut&#32;&#32;&#32;&#32;&#32;(Ctrl+X)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>cut</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Copy&#32;&#32;&#32;&#32;(Ctrl+C)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>copy</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Paste&#32;&#32;&#32;(Ctrl+V)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>paste</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Delete&#32;&#32;(del)</caption>
+						<enable></enable>
+						<icon></icon>
+						<id>delete</id>
+						<level>1</level>
+						<url></url>
+					</record>
+				</Contents>
+			</Dataset>
+			<Dataset DataSetType="Dataset" Id="ds_PopupMenu_LeftGridHead">
+				<Contents>
+					<colinfo id="caption" size="255" type="STRING"/>
+					<colinfo id="level" size="255" type="STRING"/>
+					<colinfo id="enable" size="256" type="STRING"/>
+					<colinfo id="icon" size="256" type="STRING"/>
+					<colinfo id="id" size="256" type="STRING"/>
+					<colinfo id="url" size="256" type="STRING"/>
+					<colinfo id="formatid" size="256" type="STRING"/>
+					<record>
+						<caption>Grid&#32;Head&#32;팝업메뉴</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>0</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Fix&#32;Cell</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>fix</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Release&#32;Cell</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>release</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Multi&#32;Row</caption>
+						<enable></enable>
+						<formatid>format1</formatid>
+						<icon></icon>
+						<id>multirow</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Multi&#32;Sort</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>multisort</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Auto&#32;Filter</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>autofilter</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Show</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>show</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Hide</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>hide</id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>-</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id></id>
+						<level>1</level>
+						<url></url>
+					</record>
+					<record>
+						<caption>Reset&#32;Grid</caption>
+						<enable></enable>
+						<formatid></formatid>
+						<icon></icon>
+						<id>reset</id>
+						<level>1</level>
+						<url></url>
+					</record>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Image FillType="STRETCH" Height="601" Id="Image0" ImageID="M_bg3" TabOrder="4" Width="1000"></Image>
+		<Image Align="Left" Height="16" Id="Image3" ImageID="M_title_1depth_icon" Left="19" LeftMargin="18" Style="cm_title_sub" TabOrder="3" Text="그리드&#32;기본기능" Top="27" Width="216"></Image>
+		<Tab Border="Flat" BorderColor="white" FixedImage="FALSE" Height="532" Id="Tab0" Left="16" MouseOverColor="user31" SelColor="white" SelectFont="맑은&#32;고딕,9,Bold" Style="M_tab" TabOrder="0" Top="56" Width="960">
+			<Contents>
+				<TabPage BorderColor="black" Height="501" Id="tab1" ImageEdgeWidth="25" ImageID="M_tab1" Left="2" Style="sty_tab" TabOrder="3" Text="&#32;&#32;Grid&#32;MutiLine&#32;&#32;&#32;&#32;&#32;&#32;&#32;" Top="29" Width="956">
+					<Grid AutoFit="TRUE" BindDataset="Dataset0" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="501" ColSizing="TRUE" DragMode="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="497" Id="Grid_main" InputPanel="FALSE" LineColor="default" LineType="ExVERT" MinWidth="100" OnHeadClick="Grid0_OnHeadClick" Right="956" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="4" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="956">
+						<contents>
+							<format id="Default">
+								<columns>
+									<col width="118"/>
+									<col width="292"/>
+									<col width="171"/>
+									<col width="113"/>
+									<col width="151"/>
+									<col width="114"/>
+								</columns>
+								<head>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="0" color="user14" display="text" font="돋움,9" rowspan="2" text="Item&#32;Code"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="1" color="user14" display="text" font="돋움,9" text="Product&#32;Name"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="2" color="user14" display="text" font="돋움,9" text="Inventory"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="3" color="user14" display="text" font="돋움,9" text="Unit"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="4" color="user14" display="text" font="돋움,9" text="B/L&#32;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="5" color="user14" display="text" font="돋움,9" text="P/L&#32;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user16" display="text" font="돋움,9" row="1" text="Warehouse&#32;position"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="user16" display="text" font="돋움,9" row="1" text="Warehousing&#32;price"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user16" display="text" font="돋움,9" row="1" text="Invoice&#32;price"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="user16" colspan="2" display="text" font="돋움,9" row="1" text="Warehousing&#32;date"/>
+								</head>
+								<body>
+									<cell bkcolor="user11" bkcolor2="user12" col="0" colid="ptcode" color="user16" display="text" rowspan="2"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="1" colid="ptname" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="2" colid="cnt" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="3" colid="dan" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="4" colid="bl" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="5" colid="pl" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="1" colid="chang" color="user16" display="text" row="1"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="2" colid="ipdanga" color="user16" display="text" row="1"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="3" colid="chdanga" color="user16" display="text" row="1"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="4" colid="ipdate" color="user16" colspan="2" display="text" row="1"/>
+								</body>
+							</format>
+						</contents>
+					</Grid>
+				</TabPage>
+				<TabPage BorderColor="black" Height="501" Id="tab2" ImageEdgeWidth="25" ImageID="M_tab1" Left="2" TabOrder="3" Text="&#32;Sort&#32;&#32;&#32;&#32;&#32;&#32;&#32;" Top="29" Width="956">
+					<Grid BindDataset="DS_Sort" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="475" ColSizing="TRUE" DragMode="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="34" Height="471" Id="Grid_main" InputPanel="FALSE" LineColor="default" LineType="ExVERT" OnHeadClick="Grid0_OnHeadClick" Right="956" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="4" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="956">
+						<contents>
+							<format id="Default">
+								<columns>
+									<col width="129"/>
+									<col width="123"/>
+									<col width="125"/>
+									<col width="104"/>
+									<col width="42"/>
+									<col width="110"/>
+									<col width="110"/>
+									<col width="137"/>
+									<col width="85"/>
+									<col width="85"/>
+									<col width="110"/>
+									<col width="71"/>
+									<col width="79"/>
+									<col width="139"/>
+									<col width="92"/>
+								</columns>
+								<head>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9" text="Warehouse&#13;&#10;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user14" display="text" font="돋움,9" text="Shipping&#13;&#10;Date"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="user14" display="text" font="돋움,9" text="Customer&#32;Name"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user14" display="text" font="돋움,9" text="Total&#32;Amount"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="user14" display="text" font="돋움,9" text="Line"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="5" color="user14" display="text" font="돋움,9" text="Product&#32;Code"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="6" color="user14" display="text" font="돋움,9" text="Product&#32;Name"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="7" color="user14" display="text" font="돋움,9" text="Storage&#13;&#10;Location"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="8" color="user14" display="text" font="돋움,9" text="B/L&#32;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="9" color="user14" display="text" font="돋움,9" text="S/O&#32;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="10" color="user14" display="text" font="돋움,9" text="Shipping&#32;Price"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="11" color="user14" display="text" font="돋움,9" text="Quantity"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="12" color="user14" display="text" font="돋움,9" text="Unite"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="13" color="user14" display="text" font="돋움,9" text="Subtotal&#32;Amount"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="14" color="user14" display="text" font="돋움,9" text="Noted&#32;Items"/>
+								</head>
+								<body>
+									<cell align="center" bkcolor="user11" bkcolor2="user12" col="0" colid="chno" color="user16" display="text"/>
+									<cell align="center" bkcolor="user11" bkcolor2="user12" col="1" colid="chdate" color="user16" display="date"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="2" colid="cstname" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="3" colid="totalsum" color="user16" display="currency"/>
+									<cell align="center" bkcolor="user11" bkcolor2="user12" col="4" colid="hangnum" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="5" colid="ptcode" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="6" colid="ptname" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="7" colid="chang" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="8" colid="bl" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="9" colid="so" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="10" colid="chdanga" color="user16" display="currency"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="11" colid="cnt" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="12" colid="dan" color="user16" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="13" colid="smallsum" color="user16" display="currency"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="14" colid="cham" color="user16" display="text"/>
+								</body>
+							</format>
+						</contents>
+					</Grid>
+				</TabPage>
+				<TabPage BorderColor="black" Height="501" Id="tab5" ImageEdgeWidth="25" ImageID="M_tab1" Left="2" TabOrder="3" Text="&#32;Cell&#32;Move/Size&#32;&#32;&#32;&#32;&#32;&#32;&#32;" Top="29" Width="956">
+					<Grid BindDataset="DS_size" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="452" CellMoving="TRUE" ColSizing="TRUE" DragMode="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" Font="굴림,9" HeadBorder="Flat" HeadHeight="34" Height="448" Id="Grid_main" InputPanel="FALSE" LineColor="default" LineType="ExVERT" Right="956" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="4" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="956">
+						<contents>
+							<format id="Default">
+								<columns>
+									<col width="114"/>
+									<col width="81"/>
+									<col width="101"/>
+									<col width="105"/>
+									<col width="46"/>
+									<col width="99"/>
+									<col width="105"/>
+									<col width="125"/>
+									<col width="69"/>
+									<col width="73"/>
+									<col width="117"/>
+									<col width="67"/>
+									<col width="50"/>
+									<col width="117"/>
+									<col width="94"/>
+								</columns>
+								<head>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9" text="Warehouse&#13;&#10;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user14" display="text" font="돋움,9" text="Ship&#13;&#10;Date"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="user14" display="text" font="돋움,9" text="Customer&#32;Name"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user14" display="text" font="돋움,9" text="Total&#32;Amount"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="user14" display="text" font="돋움,9" text="Line"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="5" color="user14" display="text" font="돋움,9" text="Product&#32;Code"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="6" color="user14" display="text" font="돋움,9" text="Product&#32;Name"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="7" color="user14" display="text" font="돋움,9" text="Storage&#13;&#10;location"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="8" color="user14" display="text" font="돋움,9" text="B/L&#32;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="9" color="user14" display="text" font="돋움,9" text="S/O&#32;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="10" color="user14" display="text" font="돋움,9" text="Shipping&#32;Price"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="11" color="user14" display="text" font="돋움,9" text="Quantity"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="12" color="user14" display="text" font="돋움,9" text="Unit"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="13" color="user14" display="text" font="돋움,9" text="Subtotal&#32;Amount"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="14" color="user14" display="text" font="돋움,9" text="Noted&#32;Items"/>
+								</head>
+								<body>
+									<cell align="center" bkcolor="user11" bkcolor2="user12" col="0" colid="chno" display="text" suppress="1"/>
+									<cell align="center" bkcolor="user11" bkcolor2="user12" col="1" colid="chdate" display="date" suppress="2"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="2" colid="cstname" display="text" suppress="3"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="3" colid="totalsum" display="currency" suppress="4"/>
+									<cell align="center" bkcolor="user11" bkcolor2="user12" col="4" colid="hangnum" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="5" colid="ptcode" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="6" colid="ptname" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="7" colid="chang" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="8" colid="bl" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="9" colid="so" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="10" colid="chdanga" display="currency"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="11" colid="cnt" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="12" colid="dan" display="text"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="13" colid="smallsum" display="currency"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="14" colid="cham" display="text"/>
+								</body>
+							</format>
+						</contents>
+					</Grid>
+					<Button ButtonStyle="TRUE" Height="20" Id="Button0" ImageID="m_bt_txt_04" Left="886" OnClick="Tab0_tab5_Button0_OnClick" Style="cm_btn" TabOrder="2" Text="Button0" Top="3" Visible="FALSE" Width="62"></Button>
+				</TabPage>
+				<TabPage BorderColor="black" Height="501" Id="tab6" ImageEdgeWidth="25" ImageID="M_tab1" Left="2" Style="C_Gride_default" TabOrder="3" Text="&#32;Column&#32;Fix&#32;&#32;&#32;&#32;&#32;&#32;" Top="29" Width="956">
+					<Grid AutoFitEndLine="Hide" BindDataset="DS_fix" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="475" ColSizing="TRUE" DragMode="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="34" Height="471" Id="Grid_main" InputPanel="FALSE" LineColor="default" LineType="ExVERT" Right="956" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="4" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="956">
+						<contents>
+							<format id="Default">
+								<columns>
+									<col fix="left" width="126"/>
+									<col fix="left" width="97"/>
+									<col fix="left" width="115"/>
+									<col width="109"/>
+									<col width="43"/>
+									<col width="110"/>
+									<col width="101"/>
+									<col width="136"/>
+									<col width="77"/>
+									<col width="73"/>
+									<col width="112"/>
+									<col width="70"/>
+									<col width="50"/>
+									<col width="122"/>
+									<col width="95"/>
+								</columns>
+								<head>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9" text="Warehouse&#13;&#10;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user14" display="text" font="돋움,9" text="Ship&#13;&#10;Date"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="user14" display="text" font="돋움,9" text="Customer&#32;Name"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user14" display="text" font="돋움,9" text="Total&#32;Amount"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="4" color="user14" display="text" font="돋움,9" text="Line"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="5" color="user14" display="text" font="돋움,9" text="Product&#32;Code"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="6" color="user14" display="text" font="돋움,9" text="Product&#32;Name"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="7" color="user14" display="text" font="돋움,9" text="Storage&#13;&#10;Location"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="8" color="user14" display="text" font="돋움,9" text="B/L&#32;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="9" color="user14" display="text" font="돋움,9" text="S/O&#32;No."/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="10" color="user14" display="text" font="돋움,9" text="Shipping&#32;Price"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="11" color="user14" display="text" font="돋움,9" text="Quantity"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="12" color="user14" display="text" font="돋움,9" text="Unit"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="13" color="user14" display="text" font="돋움,9" text="Subtotal&#32;Amount"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="14" color="user14" display="text" font="돋움,9" text="Noted&#32;items"/>
+								</head>
+								<body>
+									<cell align="center" bkcolor="#f1f5f7" col="0" colid="chno" color="user16" display="text" suppress="1"/>
+									<cell align="center" bkcolor="#f1f5f7" col="1" colid="chdate" color="user16" display="date" suppress="2"/>
+									<cell bkcolor="#f1f5f7" col="2" colid="cstname" color="user16" display="text" suppress="3"/>
+									<cell bkcolor2="#ededed" col="3" colid="totalsum" color="user16" display="currency" suppress="4"/>
+									<cell align="center" bkcolor2="#ededed" col="4" colid="hangnum" color="user16" display="text"/>
+									<cell bkcolor2="#ededed" col="5" colid="ptcode" display="text"/>
+									<cell bkcolor2="#ededed" col="6" colid="ptname" display="text"/>
+									<cell bkcolor2="#ededed" col="7" colid="chang" display="text"/>
+									<cell bkcolor2="#ededed" col="8" colid="bl" display="text"/>
+									<cell bkcolor2="#ededed" col="9" colid="so" display="text"/>
+									<cell bkcolor2="#ededed" col="10" colid="chdanga" display="currency"/>
+									<cell bkcolor2="#ededed" col="11" colid="cnt" display="text"/>
+									<cell bkcolor2="#ededed" col="12" colid="dan" display="text"/>
+									<cell bkcolor2="#ededed" col="13" colid="smallsum" display="currency"/>
+									<cell bkcolor2="#ededed" col="14" colid="cham" display="text"/>
+								</body>
+							</format>
+						</contents>
+					</Grid>
+				</TabPage>
+				<TabPage BorderColor="black" Height="501" Id="tab7" ImageEdgeWidth="25" ImageID="M_tab1" Left="2" Style="M_tab2" TabOrder="2" Text="&#32;그리드컬럼속성&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;" Top="29" Width="956">
+					<Grid AutoEnter="TRUE" AutoFit="TRUE" AutoFitEndLine="Hide" BindDataset="dsPerson" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="135" CellMoving="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="131" Id="Grid_Person" InputPanel="FALSE" LineColor="default" LineType="ExVERT" MinWidth="100" MultiSelect="TRUE" OnCellClick="Grid_Person_OnCellClick" OnCellPosChanged="Grid_Person_OnCellPosChanged" Right="956" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="4" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="956">
+						<contents>
+							<format id="Default">
+								<columns>
+									<col width="21"/>
+									<col width="159"/>
+									<col width="127"/>
+									<col width="30"/>
+									<col width="71"/>
+									<col width="109"/>
+									<col width="125"/>
+									<col width="229"/>
+								</columns>
+								<head>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="0" color="user14" display="text" font="돋움,9"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="1" color="user14" display="text" font="돋움,9" text="Calendar"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="2" color="user14" display="text" font="돋움,9" text="ComboBox"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="3" color="user14" display="checkbox" font="돋움,9" text="CheckBox"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="4" color="user14" colspan="2" display="text" font="돋움,9" text="Option">
+										<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="0" color="user14" display="text" text="Option"/>
+										<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="1" color="user14" display="text" text="Option"/>
+									</cell>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="6" color="user14" display="text" font="돋움,9" text="ListBox"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head1" col="7" color="user14" display="text" font="돋움,9" text="Text"/>
+								</head>
+								<body>
+									<cell bkcolor="user11" bkcolor2="user12" col="0" display="text" expr='decode(dsPerson.row,&#32;-1,&#32;&quot;&quot;,&#32;row,&#32;&quot;▶&quot;,&quot;&quot;)'/>
+									<cell align="center" bkcolor="user11" bkcolor2="user12" col="1" colid="column0" display="date" edit="date"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="2" colid="column1" combocol="dept_cd" combodataset="dsDept" combotext="dept_nm" display="combo" edit="combo"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="3" colid="column2" display="checkbox" edit="checkbox"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="4" colspan="2" display="text" text="Option1">
+										<cell align="right" bkimagealign="left" bkimageid='expr:decode(column3,&quot;0&quot;,&quot;radio_enable&quot;,&quot;radio_disable&quot;)' col="0" display="text" text="&#32;&#32;&#32;&#32;&#32;option1"/>
+										<cell align="right" bkimagealign="left" bkimageid='expr:decode(column3,&quot;1&quot;,&quot;radio_enable&quot;,&quot;radio_disable&quot;)' col="1" display="text" text="&#32;&#32;&#32;&#32;&#32;option2"/>
+									</cell>
+									<cell bkcolor="user11" bkcolor2="user12" col="6" colid="column4" display="text" edit="button" expandimage="m_bt_grid_01" expandshow="true"/>
+									<cell bkcolor="user11" bkcolor2="user12" col="7" colid="column5" display="text" edit="normal"/>
+								</body>
+							</format>
+						</contents>
+					</Grid>
+					<Grid AutoFit="TRUE" AutoFitEndLine="Hide" BindDataset="dsPerson" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="474" CellMoving="TRUE" ColSelect="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="334" Id="Grid0" InputPanel="FALSE" LineColor="default" LineType="ExVERT" MinWidth="100" OnCellClick="Grid0_OnCellClick" Right="956" RowHeight="20" Style="se_grid" TabOrder="2" TabStop="true" Top="140" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="956">
+						<contents>
+							<format id="Default">
+								<columns>
+									<col width="170"/>
+									<col width="100"/>
+									<col width="485"/>
+									<col width="105"/>
+								</columns>
+								<head>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="0" color="user14" display="text" font="돋움,9" text="Html&#32;Link"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="1" color="user14" display="text" font="돋움,9" text="Button"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="2" color="user14" display="text" font="돋움,9" text="TextArea"/>
+									<cell bkimagealign="stretch" bkimageid="M_grid_head2" col="3" color="user14" display="text" font="돋움,9" text="Spinbox"/>
+								</head>
+								<body>
+									<cell bkcolor="expr:decode(dsPerson.GetRowType(currow),&apos;insert&apos;,&apos;#EADCF5&apos;,&apos;update&apos;,&apos;#C0CDE2&apos;,&apos;user11&apos;)" bkcolor2="user12" col="0" colid="column6" color="user16" cursor="hand" display="text" edit="normal" font="Tahoma,9,Underline"/>
+									<cell bkcolor="expr:decode(dsPerson.GetRowType(currow),&apos;insert&apos;,&apos;#EADCF5&apos;,&apos;update&apos;,&apos;#C0CDE2&apos;,&apos;user11&apos;)" bkcolor2="user12" col="1" colid="column7" color="user16" cursor="hand" display="normal" edit="button" expandchar="버튼" expandcolor="#222222" expandfont="돋움,9" expandimage="m_bt_txt_07" expandshow="true" expandsize="200" text="버튼"/>
+									<cell bkcolor="expr:decode(dsPerson.GetRowType(currow),&apos;insert&apos;,&apos;#EADCF5&apos;,&apos;update&apos;,&apos;#C0CDE2&apos;,&apos;user11&apos;)" bkcolor2="user12" bkimagealign="right" col="2" colid="column8" color="user16" cursor="hand" display="text" edit="button" expandimage="m_bt_grid_01" expandshow="true"/>
+									<cell bkcolor="expr:decode(dsPerson.GetRowType(currow),&apos;insert&apos;,&apos;#EADCF5&apos;,&apos;update&apos;,&apos;#C0CDE2&apos;,&apos;user11&apos;)" bkcolor2="user12" col="3" colid="column9" color="user16" cursor="hand" display="normal" edit="normal"/>
+								</body>
+							</format>
+						</contents>
+					</Grid>
+					<Spin BKColor="white" Border="Flat" Height="20" Id="Spin0" Left="871" Max="99999999" OnClick="Spin0_OnClick" Style="se_cal" TabOrder="3" Text="20070501" Top="504" Visible="FALSE" Width="96"></Spin>
+				</TabPage>
+			</Contents>
+		</Tab>
+		<Button Align="Left" ButtonStyle="TRUE" Cursor="HAND" Height="21" Id="Button0" ImageID="m_bt_txt_07" Left="862" LeftMargin="15" OnClick="Button0_OnClick" Style="cm_btn" TabOrder="2" Text="Excel&#32;Export" Top="21" Width="98"></Button>
+		<File Bottom="45" Height="24" Id="File0" Left="842" Right="866" TabOrder="4" Top="21" Width="24"></File>
+	</Form>
+	<Script><![CDATA[//#include "lib::commons.js";		// Form 공통 Script
+var F_PGM_ID ="GridBasic";
+
+var strSort=""; 
+
+function perform_grid_OnLoadCompleted(obj)
+{
+	//Dataset0.Load("xmldata_semi::jdbc_select.xml");
+	
+	DS_Sort.Copy("dataset0");
+	DS_Drag.Copy("dataset0");
+	DS_size.Copy("dataset0");
+	DS_fix.Copy("dataset0");
+	
+	// grid contents load
+	fn_load_info();
+}
+
+function Grid0_OnHeadClick(obj,nCell,nX,nY)
+{
+	if ( GetKeyState("Control") )
+		strSort = G_SortEx(obj,object(obj.BindDataset),nCell,strSort);	
+	else
+		strSort = G_Sort(obj,object(obj.BindDataset),nCell);
+//trace(strSort);			
+}
+
+function Tab0_tab4_Checkbox0_OnClick(obj,bCheckedFlag)
+{
+	if ( bCheckedFlag )
+		DS_Group.GroupKey = "Fab,Sect,Tech";
+	else
+		DS_Group.GroupKey = "";
+}
+
+function Dataset0_OnLoadCompleted(obj,nErrorCode,strErrorMsg,nReason)
+{
+	
+}
+
+
+function Tab0_tab3_Grid0_OnDrop(obj,objDragObj,objDataObj,nPosX,nPosY,varKeyState,nRow,nCell)
+{
+		Drop_end(obj,DS_Drag_tmp,objDataObj,nRow);
+	
+}
+
+function Tab0_tab3_Grid0_OnDrag(obj,nPosX,nPosY,varKeyState,nRow,nCell)
+{
+		return Drag_start(obj);
+	
+}
+
+//New Script File
+// 그리드 소트를 위한 소트 마크
+// △▲▼▽↑↓∧∨
+
+var CONST_ASC_MARK="▲";
+var CONST_DESC_MARK="▼";
+
+var G_userFunc;
+
+function G_Sort(Grid_obj,Dataset_obj,cell)
+{
+	var rowCnt;
+	var i;
+
+	rowCnt = Dataset_obj.RowCount();
+
+	if ( rowCnt <= 1 ) return;
+
+	var cell_title = Grid_obj.GetCellProp("head",cell,"text");
+	var flag;
+	var tmp_str;
+	var font_width = 16;
+
+	var chk_str = Grid_obj.GetCellProp("body",cell,"colid");
+	var cellcnt = Grid_obj.GetCellCount("body");
+	Grid_obj.redraw = false;
+
+	if ( chk_str.length() <= 0 )
+	{
+		for ( i = 0 ; i < cellcnt ; i = i + 1 )
+		{
+			tmp_str = Grid_obj.GetCellProp("head",i,"text");
+
+			f_pos = pos(tmp_str,CONST_ASC_MARK);
+			if ( f_pos > 0 )
+			{
+				tmp_str = tmp_str.replace(CONST_ASC_MARK,"");
+			}
+			else
+			{
+				f_pos1 = pos(tmp_str,CONST_DESC_MARK);
+				if ( f_pos1 > 0 )
+				{
+					tmp_str = tmp_str.replace(CONST_DESC_MARK,"");
+				}
+			}
+
+
+			Grid_obj.SetCellProp("head",i,"text",tmp_str);
+			Grid_obj.SetCellProp("head",i,"align","center");
+		}
+		Grid_obj.redraw = true;
+		return;
+	}
+
+	var max_len = length(cell_title)*font_width;
+	var tmp_len = Grid_obj.GetColProp(cell,"width");
+	var f_pos,f_pos1;
+
+	// alert( max_len + "------" + tmp_len );
+	if ( pos(cell_title,CONST_ASC_MARK) > 0 )
+	{
+		for ( i = 0 ; i < cellcnt ; i = i + 1 )
+		{
+			tmp_str = Grid_obj.GetCellProp("head",i,"text");
+
+			f_pos = pos(tmp_str,CONST_ASC_MARK);
+			if ( f_pos > 0 )
+			{
+				tmp_str = tmp_str.replace(CONST_ASC_MARK,"");
+			}
+			Grid_obj.SetCellProp("head",i,"text",tmp_str);
+			Grid_obj.SetCellProp("head",i,"align","center");
+		}
+
+		max_len = max_len - font_width;
+
+		if ( max_len >= tmp_len )
+		{
+			//Grid_obj.SetCellProp("head",cell,"align","left");
+		}
+		cell_title = Grid_obj.GetCellProp("head",cell,"text");
+		flag = "false";
+		tmp_str = cell_title + CONST_DESC_MARK;
+		Grid_obj.SetCellProp("head",cell,"text",tmp_str);
+	}
+	else if ( pos(cell_title,CONST_DESC_MARK) > 0 )
+	{
+		for ( i = 0 ; i < cellcnt ; i = i + 1 )
+		{
+			tmp_str = Grid_obj.GetCellProp("head",i,"text");
+
+			f_pos = pos(tmp_str,CONST_DESC_MARK);
+			if ( f_pos > 0 )
+			{
+				tmp_str = tmp_str.replace(CONST_DESC_MARK,"");
+			}
+
+			Grid_obj.SetCellProp("head",i,"text",tmp_str);
+			Grid_obj.SetCellProp("head",i,"align","center");
+		}
+
+		max_len = max_len - font_width;
+
+		if ( max_len >= tmp_len )
+		{
+			//Grid_obj.SetCellProp("head",cell,"align","left");
+		}
+		cell_title = Grid_obj.GetCellProp("head",cell,"text");
+		flag = "true";
+		tmp_str = cell_title + CONST_ASC_MARK;
+		Grid_obj.SetCellProp("head",cell,"text",tmp_str);
+	}
+	else
+	{
+		for ( i = 0 ; i < cellcnt ; i = i + 1 )
+		{
+			tmp_str = Grid_obj.GetCellProp("head",i,"text");
+
+			f_pos = pos(tmp_str,CONST_ASC_MARK);
+			if ( f_pos > 0 )
+			{
+				tmp_str = tmp_str.replace(CONST_ASC_MARK,"");
+			}
+			else
+			{
+				f_pos1 = pos(tmp_str,CONST_DESC_MARK);
+				if ( f_pos1 > 0 )
+				{
+					tmp_str = tmp_str.replace(CONST_DESC_MARK,"");
+				}
+			}
+
+
+			Grid_obj.SetCellProp("head",i,"text",tmp_str);
+			Grid_obj.SetCellProp("head",i,"align","center");
+		}
+ 
+		if ( max_len >= tmp_len )
+		{
+			//Grid_obj.SetCellProp("head",cell,"align","left");
+		}
+		cell_title = Grid_obj.GetCellProp("head",cell,"text");
+
+		flag = "true";
+		tmp_str = cell_title + CONST_ASC_MARK;
+		Grid_obj.SetCellProp("head",cell,"text",tmp_str);
+	}
+	Dataset_obj.Sort(chk_str, flag);
+
+	Grid_obj.redraw = true;
+	if ( flag == "true" ) chk_str += ":A";
+	else chk_str += ":D";
+	return chk_str;
+}
+
+function Button0_OnClick(obj)
+{
+	TAB0.TAB1.Grid_main.exportexcelex("SHEET1");
+}
+
+
+// grid contents 관련 
+function fn_file_save(strFilenm, strValue)
+{
+	var strFileName;
+	
+	strFileName = File0.AliasToRealPath("%MIPLATFORM%");
+	
+	File0.FileName = strFileName + "\\" + strFilenm;
+	File0.Open("w");
+	//strValue = File0.WriteBinary(strValue);
+	strValue = File0.Write(strValue);
+	File0.Close();
+}
+
+
+function Tab0_tab5_Button0_OnClick(obj)
+{
+	var strContents;
+	
+	strContents = Tab0.tab5.Grid_main.GetCurContents();
+	
+	//alert(strContents);
+	//alert(this.id);
+	
+	
+	//fn_file_save(this.id,strContents);	
+	fn_file_save("grdContents",strContents);	
+}
+
+/////////
+function fn_load_info()
+{
+	var strContents;
+	
+	//strContents = fn_file_open(this.id);
+//	strContents = fn_file_open("grdContents");
+	
+	//alert( strContents );
+	
+//	if ( Length(strContents) > 0 )
+//		Tab0.tab5.Grid_main.Contents = strContents;
+}
+
+function fn_file_open(strFilenm)
+{
+	var strValue, strFileName;
+	
+	strFileName = File0.AliasToRealPath("%MIPLATFORM%");
+	
+	File0.FileName = strFileName + "\\" + strFilenm;	
+	File0.Open("rb"); // Option ( r:read, t:text, b:binary, w:write, a:append +:read/write )
+	
+	//strValue = File0.Read();
+	//strValue = File0.ReadBinary();
+	strValue = File0.Read();
+	
+	//File Size를 가져옵니다.
+	//alert(  File0.getLength() + " byte" );
+	
+	File0.Close();
+	
+	return strValue;
+}
+
+function perform_grid_OnUnloadCompleted(obj)
+{
+	//alert("OnUnload");
+	Tab0_tab5_Button0_OnClick();
+}
+
+function perform_grid_OnKillFocus(obj)
+{
+	//alert("OnKillFocus");
+	Tab0_tab5_Button0_OnClick();	
+}
+
+
+
+
+
+
+function Grid_Person_OnCellClick(obj,nRow,nCell,nX,nY,nPivotIndex)
+{
+	if ( nCell == 4 )
+	{
+		dsPerson.SetColumn(nRow,"column3",fn_GridRadioClick(obj,nRow,nCell,nX,nY,2));
+	}
+}
+
+function Grid_Person_OnCellPosChanged(obj,nRow,nCell,nOldRow,nOldCell,nPivotIndex,nOldPivotIndex)
+{
+	if ( nCell == 1 )
+	{
+		gfn_SetPopupDivCalendar(obj, nRow, nCell);
+	} else if ( nCell == 5 )
+	{
+		make_popdiv(obj, nRow, nCell, "ds_codelist4");
+		
+		//ds_data2.SetColumn(nRow,"column10", ds_codelist4.GetColumn( gtp_selectrow, "code") );
+		dsPerson.SetColumn(nRow,"column4", ds_codelist4.GetColumn( gtp_selectrow, "name") );
+	}//else 
+}
+
+
+function Grid0_OnCellClick(obj,nRow,nCell,nX,nY,nPivotIndex)
+{
+	if ( nCell == 0 )
+	{
+		if( dsPerson.GetColumn(nRow, "column6") == "" ) return;
+		
+		ExecBrowser(dsPerson.GetColumn(nRow, "column6"));
+	} else if ( nCell == 1 )
+	{
+		alert("Button Click .... 1 ");
+	} else if ( nCell == 2 )
+	{
+		gfn_SetPopupDivTextArea(obj, nRow, nCell, "false");
+	}else if (nCell == 3)
+	{
+		
+		//Spin0.Top = Grid0.top + nY - 10;
+		Spin0.Top = Grid0.top + Grid0.HeadHeight + (Grid0.RowHeight * nRow);
+		//Spin0.Left = Grid0.Left + nX - 10;
+		Spin0.Left = 635;
+		Spin0.Visible = true;		
+	}	
+}
+
+
+//////////////////////////
+
+//New Script File
+
+var gfn_openChkCal = false;										// Create Object Check 용(PopupDaiv Calendar)
+var gfn_objBindDs;															// Grid BindDataset 
+var gfn_grdRow;																// Grid Selected Row
+var gfn_grdColId;															// Grid Selected Column
+
+
+/*===============================================================
+= 기능 : PopupDiv Calendar Set (공통)
+= 인수 : obj			Grid Component ID
+				 nRow			Current Row
+				 nCell 		Selected Cell 
+= 예제 : gfn_SetPopupDivCalendar(obj, nRow, nCell)
+===============================================================*/
+function gfn_SetPopupDivCalendar(objGrd, nRow, nCell){	
+	gfn_objGrid = objGrd;	
+	
+	var objBDs =  gfn_objGrid.BindDataset;
+	gfn_objBindDs = object(objBDS).id;
+	
+	gfn_grdRow = nRow;
+	
+	gfn_grdColId =  gfn_objGrid.GetCellProp("Body",nCell, "ColId");
+
+	var str_val = object(gfn_objBindDs).GetColumn(nRow, gfn_grdColId);
+	var arr_val =  gfn_objGrid.GetCellRect(nRow,nCell);	
+	var div_x = ClientToScreenX(objGrd, arr_val[0]);
+	var div_y = ClientToScreenY(objGrd, arr_val[1]);
+	var div_w = arr_val[2] - arr_val[0];
+	var div_h = arr_val[3] - arr_val[1];
+	
+	if (gfn_openChkCal == false){
+		Create("PopupDiv", "PopDiv_Calendar", 'width="167" height="150"');
+		gfn_openChkCal = true;
+	}
+	
+	PopDiv_Calendar.Contents = gfn_SetPopDivCalContent(str_val);
+	PopDiv_Calendar.TrackPopup(div_x, div_y, div_w, div_h);	
+}		
+
+
+
+
+/*===============================================================
+= 기능 : PopupDiv Calendar Set Contents (공통)
+= 인수 : str_val		Selected Date
+= 결과 : return  		PopupDiv Contents				 
+= 예제 : gfn_SetColumnAdd(value)
+===============================================================*/
+function gfn_SetPopDivCalContent(str_val){
+	var str_temp;
+/*
+	str_temp += '<Contents>';
+	str_temp += '<Calendar BackColorColumn="HOLIDAY" Border="Flat" ClickedBkColor="#394c5a" ClickedTextColor="white" ' + chr(10); 
+	str_temp += 'DateColumn="HOLIDAY" InnerDataset="GDS_NGMHOLIDAY" LeftMargin="2" Height="152" Id="CAL_PopupDiv" ' + chr(10);
+	str_temp += 'Value="' + str_val + '"Left="0" LeftMargin="2" NullValue="&#32;" RightMargin="2" MonthOnly="TRUE" ' + chr(10);
+	str_temp += 'OnChanged="gfn_CalChanged" OnDayClick="gfn_CalChanged" SaturdayTextColor="blue" Style="cal_style1" SundayTextColor="red" ' + chr(10);
+	str_temp += 'TextColorColumn="HOLIDAY" Top="0" Width="152"></Calendar>' + chr(10);
+	str_temp += '</Contents>';
+*/
+	str_temp += '<Contents>';
+	str_temp += '<Calendar Border="Flat" ClickedBkColor="#394c5a" ClickedTextColor="white" ' + chr(10); 
+	str_temp += 'LeftMargin="2" Height="160" Id="CAL_PopupDiv" ' + chr(10);
+	str_temp += 'Value="' + str_val + '"Left="0" LeftMargin="2" NullValue="&#32;" RightMargin="2" MonthOnly="TRUE" ' + chr(10);
+	str_temp += 'OnChanged="gfn_CalChanged" OnDayClick="gfn_CalChanged" SaturdayTextColor="blue" Style="cal_style1" SundayTextColor="red" ' + chr(10);
+	str_temp += 'TextColorColumn="HOLIDAY" Top="0" Width="160"></Calendar>' + chr(10);
+	str_temp += '</Contents>';	
+	return str_temp;
+}
+
+
+
+/*===============================================================
+= 기능 : Calendar Date Changed Event (공통)
+= 인수 : obj				Calendar Component ID
+= 예제 : gfn_CalChanaged(obj)
+===============================================================*/
+function gfn_CalChanged(obj){
+	object(gfn_objBindDs).SetColumn(gfn_grdRow, gfn_grdColId, obj.Value);
+	PopDiv_Calendar.ClosePopup();
+}
+
+
+///////////////////////
+
+//New Script File
+
+
+var gtp_openChkCal = false;
+var gtp_objBindDs = "";
+var gtp_objBindInnerDs = "";
+var gtp_grdRow, gtp_grdColId;
+var gtp_selectrow;
+
+function make_popdiv(grid_obj, nRow, nCell, str_dataset)
+{
+
+	var str_contents = "";
+	
+	var pos_top, pos_left;
+	
+	gtp_objBindInnerDs = str_dataset;
+	gtp_objBindDs = grid_obj.BindDataset;
+	gtp_grdRow = nRow;
+	gtp_grdColId =  grid_obj.GetCellProp("Body", nCell, "ColId");
+	
+	// 좌표 설정 ..
+	var arr_val =  grid_obj.GetCellRect(nRow,nCell);	
+	var div_x = ClientToScreenX(grid_obj, arr_val[0]);
+	var div_y = ClientToScreenY(grid_obj, arr_val[1]);
+	var div_w = arr_val[2] - arr_val[0];
+	var div_h = arr_val[3] - arr_val[1];
+	
+	if (gtp_openChkCal == false){
+		Create("PopupDiv", "PDiv_pop", 'width="160" height="160"');
+		gtp_openChkCal = true;
+	}
+	
+	var grid_width = PDiv_pop.width;
+	var grid_heigth = PDiv_pop.height;			
+			
+	str_contents  = '<Contents> ';
+	str_contents += '	<Grid Id="PDiv_Grid" BindDataset="' + gtp_objBindInnerDs + '" OnCellClick="PDiv_Grid_OnCellClick" Width="' + grid_width + '" Height="' +  grid_heigth+ '" AutoFit="true"  ';
+	str_contents += '	                 BoldHead="true" Bottom="112" Enable="true" EndLineColor="default" HScrollPos="0" InputPanel="FALSE" Left="1" LineColor="default" Redraw="1" Right="185" TabOrder="1" TabStop="true" UseSelColor="true" Visible="true" VLineColor="default" VScrollPos="0"> ';
+	str_contents += '		<Contents> ';
+	str_contents += '			<columns> ';
+	str_contents += '				<col Width="50"/> ';
+	str_contents += '				<col Width="110"/> ';
+	str_contents += '			</columns> ';
+	str_contents += '			<body> ';
+	str_contents += '				<cell col="0" colid="code"/> ';
+	str_contents += '				<cell col="1" colid="name"/> ';
+	str_contents += '			</body> ';
+	str_contents += '		</Contents> ';
+	str_contents += '	</Grid> ';
+	str_contents += '</Contents> ';
+	
+	//trace("str_contents : " + str_contents);
+	PDiv_pop.Contents = str_contents;
+	PDiv_pop.TrackPopup(div_x, div_y, div_w, div_h);
+	
+}
+
+function PDiv_Grid_OnCellClick(obj,nRow,nCell,nX,nY)
+{
+	// 현재 선택된 로우 설정
+	gtp_selectrow = nRow;
+	
+	PDiv_pop.ClosePopup(nRow);
+}
+
+
+///////////////////////////
+
+
+//New Script File
+
+
+var gfn_openChkText = false;					// Create Object Check 용(PopupDaiv Calendar)
+var gfn_objGrid;							// Multi Select Return Object
+var gfn_objBindDs;							// Grid BindDataset 
+var gfn_grdColId;							// Grid Selected Column
+var gfn_grdRow;								// Grid Selected Row
+
+/*===============================================================
+= 기능 : PopupDiv TextArea Set (공통)
+= 인수 : obj			Grid Component ID
+				 nRow			Current Row
+				 nCell 		Selected Cell 
+				 Mode 		ReadOnly 속성 - "TRUE"/"FALSE" 
+= 예제 : gfn_SetPopupDivTextArea(obj, nRow, nCell)
+===============================================================*/
+function gfn_SetPopupDivTextArea(objGrd, nRow, nCell, Mode){	
+	gfn_objGrid = objGrd;	
+	
+	var objBDs =  gfn_objGrid.BindDataset;
+	gfn_objBindDs = object(objBDS).id;
+	
+	gfn_grdRow = nRow;
+	
+	gfn_grdColId =  gfn_objGrid.GetCellProp("Body",nCell, "ColId");
+
+	var str_val = object(gfn_objBindDs).GetColumn(nRow, gfn_grdColId);
+	var arr_val =  gfn_objGrid.GetCellRect(nRow,nCell);	
+	var div_x = ClientToScreenX(objGrd, arr_val[0]);
+	var div_y = ClientToScreenY(objGrd, arr_val[1]);
+	var div_w = arr_val[2] - arr_val[0];
+	var div_h = arr_val[3] - arr_val[1];
+	
+	if (gfn_openChkText == false){
+		Create("PopupDiv", "PopDiv_TextArea", 'width="350" height="100"');
+		gfn_openChkText = true;
+	}
+	
+	if ( Mode == null ) Mode = "TRUE";
+	
+	PopDiv_TextArea.Contents = gfn_SetPopDivTaContent(str_val, Mode);
+	PopDiv_TextArea.TrackPopup(div_x, div_y, div_w, div_h);	
+}		
+
+
+
+
+/*===============================================================
+= 기능 : PopupDiv TextArea Set Contents (공통)
+= 인수 : str_val		Selected Date
+= 결과 : return  		PopupDiv Contents				 
+= 예제 : gfn_SetPopDivTaContent(value)
+===============================================================*/
+function gfn_SetPopDivTaContent(str_val, Mode){
+	var str_temp;
+	
+	str_temp += '<Contents>' + chr(10);;
+	str_temp += '<TextArea Id="ta_PopupDiv" ImeMode="native" Border="Flat" ' + chr(10);
+	str_temp += '          Left="0" Top="0" Width="350" Height="100" TabOrder="2" ' + chr(10);
+	str_temp += '          OnChanged="gfn_TaChanged" Text="' + str_val + '" Readonly="' + Mode + '" VScroll="TRUE"></TextArea>' + chr(10);;
+	str_temp += '</Contents>';
+	
+	return str_temp;
+}
+
+
+
+/*===============================================================
+= 기능 : TeatArea Changed Event (공통)
+= 인수 : obj				Calendar Component ID
+= 예제 : gfn_TaChanged(obj)
+===============================================================*/
+function gfn_TaChanged(obj,strText)
+{
+	object(gfn_objBindDs).SetColumn(gfn_grdRow, gfn_grdColId, strText);
+	PopDiv_TextArea.ClosePopup();
+}
+
+///////////////////////////
+
+function fn_GridRadioClick(obj,nRow,nCell,nX,nY,radioColCnt)
+{
+	var arrRect = obj.GetCellRect(nRow,nCell);
+	var nColIdx = obj.GetCellProp("body",nCell,"col");
+	var nLeftPos;
+	var nTopPos;
+	var nRightPos,nBottomPos;
+	var i;
+	var nSubColIdx,nSubRowIdx;
+	var arrColWidth = array();
+	var ret;
+	
+	for ( i = 0 ; i < obj.GetSubCellCount("body",nCell) ; i++ )
+	{
+		nSubColIdx = obj.GetSubCellProp("body",nCell,i,"col");
+		nSubRowIdx = obj.GetSubCellProp("body",nCell,i,"row");
+		
+		if ( nSubRowIdx == 0 )
+			nTopPos = arrRect[1];
+		else
+			nTopPos = arrRect[1] + obj.RowHeight * nSubRowIdx;
+			
+		nBottomPos = nTopPos + obj.RowHeight;
+		nRightPos = 0;
+		ret	= fn_arrTotalSum(obj,nColIdx,arrColWidth,nSubColIdx);
+		arrColWidth = ret[1];
+		nRightPos = ret[0] + arrRect[0];;
+		
+		//nRightPos = arrRect[0] + fn_arrTotalSum(obj,nColIdx,ref(arrColWidth),nSubColIdx);
+		if ( nSubColIdx == 0 )
+			nLeftPos = arrRect[0];
+		else
+			nLeftPos = nRightPos - arrColWidth[nSubColIdx - 1];
+			
+		if ( ( nLeftPos <= nX ) && ( nRightPos >= nX ) &&
+		     ( nTopPos <= nY ) && ( nBottomPos >= nY ) )
+		 break;
+	}	
+	
+	return nSubRowIdx * radioColCnt + nSubColIdx;
+}
+
+function fn_arrTotalSum(obj,nColIdx,arrWidth,SubColIdx)
+{
+	var arrRet = array();
+	var nTmp = 0;
+	for ( var i = SubColIdx ; i >= 0 ; i-- )
+	{
+		if ( arrWidth[i] > -1 )
+		{
+			nTmp += arrWidth[i];
+			continue;
+		}	
+		
+		arrWidth[i] = obj.GetColProp(nColIdx + i,"Width");
+		nTmp += arrWidth[i];
+	}
+	
+	arrRet[0] = nTmp;
+	arrRet[1] = arrWidth;
+	return arrRet;
+}
+
+
+/////////////////////////
+
+function Spin0_OnClick(obj)
+{
+	dsPerson.SetColumn(dsPerson.row, "column9", Spin0.Value);
+	Spin0.Visible = false;
+}
+
+]]></Script>
+</Window>

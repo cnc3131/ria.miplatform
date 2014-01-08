@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Height="110" Id="view100_sub100" Left="8" OnLoadCompleted="view100_sub100_OnLoadCompleted" PidAttrib="7" Title="위험현황영역" Top="8" Ver="1.0" Width="944" WorkArea="true">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="ds_risk">
+				<Contents>
+					<colinfo id="FLAG" size="30" type="STRING"/>
+					<colinfo id="REG_DATE" size="10" type="STRING"/>
+					<colinfo id="RISK_DESC" size="200" type="STRING"/>
+					<colinfo id="FLAG_1" size="30" type="STRING"/>
+					<colinfo id="SOL_DESC" size="200" type="STRING"/>
+					<colinfo id="SOL_DATE" size="10" type="STRING"/>
+					<colinfo id="CUR_STATE" size="50" type="STRING"/>
+				</Contents>
+			</Dataset>
+		</Datasets>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" AutoFitEndLine="Hide" AutoSelect="TRUE" BindDataset="ds_risk" BkColor2="default" BoldHead="FALSE" Border="Flat" Bottom="110" CellEditAutoSize="TRUE" CellMoving="TRUE" ColSizing="TRUE" Editable="TRUE" Enable="true" EndLineColor="default" HeadBorder="Flat" HeadHeight="20" Height="86" Id="grd_list" InputPanel="FALSE" LineColor="default" LineType="ExHORZ" MinWidth="100" Right="944" RowHeight="20" Style="se_grid" TabOrder="1" TabStop="true" Top="24" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="944">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="35"/>
+						<col width="63"/>
+						<col width="71"/>
+						<col width="265"/>
+						<col width="80"/>
+						<col width="163"/>
+						<col width="80"/>
+						<col width="80"/>
+					</columns>
+					<head>
+						<cell bkcolor="user13" col="0" color="user14" display="text" text="No"/>
+						<cell bkcolor="user13" col="1" color="user14" display="text" text="구분"/>
+						<cell bkcolor="user13" col="2" color="user14" display="text" text="등록일"/>
+						<cell bkcolor="user13" col="3" color="user14" display="text" text="리스트내용"/>
+						<cell bkcolor="user13" col="4" display="text" text="구분"/>
+						<cell bkcolor="user13" col="5" display="text" text="대응계획"/>
+						<cell bkcolor="user13" col="6" display="text" text="대응일"/>
+						<cell bkcolor="user13" col="7" display="text" text="현재상태"/>
+					</head>
+					<body>
+						<cell bkcolor="user11" bkcolor2="user12" col="0" colid="STRING" color="user16" display="text" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;normal&apos;,&#32;&apos;none&apos;)"/>
+						<cell align="right" bkcolor="user11" bkcolor2="user12" col="1" colid="NUMBER" color="user16" display="number" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;number&apos;,&#32;&apos;none&apos;)"/>
+						<cell align="center" bkcolor="user11" bkcolor2="user12" col="2" colid="FROM_DATE" color="user16" display="date" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;date&apos;,&#32;&apos;none&apos;)" expandimage="btn_seCal" expandsize="18"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="3" colid="TEXT" color="user16" display="text" edit="expr:iif(rowtype&#32;==&#32;&apos;insert&apos;,&#32;&apos;normal&apos;,&#32;&apos;none&apos;)"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="4" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="5" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="6" color="user16" display="text"/>
+						<cell bkcolor="user11" bkcolor2="user12" col="7" color="user16" display="text"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+		<Image Height="12" Id="Image14" ImageID="M_title_2depth_icon" TabOrder="2" Top="6" Transparent="TRUE" Width="13"></Image>
+		<Image Align="Left" Height="17" Id="img_subTitle" Left="17" Static="FALSE" Style="M_title_2depth" TabOrder="3" Text="위험현황" Top="4" Transparent="TRUE" Width="69"></Image>
+	</Form>
+	<Script><![CDATA[
+function resetBottom(arg_value)
+{
+	grd_list.bottom += arg_value;
+	trace("view500::Bottom="+ grd_list.bottom);
+}
+
+function resetRight(arg_value)
+{
+	grd_list.right += arg_value;
+	trace("view500::right="+ grd_list.right);
+}
+
+
+function view100_sub100_OnLoadCompleted(obj)
+{
+   
+	transaction("view_sub500", 
+			"svcLotte::demo/selectProjectRiskList.mip", 
+			"", 
+			"ds_risk=ProjectRisk", 
+			"", 
+			"fnCallbackLotte");
+}
+]]></Script>
+</Window>
