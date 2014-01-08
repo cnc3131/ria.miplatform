@@ -23,6 +23,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class LocaleController {
 	@RequestMapping(value = "/fw/common/web/changeLocale.do")
+
+	//testing
 	public String selectUserList() {
 		//TODO: 설정 파일로 정의하기
 		return "forward:/";
